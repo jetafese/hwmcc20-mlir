@@ -1,0 +1,53 @@
+module attributes {llvm.data_layout = ""} {
+  llvm.func @verifier.error()
+  llvm.func @nd_bv32() -> i32
+  llvm.func @nd_bv1() -> i1
+  llvm.func @main() {
+    %0 = llvm.mlir.constant(0 : i64) : i64
+    %1 = llvm.mlir.constant(0 : i32) : i32
+    %2 = llvm.mlir.constant(true) : i1
+    llvm.br ^bb1(%0, %0, %1, %1, %2, %2, %1, %1 : i64, i64, i32, i32, i1, i1, i32, i32)
+  ^bb1(%3: i64, %4: i64, %5: i32, %6: i32, %7: i1, %8: i1, %9: i32, %10: i32):  // 2 preds: ^bb0, ^bb2
+    %11 = llvm.zext %6 : i32 to i64
+    %12 = llvm.zext %5 : i32 to i64
+    %13 = llvm.mul %12, %11  : i64
+    %14 = llvm.mlir.constant(0 : i64) : i64
+    %15 = llvm.call @nd_bv1() : () -> i1
+    %16 = llvm.select %15, %14, %13 : i1, i64
+    %17 = llvm.zext %10 : i32 to i64
+    %18 = llvm.zext %9 : i32 to i64
+    %19 = llvm.mul %18, %17  : i64
+    %20 = llvm.or %7, %8  : i1
+    %21 = llvm.select %20, %19, %4 : i1, i64
+    %22 = llvm.select %15, %14, %21 : i1, i64
+    %23 = llvm.call @nd_bv32() : () -> i32
+    %24 = llvm.call @nd_bv1() : () -> i1
+    %25 = llvm.select %24, %23, %5 : i1, i32
+    %26 = llvm.mlir.constant(0 : i32) : i32
+    %27 = llvm.select %15, %26, %25 : i1, i32
+    %28 = llvm.call @nd_bv32() : () -> i32
+    %29 = llvm.call @nd_bv1() : () -> i1
+    %30 = llvm.select %29, %28, %6 : i1, i32
+    %31 = llvm.select %15, %26, %30 : i1, i32
+    %32 = llvm.mlir.constant(true) : i1
+    %33 = llvm.select %15, %32, %24 : i1, i1
+    %34 = llvm.select %15, %32, %29 : i1, i1
+    %35 = llvm.select %24, %23, %9 : i1, i32
+    %36 = llvm.select %15, %26, %35 : i1, i32
+    %37 = llvm.select %29, %28, %10 : i1, i32
+    %38 = llvm.select %15, %26, %37 : i1, i32
+    %39 = llvm.icmp "eq" %3, %4 : i64
+    %40 = llvm.mlir.constant(true) : i1
+    %41 = llvm.xor %39, %40  : i1
+    %42 = llvm.and %32, %41  : i1
+    %43 = llvm.mlir.constant(true) : i1
+    %44 = llvm.xor %42, %43  : i1
+    llvm.cond_br %44, ^bb2, ^bb3
+  ^bb2:  // pred: ^bb1
+    llvm.br ^bb1(%16, %22, %27, %31, %33, %34, %36, %38 : i64, i64, i32, i32, i1, i1, i32, i32)
+  ^bb3:  // pred: ^bb1
+    llvm.call @verifier.error() : () -> ()
+    llvm.unreachable
+  }
+}
+

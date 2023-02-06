@@ -1,0 +1,75 @@
+module attributes {llvm.data_layout = ""} {
+  llvm.func @verifier.error()
+  llvm.func @nd_bv10() -> i10
+  llvm.func @nd_bv1() -> i1
+  llvm.func @nd_bv128() -> i128
+  llvm.func @main() {
+    %0 = llvm.mlir.constant(false) : i1
+    %1 = llvm.mlir.constant(0 : i256) : i256
+    %2 = llvm.mlir.constant(0 : i128) : i128
+    %3 = llvm.mlir.constant(0 : i10) : i10
+    %4 = llvm.mlir.constant(true) : i1
+    llvm.br ^bb1(%0, %1, %1, %2, %2, %3, %4, %4, %2, %2 : i1, i256, i256, i128, i128, i10, i1, i1, i128, i128)
+  ^bb1(%5: i1, %6: i256, %7: i256, %8: i128, %9: i128, %10: i10, %11: i1, %12: i1, %13: i128, %14: i128):  // 2 preds: ^bb0, ^bb2
+    %15 = llvm.mlir.constant(true) : i1
+    %16 = llvm.zext %9 : i128 to i256
+    %17 = llvm.zext %8 : i128 to i256
+    %18 = llvm.mul %17, %16  : i256
+    %19 = llvm.mlir.constant(0 : i256) : i256
+    %20 = llvm.mlir.constant(true) : i1
+    %21 = llvm.xor %5, %20  : i1
+    %22 = llvm.select %21, %19, %18 : i1, i256
+    %23 = llvm.zext %14 : i128 to i256
+    %24 = llvm.zext %13 : i128 to i256
+    %25 = llvm.mul %24, %23  : i256
+    %26 = llvm.mlir.constant(1 : i32) : i32
+    %27 = llvm.zext %26 : i32 to i256
+    %28 = llvm.add %25, %27  : i256
+    %29 = llvm.mlir.constant(12245771 : i128) : i128
+    %30 = llvm.call @nd_bv128() : () -> i128
+    %31 = llvm.icmp "eq" %30, %29 : i128
+    %32 = llvm.mlir.constant(-559038737 : i128) : i128
+    %33 = llvm.call @nd_bv128() : () -> i128
+    %34 = llvm.icmp "eq" %33, %32 : i128
+    %35 = llvm.mlir.constant(1000 : i32) : i32
+    %36 = llvm.zext %10 : i10 to i32
+    %37 = llvm.icmp "ugt" %36, %35 : i32
+    %38 = llvm.and %37, %34  : i1
+    %39 = llvm.and %38, %31  : i1
+    %40 = llvm.select %39, %28, %25 : i1, i256
+    %41 = llvm.or %11, %12  : i1
+    %42 = llvm.select %41, %40, %7 : i1, i256
+    %43 = llvm.select %21, %19, %42 : i1, i256
+    %44 = llvm.call @nd_bv1() : () -> i1
+    %45 = llvm.select %44, %33, %8 : i1, i128
+    %46 = llvm.mlir.constant(0 : i128) : i128
+    %47 = llvm.select %21, %46, %45 : i1, i128
+    %48 = llvm.call @nd_bv1() : () -> i1
+    %49 = llvm.select %48, %30, %9 : i1, i128
+    %50 = llvm.select %21, %46, %49 : i1, i128
+    %51 = llvm.call @nd_bv10() : () -> i10
+    %52 = llvm.select %21, %51, %10 : i1, i10
+    %53 = llvm.select %21, %15, %44 : i1, i1
+    %54 = llvm.select %21, %15, %48 : i1, i1
+    %55 = llvm.select %44, %33, %13 : i1, i128
+    %56 = llvm.select %21, %46, %55 : i1, i128
+    %57 = llvm.select %48, %30, %14 : i1, i128
+    %58 = llvm.select %21, %46, %57 : i1, i128
+    %59 = llvm.icmp "eq" %6, %7 : i256
+    %60 = llvm.mlir.constant(true) : i1
+    %61 = llvm.xor %5, %60  : i1
+    %62 = llvm.or %61, %59  : i1
+    %63 = llvm.mlir.constant(true) : i1
+    %64 = llvm.xor %62, %63  : i1
+    %65 = llvm.and %15, %64  : i1
+    %66 = llvm.mlir.constant(true) : i1
+    %67 = llvm.xor %65, %66  : i1
+    llvm.cond_br %67, ^bb2, ^bb3
+  ^bb2:  // pred: ^bb1
+    llvm.br ^bb1(%15, %22, %43, %47, %50, %52, %53, %54, %56, %58 : i1, i256, i256, i128, i128, i10, i1, i1, i128, i128)
+  ^bb3:  // pred: ^bb1
+    llvm.call @verifier.error() : () -> ()
+    llvm.unreachable
+  }
+}
+

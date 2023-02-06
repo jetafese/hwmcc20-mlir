@@ -1,0 +1,40 @@
+module attributes {llvm.data_layout = ""} {
+  llvm.func @verifier.error()
+  llvm.func @main() {
+    %0 = llvm.mlir.constant(0 : i8) : i8
+    llvm.br ^bb1(%0, %0 : i8, i8)
+  ^bb1(%1: i8, %2: i8):  // 2 preds: ^bb0, ^bb2
+    %3 = llvm.mlir.constant(-1 : i8) : i8
+    %4 = llvm.icmp "ne" %2, %3 : i8
+    %5 = llvm.icmp "ugt" %1, %2 : i8
+    %6 = llvm.or %5, %4  : i1
+    %7 = llvm.select %6, %1, %2 : i1, i8
+    %8 = llvm.mlir.constant(1 : i8) : i8
+    %9 = llvm.add %1, %8  : i8
+    %10 = llvm.icmp "eq" %1, %2 : i8
+    %11 = llvm.select %10, %9, %7 : i1, i8
+    %12 = llvm.add %2, %8  : i8
+    %13 = llvm.icmp "ne" %2, %3 : i8
+    %14 = llvm.icmp "eq" %1, %2 : i8
+    %15 = llvm.or %14, %13  : i1
+    %16 = llvm.select %15, %12, %1 : i1, i8
+    %17 = llvm.icmp "ugt" %1, %2 : i8
+    %18 = llvm.select %17, %2, %16 : i1, i8
+    %19 = llvm.icmp "ugt" %1, %2 : i8
+    %20 = llvm.mlir.constant(true) : i1
+    %21 = llvm.xor %19, %20  : i1
+    %22 = llvm.mlir.constant(true) : i1
+    %23 = llvm.xor %21, %22  : i1
+    %24 = llvm.mlir.constant(true) : i1
+    %25 = llvm.and %24, %23  : i1
+    %26 = llvm.mlir.constant(true) : i1
+    %27 = llvm.xor %25, %26  : i1
+    llvm.cond_br %27, ^bb2, ^bb3
+  ^bb2:  // pred: ^bb1
+    llvm.br ^bb1(%11, %18 : i8, i8)
+  ^bb3:  // pred: ^bb1
+    llvm.call @verifier.error() : () -> ()
+    llvm.unreachable
+  }
+}
+
