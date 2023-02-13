@@ -49,7 +49,7 @@ define void @main() !dbg !3 {
 !1 = !DIFile(filename: "LLVMDialectModule", directory: "/")
 !2 = !{i32 2, !"Debug Info Version", i32 3}
 !3 = distinct !DISubprogram(name: "main", linkageName: "main", scope: null, file: !4, line: 3, type: !5, scopeLine: 3, spFlags: DISPFlagDefinition | DISPFlagOptimized, unit: !0, retainedNodes: !6)
-!4 = !DIFile(filename: "btor2mlir-1/hwmcc20/btor2/bv/2019/goel/paper_v3.btor2.mlir.opt", directory: "/home/jetafese")
+!4 = !DIFile(filename: "hwmc20-mlir/btor2/bv/2019/goel/paper_v3.btor2.mlir.opt", directory: "/home/jetafese")
 !5 = !DISubroutineType(types: !6)
 !6 = !{}
 !7 = !DILocation(line: 5, column: 5, scope: !8)

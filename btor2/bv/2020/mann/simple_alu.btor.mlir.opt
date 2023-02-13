@@ -1,43 +1,44 @@
 module attributes {llvm.data_layout = ""} {
   llvm.func @verifier.error()
   llvm.func @nd_bv16() -> i16
-  llvm.func @nd_bv1() -> i1
-  llvm.func @nd_bv4() -> i4
+  llvm.func @nd_bv8() -> i8
   llvm.func @main() {
     %0 = llvm.mlir.constant(0 : i16) : i16
     %1 = llvm.mlir.constant(true) : i1
-    %2 = llvm.call @nd_bv4() : () -> i4
-    llvm.br ^bb1(%2, %0, %1 : i4, i16, i1)
-  ^bb1(%3: i4, %4: i16, %5: i1):  // 2 preds: ^bb0, ^bb2
-    %6 = llvm.mlir.constant(0 : i4) : i4
-    %7 = llvm.select %5, %6, %3 : i1, i4
-    %8 = llvm.mlir.constant(true) : i1
-    %9 = llvm.zext %8 : i1 to i16
-    %10 = llvm.add %4, %9  : i16
-    %11 = llvm.mlir.constant(false) : i1
-    %12 = llvm.call @nd_bv1() : () -> i1
-    %13 = llvm.call @nd_bv16() : () -> i16
-    %14 = llvm.call @nd_bv16() : () -> i16
-    %15 = llvm.add %14, %13  : i16
-    %16 = llvm.sub %14, %13  : i16
-    %17 = llvm.bitcast %3 : i4 to vector<4xi1>
-    %18 = "llvm.intr.vector.reduce.or"(%17) : (vector<4xi1>) -> i1
-    %19 = llvm.mlir.constant(true) : i1
-    %20 = llvm.xor %18, %19  : i1
-    %21 = llvm.select %20, %15, %16 : i1, i16
-    %22 = llvm.icmp "eq" %21, %15 : i16
-    %23 = llvm.zext %11 : i1 to i16
-    %24 = llvm.icmp "ugt" %4, %23 : i16
-    %25 = llvm.select %24, %22, %12 : i1, i1
-    %26 = llvm.mlir.constant(true) : i1
-    %27 = llvm.xor %25, %26  : i1
-    %28 = llvm.select %24, %8, %11 : i1, i1
-    %29 = llvm.and %28, %27  : i1
-    %30 = llvm.mlir.constant(true) : i1
-    %31 = llvm.xor %29, %30  : i1
-    llvm.cond_br %31, ^bb2, ^bb3
+    %2 = llvm.call @nd_bv8() : () -> i8
+    %3 = llvm.trunc %2 : i8 to i4
+    llvm.br ^bb1(%3, %0, %1 : i4, i16, i1)
+  ^bb1(%4: i4, %5: i16, %6: i1):  // 2 preds: ^bb0, ^bb2
+    %7 = llvm.mlir.constant(0 : i4) : i4
+    %8 = llvm.select %6, %7, %4 : i1, i4
+    %9 = llvm.mlir.constant(true) : i1
+    %10 = llvm.zext %9 : i1 to i16
+    %11 = llvm.add %5, %10  : i16
+    %12 = llvm.mlir.constant(false) : i1
+    %13 = llvm.call @nd_bv8() : () -> i8
+    %14 = llvm.trunc %13 : i8 to i1
+    %15 = llvm.call @nd_bv16() : () -> i16
+    %16 = llvm.call @nd_bv16() : () -> i16
+    %17 = llvm.add %16, %15  : i16
+    %18 = llvm.sub %16, %15  : i16
+    %19 = llvm.bitcast %4 : i4 to vector<4xi1>
+    %20 = "llvm.intr.vector.reduce.or"(%19) : (vector<4xi1>) -> i1
+    %21 = llvm.mlir.constant(true) : i1
+    %22 = llvm.xor %20, %21  : i1
+    %23 = llvm.select %22, %17, %18 : i1, i16
+    %24 = llvm.icmp "eq" %23, %17 : i16
+    %25 = llvm.zext %12 : i1 to i16
+    %26 = llvm.icmp "ugt" %5, %25 : i16
+    %27 = llvm.select %26, %24, %14 : i1, i1
+    %28 = llvm.mlir.constant(true) : i1
+    %29 = llvm.xor %27, %28  : i1
+    %30 = llvm.select %26, %9, %12 : i1, i1
+    %31 = llvm.and %30, %29  : i1
+    %32 = llvm.mlir.constant(true) : i1
+    %33 = llvm.xor %31, %32  : i1
+    llvm.cond_br %33, ^bb2, ^bb3
   ^bb2:  // pred: ^bb1
-    llvm.br ^bb1(%7, %10, %11 : i4, i16, i1)
+    llvm.br ^bb1(%8, %11, %12 : i4, i16, i1)
   ^bb3:  // pred: ^bb1
     llvm.call @verifier.error() : () -> ()
     llvm.unreachable

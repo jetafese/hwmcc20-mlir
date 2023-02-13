@@ -1,91 +1,91 @@
-(declare-fun main@%_347_0 () Bool)
-(declare-fun main@%_336_0 () Bool)
-(declare-fun main@%_325_0 () Bool)
-(declare-fun main@%_314_0 () Bool)
-(declare-fun main@%_303_0 () Bool)
-(declare-fun main@%_292_0 () Bool)
-(declare-fun main@%_281_0 () Bool)
-(declare-fun main@%_270_0 () Bool)
-(declare-fun main@%_259_0 () Bool)
-(declare-fun main@%_193_0 () Bool)
-(declare-fun main@%_128_0 () Bool)
-(declare-fun main@%_138_0 () Bool)
-(declare-fun main@%_149_0 () Bool)
+(declare-fun main@%_367_0 () (_ BitVec 8))
+(declare-fun main@%_355_0 () (_ BitVec 8))
+(declare-fun main@%_343_0 () (_ BitVec 8))
+(declare-fun main@%_331_0 () (_ BitVec 8))
+(declare-fun main@%_319_0 () (_ BitVec 8))
+(declare-fun main@%_307_0 () (_ BitVec 8))
+(declare-fun main@%_295_0 () (_ BitVec 8))
+(declare-fun main@%_283_0 () (_ BitVec 8))
+(declare-fun main@%_271_0 () (_ BitVec 8))
 (declare-fun sea.sp0_0 () (_ BitVec 64))
-(declare-fun main@%_160_0 () Bool)
-(declare-fun main@%_171_0 () Bool)
-(declare-fun main@%_182_0 () Bool)
-(declare-fun main@%_204_0 () Bool)
-(declare-fun main@%_215_0 () Bool)
-(declare-fun main@%_226_0 () Bool)
-(declare-fun main@%_237_0 () Bool)
-(declare-fun main@%_248_0 () Bool)
+(declare-fun main@%_128_0 () (_ BitVec 8))
+(declare-fun main@%_139_0 () (_ BitVec 8))
+(declare-fun main@%_151_0 () (_ BitVec 8))
+(declare-fun main@%_163_0 () (_ BitVec 8))
+(declare-fun main@%_175_0 () (_ BitVec 8))
+(declare-fun main@%_187_0 () (_ BitVec 8))
+(declare-fun main@%_199_0 () (_ BitVec 8))
+(declare-fun main@%_211_0 () (_ BitVec 8))
+(declare-fun main@%_223_0 () (_ BitVec 8))
+(declare-fun main@%_235_0 () (_ BitVec 8))
+(declare-fun main@%_247_0 () (_ BitVec 8))
+(declare-fun main@%_259_0 () (_ BitVec 8))
 
 (assert (and (= #b000 ((_ extract 2 0) sea.sp0_0))
      (bvule sea.sp0_0 #x00000000c0000000)
      (bvuge sea.sp0_0 #x00000000bf700000)
      true
-     main@%_128_0
+     (= ((_ extract 0 0) main@%_128_0) #b1)
      true
      true
-     (xor main@%_138_0 true)
+     (xor (= ((_ extract 0 0) main@%_139_0) #b1) true)
      true
      true
-     (xor main@%_149_0 true)
+     (xor (= ((_ extract 0 0) main@%_151_0) #b1) true)
      true
      true
-     (xor main@%_160_0 true)
+     (xor (= ((_ extract 0 0) main@%_163_0) #b1) true)
      true
      true
-     (xor main@%_171_0 true)
+     (xor (= ((_ extract 0 0) main@%_175_0) #b1) true)
      true
      true
-     (xor main@%_182_0 true)
+     (xor (= ((_ extract 0 0) main@%_187_0) #b1) true)
      true
      true
-     (xor main@%_193_0 true)
+     (xor (= ((_ extract 0 0) main@%_199_0) #b1) true)
      true
      true
-     (xor main@%_204_0 true)
+     (xor (= ((_ extract 0 0) main@%_211_0) #b1) true)
      true
      true
-     (xor main@%_215_0 true)
+     (xor (= ((_ extract 0 0) main@%_223_0) #b1) true)
      true
      true
-     (xor main@%_226_0 true)
+     (xor (= ((_ extract 0 0) main@%_235_0) #b1) true)
      true
      true
-     (xor main@%_237_0 true)
+     (xor (= ((_ extract 0 0) main@%_247_0) #b1) true)
      true
      true
-     (xor main@%_248_0 true)
+     (xor (= ((_ extract 0 0) main@%_259_0) #b1) true)
      true
      true
-     (xor main@%_259_0 true)
+     (xor (= ((_ extract 0 0) main@%_271_0) #b1) true)
      true
      true
-     (xor main@%_270_0 true)
+     (xor (= ((_ extract 0 0) main@%_283_0) #b1) true)
      true
      true
-     (xor main@%_281_0 true)
+     (xor (= ((_ extract 0 0) main@%_295_0) #b1) true)
      true
      true
-     (xor main@%_292_0 true)
+     (xor (= ((_ extract 0 0) main@%_307_0) #b1) true)
      true
      true
-     (xor main@%_303_0 true)
+     (xor (= ((_ extract 0 0) main@%_319_0) #b1) true)
      true
      true
-     (xor main@%_314_0 true)
+     (xor (= ((_ extract 0 0) main@%_331_0) #b1) true)
      true
      true
-     (xor main@%_325_0 true)
+     (xor (= ((_ extract 0 0) main@%_343_0) #b1) true)
      true
      true
-     (xor main@%_336_0 true)
+     (xor (= ((_ extract 0 0) main@%_355_0) #b1) true)
      true
      true
-     (xor main@%_347_0 true)
+     (xor (= ((_ extract 0 0) main@%_367_0) #b1) true)
      true
      true
      false))

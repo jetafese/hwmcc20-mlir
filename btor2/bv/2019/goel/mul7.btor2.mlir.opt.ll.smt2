@@ -1,403 +1,391 @@
-(declare-fun main@%_361_0 () (_ BitVec 128))
-(declare-fun main@%_360_0 () (_ BitVec 128))
-(declare-fun main@%_342_0 () Bool)
-(declare-fun main@%_343_0 () Bool)
-(declare-fun main@%_341_0 () (_ BitVec 128))
-(declare-fun main@%_340_0 () (_ BitVec 128))
-(declare-fun main@%_330_0 () Bool)
-(declare-fun main@%_332_0 () Bool)
-(declare-fun main@%_322_0 () (_ BitVec 128))
-(declare-fun main@%_320_0 () (_ BitVec 128))
-(declare-fun main@%_310_0 () Bool)
-(declare-fun main@%_312_0 () Bool)
-(declare-fun main@%_302_0 () (_ BitVec 128))
-(declare-fun main@%_300_0 () (_ BitVec 128))
-(declare-fun main@%_290_0 () Bool)
-(declare-fun main@%_292_0 () Bool)
-(declare-fun main@%_282_0 () (_ BitVec 128))
-(declare-fun main@%_132_0 () Bool)
-(declare-fun main@%_120_0 () (_ BitVec 128))
-(declare-fun main@%_92_0 () Bool)
-(declare-fun main@%_80_0 () (_ BitVec 128))
-(declare-fun main@%_72_0 () Bool)
-(declare-fun main@%_122_0 () (_ BitVec 128))
-(declare-fun main@%_60_0 () (_ BitVec 128))
-(declare-fun main@%_50_0 () Bool)
-(declare-fun main@%_100_0 () (_ BitVec 128))
-(declare-fun sea.sp0_0 () (_ BitVec 64))
-(declare-fun main@%_112_0 () Bool)
-(declare-fun main@%_8_0 () (_ BitVec 128))
-(declare-fun main@%_240_0 () (_ BitVec 128))
-(declare-fun main@%_102_0 () (_ BitVec 128))
-(declare-fun main@%_40_0 () (_ BitVec 128))
-(declare-fun main@%_62_0 () (_ BitVec 128))
-(declare-fun main@%_6_0 () (_ BitVec 128))
-(declare-fun main@%_4_0 () (_ BitVec 10))
-(declare-fun main@%_162_0 () (_ BitVec 128))
-(declare-fun main@%_70_0 () Bool)
-(declare-fun main@%_14_0 () Bool)
-(declare-fun main@%_12_0 () Bool)
-(declare-fun main@%_252_0 () Bool)
-(declare-fun main@%_110_0 () Bool)
-(declare-fun main@%_52_0 () Bool)
-(declare-fun main@%_82_0 () (_ BitVec 128))
-(declare-fun main@%_21_0 () (_ BitVec 128))
-(declare-fun main@%_23_0 () (_ BitVec 128))
-(declare-fun main@%_260_0 () (_ BitVec 128))
-(declare-fun main@%_90_0 () Bool)
-(declare-fun main@%_33_0 () Bool)
-(declare-fun main@%_31_0 () Bool)
-(declare-fun main@%_272_0 () Bool)
-(declare-fun main@%_42_0 () (_ BitVec 128))
-(declare-fun main@%_280_0 () (_ BitVec 128))
-(declare-fun main@%_130_0 () Bool)
+(declare-fun main@%_415_0 () (_ BitVec 128))
+(declare-fun main@%_414_0 () (_ BitVec 128))
+(declare-fun main@%_394_0 () (_ BitVec 8))
+(declare-fun main@%_392_0 () (_ BitVec 128))
+(declare-fun main@%_391_0 () (_ BitVec 128))
+(declare-fun main@%_379_0 () (_ BitVec 8))
+(declare-fun main@%_382_0 () (_ BitVec 8))
+(declare-fun main@%_370_0 () (_ BitVec 128))
+(declare-fun main@%_368_0 () (_ BitVec 128))
+(declare-fun main@%_356_0 () (_ BitVec 8))
+(declare-fun main@%_359_0 () (_ BitVec 8))
+(declare-fun main@%_347_0 () (_ BitVec 128))
+(declare-fun main@%_345_0 () (_ BitVec 128))
+(declare-fun main@%_333_0 () (_ BitVec 8))
+(declare-fun main@%_336_0 () (_ BitVec 8))
+(declare-fun main@%_324_0 () (_ BitVec 128))
 (declare-fun main@%_140_0 () (_ BitVec 128))
-(declare-fun main@%_142_0 () (_ BitVec 128))
-(declare-fun main@%_152_0 () Bool)
-(declare-fun main@%_150_0 () Bool)
-(declare-fun main@%_160_0 () (_ BitVec 128))
-(declare-fun main@%_172_0 () Bool)
-(declare-fun main@%_170_0 () Bool)
-(declare-fun main@%_180_0 () (_ BitVec 128))
-(declare-fun main@%_182_0 () (_ BitVec 128))
-(declare-fun main@%_192_0 () Bool)
-(declare-fun main@%_190_0 () Bool)
-(declare-fun main@%_200_0 () (_ BitVec 128))
-(declare-fun main@%_202_0 () (_ BitVec 128))
-(declare-fun main@%_212_0 () Bool)
-(declare-fun main@%_210_0 () Bool)
-(declare-fun main@%_220_0 () (_ BitVec 128))
-(declare-fun main@%_222_0 () (_ BitVec 128))
-(declare-fun main@%_232_0 () Bool)
-(declare-fun main@%_230_0 () Bool)
-(declare-fun main@%_242_0 () (_ BitVec 128))
-(declare-fun main@%_250_0 () Bool)
-(declare-fun main@%_262_0 () (_ BitVec 128))
-(declare-fun main@%_270_0 () Bool)
+(declare-fun main@%_198_0 () (_ BitVec 8))
+(declare-fun main@%_117_0 () (_ BitVec 128))
+(declare-fun main@%_175_0 () (_ BitVec 8))
+(declare-fun main@%_152_0 () (_ BitVec 8))
+(declare-fun main@%_94_0 () (_ BitVec 128))
+(declare-fun main@%_103_0 () (_ BitVec 8))
+(declare-fun main@%_138_0 () (_ BitVec 128))
+(declare-fun main@%_129_0 () (_ BitVec 8))
+(declare-fun main@%_71_0 () (_ BitVec 128))
+(declare-fun main@%_80_0 () (_ BitVec 8))
+(declare-fun main@%_115_0 () (_ BitVec 128))
+(declare-fun main@%_106_0 () (_ BitVec 8))
+(declare-fun main@%_48_0 () (_ BitVec 128))
+(declare-fun main@%_57_0 () (_ BitVec 8))
+(declare-fun main@%_126_0 () (_ BitVec 8))
+(declare-fun main@%_393_0 () (_ BitVec 8))
+(declare-fun sea.sp0_0 () (_ BitVec 64))
+(declare-fun main@%_7_0 () (_ BitVec 128))
+(declare-fun main@%_4_0 () (_ BitVec 16))
+(declare-fun main@%_16_0 () (_ BitVec 8))
+(declare-fun main@%_24_0 () (_ BitVec 128))
+(declare-fun main@%_69_0 () (_ BitVec 128))
+(declare-fun main@%_26_0 () (_ BitVec 128))
+(declare-fun main@%_83_0 () (_ BitVec 8))
+(declare-fun main@%_38_0 () (_ BitVec 8))
+(declare-fun main@%_35_0 () (_ BitVec 8))
+(declare-fun main@%_9_0 () (_ BitVec 128))
+(declare-fun main@%_60_0 () (_ BitVec 8))
+(declare-fun main@%_46_0 () (_ BitVec 128))
+(declare-fun main@%_92_0 () (_ BitVec 128))
+(declare-fun main@%_13_0 () (_ BitVec 8))
+(declare-fun main@%_149_0 () (_ BitVec 8))
+(declare-fun main@%_161_0 () (_ BitVec 128))
+(declare-fun main@%_163_0 () (_ BitVec 128))
+(declare-fun main@%_221_0 () (_ BitVec 8))
+(declare-fun main@%_172_0 () (_ BitVec 8))
+(declare-fun main@%_184_0 () (_ BitVec 128))
+(declare-fun main@%_186_0 () (_ BitVec 128))
+(declare-fun main@%_244_0 () (_ BitVec 8))
+(declare-fun main@%_195_0 () (_ BitVec 8))
+(declare-fun main@%_207_0 () (_ BitVec 128))
+(declare-fun main@%_209_0 () (_ BitVec 128))
+(declare-fun main@%_267_0 () (_ BitVec 8))
+(declare-fun main@%_218_0 () (_ BitVec 8))
+(declare-fun main@%_230_0 () (_ BitVec 128))
+(declare-fun main@%_232_0 () (_ BitVec 128))
+(declare-fun main@%_290_0 () (_ BitVec 8))
+(declare-fun main@%_241_0 () (_ BitVec 8))
+(declare-fun main@%_253_0 () (_ BitVec 128))
+(declare-fun main@%_255_0 () (_ BitVec 128))
+(declare-fun main@%_313_0 () (_ BitVec 8))
+(declare-fun main@%_264_0 () (_ BitVec 8))
+(declare-fun main@%_276_0 () (_ BitVec 128))
+(declare-fun main@%_278_0 () (_ BitVec 128))
+(declare-fun main@%_287_0 () (_ BitVec 8))
+(declare-fun main@%_299_0 () (_ BitVec 128))
+(declare-fun main@%_301_0 () (_ BitVec 128))
+(declare-fun main@%_310_0 () (_ BitVec 8))
+(declare-fun main@%_322_0 () (_ BitVec 128))
 
-(assert (let ((a!1 (and (= main@%_6_0 #x00000000000000000000000000badb0b)
-                (bvugt main@%_4_0 #b1111101000)
-                (= main@%_8_0 #xffffffffffffffffffffffffdeadbeef)))
-      (a!2 (bvmul ((_ zero_extend 128)
-                    (ite main@%_14_0
-                         main@%_6_0
-                         #x00000000000000000000000000000000))
-                  ((_ zero_extend 128)
-                    (ite main@%_12_0
-                         main@%_8_0
-                         #x00000000000000000000000000000000))))
-      (a!4 (bvmul ((_ zero_extend 128)
-                    (ite main@%_33_0
-                         main@%_21_0
-                         (ite main@%_14_0
-                              main@%_6_0
-                              #x00000000000000000000000000000000)))
-                  ((_ zero_extend 128)
-                    (ite main@%_31_0
-                         main@%_23_0
-                         (ite main@%_12_0
-                              main@%_8_0
-                              #x00000000000000000000000000000000)))))
-      (a!7 (ite main@%_52_0
-                main@%_40_0
-                (ite main@%_33_0
-                     main@%_21_0
-                     (ite main@%_14_0
-                          main@%_6_0
-                          #x00000000000000000000000000000000))))
-      (a!8 (ite main@%_50_0
-                main@%_42_0
-                (ite main@%_31_0
-                     main@%_23_0
-                     (ite main@%_12_0
-                          main@%_8_0
-                          #x00000000000000000000000000000000)))))
-(let ((a!3 (bvadd a!2
-                  (ite (and (= main@%_21_0 #x00000000000000000000000000badb0b)
-                            (bvugt main@%_4_0 #b1111101000)
-                            (= main@%_23_0 #xffffffffffffffffffffffffdeadbeef))
-                       #x0000000000000000000000000000000000000000000000000000000000000001
-                       #x0000000000000000000000000000000000000000000000000000000000000000)))
-      (a!5 (bvadd a!4
-                  (ite (and (= main@%_40_0 #x00000000000000000000000000badb0b)
-                            (bvugt main@%_4_0 #b1111101000)
-                            (= main@%_42_0 #xffffffffffffffffffffffffdeadbeef))
-                       #x0000000000000000000000000000000000000000000000000000000000000001
-                       #x0000000000000000000000000000000000000000000000000000000000000000)))
-      (a!9 (bvadd (bvmul ((_ zero_extend 128) a!7) ((_ zero_extend 128) a!8))
-                  (ite (and (= main@%_60_0 #x00000000000000000000000000badb0b)
-                            (bvugt main@%_4_0 #b1111101000)
-                            (= main@%_62_0 #xffffffffffffffffffffffffdeadbeef))
-                       #x0000000000000000000000000000000000000000000000000000000000000001
-                       #x0000000000000000000000000000000000000000000000000000000000000000)))
-      (a!10 (bvmul ((_ zero_extend 128) (ite main@%_72_0 main@%_60_0 a!7))
-                   ((_ zero_extend 128) (ite main@%_70_0 main@%_62_0 a!8))))
-      (a!13 (bvmul ((_ zero_extend 128)
-                     (ite main@%_92_0
-                          main@%_80_0
-                          (ite main@%_72_0 main@%_60_0 a!7)))
-                   ((_ zero_extend 128)
-                     (ite main@%_90_0
-                          main@%_82_0
-                          (ite main@%_70_0 main@%_62_0 a!8)))))
-      (a!15 (ite main@%_112_0
-                 main@%_100_0
-                 (ite main@%_92_0 main@%_80_0 (ite main@%_72_0 main@%_60_0 a!7))))
-      (a!16 (ite main@%_110_0
-                 main@%_102_0
-                 (ite main@%_90_0 main@%_82_0 (ite main@%_70_0 main@%_62_0 a!8)))))
-(let ((a!6 (ite (or main@%_31_0 main@%_33_0)
-                a!5
-                (ite (or main@%_12_0 main@%_14_0)
-                     a!3
-                     (ite a!1
-                          #x0000000000000000000000000000000000000000000000000000000000000001
-                          #x0000000000000000000000000000000000000000000000000000000000000000))))
-      (a!11 (bvadd a!10
-                   (ite (and (= main@%_80_0 #x00000000000000000000000000badb0b)
-                             (bvugt main@%_4_0 #b1111101000)
-                             (= main@%_82_0 #xffffffffffffffffffffffffdeadbeef))
-                        #x0000000000000000000000000000000000000000000000000000000000000001
-                        #x0000000000000000000000000000000000000000000000000000000000000000)))
-      (a!14 (bvadd a!13
-                   (ite (and (= main@%_100_0 #x00000000000000000000000000badb0b)
-                             (bvugt main@%_4_0 #b1111101000)
-                             (= main@%_102_0 #xffffffffffffffffffffffffdeadbeef))
-                        #x0000000000000000000000000000000000000000000000000000000000000001
-                        #x0000000000000000000000000000000000000000000000000000000000000000)))
-      (a!17 (bvadd (bvmul ((_ zero_extend 128) a!15) ((_ zero_extend 128) a!16))
-                   (ite (and (= main@%_120_0 #x00000000000000000000000000badb0b)
-                             (bvugt main@%_4_0 #b1111101000)
-                             (= main@%_122_0 #xffffffffffffffffffffffffdeadbeef))
-                        #x0000000000000000000000000000000000000000000000000000000000000001
-                        #x0000000000000000000000000000000000000000000000000000000000000000)))
-      (a!19 (bvmul ((_ zero_extend 128) (ite main@%_132_0 main@%_120_0 a!15))
-                   ((_ zero_extend 128) (ite main@%_130_0 main@%_122_0 a!16))))
-      (a!21 (bvmul ((_ zero_extend 128)
-                     (ite main@%_152_0
-                          main@%_140_0
-                          (ite main@%_132_0 main@%_120_0 a!15)))
-                   ((_ zero_extend 128)
-                     (ite main@%_150_0
-                          main@%_142_0
-                          (ite main@%_130_0 main@%_122_0 a!16)))))
-      (a!24 (ite main@%_172_0
-                 main@%_160_0
-                 (ite main@%_152_0
-                      main@%_140_0
-                      (ite main@%_132_0 main@%_120_0 a!15))))
-      (a!25 (ite main@%_170_0
-                 main@%_162_0
-                 (ite main@%_150_0
-                      main@%_142_0
-                      (ite main@%_130_0 main@%_122_0 a!16)))))
-(let ((a!12 (ite (or main@%_70_0 main@%_72_0)
-                 a!11
-                 (ite (or main@%_50_0 main@%_52_0) a!9 a!6)))
-      (a!20 (bvadd a!19
-                   (ite (and (= main@%_140_0 #x00000000000000000000000000badb0b)
-                             (bvugt main@%_4_0 #b1111101000)
-                             (= main@%_142_0 #xffffffffffffffffffffffffdeadbeef))
-                        #x0000000000000000000000000000000000000000000000000000000000000001
-                        #x0000000000000000000000000000000000000000000000000000000000000000)))
-      (a!22 (bvadd a!21
-                   (ite (and (= main@%_160_0 #x00000000000000000000000000badb0b)
-                             (bvugt main@%_4_0 #b1111101000)
-                             (= main@%_162_0 #xffffffffffffffffffffffffdeadbeef))
-                        #x0000000000000000000000000000000000000000000000000000000000000001
-                        #x0000000000000000000000000000000000000000000000000000000000000000)))
-      (a!26 (bvadd (bvmul ((_ zero_extend 128) a!24) ((_ zero_extend 128) a!25))
-                   (ite (and (= main@%_180_0 #x00000000000000000000000000badb0b)
-                             (bvugt main@%_4_0 #b1111101000)
-                             (= main@%_182_0 #xffffffffffffffffffffffffdeadbeef))
-                        #x0000000000000000000000000000000000000000000000000000000000000001
-                        #x0000000000000000000000000000000000000000000000000000000000000000)))
-      (a!27 (bvmul ((_ zero_extend 128) (ite main@%_192_0 main@%_180_0 a!24))
-                   ((_ zero_extend 128) (ite main@%_190_0 main@%_182_0 a!25))))
-      (a!30 (bvmul ((_ zero_extend 128)
-                     (ite main@%_212_0
-                          main@%_200_0
-                          (ite main@%_192_0 main@%_180_0 a!24)))
-                   ((_ zero_extend 128)
-                     (ite main@%_210_0
-                          main@%_202_0
-                          (ite main@%_190_0 main@%_182_0 a!25)))))
-      (a!32 (ite main@%_232_0
-                 main@%_220_0
-                 (ite main@%_212_0
-                      main@%_200_0
-                      (ite main@%_192_0 main@%_180_0 a!24))))
-      (a!33 (ite main@%_230_0
-                 main@%_222_0
-                 (ite main@%_210_0
-                      main@%_202_0
-                      (ite main@%_190_0 main@%_182_0 a!25)))))
-(let ((a!18 (ite (or main@%_110_0 main@%_112_0)
-                 a!17
-                 (ite (or main@%_90_0 main@%_92_0) a!14 a!12)))
-      (a!28 (bvadd a!27
-                   (ite (and (= main@%_200_0 #x00000000000000000000000000badb0b)
-                             (bvugt main@%_4_0 #b1111101000)
-                             (= main@%_202_0 #xffffffffffffffffffffffffdeadbeef))
-                        #x0000000000000000000000000000000000000000000000000000000000000001
-                        #x0000000000000000000000000000000000000000000000000000000000000000)))
-      (a!31 (bvadd a!30
-                   (ite (and (= main@%_220_0 #x00000000000000000000000000badb0b)
-                             (bvugt main@%_4_0 #b1111101000)
-                             (= main@%_222_0 #xffffffffffffffffffffffffdeadbeef))
-                        #x0000000000000000000000000000000000000000000000000000000000000001
-                        #x0000000000000000000000000000000000000000000000000000000000000000)))
-      (a!34 (bvadd (bvmul ((_ zero_extend 128) a!32) ((_ zero_extend 128) a!33))
-                   (ite (and (= main@%_240_0 #x00000000000000000000000000badb0b)
-                             (bvugt main@%_4_0 #b1111101000)
-                             (= main@%_242_0 #xffffffffffffffffffffffffdeadbeef))
-                        #x0000000000000000000000000000000000000000000000000000000000000001
-                        #x0000000000000000000000000000000000000000000000000000000000000000)))
-      (a!36 (bvmul ((_ zero_extend 128) (ite main@%_252_0 main@%_240_0 a!32))
-                   ((_ zero_extend 128) (ite main@%_250_0 main@%_242_0 a!33))))
-      (a!38 (bvmul ((_ zero_extend 128)
-                     (ite main@%_272_0
-                          main@%_260_0
-                          (ite main@%_252_0 main@%_240_0 a!32)))
-                   ((_ zero_extend 128)
-                     (ite main@%_270_0
-                          main@%_262_0
-                          (ite main@%_250_0 main@%_242_0 a!33)))))
-      (a!41 (ite main@%_292_0
-                 main@%_280_0
-                 (ite main@%_272_0
-                      main@%_260_0
-                      (ite main@%_252_0 main@%_240_0 a!32))))
-      (a!42 (ite main@%_290_0
-                 main@%_282_0
-                 (ite main@%_270_0
-                      main@%_262_0
-                      (ite main@%_250_0 main@%_242_0 a!33)))))
-(let ((a!23 (ite (or main@%_150_0 main@%_152_0)
-                 a!22
-                 (ite (or main@%_130_0 main@%_132_0) a!20 a!18)))
-      (a!37 (bvadd a!36
-                   (ite (and (= main@%_260_0 #x00000000000000000000000000badb0b)
-                             (bvugt main@%_4_0 #b1111101000)
-                             (= main@%_262_0 #xffffffffffffffffffffffffdeadbeef))
-                        #x0000000000000000000000000000000000000000000000000000000000000001
-                        #x0000000000000000000000000000000000000000000000000000000000000000)))
-      (a!39 (bvadd a!38
-                   (ite (and (= main@%_280_0 #x00000000000000000000000000badb0b)
-                             (bvugt main@%_4_0 #b1111101000)
-                             (= main@%_282_0 #xffffffffffffffffffffffffdeadbeef))
-                        #x0000000000000000000000000000000000000000000000000000000000000001
-                        #x0000000000000000000000000000000000000000000000000000000000000000)))
-      (a!43 (bvadd (bvmul ((_ zero_extend 128) a!41) ((_ zero_extend 128) a!42))
-                   (ite (and (= main@%_300_0 #x00000000000000000000000000badb0b)
-                             (bvugt main@%_4_0 #b1111101000)
-                             (= main@%_302_0 #xffffffffffffffffffffffffdeadbeef))
-                        #x0000000000000000000000000000000000000000000000000000000000000001
-                        #x0000000000000000000000000000000000000000000000000000000000000000)))
-      (a!44 (bvmul ((_ zero_extend 128) (ite main@%_312_0 main@%_300_0 a!41))
-                   ((_ zero_extend 128) (ite main@%_310_0 main@%_302_0 a!42))))
-      (a!47 (bvmul ((_ zero_extend 128)
-                     (ite main@%_332_0
-                          main@%_320_0
-                          (ite main@%_312_0 main@%_300_0 a!41)))
-                   ((_ zero_extend 128)
-                     (ite main@%_330_0
-                          main@%_322_0
-                          (ite main@%_310_0 main@%_302_0 a!42)))))
-      (a!49 ((_ zero_extend 128)
-              (ite main@%_343_0
-                   main@%_340_0
-                   (ite main@%_332_0
-                        main@%_320_0
-                        (ite main@%_312_0 main@%_300_0 a!41)))))
+(assert (let ((a!1 (and (= main@%_7_0 #x00000000000000000000000000badb0b)
+                (bvugt ((_ extract 9 0) main@%_4_0) #b1111101000)
+                (= main@%_9_0 #xffffffffffffffffffffffffdeadbeef)))
+      (a!2 ((_ zero_extend 128)
+             (ite (= ((_ extract 0 0) main@%_16_0) #b1)
+                  main@%_7_0
+                  #x00000000000000000000000000000000)))
+      (a!3 ((_ zero_extend 128)
+             (ite (= ((_ extract 0 0) main@%_13_0) #b1)
+                  main@%_9_0
+                  #x00000000000000000000000000000000)))
+      (a!4 (ite (and (= main@%_24_0 #x00000000000000000000000000badb0b)
+                     (bvugt ((_ extract 9 0) main@%_4_0) #b1111101000)
+                     (= main@%_26_0 #xffffffffffffffffffffffffdeadbeef))
+                #x0000000000000000000000000000000000000000000000000000000000000001
+                #x0000000000000000000000000000000000000000000000000000000000000000))
+      (a!6 (ite (= ((_ extract 0 0) main@%_38_0) #b1)
+                main@%_24_0
+                (ite (= ((_ extract 0 0) main@%_16_0) #b1)
+                     main@%_7_0
+                     #x00000000000000000000000000000000)))
+      (a!7 (ite (= ((_ extract 0 0) main@%_35_0) #b1)
+                main@%_26_0
+                (ite (= ((_ extract 0 0) main@%_13_0) #b1)
+                     main@%_9_0
+                     #x00000000000000000000000000000000)))
+      (a!8 (ite (and (= main@%_46_0 #x00000000000000000000000000badb0b)
+                     (bvugt ((_ extract 9 0) main@%_4_0) #b1111101000)
+                     (= main@%_48_0 #xffffffffffffffffffffffffdeadbeef))
+                #x0000000000000000000000000000000000000000000000000000000000000001
+                #x0000000000000000000000000000000000000000000000000000000000000000))
+      (a!12 (ite (and (= main@%_69_0 #x00000000000000000000000000badb0b)
+                      (bvugt ((_ extract 9 0) main@%_4_0) #b1111101000)
+                      (= main@%_71_0 #xffffffffffffffffffffffffdeadbeef))
+                 #x0000000000000000000000000000000000000000000000000000000000000001
+                 #x0000000000000000000000000000000000000000000000000000000000000000))
+      (a!16 (ite (and (= main@%_92_0 #x00000000000000000000000000badb0b)
+                      (bvugt ((_ extract 9 0) main@%_4_0) #b1111101000)
+                      (= main@%_94_0 #xffffffffffffffffffffffffdeadbeef))
+                 #x0000000000000000000000000000000000000000000000000000000000000001
+                 #x0000000000000000000000000000000000000000000000000000000000000000))
+      (a!20 (ite (and (= main@%_115_0 #x00000000000000000000000000badb0b)
+                      (bvugt ((_ extract 9 0) main@%_4_0) #b1111101000)
+                      (= main@%_117_0 #xffffffffffffffffffffffffdeadbeef))
+                 #x0000000000000000000000000000000000000000000000000000000000000001
+                 #x0000000000000000000000000000000000000000000000000000000000000000))
+      (a!24 (ite (and (= main@%_138_0 #x00000000000000000000000000badb0b)
+                      (bvugt ((_ extract 9 0) main@%_4_0) #b1111101000)
+                      (= main@%_140_0 #xffffffffffffffffffffffffdeadbeef))
+                 #x0000000000000000000000000000000000000000000000000000000000000001
+                 #x0000000000000000000000000000000000000000000000000000000000000000))
+      (a!28 (ite (and (= main@%_161_0 #x00000000000000000000000000badb0b)
+                      (bvugt ((_ extract 9 0) main@%_4_0) #b1111101000)
+                      (= main@%_163_0 #xffffffffffffffffffffffffdeadbeef))
+                 #x0000000000000000000000000000000000000000000000000000000000000001
+                 #x0000000000000000000000000000000000000000000000000000000000000000))
+      (a!32 (ite (and (= main@%_184_0 #x00000000000000000000000000badb0b)
+                      (bvugt ((_ extract 9 0) main@%_4_0) #b1111101000)
+                      (= main@%_186_0 #xffffffffffffffffffffffffdeadbeef))
+                 #x0000000000000000000000000000000000000000000000000000000000000001
+                 #x0000000000000000000000000000000000000000000000000000000000000000))
+      (a!36 (ite (and (= main@%_207_0 #x00000000000000000000000000badb0b)
+                      (bvugt ((_ extract 9 0) main@%_4_0) #b1111101000)
+                      (= main@%_209_0 #xffffffffffffffffffffffffdeadbeef))
+                 #x0000000000000000000000000000000000000000000000000000000000000001
+                 #x0000000000000000000000000000000000000000000000000000000000000000))
+      (a!40 (ite (and (= main@%_230_0 #x00000000000000000000000000badb0b)
+                      (bvugt ((_ extract 9 0) main@%_4_0) #b1111101000)
+                      (= main@%_232_0 #xffffffffffffffffffffffffdeadbeef))
+                 #x0000000000000000000000000000000000000000000000000000000000000001
+                 #x0000000000000000000000000000000000000000000000000000000000000000))
+      (a!44 (ite (and (= main@%_253_0 #x00000000000000000000000000badb0b)
+                      (bvugt ((_ extract 9 0) main@%_4_0) #b1111101000)
+                      (= main@%_255_0 #xffffffffffffffffffffffffdeadbeef))
+                 #x0000000000000000000000000000000000000000000000000000000000000001
+                 #x0000000000000000000000000000000000000000000000000000000000000000))
+      (a!48 (ite (and (= main@%_276_0 #x00000000000000000000000000badb0b)
+                      (bvugt ((_ extract 9 0) main@%_4_0) #b1111101000)
+                      (= main@%_278_0 #xffffffffffffffffffffffffdeadbeef))
+                 #x0000000000000000000000000000000000000000000000000000000000000001
+                 #x0000000000000000000000000000000000000000000000000000000000000000))
+      (a!52 (ite (and (= main@%_299_0 #x00000000000000000000000000badb0b)
+                      (bvugt ((_ extract 9 0) main@%_4_0) #b1111101000)
+                      (= main@%_301_0 #xffffffffffffffffffffffffdeadbeef))
+                 #x0000000000000000000000000000000000000000000000000000000000000001
+                 #x0000000000000000000000000000000000000000000000000000000000000000))
+      (a!56 (ite (and (= main@%_322_0 #x00000000000000000000000000badb0b)
+                      (bvugt ((_ extract 9 0) main@%_4_0) #b1111101000)
+                      (= main@%_324_0 #xffffffffffffffffffffffffdeadbeef))
+                 #x0000000000000000000000000000000000000000000000000000000000000001
+                 #x0000000000000000000000000000000000000000000000000000000000000000))
+      (a!60 (ite (and (= main@%_345_0 #x00000000000000000000000000badb0b)
+                      (bvugt ((_ extract 9 0) main@%_4_0) #b1111101000)
+                      (= main@%_347_0 #xffffffffffffffffffffffffdeadbeef))
+                 #x0000000000000000000000000000000000000000000000000000000000000001
+                 #x0000000000000000000000000000000000000000000000000000000000000000))
+      (a!64 (ite (and (= main@%_368_0 #x00000000000000000000000000badb0b)
+                      (bvugt ((_ extract 9 0) main@%_4_0) #b1111101000)
+                      (= main@%_370_0 #xffffffffffffffffffffffffdeadbeef))
+                 #x0000000000000000000000000000000000000000000000000000000000000001
+                 #x0000000000000000000000000000000000000000000000000000000000000000))
+      (a!68 (ite (and (= main@%_391_0 #x00000000000000000000000000badb0b)
+                      (bvugt ((_ extract 9 0) main@%_4_0) #b1111101000)
+                      (= main@%_392_0 #xffffffffffffffffffffffffdeadbeef))
+                 #x0000000000000000000000000000000000000000000000000000000000000001
+                 #x0000000000000000000000000000000000000000000000000000000000000000))
+      (a!72 (ite (and (= main@%_414_0 #x00000000000000000000000000badb0b)
+                      (bvugt ((_ extract 9 0) main@%_4_0) #b1111101000)
+                      (= main@%_415_0 #xffffffffffffffffffffffffdeadbeef))
+                 #x0000000000000000000000000000000000000000000000000000000000000001
+                 #x0000000000000000000000000000000000000000000000000000000000000000)))
+(let ((a!5 (ite (= ((_ extract 0 0) (bvor main@%_16_0 main@%_13_0)) #b1)
+                (bvadd (bvmul a!2 a!3) a!4)
+                (ite a!1
+                     #x0000000000000000000000000000000000000000000000000000000000000001
+                     #x0000000000000000000000000000000000000000000000000000000000000000)))
+      (a!10 ((_ zero_extend 128)
+              (ite (= ((_ extract 0 0) main@%_60_0) #b1) main@%_46_0 a!6)))
+      (a!11 ((_ zero_extend 128)
+              (ite (= ((_ extract 0 0) main@%_57_0) #b1) main@%_48_0 a!7)))
+      (a!14 (ite (= ((_ extract 0 0) main@%_83_0) #b1)
+                 main@%_69_0
+                 (ite (= ((_ extract 0 0) main@%_60_0) #b1) main@%_46_0 a!6)))
+      (a!15 (ite (= ((_ extract 0 0) main@%_80_0) #b1)
+                 main@%_71_0
+                 (ite (= ((_ extract 0 0) main@%_57_0) #b1) main@%_48_0 a!7))))
+(let ((a!9 (ite (= ((_ extract 0 0) (bvor main@%_38_0 main@%_35_0)) #b1)
+                (bvadd (bvmul ((_ zero_extend 128) a!6)
+                              ((_ zero_extend 128) a!7))
+                       a!8)
+                a!5))
+      (a!18 ((_ zero_extend 128)
+              (ite (= ((_ extract 0 0) main@%_106_0) #b1) main@%_92_0 a!14)))
+      (a!19 ((_ zero_extend 128)
+              (ite (= ((_ extract 0 0) main@%_103_0) #b1) main@%_94_0 a!15)))
+      (a!22 (ite (= ((_ extract 0 0) main@%_129_0) #b1)
+                 main@%_115_0
+                 (ite (= ((_ extract 0 0) main@%_106_0) #b1) main@%_92_0 a!14)))
+      (a!23 (ite (= ((_ extract 0 0) main@%_126_0) #b1)
+                 main@%_117_0
+                 (ite (= ((_ extract 0 0) main@%_103_0) #b1) main@%_94_0 a!15))))
+(let ((a!13 (ite (= ((_ extract 0 0) (bvor main@%_60_0 main@%_57_0)) #b1)
+                 (bvadd (bvmul a!10 a!11) a!12)
+                 a!9))
+      (a!26 ((_ zero_extend 128)
+              (ite (= ((_ extract 0 0) main@%_152_0) #b1) main@%_138_0 a!22)))
+      (a!27 ((_ zero_extend 128)
+              (ite (= ((_ extract 0 0) main@%_149_0) #b1) main@%_140_0 a!23)))
+      (a!30 (ite (= ((_ extract 0 0) main@%_175_0) #b1)
+                 main@%_161_0
+                 (ite (= ((_ extract 0 0) main@%_152_0) #b1) main@%_138_0 a!22)))
+      (a!31 (ite (= ((_ extract 0 0) main@%_172_0) #b1)
+                 main@%_163_0
+                 (ite (= ((_ extract 0 0) main@%_149_0) #b1) main@%_140_0 a!23))))
+(let ((a!17 (ite (= ((_ extract 0 0) (bvor main@%_83_0 main@%_80_0)) #b1)
+                 (bvadd (bvmul ((_ zero_extend 128) a!14)
+                               ((_ zero_extend 128) a!15))
+                        a!16)
+                 a!13))
+      (a!34 ((_ zero_extend 128)
+              (ite (= ((_ extract 0 0) main@%_198_0) #b1) main@%_184_0 a!30)))
+      (a!35 ((_ zero_extend 128)
+              (ite (= ((_ extract 0 0) main@%_195_0) #b1) main@%_186_0 a!31)))
+      (a!38 (ite (= ((_ extract 0 0) main@%_221_0) #b1)
+                 main@%_207_0
+                 (ite (= ((_ extract 0 0) main@%_198_0) #b1) main@%_184_0 a!30)))
+      (a!39 (ite (= ((_ extract 0 0) main@%_218_0) #b1)
+                 main@%_209_0
+                 (ite (= ((_ extract 0 0) main@%_195_0) #b1) main@%_186_0 a!31))))
+(let ((a!21 (ite (= ((_ extract 0 0) (bvor main@%_106_0 main@%_103_0)) #b1)
+                 (bvadd (bvmul a!18 a!19) a!20)
+                 a!17))
+      (a!42 ((_ zero_extend 128)
+              (ite (= ((_ extract 0 0) main@%_244_0) #b1) main@%_230_0 a!38)))
+      (a!43 ((_ zero_extend 128)
+              (ite (= ((_ extract 0 0) main@%_241_0) #b1) main@%_232_0 a!39)))
+      (a!46 (ite (= ((_ extract 0 0) main@%_267_0) #b1)
+                 main@%_253_0
+                 (ite (= ((_ extract 0 0) main@%_244_0) #b1) main@%_230_0 a!38)))
+      (a!47 (ite (= ((_ extract 0 0) main@%_264_0) #b1)
+                 main@%_255_0
+                 (ite (= ((_ extract 0 0) main@%_241_0) #b1) main@%_232_0 a!39))))
+(let ((a!25 (ite (= ((_ extract 0 0) (bvor main@%_129_0 main@%_126_0)) #b1)
+                 (bvadd (bvmul ((_ zero_extend 128) a!22)
+                               ((_ zero_extend 128) a!23))
+                        a!24)
+                 a!21))
       (a!50 ((_ zero_extend 128)
-              (ite main@%_342_0
-                   main@%_341_0
-                   (ite main@%_330_0
-                        main@%_322_0
-                        (ite main@%_310_0 main@%_302_0 a!42))))))
-(let ((a!29 (ite (or main@%_190_0 main@%_192_0)
-                 a!28
-                 (ite (or main@%_170_0 main@%_172_0) a!26 a!23)))
-      (a!45 (bvadd a!44
-                   (ite (and (= main@%_320_0 #x00000000000000000000000000badb0b)
-                             (bvugt main@%_4_0 #b1111101000)
-                             (= main@%_322_0 #xffffffffffffffffffffffffdeadbeef))
-                        #x0000000000000000000000000000000000000000000000000000000000000001
-                        #x0000000000000000000000000000000000000000000000000000000000000000)))
-      (a!48 (bvadd a!47
-                   (ite (and (= main@%_340_0 #x00000000000000000000000000badb0b)
-                             (bvugt main@%_4_0 #b1111101000)
-                             (= main@%_341_0 #xffffffffffffffffffffffffdeadbeef))
-                        #x0000000000000000000000000000000000000000000000000000000000000001
-                        #x0000000000000000000000000000000000000000000000000000000000000000)))
-      (a!51 (bvadd (bvmul a!49 a!50)
-                   (ite (and (= main@%_360_0 #x00000000000000000000000000badb0b)
-                             (bvugt main@%_4_0 #b1111101000)
-                             (= main@%_361_0 #xffffffffffffffffffffffffdeadbeef))
-                        #x0000000000000000000000000000000000000000000000000000000000000001
-                        #x0000000000000000000000000000000000000000000000000000000000000000))))
-(let ((a!35 (ite (or main@%_230_0 main@%_232_0)
-                 a!34
-                 (ite (or main@%_210_0 main@%_212_0) a!31 a!29)))
-      (a!52 (xor (= (bvmul a!49 a!50)
-                    (ite (or main@%_342_0 main@%_343_0) a!51 a!47))
+              (ite (= ((_ extract 0 0) main@%_290_0) #b1) main@%_276_0 a!46)))
+      (a!51 ((_ zero_extend 128)
+              (ite (= ((_ extract 0 0) main@%_287_0) #b1) main@%_278_0 a!47)))
+      (a!54 (ite (= ((_ extract 0 0) main@%_313_0) #b1)
+                 main@%_299_0
+                 (ite (= ((_ extract 0 0) main@%_290_0) #b1) main@%_276_0 a!46)))
+      (a!55 (ite (= ((_ extract 0 0) main@%_310_0) #b1)
+                 main@%_301_0
+                 (ite (= ((_ extract 0 0) main@%_287_0) #b1) main@%_278_0 a!47))))
+(let ((a!29 (ite (= ((_ extract 0 0) (bvor main@%_152_0 main@%_149_0)) #b1)
+                 (bvadd (bvmul a!26 a!27) a!28)
+                 a!25))
+      (a!58 ((_ zero_extend 128)
+              (ite (= ((_ extract 0 0) main@%_336_0) #b1) main@%_322_0 a!54)))
+      (a!59 ((_ zero_extend 128)
+              (ite (= ((_ extract 0 0) main@%_333_0) #b1) main@%_324_0 a!55)))
+      (a!62 (ite (= ((_ extract 0 0) main@%_359_0) #b1)
+                 main@%_345_0
+                 (ite (= ((_ extract 0 0) main@%_336_0) #b1) main@%_322_0 a!54)))
+      (a!63 (ite (= ((_ extract 0 0) main@%_356_0) #b1)
+                 main@%_347_0
+                 (ite (= ((_ extract 0 0) main@%_333_0) #b1) main@%_324_0 a!55))))
+(let ((a!33 (ite (= ((_ extract 0 0) (bvor main@%_175_0 main@%_172_0)) #b1)
+                 (bvadd (bvmul ((_ zero_extend 128) a!30)
+                               ((_ zero_extend 128) a!31))
+                        a!32)
+                 a!29))
+      (a!66 ((_ zero_extend 128)
+              (ite (= ((_ extract 0 0) main@%_382_0) #b1) main@%_368_0 a!62)))
+      (a!67 ((_ zero_extend 128)
+              (ite (= ((_ extract 0 0) main@%_379_0) #b1) main@%_370_0 a!63)))
+      (a!70 (ite (= ((_ extract 0 0) main@%_394_0) #b1)
+                 main@%_391_0
+                 (ite (= ((_ extract 0 0) main@%_382_0) #b1) main@%_368_0 a!62)))
+      (a!71 (ite (= ((_ extract 0 0) main@%_393_0) #b1)
+                 main@%_392_0
+                 (ite (= ((_ extract 0 0) main@%_379_0) #b1) main@%_370_0 a!63))))
+(let ((a!37 (ite (= ((_ extract 0 0) (bvor main@%_198_0 main@%_195_0)) #b1)
+                 (bvadd (bvmul a!34 a!35) a!36)
+                 a!33))
+      (a!73 (ite (= ((_ extract 0 0) (bvor main@%_394_0 main@%_393_0)) #b1)
+                 (bvadd (bvmul ((_ zero_extend 128) a!70)
+                               ((_ zero_extend 128) a!71))
+                        a!72)
+                 (bvmul a!66 a!67))))
+(let ((a!41 (ite (= ((_ extract 0 0) (bvor main@%_221_0 main@%_218_0)) #b1)
+                 (bvadd (bvmul ((_ zero_extend 128) a!38)
+                               ((_ zero_extend 128) a!39))
+                        a!40)
+                 a!37))
+      (a!74 (xor (= (bvmul ((_ zero_extend 128) a!70)
+                           ((_ zero_extend 128) a!71))
+                    a!73)
                  true)))
-(let ((a!40 (ite (or main@%_270_0 main@%_272_0)
-                 a!39
-                 (ite (or main@%_250_0 main@%_252_0) a!37 a!35))))
-(let ((a!46 (ite (or main@%_310_0 main@%_312_0)
-                 a!45
-                 (ite (or main@%_290_0 main@%_292_0) a!43 a!40))))
-(let ((a!53 (ite (= a!47 (ite (or main@%_330_0 main@%_332_0) a!48 a!46))
-                 (and true a!52)
+(let ((a!45 (ite (= ((_ extract 0 0) (bvor main@%_244_0 main@%_241_0)) #b1)
+                 (bvadd (bvmul a!42 a!43) a!44)
+                 a!41)))
+(let ((a!49 (ite (= ((_ extract 0 0) (bvor main@%_267_0 main@%_264_0)) #b1)
+                 (bvadd (bvmul ((_ zero_extend 128) a!46)
+                               ((_ zero_extend 128) a!47))
+                        a!48)
+                 a!45)))
+(let ((a!53 (ite (= ((_ extract 0 0) (bvor main@%_290_0 main@%_287_0)) #b1)
+                 (bvadd (bvmul a!50 a!51) a!52)
+                 a!49)))
+(let ((a!57 (ite (= ((_ extract 0 0) (bvor main@%_313_0 main@%_310_0)) #b1)
+                 (bvadd (bvmul ((_ zero_extend 128) a!54)
+                               ((_ zero_extend 128) a!55))
+                        a!56)
+                 a!53)))
+(let ((a!61 (ite (= ((_ extract 0 0) (bvor main@%_336_0 main@%_333_0)) #b1)
+                 (bvadd (bvmul a!58 a!59) a!60)
+                 a!57)))
+(let ((a!65 (ite (= ((_ extract 0 0) (bvor main@%_359_0 main@%_356_0)) #b1)
+                 (bvadd (bvmul ((_ zero_extend 128) a!62)
+                               ((_ zero_extend 128) a!63))
+                        a!64)
+                 a!61)))
+(let ((a!69 (ite (= ((_ extract 0 0) (bvor main@%_382_0 main@%_379_0)) #b1)
+                 (bvadd (bvmul a!66 a!67) a!68)
+                 a!65)))
+(let ((a!75 (ite (= (bvmul ((_ zero_extend 128) a!62)
+                           ((_ zero_extend 128) a!63))
+                    a!65)
+                 (ite (= (bvmul a!66 a!67) a!69) (and true a!74) true)
                  true)))
-(let ((a!54 (ite (= (bvmul ((_ zero_extend 128) a!41)
-                           ((_ zero_extend 128) a!42))
-                    (ite (or main@%_290_0 main@%_292_0) a!43 a!40))
-                 (ite (= a!44 a!46) a!53 true)
+(let ((a!76 (ite (= (bvmul ((_ zero_extend 128) a!54)
+                           ((_ zero_extend 128) a!55))
+                    a!57)
+                 (ite (= (bvmul a!58 a!59) a!61) a!75 true)
                  true)))
-(let ((a!55 (ite (= a!36 (ite (or main@%_250_0 main@%_252_0) a!37 a!35))
-                 (ite (= a!38 a!40) a!54 true)
+(let ((a!77 (ite (= (bvmul ((_ zero_extend 128) a!46)
+                           ((_ zero_extend 128) a!47))
+                    a!49)
+                 (ite (= (bvmul a!50 a!51) a!53) a!76 true)
                  true)))
-(let ((a!56 (ite (= (bvmul ((_ zero_extend 128) a!32)
-                           ((_ zero_extend 128) a!33))
-                    a!35)
-                 a!55
+(let ((a!78 (ite (= (bvmul ((_ zero_extend 128) a!38)
+                           ((_ zero_extend 128) a!39))
+                    a!41)
+                 (ite (= (bvmul a!42 a!43) a!45) a!77 true)
                  true)))
-(let ((a!57 (ite (= a!30 (ite (or main@%_210_0 main@%_212_0) a!31 a!29))
-                 a!56
+(let ((a!79 (ite (= (bvmul ((_ zero_extend 128) a!30)
+                           ((_ zero_extend 128) a!31))
+                    a!33)
+                 (ite (= (bvmul a!34 a!35) a!37) a!78 true)
                  true)))
-(let ((a!58 (ite (= (bvmul ((_ zero_extend 128) a!24)
-                           ((_ zero_extend 128) a!25))
-                    (ite (or main@%_170_0 main@%_172_0) a!26 a!23))
-                 (ite (= a!27 a!29) a!57 true)
+(let ((a!80 (ite (= (bvmul ((_ zero_extend 128) a!22)
+                           ((_ zero_extend 128) a!23))
+                    a!25)
+                 (ite (= (bvmul a!26 a!27) a!29) a!79 true)
                  true)))
-(let ((a!59 (ite (= a!19 (ite (or main@%_130_0 main@%_132_0) a!20 a!18))
-                 (ite (= a!21 a!23) a!58 true)
+(let ((a!81 (ite (= (bvmul ((_ zero_extend 128) a!14)
+                           ((_ zero_extend 128) a!15))
+                    a!17)
+                 (ite (= (bvmul a!18 a!19) a!21) a!80 true)
                  true)))
-(let ((a!60 (ite (= (bvmul ((_ zero_extend 128) a!15)
-                           ((_ zero_extend 128) a!16))
-                    a!18)
-                 a!59
+(let ((a!82 (ite (= (bvmul ((_ zero_extend 128) a!6) ((_ zero_extend 128) a!7))
+                    a!9)
+                 (ite (= (bvmul a!10 a!11) a!13) a!81 true)
                  true)))
-(let ((a!61 (ite (= a!13 (ite (or main@%_90_0 main@%_92_0) a!14 a!12))
-                 a!60
-                 true)))
-(let ((a!62 (ite (= (bvmul ((_ zero_extend 128) a!7) ((_ zero_extend 128) a!8))
-                    (ite (or main@%_50_0 main@%_52_0) a!9 a!6))
-                 (ite (= a!10 a!12) a!61 true)
-                 true)))
-(let ((a!63 (ite (= a!2
-                    (ite (or main@%_12_0 main@%_14_0)
-                         a!3
-                         (ite a!1
-                              #x0000000000000000000000000000000000000000000000000000000000000001
-                              #x0000000000000000000000000000000000000000000000000000000000000000)))
-                 (ite (= a!4 a!6) a!62 true)
-                 true)))
+(let ((a!83 (ite a!1 true (ite (= (bvmul a!2 a!3) a!5) a!82 true))))
   (and (= #b000 ((_ extract 2 0) sea.sp0_0))
        (bvule sea.sp0_0 #x00000000c0000000)
        (bvuge sea.sp0_0 #x00000000bf700000)
-       (ite a!1 true a!63))))))))))))))))))))))))
+       a!83)))))))))))))))))))))))))))))
 (check-sat)
