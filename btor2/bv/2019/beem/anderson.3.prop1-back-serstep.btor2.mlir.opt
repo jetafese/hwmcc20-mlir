@@ -1,5 +1,5 @@
 module attributes {llvm.data_layout = ""} {
-  llvm.func @verifier.error()
+  llvm.func @__VERIFIER_error()
   llvm.func @nd_bv8() -> i8
   llvm.func @main() {
     %0 = llvm.mlir.constant(0 : i8) : i8
@@ -626,7 +626,7 @@ module attributes {llvm.data_layout = ""} {
   ^bb2:  // pred: ^bb1
     llvm.br ^bb1(%26, %27, %28, %29, %30, %31, %32, %34, %36, %38, %40, %42, %44, %46, %48, %50, %52, %54, %56, %58, %60, %62, %63, %586 : i8, i8, i8, i8, i8, i8, i8, i1, i1, i1, i1, i1, i1, i1, i1, i1, i1, i1, i1, i1, i1, i1, i1, i1)
   ^bb3:  // pred: ^bb1
-    llvm.call @verifier.error() : () -> ()
+    llvm.call @__VERIFIER_error() : () -> ()
     llvm.unreachable
   }
 }

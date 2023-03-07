@@ -5,9 +5,9 @@ declare i8* @malloc(i64)
 
 declare void @free(i8*)
 
-declare void @verifier.error()
+declare void @__VERIFIER_error()
 
-declare void @verifier.assume(i1)
+declare void @__SEA_assume(i1)
 
 declare i8 @nd_bv8()
 
@@ -1492,26 +1492,26 @@ define void @main() !dbg !3 {
   %1474 = xor i1 %287, true, !dbg !1347
   %1475 = or i1 %1474, %1473, !dbg !1348
   %1476 = or i1 %1475, false, !dbg !1349
-  call void @verifier.assume(i1 %1476), !dbg !1350
+  call void @__SEA_assume(i1 %1476), !dbg !1350
   %1477 = xor i1 %282, true, !dbg !1351
   %1478 = icmp uge i8 %138, -128, !dbg !1352
   %1479 = xor i1 %1478, true, !dbg !1353
   %1480 = or i1 %1479, %1477, !dbg !1354
   %1481 = or i1 %1480, false, !dbg !1355
-  call void @verifier.assume(i1 %1481), !dbg !1356
+  call void @__SEA_assume(i1 %1481), !dbg !1356
   %1482 = icmp eq i1 %292, %143, !dbg !1357
   %1483 = or i1 %1482, false, !dbg !1358
-  call void @verifier.assume(i1 %1483), !dbg !1359
+  call void @__SEA_assume(i1 %1483), !dbg !1359
   %1484 = xor i1 %282, true, !dbg !1360
   %1485 = xor i1 %1478, true, !dbg !1361
   %1486 = or i1 %1485, %1484, !dbg !1362
   %1487 = or i1 %1486, false, !dbg !1363
-  call void @verifier.assume(i1 %1487), !dbg !1364
+  call void @__SEA_assume(i1 %1487), !dbg !1364
   %1488 = xor i1 %272, true, !dbg !1365
   %1489 = xor i1 %287, true, !dbg !1366
   %1490 = or i1 %1489, %1488, !dbg !1367
   %1491 = or i1 %1490, false, !dbg !1368
-  call void @verifier.assume(i1 %1491), !dbg !1369
+  call void @__SEA_assume(i1 %1491), !dbg !1369
   %1492 = icmp eq i16 %142, %137, !dbg !1370
   %1493 = xor i1 %321, true, !dbg !1371
   %1494 = or i1 %1493, %1492, !dbg !1372
@@ -1528,7 +1528,7 @@ define void @main() !dbg !3 {
   br label %136, !dbg !1381
 
 1503:                                             ; preds = %136
-  call void @verifier.error(), !dbg !1382
+  call void @__VERIFIER_error(), !dbg !1382
   unreachable, !dbg !1383
 }
 

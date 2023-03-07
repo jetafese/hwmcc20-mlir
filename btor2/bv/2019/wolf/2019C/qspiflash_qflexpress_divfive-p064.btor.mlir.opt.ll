@@ -5,9 +5,9 @@ declare i8* @malloc(i64)
 
 declare void @free(i8*)
 
-declare void @verifier.error()
+declare void @__VERIFIER_error()
 
-declare void @verifier.assume(i1)
+declare void @__SEA_assume(i1)
 
 declare i64 @nd_bv64()
 
@@ -552,7 +552,7 @@ define void @main() !dbg !3 {
   %532 = xor i1 %531, true, !dbg !504
   %533 = xor i1 %532, true, !dbg !505
   %534 = or i1 %531, %533, !dbg !506
-  call void @verifier.assume(i1 %534), !dbg !507
+  call void @__SEA_assume(i1 %534), !dbg !507
   %535 = xor i4 %64, %65, !dbg !508
   %536 = xor i4 %535, -1, !dbg !509
   %537 = lshr i4 %536, 3, !dbg !510
@@ -585,14 +585,14 @@ define void @main() !dbg !3 {
   %564 = xor i1 %563, true, !dbg !537
   %565 = xor i1 %564, true, !dbg !538
   %566 = or i1 %563, %565, !dbg !539
-  call void @verifier.assume(i1 %566), !dbg !540
+  call void @__SEA_assume(i1 %566), !dbg !540
   %567 = icmp eq i4 %64, %245, !dbg !541
   %568 = select i1 %248, i1 false, i1 %243, !dbg !542
   %569 = select i1 %568, i1 %567, i1 true, !dbg !543
   %570 = xor i1 %569, true, !dbg !544
   %571 = xor i1 %570, true, !dbg !545
   %572 = or i1 %569, %571, !dbg !546
-  call void @verifier.assume(i1 %572), !dbg !547
+  call void @__SEA_assume(i1 %572), !dbg !547
   %573 = xor i1 %485, %68, !dbg !548
   %574 = xor i1 %573, true, !dbg !549
   %575 = and i1 %248, %560, !dbg !550
@@ -600,7 +600,7 @@ define void @main() !dbg !3 {
   %577 = xor i1 %576, true, !dbg !552
   %578 = xor i1 %577, true, !dbg !553
   %579 = or i1 %576, %578, !dbg !554
-  call void @verifier.assume(i1 %579), !dbg !555
+  call void @__SEA_assume(i1 %579), !dbg !555
   %580 = lshr i4 %64, 0, !dbg !556
   %581 = trunc i4 %580 to i1, !dbg !557
   %582 = xor i1 %581, %251, !dbg !558
@@ -609,7 +609,7 @@ define void @main() !dbg !3 {
   %585 = xor i1 %584, true, !dbg !561
   %586 = xor i1 %585, true, !dbg !562
   %587 = or i1 %584, %586, !dbg !563
-  call void @verifier.assume(i1 %587), !dbg !564
+  call void @__SEA_assume(i1 %587), !dbg !564
   %588 = lshr i4 %64, 2, !dbg !565
   %589 = trunc i4 %588 to i2, !dbg !566
   %590 = icmp eq i2 %589, -1, !dbg !567
@@ -617,40 +617,40 @@ define void @main() !dbg !3 {
   %592 = xor i1 %591, true, !dbg !569
   %593 = xor i1 %592, true, !dbg !570
   %594 = or i1 %591, %593, !dbg !571
-  call void @verifier.assume(i1 %594), !dbg !572
+  call void @__SEA_assume(i1 %594), !dbg !572
   %595 = and i1 %298, %71, !dbg !573
   %596 = and i1 %595, %72, !dbg !574
   %597 = select i1 %596, i1 %95, i1 true, !dbg !575
   %598 = xor i1 %597, true, !dbg !576
   %599 = xor i1 %598, true, !dbg !577
   %600 = or i1 %597, %599, !dbg !578
-  call void @verifier.assume(i1 %600), !dbg !579
+  call void @__SEA_assume(i1 %600), !dbg !579
   %601 = and i1 %298, %73, !dbg !580
   %602 = and i1 %601, %72, !dbg !581
   %603 = select i1 %602, i1 %154, i1 true, !dbg !582
   %604 = xor i1 %603, true, !dbg !583
   %605 = xor i1 %604, true, !dbg !584
   %606 = or i1 %603, %605, !dbg !585
-  call void @verifier.assume(i1 %606), !dbg !586
+  call void @__SEA_assume(i1 %606), !dbg !586
   %607 = xor i1 %95, true, !dbg !587
   %608 = xor i1 %154, true, !dbg !588
   %609 = or i1 %608, %607, !dbg !589
   %610 = xor i1 %609, true, !dbg !590
   %611 = xor i1 %610, true, !dbg !591
   %612 = or i1 %609, %611, !dbg !592
-  call void @verifier.assume(i1 %612), !dbg !593
+  call void @__SEA_assume(i1 %612), !dbg !593
   %613 = or i1 %300, %303, !dbg !594
   %614 = select i1 %316, i1 %613, i1 true, !dbg !595
   %615 = xor i1 %614, true, !dbg !596
   %616 = xor i1 %615, true, !dbg !597
   %617 = or i1 %614, %616, !dbg !598
-  call void @verifier.assume(i1 %617), !dbg !599
+  call void @__SEA_assume(i1 %617), !dbg !599
   %618 = icmp ult i2 %313, -1, !dbg !600
   %619 = xor i1 %618, true, !dbg !601
   %620 = xor i1 %619, true, !dbg !602
   %621 = or i1 %618, %620, !dbg !603
-  call void @verifier.assume(i1 %621), !dbg !604
-  call void @verifier.assume(i1 true), !dbg !605
+  call void @__SEA_assume(i1 %621), !dbg !604
+  call void @__SEA_assume(i1 true), !dbg !605
   %622 = xor i1 %92, %74, !dbg !606
   %623 = xor i1 %622, true, !dbg !607
   %624 = and i1 %69, %317, !dbg !608
@@ -658,14 +658,14 @@ define void @main() !dbg !3 {
   %626 = xor i1 %625, true, !dbg !610
   %627 = xor i1 %626, true, !dbg !611
   %628 = or i1 %625, %627, !dbg !612
-  call void @verifier.assume(i1 %628), !dbg !613
+  call void @__SEA_assume(i1 %628), !dbg !613
   %629 = and i1 %69, %75, !dbg !614
   %630 = and i1 %629, %300, !dbg !615
   %631 = select i1 %630, i1 %623, i1 true, !dbg !616
   %632 = xor i1 %631, true, !dbg !617
   %633 = xor i1 %632, true, !dbg !618
   %634 = or i1 %631, %633, !dbg !619
-  call void @verifier.assume(i1 %634), !dbg !620
+  call void @__SEA_assume(i1 %634), !dbg !620
   %635 = icmp eq i32 %82, %76, !dbg !621
   %636 = and i1 %298, %75, !dbg !622
   %637 = and i1 %636, %72, !dbg !623
@@ -675,49 +675,49 @@ define void @main() !dbg !3 {
   %641 = xor i1 %640, true, !dbg !627
   %642 = xor i1 %641, true, !dbg !628
   %643 = or i1 %640, %642, !dbg !629
-  call void @verifier.assume(i1 %643), !dbg !630
+  call void @__SEA_assume(i1 %643), !dbg !630
   %644 = icmp eq i22 %323, %77, !dbg !631
   %645 = select i1 %638, i1 %644, i1 true, !dbg !632
   %646 = xor i1 %645, true, !dbg !633
   %647 = xor i1 %646, true, !dbg !634
   %648 = or i1 %645, %647, !dbg !635
-  call void @verifier.assume(i1 %648), !dbg !636
+  call void @__SEA_assume(i1 %648), !dbg !636
   %649 = select i1 %638, i1 %623, i1 true, !dbg !637
   %650 = xor i1 %649, true, !dbg !638
   %651 = xor i1 %650, true, !dbg !639
   %652 = or i1 %649, %651, !dbg !640
-  call void @verifier.assume(i1 %652), !dbg !641
+  call void @__SEA_assume(i1 %652), !dbg !641
   %653 = select i1 %638, i1 %300, i1 true, !dbg !642
   %654 = xor i1 %653, true, !dbg !643
   %655 = xor i1 %654, true, !dbg !644
   %656 = or i1 %653, %655, !dbg !645
-  call void @verifier.assume(i1 %656), !dbg !646
+  call void @__SEA_assume(i1 %656), !dbg !646
   %657 = select i1 %300, i1 %293, i1 true, !dbg !647
   %658 = xor i1 %657, true, !dbg !648
   %659 = xor i1 %658, true, !dbg !649
   %660 = or i1 %657, %659, !dbg !650
-  call void @verifier.assume(i1 %660), !dbg !651
+  call void @__SEA_assume(i1 %660), !dbg !651
   %661 = or i1 %303, %69, !dbg !652
   %662 = xor i1 %661, true, !dbg !653
   %663 = xor i1 %662, true, !dbg !654
   %664 = or i1 %661, %663, !dbg !655
-  call void @verifier.assume(i1 %664), !dbg !656
+  call void @__SEA_assume(i1 %664), !dbg !656
   %665 = xor i1 %300, true, !dbg !657
   %666 = select i1 %486, i1 %665, i1 true, !dbg !658
   %667 = xor i1 %666, true, !dbg !659
   %668 = xor i1 %667, true, !dbg !660
   %669 = or i1 %666, %668, !dbg !661
-  call void @verifier.assume(i1 %669), !dbg !662
+  call void @__SEA_assume(i1 %669), !dbg !662
   %670 = select i1 %486, i1 %303, i1 true, !dbg !663
   %671 = xor i1 %670, true, !dbg !664
   %672 = xor i1 %671, true, !dbg !665
   %673 = or i1 %670, %672, !dbg !666
-  call void @verifier.assume(i1 %673), !dbg !667
+  call void @__SEA_assume(i1 %673), !dbg !667
   %674 = or i1 %102, %69, !dbg !668
   %675 = xor i1 %674, true, !dbg !669
   %676 = xor i1 %675, true, !dbg !670
   %677 = or i1 %674, %676, !dbg !671
-  call void @verifier.assume(i1 %677), !dbg !672
+  call void @__SEA_assume(i1 %677), !dbg !672
   %678 = bitcast i4 %48 to <4 x i1>, !dbg !673
   %679 = call i1 @llvm.vector.reduce.or.v4i1(<4 x i1> %678), !dbg !674
   %680 = xor i1 %679, true, !dbg !675
@@ -735,7 +735,7 @@ define void @main() !dbg !3 {
   br label %46, !dbg !685
 
 690:                                              ; preds = %46
-  call void @verifier.error(), !dbg !686
+  call void @__VERIFIER_error(), !dbg !686
   unreachable, !dbg !687
 }
 

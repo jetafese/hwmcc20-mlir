@@ -5,9 +5,9 @@ declare i8* @malloc(i64)
 
 declare void @free(i8*)
 
-declare void @verifier.error()
+declare void @__VERIFIER_error()
 
-declare void @verifier.assume(i1)
+declare void @__SEA_assume(i1)
 
 declare i32 @nd_bv32()
 
@@ -2238,13 +2238,13 @@ define void @main() !dbg !3 {
   %2218 = select i1 %300, i1 false, i1 %289, !dbg !2113
   %2219 = icmp eq i1 %300, %179, !dbg !2114
   %2220 = or i1 %2219, false, !dbg !2115
-  call void @verifier.assume(i1 %2220), !dbg !2116
+  call void @__SEA_assume(i1 %2220), !dbg !2116
   %2221 = xor i1 %183, true, !dbg !2117
   %2222 = or i1 %182, %2221, !dbg !2118
-  call void @verifier.assume(i1 %2222), !dbg !2119
+  call void @__SEA_assume(i1 %2222), !dbg !2119
   %2223 = xor i1 %183, true, !dbg !2120
   %2224 = or i1 %184, %2223, !dbg !2121
-  call void @verifier.assume(i1 %2224), !dbg !2122
+  call void @__SEA_assume(i1 %2224), !dbg !2122
   %2225 = xor i1 %180, true, !dbg !2123
   %2226 = and i1 %181, %2225, !dbg !2124
   %2227 = xor i1 %2226, true, !dbg !2125
@@ -2264,7 +2264,7 @@ define void @main() !dbg !3 {
   br label %178, !dbg !2137
 
 2239:                                             ; preds = %178
-  call void @verifier.error(), !dbg !2138
+  call void @__VERIFIER_error(), !dbg !2138
   unreachable, !dbg !2139
 }
 

@@ -1,6 +1,6 @@
 module attributes {llvm.data_layout = ""} {
-  llvm.func @verifier.error()
-  llvm.func @verifier.assume(i1)
+  llvm.func @__VERIFIER_error()
+  llvm.func @__SEA_assume(i1)
   llvm.func @nd_bv256() -> i256
   llvm.func @nd_bv8() -> i8
   llvm.func @nd_bv128() -> i128
@@ -548,7 +548,7 @@ module attributes {llvm.data_layout = ""} {
     %615 = llvm.icmp "ugt" %158, %614 : i6
     %616 = llvm.or %615, %613  : i1
     %617 = llvm.or %616, %611  : i1
-    llvm.call @verifier.assume(%617) : (i1) -> ()
+    llvm.call @__SEA_assume(%617) : (i1) -> ()
     %618 = llvm.mlir.constant(true) : i1
     %619 = llvm.xor %361, %618  : i1
     %620 = llvm.mlir.constant(true) : i1
@@ -557,7 +557,7 @@ module attributes {llvm.data_layout = ""} {
     %623 = llvm.icmp "ugt" %159, %622 : i6
     %624 = llvm.or %623, %621  : i1
     %625 = llvm.or %624, %619  : i1
-    llvm.call @verifier.assume(%625) : (i1) -> ()
+    llvm.call @__SEA_assume(%625) : (i1) -> ()
     %626 = llvm.mlir.constant(true) : i1
     %627 = llvm.xor %361, %626  : i1
     %628 = llvm.mlir.constant(true) : i1
@@ -570,7 +570,7 @@ module attributes {llvm.data_layout = ""} {
     %635 = llvm.xor %633, %634  : i1
     %636 = llvm.or %635, %629  : i1
     %637 = llvm.or %636, %627  : i1
-    llvm.call @verifier.assume(%637) : (i1) -> ()
+    llvm.call @__SEA_assume(%637) : (i1) -> ()
     %638 = llvm.mlir.constant(true) : i1
     %639 = llvm.xor %361, %638  : i1
     %640 = llvm.mlir.constant(true) : i1
@@ -583,12 +583,12 @@ module attributes {llvm.data_layout = ""} {
     %647 = llvm.xor %645, %646  : i1
     %648 = llvm.or %647, %641  : i1
     %649 = llvm.or %648, %639  : i1
-    llvm.call @verifier.assume(%649) : (i1) -> ()
+    llvm.call @__SEA_assume(%649) : (i1) -> ()
     %650 = llvm.mlir.constant(true) : i1
     %651 = llvm.xor %361, %650  : i1
     %652 = llvm.icmp "eq" %188, %162 : i1
     %653 = llvm.or %652, %651  : i1
-    llvm.call @verifier.assume(%653) : (i1) -> ()
+    llvm.call @__SEA_assume(%653) : (i1) -> ()
     %654 = llvm.mlir.constant(true) : i1
     %655 = llvm.xor %361, %654  : i1
     %656 = llvm.mlir.constant(true) : i1
@@ -597,7 +597,7 @@ module attributes {llvm.data_layout = ""} {
     %659 = llvm.icmp "ne" %158, %658 : i6
     %660 = llvm.or %659, %657  : i1
     %661 = llvm.or %660, %655  : i1
-    llvm.call @verifier.assume(%661) : (i1) -> ()
+    llvm.call @__SEA_assume(%661) : (i1) -> ()
     %662 = llvm.mlir.constant(true) : i1
     %663 = llvm.xor %361, %662  : i1
     %664 = llvm.mlir.constant(true) : i1
@@ -605,7 +605,7 @@ module attributes {llvm.data_layout = ""} {
     %666 = llvm.icmp "ne" %159, %658 : i6
     %667 = llvm.or %666, %665  : i1
     %668 = llvm.or %667, %663  : i1
-    llvm.call @verifier.assume(%668) : (i1) -> ()
+    llvm.call @__SEA_assume(%668) : (i1) -> ()
     %669 = llvm.mlir.constant(1 : i2) : i2
     %670 = llvm.zext %391 : i1 to i2
     %671 = llvm.shl %670, %669  : i2
@@ -2068,7 +2068,7 @@ module attributes {llvm.data_layout = ""} {
   ^bb2:  // pred: ^bb1
     llvm.br ^bb1(%189, %201, %206, %211, %216, %221, %226, %231, %236, %241, %246, %251, %256, %261, %266, %271, %276, %282, %288, %294, %300, %306, %312, %318, %324, %330, %336, %342, %348, %354, %360, %366, %373, %388, %397, %401, %405, %409, %413, %417, %421, %425, %429, %433, %437, %441, %445, %449, %453, %457, %462, %467, %472, %477, %482, %487, %492, %497, %502, %507, %512, %517, %522, %527, %532, %539, %549, %572, %577, %580, %586, %591, %596, %601, %548, %605, %609 : i128, i6, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i6, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i128, i1, i1, i7, i128, i6, i6, i6, i6, i1, i6, i6)
   ^bb3:  // pred: ^bb1
-    llvm.call @verifier.error() : () -> ()
+    llvm.call @__VERIFIER_error() : () -> ()
     llvm.unreachable
   }
 }

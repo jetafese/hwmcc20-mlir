@@ -1,6 +1,6 @@
 module attributes {llvm.data_layout = ""} {
-  llvm.func @verifier.error()
-  llvm.func @verifier.assume(i1)
+  llvm.func @__VERIFIER_error()
+  llvm.func @__SEA_assume(i1)
   llvm.func @nd_bv16() -> i16
   llvm.func @nd_bv8() -> i8
   llvm.func @main() {
@@ -451,7 +451,7 @@ module attributes {llvm.data_layout = ""} {
     %450 = llvm.mlir.constant(true) : i1
     %451 = llvm.xor %449, %450  : i1
     %452 = llvm.or %13, %451  : i1
-    llvm.call @verifier.assume(%452) : (i1) -> ()
+    llvm.call @__SEA_assume(%452) : (i1) -> ()
     %453 = llvm.zext %21 : i1 to i16
     %454 = llvm.icmp "ule" %17, %453 : i16
     %455 = llvm.xor %33, %454  : i1
@@ -460,7 +460,7 @@ module attributes {llvm.data_layout = ""} {
     %458 = llvm.mlir.constant(true) : i1
     %459 = llvm.xor %455, %458  : i1
     %460 = llvm.or %459, %457  : i1
-    llvm.call @verifier.assume(%460) : (i1) -> ()
+    llvm.call @__SEA_assume(%460) : (i1) -> ()
     %461 = llvm.xor %36, %313  : i1
     %462 = llvm.mlir.constant(true) : i1
     %463 = llvm.xor %461, %462  : i1
@@ -479,7 +479,7 @@ module attributes {llvm.data_layout = ""} {
   ^bb2:  // pred: ^bb1
     llvm.br ^bb1(%34, %38, %373, %374, %376, %387, %391, %447 : i1, i1, i16, i1, i16, i4, i4, i16)
   ^bb3:  // pred: ^bb1
-    llvm.call @verifier.error() : () -> ()
+    llvm.call @__VERIFIER_error() : () -> ()
     llvm.unreachable
   }
 }

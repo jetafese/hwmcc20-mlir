@@ -1,6 +1,6 @@
 module attributes {llvm.data_layout = ""} {
-  llvm.func @verifier.error()
-  llvm.func @verifier.assume(i1)
+  llvm.func @__VERIFIER_error()
+  llvm.func @__SEA_assume(i1)
   llvm.func @nd_bv64() -> i64
   llvm.func @nd_bv128() -> i128
   llvm.func @nd_bv16() -> i16
@@ -583,7 +583,7 @@ module attributes {llvm.data_layout = ""} {
     %603 = llvm.mlir.constant(true) : i1
     %604 = llvm.xor %98, %603  : i1
     %605 = llvm.or %201, %604  : i1
-    llvm.call @verifier.assume(%605) : (i1) -> ()
+    llvm.call @__SEA_assume(%605) : (i1) -> ()
     %606 = llvm.mlir.constant(0 : i8) : i8
     %607 = llvm.lshr %95, %606  : i8
     %608 = llvm.trunc %607 : i8 to i7
@@ -622,7 +622,7 @@ module attributes {llvm.data_layout = ""} {
     %639 = llvm.call @nd_bv16() : () -> i16
     llvm.br ^bb1(%360, %401, %491, %495, %504, %199, %520, %119, %550, %552, %553, %560, %565, %596, %100, %359, %127, %597, %109, %598, %111, %599, %113, %400, %115, %600, %117, %601, %602, %505, %107, %630 : i1, i1, i8, i17, i1, i1, i17, i32, i9, i32, i32, i1, i1, i1, i32, i1, i32, i1, i32, i1, i32, i1, i32, i1, i32, i1, i32, i1, i1, i1, i32, i32)
   ^bb3:  // pred: ^bb1
-    llvm.call @verifier.error() : () -> ()
+    llvm.call @__VERIFIER_error() : () -> ()
     llvm.unreachable
   }
 }

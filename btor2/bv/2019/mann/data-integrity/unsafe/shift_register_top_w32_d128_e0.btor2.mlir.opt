@@ -1,6 +1,6 @@
 module attributes {llvm.data_layout = ""} {
-  llvm.func @verifier.error()
-  llvm.func @verifier.assume(i1)
+  llvm.func @__VERIFIER_error()
+  llvm.func @__SEA_assume(i1)
   llvm.func @nd_bv8() -> i8
   llvm.func @nd_bv32() -> i32
   llvm.func @main() {
@@ -1741,7 +1741,7 @@ module attributes {llvm.data_layout = ""} {
     %1866 = llvm.xor %289, %1865  : i1
     %1867 = llvm.or %1866, %1864  : i1
     %1868 = llvm.or %1867, %1862  : i1
-    llvm.call @verifier.assume(%1868) : (i1) -> ()
+    llvm.call @__SEA_assume(%1868) : (i1) -> ()
     %1869 = llvm.mlir.constant(true) : i1
     %1870 = llvm.xor %331, %1869  : i1
     %1871 = llvm.mlir.constant(true) : i1
@@ -1752,12 +1752,12 @@ module attributes {llvm.data_layout = ""} {
     %1876 = llvm.xor %1874, %1875  : i1
     %1877 = llvm.or %1876, %1872  : i1
     %1878 = llvm.or %1877, %1870  : i1
-    llvm.call @verifier.assume(%1878) : (i1) -> ()
+    llvm.call @__SEA_assume(%1878) : (i1) -> ()
     %1879 = llvm.mlir.constant(true) : i1
     %1880 = llvm.xor %331, %1879  : i1
     %1881 = llvm.icmp "eq" %294, %142 : i1
     %1882 = llvm.or %1881, %1880  : i1
-    llvm.call @verifier.assume(%1882) : (i1) -> ()
+    llvm.call @__SEA_assume(%1882) : (i1) -> ()
     %1883 = llvm.mlir.constant(true) : i1
     %1884 = llvm.xor %331, %1883  : i1
     %1885 = llvm.mlir.constant(true) : i1
@@ -1766,7 +1766,7 @@ module attributes {llvm.data_layout = ""} {
     %1888 = llvm.xor %1874, %1887  : i1
     %1889 = llvm.or %1888, %1886  : i1
     %1890 = llvm.or %1889, %1884  : i1
-    llvm.call @verifier.assume(%1890) : (i1) -> ()
+    llvm.call @__SEA_assume(%1890) : (i1) -> ()
     %1891 = llvm.mlir.constant(true) : i1
     %1892 = llvm.xor %331, %1891  : i1
     %1893 = llvm.mlir.constant(true) : i1
@@ -1775,7 +1775,7 @@ module attributes {llvm.data_layout = ""} {
     %1896 = llvm.xor %289, %1895  : i1
     %1897 = llvm.or %1896, %1894  : i1
     %1898 = llvm.or %1897, %1892  : i1
-    llvm.call @verifier.assume(%1898) : (i1) -> ()
+    llvm.call @__SEA_assume(%1898) : (i1) -> ()
     %1899 = llvm.icmp "eq" %141, %136 : i32
     %1900 = llvm.mlir.constant(true) : i1
     %1901 = llvm.xor %329, %1900  : i1
@@ -1793,7 +1793,7 @@ module attributes {llvm.data_layout = ""} {
   ^bb2:  // pred: ^bb1
     llvm.br ^bb1(%295, %301, %310, %333, %338, %341, %309, %353, %365, %377, %389, %401, %413, %425, %437, %449, %461, %473, %485, %497, %509, %521, %533, %545, %557, %569, %581, %593, %605, %617, %629, %641, %653, %665, %677, %689, %697, %709, %721, %733, %745, %757, %769, %781, %793, %804, %816, %828, %840, %852, %864, %876, %888, %900, %912, %924, %936, %948, %960, %972, %984, %996, %1008, %1020, %1032, %1044, %1056, %1068, %1080, %1092, %1104, %1116, %1128, %1140, %1152, %1164, %1176, %1188, %1200, %1212, %1224, %1236, %1248, %1260, %1272, %1284, %1296, %1308, %1320, %1332, %1344, %1356, %1368, %1380, %1392, %1404, %1416, %1428, %1440, %1452, %1464, %1476, %1488, %1500, %1512, %1524, %1536, %1548, %1560, %1572, %1584, %1596, %1608, %1620, %1632, %1644, %1656, %1668, %1680, %1692, %1704, %1716, %1728, %1740, %1752, %1764, %1776, %1788, %1800, %1812, %1824, %1836, %1848, %1860 : i32, i8, i1, i1, i8, i32, i1, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32)
   ^bb3:  // pred: ^bb1
-    llvm.call @verifier.error() : () -> ()
+    llvm.call @__VERIFIER_error() : () -> ()
     llvm.unreachable
   }
 }

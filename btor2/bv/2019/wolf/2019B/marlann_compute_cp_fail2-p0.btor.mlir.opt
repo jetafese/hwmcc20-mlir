@@ -1,6 +1,6 @@
 module attributes {llvm.data_layout = ""} {
-  llvm.func @verifier.error()
-  llvm.func @verifier.assume(i1)
+  llvm.func @__VERIFIER_error()
+  llvm.func @__SEA_assume(i1)
   llvm.func @nd_bv64() -> i64
   llvm.func @nd_bv128() -> i128
   llvm.func @nd_bv16() -> i16
@@ -734,7 +734,7 @@ module attributes {llvm.data_layout = ""} {
     %790 = llvm.mlir.constant(true) : i1
     %791 = llvm.xor %97, %790  : i1
     %792 = llvm.or %244, %791  : i1
-    llvm.call @verifier.assume(%792) : (i1) -> ()
+    llvm.call @__SEA_assume(%792) : (i1) -> ()
     %793 = llvm.mlir.constant(true) : i1
     %794 = llvm.xor %95, %793  : i1
     %795 = llvm.and %96, %794  : i1
@@ -754,7 +754,7 @@ module attributes {llvm.data_layout = ""} {
     %807 = llvm.call @nd_bv16() : () -> i16
     llvm.br ^bb1(%401, %411, %242, %454, %147, %483, %485, %486, %493, %498, %529, %154, %111, %112, %155, %156, %109, %110, %117, %118, %157, %158, %115, %116, %123, %124, %159, %160, %121, %122, %129, %130, %161, %162, %127, %128, %99, %547, %555, %568, %394, %165, %569, %136, %570, %138, %571, %140, %395, %142, %718, %719, %144, %766, %767, %788, %789, %98, %798, %799, %800, %801, %802, %803, %804, %805, %806, %807 : i1, i1, i1, i32, i32, i9, i32, i32, i1, i1, i1, i128, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i32, i20, i9, i1, i1, i32, i1, i32, i1, i32, i1, i32, i1, i32, i72, i1, i32, i36, i1, i18, i1, i32, i32, i128, i16, i16, i16, i16, i16, i16, i16, i16)
   ^bb3:  // pred: ^bb1
-    llvm.call @verifier.error() : () -> ()
+    llvm.call @__VERIFIER_error() : () -> ()
     llvm.unreachable
   }
 }

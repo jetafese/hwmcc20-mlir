@@ -5,9 +5,9 @@ declare i8* @malloc(i64)
 
 declare void @free(i8*)
 
-declare void @verifier.error()
+declare void @__VERIFIER_error()
 
-declare void @verifier.assume(i1)
+declare void @__SEA_assume(i1)
 
 declare i16 @nd_bv16()
 
@@ -2312,14 +2312,14 @@ define void @main() !dbg !3 {
   %2292 = xor i1 %2291, true, !dbg !1803
   %2293 = select i1 %2291, i1 %1648, i1 %1114, !dbg !1804
   %2294 = or i1 %2293, %2292, !dbg !1805
-  call void @verifier.assume(i1 %2294), !dbg !1806
+  call void @__SEA_assume(i1 %2294), !dbg !1806
   %2295 = xor i1 %1677, true, !dbg !1807
   %2296 = bitcast i9 %1665 to <9 x i1>, !dbg !1808
   %2297 = call i1 @llvm.vector.reduce.or.v9i1(<9 x i1> %2296), !dbg !1809
   %2298 = xor i1 %2297, true, !dbg !1810
   %2299 = select i1 %1677, i1 %2298, i1 %1117, !dbg !1811
   %2300 = or i1 %2299, %2295, !dbg !1812
-  call void @verifier.assume(i1 %2300), !dbg !1813
+  call void @__SEA_assume(i1 %2300), !dbg !1813
   %2301 = icmp eq i9 %1077, 1, !dbg !1814
   %2302 = or i1 %2301, %1577, !dbg !1815
   %2303 = or i1 %2302, %1580, !dbg !1816
@@ -2332,7 +2332,7 @@ define void @main() !dbg !3 {
   %2310 = or i1 %2309, %1597, !dbg !1823
   %2311 = or i1 %2310, %1601, !dbg !1824
   %2312 = or i1 %2311, false, !dbg !1825
-  call void @verifier.assume(i1 %2312), !dbg !1826
+  call void @__SEA_assume(i1 %2312), !dbg !1826
   %2313 = xor i1 %1661, true, !dbg !1827
   %2314 = bitcast i10 %1078 to <10 x i1>, !dbg !1828
   %2315 = call i1 @llvm.vector.reduce.or.v10i1(<10 x i1> %2314), !dbg !1829
@@ -2340,8 +2340,8 @@ define void @main() !dbg !3 {
   %2317 = or i1 %2316, %1674, !dbg !1831
   %2318 = select i1 %1661, i1 %2317, i1 %1119, !dbg !1832
   %2319 = or i1 %2318, %2313, !dbg !1833
-  call void @verifier.assume(i1 %2319), !dbg !1834
-  call void @verifier.assume(i1 true), !dbg !1835
+  call void @__SEA_assume(i1 %2319), !dbg !1834
+  call void @__SEA_assume(i1 true), !dbg !1835
   %2320 = lshr i23 %1075, 21, !dbg !1836
   %2321 = trunc i23 %2320 to i2, !dbg !1837
   %2322 = icmp eq i2 %2321, -1, !dbg !1838
@@ -2350,7 +2350,7 @@ define void @main() !dbg !3 {
   %2325 = xor i1 %2324, true, !dbg !1841
   %2326 = or i1 %2325, %2322, !dbg !1842
   %2327 = or i1 %2326, false, !dbg !1843
-  call void @verifier.assume(i1 %2327), !dbg !1844
+  call void @__SEA_assume(i1 %2327), !dbg !1844
   %2328 = lshr i23 %1094, 21, !dbg !1845
   %2329 = trunc i23 %2328 to i2, !dbg !1846
   %2330 = icmp eq i2 %2329, -1, !dbg !1847
@@ -2359,7 +2359,7 @@ define void @main() !dbg !3 {
   %2333 = xor i1 %2332, true, !dbg !1850
   %2334 = or i1 %2333, %2330, !dbg !1851
   %2335 = or i1 %2334, false, !dbg !1852
-  call void @verifier.assume(i1 %2335), !dbg !1853
+  call void @__SEA_assume(i1 %2335), !dbg !1853
   %2336 = lshr i23 %1097, 21, !dbg !1854
   %2337 = trunc i23 %2336 to i2, !dbg !1855
   %2338 = icmp eq i2 %2337, -1, !dbg !1856
@@ -2368,7 +2368,7 @@ define void @main() !dbg !3 {
   %2341 = xor i1 %2340, true, !dbg !1859
   %2342 = or i1 %2341, %2338, !dbg !1860
   %2343 = or i1 %2342, false, !dbg !1861
-  call void @verifier.assume(i1 %2343), !dbg !1862
+  call void @__SEA_assume(i1 %2343), !dbg !1862
   %2344 = lshr i23 %1101, 21, !dbg !1863
   %2345 = trunc i23 %2344 to i2, !dbg !1864
   %2346 = icmp eq i2 %2345, -1, !dbg !1865
@@ -2377,7 +2377,7 @@ define void @main() !dbg !3 {
   %2349 = xor i1 %2348, true, !dbg !1868
   %2350 = or i1 %2349, %2346, !dbg !1869
   %2351 = or i1 %2350, false, !dbg !1870
-  call void @verifier.assume(i1 %2351), !dbg !1871
+  call void @__SEA_assume(i1 %2351), !dbg !1871
   %2352 = lshr i23 %1102, 21, !dbg !1872
   %2353 = trunc i23 %2352 to i2, !dbg !1873
   %2354 = icmp eq i2 %2353, -1, !dbg !1874
@@ -2386,7 +2386,7 @@ define void @main() !dbg !3 {
   %2357 = xor i1 %2356, true, !dbg !1877
   %2358 = or i1 %2357, %2354, !dbg !1878
   %2359 = or i1 %2358, false, !dbg !1879
-  call void @verifier.assume(i1 %2359), !dbg !1880
+  call void @__SEA_assume(i1 %2359), !dbg !1880
   %2360 = lshr i23 %1103, 21, !dbg !1881
   %2361 = trunc i23 %2360 to i2, !dbg !1882
   %2362 = icmp eq i2 %2361, -1, !dbg !1883
@@ -2395,7 +2395,7 @@ define void @main() !dbg !3 {
   %2365 = xor i1 %2364, true, !dbg !1886
   %2366 = or i1 %2365, %2362, !dbg !1887
   %2367 = or i1 %2366, false, !dbg !1888
-  call void @verifier.assume(i1 %2367), !dbg !1889
+  call void @__SEA_assume(i1 %2367), !dbg !1889
   %2368 = lshr i23 %1104, 21, !dbg !1890
   %2369 = trunc i23 %2368 to i2, !dbg !1891
   %2370 = icmp eq i2 %2369, -1, !dbg !1892
@@ -2404,7 +2404,7 @@ define void @main() !dbg !3 {
   %2373 = xor i1 %2372, true, !dbg !1895
   %2374 = or i1 %2373, %2370, !dbg !1896
   %2375 = or i1 %2374, false, !dbg !1897
-  call void @verifier.assume(i1 %2375), !dbg !1898
+  call void @__SEA_assume(i1 %2375), !dbg !1898
   %2376 = lshr i23 %1105, 21, !dbg !1899
   %2377 = trunc i23 %2376 to i2, !dbg !1900
   %2378 = icmp eq i2 %2377, -1, !dbg !1901
@@ -2413,7 +2413,7 @@ define void @main() !dbg !3 {
   %2381 = xor i1 %2380, true, !dbg !1904
   %2382 = or i1 %2381, %2378, !dbg !1905
   %2383 = or i1 %2382, false, !dbg !1906
-  call void @verifier.assume(i1 %2383), !dbg !1907
+  call void @__SEA_assume(i1 %2383), !dbg !1907
   %2384 = lshr i23 %1106, 21, !dbg !1908
   %2385 = trunc i23 %2384 to i2, !dbg !1909
   %2386 = icmp eq i2 %2385, -1, !dbg !1910
@@ -2422,7 +2422,7 @@ define void @main() !dbg !3 {
   %2389 = xor i1 %2388, true, !dbg !1913
   %2390 = or i1 %2389, %2386, !dbg !1914
   %2391 = or i1 %2390, false, !dbg !1915
-  call void @verifier.assume(i1 %2391), !dbg !1916
+  call void @__SEA_assume(i1 %2391), !dbg !1916
   %2392 = lshr i23 %1107, 21, !dbg !1917
   %2393 = trunc i23 %2392 to i2, !dbg !1918
   %2394 = icmp eq i2 %2393, -1, !dbg !1919
@@ -2431,7 +2431,7 @@ define void @main() !dbg !3 {
   %2397 = xor i1 %2396, true, !dbg !1922
   %2398 = or i1 %2397, %2394, !dbg !1923
   %2399 = or i1 %2398, false, !dbg !1924
-  call void @verifier.assume(i1 %2399), !dbg !1925
+  call void @__SEA_assume(i1 %2399), !dbg !1925
   %2400 = lshr i23 %1108, 21, !dbg !1926
   %2401 = trunc i23 %2400 to i2, !dbg !1927
   %2402 = icmp eq i2 %2401, -1, !dbg !1928
@@ -2440,7 +2440,7 @@ define void @main() !dbg !3 {
   %2405 = xor i1 %2404, true, !dbg !1931
   %2406 = or i1 %2405, %2402, !dbg !1932
   %2407 = or i1 %2406, false, !dbg !1933
-  call void @verifier.assume(i1 %2407), !dbg !1934
+  call void @__SEA_assume(i1 %2407), !dbg !1934
   %2408 = lshr i23 %1109, 21, !dbg !1935
   %2409 = trunc i23 %2408 to i2, !dbg !1936
   %2410 = icmp eq i2 %2409, -1, !dbg !1937
@@ -2449,7 +2449,7 @@ define void @main() !dbg !3 {
   %2413 = xor i1 %2412, true, !dbg !1940
   %2414 = or i1 %2413, %2410, !dbg !1941
   %2415 = or i1 %2414, false, !dbg !1942
-  call void @verifier.assume(i1 %2415), !dbg !1943
+  call void @__SEA_assume(i1 %2415), !dbg !1943
   %2416 = lshr i23 %1110, 21, !dbg !1944
   %2417 = trunc i23 %2416 to i2, !dbg !1945
   %2418 = icmp eq i2 %2417, -1, !dbg !1946
@@ -2458,7 +2458,7 @@ define void @main() !dbg !3 {
   %2421 = xor i1 %2420, true, !dbg !1949
   %2422 = or i1 %2421, %2418, !dbg !1950
   %2423 = or i1 %2422, false, !dbg !1951
-  call void @verifier.assume(i1 %2423), !dbg !1952
+  call void @__SEA_assume(i1 %2423), !dbg !1952
   %2424 = lshr i23 %1111, 21, !dbg !1953
   %2425 = trunc i23 %2424 to i2, !dbg !1954
   %2426 = icmp eq i2 %2425, -1, !dbg !1955
@@ -2467,7 +2467,7 @@ define void @main() !dbg !3 {
   %2429 = xor i1 %2428, true, !dbg !1958
   %2430 = or i1 %2429, %2426, !dbg !1959
   %2431 = or i1 %2430, false, !dbg !1960
-  call void @verifier.assume(i1 %2431), !dbg !1961
+  call void @__SEA_assume(i1 %2431), !dbg !1961
   %2432 = lshr i23 %1112, 21, !dbg !1962
   %2433 = trunc i23 %2432 to i2, !dbg !1963
   %2434 = icmp eq i2 %2433, -1, !dbg !1964
@@ -2476,7 +2476,7 @@ define void @main() !dbg !3 {
   %2437 = xor i1 %2436, true, !dbg !1967
   %2438 = or i1 %2437, %2434, !dbg !1968
   %2439 = or i1 %2438, false, !dbg !1969
-  call void @verifier.assume(i1 %2439), !dbg !1970
+  call void @__SEA_assume(i1 %2439), !dbg !1970
   %2440 = lshr i23 %1113, 21, !dbg !1971
   %2441 = trunc i23 %2440 to i2, !dbg !1972
   %2442 = icmp eq i2 %2441, -1, !dbg !1973
@@ -2485,284 +2485,284 @@ define void @main() !dbg !3 {
   %2445 = xor i1 %2444, true, !dbg !1976
   %2446 = or i1 %2445, %2442, !dbg !1977
   %2447 = or i1 %2446, false, !dbg !1978
-  call void @verifier.assume(i1 %2447), !dbg !1979
+  call void @__SEA_assume(i1 %2447), !dbg !1979
   %2448 = xor i1 %1575, true, !dbg !1980
   %2449 = bitcast i9 %1122 to <9 x i1>, !dbg !1981
   %2450 = call i1 @llvm.vector.reduce.or.v9i1(<9 x i1> %2449), !dbg !1982
   %2451 = xor i1 %2450, true, !dbg !1983
   %2452 = select i1 %1575, i1 %2451, i1 %1121, !dbg !1984
   %2453 = or i1 %2452, %2448, !dbg !1985
-  call void @verifier.assume(i1 %2453), !dbg !1986
+  call void @__SEA_assume(i1 %2453), !dbg !1986
   %2454 = xor i1 %1575, true, !dbg !1987
   %2455 = bitcast i9 %1124 to <9 x i1>, !dbg !1988
   %2456 = call i1 @llvm.vector.reduce.or.v9i1(<9 x i1> %2455), !dbg !1989
   %2457 = xor i1 %2456, true, !dbg !1990
   %2458 = select i1 %1575, i1 %2457, i1 %1123, !dbg !1991
   %2459 = or i1 %2458, %2454, !dbg !1992
-  call void @verifier.assume(i1 %2459), !dbg !1993
+  call void @__SEA_assume(i1 %2459), !dbg !1993
   %2460 = xor i1 %1575, true, !dbg !1994
   %2461 = bitcast i9 %1126 to <9 x i1>, !dbg !1995
   %2462 = call i1 @llvm.vector.reduce.or.v9i1(<9 x i1> %2461), !dbg !1996
   %2463 = xor i1 %2462, true, !dbg !1997
   %2464 = select i1 %1575, i1 %2463, i1 %1125, !dbg !1998
   %2465 = or i1 %2464, %2460, !dbg !1999
-  call void @verifier.assume(i1 %2465), !dbg !2000
+  call void @__SEA_assume(i1 %2465), !dbg !2000
   %2466 = xor i1 %1575, true, !dbg !2001
   %2467 = bitcast i9 %1128 to <9 x i1>, !dbg !2002
   %2468 = call i1 @llvm.vector.reduce.or.v9i1(<9 x i1> %2467), !dbg !2003
   %2469 = xor i1 %2468, true, !dbg !2004
   %2470 = select i1 %1575, i1 %2469, i1 %1127, !dbg !2005
   %2471 = or i1 %2470, %2466, !dbg !2006
-  call void @verifier.assume(i1 %2471), !dbg !2007
+  call void @__SEA_assume(i1 %2471), !dbg !2007
   %2472 = xor i1 %1575, true, !dbg !2008
   %2473 = bitcast i9 %1130 to <9 x i1>, !dbg !2009
   %2474 = call i1 @llvm.vector.reduce.or.v9i1(<9 x i1> %2473), !dbg !2010
   %2475 = xor i1 %2474, true, !dbg !2011
   %2476 = select i1 %1575, i1 %2475, i1 %1129, !dbg !2012
   %2477 = or i1 %2476, %2472, !dbg !2013
-  call void @verifier.assume(i1 %2477), !dbg !2014
+  call void @__SEA_assume(i1 %2477), !dbg !2014
   %2478 = xor i1 %1575, true, !dbg !2015
   %2479 = bitcast i9 %1132 to <9 x i1>, !dbg !2016
   %2480 = call i1 @llvm.vector.reduce.or.v9i1(<9 x i1> %2479), !dbg !2017
   %2481 = xor i1 %2480, true, !dbg !2018
   %2482 = select i1 %1575, i1 %2481, i1 %1131, !dbg !2019
   %2483 = or i1 %2482, %2478, !dbg !2020
-  call void @verifier.assume(i1 %2483), !dbg !2021
+  call void @__SEA_assume(i1 %2483), !dbg !2021
   %2484 = xor i1 %1575, true, !dbg !2022
   %2485 = bitcast i9 %1134 to <9 x i1>, !dbg !2023
   %2486 = call i1 @llvm.vector.reduce.or.v9i1(<9 x i1> %2485), !dbg !2024
   %2487 = xor i1 %2486, true, !dbg !2025
   %2488 = select i1 %1575, i1 %2487, i1 %1133, !dbg !2026
   %2489 = or i1 %2488, %2484, !dbg !2027
-  call void @verifier.assume(i1 %2489), !dbg !2028
+  call void @__SEA_assume(i1 %2489), !dbg !2028
   %2490 = xor i1 %1575, true, !dbg !2029
   %2491 = bitcast i9 %1136 to <9 x i1>, !dbg !2030
   %2492 = call i1 @llvm.vector.reduce.or.v9i1(<9 x i1> %2491), !dbg !2031
   %2493 = xor i1 %2492, true, !dbg !2032
   %2494 = select i1 %1575, i1 %2493, i1 %1135, !dbg !2033
   %2495 = or i1 %2494, %2490, !dbg !2034
-  call void @verifier.assume(i1 %2495), !dbg !2035
+  call void @__SEA_assume(i1 %2495), !dbg !2035
   %2496 = xor i1 %1575, true, !dbg !2036
   %2497 = bitcast i9 %1138 to <9 x i1>, !dbg !2037
   %2498 = call i1 @llvm.vector.reduce.or.v9i1(<9 x i1> %2497), !dbg !2038
   %2499 = xor i1 %2498, true, !dbg !2039
   %2500 = select i1 %1575, i1 %2499, i1 %1137, !dbg !2040
   %2501 = or i1 %2500, %2496, !dbg !2041
-  call void @verifier.assume(i1 %2501), !dbg !2042
+  call void @__SEA_assume(i1 %2501), !dbg !2042
   %2502 = xor i1 %1575, true, !dbg !2043
   %2503 = bitcast i9 %1140 to <9 x i1>, !dbg !2044
   %2504 = call i1 @llvm.vector.reduce.or.v9i1(<9 x i1> %2503), !dbg !2045
   %2505 = xor i1 %2504, true, !dbg !2046
   %2506 = select i1 %1575, i1 %2505, i1 %1139, !dbg !2047
   %2507 = or i1 %2506, %2502, !dbg !2048
-  call void @verifier.assume(i1 %2507), !dbg !2049
+  call void @__SEA_assume(i1 %2507), !dbg !2049
   %2508 = xor i1 %1575, true, !dbg !2050
   %2509 = bitcast i9 %1142 to <9 x i1>, !dbg !2051
   %2510 = call i1 @llvm.vector.reduce.or.v9i1(<9 x i1> %2509), !dbg !2052
   %2511 = xor i1 %2510, true, !dbg !2053
   %2512 = select i1 %1575, i1 %2511, i1 %1141, !dbg !2054
   %2513 = or i1 %2512, %2508, !dbg !2055
-  call void @verifier.assume(i1 %2513), !dbg !2056
+  call void @__SEA_assume(i1 %2513), !dbg !2056
   %2514 = xor i1 %1575, true, !dbg !2057
   %2515 = bitcast i9 %1144 to <9 x i1>, !dbg !2058
   %2516 = call i1 @llvm.vector.reduce.or.v9i1(<9 x i1> %2515), !dbg !2059
   %2517 = xor i1 %2516, true, !dbg !2060
   %2518 = select i1 %1575, i1 %2517, i1 %1143, !dbg !2061
   %2519 = or i1 %2518, %2514, !dbg !2062
-  call void @verifier.assume(i1 %2519), !dbg !2063
+  call void @__SEA_assume(i1 %2519), !dbg !2063
   %2520 = xor i1 %1575, true, !dbg !2064
   %2521 = bitcast i9 %1146 to <9 x i1>, !dbg !2065
   %2522 = call i1 @llvm.vector.reduce.or.v9i1(<9 x i1> %2521), !dbg !2066
   %2523 = xor i1 %2522, true, !dbg !2067
   %2524 = select i1 %1575, i1 %2523, i1 %1145, !dbg !2068
   %2525 = or i1 %2524, %2520, !dbg !2069
-  call void @verifier.assume(i1 %2525), !dbg !2070
+  call void @__SEA_assume(i1 %2525), !dbg !2070
   %2526 = xor i1 %1575, true, !dbg !2071
   %2527 = bitcast i9 %1148 to <9 x i1>, !dbg !2072
   %2528 = call i1 @llvm.vector.reduce.or.v9i1(<9 x i1> %2527), !dbg !2073
   %2529 = xor i1 %2528, true, !dbg !2074
   %2530 = select i1 %1575, i1 %2529, i1 %1147, !dbg !2075
   %2531 = or i1 %2530, %2526, !dbg !2076
-  call void @verifier.assume(i1 %2531), !dbg !2077
+  call void @__SEA_assume(i1 %2531), !dbg !2077
   %2532 = xor i1 %1575, true, !dbg !2078
   %2533 = bitcast i9 %1150 to <9 x i1>, !dbg !2079
   %2534 = call i1 @llvm.vector.reduce.or.v9i1(<9 x i1> %2533), !dbg !2080
   %2535 = xor i1 %2534, true, !dbg !2081
   %2536 = select i1 %1575, i1 %2535, i1 %1149, !dbg !2082
   %2537 = or i1 %2536, %2532, !dbg !2083
-  call void @verifier.assume(i1 %2537), !dbg !2084
+  call void @__SEA_assume(i1 %2537), !dbg !2084
   %2538 = xor i1 %1575, true, !dbg !2085
   %2539 = or i1 %1151, %1575, !dbg !2086
   %2540 = or i1 %2539, %2538, !dbg !2087
-  call void @verifier.assume(i1 %2540), !dbg !2088
+  call void @__SEA_assume(i1 %2540), !dbg !2088
   %2541 = xor i1 %1575, true, !dbg !2089
   %2542 = bitcast i23 %1075 to <23 x i1>, !dbg !2090
   %2543 = call i1 @llvm.vector.reduce.or.v23i1(<23 x i1> %2542), !dbg !2091
   %2544 = xor i1 %2543, true, !dbg !2092
   %2545 = select i1 %1575, i1 %2544, i1 %1152, !dbg !2093
   %2546 = or i1 %2545, %2541, !dbg !2094
-  call void @verifier.assume(i1 %2546), !dbg !2095
+  call void @__SEA_assume(i1 %2546), !dbg !2095
   %2547 = xor i1 %1575, true, !dbg !2096
   %2548 = bitcast i23 %1094 to <23 x i1>, !dbg !2097
   %2549 = call i1 @llvm.vector.reduce.or.v23i1(<23 x i1> %2548), !dbg !2098
   %2550 = xor i1 %2549, true, !dbg !2099
   %2551 = select i1 %1575, i1 %2550, i1 %1153, !dbg !2100
   %2552 = or i1 %2551, %2547, !dbg !2101
-  call void @verifier.assume(i1 %2552), !dbg !2102
+  call void @__SEA_assume(i1 %2552), !dbg !2102
   %2553 = xor i1 %1575, true, !dbg !2103
   %2554 = bitcast i23 %1097 to <23 x i1>, !dbg !2104
   %2555 = call i1 @llvm.vector.reduce.or.v23i1(<23 x i1> %2554), !dbg !2105
   %2556 = xor i1 %2555, true, !dbg !2106
   %2557 = select i1 %1575, i1 %2556, i1 %1154, !dbg !2107
   %2558 = or i1 %2557, %2553, !dbg !2108
-  call void @verifier.assume(i1 %2558), !dbg !2109
+  call void @__SEA_assume(i1 %2558), !dbg !2109
   %2559 = xor i1 %1575, true, !dbg !2110
   %2560 = bitcast i23 %1101 to <23 x i1>, !dbg !2111
   %2561 = call i1 @llvm.vector.reduce.or.v23i1(<23 x i1> %2560), !dbg !2112
   %2562 = xor i1 %2561, true, !dbg !2113
   %2563 = select i1 %1575, i1 %2562, i1 %1155, !dbg !2114
   %2564 = or i1 %2563, %2559, !dbg !2115
-  call void @verifier.assume(i1 %2564), !dbg !2116
+  call void @__SEA_assume(i1 %2564), !dbg !2116
   %2565 = xor i1 %1575, true, !dbg !2117
   %2566 = bitcast i23 %1102 to <23 x i1>, !dbg !2118
   %2567 = call i1 @llvm.vector.reduce.or.v23i1(<23 x i1> %2566), !dbg !2119
   %2568 = xor i1 %2567, true, !dbg !2120
   %2569 = select i1 %1575, i1 %2568, i1 %1156, !dbg !2121
   %2570 = or i1 %2569, %2565, !dbg !2122
-  call void @verifier.assume(i1 %2570), !dbg !2123
+  call void @__SEA_assume(i1 %2570), !dbg !2123
   %2571 = xor i1 %1575, true, !dbg !2124
   %2572 = bitcast i23 %1103 to <23 x i1>, !dbg !2125
   %2573 = call i1 @llvm.vector.reduce.or.v23i1(<23 x i1> %2572), !dbg !2126
   %2574 = xor i1 %2573, true, !dbg !2127
   %2575 = select i1 %1575, i1 %2574, i1 %1157, !dbg !2128
   %2576 = or i1 %2575, %2571, !dbg !2129
-  call void @verifier.assume(i1 %2576), !dbg !2130
+  call void @__SEA_assume(i1 %2576), !dbg !2130
   %2577 = xor i1 %1575, true, !dbg !2131
   %2578 = bitcast i23 %1104 to <23 x i1>, !dbg !2132
   %2579 = call i1 @llvm.vector.reduce.or.v23i1(<23 x i1> %2578), !dbg !2133
   %2580 = xor i1 %2579, true, !dbg !2134
   %2581 = select i1 %1575, i1 %2580, i1 %1158, !dbg !2135
   %2582 = or i1 %2581, %2577, !dbg !2136
-  call void @verifier.assume(i1 %2582), !dbg !2137
+  call void @__SEA_assume(i1 %2582), !dbg !2137
   %2583 = xor i1 %1575, true, !dbg !2138
   %2584 = bitcast i23 %1105 to <23 x i1>, !dbg !2139
   %2585 = call i1 @llvm.vector.reduce.or.v23i1(<23 x i1> %2584), !dbg !2140
   %2586 = xor i1 %2585, true, !dbg !2141
   %2587 = select i1 %1575, i1 %2586, i1 %1159, !dbg !2142
   %2588 = or i1 %2587, %2583, !dbg !2143
-  call void @verifier.assume(i1 %2588), !dbg !2144
+  call void @__SEA_assume(i1 %2588), !dbg !2144
   %2589 = xor i1 %1575, true, !dbg !2145
   %2590 = bitcast i23 %1106 to <23 x i1>, !dbg !2146
   %2591 = call i1 @llvm.vector.reduce.or.v23i1(<23 x i1> %2590), !dbg !2147
   %2592 = xor i1 %2591, true, !dbg !2148
   %2593 = select i1 %1575, i1 %2592, i1 %1160, !dbg !2149
   %2594 = or i1 %2593, %2589, !dbg !2150
-  call void @verifier.assume(i1 %2594), !dbg !2151
+  call void @__SEA_assume(i1 %2594), !dbg !2151
   %2595 = xor i1 %1575, true, !dbg !2152
   %2596 = bitcast i23 %1107 to <23 x i1>, !dbg !2153
   %2597 = call i1 @llvm.vector.reduce.or.v23i1(<23 x i1> %2596), !dbg !2154
   %2598 = xor i1 %2597, true, !dbg !2155
   %2599 = select i1 %1575, i1 %2598, i1 %1161, !dbg !2156
   %2600 = or i1 %2599, %2595, !dbg !2157
-  call void @verifier.assume(i1 %2600), !dbg !2158
+  call void @__SEA_assume(i1 %2600), !dbg !2158
   %2601 = xor i1 %1575, true, !dbg !2159
   %2602 = bitcast i23 %1108 to <23 x i1>, !dbg !2160
   %2603 = call i1 @llvm.vector.reduce.or.v23i1(<23 x i1> %2602), !dbg !2161
   %2604 = xor i1 %2603, true, !dbg !2162
   %2605 = select i1 %1575, i1 %2604, i1 %1162, !dbg !2163
   %2606 = or i1 %2605, %2601, !dbg !2164
-  call void @verifier.assume(i1 %2606), !dbg !2165
+  call void @__SEA_assume(i1 %2606), !dbg !2165
   %2607 = xor i1 %1575, true, !dbg !2166
   %2608 = bitcast i23 %1109 to <23 x i1>, !dbg !2167
   %2609 = call i1 @llvm.vector.reduce.or.v23i1(<23 x i1> %2608), !dbg !2168
   %2610 = xor i1 %2609, true, !dbg !2169
   %2611 = select i1 %1575, i1 %2610, i1 %1163, !dbg !2170
   %2612 = or i1 %2611, %2607, !dbg !2171
-  call void @verifier.assume(i1 %2612), !dbg !2172
+  call void @__SEA_assume(i1 %2612), !dbg !2172
   %2613 = xor i1 %1575, true, !dbg !2173
   %2614 = bitcast i23 %1110 to <23 x i1>, !dbg !2174
   %2615 = call i1 @llvm.vector.reduce.or.v23i1(<23 x i1> %2614), !dbg !2175
   %2616 = xor i1 %2615, true, !dbg !2176
   %2617 = select i1 %1575, i1 %2616, i1 %1164, !dbg !2177
   %2618 = or i1 %2617, %2613, !dbg !2178
-  call void @verifier.assume(i1 %2618), !dbg !2179
+  call void @__SEA_assume(i1 %2618), !dbg !2179
   %2619 = xor i1 %1575, true, !dbg !2180
   %2620 = bitcast i23 %1111 to <23 x i1>, !dbg !2181
   %2621 = call i1 @llvm.vector.reduce.or.v23i1(<23 x i1> %2620), !dbg !2182
   %2622 = xor i1 %2621, true, !dbg !2183
   %2623 = select i1 %1575, i1 %2622, i1 %1165, !dbg !2184
   %2624 = or i1 %2623, %2619, !dbg !2185
-  call void @verifier.assume(i1 %2624), !dbg !2186
+  call void @__SEA_assume(i1 %2624), !dbg !2186
   %2625 = xor i1 %1575, true, !dbg !2187
   %2626 = bitcast i23 %1112 to <23 x i1>, !dbg !2188
   %2627 = call i1 @llvm.vector.reduce.or.v23i1(<23 x i1> %2626), !dbg !2189
   %2628 = xor i1 %2627, true, !dbg !2190
   %2629 = select i1 %1575, i1 %2628, i1 %1166, !dbg !2191
   %2630 = or i1 %2629, %2625, !dbg !2192
-  call void @verifier.assume(i1 %2630), !dbg !2193
+  call void @__SEA_assume(i1 %2630), !dbg !2193
   %2631 = xor i1 %1575, true, !dbg !2194
   %2632 = or i1 %1576, %2631, !dbg !2195
-  call void @verifier.assume(i1 %2632), !dbg !2196
+  call void @__SEA_assume(i1 %2632), !dbg !2196
   %2633 = icmp ugt i10 %1120, 0, !dbg !2197
   %2634 = or i1 %2633, %2628, !dbg !2198
   %2635 = or i1 %2634, false, !dbg !2199
-  call void @verifier.assume(i1 %2635), !dbg !2200
+  call void @__SEA_assume(i1 %2635), !dbg !2200
   %2636 = icmp ugt i10 %1120, 1, !dbg !2201
   %2637 = or i1 %2636, %2622, !dbg !2202
   %2638 = or i1 %2637, false, !dbg !2203
-  call void @verifier.assume(i1 %2638), !dbg !2204
+  call void @__SEA_assume(i1 %2638), !dbg !2204
   %2639 = icmp ugt i10 %1120, 2, !dbg !2205
   %2640 = or i1 %2639, %2616, !dbg !2206
   %2641 = or i1 %2640, false, !dbg !2207
-  call void @verifier.assume(i1 %2641), !dbg !2208
+  call void @__SEA_assume(i1 %2641), !dbg !2208
   %2642 = icmp ugt i10 %1120, 3, !dbg !2209
   %2643 = or i1 %2642, %2610, !dbg !2210
   %2644 = or i1 %2643, false, !dbg !2211
-  call void @verifier.assume(i1 %2644), !dbg !2212
+  call void @__SEA_assume(i1 %2644), !dbg !2212
   %2645 = icmp ugt i10 %1120, 4, !dbg !2213
   %2646 = or i1 %2645, %2604, !dbg !2214
   %2647 = or i1 %2646, false, !dbg !2215
-  call void @verifier.assume(i1 %2647), !dbg !2216
+  call void @__SEA_assume(i1 %2647), !dbg !2216
   %2648 = icmp ugt i10 %1120, 5, !dbg !2217
   %2649 = or i1 %2648, %2598, !dbg !2218
   %2650 = or i1 %2649, false, !dbg !2219
-  call void @verifier.assume(i1 %2650), !dbg !2220
+  call void @__SEA_assume(i1 %2650), !dbg !2220
   %2651 = icmp ugt i10 %1120, 6, !dbg !2221
   %2652 = or i1 %2651, %2592, !dbg !2222
   %2653 = or i1 %2652, false, !dbg !2223
-  call void @verifier.assume(i1 %2653), !dbg !2224
+  call void @__SEA_assume(i1 %2653), !dbg !2224
   %2654 = icmp ugt i10 %1120, 7, !dbg !2225
   %2655 = or i1 %2654, %2586, !dbg !2226
   %2656 = or i1 %2655, false, !dbg !2227
-  call void @verifier.assume(i1 %2656), !dbg !2228
+  call void @__SEA_assume(i1 %2656), !dbg !2228
   %2657 = icmp ugt i10 %1120, 8, !dbg !2229
   %2658 = or i1 %2657, %2580, !dbg !2230
   %2659 = or i1 %2658, false, !dbg !2231
-  call void @verifier.assume(i1 %2659), !dbg !2232
+  call void @__SEA_assume(i1 %2659), !dbg !2232
   %2660 = icmp ugt i10 %1120, 9, !dbg !2233
   %2661 = or i1 %2660, %2574, !dbg !2234
   %2662 = or i1 %2661, false, !dbg !2235
-  call void @verifier.assume(i1 %2662), !dbg !2236
+  call void @__SEA_assume(i1 %2662), !dbg !2236
   %2663 = icmp ugt i10 %1120, 10, !dbg !2237
   %2664 = or i1 %2663, %2568, !dbg !2238
   %2665 = or i1 %2664, false, !dbg !2239
-  call void @verifier.assume(i1 %2665), !dbg !2240
+  call void @__SEA_assume(i1 %2665), !dbg !2240
   %2666 = icmp ugt i10 %1120, 11, !dbg !2241
   %2667 = or i1 %2666, %2562, !dbg !2242
   %2668 = or i1 %2667, false, !dbg !2243
-  call void @verifier.assume(i1 %2668), !dbg !2244
+  call void @__SEA_assume(i1 %2668), !dbg !2244
   %2669 = icmp ugt i10 %1120, 12, !dbg !2245
   %2670 = or i1 %2669, %2556, !dbg !2246
   %2671 = or i1 %2670, false, !dbg !2247
-  call void @verifier.assume(i1 %2671), !dbg !2248
+  call void @__SEA_assume(i1 %2671), !dbg !2248
   %2672 = icmp ugt i10 %1120, 13, !dbg !2249
   %2673 = or i1 %2672, %2550, !dbg !2250
   %2674 = or i1 %2673, false, !dbg !2251
-  call void @verifier.assume(i1 %2674), !dbg !2252
+  call void @__SEA_assume(i1 %2674), !dbg !2252
   %2675 = icmp ugt i10 %1120, 14, !dbg !2253
   %2676 = or i1 %2675, %2544, !dbg !2254
   %2677 = or i1 %2676, false, !dbg !2255
-  call void @verifier.assume(i1 %2677), !dbg !2256
+  call void @__SEA_assume(i1 %2677), !dbg !2256
   %2678 = xor i1 %1657, true, !dbg !2257
   %2679 = zext i10 %1078 to i11, !dbg !2258
   %2680 = sub i11 17, %2679, !dbg !2259
@@ -2770,16 +2770,16 @@ define void @main() !dbg !3 {
   %2682 = icmp eq i11 %2681, %2680, !dbg !2261
   %2683 = select i1 %1657, i1 %2682, i1 %1168, !dbg !2262
   %2684 = or i1 %2683, %2678, !dbg !2263
-  call void @verifier.assume(i1 %2684), !dbg !2264
+  call void @__SEA_assume(i1 %2684), !dbg !2264
   %2685 = xor i1 %1654, true, !dbg !2265
   %2686 = select i1 %1654, i1 %1651, i1 %1169, !dbg !2266
   %2687 = or i1 %2686, %2685, !dbg !2267
-  call void @verifier.assume(i1 %2687), !dbg !2268
+  call void @__SEA_assume(i1 %2687), !dbg !2268
   %2688 = and i1 %1115, %1171, !dbg !2269
   %2689 = xor i1 %2688, true, !dbg !2270
   %2690 = select i1 %2688, i1 %1651, i1 %1170, !dbg !2271
   %2691 = or i1 %2690, %2689, !dbg !2272
-  call void @verifier.assume(i1 %2691), !dbg !2273
+  call void @__SEA_assume(i1 %2691), !dbg !2273
   %2692 = lshr i9 %1665, 0, !dbg !2274
   %2693 = trunc i9 %2692 to i8, !dbg !2275
   %2694 = zext i8 %2693 to i9, !dbg !2276
@@ -2810,7 +2810,7 @@ define void @main() !dbg !3 {
   %2719 = icmp eq i18 %2718, %2710, !dbg !2301
   %2720 = select i1 %2700, i1 %2719, i1 %1172, !dbg !2302
   %2721 = or i1 %2720, %2701, !dbg !2303
-  call void @verifier.assume(i1 %2721), !dbg !2304
+  call void @__SEA_assume(i1 %2721), !dbg !2304
   %2722 = icmp eq i9 %2699, 2, !dbg !2305
   %2723 = xor i1 %2722, true, !dbg !2306
   %2724 = zext i9 %2709 to i10, !dbg !2307
@@ -2820,7 +2820,7 @@ define void @main() !dbg !3 {
   %2728 = icmp eq i18 %2718, %2727, !dbg !2311
   %2729 = select i1 %2722, i1 %2728, i1 %1174, !dbg !2312
   %2730 = or i1 %2729, %2723, !dbg !2313
-  call void @verifier.assume(i1 %2730), !dbg !2314
+  call void @__SEA_assume(i1 %2730), !dbg !2314
   %2731 = icmp eq i9 %2699, 4, !dbg !2315
   %2732 = xor i1 %2731, true, !dbg !2316
   %2733 = zext i9 %2709 to i11, !dbg !2317
@@ -2830,7 +2830,7 @@ define void @main() !dbg !3 {
   %2737 = icmp eq i18 %2718, %2736, !dbg !2321
   %2738 = select i1 %2731, i1 %2737, i1 %1175, !dbg !2322
   %2739 = or i1 %2738, %2732, !dbg !2323
-  call void @verifier.assume(i1 %2739), !dbg !2324
+  call void @__SEA_assume(i1 %2739), !dbg !2324
   %2740 = icmp eq i9 %2699, 8, !dbg !2325
   %2741 = xor i1 %2740, true, !dbg !2326
   %2742 = zext i9 %2709 to i12, !dbg !2327
@@ -2840,7 +2840,7 @@ define void @main() !dbg !3 {
   %2746 = icmp eq i18 %2718, %2745, !dbg !2331
   %2747 = select i1 %2740, i1 %2746, i1 %1176, !dbg !2332
   %2748 = or i1 %2747, %2741, !dbg !2333
-  call void @verifier.assume(i1 %2748), !dbg !2334
+  call void @__SEA_assume(i1 %2748), !dbg !2334
   %2749 = icmp eq i9 %2699, 16, !dbg !2335
   %2750 = xor i1 %2749, true, !dbg !2336
   %2751 = zext i9 %2709 to i13, !dbg !2337
@@ -2850,7 +2850,7 @@ define void @main() !dbg !3 {
   %2755 = icmp eq i18 %2718, %2754, !dbg !2341
   %2756 = select i1 %2749, i1 %2755, i1 %1177, !dbg !2342
   %2757 = or i1 %2756, %2750, !dbg !2343
-  call void @verifier.assume(i1 %2757), !dbg !2344
+  call void @__SEA_assume(i1 %2757), !dbg !2344
   %2758 = icmp eq i9 %2699, 32, !dbg !2345
   %2759 = xor i1 %2758, true, !dbg !2346
   %2760 = zext i9 %2709 to i14, !dbg !2347
@@ -2860,7 +2860,7 @@ define void @main() !dbg !3 {
   %2764 = icmp eq i18 %2718, %2763, !dbg !2351
   %2765 = select i1 %2758, i1 %2764, i1 %1178, !dbg !2352
   %2766 = or i1 %2765, %2759, !dbg !2353
-  call void @verifier.assume(i1 %2766), !dbg !2354
+  call void @__SEA_assume(i1 %2766), !dbg !2354
   %2767 = icmp eq i9 %2699, 64, !dbg !2355
   %2768 = xor i1 %2767, true, !dbg !2356
   %2769 = zext i9 %2709 to i15, !dbg !2357
@@ -2870,7 +2870,7 @@ define void @main() !dbg !3 {
   %2773 = icmp eq i18 %2718, %2772, !dbg !2361
   %2774 = select i1 %2767, i1 %2773, i1 %1179, !dbg !2362
   %2775 = or i1 %2774, %2768, !dbg !2363
-  call void @verifier.assume(i1 %2775), !dbg !2364
+  call void @__SEA_assume(i1 %2775), !dbg !2364
   %2776 = icmp eq i9 %2699, 128, !dbg !2365
   %2777 = xor i1 %2776, true, !dbg !2366
   %2778 = zext i9 %2709 to i16, !dbg !2367
@@ -2880,7 +2880,7 @@ define void @main() !dbg !3 {
   %2782 = icmp eq i18 %2718, %2781, !dbg !2371
   %2783 = select i1 %2776, i1 %2782, i1 %1180, !dbg !2372
   %2784 = or i1 %2783, %2777, !dbg !2373
-  call void @verifier.assume(i1 %2784), !dbg !2374
+  call void @__SEA_assume(i1 %2784), !dbg !2374
   %2785 = icmp eq i9 %2699, -256, !dbg !2375
   %2786 = xor i1 %2785, true, !dbg !2376
   %2787 = zext i9 %2709 to i17, !dbg !2377
@@ -2890,14 +2890,14 @@ define void @main() !dbg !3 {
   %2791 = icmp eq i18 %2718, %2790, !dbg !2381
   %2792 = select i1 %2785, i1 %2791, i1 %1181, !dbg !2382
   %2793 = or i1 %2792, %2786, !dbg !2383
-  call void @verifier.assume(i1 %2793), !dbg !2384
+  call void @__SEA_assume(i1 %2793), !dbg !2384
   %2794 = xor i1 %1651, true, !dbg !2385
   %2795 = bitcast i18 %1173 to <18 x i1>, !dbg !2386
   %2796 = call i1 @llvm.vector.reduce.or.v18i1(<18 x i1> %2795), !dbg !2387
   %2797 = xor i1 %2796, true, !dbg !2388
   %2798 = select i1 %1651, i1 %2797, i1 %1182, !dbg !2389
   %2799 = or i1 %2798, %2794, !dbg !2390
-  call void @verifier.assume(i1 %2799), !dbg !2391
+  call void @__SEA_assume(i1 %2799), !dbg !2391
   %2800 = bitcast i9 %1093 to <9 x i1>, !dbg !2392
   %2801 = call i1 @llvm.vector.reduce.or.v9i1(<9 x i1> %2800), !dbg !2393
   %2802 = xor i1 %2801, true, !dbg !2394
@@ -2907,26 +2907,26 @@ define void @main() !dbg !3 {
   %2806 = select i1 %2803, i1 %2797, i1 %1183, !dbg !2398
   %2807 = select i1 %1651, i1 %1184, i1 %2806, !dbg !2399
   %2808 = or i1 %2807, %2805, !dbg !2400
-  call void @verifier.assume(i1 %2808), !dbg !2401
+  call void @__SEA_assume(i1 %2808), !dbg !2401
   %2809 = xor i1 %1651, true, !dbg !2402
   %2810 = xor i1 %2809, true, !dbg !2403
   %2811 = xor i1 %2708, %2698, !dbg !2404
   %2812 = icmp eq i1 %2717, %2811, !dbg !2405
   %2813 = select i1 %1651, i1 %1185, i1 %2812, !dbg !2406
   %2814 = or i1 %2813, %2810, !dbg !2407
-  call void @verifier.assume(i1 %2814), !dbg !2408
+  call void @__SEA_assume(i1 %2814), !dbg !2408
   %2815 = xor i1 %2809, true, !dbg !2409
   %2816 = lshr i18 %2718, 9, !dbg !2410
   %2817 = trunc i18 %2816 to i9, !dbg !2411
   %2818 = icmp ule i9 %2817, %2709, !dbg !2412
   %2819 = select i1 %1651, i1 %1186, i1 %2818, !dbg !2413
   %2820 = or i1 %2819, %2815, !dbg !2414
-  call void @verifier.assume(i1 %2820), !dbg !2415
+  call void @__SEA_assume(i1 %2820), !dbg !2415
   %2821 = xor i1 %2809, true, !dbg !2416
   %2822 = icmp ule i9 %2817, %2699, !dbg !2417
   %2823 = select i1 %1651, i1 %1187, i1 %2822, !dbg !2418
   %2824 = or i1 %2823, %2821, !dbg !2419
-  call void @verifier.assume(i1 %2824), !dbg !2420
+  call void @__SEA_assume(i1 %2824), !dbg !2420
   %2825 = icmp eq i9 %2709, 2, !dbg !2421
   %2826 = xor i1 %2825, true, !dbg !2422
   %2827 = zext i9 %2699 to i10, !dbg !2423
@@ -2936,7 +2936,7 @@ define void @main() !dbg !3 {
   %2831 = icmp eq i18 %2718, %2830, !dbg !2427
   %2832 = select i1 %2825, i1 %2831, i1 %1188, !dbg !2428
   %2833 = or i1 %2832, %2826, !dbg !2429
-  call void @verifier.assume(i1 %2833), !dbg !2430
+  call void @__SEA_assume(i1 %2833), !dbg !2430
   %2834 = icmp eq i9 %2709, 4, !dbg !2431
   %2835 = xor i1 %2834, true, !dbg !2432
   %2836 = zext i9 %2699 to i11, !dbg !2433
@@ -2946,7 +2946,7 @@ define void @main() !dbg !3 {
   %2840 = icmp eq i18 %2718, %2839, !dbg !2437
   %2841 = select i1 %2834, i1 %2840, i1 %1189, !dbg !2438
   %2842 = or i1 %2841, %2835, !dbg !2439
-  call void @verifier.assume(i1 %2842), !dbg !2440
+  call void @__SEA_assume(i1 %2842), !dbg !2440
   %2843 = icmp eq i9 %2709, 8, !dbg !2441
   %2844 = xor i1 %2843, true, !dbg !2442
   %2845 = zext i9 %2699 to i12, !dbg !2443
@@ -2956,7 +2956,7 @@ define void @main() !dbg !3 {
   %2849 = icmp eq i18 %2718, %2848, !dbg !2447
   %2850 = select i1 %2843, i1 %2849, i1 %1190, !dbg !2448
   %2851 = or i1 %2850, %2844, !dbg !2449
-  call void @verifier.assume(i1 %2851), !dbg !2450
+  call void @__SEA_assume(i1 %2851), !dbg !2450
   %2852 = icmp eq i9 %2709, 16, !dbg !2451
   %2853 = xor i1 %2852, true, !dbg !2452
   %2854 = zext i9 %2699 to i13, !dbg !2453
@@ -2966,7 +2966,7 @@ define void @main() !dbg !3 {
   %2858 = icmp eq i18 %2718, %2857, !dbg !2457
   %2859 = select i1 %2852, i1 %2858, i1 %1191, !dbg !2458
   %2860 = or i1 %2859, %2853, !dbg !2459
-  call void @verifier.assume(i1 %2860), !dbg !2460
+  call void @__SEA_assume(i1 %2860), !dbg !2460
   %2861 = icmp eq i9 %2709, 32, !dbg !2461
   %2862 = xor i1 %2861, true, !dbg !2462
   %2863 = zext i9 %2699 to i14, !dbg !2463
@@ -2976,7 +2976,7 @@ define void @main() !dbg !3 {
   %2867 = icmp eq i18 %2718, %2866, !dbg !2467
   %2868 = select i1 %2861, i1 %2867, i1 %1192, !dbg !2468
   %2869 = or i1 %2868, %2862, !dbg !2469
-  call void @verifier.assume(i1 %2869), !dbg !2470
+  call void @__SEA_assume(i1 %2869), !dbg !2470
   %2870 = icmp eq i9 %2709, 64, !dbg !2471
   %2871 = xor i1 %2870, true, !dbg !2472
   %2872 = zext i9 %2699 to i15, !dbg !2473
@@ -2986,7 +2986,7 @@ define void @main() !dbg !3 {
   %2876 = icmp eq i18 %2718, %2875, !dbg !2477
   %2877 = select i1 %2870, i1 %2876, i1 %1193, !dbg !2478
   %2878 = or i1 %2877, %2871, !dbg !2479
-  call void @verifier.assume(i1 %2878), !dbg !2480
+  call void @__SEA_assume(i1 %2878), !dbg !2480
   %2879 = icmp eq i9 %2709, 128, !dbg !2481
   %2880 = xor i1 %2879, true, !dbg !2482
   %2881 = zext i9 %2699 to i16, !dbg !2483
@@ -2996,7 +2996,7 @@ define void @main() !dbg !3 {
   %2885 = icmp eq i18 %2718, %2884, !dbg !2487
   %2886 = select i1 %2879, i1 %2885, i1 %1194, !dbg !2488
   %2887 = or i1 %2886, %2880, !dbg !2489
-  call void @verifier.assume(i1 %2887), !dbg !2490
+  call void @__SEA_assume(i1 %2887), !dbg !2490
   %2888 = xor i1 %2700, true, !dbg !2491
   %2889 = lshr i9 %1083, 0, !dbg !2492
   %2890 = trunc i9 %2889 to i8, !dbg !2493
@@ -3018,7 +3018,7 @@ define void @main() !dbg !3 {
   %2906 = icmp eq i18 %2905, %2897, !dbg !2509
   %2907 = select i1 %2700, i1 %2906, i1 %1195, !dbg !2510
   %2908 = or i1 %2907, %2888, !dbg !2511
-  call void @verifier.assume(i1 %2908), !dbg !2512
+  call void @__SEA_assume(i1 %2908), !dbg !2512
   %2909 = xor i1 %2722, true, !dbg !2513
   %2910 = zext i9 %2896 to i10, !dbg !2514
   %2911 = shl i10 %2910, 1, !dbg !2515
@@ -3027,7 +3027,7 @@ define void @main() !dbg !3 {
   %2914 = icmp eq i18 %2905, %2913, !dbg !2518
   %2915 = select i1 %2722, i1 %2914, i1 %1197, !dbg !2519
   %2916 = or i1 %2915, %2909, !dbg !2520
-  call void @verifier.assume(i1 %2916), !dbg !2521
+  call void @__SEA_assume(i1 %2916), !dbg !2521
   %2917 = xor i1 %2731, true, !dbg !2522
   %2918 = zext i9 %2896 to i11, !dbg !2523
   %2919 = shl i11 %2918, 2, !dbg !2524
@@ -3036,7 +3036,7 @@ define void @main() !dbg !3 {
   %2922 = icmp eq i18 %2905, %2921, !dbg !2527
   %2923 = select i1 %2731, i1 %2922, i1 %1198, !dbg !2528
   %2924 = or i1 %2923, %2917, !dbg !2529
-  call void @verifier.assume(i1 %2924), !dbg !2530
+  call void @__SEA_assume(i1 %2924), !dbg !2530
   %2925 = xor i1 %2740, true, !dbg !2531
   %2926 = zext i9 %2896 to i12, !dbg !2532
   %2927 = shl i12 %2926, 3, !dbg !2533
@@ -3045,7 +3045,7 @@ define void @main() !dbg !3 {
   %2930 = icmp eq i18 %2905, %2929, !dbg !2536
   %2931 = select i1 %2740, i1 %2930, i1 %1199, !dbg !2537
   %2932 = or i1 %2931, %2925, !dbg !2538
-  call void @verifier.assume(i1 %2932), !dbg !2539
+  call void @__SEA_assume(i1 %2932), !dbg !2539
   %2933 = xor i1 %2749, true, !dbg !2540
   %2934 = zext i9 %2896 to i13, !dbg !2541
   %2935 = shl i13 %2934, 4, !dbg !2542
@@ -3054,7 +3054,7 @@ define void @main() !dbg !3 {
   %2938 = icmp eq i18 %2905, %2937, !dbg !2545
   %2939 = select i1 %2749, i1 %2938, i1 %1200, !dbg !2546
   %2940 = or i1 %2939, %2933, !dbg !2547
-  call void @verifier.assume(i1 %2940), !dbg !2548
+  call void @__SEA_assume(i1 %2940), !dbg !2548
   %2941 = xor i1 %2758, true, !dbg !2549
   %2942 = zext i9 %2896 to i14, !dbg !2550
   %2943 = shl i14 %2942, 5, !dbg !2551
@@ -3063,7 +3063,7 @@ define void @main() !dbg !3 {
   %2946 = icmp eq i18 %2905, %2945, !dbg !2554
   %2947 = select i1 %2758, i1 %2946, i1 %1201, !dbg !2555
   %2948 = or i1 %2947, %2941, !dbg !2556
-  call void @verifier.assume(i1 %2948), !dbg !2557
+  call void @__SEA_assume(i1 %2948), !dbg !2557
   %2949 = xor i1 %2767, true, !dbg !2558
   %2950 = zext i9 %2896 to i15, !dbg !2559
   %2951 = shl i15 %2950, 6, !dbg !2560
@@ -3072,7 +3072,7 @@ define void @main() !dbg !3 {
   %2954 = icmp eq i18 %2905, %2953, !dbg !2563
   %2955 = select i1 %2767, i1 %2954, i1 %1202, !dbg !2564
   %2956 = or i1 %2955, %2949, !dbg !2565
-  call void @verifier.assume(i1 %2956), !dbg !2566
+  call void @__SEA_assume(i1 %2956), !dbg !2566
   %2957 = xor i1 %2776, true, !dbg !2567
   %2958 = zext i9 %2896 to i16, !dbg !2568
   %2959 = shl i16 %2958, 7, !dbg !2569
@@ -3081,7 +3081,7 @@ define void @main() !dbg !3 {
   %2962 = icmp eq i18 %2905, %2961, !dbg !2572
   %2963 = select i1 %2776, i1 %2962, i1 %1203, !dbg !2573
   %2964 = or i1 %2963, %2957, !dbg !2574
-  call void @verifier.assume(i1 %2964), !dbg !2575
+  call void @__SEA_assume(i1 %2964), !dbg !2575
   %2965 = xor i1 %2785, true, !dbg !2576
   %2966 = zext i9 %2896 to i17, !dbg !2577
   %2967 = shl i17 %2966, 8, !dbg !2578
@@ -3090,14 +3090,14 @@ define void @main() !dbg !3 {
   %2970 = icmp eq i18 %2905, %2969, !dbg !2581
   %2971 = select i1 %2785, i1 %2970, i1 %1204, !dbg !2582
   %2972 = or i1 %2971, %2965, !dbg !2583
-  call void @verifier.assume(i1 %2972), !dbg !2584
+  call void @__SEA_assume(i1 %2972), !dbg !2584
   %2973 = xor i1 %1651, true, !dbg !2585
   %2974 = bitcast i18 %1196 to <18 x i1>, !dbg !2586
   %2975 = call i1 @llvm.vector.reduce.or.v18i1(<18 x i1> %2974), !dbg !2587
   %2976 = xor i1 %2975, true, !dbg !2588
   %2977 = select i1 %1651, i1 %2976, i1 %1205, !dbg !2589
   %2978 = or i1 %2977, %2973, !dbg !2590
-  call void @verifier.assume(i1 %2978), !dbg !2591
+  call void @__SEA_assume(i1 %2978), !dbg !2591
   %2979 = bitcast i9 %1083 to <9 x i1>, !dbg !2592
   %2980 = call i1 @llvm.vector.reduce.or.v9i1(<9 x i1> %2979), !dbg !2593
   %2981 = xor i1 %2980, true, !dbg !2594
@@ -3107,74 +3107,74 @@ define void @main() !dbg !3 {
   %2985 = select i1 %2982, i1 %2976, i1 %1206, !dbg !2598
   %2986 = select i1 %1651, i1 %1207, i1 %2985, !dbg !2599
   %2987 = or i1 %2986, %2984, !dbg !2600
-  call void @verifier.assume(i1 %2987), !dbg !2601
+  call void @__SEA_assume(i1 %2987), !dbg !2601
   %2988 = xor i1 %2809, true, !dbg !2602
   %2989 = xor i1 %2895, %2698, !dbg !2603
   %2990 = icmp eq i1 %2904, %2989, !dbg !2604
   %2991 = select i1 %1651, i1 %1208, i1 %2990, !dbg !2605
   %2992 = or i1 %2991, %2988, !dbg !2606
-  call void @verifier.assume(i1 %2992), !dbg !2607
+  call void @__SEA_assume(i1 %2992), !dbg !2607
   %2993 = xor i1 %2809, true, !dbg !2608
   %2994 = lshr i18 %2905, 9, !dbg !2609
   %2995 = trunc i18 %2994 to i9, !dbg !2610
   %2996 = icmp ule i9 %2995, %2896, !dbg !2611
   %2997 = select i1 %1651, i1 %1209, i1 %2996, !dbg !2612
   %2998 = or i1 %2997, %2993, !dbg !2613
-  call void @verifier.assume(i1 %2998), !dbg !2614
+  call void @__SEA_assume(i1 %2998), !dbg !2614
   %2999 = xor i1 %2809, true, !dbg !2615
   %3000 = icmp ule i9 %2995, %2699, !dbg !2616
   %3001 = select i1 %1651, i1 %1210, i1 %3000, !dbg !2617
   %3002 = or i1 %3001, %2999, !dbg !2618
-  call void @verifier.assume(i1 %3002), !dbg !2619
+  call void @__SEA_assume(i1 %3002), !dbg !2619
   %3003 = icmp eq i9 %2896, 2, !dbg !2620
   %3004 = xor i1 %3003, true, !dbg !2621
   %3005 = zext i10 %2829 to i18, !dbg !2622
   %3006 = icmp eq i18 %2905, %3005, !dbg !2623
   %3007 = select i1 %3003, i1 %3006, i1 %1211, !dbg !2624
   %3008 = or i1 %3007, %3004, !dbg !2625
-  call void @verifier.assume(i1 %3008), !dbg !2626
+  call void @__SEA_assume(i1 %3008), !dbg !2626
   %3009 = icmp eq i9 %2896, 4, !dbg !2627
   %3010 = xor i1 %3009, true, !dbg !2628
   %3011 = zext i11 %2838 to i18, !dbg !2629
   %3012 = icmp eq i18 %2905, %3011, !dbg !2630
   %3013 = select i1 %3009, i1 %3012, i1 %1212, !dbg !2631
   %3014 = or i1 %3013, %3010, !dbg !2632
-  call void @verifier.assume(i1 %3014), !dbg !2633
+  call void @__SEA_assume(i1 %3014), !dbg !2633
   %3015 = icmp eq i9 %2896, 8, !dbg !2634
   %3016 = xor i1 %3015, true, !dbg !2635
   %3017 = zext i12 %2847 to i18, !dbg !2636
   %3018 = icmp eq i18 %2905, %3017, !dbg !2637
   %3019 = select i1 %3015, i1 %3018, i1 %1213, !dbg !2638
   %3020 = or i1 %3019, %3016, !dbg !2639
-  call void @verifier.assume(i1 %3020), !dbg !2640
+  call void @__SEA_assume(i1 %3020), !dbg !2640
   %3021 = icmp eq i9 %2896, 16, !dbg !2641
   %3022 = xor i1 %3021, true, !dbg !2642
   %3023 = zext i13 %2856 to i18, !dbg !2643
   %3024 = icmp eq i18 %2905, %3023, !dbg !2644
   %3025 = select i1 %3021, i1 %3024, i1 %1214, !dbg !2645
   %3026 = or i1 %3025, %3022, !dbg !2646
-  call void @verifier.assume(i1 %3026), !dbg !2647
+  call void @__SEA_assume(i1 %3026), !dbg !2647
   %3027 = icmp eq i9 %2896, 32, !dbg !2648
   %3028 = xor i1 %3027, true, !dbg !2649
   %3029 = zext i14 %2865 to i18, !dbg !2650
   %3030 = icmp eq i18 %2905, %3029, !dbg !2651
   %3031 = select i1 %3027, i1 %3030, i1 %1215, !dbg !2652
   %3032 = or i1 %3031, %3028, !dbg !2653
-  call void @verifier.assume(i1 %3032), !dbg !2654
+  call void @__SEA_assume(i1 %3032), !dbg !2654
   %3033 = icmp eq i9 %2896, 64, !dbg !2655
   %3034 = xor i1 %3033, true, !dbg !2656
   %3035 = zext i15 %2874 to i18, !dbg !2657
   %3036 = icmp eq i18 %2905, %3035, !dbg !2658
   %3037 = select i1 %3033, i1 %3036, i1 %1216, !dbg !2659
   %3038 = or i1 %3037, %3034, !dbg !2660
-  call void @verifier.assume(i1 %3038), !dbg !2661
+  call void @__SEA_assume(i1 %3038), !dbg !2661
   %3039 = icmp eq i9 %2896, 128, !dbg !2662
   %3040 = xor i1 %3039, true, !dbg !2663
   %3041 = zext i16 %2883 to i18, !dbg !2664
   %3042 = icmp eq i18 %2905, %3041, !dbg !2665
   %3043 = select i1 %3039, i1 %3042, i1 %1217, !dbg !2666
   %3044 = or i1 %3043, %3040, !dbg !2667
-  call void @verifier.assume(i1 %3044), !dbg !2668
+  call void @__SEA_assume(i1 %3044), !dbg !2668
   %3045 = xor i1 %2700, true, !dbg !2669
   %3046 = lshr i9 %1082, 0, !dbg !2670
   %3047 = trunc i9 %3046 to i8, !dbg !2671
@@ -3196,7 +3196,7 @@ define void @main() !dbg !3 {
   %3063 = icmp eq i18 %3062, %3054, !dbg !2687
   %3064 = select i1 %2700, i1 %3063, i1 %1218, !dbg !2688
   %3065 = or i1 %3064, %3045, !dbg !2689
-  call void @verifier.assume(i1 %3065), !dbg !2690
+  call void @__SEA_assume(i1 %3065), !dbg !2690
   %3066 = xor i1 %2722, true, !dbg !2691
   %3067 = zext i9 %3053 to i10, !dbg !2692
   %3068 = shl i10 %3067, 1, !dbg !2693
@@ -3205,7 +3205,7 @@ define void @main() !dbg !3 {
   %3071 = icmp eq i18 %3062, %3070, !dbg !2696
   %3072 = select i1 %2722, i1 %3071, i1 %1220, !dbg !2697
   %3073 = or i1 %3072, %3066, !dbg !2698
-  call void @verifier.assume(i1 %3073), !dbg !2699
+  call void @__SEA_assume(i1 %3073), !dbg !2699
   %3074 = xor i1 %2731, true, !dbg !2700
   %3075 = zext i9 %3053 to i11, !dbg !2701
   %3076 = shl i11 %3075, 2, !dbg !2702
@@ -3214,7 +3214,7 @@ define void @main() !dbg !3 {
   %3079 = icmp eq i18 %3062, %3078, !dbg !2705
   %3080 = select i1 %2731, i1 %3079, i1 %1221, !dbg !2706
   %3081 = or i1 %3080, %3074, !dbg !2707
-  call void @verifier.assume(i1 %3081), !dbg !2708
+  call void @__SEA_assume(i1 %3081), !dbg !2708
   %3082 = xor i1 %2740, true, !dbg !2709
   %3083 = zext i9 %3053 to i12, !dbg !2710
   %3084 = shl i12 %3083, 3, !dbg !2711
@@ -3223,7 +3223,7 @@ define void @main() !dbg !3 {
   %3087 = icmp eq i18 %3062, %3086, !dbg !2714
   %3088 = select i1 %2740, i1 %3087, i1 %1222, !dbg !2715
   %3089 = or i1 %3088, %3082, !dbg !2716
-  call void @verifier.assume(i1 %3089), !dbg !2717
+  call void @__SEA_assume(i1 %3089), !dbg !2717
   %3090 = xor i1 %2749, true, !dbg !2718
   %3091 = zext i9 %3053 to i13, !dbg !2719
   %3092 = shl i13 %3091, 4, !dbg !2720
@@ -3232,7 +3232,7 @@ define void @main() !dbg !3 {
   %3095 = icmp eq i18 %3062, %3094, !dbg !2723
   %3096 = select i1 %2749, i1 %3095, i1 %1223, !dbg !2724
   %3097 = or i1 %3096, %3090, !dbg !2725
-  call void @verifier.assume(i1 %3097), !dbg !2726
+  call void @__SEA_assume(i1 %3097), !dbg !2726
   %3098 = xor i1 %2758, true, !dbg !2727
   %3099 = zext i9 %3053 to i14, !dbg !2728
   %3100 = shl i14 %3099, 5, !dbg !2729
@@ -3241,7 +3241,7 @@ define void @main() !dbg !3 {
   %3103 = icmp eq i18 %3062, %3102, !dbg !2732
   %3104 = select i1 %2758, i1 %3103, i1 %1224, !dbg !2733
   %3105 = or i1 %3104, %3098, !dbg !2734
-  call void @verifier.assume(i1 %3105), !dbg !2735
+  call void @__SEA_assume(i1 %3105), !dbg !2735
   %3106 = xor i1 %2767, true, !dbg !2736
   %3107 = zext i9 %3053 to i15, !dbg !2737
   %3108 = shl i15 %3107, 6, !dbg !2738
@@ -3250,7 +3250,7 @@ define void @main() !dbg !3 {
   %3111 = icmp eq i18 %3062, %3110, !dbg !2741
   %3112 = select i1 %2767, i1 %3111, i1 %1225, !dbg !2742
   %3113 = or i1 %3112, %3106, !dbg !2743
-  call void @verifier.assume(i1 %3113), !dbg !2744
+  call void @__SEA_assume(i1 %3113), !dbg !2744
   %3114 = xor i1 %2776, true, !dbg !2745
   %3115 = zext i9 %3053 to i16, !dbg !2746
   %3116 = shl i16 %3115, 7, !dbg !2747
@@ -3259,7 +3259,7 @@ define void @main() !dbg !3 {
   %3119 = icmp eq i18 %3062, %3118, !dbg !2750
   %3120 = select i1 %2776, i1 %3119, i1 %1226, !dbg !2751
   %3121 = or i1 %3120, %3114, !dbg !2752
-  call void @verifier.assume(i1 %3121), !dbg !2753
+  call void @__SEA_assume(i1 %3121), !dbg !2753
   %3122 = xor i1 %2785, true, !dbg !2754
   %3123 = zext i9 %3053 to i17, !dbg !2755
   %3124 = shl i17 %3123, 8, !dbg !2756
@@ -3268,14 +3268,14 @@ define void @main() !dbg !3 {
   %3127 = icmp eq i18 %3062, %3126, !dbg !2759
   %3128 = select i1 %2785, i1 %3127, i1 %1227, !dbg !2760
   %3129 = or i1 %3128, %3122, !dbg !2761
-  call void @verifier.assume(i1 %3129), !dbg !2762
+  call void @__SEA_assume(i1 %3129), !dbg !2762
   %3130 = xor i1 %1651, true, !dbg !2763
   %3131 = bitcast i18 %1219 to <18 x i1>, !dbg !2764
   %3132 = call i1 @llvm.vector.reduce.or.v18i1(<18 x i1> %3131), !dbg !2765
   %3133 = xor i1 %3132, true, !dbg !2766
   %3134 = select i1 %1651, i1 %3133, i1 %1228, !dbg !2767
   %3135 = or i1 %3134, %3130, !dbg !2768
-  call void @verifier.assume(i1 %3135), !dbg !2769
+  call void @__SEA_assume(i1 %3135), !dbg !2769
   %3136 = bitcast i9 %1082 to <9 x i1>, !dbg !2770
   %3137 = call i1 @llvm.vector.reduce.or.v9i1(<9 x i1> %3136), !dbg !2771
   %3138 = xor i1 %3137, true, !dbg !2772
@@ -3285,74 +3285,74 @@ define void @main() !dbg !3 {
   %3142 = select i1 %3139, i1 %3133, i1 %1229, !dbg !2776
   %3143 = select i1 %1651, i1 %1230, i1 %3142, !dbg !2777
   %3144 = or i1 %3143, %3141, !dbg !2778
-  call void @verifier.assume(i1 %3144), !dbg !2779
+  call void @__SEA_assume(i1 %3144), !dbg !2779
   %3145 = xor i1 %2809, true, !dbg !2780
   %3146 = xor i1 %3052, %2698, !dbg !2781
   %3147 = icmp eq i1 %3061, %3146, !dbg !2782
   %3148 = select i1 %1651, i1 %1231, i1 %3147, !dbg !2783
   %3149 = or i1 %3148, %3145, !dbg !2784
-  call void @verifier.assume(i1 %3149), !dbg !2785
+  call void @__SEA_assume(i1 %3149), !dbg !2785
   %3150 = xor i1 %2809, true, !dbg !2786
   %3151 = lshr i18 %3062, 9, !dbg !2787
   %3152 = trunc i18 %3151 to i9, !dbg !2788
   %3153 = icmp ule i9 %3152, %3053, !dbg !2789
   %3154 = select i1 %1651, i1 %1232, i1 %3153, !dbg !2790
   %3155 = or i1 %3154, %3150, !dbg !2791
-  call void @verifier.assume(i1 %3155), !dbg !2792
+  call void @__SEA_assume(i1 %3155), !dbg !2792
   %3156 = xor i1 %2809, true, !dbg !2793
   %3157 = icmp ule i9 %3152, %2699, !dbg !2794
   %3158 = select i1 %1651, i1 %1233, i1 %3157, !dbg !2795
   %3159 = or i1 %3158, %3156, !dbg !2796
-  call void @verifier.assume(i1 %3159), !dbg !2797
+  call void @__SEA_assume(i1 %3159), !dbg !2797
   %3160 = icmp eq i9 %3053, 2, !dbg !2798
   %3161 = xor i1 %3160, true, !dbg !2799
   %3162 = zext i10 %2829 to i18, !dbg !2800
   %3163 = icmp eq i18 %3062, %3162, !dbg !2801
   %3164 = select i1 %3160, i1 %3163, i1 %1234, !dbg !2802
   %3165 = or i1 %3164, %3161, !dbg !2803
-  call void @verifier.assume(i1 %3165), !dbg !2804
+  call void @__SEA_assume(i1 %3165), !dbg !2804
   %3166 = icmp eq i9 %3053, 4, !dbg !2805
   %3167 = xor i1 %3166, true, !dbg !2806
   %3168 = zext i11 %2838 to i18, !dbg !2807
   %3169 = icmp eq i18 %3062, %3168, !dbg !2808
   %3170 = select i1 %3166, i1 %3169, i1 %1235, !dbg !2809
   %3171 = or i1 %3170, %3167, !dbg !2810
-  call void @verifier.assume(i1 %3171), !dbg !2811
+  call void @__SEA_assume(i1 %3171), !dbg !2811
   %3172 = icmp eq i9 %3053, 8, !dbg !2812
   %3173 = xor i1 %3172, true, !dbg !2813
   %3174 = zext i12 %2847 to i18, !dbg !2814
   %3175 = icmp eq i18 %3062, %3174, !dbg !2815
   %3176 = select i1 %3172, i1 %3175, i1 %1236, !dbg !2816
   %3177 = or i1 %3176, %3173, !dbg !2817
-  call void @verifier.assume(i1 %3177), !dbg !2818
+  call void @__SEA_assume(i1 %3177), !dbg !2818
   %3178 = icmp eq i9 %3053, 16, !dbg !2819
   %3179 = xor i1 %3178, true, !dbg !2820
   %3180 = zext i13 %2856 to i18, !dbg !2821
   %3181 = icmp eq i18 %3062, %3180, !dbg !2822
   %3182 = select i1 %3178, i1 %3181, i1 %1237, !dbg !2823
   %3183 = or i1 %3182, %3179, !dbg !2824
-  call void @verifier.assume(i1 %3183), !dbg !2825
+  call void @__SEA_assume(i1 %3183), !dbg !2825
   %3184 = icmp eq i9 %3053, 32, !dbg !2826
   %3185 = xor i1 %3184, true, !dbg !2827
   %3186 = zext i14 %2865 to i18, !dbg !2828
   %3187 = icmp eq i18 %3062, %3186, !dbg !2829
   %3188 = select i1 %3184, i1 %3187, i1 %1238, !dbg !2830
   %3189 = or i1 %3188, %3185, !dbg !2831
-  call void @verifier.assume(i1 %3189), !dbg !2832
+  call void @__SEA_assume(i1 %3189), !dbg !2832
   %3190 = icmp eq i9 %3053, 64, !dbg !2833
   %3191 = xor i1 %3190, true, !dbg !2834
   %3192 = zext i15 %2874 to i18, !dbg !2835
   %3193 = icmp eq i18 %3062, %3192, !dbg !2836
   %3194 = select i1 %3190, i1 %3193, i1 %1239, !dbg !2837
   %3195 = or i1 %3194, %3191, !dbg !2838
-  call void @verifier.assume(i1 %3195), !dbg !2839
+  call void @__SEA_assume(i1 %3195), !dbg !2839
   %3196 = icmp eq i9 %3053, 128, !dbg !2840
   %3197 = xor i1 %3196, true, !dbg !2841
   %3198 = zext i16 %2883 to i18, !dbg !2842
   %3199 = icmp eq i18 %3062, %3198, !dbg !2843
   %3200 = select i1 %3196, i1 %3199, i1 %1240, !dbg !2844
   %3201 = or i1 %3200, %3197, !dbg !2845
-  call void @verifier.assume(i1 %3201), !dbg !2846
+  call void @__SEA_assume(i1 %3201), !dbg !2846
   %3202 = xor i1 %2700, true, !dbg !2847
   %3203 = lshr i9 %1081, 0, !dbg !2848
   %3204 = trunc i9 %3203 to i8, !dbg !2849
@@ -3374,7 +3374,7 @@ define void @main() !dbg !3 {
   %3220 = icmp eq i18 %3219, %3211, !dbg !2865
   %3221 = select i1 %2700, i1 %3220, i1 %1241, !dbg !2866
   %3222 = or i1 %3221, %3202, !dbg !2867
-  call void @verifier.assume(i1 %3222), !dbg !2868
+  call void @__SEA_assume(i1 %3222), !dbg !2868
   %3223 = xor i1 %2722, true, !dbg !2869
   %3224 = zext i9 %3210 to i10, !dbg !2870
   %3225 = shl i10 %3224, 1, !dbg !2871
@@ -3383,7 +3383,7 @@ define void @main() !dbg !3 {
   %3228 = icmp eq i18 %3219, %3227, !dbg !2874
   %3229 = select i1 %2722, i1 %3228, i1 %1243, !dbg !2875
   %3230 = or i1 %3229, %3223, !dbg !2876
-  call void @verifier.assume(i1 %3230), !dbg !2877
+  call void @__SEA_assume(i1 %3230), !dbg !2877
   %3231 = xor i1 %2731, true, !dbg !2878
   %3232 = zext i9 %3210 to i11, !dbg !2879
   %3233 = shl i11 %3232, 2, !dbg !2880
@@ -3392,7 +3392,7 @@ define void @main() !dbg !3 {
   %3236 = icmp eq i18 %3219, %3235, !dbg !2883
   %3237 = select i1 %2731, i1 %3236, i1 %1244, !dbg !2884
   %3238 = or i1 %3237, %3231, !dbg !2885
-  call void @verifier.assume(i1 %3238), !dbg !2886
+  call void @__SEA_assume(i1 %3238), !dbg !2886
   %3239 = xor i1 %2740, true, !dbg !2887
   %3240 = zext i9 %3210 to i12, !dbg !2888
   %3241 = shl i12 %3240, 3, !dbg !2889
@@ -3401,7 +3401,7 @@ define void @main() !dbg !3 {
   %3244 = icmp eq i18 %3219, %3243, !dbg !2892
   %3245 = select i1 %2740, i1 %3244, i1 %1245, !dbg !2893
   %3246 = or i1 %3245, %3239, !dbg !2894
-  call void @verifier.assume(i1 %3246), !dbg !2895
+  call void @__SEA_assume(i1 %3246), !dbg !2895
   %3247 = xor i1 %2749, true, !dbg !2896
   %3248 = zext i9 %3210 to i13, !dbg !2897
   %3249 = shl i13 %3248, 4, !dbg !2898
@@ -3410,7 +3410,7 @@ define void @main() !dbg !3 {
   %3252 = icmp eq i18 %3219, %3251, !dbg !2901
   %3253 = select i1 %2749, i1 %3252, i1 %1246, !dbg !2902
   %3254 = or i1 %3253, %3247, !dbg !2903
-  call void @verifier.assume(i1 %3254), !dbg !2904
+  call void @__SEA_assume(i1 %3254), !dbg !2904
   %3255 = xor i1 %2758, true, !dbg !2905
   %3256 = zext i9 %3210 to i14, !dbg !2906
   %3257 = shl i14 %3256, 5, !dbg !2907
@@ -3419,7 +3419,7 @@ define void @main() !dbg !3 {
   %3260 = icmp eq i18 %3219, %3259, !dbg !2910
   %3261 = select i1 %2758, i1 %3260, i1 %1247, !dbg !2911
   %3262 = or i1 %3261, %3255, !dbg !2912
-  call void @verifier.assume(i1 %3262), !dbg !2913
+  call void @__SEA_assume(i1 %3262), !dbg !2913
   %3263 = xor i1 %2767, true, !dbg !2914
   %3264 = zext i9 %3210 to i15, !dbg !2915
   %3265 = shl i15 %3264, 6, !dbg !2916
@@ -3428,7 +3428,7 @@ define void @main() !dbg !3 {
   %3268 = icmp eq i18 %3219, %3267, !dbg !2919
   %3269 = select i1 %2767, i1 %3268, i1 %1248, !dbg !2920
   %3270 = or i1 %3269, %3263, !dbg !2921
-  call void @verifier.assume(i1 %3270), !dbg !2922
+  call void @__SEA_assume(i1 %3270), !dbg !2922
   %3271 = xor i1 %2776, true, !dbg !2923
   %3272 = zext i9 %3210 to i16, !dbg !2924
   %3273 = shl i16 %3272, 7, !dbg !2925
@@ -3437,7 +3437,7 @@ define void @main() !dbg !3 {
   %3276 = icmp eq i18 %3219, %3275, !dbg !2928
   %3277 = select i1 %2776, i1 %3276, i1 %1249, !dbg !2929
   %3278 = or i1 %3277, %3271, !dbg !2930
-  call void @verifier.assume(i1 %3278), !dbg !2931
+  call void @__SEA_assume(i1 %3278), !dbg !2931
   %3279 = xor i1 %2785, true, !dbg !2932
   %3280 = zext i9 %3210 to i17, !dbg !2933
   %3281 = shl i17 %3280, 8, !dbg !2934
@@ -3446,14 +3446,14 @@ define void @main() !dbg !3 {
   %3284 = icmp eq i18 %3219, %3283, !dbg !2937
   %3285 = select i1 %2785, i1 %3284, i1 %1250, !dbg !2938
   %3286 = or i1 %3285, %3279, !dbg !2939
-  call void @verifier.assume(i1 %3286), !dbg !2940
+  call void @__SEA_assume(i1 %3286), !dbg !2940
   %3287 = xor i1 %1651, true, !dbg !2941
   %3288 = bitcast i18 %1242 to <18 x i1>, !dbg !2942
   %3289 = call i1 @llvm.vector.reduce.or.v18i1(<18 x i1> %3288), !dbg !2943
   %3290 = xor i1 %3289, true, !dbg !2944
   %3291 = select i1 %1651, i1 %3290, i1 %1251, !dbg !2945
   %3292 = or i1 %3291, %3287, !dbg !2946
-  call void @verifier.assume(i1 %3292), !dbg !2947
+  call void @__SEA_assume(i1 %3292), !dbg !2947
   %3293 = bitcast i9 %1081 to <9 x i1>, !dbg !2948
   %3294 = call i1 @llvm.vector.reduce.or.v9i1(<9 x i1> %3293), !dbg !2949
   %3295 = xor i1 %3294, true, !dbg !2950
@@ -3463,74 +3463,74 @@ define void @main() !dbg !3 {
   %3299 = select i1 %3296, i1 %3290, i1 %1252, !dbg !2954
   %3300 = select i1 %1651, i1 %1253, i1 %3299, !dbg !2955
   %3301 = or i1 %3300, %3298, !dbg !2956
-  call void @verifier.assume(i1 %3301), !dbg !2957
+  call void @__SEA_assume(i1 %3301), !dbg !2957
   %3302 = xor i1 %2809, true, !dbg !2958
   %3303 = xor i1 %3209, %2698, !dbg !2959
   %3304 = icmp eq i1 %3218, %3303, !dbg !2960
   %3305 = select i1 %1651, i1 %1254, i1 %3304, !dbg !2961
   %3306 = or i1 %3305, %3302, !dbg !2962
-  call void @verifier.assume(i1 %3306), !dbg !2963
+  call void @__SEA_assume(i1 %3306), !dbg !2963
   %3307 = xor i1 %2809, true, !dbg !2964
   %3308 = lshr i18 %3219, 9, !dbg !2965
   %3309 = trunc i18 %3308 to i9, !dbg !2966
   %3310 = icmp ule i9 %3309, %3210, !dbg !2967
   %3311 = select i1 %1651, i1 %1255, i1 %3310, !dbg !2968
   %3312 = or i1 %3311, %3307, !dbg !2969
-  call void @verifier.assume(i1 %3312), !dbg !2970
+  call void @__SEA_assume(i1 %3312), !dbg !2970
   %3313 = xor i1 %2809, true, !dbg !2971
   %3314 = icmp ule i9 %3309, %2699, !dbg !2972
   %3315 = select i1 %1651, i1 %1256, i1 %3314, !dbg !2973
   %3316 = or i1 %3315, %3313, !dbg !2974
-  call void @verifier.assume(i1 %3316), !dbg !2975
+  call void @__SEA_assume(i1 %3316), !dbg !2975
   %3317 = icmp eq i9 %3210, 2, !dbg !2976
   %3318 = xor i1 %3317, true, !dbg !2977
   %3319 = zext i10 %2829 to i18, !dbg !2978
   %3320 = icmp eq i18 %3219, %3319, !dbg !2979
   %3321 = select i1 %3317, i1 %3320, i1 %1257, !dbg !2980
   %3322 = or i1 %3321, %3318, !dbg !2981
-  call void @verifier.assume(i1 %3322), !dbg !2982
+  call void @__SEA_assume(i1 %3322), !dbg !2982
   %3323 = icmp eq i9 %3210, 4, !dbg !2983
   %3324 = xor i1 %3323, true, !dbg !2984
   %3325 = zext i11 %2838 to i18, !dbg !2985
   %3326 = icmp eq i18 %3219, %3325, !dbg !2986
   %3327 = select i1 %3323, i1 %3326, i1 %1258, !dbg !2987
   %3328 = or i1 %3327, %3324, !dbg !2988
-  call void @verifier.assume(i1 %3328), !dbg !2989
+  call void @__SEA_assume(i1 %3328), !dbg !2989
   %3329 = icmp eq i9 %3210, 8, !dbg !2990
   %3330 = xor i1 %3329, true, !dbg !2991
   %3331 = zext i12 %2847 to i18, !dbg !2992
   %3332 = icmp eq i18 %3219, %3331, !dbg !2993
   %3333 = select i1 %3329, i1 %3332, i1 %1259, !dbg !2994
   %3334 = or i1 %3333, %3330, !dbg !2995
-  call void @verifier.assume(i1 %3334), !dbg !2996
+  call void @__SEA_assume(i1 %3334), !dbg !2996
   %3335 = icmp eq i9 %3210, 16, !dbg !2997
   %3336 = xor i1 %3335, true, !dbg !2998
   %3337 = zext i13 %2856 to i18, !dbg !2999
   %3338 = icmp eq i18 %3219, %3337, !dbg !3000
   %3339 = select i1 %3335, i1 %3338, i1 %1260, !dbg !3001
   %3340 = or i1 %3339, %3336, !dbg !3002
-  call void @verifier.assume(i1 %3340), !dbg !3003
+  call void @__SEA_assume(i1 %3340), !dbg !3003
   %3341 = icmp eq i9 %3210, 32, !dbg !3004
   %3342 = xor i1 %3341, true, !dbg !3005
   %3343 = zext i14 %2865 to i18, !dbg !3006
   %3344 = icmp eq i18 %3219, %3343, !dbg !3007
   %3345 = select i1 %3341, i1 %3344, i1 %1261, !dbg !3008
   %3346 = or i1 %3345, %3342, !dbg !3009
-  call void @verifier.assume(i1 %3346), !dbg !3010
+  call void @__SEA_assume(i1 %3346), !dbg !3010
   %3347 = icmp eq i9 %3210, 64, !dbg !3011
   %3348 = xor i1 %3347, true, !dbg !3012
   %3349 = zext i15 %2874 to i18, !dbg !3013
   %3350 = icmp eq i18 %3219, %3349, !dbg !3014
   %3351 = select i1 %3347, i1 %3350, i1 %1262, !dbg !3015
   %3352 = or i1 %3351, %3348, !dbg !3016
-  call void @verifier.assume(i1 %3352), !dbg !3017
+  call void @__SEA_assume(i1 %3352), !dbg !3017
   %3353 = icmp eq i9 %3210, 128, !dbg !3018
   %3354 = xor i1 %3353, true, !dbg !3019
   %3355 = zext i16 %2883 to i18, !dbg !3020
   %3356 = icmp eq i18 %3219, %3355, !dbg !3021
   %3357 = select i1 %3353, i1 %3356, i1 %1263, !dbg !3022
   %3358 = or i1 %3357, %3354, !dbg !3023
-  call void @verifier.assume(i1 %3358), !dbg !3024
+  call void @__SEA_assume(i1 %3358), !dbg !3024
   %3359 = xor i1 %2700, true, !dbg !3025
   %3360 = lshr i9 %1080, 0, !dbg !3026
   %3361 = trunc i9 %3360 to i8, !dbg !3027
@@ -3552,7 +3552,7 @@ define void @main() !dbg !3 {
   %3377 = icmp eq i18 %3376, %3368, !dbg !3043
   %3378 = select i1 %2700, i1 %3377, i1 %1264, !dbg !3044
   %3379 = or i1 %3378, %3359, !dbg !3045
-  call void @verifier.assume(i1 %3379), !dbg !3046
+  call void @__SEA_assume(i1 %3379), !dbg !3046
   %3380 = xor i1 %2722, true, !dbg !3047
   %3381 = zext i9 %3367 to i10, !dbg !3048
   %3382 = shl i10 %3381, 1, !dbg !3049
@@ -3561,7 +3561,7 @@ define void @main() !dbg !3 {
   %3385 = icmp eq i18 %3376, %3384, !dbg !3052
   %3386 = select i1 %2722, i1 %3385, i1 %1266, !dbg !3053
   %3387 = or i1 %3386, %3380, !dbg !3054
-  call void @verifier.assume(i1 %3387), !dbg !3055
+  call void @__SEA_assume(i1 %3387), !dbg !3055
   %3388 = xor i1 %2731, true, !dbg !3056
   %3389 = zext i9 %3367 to i11, !dbg !3057
   %3390 = shl i11 %3389, 2, !dbg !3058
@@ -3570,7 +3570,7 @@ define void @main() !dbg !3 {
   %3393 = icmp eq i18 %3376, %3392, !dbg !3061
   %3394 = select i1 %2731, i1 %3393, i1 %1267, !dbg !3062
   %3395 = or i1 %3394, %3388, !dbg !3063
-  call void @verifier.assume(i1 %3395), !dbg !3064
+  call void @__SEA_assume(i1 %3395), !dbg !3064
   %3396 = xor i1 %2740, true, !dbg !3065
   %3397 = zext i9 %3367 to i12, !dbg !3066
   %3398 = shl i12 %3397, 3, !dbg !3067
@@ -3579,7 +3579,7 @@ define void @main() !dbg !3 {
   %3401 = icmp eq i18 %3376, %3400, !dbg !3070
   %3402 = select i1 %2740, i1 %3401, i1 %1268, !dbg !3071
   %3403 = or i1 %3402, %3396, !dbg !3072
-  call void @verifier.assume(i1 %3403), !dbg !3073
+  call void @__SEA_assume(i1 %3403), !dbg !3073
   %3404 = xor i1 %2749, true, !dbg !3074
   %3405 = zext i9 %3367 to i13, !dbg !3075
   %3406 = shl i13 %3405, 4, !dbg !3076
@@ -3588,7 +3588,7 @@ define void @main() !dbg !3 {
   %3409 = icmp eq i18 %3376, %3408, !dbg !3079
   %3410 = select i1 %2749, i1 %3409, i1 %1269, !dbg !3080
   %3411 = or i1 %3410, %3404, !dbg !3081
-  call void @verifier.assume(i1 %3411), !dbg !3082
+  call void @__SEA_assume(i1 %3411), !dbg !3082
   %3412 = xor i1 %2758, true, !dbg !3083
   %3413 = zext i9 %3367 to i14, !dbg !3084
   %3414 = shl i14 %3413, 5, !dbg !3085
@@ -3597,7 +3597,7 @@ define void @main() !dbg !3 {
   %3417 = icmp eq i18 %3376, %3416, !dbg !3088
   %3418 = select i1 %2758, i1 %3417, i1 %1270, !dbg !3089
   %3419 = or i1 %3418, %3412, !dbg !3090
-  call void @verifier.assume(i1 %3419), !dbg !3091
+  call void @__SEA_assume(i1 %3419), !dbg !3091
   %3420 = xor i1 %2767, true, !dbg !3092
   %3421 = zext i9 %3367 to i15, !dbg !3093
   %3422 = shl i15 %3421, 6, !dbg !3094
@@ -3606,7 +3606,7 @@ define void @main() !dbg !3 {
   %3425 = icmp eq i18 %3376, %3424, !dbg !3097
   %3426 = select i1 %2767, i1 %3425, i1 %1271, !dbg !3098
   %3427 = or i1 %3426, %3420, !dbg !3099
-  call void @verifier.assume(i1 %3427), !dbg !3100
+  call void @__SEA_assume(i1 %3427), !dbg !3100
   %3428 = xor i1 %2776, true, !dbg !3101
   %3429 = zext i9 %3367 to i16, !dbg !3102
   %3430 = shl i16 %3429, 7, !dbg !3103
@@ -3615,7 +3615,7 @@ define void @main() !dbg !3 {
   %3433 = icmp eq i18 %3376, %3432, !dbg !3106
   %3434 = select i1 %2776, i1 %3433, i1 %1272, !dbg !3107
   %3435 = or i1 %3434, %3428, !dbg !3108
-  call void @verifier.assume(i1 %3435), !dbg !3109
+  call void @__SEA_assume(i1 %3435), !dbg !3109
   %3436 = xor i1 %2785, true, !dbg !3110
   %3437 = zext i9 %3367 to i17, !dbg !3111
   %3438 = shl i17 %3437, 8, !dbg !3112
@@ -3624,14 +3624,14 @@ define void @main() !dbg !3 {
   %3441 = icmp eq i18 %3376, %3440, !dbg !3115
   %3442 = select i1 %2785, i1 %3441, i1 %1273, !dbg !3116
   %3443 = or i1 %3442, %3436, !dbg !3117
-  call void @verifier.assume(i1 %3443), !dbg !3118
+  call void @__SEA_assume(i1 %3443), !dbg !3118
   %3444 = xor i1 %1651, true, !dbg !3119
   %3445 = bitcast i18 %1265 to <18 x i1>, !dbg !3120
   %3446 = call i1 @llvm.vector.reduce.or.v18i1(<18 x i1> %3445), !dbg !3121
   %3447 = xor i1 %3446, true, !dbg !3122
   %3448 = select i1 %1651, i1 %3447, i1 %1274, !dbg !3123
   %3449 = or i1 %3448, %3444, !dbg !3124
-  call void @verifier.assume(i1 %3449), !dbg !3125
+  call void @__SEA_assume(i1 %3449), !dbg !3125
   %3450 = bitcast i9 %1080 to <9 x i1>, !dbg !3126
   %3451 = call i1 @llvm.vector.reduce.or.v9i1(<9 x i1> %3450), !dbg !3127
   %3452 = xor i1 %3451, true, !dbg !3128
@@ -3641,74 +3641,74 @@ define void @main() !dbg !3 {
   %3456 = select i1 %3453, i1 %3447, i1 %1275, !dbg !3132
   %3457 = select i1 %1651, i1 %1276, i1 %3456, !dbg !3133
   %3458 = or i1 %3457, %3455, !dbg !3134
-  call void @verifier.assume(i1 %3458), !dbg !3135
+  call void @__SEA_assume(i1 %3458), !dbg !3135
   %3459 = xor i1 %2809, true, !dbg !3136
   %3460 = xor i1 %3366, %2698, !dbg !3137
   %3461 = icmp eq i1 %3375, %3460, !dbg !3138
   %3462 = select i1 %1651, i1 %1277, i1 %3461, !dbg !3139
   %3463 = or i1 %3462, %3459, !dbg !3140
-  call void @verifier.assume(i1 %3463), !dbg !3141
+  call void @__SEA_assume(i1 %3463), !dbg !3141
   %3464 = xor i1 %2809, true, !dbg !3142
   %3465 = lshr i18 %3376, 9, !dbg !3143
   %3466 = trunc i18 %3465 to i9, !dbg !3144
   %3467 = icmp ule i9 %3466, %3367, !dbg !3145
   %3468 = select i1 %1651, i1 %1278, i1 %3467, !dbg !3146
   %3469 = or i1 %3468, %3464, !dbg !3147
-  call void @verifier.assume(i1 %3469), !dbg !3148
+  call void @__SEA_assume(i1 %3469), !dbg !3148
   %3470 = xor i1 %2809, true, !dbg !3149
   %3471 = icmp ule i9 %3466, %2699, !dbg !3150
   %3472 = select i1 %1651, i1 %1279, i1 %3471, !dbg !3151
   %3473 = or i1 %3472, %3470, !dbg !3152
-  call void @verifier.assume(i1 %3473), !dbg !3153
+  call void @__SEA_assume(i1 %3473), !dbg !3153
   %3474 = icmp eq i9 %3367, 2, !dbg !3154
   %3475 = xor i1 %3474, true, !dbg !3155
   %3476 = zext i10 %2829 to i18, !dbg !3156
   %3477 = icmp eq i18 %3376, %3476, !dbg !3157
   %3478 = select i1 %3474, i1 %3477, i1 %1280, !dbg !3158
   %3479 = or i1 %3478, %3475, !dbg !3159
-  call void @verifier.assume(i1 %3479), !dbg !3160
+  call void @__SEA_assume(i1 %3479), !dbg !3160
   %3480 = icmp eq i9 %3367, 4, !dbg !3161
   %3481 = xor i1 %3480, true, !dbg !3162
   %3482 = zext i11 %2838 to i18, !dbg !3163
   %3483 = icmp eq i18 %3376, %3482, !dbg !3164
   %3484 = select i1 %3480, i1 %3483, i1 %1281, !dbg !3165
   %3485 = or i1 %3484, %3481, !dbg !3166
-  call void @verifier.assume(i1 %3485), !dbg !3167
+  call void @__SEA_assume(i1 %3485), !dbg !3167
   %3486 = icmp eq i9 %3367, 8, !dbg !3168
   %3487 = xor i1 %3486, true, !dbg !3169
   %3488 = zext i12 %2847 to i18, !dbg !3170
   %3489 = icmp eq i18 %3376, %3488, !dbg !3171
   %3490 = select i1 %3486, i1 %3489, i1 %1282, !dbg !3172
   %3491 = or i1 %3490, %3487, !dbg !3173
-  call void @verifier.assume(i1 %3491), !dbg !3174
+  call void @__SEA_assume(i1 %3491), !dbg !3174
   %3492 = icmp eq i9 %3367, 16, !dbg !3175
   %3493 = xor i1 %3492, true, !dbg !3176
   %3494 = zext i13 %2856 to i18, !dbg !3177
   %3495 = icmp eq i18 %3376, %3494, !dbg !3178
   %3496 = select i1 %3492, i1 %3495, i1 %1283, !dbg !3179
   %3497 = or i1 %3496, %3493, !dbg !3180
-  call void @verifier.assume(i1 %3497), !dbg !3181
+  call void @__SEA_assume(i1 %3497), !dbg !3181
   %3498 = icmp eq i9 %3367, 32, !dbg !3182
   %3499 = xor i1 %3498, true, !dbg !3183
   %3500 = zext i14 %2865 to i18, !dbg !3184
   %3501 = icmp eq i18 %3376, %3500, !dbg !3185
   %3502 = select i1 %3498, i1 %3501, i1 %1284, !dbg !3186
   %3503 = or i1 %3502, %3499, !dbg !3187
-  call void @verifier.assume(i1 %3503), !dbg !3188
+  call void @__SEA_assume(i1 %3503), !dbg !3188
   %3504 = icmp eq i9 %3367, 64, !dbg !3189
   %3505 = xor i1 %3504, true, !dbg !3190
   %3506 = zext i15 %2874 to i18, !dbg !3191
   %3507 = icmp eq i18 %3376, %3506, !dbg !3192
   %3508 = select i1 %3504, i1 %3507, i1 %1285, !dbg !3193
   %3509 = or i1 %3508, %3505, !dbg !3194
-  call void @verifier.assume(i1 %3509), !dbg !3195
+  call void @__SEA_assume(i1 %3509), !dbg !3195
   %3510 = icmp eq i9 %3367, 128, !dbg !3196
   %3511 = xor i1 %3510, true, !dbg !3197
   %3512 = zext i16 %2883 to i18, !dbg !3198
   %3513 = icmp eq i18 %3376, %3512, !dbg !3199
   %3514 = select i1 %3510, i1 %3513, i1 %1286, !dbg !3200
   %3515 = or i1 %3514, %3511, !dbg !3201
-  call void @verifier.assume(i1 %3515), !dbg !3202
+  call void @__SEA_assume(i1 %3515), !dbg !3202
   %3516 = xor i1 %2700, true, !dbg !3203
   %3517 = lshr i9 %1079, 0, !dbg !3204
   %3518 = trunc i9 %3517 to i8, !dbg !3205
@@ -3730,7 +3730,7 @@ define void @main() !dbg !3 {
   %3534 = icmp eq i18 %3533, %3525, !dbg !3221
   %3535 = select i1 %2700, i1 %3534, i1 %1287, !dbg !3222
   %3536 = or i1 %3535, %3516, !dbg !3223
-  call void @verifier.assume(i1 %3536), !dbg !3224
+  call void @__SEA_assume(i1 %3536), !dbg !3224
   %3537 = xor i1 %2722, true, !dbg !3225
   %3538 = zext i9 %3524 to i10, !dbg !3226
   %3539 = shl i10 %3538, 1, !dbg !3227
@@ -3739,7 +3739,7 @@ define void @main() !dbg !3 {
   %3542 = icmp eq i18 %3533, %3541, !dbg !3230
   %3543 = select i1 %2722, i1 %3542, i1 %1289, !dbg !3231
   %3544 = or i1 %3543, %3537, !dbg !3232
-  call void @verifier.assume(i1 %3544), !dbg !3233
+  call void @__SEA_assume(i1 %3544), !dbg !3233
   %3545 = xor i1 %2731, true, !dbg !3234
   %3546 = zext i9 %3524 to i11, !dbg !3235
   %3547 = shl i11 %3546, 2, !dbg !3236
@@ -3748,7 +3748,7 @@ define void @main() !dbg !3 {
   %3550 = icmp eq i18 %3533, %3549, !dbg !3239
   %3551 = select i1 %2731, i1 %3550, i1 %1290, !dbg !3240
   %3552 = or i1 %3551, %3545, !dbg !3241
-  call void @verifier.assume(i1 %3552), !dbg !3242
+  call void @__SEA_assume(i1 %3552), !dbg !3242
   %3553 = xor i1 %2740, true, !dbg !3243
   %3554 = zext i9 %3524 to i12, !dbg !3244
   %3555 = shl i12 %3554, 3, !dbg !3245
@@ -3757,7 +3757,7 @@ define void @main() !dbg !3 {
   %3558 = icmp eq i18 %3533, %3557, !dbg !3248
   %3559 = select i1 %2740, i1 %3558, i1 %1291, !dbg !3249
   %3560 = or i1 %3559, %3553, !dbg !3250
-  call void @verifier.assume(i1 %3560), !dbg !3251
+  call void @__SEA_assume(i1 %3560), !dbg !3251
   %3561 = xor i1 %2749, true, !dbg !3252
   %3562 = zext i9 %3524 to i13, !dbg !3253
   %3563 = shl i13 %3562, 4, !dbg !3254
@@ -3766,7 +3766,7 @@ define void @main() !dbg !3 {
   %3566 = icmp eq i18 %3533, %3565, !dbg !3257
   %3567 = select i1 %2749, i1 %3566, i1 %1292, !dbg !3258
   %3568 = or i1 %3567, %3561, !dbg !3259
-  call void @verifier.assume(i1 %3568), !dbg !3260
+  call void @__SEA_assume(i1 %3568), !dbg !3260
   %3569 = xor i1 %2758, true, !dbg !3261
   %3570 = zext i9 %3524 to i14, !dbg !3262
   %3571 = shl i14 %3570, 5, !dbg !3263
@@ -3775,7 +3775,7 @@ define void @main() !dbg !3 {
   %3574 = icmp eq i18 %3533, %3573, !dbg !3266
   %3575 = select i1 %2758, i1 %3574, i1 %1293, !dbg !3267
   %3576 = or i1 %3575, %3569, !dbg !3268
-  call void @verifier.assume(i1 %3576), !dbg !3269
+  call void @__SEA_assume(i1 %3576), !dbg !3269
   %3577 = xor i1 %2767, true, !dbg !3270
   %3578 = zext i9 %3524 to i15, !dbg !3271
   %3579 = shl i15 %3578, 6, !dbg !3272
@@ -3784,7 +3784,7 @@ define void @main() !dbg !3 {
   %3582 = icmp eq i18 %3533, %3581, !dbg !3275
   %3583 = select i1 %2767, i1 %3582, i1 %1294, !dbg !3276
   %3584 = or i1 %3583, %3577, !dbg !3277
-  call void @verifier.assume(i1 %3584), !dbg !3278
+  call void @__SEA_assume(i1 %3584), !dbg !3278
   %3585 = xor i1 %2776, true, !dbg !3279
   %3586 = zext i9 %3524 to i16, !dbg !3280
   %3587 = shl i16 %3586, 7, !dbg !3281
@@ -3793,7 +3793,7 @@ define void @main() !dbg !3 {
   %3590 = icmp eq i18 %3533, %3589, !dbg !3284
   %3591 = select i1 %2776, i1 %3590, i1 %1295, !dbg !3285
   %3592 = or i1 %3591, %3585, !dbg !3286
-  call void @verifier.assume(i1 %3592), !dbg !3287
+  call void @__SEA_assume(i1 %3592), !dbg !3287
   %3593 = xor i1 %2785, true, !dbg !3288
   %3594 = zext i9 %3524 to i17, !dbg !3289
   %3595 = shl i17 %3594, 8, !dbg !3290
@@ -3802,14 +3802,14 @@ define void @main() !dbg !3 {
   %3598 = icmp eq i18 %3533, %3597, !dbg !3293
   %3599 = select i1 %2785, i1 %3598, i1 %1296, !dbg !3294
   %3600 = or i1 %3599, %3593, !dbg !3295
-  call void @verifier.assume(i1 %3600), !dbg !3296
+  call void @__SEA_assume(i1 %3600), !dbg !3296
   %3601 = xor i1 %1651, true, !dbg !3297
   %3602 = bitcast i18 %1288 to <18 x i1>, !dbg !3298
   %3603 = call i1 @llvm.vector.reduce.or.v18i1(<18 x i1> %3602), !dbg !3299
   %3604 = xor i1 %3603, true, !dbg !3300
   %3605 = select i1 %1651, i1 %3604, i1 %1297, !dbg !3301
   %3606 = or i1 %3605, %3601, !dbg !3302
-  call void @verifier.assume(i1 %3606), !dbg !3303
+  call void @__SEA_assume(i1 %3606), !dbg !3303
   %3607 = bitcast i9 %1079 to <9 x i1>, !dbg !3304
   %3608 = call i1 @llvm.vector.reduce.or.v9i1(<9 x i1> %3607), !dbg !3305
   %3609 = xor i1 %3608, true, !dbg !3306
@@ -3819,74 +3819,74 @@ define void @main() !dbg !3 {
   %3613 = select i1 %3610, i1 %3604, i1 %1298, !dbg !3310
   %3614 = select i1 %1651, i1 %1299, i1 %3613, !dbg !3311
   %3615 = or i1 %3614, %3612, !dbg !3312
-  call void @verifier.assume(i1 %3615), !dbg !3313
+  call void @__SEA_assume(i1 %3615), !dbg !3313
   %3616 = xor i1 %2809, true, !dbg !3314
   %3617 = xor i1 %3523, %2698, !dbg !3315
   %3618 = icmp eq i1 %3532, %3617, !dbg !3316
   %3619 = select i1 %1651, i1 %1300, i1 %3618, !dbg !3317
   %3620 = or i1 %3619, %3616, !dbg !3318
-  call void @verifier.assume(i1 %3620), !dbg !3319
+  call void @__SEA_assume(i1 %3620), !dbg !3319
   %3621 = xor i1 %2809, true, !dbg !3320
   %3622 = lshr i18 %3533, 9, !dbg !3321
   %3623 = trunc i18 %3622 to i9, !dbg !3322
   %3624 = icmp ule i9 %3623, %3524, !dbg !3323
   %3625 = select i1 %1651, i1 %1301, i1 %3624, !dbg !3324
   %3626 = or i1 %3625, %3621, !dbg !3325
-  call void @verifier.assume(i1 %3626), !dbg !3326
+  call void @__SEA_assume(i1 %3626), !dbg !3326
   %3627 = xor i1 %2809, true, !dbg !3327
   %3628 = icmp ule i9 %3623, %2699, !dbg !3328
   %3629 = select i1 %1651, i1 %1302, i1 %3628, !dbg !3329
   %3630 = or i1 %3629, %3627, !dbg !3330
-  call void @verifier.assume(i1 %3630), !dbg !3331
+  call void @__SEA_assume(i1 %3630), !dbg !3331
   %3631 = icmp eq i9 %3524, 2, !dbg !3332
   %3632 = xor i1 %3631, true, !dbg !3333
   %3633 = zext i10 %2829 to i18, !dbg !3334
   %3634 = icmp eq i18 %3533, %3633, !dbg !3335
   %3635 = select i1 %3631, i1 %3634, i1 %1303, !dbg !3336
   %3636 = or i1 %3635, %3632, !dbg !3337
-  call void @verifier.assume(i1 %3636), !dbg !3338
+  call void @__SEA_assume(i1 %3636), !dbg !3338
   %3637 = icmp eq i9 %3524, 4, !dbg !3339
   %3638 = xor i1 %3637, true, !dbg !3340
   %3639 = zext i11 %2838 to i18, !dbg !3341
   %3640 = icmp eq i18 %3533, %3639, !dbg !3342
   %3641 = select i1 %3637, i1 %3640, i1 %1304, !dbg !3343
   %3642 = or i1 %3641, %3638, !dbg !3344
-  call void @verifier.assume(i1 %3642), !dbg !3345
+  call void @__SEA_assume(i1 %3642), !dbg !3345
   %3643 = icmp eq i9 %3524, 8, !dbg !3346
   %3644 = xor i1 %3643, true, !dbg !3347
   %3645 = zext i12 %2847 to i18, !dbg !3348
   %3646 = icmp eq i18 %3533, %3645, !dbg !3349
   %3647 = select i1 %3643, i1 %3646, i1 %1305, !dbg !3350
   %3648 = or i1 %3647, %3644, !dbg !3351
-  call void @verifier.assume(i1 %3648), !dbg !3352
+  call void @__SEA_assume(i1 %3648), !dbg !3352
   %3649 = icmp eq i9 %3524, 16, !dbg !3353
   %3650 = xor i1 %3649, true, !dbg !3354
   %3651 = zext i13 %2856 to i18, !dbg !3355
   %3652 = icmp eq i18 %3533, %3651, !dbg !3356
   %3653 = select i1 %3649, i1 %3652, i1 %1306, !dbg !3357
   %3654 = or i1 %3653, %3650, !dbg !3358
-  call void @verifier.assume(i1 %3654), !dbg !3359
+  call void @__SEA_assume(i1 %3654), !dbg !3359
   %3655 = icmp eq i9 %3524, 32, !dbg !3360
   %3656 = xor i1 %3655, true, !dbg !3361
   %3657 = zext i14 %2865 to i18, !dbg !3362
   %3658 = icmp eq i18 %3533, %3657, !dbg !3363
   %3659 = select i1 %3655, i1 %3658, i1 %1307, !dbg !3364
   %3660 = or i1 %3659, %3656, !dbg !3365
-  call void @verifier.assume(i1 %3660), !dbg !3366
+  call void @__SEA_assume(i1 %3660), !dbg !3366
   %3661 = icmp eq i9 %3524, 64, !dbg !3367
   %3662 = xor i1 %3661, true, !dbg !3368
   %3663 = zext i15 %2874 to i18, !dbg !3369
   %3664 = icmp eq i18 %3533, %3663, !dbg !3370
   %3665 = select i1 %3661, i1 %3664, i1 %1308, !dbg !3371
   %3666 = or i1 %3665, %3662, !dbg !3372
-  call void @verifier.assume(i1 %3666), !dbg !3373
+  call void @__SEA_assume(i1 %3666), !dbg !3373
   %3667 = icmp eq i9 %3524, 128, !dbg !3374
   %3668 = xor i1 %3667, true, !dbg !3375
   %3669 = zext i16 %2883 to i18, !dbg !3376
   %3670 = icmp eq i18 %3533, %3669, !dbg !3377
   %3671 = select i1 %3667, i1 %3670, i1 %1309, !dbg !3378
   %3672 = or i1 %3671, %3668, !dbg !3379
-  call void @verifier.assume(i1 %3672), !dbg !3380
+  call void @__SEA_assume(i1 %3672), !dbg !3380
   %3673 = xor i1 %2700, true, !dbg !3381
   %3674 = lshr i9 %1076, 0, !dbg !3382
   %3675 = trunc i9 %3674 to i8, !dbg !3383
@@ -3908,7 +3908,7 @@ define void @main() !dbg !3 {
   %3691 = icmp eq i18 %3690, %3682, !dbg !3399
   %3692 = select i1 %2700, i1 %3691, i1 %1310, !dbg !3400
   %3693 = or i1 %3692, %3673, !dbg !3401
-  call void @verifier.assume(i1 %3693), !dbg !3402
+  call void @__SEA_assume(i1 %3693), !dbg !3402
   %3694 = xor i1 %2722, true, !dbg !3403
   %3695 = zext i9 %3681 to i10, !dbg !3404
   %3696 = shl i10 %3695, 1, !dbg !3405
@@ -3917,7 +3917,7 @@ define void @main() !dbg !3 {
   %3699 = icmp eq i18 %3690, %3698, !dbg !3408
   %3700 = select i1 %2722, i1 %3699, i1 %1312, !dbg !3409
   %3701 = or i1 %3700, %3694, !dbg !3410
-  call void @verifier.assume(i1 %3701), !dbg !3411
+  call void @__SEA_assume(i1 %3701), !dbg !3411
   %3702 = xor i1 %2731, true, !dbg !3412
   %3703 = zext i9 %3681 to i11, !dbg !3413
   %3704 = shl i11 %3703, 2, !dbg !3414
@@ -3926,7 +3926,7 @@ define void @main() !dbg !3 {
   %3707 = icmp eq i18 %3690, %3706, !dbg !3417
   %3708 = select i1 %2731, i1 %3707, i1 %1313, !dbg !3418
   %3709 = or i1 %3708, %3702, !dbg !3419
-  call void @verifier.assume(i1 %3709), !dbg !3420
+  call void @__SEA_assume(i1 %3709), !dbg !3420
   %3710 = xor i1 %2740, true, !dbg !3421
   %3711 = zext i9 %3681 to i12, !dbg !3422
   %3712 = shl i12 %3711, 3, !dbg !3423
@@ -3935,7 +3935,7 @@ define void @main() !dbg !3 {
   %3715 = icmp eq i18 %3690, %3714, !dbg !3426
   %3716 = select i1 %2740, i1 %3715, i1 %1314, !dbg !3427
   %3717 = or i1 %3716, %3710, !dbg !3428
-  call void @verifier.assume(i1 %3717), !dbg !3429
+  call void @__SEA_assume(i1 %3717), !dbg !3429
   %3718 = xor i1 %2749, true, !dbg !3430
   %3719 = zext i9 %3681 to i13, !dbg !3431
   %3720 = shl i13 %3719, 4, !dbg !3432
@@ -3944,7 +3944,7 @@ define void @main() !dbg !3 {
   %3723 = icmp eq i18 %3690, %3722, !dbg !3435
   %3724 = select i1 %2749, i1 %3723, i1 %1315, !dbg !3436
   %3725 = or i1 %3724, %3718, !dbg !3437
-  call void @verifier.assume(i1 %3725), !dbg !3438
+  call void @__SEA_assume(i1 %3725), !dbg !3438
   %3726 = xor i1 %2758, true, !dbg !3439
   %3727 = zext i9 %3681 to i14, !dbg !3440
   %3728 = shl i14 %3727, 5, !dbg !3441
@@ -3953,7 +3953,7 @@ define void @main() !dbg !3 {
   %3731 = icmp eq i18 %3690, %3730, !dbg !3444
   %3732 = select i1 %2758, i1 %3731, i1 %1316, !dbg !3445
   %3733 = or i1 %3732, %3726, !dbg !3446
-  call void @verifier.assume(i1 %3733), !dbg !3447
+  call void @__SEA_assume(i1 %3733), !dbg !3447
   %3734 = xor i1 %2767, true, !dbg !3448
   %3735 = zext i9 %3681 to i15, !dbg !3449
   %3736 = shl i15 %3735, 6, !dbg !3450
@@ -3962,7 +3962,7 @@ define void @main() !dbg !3 {
   %3739 = icmp eq i18 %3690, %3738, !dbg !3453
   %3740 = select i1 %2767, i1 %3739, i1 %1317, !dbg !3454
   %3741 = or i1 %3740, %3734, !dbg !3455
-  call void @verifier.assume(i1 %3741), !dbg !3456
+  call void @__SEA_assume(i1 %3741), !dbg !3456
   %3742 = xor i1 %2776, true, !dbg !3457
   %3743 = zext i9 %3681 to i16, !dbg !3458
   %3744 = shl i16 %3743, 7, !dbg !3459
@@ -3971,7 +3971,7 @@ define void @main() !dbg !3 {
   %3747 = icmp eq i18 %3690, %3746, !dbg !3462
   %3748 = select i1 %2776, i1 %3747, i1 %1318, !dbg !3463
   %3749 = or i1 %3748, %3742, !dbg !3464
-  call void @verifier.assume(i1 %3749), !dbg !3465
+  call void @__SEA_assume(i1 %3749), !dbg !3465
   %3750 = xor i1 %2785, true, !dbg !3466
   %3751 = zext i9 %3681 to i17, !dbg !3467
   %3752 = shl i17 %3751, 8, !dbg !3468
@@ -3980,14 +3980,14 @@ define void @main() !dbg !3 {
   %3755 = icmp eq i18 %3690, %3754, !dbg !3471
   %3756 = select i1 %2785, i1 %3755, i1 %1319, !dbg !3472
   %3757 = or i1 %3756, %3750, !dbg !3473
-  call void @verifier.assume(i1 %3757), !dbg !3474
+  call void @__SEA_assume(i1 %3757), !dbg !3474
   %3758 = xor i1 %1651, true, !dbg !3475
   %3759 = bitcast i18 %1311 to <18 x i1>, !dbg !3476
   %3760 = call i1 @llvm.vector.reduce.or.v18i1(<18 x i1> %3759), !dbg !3477
   %3761 = xor i1 %3760, true, !dbg !3478
   %3762 = select i1 %1651, i1 %3761, i1 %1320, !dbg !3479
   %3763 = or i1 %3762, %3758, !dbg !3480
-  call void @verifier.assume(i1 %3763), !dbg !3481
+  call void @__SEA_assume(i1 %3763), !dbg !3481
   %3764 = bitcast i9 %1076 to <9 x i1>, !dbg !3482
   %3765 = call i1 @llvm.vector.reduce.or.v9i1(<9 x i1> %3764), !dbg !3483
   %3766 = xor i1 %3765, true, !dbg !3484
@@ -3997,74 +3997,74 @@ define void @main() !dbg !3 {
   %3770 = select i1 %3767, i1 %3761, i1 %1321, !dbg !3488
   %3771 = select i1 %1651, i1 %1322, i1 %3770, !dbg !3489
   %3772 = or i1 %3771, %3769, !dbg !3490
-  call void @verifier.assume(i1 %3772), !dbg !3491
+  call void @__SEA_assume(i1 %3772), !dbg !3491
   %3773 = xor i1 %2809, true, !dbg !3492
   %3774 = xor i1 %3680, %2698, !dbg !3493
   %3775 = icmp eq i1 %3689, %3774, !dbg !3494
   %3776 = select i1 %1651, i1 %1323, i1 %3775, !dbg !3495
   %3777 = or i1 %3776, %3773, !dbg !3496
-  call void @verifier.assume(i1 %3777), !dbg !3497
+  call void @__SEA_assume(i1 %3777), !dbg !3497
   %3778 = xor i1 %2809, true, !dbg !3498
   %3779 = lshr i18 %3690, 9, !dbg !3499
   %3780 = trunc i18 %3779 to i9, !dbg !3500
   %3781 = icmp ule i9 %3780, %3681, !dbg !3501
   %3782 = select i1 %1651, i1 %1324, i1 %3781, !dbg !3502
   %3783 = or i1 %3782, %3778, !dbg !3503
-  call void @verifier.assume(i1 %3783), !dbg !3504
+  call void @__SEA_assume(i1 %3783), !dbg !3504
   %3784 = xor i1 %2809, true, !dbg !3505
   %3785 = icmp ule i9 %3780, %2699, !dbg !3506
   %3786 = select i1 %1651, i1 %1325, i1 %3785, !dbg !3507
   %3787 = or i1 %3786, %3784, !dbg !3508
-  call void @verifier.assume(i1 %3787), !dbg !3509
+  call void @__SEA_assume(i1 %3787), !dbg !3509
   %3788 = icmp eq i9 %3681, 2, !dbg !3510
   %3789 = xor i1 %3788, true, !dbg !3511
   %3790 = zext i10 %2829 to i18, !dbg !3512
   %3791 = icmp eq i18 %3690, %3790, !dbg !3513
   %3792 = select i1 %3788, i1 %3791, i1 %1326, !dbg !3514
   %3793 = or i1 %3792, %3789, !dbg !3515
-  call void @verifier.assume(i1 %3793), !dbg !3516
+  call void @__SEA_assume(i1 %3793), !dbg !3516
   %3794 = icmp eq i9 %3681, 4, !dbg !3517
   %3795 = xor i1 %3794, true, !dbg !3518
   %3796 = zext i11 %2838 to i18, !dbg !3519
   %3797 = icmp eq i18 %3690, %3796, !dbg !3520
   %3798 = select i1 %3794, i1 %3797, i1 %1327, !dbg !3521
   %3799 = or i1 %3798, %3795, !dbg !3522
-  call void @verifier.assume(i1 %3799), !dbg !3523
+  call void @__SEA_assume(i1 %3799), !dbg !3523
   %3800 = icmp eq i9 %3681, 8, !dbg !3524
   %3801 = xor i1 %3800, true, !dbg !3525
   %3802 = zext i12 %2847 to i18, !dbg !3526
   %3803 = icmp eq i18 %3690, %3802, !dbg !3527
   %3804 = select i1 %3800, i1 %3803, i1 %1328, !dbg !3528
   %3805 = or i1 %3804, %3801, !dbg !3529
-  call void @verifier.assume(i1 %3805), !dbg !3530
+  call void @__SEA_assume(i1 %3805), !dbg !3530
   %3806 = icmp eq i9 %3681, 16, !dbg !3531
   %3807 = xor i1 %3806, true, !dbg !3532
   %3808 = zext i13 %2856 to i18, !dbg !3533
   %3809 = icmp eq i18 %3690, %3808, !dbg !3534
   %3810 = select i1 %3806, i1 %3809, i1 %1329, !dbg !3535
   %3811 = or i1 %3810, %3807, !dbg !3536
-  call void @verifier.assume(i1 %3811), !dbg !3537
+  call void @__SEA_assume(i1 %3811), !dbg !3537
   %3812 = icmp eq i9 %3681, 32, !dbg !3538
   %3813 = xor i1 %3812, true, !dbg !3539
   %3814 = zext i14 %2865 to i18, !dbg !3540
   %3815 = icmp eq i18 %3690, %3814, !dbg !3541
   %3816 = select i1 %3812, i1 %3815, i1 %1330, !dbg !3542
   %3817 = or i1 %3816, %3813, !dbg !3543
-  call void @verifier.assume(i1 %3817), !dbg !3544
+  call void @__SEA_assume(i1 %3817), !dbg !3544
   %3818 = icmp eq i9 %3681, 64, !dbg !3545
   %3819 = xor i1 %3818, true, !dbg !3546
   %3820 = zext i15 %2874 to i18, !dbg !3547
   %3821 = icmp eq i18 %3690, %3820, !dbg !3548
   %3822 = select i1 %3818, i1 %3821, i1 %1331, !dbg !3549
   %3823 = or i1 %3822, %3819, !dbg !3550
-  call void @verifier.assume(i1 %3823), !dbg !3551
+  call void @__SEA_assume(i1 %3823), !dbg !3551
   %3824 = icmp eq i9 %3681, 128, !dbg !3552
   %3825 = xor i1 %3824, true, !dbg !3553
   %3826 = zext i16 %2883 to i18, !dbg !3554
   %3827 = icmp eq i18 %3690, %3826, !dbg !3555
   %3828 = select i1 %3824, i1 %3827, i1 %1332, !dbg !3556
   %3829 = or i1 %3828, %3825, !dbg !3557
-  call void @verifier.assume(i1 %3829), !dbg !3558
+  call void @__SEA_assume(i1 %3829), !dbg !3558
   %3830 = xor i1 %2700, true, !dbg !3559
   %3831 = lshr i9 %1092, 0, !dbg !3560
   %3832 = trunc i9 %3831 to i8, !dbg !3561
@@ -4086,7 +4086,7 @@ define void @main() !dbg !3 {
   %3848 = icmp eq i18 %3847, %3839, !dbg !3577
   %3849 = select i1 %2700, i1 %3848, i1 %1333, !dbg !3578
   %3850 = or i1 %3849, %3830, !dbg !3579
-  call void @verifier.assume(i1 %3850), !dbg !3580
+  call void @__SEA_assume(i1 %3850), !dbg !3580
   %3851 = xor i1 %2722, true, !dbg !3581
   %3852 = zext i9 %3838 to i10, !dbg !3582
   %3853 = shl i10 %3852, 1, !dbg !3583
@@ -4095,7 +4095,7 @@ define void @main() !dbg !3 {
   %3856 = icmp eq i18 %3847, %3855, !dbg !3586
   %3857 = select i1 %2722, i1 %3856, i1 %1335, !dbg !3587
   %3858 = or i1 %3857, %3851, !dbg !3588
-  call void @verifier.assume(i1 %3858), !dbg !3589
+  call void @__SEA_assume(i1 %3858), !dbg !3589
   %3859 = xor i1 %2731, true, !dbg !3590
   %3860 = zext i9 %3838 to i11, !dbg !3591
   %3861 = shl i11 %3860, 2, !dbg !3592
@@ -4104,7 +4104,7 @@ define void @main() !dbg !3 {
   %3864 = icmp eq i18 %3847, %3863, !dbg !3595
   %3865 = select i1 %2731, i1 %3864, i1 %1336, !dbg !3596
   %3866 = or i1 %3865, %3859, !dbg !3597
-  call void @verifier.assume(i1 %3866), !dbg !3598
+  call void @__SEA_assume(i1 %3866), !dbg !3598
   %3867 = xor i1 %2740, true, !dbg !3599
   %3868 = zext i9 %3838 to i12, !dbg !3600
   %3869 = shl i12 %3868, 3, !dbg !3601
@@ -4113,7 +4113,7 @@ define void @main() !dbg !3 {
   %3872 = icmp eq i18 %3847, %3871, !dbg !3604
   %3873 = select i1 %2740, i1 %3872, i1 %1337, !dbg !3605
   %3874 = or i1 %3873, %3867, !dbg !3606
-  call void @verifier.assume(i1 %3874), !dbg !3607
+  call void @__SEA_assume(i1 %3874), !dbg !3607
   %3875 = xor i1 %2749, true, !dbg !3608
   %3876 = zext i9 %3838 to i13, !dbg !3609
   %3877 = shl i13 %3876, 4, !dbg !3610
@@ -4122,7 +4122,7 @@ define void @main() !dbg !3 {
   %3880 = icmp eq i18 %3847, %3879, !dbg !3613
   %3881 = select i1 %2749, i1 %3880, i1 %1338, !dbg !3614
   %3882 = or i1 %3881, %3875, !dbg !3615
-  call void @verifier.assume(i1 %3882), !dbg !3616
+  call void @__SEA_assume(i1 %3882), !dbg !3616
   %3883 = xor i1 %2758, true, !dbg !3617
   %3884 = zext i9 %3838 to i14, !dbg !3618
   %3885 = shl i14 %3884, 5, !dbg !3619
@@ -4131,7 +4131,7 @@ define void @main() !dbg !3 {
   %3888 = icmp eq i18 %3847, %3887, !dbg !3622
   %3889 = select i1 %2758, i1 %3888, i1 %1339, !dbg !3623
   %3890 = or i1 %3889, %3883, !dbg !3624
-  call void @verifier.assume(i1 %3890), !dbg !3625
+  call void @__SEA_assume(i1 %3890), !dbg !3625
   %3891 = xor i1 %2767, true, !dbg !3626
   %3892 = zext i9 %3838 to i15, !dbg !3627
   %3893 = shl i15 %3892, 6, !dbg !3628
@@ -4140,7 +4140,7 @@ define void @main() !dbg !3 {
   %3896 = icmp eq i18 %3847, %3895, !dbg !3631
   %3897 = select i1 %2767, i1 %3896, i1 %1340, !dbg !3632
   %3898 = or i1 %3897, %3891, !dbg !3633
-  call void @verifier.assume(i1 %3898), !dbg !3634
+  call void @__SEA_assume(i1 %3898), !dbg !3634
   %3899 = xor i1 %2776, true, !dbg !3635
   %3900 = zext i9 %3838 to i16, !dbg !3636
   %3901 = shl i16 %3900, 7, !dbg !3637
@@ -4149,7 +4149,7 @@ define void @main() !dbg !3 {
   %3904 = icmp eq i18 %3847, %3903, !dbg !3640
   %3905 = select i1 %2776, i1 %3904, i1 %1341, !dbg !3641
   %3906 = or i1 %3905, %3899, !dbg !3642
-  call void @verifier.assume(i1 %3906), !dbg !3643
+  call void @__SEA_assume(i1 %3906), !dbg !3643
   %3907 = xor i1 %2785, true, !dbg !3644
   %3908 = zext i9 %3838 to i17, !dbg !3645
   %3909 = shl i17 %3908, 8, !dbg !3646
@@ -4158,14 +4158,14 @@ define void @main() !dbg !3 {
   %3912 = icmp eq i18 %3847, %3911, !dbg !3649
   %3913 = select i1 %2785, i1 %3912, i1 %1342, !dbg !3650
   %3914 = or i1 %3913, %3907, !dbg !3651
-  call void @verifier.assume(i1 %3914), !dbg !3652
+  call void @__SEA_assume(i1 %3914), !dbg !3652
   %3915 = xor i1 %1651, true, !dbg !3653
   %3916 = bitcast i18 %1334 to <18 x i1>, !dbg !3654
   %3917 = call i1 @llvm.vector.reduce.or.v18i1(<18 x i1> %3916), !dbg !3655
   %3918 = xor i1 %3917, true, !dbg !3656
   %3919 = select i1 %1651, i1 %3918, i1 %1343, !dbg !3657
   %3920 = or i1 %3919, %3915, !dbg !3658
-  call void @verifier.assume(i1 %3920), !dbg !3659
+  call void @__SEA_assume(i1 %3920), !dbg !3659
   %3921 = bitcast i9 %1092 to <9 x i1>, !dbg !3660
   %3922 = call i1 @llvm.vector.reduce.or.v9i1(<9 x i1> %3921), !dbg !3661
   %3923 = xor i1 %3922, true, !dbg !3662
@@ -4175,74 +4175,74 @@ define void @main() !dbg !3 {
   %3927 = select i1 %3924, i1 %3918, i1 %1344, !dbg !3666
   %3928 = select i1 %1651, i1 %1345, i1 %3927, !dbg !3667
   %3929 = or i1 %3928, %3926, !dbg !3668
-  call void @verifier.assume(i1 %3929), !dbg !3669
+  call void @__SEA_assume(i1 %3929), !dbg !3669
   %3930 = xor i1 %2809, true, !dbg !3670
   %3931 = xor i1 %3837, %2698, !dbg !3671
   %3932 = icmp eq i1 %3846, %3931, !dbg !3672
   %3933 = select i1 %1651, i1 %1346, i1 %3932, !dbg !3673
   %3934 = or i1 %3933, %3930, !dbg !3674
-  call void @verifier.assume(i1 %3934), !dbg !3675
+  call void @__SEA_assume(i1 %3934), !dbg !3675
   %3935 = xor i1 %2809, true, !dbg !3676
   %3936 = lshr i18 %3847, 9, !dbg !3677
   %3937 = trunc i18 %3936 to i9, !dbg !3678
   %3938 = icmp ule i9 %3937, %3838, !dbg !3679
   %3939 = select i1 %1651, i1 %1347, i1 %3938, !dbg !3680
   %3940 = or i1 %3939, %3935, !dbg !3681
-  call void @verifier.assume(i1 %3940), !dbg !3682
+  call void @__SEA_assume(i1 %3940), !dbg !3682
   %3941 = xor i1 %2809, true, !dbg !3683
   %3942 = icmp ule i9 %3937, %2699, !dbg !3684
   %3943 = select i1 %1651, i1 %1348, i1 %3942, !dbg !3685
   %3944 = or i1 %3943, %3941, !dbg !3686
-  call void @verifier.assume(i1 %3944), !dbg !3687
+  call void @__SEA_assume(i1 %3944), !dbg !3687
   %3945 = icmp eq i9 %3838, 2, !dbg !3688
   %3946 = xor i1 %3945, true, !dbg !3689
   %3947 = zext i10 %2829 to i18, !dbg !3690
   %3948 = icmp eq i18 %3847, %3947, !dbg !3691
   %3949 = select i1 %3945, i1 %3948, i1 %1349, !dbg !3692
   %3950 = or i1 %3949, %3946, !dbg !3693
-  call void @verifier.assume(i1 %3950), !dbg !3694
+  call void @__SEA_assume(i1 %3950), !dbg !3694
   %3951 = icmp eq i9 %3838, 4, !dbg !3695
   %3952 = xor i1 %3951, true, !dbg !3696
   %3953 = zext i11 %2838 to i18, !dbg !3697
   %3954 = icmp eq i18 %3847, %3953, !dbg !3698
   %3955 = select i1 %3951, i1 %3954, i1 %1350, !dbg !3699
   %3956 = or i1 %3955, %3952, !dbg !3700
-  call void @verifier.assume(i1 %3956), !dbg !3701
+  call void @__SEA_assume(i1 %3956), !dbg !3701
   %3957 = icmp eq i9 %3838, 8, !dbg !3702
   %3958 = xor i1 %3957, true, !dbg !3703
   %3959 = zext i12 %2847 to i18, !dbg !3704
   %3960 = icmp eq i18 %3847, %3959, !dbg !3705
   %3961 = select i1 %3957, i1 %3960, i1 %1351, !dbg !3706
   %3962 = or i1 %3961, %3958, !dbg !3707
-  call void @verifier.assume(i1 %3962), !dbg !3708
+  call void @__SEA_assume(i1 %3962), !dbg !3708
   %3963 = icmp eq i9 %3838, 16, !dbg !3709
   %3964 = xor i1 %3963, true, !dbg !3710
   %3965 = zext i13 %2856 to i18, !dbg !3711
   %3966 = icmp eq i18 %3847, %3965, !dbg !3712
   %3967 = select i1 %3963, i1 %3966, i1 %1352, !dbg !3713
   %3968 = or i1 %3967, %3964, !dbg !3714
-  call void @verifier.assume(i1 %3968), !dbg !3715
+  call void @__SEA_assume(i1 %3968), !dbg !3715
   %3969 = icmp eq i9 %3838, 32, !dbg !3716
   %3970 = xor i1 %3969, true, !dbg !3717
   %3971 = zext i14 %2865 to i18, !dbg !3718
   %3972 = icmp eq i18 %3847, %3971, !dbg !3719
   %3973 = select i1 %3969, i1 %3972, i1 %1353, !dbg !3720
   %3974 = or i1 %3973, %3970, !dbg !3721
-  call void @verifier.assume(i1 %3974), !dbg !3722
+  call void @__SEA_assume(i1 %3974), !dbg !3722
   %3975 = icmp eq i9 %3838, 64, !dbg !3723
   %3976 = xor i1 %3975, true, !dbg !3724
   %3977 = zext i15 %2874 to i18, !dbg !3725
   %3978 = icmp eq i18 %3847, %3977, !dbg !3726
   %3979 = select i1 %3975, i1 %3978, i1 %1354, !dbg !3727
   %3980 = or i1 %3979, %3976, !dbg !3728
-  call void @verifier.assume(i1 %3980), !dbg !3729
+  call void @__SEA_assume(i1 %3980), !dbg !3729
   %3981 = icmp eq i9 %3838, 128, !dbg !3730
   %3982 = xor i1 %3981, true, !dbg !3731
   %3983 = zext i16 %2883 to i18, !dbg !3732
   %3984 = icmp eq i18 %3847, %3983, !dbg !3733
   %3985 = select i1 %3981, i1 %3984, i1 %1355, !dbg !3734
   %3986 = or i1 %3985, %3982, !dbg !3735
-  call void @verifier.assume(i1 %3986), !dbg !3736
+  call void @__SEA_assume(i1 %3986), !dbg !3736
   %3987 = xor i1 %2700, true, !dbg !3737
   %3988 = lshr i9 %1091, 0, !dbg !3738
   %3989 = trunc i9 %3988 to i8, !dbg !3739
@@ -4264,7 +4264,7 @@ define void @main() !dbg !3 {
   %4005 = icmp eq i18 %4004, %3996, !dbg !3755
   %4006 = select i1 %2700, i1 %4005, i1 %1356, !dbg !3756
   %4007 = or i1 %4006, %3987, !dbg !3757
-  call void @verifier.assume(i1 %4007), !dbg !3758
+  call void @__SEA_assume(i1 %4007), !dbg !3758
   %4008 = xor i1 %2722, true, !dbg !3759
   %4009 = zext i9 %3995 to i10, !dbg !3760
   %4010 = shl i10 %4009, 1, !dbg !3761
@@ -4273,7 +4273,7 @@ define void @main() !dbg !3 {
   %4013 = icmp eq i18 %4004, %4012, !dbg !3764
   %4014 = select i1 %2722, i1 %4013, i1 %1358, !dbg !3765
   %4015 = or i1 %4014, %4008, !dbg !3766
-  call void @verifier.assume(i1 %4015), !dbg !3767
+  call void @__SEA_assume(i1 %4015), !dbg !3767
   %4016 = xor i1 %2731, true, !dbg !3768
   %4017 = zext i9 %3995 to i11, !dbg !3769
   %4018 = shl i11 %4017, 2, !dbg !3770
@@ -4282,7 +4282,7 @@ define void @main() !dbg !3 {
   %4021 = icmp eq i18 %4004, %4020, !dbg !3773
   %4022 = select i1 %2731, i1 %4021, i1 %1359, !dbg !3774
   %4023 = or i1 %4022, %4016, !dbg !3775
-  call void @verifier.assume(i1 %4023), !dbg !3776
+  call void @__SEA_assume(i1 %4023), !dbg !3776
   %4024 = xor i1 %2740, true, !dbg !3777
   %4025 = zext i9 %3995 to i12, !dbg !3778
   %4026 = shl i12 %4025, 3, !dbg !3779
@@ -4291,7 +4291,7 @@ define void @main() !dbg !3 {
   %4029 = icmp eq i18 %4004, %4028, !dbg !3782
   %4030 = select i1 %2740, i1 %4029, i1 %1360, !dbg !3783
   %4031 = or i1 %4030, %4024, !dbg !3784
-  call void @verifier.assume(i1 %4031), !dbg !3785
+  call void @__SEA_assume(i1 %4031), !dbg !3785
   %4032 = xor i1 %2749, true, !dbg !3786
   %4033 = zext i9 %3995 to i13, !dbg !3787
   %4034 = shl i13 %4033, 4, !dbg !3788
@@ -4300,7 +4300,7 @@ define void @main() !dbg !3 {
   %4037 = icmp eq i18 %4004, %4036, !dbg !3791
   %4038 = select i1 %2749, i1 %4037, i1 %1361, !dbg !3792
   %4039 = or i1 %4038, %4032, !dbg !3793
-  call void @verifier.assume(i1 %4039), !dbg !3794
+  call void @__SEA_assume(i1 %4039), !dbg !3794
   %4040 = xor i1 %2758, true, !dbg !3795
   %4041 = zext i9 %3995 to i14, !dbg !3796
   %4042 = shl i14 %4041, 5, !dbg !3797
@@ -4309,7 +4309,7 @@ define void @main() !dbg !3 {
   %4045 = icmp eq i18 %4004, %4044, !dbg !3800
   %4046 = select i1 %2758, i1 %4045, i1 %1362, !dbg !3801
   %4047 = or i1 %4046, %4040, !dbg !3802
-  call void @verifier.assume(i1 %4047), !dbg !3803
+  call void @__SEA_assume(i1 %4047), !dbg !3803
   %4048 = xor i1 %2767, true, !dbg !3804
   %4049 = zext i9 %3995 to i15, !dbg !3805
   %4050 = shl i15 %4049, 6, !dbg !3806
@@ -4318,7 +4318,7 @@ define void @main() !dbg !3 {
   %4053 = icmp eq i18 %4004, %4052, !dbg !3809
   %4054 = select i1 %2767, i1 %4053, i1 %1363, !dbg !3810
   %4055 = or i1 %4054, %4048, !dbg !3811
-  call void @verifier.assume(i1 %4055), !dbg !3812
+  call void @__SEA_assume(i1 %4055), !dbg !3812
   %4056 = xor i1 %2776, true, !dbg !3813
   %4057 = zext i9 %3995 to i16, !dbg !3814
   %4058 = shl i16 %4057, 7, !dbg !3815
@@ -4327,7 +4327,7 @@ define void @main() !dbg !3 {
   %4061 = icmp eq i18 %4004, %4060, !dbg !3818
   %4062 = select i1 %2776, i1 %4061, i1 %1364, !dbg !3819
   %4063 = or i1 %4062, %4056, !dbg !3820
-  call void @verifier.assume(i1 %4063), !dbg !3821
+  call void @__SEA_assume(i1 %4063), !dbg !3821
   %4064 = xor i1 %2785, true, !dbg !3822
   %4065 = zext i9 %3995 to i17, !dbg !3823
   %4066 = shl i17 %4065, 8, !dbg !3824
@@ -4336,14 +4336,14 @@ define void @main() !dbg !3 {
   %4069 = icmp eq i18 %4004, %4068, !dbg !3827
   %4070 = select i1 %2785, i1 %4069, i1 %1365, !dbg !3828
   %4071 = or i1 %4070, %4064, !dbg !3829
-  call void @verifier.assume(i1 %4071), !dbg !3830
+  call void @__SEA_assume(i1 %4071), !dbg !3830
   %4072 = xor i1 %1651, true, !dbg !3831
   %4073 = bitcast i18 %1357 to <18 x i1>, !dbg !3832
   %4074 = call i1 @llvm.vector.reduce.or.v18i1(<18 x i1> %4073), !dbg !3833
   %4075 = xor i1 %4074, true, !dbg !3834
   %4076 = select i1 %1651, i1 %4075, i1 %1366, !dbg !3835
   %4077 = or i1 %4076, %4072, !dbg !3836
-  call void @verifier.assume(i1 %4077), !dbg !3837
+  call void @__SEA_assume(i1 %4077), !dbg !3837
   %4078 = bitcast i9 %1091 to <9 x i1>, !dbg !3838
   %4079 = call i1 @llvm.vector.reduce.or.v9i1(<9 x i1> %4078), !dbg !3839
   %4080 = xor i1 %4079, true, !dbg !3840
@@ -4353,74 +4353,74 @@ define void @main() !dbg !3 {
   %4084 = select i1 %4081, i1 %4075, i1 %1367, !dbg !3844
   %4085 = select i1 %1651, i1 %1368, i1 %4084, !dbg !3845
   %4086 = or i1 %4085, %4083, !dbg !3846
-  call void @verifier.assume(i1 %4086), !dbg !3847
+  call void @__SEA_assume(i1 %4086), !dbg !3847
   %4087 = xor i1 %2809, true, !dbg !3848
   %4088 = xor i1 %3994, %2698, !dbg !3849
   %4089 = icmp eq i1 %4003, %4088, !dbg !3850
   %4090 = select i1 %1651, i1 %1369, i1 %4089, !dbg !3851
   %4091 = or i1 %4090, %4087, !dbg !3852
-  call void @verifier.assume(i1 %4091), !dbg !3853
+  call void @__SEA_assume(i1 %4091), !dbg !3853
   %4092 = xor i1 %2809, true, !dbg !3854
   %4093 = lshr i18 %4004, 9, !dbg !3855
   %4094 = trunc i18 %4093 to i9, !dbg !3856
   %4095 = icmp ule i9 %4094, %3995, !dbg !3857
   %4096 = select i1 %1651, i1 %1370, i1 %4095, !dbg !3858
   %4097 = or i1 %4096, %4092, !dbg !3859
-  call void @verifier.assume(i1 %4097), !dbg !3860
+  call void @__SEA_assume(i1 %4097), !dbg !3860
   %4098 = xor i1 %2809, true, !dbg !3861
   %4099 = icmp ule i9 %4094, %2699, !dbg !3862
   %4100 = select i1 %1651, i1 %1371, i1 %4099, !dbg !3863
   %4101 = or i1 %4100, %4098, !dbg !3864
-  call void @verifier.assume(i1 %4101), !dbg !3865
+  call void @__SEA_assume(i1 %4101), !dbg !3865
   %4102 = icmp eq i9 %3995, 2, !dbg !3866
   %4103 = xor i1 %4102, true, !dbg !3867
   %4104 = zext i10 %2829 to i18, !dbg !3868
   %4105 = icmp eq i18 %4004, %4104, !dbg !3869
   %4106 = select i1 %4102, i1 %4105, i1 %1372, !dbg !3870
   %4107 = or i1 %4106, %4103, !dbg !3871
-  call void @verifier.assume(i1 %4107), !dbg !3872
+  call void @__SEA_assume(i1 %4107), !dbg !3872
   %4108 = icmp eq i9 %3995, 4, !dbg !3873
   %4109 = xor i1 %4108, true, !dbg !3874
   %4110 = zext i11 %2838 to i18, !dbg !3875
   %4111 = icmp eq i18 %4004, %4110, !dbg !3876
   %4112 = select i1 %4108, i1 %4111, i1 %1373, !dbg !3877
   %4113 = or i1 %4112, %4109, !dbg !3878
-  call void @verifier.assume(i1 %4113), !dbg !3879
+  call void @__SEA_assume(i1 %4113), !dbg !3879
   %4114 = icmp eq i9 %3995, 8, !dbg !3880
   %4115 = xor i1 %4114, true, !dbg !3881
   %4116 = zext i12 %2847 to i18, !dbg !3882
   %4117 = icmp eq i18 %4004, %4116, !dbg !3883
   %4118 = select i1 %4114, i1 %4117, i1 %1374, !dbg !3884
   %4119 = or i1 %4118, %4115, !dbg !3885
-  call void @verifier.assume(i1 %4119), !dbg !3886
+  call void @__SEA_assume(i1 %4119), !dbg !3886
   %4120 = icmp eq i9 %3995, 16, !dbg !3887
   %4121 = xor i1 %4120, true, !dbg !3888
   %4122 = zext i13 %2856 to i18, !dbg !3889
   %4123 = icmp eq i18 %4004, %4122, !dbg !3890
   %4124 = select i1 %4120, i1 %4123, i1 %1375, !dbg !3891
   %4125 = or i1 %4124, %4121, !dbg !3892
-  call void @verifier.assume(i1 %4125), !dbg !3893
+  call void @__SEA_assume(i1 %4125), !dbg !3893
   %4126 = icmp eq i9 %3995, 32, !dbg !3894
   %4127 = xor i1 %4126, true, !dbg !3895
   %4128 = zext i14 %2865 to i18, !dbg !3896
   %4129 = icmp eq i18 %4004, %4128, !dbg !3897
   %4130 = select i1 %4126, i1 %4129, i1 %1376, !dbg !3898
   %4131 = or i1 %4130, %4127, !dbg !3899
-  call void @verifier.assume(i1 %4131), !dbg !3900
+  call void @__SEA_assume(i1 %4131), !dbg !3900
   %4132 = icmp eq i9 %3995, 64, !dbg !3901
   %4133 = xor i1 %4132, true, !dbg !3902
   %4134 = zext i15 %2874 to i18, !dbg !3903
   %4135 = icmp eq i18 %4004, %4134, !dbg !3904
   %4136 = select i1 %4132, i1 %4135, i1 %1377, !dbg !3905
   %4137 = or i1 %4136, %4133, !dbg !3906
-  call void @verifier.assume(i1 %4137), !dbg !3907
+  call void @__SEA_assume(i1 %4137), !dbg !3907
   %4138 = icmp eq i9 %3995, 128, !dbg !3908
   %4139 = xor i1 %4138, true, !dbg !3909
   %4140 = zext i16 %2883 to i18, !dbg !3910
   %4141 = icmp eq i18 %4004, %4140, !dbg !3911
   %4142 = select i1 %4138, i1 %4141, i1 %1378, !dbg !3912
   %4143 = or i1 %4142, %4139, !dbg !3913
-  call void @verifier.assume(i1 %4143), !dbg !3914
+  call void @__SEA_assume(i1 %4143), !dbg !3914
   %4144 = xor i1 %2700, true, !dbg !3915
   %4145 = lshr i9 %1090, 0, !dbg !3916
   %4146 = trunc i9 %4145 to i8, !dbg !3917
@@ -4442,7 +4442,7 @@ define void @main() !dbg !3 {
   %4162 = icmp eq i18 %4161, %4153, !dbg !3933
   %4163 = select i1 %2700, i1 %4162, i1 %1379, !dbg !3934
   %4164 = or i1 %4163, %4144, !dbg !3935
-  call void @verifier.assume(i1 %4164), !dbg !3936
+  call void @__SEA_assume(i1 %4164), !dbg !3936
   %4165 = xor i1 %2722, true, !dbg !3937
   %4166 = zext i9 %4152 to i10, !dbg !3938
   %4167 = shl i10 %4166, 1, !dbg !3939
@@ -4451,7 +4451,7 @@ define void @main() !dbg !3 {
   %4170 = icmp eq i18 %4161, %4169, !dbg !3942
   %4171 = select i1 %2722, i1 %4170, i1 %1381, !dbg !3943
   %4172 = or i1 %4171, %4165, !dbg !3944
-  call void @verifier.assume(i1 %4172), !dbg !3945
+  call void @__SEA_assume(i1 %4172), !dbg !3945
   %4173 = xor i1 %2731, true, !dbg !3946
   %4174 = zext i9 %4152 to i11, !dbg !3947
   %4175 = shl i11 %4174, 2, !dbg !3948
@@ -4460,7 +4460,7 @@ define void @main() !dbg !3 {
   %4178 = icmp eq i18 %4161, %4177, !dbg !3951
   %4179 = select i1 %2731, i1 %4178, i1 %1382, !dbg !3952
   %4180 = or i1 %4179, %4173, !dbg !3953
-  call void @verifier.assume(i1 %4180), !dbg !3954
+  call void @__SEA_assume(i1 %4180), !dbg !3954
   %4181 = xor i1 %2740, true, !dbg !3955
   %4182 = zext i9 %4152 to i12, !dbg !3956
   %4183 = shl i12 %4182, 3, !dbg !3957
@@ -4469,7 +4469,7 @@ define void @main() !dbg !3 {
   %4186 = icmp eq i18 %4161, %4185, !dbg !3960
   %4187 = select i1 %2740, i1 %4186, i1 %1383, !dbg !3961
   %4188 = or i1 %4187, %4181, !dbg !3962
-  call void @verifier.assume(i1 %4188), !dbg !3963
+  call void @__SEA_assume(i1 %4188), !dbg !3963
   %4189 = xor i1 %2749, true, !dbg !3964
   %4190 = zext i9 %4152 to i13, !dbg !3965
   %4191 = shl i13 %4190, 4, !dbg !3966
@@ -4478,7 +4478,7 @@ define void @main() !dbg !3 {
   %4194 = icmp eq i18 %4161, %4193, !dbg !3969
   %4195 = select i1 %2749, i1 %4194, i1 %1384, !dbg !3970
   %4196 = or i1 %4195, %4189, !dbg !3971
-  call void @verifier.assume(i1 %4196), !dbg !3972
+  call void @__SEA_assume(i1 %4196), !dbg !3972
   %4197 = xor i1 %2758, true, !dbg !3973
   %4198 = zext i9 %4152 to i14, !dbg !3974
   %4199 = shl i14 %4198, 5, !dbg !3975
@@ -4487,7 +4487,7 @@ define void @main() !dbg !3 {
   %4202 = icmp eq i18 %4161, %4201, !dbg !3978
   %4203 = select i1 %2758, i1 %4202, i1 %1385, !dbg !3979
   %4204 = or i1 %4203, %4197, !dbg !3980
-  call void @verifier.assume(i1 %4204), !dbg !3981
+  call void @__SEA_assume(i1 %4204), !dbg !3981
   %4205 = xor i1 %2767, true, !dbg !3982
   %4206 = zext i9 %4152 to i15, !dbg !3983
   %4207 = shl i15 %4206, 6, !dbg !3984
@@ -4496,7 +4496,7 @@ define void @main() !dbg !3 {
   %4210 = icmp eq i18 %4161, %4209, !dbg !3987
   %4211 = select i1 %2767, i1 %4210, i1 %1386, !dbg !3988
   %4212 = or i1 %4211, %4205, !dbg !3989
-  call void @verifier.assume(i1 %4212), !dbg !3990
+  call void @__SEA_assume(i1 %4212), !dbg !3990
   %4213 = xor i1 %2776, true, !dbg !3991
   %4214 = zext i9 %4152 to i16, !dbg !3992
   %4215 = shl i16 %4214, 7, !dbg !3993
@@ -4505,7 +4505,7 @@ define void @main() !dbg !3 {
   %4218 = icmp eq i18 %4161, %4217, !dbg !3996
   %4219 = select i1 %2776, i1 %4218, i1 %1387, !dbg !3997
   %4220 = or i1 %4219, %4213, !dbg !3998
-  call void @verifier.assume(i1 %4220), !dbg !3999
+  call void @__SEA_assume(i1 %4220), !dbg !3999
   %4221 = xor i1 %2785, true, !dbg !4000
   %4222 = zext i9 %4152 to i17, !dbg !4001
   %4223 = shl i17 %4222, 8, !dbg !4002
@@ -4514,14 +4514,14 @@ define void @main() !dbg !3 {
   %4226 = icmp eq i18 %4161, %4225, !dbg !4005
   %4227 = select i1 %2785, i1 %4226, i1 %1388, !dbg !4006
   %4228 = or i1 %4227, %4221, !dbg !4007
-  call void @verifier.assume(i1 %4228), !dbg !4008
+  call void @__SEA_assume(i1 %4228), !dbg !4008
   %4229 = xor i1 %1651, true, !dbg !4009
   %4230 = bitcast i18 %1380 to <18 x i1>, !dbg !4010
   %4231 = call i1 @llvm.vector.reduce.or.v18i1(<18 x i1> %4230), !dbg !4011
   %4232 = xor i1 %4231, true, !dbg !4012
   %4233 = select i1 %1651, i1 %4232, i1 %1389, !dbg !4013
   %4234 = or i1 %4233, %4229, !dbg !4014
-  call void @verifier.assume(i1 %4234), !dbg !4015
+  call void @__SEA_assume(i1 %4234), !dbg !4015
   %4235 = bitcast i9 %1090 to <9 x i1>, !dbg !4016
   %4236 = call i1 @llvm.vector.reduce.or.v9i1(<9 x i1> %4235), !dbg !4017
   %4237 = xor i1 %4236, true, !dbg !4018
@@ -4531,74 +4531,74 @@ define void @main() !dbg !3 {
   %4241 = select i1 %4238, i1 %4232, i1 %1390, !dbg !4022
   %4242 = select i1 %1651, i1 %1391, i1 %4241, !dbg !4023
   %4243 = or i1 %4242, %4240, !dbg !4024
-  call void @verifier.assume(i1 %4243), !dbg !4025
+  call void @__SEA_assume(i1 %4243), !dbg !4025
   %4244 = xor i1 %2809, true, !dbg !4026
   %4245 = xor i1 %4151, %2698, !dbg !4027
   %4246 = icmp eq i1 %4160, %4245, !dbg !4028
   %4247 = select i1 %1651, i1 %1392, i1 %4246, !dbg !4029
   %4248 = or i1 %4247, %4244, !dbg !4030
-  call void @verifier.assume(i1 %4248), !dbg !4031
+  call void @__SEA_assume(i1 %4248), !dbg !4031
   %4249 = xor i1 %2809, true, !dbg !4032
   %4250 = lshr i18 %4161, 9, !dbg !4033
   %4251 = trunc i18 %4250 to i9, !dbg !4034
   %4252 = icmp ule i9 %4251, %4152, !dbg !4035
   %4253 = select i1 %1651, i1 %1393, i1 %4252, !dbg !4036
   %4254 = or i1 %4253, %4249, !dbg !4037
-  call void @verifier.assume(i1 %4254), !dbg !4038
+  call void @__SEA_assume(i1 %4254), !dbg !4038
   %4255 = xor i1 %2809, true, !dbg !4039
   %4256 = icmp ule i9 %4251, %2699, !dbg !4040
   %4257 = select i1 %1651, i1 %1394, i1 %4256, !dbg !4041
   %4258 = or i1 %4257, %4255, !dbg !4042
-  call void @verifier.assume(i1 %4258), !dbg !4043
+  call void @__SEA_assume(i1 %4258), !dbg !4043
   %4259 = icmp eq i9 %4152, 2, !dbg !4044
   %4260 = xor i1 %4259, true, !dbg !4045
   %4261 = zext i10 %2829 to i18, !dbg !4046
   %4262 = icmp eq i18 %4161, %4261, !dbg !4047
   %4263 = select i1 %4259, i1 %4262, i1 %1395, !dbg !4048
   %4264 = or i1 %4263, %4260, !dbg !4049
-  call void @verifier.assume(i1 %4264), !dbg !4050
+  call void @__SEA_assume(i1 %4264), !dbg !4050
   %4265 = icmp eq i9 %4152, 4, !dbg !4051
   %4266 = xor i1 %4265, true, !dbg !4052
   %4267 = zext i11 %2838 to i18, !dbg !4053
   %4268 = icmp eq i18 %4161, %4267, !dbg !4054
   %4269 = select i1 %4265, i1 %4268, i1 %1396, !dbg !4055
   %4270 = or i1 %4269, %4266, !dbg !4056
-  call void @verifier.assume(i1 %4270), !dbg !4057
+  call void @__SEA_assume(i1 %4270), !dbg !4057
   %4271 = icmp eq i9 %4152, 8, !dbg !4058
   %4272 = xor i1 %4271, true, !dbg !4059
   %4273 = zext i12 %2847 to i18, !dbg !4060
   %4274 = icmp eq i18 %4161, %4273, !dbg !4061
   %4275 = select i1 %4271, i1 %4274, i1 %1397, !dbg !4062
   %4276 = or i1 %4275, %4272, !dbg !4063
-  call void @verifier.assume(i1 %4276), !dbg !4064
+  call void @__SEA_assume(i1 %4276), !dbg !4064
   %4277 = icmp eq i9 %4152, 16, !dbg !4065
   %4278 = xor i1 %4277, true, !dbg !4066
   %4279 = zext i13 %2856 to i18, !dbg !4067
   %4280 = icmp eq i18 %4161, %4279, !dbg !4068
   %4281 = select i1 %4277, i1 %4280, i1 %1398, !dbg !4069
   %4282 = or i1 %4281, %4278, !dbg !4070
-  call void @verifier.assume(i1 %4282), !dbg !4071
+  call void @__SEA_assume(i1 %4282), !dbg !4071
   %4283 = icmp eq i9 %4152, 32, !dbg !4072
   %4284 = xor i1 %4283, true, !dbg !4073
   %4285 = zext i14 %2865 to i18, !dbg !4074
   %4286 = icmp eq i18 %4161, %4285, !dbg !4075
   %4287 = select i1 %4283, i1 %4286, i1 %1399, !dbg !4076
   %4288 = or i1 %4287, %4284, !dbg !4077
-  call void @verifier.assume(i1 %4288), !dbg !4078
+  call void @__SEA_assume(i1 %4288), !dbg !4078
   %4289 = icmp eq i9 %4152, 64, !dbg !4079
   %4290 = xor i1 %4289, true, !dbg !4080
   %4291 = zext i15 %2874 to i18, !dbg !4081
   %4292 = icmp eq i18 %4161, %4291, !dbg !4082
   %4293 = select i1 %4289, i1 %4292, i1 %1400, !dbg !4083
   %4294 = or i1 %4293, %4290, !dbg !4084
-  call void @verifier.assume(i1 %4294), !dbg !4085
+  call void @__SEA_assume(i1 %4294), !dbg !4085
   %4295 = icmp eq i9 %4152, 128, !dbg !4086
   %4296 = xor i1 %4295, true, !dbg !4087
   %4297 = zext i16 %2883 to i18, !dbg !4088
   %4298 = icmp eq i18 %4161, %4297, !dbg !4089
   %4299 = select i1 %4295, i1 %4298, i1 %1401, !dbg !4090
   %4300 = or i1 %4299, %4296, !dbg !4091
-  call void @verifier.assume(i1 %4300), !dbg !4092
+  call void @__SEA_assume(i1 %4300), !dbg !4092
   %4301 = xor i1 %2700, true, !dbg !4093
   %4302 = lshr i9 %1089, 0, !dbg !4094
   %4303 = trunc i9 %4302 to i8, !dbg !4095
@@ -4620,7 +4620,7 @@ define void @main() !dbg !3 {
   %4319 = icmp eq i18 %4318, %4310, !dbg !4111
   %4320 = select i1 %2700, i1 %4319, i1 %1402, !dbg !4112
   %4321 = or i1 %4320, %4301, !dbg !4113
-  call void @verifier.assume(i1 %4321), !dbg !4114
+  call void @__SEA_assume(i1 %4321), !dbg !4114
   %4322 = xor i1 %2722, true, !dbg !4115
   %4323 = zext i9 %4309 to i10, !dbg !4116
   %4324 = shl i10 %4323, 1, !dbg !4117
@@ -4629,7 +4629,7 @@ define void @main() !dbg !3 {
   %4327 = icmp eq i18 %4318, %4326, !dbg !4120
   %4328 = select i1 %2722, i1 %4327, i1 %1404, !dbg !4121
   %4329 = or i1 %4328, %4322, !dbg !4122
-  call void @verifier.assume(i1 %4329), !dbg !4123
+  call void @__SEA_assume(i1 %4329), !dbg !4123
   %4330 = xor i1 %2731, true, !dbg !4124
   %4331 = zext i9 %4309 to i11, !dbg !4125
   %4332 = shl i11 %4331, 2, !dbg !4126
@@ -4638,7 +4638,7 @@ define void @main() !dbg !3 {
   %4335 = icmp eq i18 %4318, %4334, !dbg !4129
   %4336 = select i1 %2731, i1 %4335, i1 %1405, !dbg !4130
   %4337 = or i1 %4336, %4330, !dbg !4131
-  call void @verifier.assume(i1 %4337), !dbg !4132
+  call void @__SEA_assume(i1 %4337), !dbg !4132
   %4338 = xor i1 %2740, true, !dbg !4133
   %4339 = zext i9 %4309 to i12, !dbg !4134
   %4340 = shl i12 %4339, 3, !dbg !4135
@@ -4647,7 +4647,7 @@ define void @main() !dbg !3 {
   %4343 = icmp eq i18 %4318, %4342, !dbg !4138
   %4344 = select i1 %2740, i1 %4343, i1 %1406, !dbg !4139
   %4345 = or i1 %4344, %4338, !dbg !4140
-  call void @verifier.assume(i1 %4345), !dbg !4141
+  call void @__SEA_assume(i1 %4345), !dbg !4141
   %4346 = xor i1 %2749, true, !dbg !4142
   %4347 = zext i9 %4309 to i13, !dbg !4143
   %4348 = shl i13 %4347, 4, !dbg !4144
@@ -4656,7 +4656,7 @@ define void @main() !dbg !3 {
   %4351 = icmp eq i18 %4318, %4350, !dbg !4147
   %4352 = select i1 %2749, i1 %4351, i1 %1407, !dbg !4148
   %4353 = or i1 %4352, %4346, !dbg !4149
-  call void @verifier.assume(i1 %4353), !dbg !4150
+  call void @__SEA_assume(i1 %4353), !dbg !4150
   %4354 = xor i1 %2758, true, !dbg !4151
   %4355 = zext i9 %4309 to i14, !dbg !4152
   %4356 = shl i14 %4355, 5, !dbg !4153
@@ -4665,7 +4665,7 @@ define void @main() !dbg !3 {
   %4359 = icmp eq i18 %4318, %4358, !dbg !4156
   %4360 = select i1 %2758, i1 %4359, i1 %1408, !dbg !4157
   %4361 = or i1 %4360, %4354, !dbg !4158
-  call void @verifier.assume(i1 %4361), !dbg !4159
+  call void @__SEA_assume(i1 %4361), !dbg !4159
   %4362 = xor i1 %2767, true, !dbg !4160
   %4363 = zext i9 %4309 to i15, !dbg !4161
   %4364 = shl i15 %4363, 6, !dbg !4162
@@ -4674,7 +4674,7 @@ define void @main() !dbg !3 {
   %4367 = icmp eq i18 %4318, %4366, !dbg !4165
   %4368 = select i1 %2767, i1 %4367, i1 %1409, !dbg !4166
   %4369 = or i1 %4368, %4362, !dbg !4167
-  call void @verifier.assume(i1 %4369), !dbg !4168
+  call void @__SEA_assume(i1 %4369), !dbg !4168
   %4370 = xor i1 %2776, true, !dbg !4169
   %4371 = zext i9 %4309 to i16, !dbg !4170
   %4372 = shl i16 %4371, 7, !dbg !4171
@@ -4683,7 +4683,7 @@ define void @main() !dbg !3 {
   %4375 = icmp eq i18 %4318, %4374, !dbg !4174
   %4376 = select i1 %2776, i1 %4375, i1 %1410, !dbg !4175
   %4377 = or i1 %4376, %4370, !dbg !4176
-  call void @verifier.assume(i1 %4377), !dbg !4177
+  call void @__SEA_assume(i1 %4377), !dbg !4177
   %4378 = xor i1 %2785, true, !dbg !4178
   %4379 = zext i9 %4309 to i17, !dbg !4179
   %4380 = shl i17 %4379, 8, !dbg !4180
@@ -4692,14 +4692,14 @@ define void @main() !dbg !3 {
   %4383 = icmp eq i18 %4318, %4382, !dbg !4183
   %4384 = select i1 %2785, i1 %4383, i1 %1411, !dbg !4184
   %4385 = or i1 %4384, %4378, !dbg !4185
-  call void @verifier.assume(i1 %4385), !dbg !4186
+  call void @__SEA_assume(i1 %4385), !dbg !4186
   %4386 = xor i1 %1651, true, !dbg !4187
   %4387 = bitcast i18 %1403 to <18 x i1>, !dbg !4188
   %4388 = call i1 @llvm.vector.reduce.or.v18i1(<18 x i1> %4387), !dbg !4189
   %4389 = xor i1 %4388, true, !dbg !4190
   %4390 = select i1 %1651, i1 %4389, i1 %1412, !dbg !4191
   %4391 = or i1 %4390, %4386, !dbg !4192
-  call void @verifier.assume(i1 %4391), !dbg !4193
+  call void @__SEA_assume(i1 %4391), !dbg !4193
   %4392 = bitcast i9 %1089 to <9 x i1>, !dbg !4194
   %4393 = call i1 @llvm.vector.reduce.or.v9i1(<9 x i1> %4392), !dbg !4195
   %4394 = xor i1 %4393, true, !dbg !4196
@@ -4709,74 +4709,74 @@ define void @main() !dbg !3 {
   %4398 = select i1 %4395, i1 %4389, i1 %1413, !dbg !4200
   %4399 = select i1 %1651, i1 %1414, i1 %4398, !dbg !4201
   %4400 = or i1 %4399, %4397, !dbg !4202
-  call void @verifier.assume(i1 %4400), !dbg !4203
+  call void @__SEA_assume(i1 %4400), !dbg !4203
   %4401 = xor i1 %2809, true, !dbg !4204
   %4402 = xor i1 %4308, %2698, !dbg !4205
   %4403 = icmp eq i1 %4317, %4402, !dbg !4206
   %4404 = select i1 %1651, i1 %1415, i1 %4403, !dbg !4207
   %4405 = or i1 %4404, %4401, !dbg !4208
-  call void @verifier.assume(i1 %4405), !dbg !4209
+  call void @__SEA_assume(i1 %4405), !dbg !4209
   %4406 = xor i1 %2809, true, !dbg !4210
   %4407 = lshr i18 %4318, 9, !dbg !4211
   %4408 = trunc i18 %4407 to i9, !dbg !4212
   %4409 = icmp ule i9 %4408, %4309, !dbg !4213
   %4410 = select i1 %1651, i1 %1416, i1 %4409, !dbg !4214
   %4411 = or i1 %4410, %4406, !dbg !4215
-  call void @verifier.assume(i1 %4411), !dbg !4216
+  call void @__SEA_assume(i1 %4411), !dbg !4216
   %4412 = xor i1 %2809, true, !dbg !4217
   %4413 = icmp ule i9 %4408, %2699, !dbg !4218
   %4414 = select i1 %1651, i1 %1417, i1 %4413, !dbg !4219
   %4415 = or i1 %4414, %4412, !dbg !4220
-  call void @verifier.assume(i1 %4415), !dbg !4221
+  call void @__SEA_assume(i1 %4415), !dbg !4221
   %4416 = icmp eq i9 %4309, 2, !dbg !4222
   %4417 = xor i1 %4416, true, !dbg !4223
   %4418 = zext i10 %2829 to i18, !dbg !4224
   %4419 = icmp eq i18 %4318, %4418, !dbg !4225
   %4420 = select i1 %4416, i1 %4419, i1 %1418, !dbg !4226
   %4421 = or i1 %4420, %4417, !dbg !4227
-  call void @verifier.assume(i1 %4421), !dbg !4228
+  call void @__SEA_assume(i1 %4421), !dbg !4228
   %4422 = icmp eq i9 %4309, 4, !dbg !4229
   %4423 = xor i1 %4422, true, !dbg !4230
   %4424 = zext i11 %2838 to i18, !dbg !4231
   %4425 = icmp eq i18 %4318, %4424, !dbg !4232
   %4426 = select i1 %4422, i1 %4425, i1 %1419, !dbg !4233
   %4427 = or i1 %4426, %4423, !dbg !4234
-  call void @verifier.assume(i1 %4427), !dbg !4235
+  call void @__SEA_assume(i1 %4427), !dbg !4235
   %4428 = icmp eq i9 %4309, 8, !dbg !4236
   %4429 = xor i1 %4428, true, !dbg !4237
   %4430 = zext i12 %2847 to i18, !dbg !4238
   %4431 = icmp eq i18 %4318, %4430, !dbg !4239
   %4432 = select i1 %4428, i1 %4431, i1 %1420, !dbg !4240
   %4433 = or i1 %4432, %4429, !dbg !4241
-  call void @verifier.assume(i1 %4433), !dbg !4242
+  call void @__SEA_assume(i1 %4433), !dbg !4242
   %4434 = icmp eq i9 %4309, 16, !dbg !4243
   %4435 = xor i1 %4434, true, !dbg !4244
   %4436 = zext i13 %2856 to i18, !dbg !4245
   %4437 = icmp eq i18 %4318, %4436, !dbg !4246
   %4438 = select i1 %4434, i1 %4437, i1 %1421, !dbg !4247
   %4439 = or i1 %4438, %4435, !dbg !4248
-  call void @verifier.assume(i1 %4439), !dbg !4249
+  call void @__SEA_assume(i1 %4439), !dbg !4249
   %4440 = icmp eq i9 %4309, 32, !dbg !4250
   %4441 = xor i1 %4440, true, !dbg !4251
   %4442 = zext i14 %2865 to i18, !dbg !4252
   %4443 = icmp eq i18 %4318, %4442, !dbg !4253
   %4444 = select i1 %4440, i1 %4443, i1 %1422, !dbg !4254
   %4445 = or i1 %4444, %4441, !dbg !4255
-  call void @verifier.assume(i1 %4445), !dbg !4256
+  call void @__SEA_assume(i1 %4445), !dbg !4256
   %4446 = icmp eq i9 %4309, 64, !dbg !4257
   %4447 = xor i1 %4446, true, !dbg !4258
   %4448 = zext i15 %2874 to i18, !dbg !4259
   %4449 = icmp eq i18 %4318, %4448, !dbg !4260
   %4450 = select i1 %4446, i1 %4449, i1 %1423, !dbg !4261
   %4451 = or i1 %4450, %4447, !dbg !4262
-  call void @verifier.assume(i1 %4451), !dbg !4263
+  call void @__SEA_assume(i1 %4451), !dbg !4263
   %4452 = icmp eq i9 %4309, 128, !dbg !4264
   %4453 = xor i1 %4452, true, !dbg !4265
   %4454 = zext i16 %2883 to i18, !dbg !4266
   %4455 = icmp eq i18 %4318, %4454, !dbg !4267
   %4456 = select i1 %4452, i1 %4455, i1 %1424, !dbg !4268
   %4457 = or i1 %4456, %4453, !dbg !4269
-  call void @verifier.assume(i1 %4457), !dbg !4270
+  call void @__SEA_assume(i1 %4457), !dbg !4270
   %4458 = xor i1 %2700, true, !dbg !4271
   %4459 = lshr i9 %1088, 0, !dbg !4272
   %4460 = trunc i9 %4459 to i8, !dbg !4273
@@ -4798,7 +4798,7 @@ define void @main() !dbg !3 {
   %4476 = icmp eq i18 %4475, %4467, !dbg !4289
   %4477 = select i1 %2700, i1 %4476, i1 %1425, !dbg !4290
   %4478 = or i1 %4477, %4458, !dbg !4291
-  call void @verifier.assume(i1 %4478), !dbg !4292
+  call void @__SEA_assume(i1 %4478), !dbg !4292
   %4479 = xor i1 %2722, true, !dbg !4293
   %4480 = zext i9 %4466 to i10, !dbg !4294
   %4481 = shl i10 %4480, 1, !dbg !4295
@@ -4807,7 +4807,7 @@ define void @main() !dbg !3 {
   %4484 = icmp eq i18 %4475, %4483, !dbg !4298
   %4485 = select i1 %2722, i1 %4484, i1 %1427, !dbg !4299
   %4486 = or i1 %4485, %4479, !dbg !4300
-  call void @verifier.assume(i1 %4486), !dbg !4301
+  call void @__SEA_assume(i1 %4486), !dbg !4301
   %4487 = xor i1 %2731, true, !dbg !4302
   %4488 = zext i9 %4466 to i11, !dbg !4303
   %4489 = shl i11 %4488, 2, !dbg !4304
@@ -4816,7 +4816,7 @@ define void @main() !dbg !3 {
   %4492 = icmp eq i18 %4475, %4491, !dbg !4307
   %4493 = select i1 %2731, i1 %4492, i1 %1428, !dbg !4308
   %4494 = or i1 %4493, %4487, !dbg !4309
-  call void @verifier.assume(i1 %4494), !dbg !4310
+  call void @__SEA_assume(i1 %4494), !dbg !4310
   %4495 = xor i1 %2740, true, !dbg !4311
   %4496 = zext i9 %4466 to i12, !dbg !4312
   %4497 = shl i12 %4496, 3, !dbg !4313
@@ -4825,7 +4825,7 @@ define void @main() !dbg !3 {
   %4500 = icmp eq i18 %4475, %4499, !dbg !4316
   %4501 = select i1 %2740, i1 %4500, i1 %1429, !dbg !4317
   %4502 = or i1 %4501, %4495, !dbg !4318
-  call void @verifier.assume(i1 %4502), !dbg !4319
+  call void @__SEA_assume(i1 %4502), !dbg !4319
   %4503 = xor i1 %2749, true, !dbg !4320
   %4504 = zext i9 %4466 to i13, !dbg !4321
   %4505 = shl i13 %4504, 4, !dbg !4322
@@ -4834,7 +4834,7 @@ define void @main() !dbg !3 {
   %4508 = icmp eq i18 %4475, %4507, !dbg !4325
   %4509 = select i1 %2749, i1 %4508, i1 %1430, !dbg !4326
   %4510 = or i1 %4509, %4503, !dbg !4327
-  call void @verifier.assume(i1 %4510), !dbg !4328
+  call void @__SEA_assume(i1 %4510), !dbg !4328
   %4511 = xor i1 %2758, true, !dbg !4329
   %4512 = zext i9 %4466 to i14, !dbg !4330
   %4513 = shl i14 %4512, 5, !dbg !4331
@@ -4843,7 +4843,7 @@ define void @main() !dbg !3 {
   %4516 = icmp eq i18 %4475, %4515, !dbg !4334
   %4517 = select i1 %2758, i1 %4516, i1 %1431, !dbg !4335
   %4518 = or i1 %4517, %4511, !dbg !4336
-  call void @verifier.assume(i1 %4518), !dbg !4337
+  call void @__SEA_assume(i1 %4518), !dbg !4337
   %4519 = xor i1 %2767, true, !dbg !4338
   %4520 = zext i9 %4466 to i15, !dbg !4339
   %4521 = shl i15 %4520, 6, !dbg !4340
@@ -4852,7 +4852,7 @@ define void @main() !dbg !3 {
   %4524 = icmp eq i18 %4475, %4523, !dbg !4343
   %4525 = select i1 %2767, i1 %4524, i1 %1432, !dbg !4344
   %4526 = or i1 %4525, %4519, !dbg !4345
-  call void @verifier.assume(i1 %4526), !dbg !4346
+  call void @__SEA_assume(i1 %4526), !dbg !4346
   %4527 = xor i1 %2776, true, !dbg !4347
   %4528 = zext i9 %4466 to i16, !dbg !4348
   %4529 = shl i16 %4528, 7, !dbg !4349
@@ -4861,7 +4861,7 @@ define void @main() !dbg !3 {
   %4532 = icmp eq i18 %4475, %4531, !dbg !4352
   %4533 = select i1 %2776, i1 %4532, i1 %1433, !dbg !4353
   %4534 = or i1 %4533, %4527, !dbg !4354
-  call void @verifier.assume(i1 %4534), !dbg !4355
+  call void @__SEA_assume(i1 %4534), !dbg !4355
   %4535 = xor i1 %2785, true, !dbg !4356
   %4536 = zext i9 %4466 to i17, !dbg !4357
   %4537 = shl i17 %4536, 8, !dbg !4358
@@ -4870,14 +4870,14 @@ define void @main() !dbg !3 {
   %4540 = icmp eq i18 %4475, %4539, !dbg !4361
   %4541 = select i1 %2785, i1 %4540, i1 %1434, !dbg !4362
   %4542 = or i1 %4541, %4535, !dbg !4363
-  call void @verifier.assume(i1 %4542), !dbg !4364
+  call void @__SEA_assume(i1 %4542), !dbg !4364
   %4543 = xor i1 %1651, true, !dbg !4365
   %4544 = bitcast i18 %1426 to <18 x i1>, !dbg !4366
   %4545 = call i1 @llvm.vector.reduce.or.v18i1(<18 x i1> %4544), !dbg !4367
   %4546 = xor i1 %4545, true, !dbg !4368
   %4547 = select i1 %1651, i1 %4546, i1 %1435, !dbg !4369
   %4548 = or i1 %4547, %4543, !dbg !4370
-  call void @verifier.assume(i1 %4548), !dbg !4371
+  call void @__SEA_assume(i1 %4548), !dbg !4371
   %4549 = bitcast i9 %1088 to <9 x i1>, !dbg !4372
   %4550 = call i1 @llvm.vector.reduce.or.v9i1(<9 x i1> %4549), !dbg !4373
   %4551 = xor i1 %4550, true, !dbg !4374
@@ -4887,74 +4887,74 @@ define void @main() !dbg !3 {
   %4555 = select i1 %4552, i1 %4546, i1 %1436, !dbg !4378
   %4556 = select i1 %1651, i1 %1437, i1 %4555, !dbg !4379
   %4557 = or i1 %4556, %4554, !dbg !4380
-  call void @verifier.assume(i1 %4557), !dbg !4381
+  call void @__SEA_assume(i1 %4557), !dbg !4381
   %4558 = xor i1 %2809, true, !dbg !4382
   %4559 = xor i1 %4465, %2698, !dbg !4383
   %4560 = icmp eq i1 %4474, %4559, !dbg !4384
   %4561 = select i1 %1651, i1 %1438, i1 %4560, !dbg !4385
   %4562 = or i1 %4561, %4558, !dbg !4386
-  call void @verifier.assume(i1 %4562), !dbg !4387
+  call void @__SEA_assume(i1 %4562), !dbg !4387
   %4563 = xor i1 %2809, true, !dbg !4388
   %4564 = lshr i18 %4475, 9, !dbg !4389
   %4565 = trunc i18 %4564 to i9, !dbg !4390
   %4566 = icmp ule i9 %4565, %4466, !dbg !4391
   %4567 = select i1 %1651, i1 %1439, i1 %4566, !dbg !4392
   %4568 = or i1 %4567, %4563, !dbg !4393
-  call void @verifier.assume(i1 %4568), !dbg !4394
+  call void @__SEA_assume(i1 %4568), !dbg !4394
   %4569 = xor i1 %2809, true, !dbg !4395
   %4570 = icmp ule i9 %4565, %2699, !dbg !4396
   %4571 = select i1 %1651, i1 %1440, i1 %4570, !dbg !4397
   %4572 = or i1 %4571, %4569, !dbg !4398
-  call void @verifier.assume(i1 %4572), !dbg !4399
+  call void @__SEA_assume(i1 %4572), !dbg !4399
   %4573 = icmp eq i9 %4466, 2, !dbg !4400
   %4574 = xor i1 %4573, true, !dbg !4401
   %4575 = zext i10 %2829 to i18, !dbg !4402
   %4576 = icmp eq i18 %4475, %4575, !dbg !4403
   %4577 = select i1 %4573, i1 %4576, i1 %1441, !dbg !4404
   %4578 = or i1 %4577, %4574, !dbg !4405
-  call void @verifier.assume(i1 %4578), !dbg !4406
+  call void @__SEA_assume(i1 %4578), !dbg !4406
   %4579 = icmp eq i9 %4466, 4, !dbg !4407
   %4580 = xor i1 %4579, true, !dbg !4408
   %4581 = zext i11 %2838 to i18, !dbg !4409
   %4582 = icmp eq i18 %4475, %4581, !dbg !4410
   %4583 = select i1 %4579, i1 %4582, i1 %1442, !dbg !4411
   %4584 = or i1 %4583, %4580, !dbg !4412
-  call void @verifier.assume(i1 %4584), !dbg !4413
+  call void @__SEA_assume(i1 %4584), !dbg !4413
   %4585 = icmp eq i9 %4466, 8, !dbg !4414
   %4586 = xor i1 %4585, true, !dbg !4415
   %4587 = zext i12 %2847 to i18, !dbg !4416
   %4588 = icmp eq i18 %4475, %4587, !dbg !4417
   %4589 = select i1 %4585, i1 %4588, i1 %1443, !dbg !4418
   %4590 = or i1 %4589, %4586, !dbg !4419
-  call void @verifier.assume(i1 %4590), !dbg !4420
+  call void @__SEA_assume(i1 %4590), !dbg !4420
   %4591 = icmp eq i9 %4466, 16, !dbg !4421
   %4592 = xor i1 %4591, true, !dbg !4422
   %4593 = zext i13 %2856 to i18, !dbg !4423
   %4594 = icmp eq i18 %4475, %4593, !dbg !4424
   %4595 = select i1 %4591, i1 %4594, i1 %1444, !dbg !4425
   %4596 = or i1 %4595, %4592, !dbg !4426
-  call void @verifier.assume(i1 %4596), !dbg !4427
+  call void @__SEA_assume(i1 %4596), !dbg !4427
   %4597 = icmp eq i9 %4466, 32, !dbg !4428
   %4598 = xor i1 %4597, true, !dbg !4429
   %4599 = zext i14 %2865 to i18, !dbg !4430
   %4600 = icmp eq i18 %4475, %4599, !dbg !4431
   %4601 = select i1 %4597, i1 %4600, i1 %1445, !dbg !4432
   %4602 = or i1 %4601, %4598, !dbg !4433
-  call void @verifier.assume(i1 %4602), !dbg !4434
+  call void @__SEA_assume(i1 %4602), !dbg !4434
   %4603 = icmp eq i9 %4466, 64, !dbg !4435
   %4604 = xor i1 %4603, true, !dbg !4436
   %4605 = zext i15 %2874 to i18, !dbg !4437
   %4606 = icmp eq i18 %4475, %4605, !dbg !4438
   %4607 = select i1 %4603, i1 %4606, i1 %1446, !dbg !4439
   %4608 = or i1 %4607, %4604, !dbg !4440
-  call void @verifier.assume(i1 %4608), !dbg !4441
+  call void @__SEA_assume(i1 %4608), !dbg !4441
   %4609 = icmp eq i9 %4466, 128, !dbg !4442
   %4610 = xor i1 %4609, true, !dbg !4443
   %4611 = zext i16 %2883 to i18, !dbg !4444
   %4612 = icmp eq i18 %4475, %4611, !dbg !4445
   %4613 = select i1 %4609, i1 %4612, i1 %1447, !dbg !4446
   %4614 = or i1 %4613, %4610, !dbg !4447
-  call void @verifier.assume(i1 %4614), !dbg !4448
+  call void @__SEA_assume(i1 %4614), !dbg !4448
   %4615 = xor i1 %2700, true, !dbg !4449
   %4616 = lshr i9 %1087, 0, !dbg !4450
   %4617 = trunc i9 %4616 to i8, !dbg !4451
@@ -4976,7 +4976,7 @@ define void @main() !dbg !3 {
   %4633 = icmp eq i18 %4632, %4624, !dbg !4467
   %4634 = select i1 %2700, i1 %4633, i1 %1448, !dbg !4468
   %4635 = or i1 %4634, %4615, !dbg !4469
-  call void @verifier.assume(i1 %4635), !dbg !4470
+  call void @__SEA_assume(i1 %4635), !dbg !4470
   %4636 = xor i1 %2722, true, !dbg !4471
   %4637 = zext i9 %4623 to i10, !dbg !4472
   %4638 = shl i10 %4637, 1, !dbg !4473
@@ -4985,7 +4985,7 @@ define void @main() !dbg !3 {
   %4641 = icmp eq i18 %4632, %4640, !dbg !4476
   %4642 = select i1 %2722, i1 %4641, i1 %1450, !dbg !4477
   %4643 = or i1 %4642, %4636, !dbg !4478
-  call void @verifier.assume(i1 %4643), !dbg !4479
+  call void @__SEA_assume(i1 %4643), !dbg !4479
   %4644 = xor i1 %2731, true, !dbg !4480
   %4645 = zext i9 %4623 to i11, !dbg !4481
   %4646 = shl i11 %4645, 2, !dbg !4482
@@ -4994,7 +4994,7 @@ define void @main() !dbg !3 {
   %4649 = icmp eq i18 %4632, %4648, !dbg !4485
   %4650 = select i1 %2731, i1 %4649, i1 %1451, !dbg !4486
   %4651 = or i1 %4650, %4644, !dbg !4487
-  call void @verifier.assume(i1 %4651), !dbg !4488
+  call void @__SEA_assume(i1 %4651), !dbg !4488
   %4652 = xor i1 %2740, true, !dbg !4489
   %4653 = zext i9 %4623 to i12, !dbg !4490
   %4654 = shl i12 %4653, 3, !dbg !4491
@@ -5003,7 +5003,7 @@ define void @main() !dbg !3 {
   %4657 = icmp eq i18 %4632, %4656, !dbg !4494
   %4658 = select i1 %2740, i1 %4657, i1 %1452, !dbg !4495
   %4659 = or i1 %4658, %4652, !dbg !4496
-  call void @verifier.assume(i1 %4659), !dbg !4497
+  call void @__SEA_assume(i1 %4659), !dbg !4497
   %4660 = xor i1 %2749, true, !dbg !4498
   %4661 = zext i9 %4623 to i13, !dbg !4499
   %4662 = shl i13 %4661, 4, !dbg !4500
@@ -5012,7 +5012,7 @@ define void @main() !dbg !3 {
   %4665 = icmp eq i18 %4632, %4664, !dbg !4503
   %4666 = select i1 %2749, i1 %4665, i1 %1453, !dbg !4504
   %4667 = or i1 %4666, %4660, !dbg !4505
-  call void @verifier.assume(i1 %4667), !dbg !4506
+  call void @__SEA_assume(i1 %4667), !dbg !4506
   %4668 = xor i1 %2758, true, !dbg !4507
   %4669 = zext i9 %4623 to i14, !dbg !4508
   %4670 = shl i14 %4669, 5, !dbg !4509
@@ -5021,7 +5021,7 @@ define void @main() !dbg !3 {
   %4673 = icmp eq i18 %4632, %4672, !dbg !4512
   %4674 = select i1 %2758, i1 %4673, i1 %1454, !dbg !4513
   %4675 = or i1 %4674, %4668, !dbg !4514
-  call void @verifier.assume(i1 %4675), !dbg !4515
+  call void @__SEA_assume(i1 %4675), !dbg !4515
   %4676 = xor i1 %2767, true, !dbg !4516
   %4677 = zext i9 %4623 to i15, !dbg !4517
   %4678 = shl i15 %4677, 6, !dbg !4518
@@ -5030,7 +5030,7 @@ define void @main() !dbg !3 {
   %4681 = icmp eq i18 %4632, %4680, !dbg !4521
   %4682 = select i1 %2767, i1 %4681, i1 %1455, !dbg !4522
   %4683 = or i1 %4682, %4676, !dbg !4523
-  call void @verifier.assume(i1 %4683), !dbg !4524
+  call void @__SEA_assume(i1 %4683), !dbg !4524
   %4684 = xor i1 %2776, true, !dbg !4525
   %4685 = zext i9 %4623 to i16, !dbg !4526
   %4686 = shl i16 %4685, 7, !dbg !4527
@@ -5039,7 +5039,7 @@ define void @main() !dbg !3 {
   %4689 = icmp eq i18 %4632, %4688, !dbg !4530
   %4690 = select i1 %2776, i1 %4689, i1 %1456, !dbg !4531
   %4691 = or i1 %4690, %4684, !dbg !4532
-  call void @verifier.assume(i1 %4691), !dbg !4533
+  call void @__SEA_assume(i1 %4691), !dbg !4533
   %4692 = xor i1 %2785, true, !dbg !4534
   %4693 = zext i9 %4623 to i17, !dbg !4535
   %4694 = shl i17 %4693, 8, !dbg !4536
@@ -5048,14 +5048,14 @@ define void @main() !dbg !3 {
   %4697 = icmp eq i18 %4632, %4696, !dbg !4539
   %4698 = select i1 %2785, i1 %4697, i1 %1457, !dbg !4540
   %4699 = or i1 %4698, %4692, !dbg !4541
-  call void @verifier.assume(i1 %4699), !dbg !4542
+  call void @__SEA_assume(i1 %4699), !dbg !4542
   %4700 = xor i1 %1651, true, !dbg !4543
   %4701 = bitcast i18 %1449 to <18 x i1>, !dbg !4544
   %4702 = call i1 @llvm.vector.reduce.or.v18i1(<18 x i1> %4701), !dbg !4545
   %4703 = xor i1 %4702, true, !dbg !4546
   %4704 = select i1 %1651, i1 %4703, i1 %1458, !dbg !4547
   %4705 = or i1 %4704, %4700, !dbg !4548
-  call void @verifier.assume(i1 %4705), !dbg !4549
+  call void @__SEA_assume(i1 %4705), !dbg !4549
   %4706 = bitcast i9 %1087 to <9 x i1>, !dbg !4550
   %4707 = call i1 @llvm.vector.reduce.or.v9i1(<9 x i1> %4706), !dbg !4551
   %4708 = xor i1 %4707, true, !dbg !4552
@@ -5065,74 +5065,74 @@ define void @main() !dbg !3 {
   %4712 = select i1 %4709, i1 %4703, i1 %1459, !dbg !4556
   %4713 = select i1 %1651, i1 %1460, i1 %4712, !dbg !4557
   %4714 = or i1 %4713, %4711, !dbg !4558
-  call void @verifier.assume(i1 %4714), !dbg !4559
+  call void @__SEA_assume(i1 %4714), !dbg !4559
   %4715 = xor i1 %2809, true, !dbg !4560
   %4716 = xor i1 %4622, %2698, !dbg !4561
   %4717 = icmp eq i1 %4631, %4716, !dbg !4562
   %4718 = select i1 %1651, i1 %1461, i1 %4717, !dbg !4563
   %4719 = or i1 %4718, %4715, !dbg !4564
-  call void @verifier.assume(i1 %4719), !dbg !4565
+  call void @__SEA_assume(i1 %4719), !dbg !4565
   %4720 = xor i1 %2809, true, !dbg !4566
   %4721 = lshr i18 %4632, 9, !dbg !4567
   %4722 = trunc i18 %4721 to i9, !dbg !4568
   %4723 = icmp ule i9 %4722, %4623, !dbg !4569
   %4724 = select i1 %1651, i1 %1462, i1 %4723, !dbg !4570
   %4725 = or i1 %4724, %4720, !dbg !4571
-  call void @verifier.assume(i1 %4725), !dbg !4572
+  call void @__SEA_assume(i1 %4725), !dbg !4572
   %4726 = xor i1 %2809, true, !dbg !4573
   %4727 = icmp ule i9 %4722, %2699, !dbg !4574
   %4728 = select i1 %1651, i1 %1463, i1 %4727, !dbg !4575
   %4729 = or i1 %4728, %4726, !dbg !4576
-  call void @verifier.assume(i1 %4729), !dbg !4577
+  call void @__SEA_assume(i1 %4729), !dbg !4577
   %4730 = icmp eq i9 %4623, 2, !dbg !4578
   %4731 = xor i1 %4730, true, !dbg !4579
   %4732 = zext i10 %2829 to i18, !dbg !4580
   %4733 = icmp eq i18 %4632, %4732, !dbg !4581
   %4734 = select i1 %4730, i1 %4733, i1 %1464, !dbg !4582
   %4735 = or i1 %4734, %4731, !dbg !4583
-  call void @verifier.assume(i1 %4735), !dbg !4584
+  call void @__SEA_assume(i1 %4735), !dbg !4584
   %4736 = icmp eq i9 %4623, 4, !dbg !4585
   %4737 = xor i1 %4736, true, !dbg !4586
   %4738 = zext i11 %2838 to i18, !dbg !4587
   %4739 = icmp eq i18 %4632, %4738, !dbg !4588
   %4740 = select i1 %4736, i1 %4739, i1 %1465, !dbg !4589
   %4741 = or i1 %4740, %4737, !dbg !4590
-  call void @verifier.assume(i1 %4741), !dbg !4591
+  call void @__SEA_assume(i1 %4741), !dbg !4591
   %4742 = icmp eq i9 %4623, 8, !dbg !4592
   %4743 = xor i1 %4742, true, !dbg !4593
   %4744 = zext i12 %2847 to i18, !dbg !4594
   %4745 = icmp eq i18 %4632, %4744, !dbg !4595
   %4746 = select i1 %4742, i1 %4745, i1 %1466, !dbg !4596
   %4747 = or i1 %4746, %4743, !dbg !4597
-  call void @verifier.assume(i1 %4747), !dbg !4598
+  call void @__SEA_assume(i1 %4747), !dbg !4598
   %4748 = icmp eq i9 %4623, 16, !dbg !4599
   %4749 = xor i1 %4748, true, !dbg !4600
   %4750 = zext i13 %2856 to i18, !dbg !4601
   %4751 = icmp eq i18 %4632, %4750, !dbg !4602
   %4752 = select i1 %4748, i1 %4751, i1 %1467, !dbg !4603
   %4753 = or i1 %4752, %4749, !dbg !4604
-  call void @verifier.assume(i1 %4753), !dbg !4605
+  call void @__SEA_assume(i1 %4753), !dbg !4605
   %4754 = icmp eq i9 %4623, 32, !dbg !4606
   %4755 = xor i1 %4754, true, !dbg !4607
   %4756 = zext i14 %2865 to i18, !dbg !4608
   %4757 = icmp eq i18 %4632, %4756, !dbg !4609
   %4758 = select i1 %4754, i1 %4757, i1 %1468, !dbg !4610
   %4759 = or i1 %4758, %4755, !dbg !4611
-  call void @verifier.assume(i1 %4759), !dbg !4612
+  call void @__SEA_assume(i1 %4759), !dbg !4612
   %4760 = icmp eq i9 %4623, 64, !dbg !4613
   %4761 = xor i1 %4760, true, !dbg !4614
   %4762 = zext i15 %2874 to i18, !dbg !4615
   %4763 = icmp eq i18 %4632, %4762, !dbg !4616
   %4764 = select i1 %4760, i1 %4763, i1 %1469, !dbg !4617
   %4765 = or i1 %4764, %4761, !dbg !4618
-  call void @verifier.assume(i1 %4765), !dbg !4619
+  call void @__SEA_assume(i1 %4765), !dbg !4619
   %4766 = icmp eq i9 %4623, 128, !dbg !4620
   %4767 = xor i1 %4766, true, !dbg !4621
   %4768 = zext i16 %2883 to i18, !dbg !4622
   %4769 = icmp eq i18 %4632, %4768, !dbg !4623
   %4770 = select i1 %4766, i1 %4769, i1 %1470, !dbg !4624
   %4771 = or i1 %4770, %4767, !dbg !4625
-  call void @verifier.assume(i1 %4771), !dbg !4626
+  call void @__SEA_assume(i1 %4771), !dbg !4626
   %4772 = xor i1 %2700, true, !dbg !4627
   %4773 = lshr i9 %1086, 0, !dbg !4628
   %4774 = trunc i9 %4773 to i8, !dbg !4629
@@ -5154,7 +5154,7 @@ define void @main() !dbg !3 {
   %4790 = icmp eq i18 %4789, %4781, !dbg !4645
   %4791 = select i1 %2700, i1 %4790, i1 %1471, !dbg !4646
   %4792 = or i1 %4791, %4772, !dbg !4647
-  call void @verifier.assume(i1 %4792), !dbg !4648
+  call void @__SEA_assume(i1 %4792), !dbg !4648
   %4793 = xor i1 %2722, true, !dbg !4649
   %4794 = zext i9 %4780 to i10, !dbg !4650
   %4795 = shl i10 %4794, 1, !dbg !4651
@@ -5163,7 +5163,7 @@ define void @main() !dbg !3 {
   %4798 = icmp eq i18 %4789, %4797, !dbg !4654
   %4799 = select i1 %2722, i1 %4798, i1 %1473, !dbg !4655
   %4800 = or i1 %4799, %4793, !dbg !4656
-  call void @verifier.assume(i1 %4800), !dbg !4657
+  call void @__SEA_assume(i1 %4800), !dbg !4657
   %4801 = xor i1 %2731, true, !dbg !4658
   %4802 = zext i9 %4780 to i11, !dbg !4659
   %4803 = shl i11 %4802, 2, !dbg !4660
@@ -5172,7 +5172,7 @@ define void @main() !dbg !3 {
   %4806 = icmp eq i18 %4789, %4805, !dbg !4663
   %4807 = select i1 %2731, i1 %4806, i1 %1474, !dbg !4664
   %4808 = or i1 %4807, %4801, !dbg !4665
-  call void @verifier.assume(i1 %4808), !dbg !4666
+  call void @__SEA_assume(i1 %4808), !dbg !4666
   %4809 = xor i1 %2740, true, !dbg !4667
   %4810 = zext i9 %4780 to i12, !dbg !4668
   %4811 = shl i12 %4810, 3, !dbg !4669
@@ -5181,7 +5181,7 @@ define void @main() !dbg !3 {
   %4814 = icmp eq i18 %4789, %4813, !dbg !4672
   %4815 = select i1 %2740, i1 %4814, i1 %1475, !dbg !4673
   %4816 = or i1 %4815, %4809, !dbg !4674
-  call void @verifier.assume(i1 %4816), !dbg !4675
+  call void @__SEA_assume(i1 %4816), !dbg !4675
   %4817 = xor i1 %2749, true, !dbg !4676
   %4818 = zext i9 %4780 to i13, !dbg !4677
   %4819 = shl i13 %4818, 4, !dbg !4678
@@ -5190,7 +5190,7 @@ define void @main() !dbg !3 {
   %4822 = icmp eq i18 %4789, %4821, !dbg !4681
   %4823 = select i1 %2749, i1 %4822, i1 %1476, !dbg !4682
   %4824 = or i1 %4823, %4817, !dbg !4683
-  call void @verifier.assume(i1 %4824), !dbg !4684
+  call void @__SEA_assume(i1 %4824), !dbg !4684
   %4825 = xor i1 %2758, true, !dbg !4685
   %4826 = zext i9 %4780 to i14, !dbg !4686
   %4827 = shl i14 %4826, 5, !dbg !4687
@@ -5199,7 +5199,7 @@ define void @main() !dbg !3 {
   %4830 = icmp eq i18 %4789, %4829, !dbg !4690
   %4831 = select i1 %2758, i1 %4830, i1 %1477, !dbg !4691
   %4832 = or i1 %4831, %4825, !dbg !4692
-  call void @verifier.assume(i1 %4832), !dbg !4693
+  call void @__SEA_assume(i1 %4832), !dbg !4693
   %4833 = xor i1 %2767, true, !dbg !4694
   %4834 = zext i9 %4780 to i15, !dbg !4695
   %4835 = shl i15 %4834, 6, !dbg !4696
@@ -5208,7 +5208,7 @@ define void @main() !dbg !3 {
   %4838 = icmp eq i18 %4789, %4837, !dbg !4699
   %4839 = select i1 %2767, i1 %4838, i1 %1478, !dbg !4700
   %4840 = or i1 %4839, %4833, !dbg !4701
-  call void @verifier.assume(i1 %4840), !dbg !4702
+  call void @__SEA_assume(i1 %4840), !dbg !4702
   %4841 = xor i1 %2776, true, !dbg !4703
   %4842 = zext i9 %4780 to i16, !dbg !4704
   %4843 = shl i16 %4842, 7, !dbg !4705
@@ -5217,7 +5217,7 @@ define void @main() !dbg !3 {
   %4846 = icmp eq i18 %4789, %4845, !dbg !4708
   %4847 = select i1 %2776, i1 %4846, i1 %1479, !dbg !4709
   %4848 = or i1 %4847, %4841, !dbg !4710
-  call void @verifier.assume(i1 %4848), !dbg !4711
+  call void @__SEA_assume(i1 %4848), !dbg !4711
   %4849 = xor i1 %2785, true, !dbg !4712
   %4850 = zext i9 %4780 to i17, !dbg !4713
   %4851 = shl i17 %4850, 8, !dbg !4714
@@ -5226,14 +5226,14 @@ define void @main() !dbg !3 {
   %4854 = icmp eq i18 %4789, %4853, !dbg !4717
   %4855 = select i1 %2785, i1 %4854, i1 %1480, !dbg !4718
   %4856 = or i1 %4855, %4849, !dbg !4719
-  call void @verifier.assume(i1 %4856), !dbg !4720
+  call void @__SEA_assume(i1 %4856), !dbg !4720
   %4857 = xor i1 %1651, true, !dbg !4721
   %4858 = bitcast i18 %1472 to <18 x i1>, !dbg !4722
   %4859 = call i1 @llvm.vector.reduce.or.v18i1(<18 x i1> %4858), !dbg !4723
   %4860 = xor i1 %4859, true, !dbg !4724
   %4861 = select i1 %1651, i1 %4860, i1 %1481, !dbg !4725
   %4862 = or i1 %4861, %4857, !dbg !4726
-  call void @verifier.assume(i1 %4862), !dbg !4727
+  call void @__SEA_assume(i1 %4862), !dbg !4727
   %4863 = bitcast i9 %1086 to <9 x i1>, !dbg !4728
   %4864 = call i1 @llvm.vector.reduce.or.v9i1(<9 x i1> %4863), !dbg !4729
   %4865 = xor i1 %4864, true, !dbg !4730
@@ -5243,74 +5243,74 @@ define void @main() !dbg !3 {
   %4869 = select i1 %4866, i1 %4860, i1 %1482, !dbg !4734
   %4870 = select i1 %1651, i1 %1483, i1 %4869, !dbg !4735
   %4871 = or i1 %4870, %4868, !dbg !4736
-  call void @verifier.assume(i1 %4871), !dbg !4737
+  call void @__SEA_assume(i1 %4871), !dbg !4737
   %4872 = xor i1 %2809, true, !dbg !4738
   %4873 = xor i1 %4779, %2698, !dbg !4739
   %4874 = icmp eq i1 %4788, %4873, !dbg !4740
   %4875 = select i1 %1651, i1 %1484, i1 %4874, !dbg !4741
   %4876 = or i1 %4875, %4872, !dbg !4742
-  call void @verifier.assume(i1 %4876), !dbg !4743
+  call void @__SEA_assume(i1 %4876), !dbg !4743
   %4877 = xor i1 %2809, true, !dbg !4744
   %4878 = lshr i18 %4789, 9, !dbg !4745
   %4879 = trunc i18 %4878 to i9, !dbg !4746
   %4880 = icmp ule i9 %4879, %4780, !dbg !4747
   %4881 = select i1 %1651, i1 %1485, i1 %4880, !dbg !4748
   %4882 = or i1 %4881, %4877, !dbg !4749
-  call void @verifier.assume(i1 %4882), !dbg !4750
+  call void @__SEA_assume(i1 %4882), !dbg !4750
   %4883 = xor i1 %2809, true, !dbg !4751
   %4884 = icmp ule i9 %4879, %2699, !dbg !4752
   %4885 = select i1 %1651, i1 %1486, i1 %4884, !dbg !4753
   %4886 = or i1 %4885, %4883, !dbg !4754
-  call void @verifier.assume(i1 %4886), !dbg !4755
+  call void @__SEA_assume(i1 %4886), !dbg !4755
   %4887 = icmp eq i9 %4780, 2, !dbg !4756
   %4888 = xor i1 %4887, true, !dbg !4757
   %4889 = zext i10 %2829 to i18, !dbg !4758
   %4890 = icmp eq i18 %4789, %4889, !dbg !4759
   %4891 = select i1 %4887, i1 %4890, i1 %1487, !dbg !4760
   %4892 = or i1 %4891, %4888, !dbg !4761
-  call void @verifier.assume(i1 %4892), !dbg !4762
+  call void @__SEA_assume(i1 %4892), !dbg !4762
   %4893 = icmp eq i9 %4780, 4, !dbg !4763
   %4894 = xor i1 %4893, true, !dbg !4764
   %4895 = zext i11 %2838 to i18, !dbg !4765
   %4896 = icmp eq i18 %4789, %4895, !dbg !4766
   %4897 = select i1 %4893, i1 %4896, i1 %1488, !dbg !4767
   %4898 = or i1 %4897, %4894, !dbg !4768
-  call void @verifier.assume(i1 %4898), !dbg !4769
+  call void @__SEA_assume(i1 %4898), !dbg !4769
   %4899 = icmp eq i9 %4780, 8, !dbg !4770
   %4900 = xor i1 %4899, true, !dbg !4771
   %4901 = zext i12 %2847 to i18, !dbg !4772
   %4902 = icmp eq i18 %4789, %4901, !dbg !4773
   %4903 = select i1 %4899, i1 %4902, i1 %1489, !dbg !4774
   %4904 = or i1 %4903, %4900, !dbg !4775
-  call void @verifier.assume(i1 %4904), !dbg !4776
+  call void @__SEA_assume(i1 %4904), !dbg !4776
   %4905 = icmp eq i9 %4780, 16, !dbg !4777
   %4906 = xor i1 %4905, true, !dbg !4778
   %4907 = zext i13 %2856 to i18, !dbg !4779
   %4908 = icmp eq i18 %4789, %4907, !dbg !4780
   %4909 = select i1 %4905, i1 %4908, i1 %1490, !dbg !4781
   %4910 = or i1 %4909, %4906, !dbg !4782
-  call void @verifier.assume(i1 %4910), !dbg !4783
+  call void @__SEA_assume(i1 %4910), !dbg !4783
   %4911 = icmp eq i9 %4780, 32, !dbg !4784
   %4912 = xor i1 %4911, true, !dbg !4785
   %4913 = zext i14 %2865 to i18, !dbg !4786
   %4914 = icmp eq i18 %4789, %4913, !dbg !4787
   %4915 = select i1 %4911, i1 %4914, i1 %1491, !dbg !4788
   %4916 = or i1 %4915, %4912, !dbg !4789
-  call void @verifier.assume(i1 %4916), !dbg !4790
+  call void @__SEA_assume(i1 %4916), !dbg !4790
   %4917 = icmp eq i9 %4780, 64, !dbg !4791
   %4918 = xor i1 %4917, true, !dbg !4792
   %4919 = zext i15 %2874 to i18, !dbg !4793
   %4920 = icmp eq i18 %4789, %4919, !dbg !4794
   %4921 = select i1 %4917, i1 %4920, i1 %1492, !dbg !4795
   %4922 = or i1 %4921, %4918, !dbg !4796
-  call void @verifier.assume(i1 %4922), !dbg !4797
+  call void @__SEA_assume(i1 %4922), !dbg !4797
   %4923 = icmp eq i9 %4780, 128, !dbg !4798
   %4924 = xor i1 %4923, true, !dbg !4799
   %4925 = zext i16 %2883 to i18, !dbg !4800
   %4926 = icmp eq i18 %4789, %4925, !dbg !4801
   %4927 = select i1 %4923, i1 %4926, i1 %1493, !dbg !4802
   %4928 = or i1 %4927, %4924, !dbg !4803
-  call void @verifier.assume(i1 %4928), !dbg !4804
+  call void @__SEA_assume(i1 %4928), !dbg !4804
   %4929 = xor i1 %2700, true, !dbg !4805
   %4930 = lshr i9 %1085, 0, !dbg !4806
   %4931 = trunc i9 %4930 to i8, !dbg !4807
@@ -5332,7 +5332,7 @@ define void @main() !dbg !3 {
   %4947 = icmp eq i18 %4946, %4938, !dbg !4823
   %4948 = select i1 %2700, i1 %4947, i1 %1494, !dbg !4824
   %4949 = or i1 %4948, %4929, !dbg !4825
-  call void @verifier.assume(i1 %4949), !dbg !4826
+  call void @__SEA_assume(i1 %4949), !dbg !4826
   %4950 = xor i1 %2722, true, !dbg !4827
   %4951 = zext i9 %4937 to i10, !dbg !4828
   %4952 = shl i10 %4951, 1, !dbg !4829
@@ -5341,7 +5341,7 @@ define void @main() !dbg !3 {
   %4955 = icmp eq i18 %4946, %4954, !dbg !4832
   %4956 = select i1 %2722, i1 %4955, i1 %1496, !dbg !4833
   %4957 = or i1 %4956, %4950, !dbg !4834
-  call void @verifier.assume(i1 %4957), !dbg !4835
+  call void @__SEA_assume(i1 %4957), !dbg !4835
   %4958 = xor i1 %2731, true, !dbg !4836
   %4959 = zext i9 %4937 to i11, !dbg !4837
   %4960 = shl i11 %4959, 2, !dbg !4838
@@ -5350,7 +5350,7 @@ define void @main() !dbg !3 {
   %4963 = icmp eq i18 %4946, %4962, !dbg !4841
   %4964 = select i1 %2731, i1 %4963, i1 %1497, !dbg !4842
   %4965 = or i1 %4964, %4958, !dbg !4843
-  call void @verifier.assume(i1 %4965), !dbg !4844
+  call void @__SEA_assume(i1 %4965), !dbg !4844
   %4966 = xor i1 %2740, true, !dbg !4845
   %4967 = zext i9 %4937 to i12, !dbg !4846
   %4968 = shl i12 %4967, 3, !dbg !4847
@@ -5359,7 +5359,7 @@ define void @main() !dbg !3 {
   %4971 = icmp eq i18 %4946, %4970, !dbg !4850
   %4972 = select i1 %2740, i1 %4971, i1 %1498, !dbg !4851
   %4973 = or i1 %4972, %4966, !dbg !4852
-  call void @verifier.assume(i1 %4973), !dbg !4853
+  call void @__SEA_assume(i1 %4973), !dbg !4853
   %4974 = xor i1 %2749, true, !dbg !4854
   %4975 = zext i9 %4937 to i13, !dbg !4855
   %4976 = shl i13 %4975, 4, !dbg !4856
@@ -5368,7 +5368,7 @@ define void @main() !dbg !3 {
   %4979 = icmp eq i18 %4946, %4978, !dbg !4859
   %4980 = select i1 %2749, i1 %4979, i1 %1499, !dbg !4860
   %4981 = or i1 %4980, %4974, !dbg !4861
-  call void @verifier.assume(i1 %4981), !dbg !4862
+  call void @__SEA_assume(i1 %4981), !dbg !4862
   %4982 = xor i1 %2758, true, !dbg !4863
   %4983 = zext i9 %4937 to i14, !dbg !4864
   %4984 = shl i14 %4983, 5, !dbg !4865
@@ -5377,7 +5377,7 @@ define void @main() !dbg !3 {
   %4987 = icmp eq i18 %4946, %4986, !dbg !4868
   %4988 = select i1 %2758, i1 %4987, i1 %1500, !dbg !4869
   %4989 = or i1 %4988, %4982, !dbg !4870
-  call void @verifier.assume(i1 %4989), !dbg !4871
+  call void @__SEA_assume(i1 %4989), !dbg !4871
   %4990 = xor i1 %2767, true, !dbg !4872
   %4991 = zext i9 %4937 to i15, !dbg !4873
   %4992 = shl i15 %4991, 6, !dbg !4874
@@ -5386,7 +5386,7 @@ define void @main() !dbg !3 {
   %4995 = icmp eq i18 %4946, %4994, !dbg !4877
   %4996 = select i1 %2767, i1 %4995, i1 %1501, !dbg !4878
   %4997 = or i1 %4996, %4990, !dbg !4879
-  call void @verifier.assume(i1 %4997), !dbg !4880
+  call void @__SEA_assume(i1 %4997), !dbg !4880
   %4998 = xor i1 %2776, true, !dbg !4881
   %4999 = zext i9 %4937 to i16, !dbg !4882
   %5000 = shl i16 %4999, 7, !dbg !4883
@@ -5395,7 +5395,7 @@ define void @main() !dbg !3 {
   %5003 = icmp eq i18 %4946, %5002, !dbg !4886
   %5004 = select i1 %2776, i1 %5003, i1 %1502, !dbg !4887
   %5005 = or i1 %5004, %4998, !dbg !4888
-  call void @verifier.assume(i1 %5005), !dbg !4889
+  call void @__SEA_assume(i1 %5005), !dbg !4889
   %5006 = xor i1 %2785, true, !dbg !4890
   %5007 = zext i9 %4937 to i17, !dbg !4891
   %5008 = shl i17 %5007, 8, !dbg !4892
@@ -5404,14 +5404,14 @@ define void @main() !dbg !3 {
   %5011 = icmp eq i18 %4946, %5010, !dbg !4895
   %5012 = select i1 %2785, i1 %5011, i1 %1503, !dbg !4896
   %5013 = or i1 %5012, %5006, !dbg !4897
-  call void @verifier.assume(i1 %5013), !dbg !4898
+  call void @__SEA_assume(i1 %5013), !dbg !4898
   %5014 = xor i1 %1651, true, !dbg !4899
   %5015 = bitcast i18 %1495 to <18 x i1>, !dbg !4900
   %5016 = call i1 @llvm.vector.reduce.or.v18i1(<18 x i1> %5015), !dbg !4901
   %5017 = xor i1 %5016, true, !dbg !4902
   %5018 = select i1 %1651, i1 %5017, i1 %1504, !dbg !4903
   %5019 = or i1 %5018, %5014, !dbg !4904
-  call void @verifier.assume(i1 %5019), !dbg !4905
+  call void @__SEA_assume(i1 %5019), !dbg !4905
   %5020 = bitcast i9 %1085 to <9 x i1>, !dbg !4906
   %5021 = call i1 @llvm.vector.reduce.or.v9i1(<9 x i1> %5020), !dbg !4907
   %5022 = xor i1 %5021, true, !dbg !4908
@@ -5421,74 +5421,74 @@ define void @main() !dbg !3 {
   %5026 = select i1 %5023, i1 %5017, i1 %1505, !dbg !4912
   %5027 = select i1 %1651, i1 %1506, i1 %5026, !dbg !4913
   %5028 = or i1 %5027, %5025, !dbg !4914
-  call void @verifier.assume(i1 %5028), !dbg !4915
+  call void @__SEA_assume(i1 %5028), !dbg !4915
   %5029 = xor i1 %2809, true, !dbg !4916
   %5030 = xor i1 %4936, %2698, !dbg !4917
   %5031 = icmp eq i1 %4945, %5030, !dbg !4918
   %5032 = select i1 %1651, i1 %1507, i1 %5031, !dbg !4919
   %5033 = or i1 %5032, %5029, !dbg !4920
-  call void @verifier.assume(i1 %5033), !dbg !4921
+  call void @__SEA_assume(i1 %5033), !dbg !4921
   %5034 = xor i1 %2809, true, !dbg !4922
   %5035 = lshr i18 %4946, 9, !dbg !4923
   %5036 = trunc i18 %5035 to i9, !dbg !4924
   %5037 = icmp ule i9 %5036, %4937, !dbg !4925
   %5038 = select i1 %1651, i1 %1508, i1 %5037, !dbg !4926
   %5039 = or i1 %5038, %5034, !dbg !4927
-  call void @verifier.assume(i1 %5039), !dbg !4928
+  call void @__SEA_assume(i1 %5039), !dbg !4928
   %5040 = xor i1 %2809, true, !dbg !4929
   %5041 = icmp ule i9 %5036, %2699, !dbg !4930
   %5042 = select i1 %1651, i1 %1509, i1 %5041, !dbg !4931
   %5043 = or i1 %5042, %5040, !dbg !4932
-  call void @verifier.assume(i1 %5043), !dbg !4933
+  call void @__SEA_assume(i1 %5043), !dbg !4933
   %5044 = icmp eq i9 %4937, 2, !dbg !4934
   %5045 = xor i1 %5044, true, !dbg !4935
   %5046 = zext i10 %2829 to i18, !dbg !4936
   %5047 = icmp eq i18 %4946, %5046, !dbg !4937
   %5048 = select i1 %5044, i1 %5047, i1 %1510, !dbg !4938
   %5049 = or i1 %5048, %5045, !dbg !4939
-  call void @verifier.assume(i1 %5049), !dbg !4940
+  call void @__SEA_assume(i1 %5049), !dbg !4940
   %5050 = icmp eq i9 %4937, 4, !dbg !4941
   %5051 = xor i1 %5050, true, !dbg !4942
   %5052 = zext i11 %2838 to i18, !dbg !4943
   %5053 = icmp eq i18 %4946, %5052, !dbg !4944
   %5054 = select i1 %5050, i1 %5053, i1 %1511, !dbg !4945
   %5055 = or i1 %5054, %5051, !dbg !4946
-  call void @verifier.assume(i1 %5055), !dbg !4947
+  call void @__SEA_assume(i1 %5055), !dbg !4947
   %5056 = icmp eq i9 %4937, 8, !dbg !4948
   %5057 = xor i1 %5056, true, !dbg !4949
   %5058 = zext i12 %2847 to i18, !dbg !4950
   %5059 = icmp eq i18 %4946, %5058, !dbg !4951
   %5060 = select i1 %5056, i1 %5059, i1 %1512, !dbg !4952
   %5061 = or i1 %5060, %5057, !dbg !4953
-  call void @verifier.assume(i1 %5061), !dbg !4954
+  call void @__SEA_assume(i1 %5061), !dbg !4954
   %5062 = icmp eq i9 %4937, 16, !dbg !4955
   %5063 = xor i1 %5062, true, !dbg !4956
   %5064 = zext i13 %2856 to i18, !dbg !4957
   %5065 = icmp eq i18 %4946, %5064, !dbg !4958
   %5066 = select i1 %5062, i1 %5065, i1 %1513, !dbg !4959
   %5067 = or i1 %5066, %5063, !dbg !4960
-  call void @verifier.assume(i1 %5067), !dbg !4961
+  call void @__SEA_assume(i1 %5067), !dbg !4961
   %5068 = icmp eq i9 %4937, 32, !dbg !4962
   %5069 = xor i1 %5068, true, !dbg !4963
   %5070 = zext i14 %2865 to i18, !dbg !4964
   %5071 = icmp eq i18 %4946, %5070, !dbg !4965
   %5072 = select i1 %5068, i1 %5071, i1 %1514, !dbg !4966
   %5073 = or i1 %5072, %5069, !dbg !4967
-  call void @verifier.assume(i1 %5073), !dbg !4968
+  call void @__SEA_assume(i1 %5073), !dbg !4968
   %5074 = icmp eq i9 %4937, 64, !dbg !4969
   %5075 = xor i1 %5074, true, !dbg !4970
   %5076 = zext i15 %2874 to i18, !dbg !4971
   %5077 = icmp eq i18 %4946, %5076, !dbg !4972
   %5078 = select i1 %5074, i1 %5077, i1 %1515, !dbg !4973
   %5079 = or i1 %5078, %5075, !dbg !4974
-  call void @verifier.assume(i1 %5079), !dbg !4975
+  call void @__SEA_assume(i1 %5079), !dbg !4975
   %5080 = icmp eq i9 %4937, 128, !dbg !4976
   %5081 = xor i1 %5080, true, !dbg !4977
   %5082 = zext i16 %2883 to i18, !dbg !4978
   %5083 = icmp eq i18 %4946, %5082, !dbg !4979
   %5084 = select i1 %5080, i1 %5083, i1 %1516, !dbg !4980
   %5085 = or i1 %5084, %5081, !dbg !4981
-  call void @verifier.assume(i1 %5085), !dbg !4982
+  call void @__SEA_assume(i1 %5085), !dbg !4982
   %5086 = xor i1 %2700, true, !dbg !4983
   %5087 = lshr i9 %1084, 0, !dbg !4984
   %5088 = trunc i9 %5087 to i8, !dbg !4985
@@ -5510,7 +5510,7 @@ define void @main() !dbg !3 {
   %5104 = icmp eq i18 %5103, %5095, !dbg !5001
   %5105 = select i1 %2700, i1 %5104, i1 %1517, !dbg !5002
   %5106 = or i1 %5105, %5086, !dbg !5003
-  call void @verifier.assume(i1 %5106), !dbg !5004
+  call void @__SEA_assume(i1 %5106), !dbg !5004
   %5107 = xor i1 %2722, true, !dbg !5005
   %5108 = zext i9 %5094 to i10, !dbg !5006
   %5109 = shl i10 %5108, 1, !dbg !5007
@@ -5519,7 +5519,7 @@ define void @main() !dbg !3 {
   %5112 = icmp eq i18 %5103, %5111, !dbg !5010
   %5113 = select i1 %2722, i1 %5112, i1 %1519, !dbg !5011
   %5114 = or i1 %5113, %5107, !dbg !5012
-  call void @verifier.assume(i1 %5114), !dbg !5013
+  call void @__SEA_assume(i1 %5114), !dbg !5013
   %5115 = xor i1 %2731, true, !dbg !5014
   %5116 = zext i9 %5094 to i11, !dbg !5015
   %5117 = shl i11 %5116, 2, !dbg !5016
@@ -5528,7 +5528,7 @@ define void @main() !dbg !3 {
   %5120 = icmp eq i18 %5103, %5119, !dbg !5019
   %5121 = select i1 %2731, i1 %5120, i1 %1520, !dbg !5020
   %5122 = or i1 %5121, %5115, !dbg !5021
-  call void @verifier.assume(i1 %5122), !dbg !5022
+  call void @__SEA_assume(i1 %5122), !dbg !5022
   %5123 = xor i1 %2740, true, !dbg !5023
   %5124 = zext i9 %5094 to i12, !dbg !5024
   %5125 = shl i12 %5124, 3, !dbg !5025
@@ -5537,7 +5537,7 @@ define void @main() !dbg !3 {
   %5128 = icmp eq i18 %5103, %5127, !dbg !5028
   %5129 = select i1 %2740, i1 %5128, i1 %1521, !dbg !5029
   %5130 = or i1 %5129, %5123, !dbg !5030
-  call void @verifier.assume(i1 %5130), !dbg !5031
+  call void @__SEA_assume(i1 %5130), !dbg !5031
   %5131 = xor i1 %2749, true, !dbg !5032
   %5132 = zext i9 %5094 to i13, !dbg !5033
   %5133 = shl i13 %5132, 4, !dbg !5034
@@ -5546,7 +5546,7 @@ define void @main() !dbg !3 {
   %5136 = icmp eq i18 %5103, %5135, !dbg !5037
   %5137 = select i1 %2749, i1 %5136, i1 %1522, !dbg !5038
   %5138 = or i1 %5137, %5131, !dbg !5039
-  call void @verifier.assume(i1 %5138), !dbg !5040
+  call void @__SEA_assume(i1 %5138), !dbg !5040
   %5139 = xor i1 %2758, true, !dbg !5041
   %5140 = zext i9 %5094 to i14, !dbg !5042
   %5141 = shl i14 %5140, 5, !dbg !5043
@@ -5555,7 +5555,7 @@ define void @main() !dbg !3 {
   %5144 = icmp eq i18 %5103, %5143, !dbg !5046
   %5145 = select i1 %2758, i1 %5144, i1 %1523, !dbg !5047
   %5146 = or i1 %5145, %5139, !dbg !5048
-  call void @verifier.assume(i1 %5146), !dbg !5049
+  call void @__SEA_assume(i1 %5146), !dbg !5049
   %5147 = xor i1 %2767, true, !dbg !5050
   %5148 = zext i9 %5094 to i15, !dbg !5051
   %5149 = shl i15 %5148, 6, !dbg !5052
@@ -5564,7 +5564,7 @@ define void @main() !dbg !3 {
   %5152 = icmp eq i18 %5103, %5151, !dbg !5055
   %5153 = select i1 %2767, i1 %5152, i1 %1524, !dbg !5056
   %5154 = or i1 %5153, %5147, !dbg !5057
-  call void @verifier.assume(i1 %5154), !dbg !5058
+  call void @__SEA_assume(i1 %5154), !dbg !5058
   %5155 = xor i1 %2776, true, !dbg !5059
   %5156 = zext i9 %5094 to i16, !dbg !5060
   %5157 = shl i16 %5156, 7, !dbg !5061
@@ -5573,7 +5573,7 @@ define void @main() !dbg !3 {
   %5160 = icmp eq i18 %5103, %5159, !dbg !5064
   %5161 = select i1 %2776, i1 %5160, i1 %1525, !dbg !5065
   %5162 = or i1 %5161, %5155, !dbg !5066
-  call void @verifier.assume(i1 %5162), !dbg !5067
+  call void @__SEA_assume(i1 %5162), !dbg !5067
   %5163 = xor i1 %2785, true, !dbg !5068
   %5164 = zext i9 %5094 to i17, !dbg !5069
   %5165 = shl i17 %5164, 8, !dbg !5070
@@ -5582,14 +5582,14 @@ define void @main() !dbg !3 {
   %5168 = icmp eq i18 %5103, %5167, !dbg !5073
   %5169 = select i1 %2785, i1 %5168, i1 %1526, !dbg !5074
   %5170 = or i1 %5169, %5163, !dbg !5075
-  call void @verifier.assume(i1 %5170), !dbg !5076
+  call void @__SEA_assume(i1 %5170), !dbg !5076
   %5171 = xor i1 %1651, true, !dbg !5077
   %5172 = bitcast i18 %1518 to <18 x i1>, !dbg !5078
   %5173 = call i1 @llvm.vector.reduce.or.v18i1(<18 x i1> %5172), !dbg !5079
   %5174 = xor i1 %5173, true, !dbg !5080
   %5175 = select i1 %1651, i1 %5174, i1 %1527, !dbg !5081
   %5176 = or i1 %5175, %5171, !dbg !5082
-  call void @verifier.assume(i1 %5176), !dbg !5083
+  call void @__SEA_assume(i1 %5176), !dbg !5083
   %5177 = bitcast i9 %1084 to <9 x i1>, !dbg !5084
   %5178 = call i1 @llvm.vector.reduce.or.v9i1(<9 x i1> %5177), !dbg !5085
   %5179 = xor i1 %5178, true, !dbg !5086
@@ -5599,74 +5599,74 @@ define void @main() !dbg !3 {
   %5183 = select i1 %5180, i1 %5174, i1 %1528, !dbg !5090
   %5184 = select i1 %1651, i1 %1529, i1 %5183, !dbg !5091
   %5185 = or i1 %5184, %5182, !dbg !5092
-  call void @verifier.assume(i1 %5185), !dbg !5093
+  call void @__SEA_assume(i1 %5185), !dbg !5093
   %5186 = xor i1 %2809, true, !dbg !5094
   %5187 = xor i1 %5093, %2698, !dbg !5095
   %5188 = icmp eq i1 %5102, %5187, !dbg !5096
   %5189 = select i1 %1651, i1 %1530, i1 %5188, !dbg !5097
   %5190 = or i1 %5189, %5186, !dbg !5098
-  call void @verifier.assume(i1 %5190), !dbg !5099
+  call void @__SEA_assume(i1 %5190), !dbg !5099
   %5191 = xor i1 %2809, true, !dbg !5100
   %5192 = lshr i18 %5103, 9, !dbg !5101
   %5193 = trunc i18 %5192 to i9, !dbg !5102
   %5194 = icmp ule i9 %5193, %5094, !dbg !5103
   %5195 = select i1 %1651, i1 %1531, i1 %5194, !dbg !5104
   %5196 = or i1 %5195, %5191, !dbg !5105
-  call void @verifier.assume(i1 %5196), !dbg !5106
+  call void @__SEA_assume(i1 %5196), !dbg !5106
   %5197 = xor i1 %2809, true, !dbg !5107
   %5198 = icmp ule i9 %5193, %2699, !dbg !5108
   %5199 = select i1 %1651, i1 %1532, i1 %5198, !dbg !5109
   %5200 = or i1 %5199, %5197, !dbg !5110
-  call void @verifier.assume(i1 %5200), !dbg !5111
+  call void @__SEA_assume(i1 %5200), !dbg !5111
   %5201 = icmp eq i9 %5094, 2, !dbg !5112
   %5202 = xor i1 %5201, true, !dbg !5113
   %5203 = zext i10 %2829 to i18, !dbg !5114
   %5204 = icmp eq i18 %5103, %5203, !dbg !5115
   %5205 = select i1 %5201, i1 %5204, i1 %1533, !dbg !5116
   %5206 = or i1 %5205, %5202, !dbg !5117
-  call void @verifier.assume(i1 %5206), !dbg !5118
+  call void @__SEA_assume(i1 %5206), !dbg !5118
   %5207 = icmp eq i9 %5094, 4, !dbg !5119
   %5208 = xor i1 %5207, true, !dbg !5120
   %5209 = zext i11 %2838 to i18, !dbg !5121
   %5210 = icmp eq i18 %5103, %5209, !dbg !5122
   %5211 = select i1 %5207, i1 %5210, i1 %1534, !dbg !5123
   %5212 = or i1 %5211, %5208, !dbg !5124
-  call void @verifier.assume(i1 %5212), !dbg !5125
+  call void @__SEA_assume(i1 %5212), !dbg !5125
   %5213 = icmp eq i9 %5094, 8, !dbg !5126
   %5214 = xor i1 %5213, true, !dbg !5127
   %5215 = zext i12 %2847 to i18, !dbg !5128
   %5216 = icmp eq i18 %5103, %5215, !dbg !5129
   %5217 = select i1 %5213, i1 %5216, i1 %1535, !dbg !5130
   %5218 = or i1 %5217, %5214, !dbg !5131
-  call void @verifier.assume(i1 %5218), !dbg !5132
+  call void @__SEA_assume(i1 %5218), !dbg !5132
   %5219 = icmp eq i9 %5094, 16, !dbg !5133
   %5220 = xor i1 %5219, true, !dbg !5134
   %5221 = zext i13 %2856 to i18, !dbg !5135
   %5222 = icmp eq i18 %5103, %5221, !dbg !5136
   %5223 = select i1 %5219, i1 %5222, i1 %1536, !dbg !5137
   %5224 = or i1 %5223, %5220, !dbg !5138
-  call void @verifier.assume(i1 %5224), !dbg !5139
+  call void @__SEA_assume(i1 %5224), !dbg !5139
   %5225 = icmp eq i9 %5094, 32, !dbg !5140
   %5226 = xor i1 %5225, true, !dbg !5141
   %5227 = zext i14 %2865 to i18, !dbg !5142
   %5228 = icmp eq i18 %5103, %5227, !dbg !5143
   %5229 = select i1 %5225, i1 %5228, i1 %1537, !dbg !5144
   %5230 = or i1 %5229, %5226, !dbg !5145
-  call void @verifier.assume(i1 %5230), !dbg !5146
+  call void @__SEA_assume(i1 %5230), !dbg !5146
   %5231 = icmp eq i9 %5094, 64, !dbg !5147
   %5232 = xor i1 %5231, true, !dbg !5148
   %5233 = zext i15 %2874 to i18, !dbg !5149
   %5234 = icmp eq i18 %5103, %5233, !dbg !5150
   %5235 = select i1 %5231, i1 %5234, i1 %1538, !dbg !5151
   %5236 = or i1 %5235, %5232, !dbg !5152
-  call void @verifier.assume(i1 %5236), !dbg !5153
+  call void @__SEA_assume(i1 %5236), !dbg !5153
   %5237 = icmp eq i9 %5094, 128, !dbg !5154
   %5238 = xor i1 %5237, true, !dbg !5155
   %5239 = zext i16 %2883 to i18, !dbg !5156
   %5240 = icmp eq i18 %5103, %5239, !dbg !5157
   %5241 = select i1 %5237, i1 %5240, i1 %1539, !dbg !5158
   %5242 = or i1 %5241, %5238, !dbg !5159
-  call void @verifier.assume(i1 %5242), !dbg !5160
+  call void @__SEA_assume(i1 %5242), !dbg !5160
   %5243 = zext i5 %1604 to i18, !dbg !5161
   %5244 = lshr i9 %1076, 8, !dbg !5162
   %5245 = trunc i9 %5244 to i1, !dbg !5163
@@ -7868,7 +7868,7 @@ define void @main() !dbg !3 {
   br label %1074, !dbg !7357
 
 7439:                                             ; preds = %1074
-  call void @verifier.error(), !dbg !7358
+  call void @__VERIFIER_error(), !dbg !7358
   unreachable, !dbg !7359
 }
 

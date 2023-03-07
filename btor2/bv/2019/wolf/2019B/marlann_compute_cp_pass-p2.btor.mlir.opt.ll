@@ -5,9 +5,9 @@ declare i8* @malloc(i64)
 
 declare void @free(i8*)
 
-declare void @verifier.error()
+declare void @__VERIFIER_error()
 
-declare void @verifier.assume(i1)
+declare void @__SEA_assume(i1)
 
 declare i64 @nd_bv64()
 
@@ -490,7 +490,7 @@ define void @main() !dbg !3 {
   %466 = and i1 %286, %121, !dbg !441
   %467 = xor i1 %99, true, !dbg !442
   %468 = or i1 %183, %467, !dbg !443
-  call void @verifier.assume(i1 %468), !dbg !444
+  call void @__SEA_assume(i1 %468), !dbg !444
   %469 = lshr i8 %96, 0, !dbg !445
   %470 = trunc i8 %469 to i7, !dbg !446
   %471 = zext i7 %470 to i8, !dbg !447
@@ -524,7 +524,7 @@ define void @main() !dbg !3 {
   br label %93, !dbg !473
 
 497:                                              ; preds = %93
-  call void @verifier.error(), !dbg !474
+  call void @__VERIFIER_error(), !dbg !474
   unreachable, !dbg !475
 }
 

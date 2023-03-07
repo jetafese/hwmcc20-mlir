@@ -1,5 +1,5 @@
 module attributes {llvm.data_layout = ""} {
-  llvm.func @verifier.error()
+  llvm.func @__VERIFIER_error()
   llvm.func @nd_bv64() -> i64
   llvm.func @nd_bv32() -> i32
   llvm.func @nd_bv8() -> i8
@@ -5440,7 +5440,7 @@ module attributes {llvm.data_layout = ""} {
   ^bb2:  // pred: ^bb1
     llvm.br ^bb1(%104, %111, %2885, %2887, %2909, %2935, %2950, %2965, %2980, %2995, %3005, %3015, %3025, %3688, %4351, %4856, %5361, %5392, %5402, %5431, %5445 : i2, i2, i1, i1, i1, i24, i24, i24, i24, i24, i24, i24, i24, i48, i48, i48, i48, i24, i24, i1, i2)
   ^bb3:  // pred: ^bb1
-    llvm.call @verifier.error() : () -> ()
+    llvm.call @__VERIFIER_error() : () -> ()
     llvm.unreachable
   }
 }

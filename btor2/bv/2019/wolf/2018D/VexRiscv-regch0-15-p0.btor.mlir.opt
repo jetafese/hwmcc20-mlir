@@ -1,6 +1,6 @@
 module attributes {llvm.data_layout = ""} {
-  llvm.func @verifier.error()
-  llvm.func @verifier.assume(i1)
+  llvm.func @__VERIFIER_error()
+  llvm.func @__SEA_assume(i1)
   llvm.func @nd_bv32() -> i32
   llvm.func @nd_bv64() -> i64
   llvm.func @nd_bv8() -> i8
@@ -2751,15 +2751,15 @@ module attributes {llvm.data_layout = ""} {
     %2854 = llvm.xor %296, %2853  : i1
     %2855 = llvm.icmp "eq" %302, %181 : i1
     %2856 = llvm.or %2855, %2854  : i1
-    llvm.call @verifier.assume(%2856) : (i1) -> ()
+    llvm.call @__SEA_assume(%2856) : (i1) -> ()
     %2857 = llvm.mlir.constant(true) : i1
     %2858 = llvm.xor %185, %2857  : i1
     %2859 = llvm.or %184, %2858  : i1
-    llvm.call @verifier.assume(%2859) : (i1) -> ()
+    llvm.call @__SEA_assume(%2859) : (i1) -> ()
     %2860 = llvm.mlir.constant(true) : i1
     %2861 = llvm.xor %185, %2860  : i1
     %2862 = llvm.or %186, %2861  : i1
-    llvm.call @verifier.assume(%2862) : (i1) -> ()
+    llvm.call @__SEA_assume(%2862) : (i1) -> ()
     %2863 = llvm.mlir.constant(true) : i1
     %2864 = llvm.xor %182, %2863  : i1
     %2865 = llvm.and %183, %2864  : i1
@@ -2779,7 +2779,7 @@ module attributes {llvm.data_layout = ""} {
     %2877 = llvm.call @nd_bv32() : () -> i32
     llvm.br ^bb1(%294, %309, %318, %320, %322, %323, %329, %188, %189, %607, %610, %611, %612, %219, %617, %231, %907, %282, %909, %214, %285, %284, %913, %997, %1387, %1414, %1415, %1416, %2869, %1679, %1680, %1681, %1685, %1686, %1733, %2025, %2026, %2871, %2872, %2057, %2060, %2874, %2061, %2070, %2876, %2073, %2078, %2080, %599, %2081, %2082, %2124, %2134, %2877, %2168, %2174, %2178, %2182, %2186, %2189, %2192, %2197, %2200, %2203, %2206, %2209, %2213, %2216, %2219, %2222, %2227, %2230, %2233, %2236, %2240, %2243, %2246, %2249, %2252, %2255, %2259, %2262, %2265, %2268, %2271, %2274, %2079, %2275, %2321, %2367, %2398, %2438, %2439, %2440, %2451, %2468, %2469, %2521, %2522, %2523, %2524, %2525, %2550, %2551, %2552, %2553, %2826, %2827, %2828, %2849, %2850, %2851, %2852 : i1, i1, i1, i1, i1, i1, i8, i64, i5, i32, i1, i1, i32, i32, i64, i1, i32, i2, i1, i1, i1, i32, i1, i32, i32, i1, i32, i32, i1, i1, i1, i1, i1, i1, i1, i32, i32, i1, i32, i32, i1, i1, i1, i1, i1, i1, i1, i32, i5, i1, i1, i1, i1, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i2, i2, i32, i32, i2, i1, i1, i2, i1, i32, i1, i2, i32, i32, i1, i2, i32, i1, i1, i1, i1, i1, i1)
   ^bb3:  // pred: ^bb1
-    llvm.call @verifier.error() : () -> ()
+    llvm.call @__VERIFIER_error() : () -> ()
     llvm.unreachable
   }
 }

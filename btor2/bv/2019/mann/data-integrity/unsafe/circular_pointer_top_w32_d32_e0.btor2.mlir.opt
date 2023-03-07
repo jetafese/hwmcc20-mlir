@@ -1,6 +1,6 @@
 module attributes {llvm.data_layout = ""} {
-  llvm.func @verifier.error()
-  llvm.func @verifier.assume(i1)
+  llvm.func @__VERIFIER_error()
+  llvm.func @__SEA_assume(i1)
   llvm.func @nd_bv8() -> i8
   llvm.func @nd_bv32() -> i32
   llvm.func @main() {
@@ -321,7 +321,7 @@ module attributes {llvm.data_layout = ""} {
     %353 = llvm.xor %291, %352  : i1
     %354 = llvm.icmp "eq" %100, %86 : i1
     %355 = llvm.or %354, %353  : i1
-    llvm.call @verifier.assume(%355) : (i1) -> ()
+    llvm.call @__SEA_assume(%355) : (i1) -> ()
     %356 = llvm.mlir.constant(true) : i1
     %357 = llvm.xor %291, %356  : i1
     %358 = llvm.mlir.constant(true) : i1
@@ -333,7 +333,7 @@ module attributes {llvm.data_layout = ""} {
     %364 = llvm.xor %362, %363  : i1
     %365 = llvm.or %364, %359  : i1
     %366 = llvm.or %365, %357  : i1
-    llvm.call @verifier.assume(%366) : (i1) -> ()
+    llvm.call @__SEA_assume(%366) : (i1) -> ()
     %367 = llvm.mlir.constant(true) : i1
     %368 = llvm.xor %291, %367  : i1
     %369 = llvm.mlir.constant(true) : i1
@@ -346,7 +346,7 @@ module attributes {llvm.data_layout = ""} {
     %376 = llvm.xor %374, %375  : i1
     %377 = llvm.or %376, %370  : i1
     %378 = llvm.or %377, %368  : i1
-    llvm.call @verifier.assume(%378) : (i1) -> ()
+    llvm.call @__SEA_assume(%378) : (i1) -> ()
     %379 = llvm.call @nd_bv32() : () -> i32
     %380 = llvm.mlir.constant(0 : i7) : i7
     %381 = llvm.lshr %48, %380  : i7
@@ -468,7 +468,7 @@ module attributes {llvm.data_layout = ""} {
   ^bb2:  // pred: ^bb1
     llvm.br ^bb1(%101, %110, %116, %122, %128, %134, %140, %146, %152, %158, %164, %170, %176, %182, %188, %194, %200, %206, %212, %218, %224, %230, %236, %242, %248, %254, %260, %266, %272, %278, %284, %290, %296, %303, %308, %317, %339, %344, %347, %316, %351 : i32, i7, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i7, i1, i1, i7, i32, i1, i7)
   ^bb3:  // pred: ^bb1
-    llvm.call @verifier.error() : () -> ()
+    llvm.call @__VERIFIER_error() : () -> ()
     llvm.unreachable
   }
 }

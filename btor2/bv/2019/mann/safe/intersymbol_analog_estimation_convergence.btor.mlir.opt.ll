@@ -5,9 +5,9 @@ declare i8* @malloc(i64)
 
 declare void @free(i8*)
 
-declare void @verifier.error()
+declare void @__VERIFIER_error()
 
-declare void @verifier.assume(i1)
+declare void @__SEA_assume(i1)
 
 declare i16 @nd_bv16()
 
@@ -353,13 +353,13 @@ define void @main() !dbg !3 {
   %335 = xor i1 %14, true, !dbg !334
   %336 = xor i1 %335, true, !dbg !335
   %337 = or i1 %14, %336, !dbg !336
-  call void @verifier.assume(i1 %337), !dbg !337
+  call void @__SEA_assume(i1 %337), !dbg !337
   %338 = icmp ule i16 %18, 1, !dbg !338
   %339 = xor i1 %28, %338, !dbg !339
   %340 = xor i1 %339, true, !dbg !340
   %341 = xor i1 %339, true, !dbg !341
   %342 = or i1 %341, %340, !dbg !342
-  call void @verifier.assume(i1 %342), !dbg !343
+  call void @__SEA_assume(i1 %342), !dbg !343
   %343 = xor i1 %31, %239, !dbg !344
   %344 = xor i1 %343, true, !dbg !345
   %345 = icmp ult i16 5, %18, !dbg !346
@@ -374,7 +374,7 @@ define void @main() !dbg !3 {
   br label %13, !dbg !353
 
 352:                                              ; preds = %13
-  call void @verifier.error(), !dbg !354
+  call void @__VERIFIER_error(), !dbg !354
   unreachable, !dbg !355
 }
 

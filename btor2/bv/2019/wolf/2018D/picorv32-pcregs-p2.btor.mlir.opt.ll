@@ -5,7 +5,7 @@ declare i8* @malloc(i64)
 
 declare void @free(i8*)
 
-declare void @verifier.error()
+declare void @__VERIFIER_error()
 
 declare i16 @nd_bv16()
 
@@ -3511,7 +3511,7 @@ define void @main() !dbg !3 {
   br label %260, !dbg !3352
 
 3489:                                             ; preds = %260
-  call void @verifier.error(), !dbg !3353
+  call void @__VERIFIER_error(), !dbg !3353
   unreachable, !dbg !3354
 }
 
