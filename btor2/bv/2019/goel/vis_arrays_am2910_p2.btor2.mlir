@@ -8,7 +8,7 @@ module {
     %7 = btor.constant true
     %8 = btor.constant 0 : i3
     %9 = btor.constant 0 : i4
-    %10 = btor.nd_bv : i4
+    %10 = btor.input 4 : i4
     %11 = btor.cmp eq, %10, %9 : i4
     %12 = btor.ite %11, %8, %5 : i3
     %13 = btor.constant 1 : i3
@@ -21,9 +21,9 @@ module {
     %20 = btor.cmp eq, %10, %19 : i4
     %21 = btor.constant 1 : i4
     %22 = btor.cmp eq, %10, %21 : i4
-    %23 = btor.nd_bv : i1
+    %23 = btor.input 0 : i1
     %24 = btor.not %23 : i1
-    %25 = btor.nd_bv : i1
+    %25 = btor.input 1 : i1
     %26 = btor.and %25, %24 : i1
     %27 = btor.not %26 : i1
     %28 = btor.and %27, %22 : i1
@@ -58,7 +58,7 @@ module {
     %57 = btor.ite %56, %33, %32 : i3
     %58 = btor.constant 1 : i12
     %59 = btor.sub %6, %58 : i12
-    %60 = btor.nd_bv : i1
+    %60 = btor.input 6 : i1
     %61 = btor.cmp eq, %10, %35 : i4
     %62 = btor.constant -7 : i4
     %63 = btor.cmp eq, %10, %62 : i4
@@ -68,7 +68,7 @@ module {
     %67 = btor.and %40, %66 : i1
     %68 = btor.and %67, %60 : i1
     %69 = btor.ite %68, %59, %6 : i12
-    %70 = btor.nd_bv : i12
+    %70 = btor.input 3 : i12
     %71 = btor.not %60 : i1
     %72 = btor.cmp eq, %10, %19 : i4
     %73 = btor.not %26 : i1

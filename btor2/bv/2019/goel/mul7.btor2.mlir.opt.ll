@@ -7,11 +7,17 @@ declare void @free(i8*)
 
 declare void @__VERIFIER_error()
 
-declare i16 @nd_bv16()
+declare i16 @nd_bv16_in5()
 
-declare i8 @nd_bv8()
+declare i8 @nd_bv8_in2()
 
-declare i128 @nd_bv128()
+declare i8 @nd_bv8_in1()
+
+declare i128 @nd_bv128_in3()
+
+declare void @btor2mlir_print_input_num(i64, i64, i64)
+
+declare i128 @nd_bv128_in4()
 
 define void @main() !dbg !3 {
   br label %1, !dbg !7
@@ -36,9 +42,9 @@ define void @main() !dbg !3 {
   %18 = zext i128 %10 to i256, !dbg !15
   %19 = mul i256 %18, %17, !dbg !16
   %20 = add i256 %19, 1, !dbg !17
-  %21 = call i128 @nd_bv128(), !dbg !18
+  %21 = call i128 @nd_bv128_in4(), !dbg !18
   %22 = icmp eq i128 %21, 12245771, !dbg !19
-  %23 = call i128 @nd_bv128(), !dbg !20
+  %23 = call i128 @nd_bv128_in3(), !dbg !20
   %24 = icmp eq i128 %23, -559038737, !dbg !21
   %25 = zext i10 %7 to i32, !dbg !22
   %26 = icmp ugt i32 %25, 1000, !dbg !23
@@ -48,15 +54,15 @@ define void @main() !dbg !3 {
   %30 = or i1 %8, %9, !dbg !27
   %31 = select i1 %30, i256 %29, i256 %4, !dbg !28
   %32 = select i1 %15, i256 0, i256 %31, !dbg !29
-  %33 = call i8 @nd_bv8(), !dbg !30
+  %33 = call i8 @nd_bv8_in1(), !dbg !30
   %34 = trunc i8 %33 to i1, !dbg !31
   %35 = select i1 %34, i128 %23, i128 %5, !dbg !32
   %36 = select i1 %15, i128 0, i128 %35, !dbg !33
-  %37 = call i8 @nd_bv8(), !dbg !34
+  %37 = call i8 @nd_bv8_in2(), !dbg !34
   %38 = trunc i8 %37 to i1, !dbg !35
   %39 = select i1 %38, i128 %21, i128 %6, !dbg !36
   %40 = select i1 %15, i128 0, i128 %39, !dbg !37
-  %41 = call i16 @nd_bv16(), !dbg !38
+  %41 = call i16 @nd_bv16_in5(), !dbg !38
   %42 = trunc i16 %41 to i10, !dbg !39
   %43 = select i1 %15, i10 %42, i10 %7, !dbg !40
   %44 = select i1 %15, i1 true, i1 %34, !dbg !41
@@ -87,57 +93,57 @@ define void @main() !dbg !3 {
 !0 = distinct !DICompileUnit(language: DW_LANG_C, file: !1, producer: "mlir", isOptimized: true, runtimeVersion: 0, emissionKind: FullDebug)
 !1 = !DIFile(filename: "LLVMDialectModule", directory: "/")
 !2 = !{i32 2, !"Debug Info Version", i32 3}
-!3 = distinct !DISubprogram(name: "main", linkageName: "main", scope: null, file: !4, line: 6, type: !5, scopeLine: 6, spFlags: DISPFlagDefinition | DISPFlagOptimized, unit: !0, retainedNodes: !6)
+!3 = distinct !DISubprogram(name: "main", linkageName: "main", scope: null, file: !4, line: 9, type: !5, scopeLine: 9, spFlags: DISPFlagDefinition | DISPFlagOptimized, unit: !0, retainedNodes: !6)
 !4 = !DIFile(filename: "hwmc20-mlir/btor2/bv/2019/goel/mul7.btor2.mlir.opt", directory: "/home/jetafese")
 !5 = !DISubroutineType(types: !6)
 !6 = !{}
-!7 = !DILocation(line: 12, column: 5, scope: !8)
+!7 = !DILocation(line: 15, column: 5, scope: !8)
 !8 = !DILexicalBlockFile(scope: !3, file: !4, discriminator: 0)
-!9 = !DILocation(line: 15, column: 11, scope: !8)
-!10 = !DILocation(line: 16, column: 11, scope: !8)
-!11 = !DILocation(line: 17, column: 11, scope: !8)
-!12 = !DILocation(line: 20, column: 11, scope: !8)
-!13 = !DILocation(line: 21, column: 11, scope: !8)
-!14 = !DILocation(line: 22, column: 11, scope: !8)
-!15 = !DILocation(line: 23, column: 11, scope: !8)
-!16 = !DILocation(line: 24, column: 11, scope: !8)
-!17 = !DILocation(line: 27, column: 11, scope: !8)
-!18 = !DILocation(line: 29, column: 11, scope: !8)
-!19 = !DILocation(line: 30, column: 11, scope: !8)
-!20 = !DILocation(line: 32, column: 11, scope: !8)
-!21 = !DILocation(line: 33, column: 11, scope: !8)
-!22 = !DILocation(line: 35, column: 11, scope: !8)
-!23 = !DILocation(line: 36, column: 11, scope: !8)
-!24 = !DILocation(line: 37, column: 11, scope: !8)
-!25 = !DILocation(line: 38, column: 11, scope: !8)
-!26 = !DILocation(line: 39, column: 11, scope: !8)
-!27 = !DILocation(line: 40, column: 11, scope: !8)
-!28 = !DILocation(line: 41, column: 11, scope: !8)
-!29 = !DILocation(line: 42, column: 11, scope: !8)
-!30 = !DILocation(line: 43, column: 11, scope: !8)
-!31 = !DILocation(line: 44, column: 11, scope: !8)
-!32 = !DILocation(line: 45, column: 11, scope: !8)
-!33 = !DILocation(line: 47, column: 11, scope: !8)
-!34 = !DILocation(line: 48, column: 11, scope: !8)
-!35 = !DILocation(line: 49, column: 11, scope: !8)
-!36 = !DILocation(line: 50, column: 11, scope: !8)
-!37 = !DILocation(line: 51, column: 11, scope: !8)
-!38 = !DILocation(line: 52, column: 11, scope: !8)
-!39 = !DILocation(line: 53, column: 11, scope: !8)
-!40 = !DILocation(line: 54, column: 11, scope: !8)
-!41 = !DILocation(line: 55, column: 11, scope: !8)
-!42 = !DILocation(line: 56, column: 11, scope: !8)
-!43 = !DILocation(line: 57, column: 11, scope: !8)
-!44 = !DILocation(line: 58, column: 11, scope: !8)
-!45 = !DILocation(line: 59, column: 11, scope: !8)
-!46 = !DILocation(line: 60, column: 11, scope: !8)
-!47 = !DILocation(line: 61, column: 11, scope: !8)
-!48 = !DILocation(line: 63, column: 11, scope: !8)
-!49 = !DILocation(line: 64, column: 11, scope: !8)
-!50 = !DILocation(line: 66, column: 11, scope: !8)
-!51 = !DILocation(line: 67, column: 11, scope: !8)
-!52 = !DILocation(line: 69, column: 11, scope: !8)
-!53 = !DILocation(line: 70, column: 5, scope: !8)
-!54 = !DILocation(line: 72, column: 5, scope: !8)
-!55 = !DILocation(line: 74, column: 5, scope: !8)
-!56 = !DILocation(line: 75, column: 5, scope: !8)
+!9 = !DILocation(line: 18, column: 11, scope: !8)
+!10 = !DILocation(line: 19, column: 11, scope: !8)
+!11 = !DILocation(line: 20, column: 11, scope: !8)
+!12 = !DILocation(line: 23, column: 11, scope: !8)
+!13 = !DILocation(line: 24, column: 11, scope: !8)
+!14 = !DILocation(line: 25, column: 11, scope: !8)
+!15 = !DILocation(line: 26, column: 11, scope: !8)
+!16 = !DILocation(line: 27, column: 11, scope: !8)
+!17 = !DILocation(line: 30, column: 11, scope: !8)
+!18 = !DILocation(line: 32, column: 11, scope: !8)
+!19 = !DILocation(line: 34, column: 11, scope: !8)
+!20 = !DILocation(line: 36, column: 11, scope: !8)
+!21 = !DILocation(line: 38, column: 11, scope: !8)
+!22 = !DILocation(line: 40, column: 11, scope: !8)
+!23 = !DILocation(line: 41, column: 11, scope: !8)
+!24 = !DILocation(line: 42, column: 11, scope: !8)
+!25 = !DILocation(line: 43, column: 11, scope: !8)
+!26 = !DILocation(line: 44, column: 11, scope: !8)
+!27 = !DILocation(line: 45, column: 11, scope: !8)
+!28 = !DILocation(line: 46, column: 11, scope: !8)
+!29 = !DILocation(line: 47, column: 11, scope: !8)
+!30 = !DILocation(line: 48, column: 11, scope: !8)
+!31 = !DILocation(line: 49, column: 11, scope: !8)
+!32 = !DILocation(line: 50, column: 11, scope: !8)
+!33 = !DILocation(line: 52, column: 11, scope: !8)
+!34 = !DILocation(line: 53, column: 11, scope: !8)
+!35 = !DILocation(line: 54, column: 11, scope: !8)
+!36 = !DILocation(line: 55, column: 11, scope: !8)
+!37 = !DILocation(line: 56, column: 11, scope: !8)
+!38 = !DILocation(line: 57, column: 11, scope: !8)
+!39 = !DILocation(line: 58, column: 11, scope: !8)
+!40 = !DILocation(line: 59, column: 11, scope: !8)
+!41 = !DILocation(line: 60, column: 11, scope: !8)
+!42 = !DILocation(line: 61, column: 11, scope: !8)
+!43 = !DILocation(line: 62, column: 11, scope: !8)
+!44 = !DILocation(line: 63, column: 11, scope: !8)
+!45 = !DILocation(line: 64, column: 11, scope: !8)
+!46 = !DILocation(line: 65, column: 11, scope: !8)
+!47 = !DILocation(line: 66, column: 11, scope: !8)
+!48 = !DILocation(line: 68, column: 11, scope: !8)
+!49 = !DILocation(line: 69, column: 11, scope: !8)
+!50 = !DILocation(line: 71, column: 11, scope: !8)
+!51 = !DILocation(line: 72, column: 11, scope: !8)
+!52 = !DILocation(line: 74, column: 11, scope: !8)
+!53 = !DILocation(line: 75, column: 5, scope: !8)
+!54 = !DILocation(line: 77, column: 5, scope: !8)
+!55 = !DILocation(line: 79, column: 5, scope: !8)
+!56 = !DILocation(line: 80, column: 5, scope: !8)

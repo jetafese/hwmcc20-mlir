@@ -1,9 +1,9 @@
 module {
   func @main() {
     %0 = btor.constant false
-    %1 = btor.nd_bv : i256
-    %2 = btor.nd_bv : i512
-    %3 = btor.nd_bv : i1
+    %1 = btor.nd_state 0 : i256
+    %2 = btor.nd_state 1 : i512
+    %3 = btor.nd_state 4 : i1
     br ^bb1(%1, %2, %0, %0, %3 : i256, i512, i1, i1, i1)
   ^bb1(%4: i256, %5: i512, %6: i1, %7: i1, %8: i1):  // 2 preds: ^bb0, ^bb1
     %9 = btor.constant 31 : i512
@@ -14,20 +14,20 @@ module {
     %14 = btor.constant 285 : i512
     %15 = btor.slice %5, %13, %14 : i512, i1
     %16 = btor.constant false
-    %17 = btor.nd_bv : i1
+    %17 = btor.input 13 : i1
     %18 = btor.ite %17, %16, %15 : i1
     %19 = btor.ite %18, %12, %11 : i32
     %20 = btor.constant 255 : i512
     %21 = btor.constant 32 : i512
     %22 = btor.slice %5, %20, %21 : i512, i224
     %23 = btor.concat %22, %19 : i224, i32, i256
-    %24 = btor.nd_bv : i1
+    %24 = btor.input 6 : i1
     %25 = btor.not %24 : i1
-    %26 = btor.nd_bv : i1
+    %26 = btor.input 3 : i1
     %27 = btor.not %26 : i1
     %28 = btor.and %27, %25 : i1
     %29 = btor.constant 1 : i2
-    %30 = btor.nd_bv : i2
+    %30 = btor.input 5 : i2
     %31 = btor.cmp eq, %30, %29 : i2
     %32 = btor.ite %31, %28, %16 : i1
     %33 = btor.constant 284 : i512
@@ -46,7 +46,7 @@ module {
     %46 = btor.or %45, %39 : i1
     %47 = btor.not %46 : i1
     %48 = btor.and %28, %47 : i1
-    %49 = btor.nd_bv : i1
+    %49 = btor.input 8 : i1
     %50 = btor.ite %49, %16, %48 : i1
     %51 = btor.constant -1 : i2
     %52 = btor.cmp eq, %30, %51 : i2
@@ -57,12 +57,12 @@ module {
     %57 = btor.ite %56, %53, %32 : i1
     %58 = btor.ite %57, %23, %4 : i256
     %59 = btor.constant 0 : i256
-    %60 = btor.nd_bv : i1
+    %60 = btor.input 0 : i1
     %61 = btor.ite %60, %59, %58 : i256
-    %62 = btor.nd_bv : i1
+    %62 = btor.input 1 : i1
     %63 = btor.ite %62, %61, %4 : i256
     %64 = btor.ite %16, %59, %63 : i256
-    %65 = btor.nd_bv : i1
+    %65 = btor.input 10 : i1
     %66 = btor.not %65 : i1
     %67 = btor.concat %66, %66 : i1, i1, i2
     %68 = btor.concat %66, %67 : i1, i2, i3
@@ -342,7 +342,7 @@ module {
     %342 = btor.concat %66, %341 : i1, i276, i277
     %343 = btor.concat %66, %342 : i1, i277, i278
     %344 = btor.concat %66, %343 : i1, i278, i279
-    %345 = btor.nd_bv : i279
+    %345 = btor.input 9 : i279
     %346 = btor.and %345, %344 : i279
     %347 = btor.constant 264 : i279
     %348 = btor.constant 0 : i279
@@ -360,11 +360,11 @@ module {
     %360 = btor.slice %346, %358, %359 : i279, i8
     %361 = btor.concat %360, %357 : i8, i280, i288
     %362 = btor.constant 0 : i288
-    %363 = btor.nd_bv : i1
+    %363 = btor.input 4 : i1
     %364 = btor.ite %363, %362, %361 : i288
     %365 = btor.constant 0 : i224
     %366 = btor.concat %365, %364 : i224, i288, i512
-    %367 = btor.nd_bv : i1
+    %367 = btor.input 7 : i1
     %368 = btor.and %367, %8 : i1
     %369 = btor.constant true
     %370 = btor.ite %46, %369, %368 : i1
@@ -416,11 +416,11 @@ module {
     %416 = btor.ite %16, %16, %415 : i1
     %417 = btor.cmp eq, %30, %29 : i2
     %418 = btor.ite %417, %16, %16 : i1
-    %419 = btor.nd_bv : i1
+    %419 = btor.input 11 : i1
     %420 = btor.and %25, %367 : i1
     %421 = btor.and %420, %419 : i1
     %422 = btor.ite %48, %16, %421 : i1
-    %423 = btor.nd_bv : i1
+    %423 = btor.input 12 : i1
     %424 = btor.not %423 : i1
     %425 = btor.not %419 : i1
     %426 = btor.and %425, %424 : i1
@@ -438,7 +438,7 @@ module {
     %438 = btor.ite %16, %16, %437 : i1
     %439 = btor.and %6, %404 : i1
     %440 = btor.not %439 : i1
-    %441 = btor.nd_bv : i1
+    %441 = btor.input 2 : i1
     %442 = btor.or %441, %440 : i1
     %443 = btor.and %57, %442 : i1
     %444 = btor.ite %443, %23, %4 : i256

@@ -1,42 +1,164 @@
 module attributes {llvm.data_layout = ""} {
   llvm.func @__VERIFIER_error()
-  llvm.func @nd_bv64() -> i64
-  llvm.func @nd_bv32() -> i32
-  llvm.func @nd_bv8() -> i8
+  llvm.func @nd_bv8_in106() -> i8
+  llvm.func @nd_bv32_in105() -> i32
+  llvm.func @nd_bv32_in104() -> i32
+  llvm.func @nd_bv32_in103() -> i32
+  llvm.func @nd_bv32_in102() -> i32
+  llvm.func @nd_bv32_in101() -> i32
+  llvm.func @nd_bv32_in100() -> i32
+  llvm.func @nd_bv32_in99() -> i32
+  llvm.func @nd_bv32_in98() -> i32
+  llvm.func @nd_bv32_in97() -> i32
+  llvm.func @nd_bv32_in96() -> i32
+  llvm.func @nd_bv32_in95() -> i32
+  llvm.func @nd_bv32_in94() -> i32
+  llvm.func @nd_bv32_in93() -> i32
+  llvm.func @nd_bv32_in92() -> i32
+  llvm.func @nd_bv32_in91() -> i32
+  llvm.func @nd_bv32_in90() -> i32
+  llvm.func @nd_bv32_in89() -> i32
+  llvm.func @nd_bv32_in88() -> i32
+  llvm.func @nd_bv32_in87() -> i32
+  llvm.func @nd_bv32_in86() -> i32
+  llvm.func @nd_bv32_in85() -> i32
+  llvm.func @nd_bv32_in1() -> i32
+  llvm.func @nd_bv64_in84() -> i64
+  llvm.func @nd_bv32_in83() -> i32
+  llvm.func @nd_bv32_in2() -> i32
+  llvm.func @nd_bv64_in82() -> i64
+  llvm.func @nd_bv32_in81() -> i32
+  llvm.func @nd_bv32_in3() -> i32
+  llvm.func @nd_bv64_in80() -> i64
+  llvm.func @nd_bv32_in79() -> i32
+  llvm.func @nd_bv64_in78() -> i64
+  llvm.func @nd_bv64_in77() -> i64
+  llvm.func @nd_bv32_in14() -> i32
+  llvm.func @nd_bv64_in76() -> i64
+  llvm.func @nd_bv64_in75() -> i64
+  llvm.func @nd_bv64_in74() -> i64
+  llvm.func @nd_bv32_in11() -> i32
+  llvm.func @nd_bv64_in73() -> i64
+  llvm.func @nd_bv64_in72() -> i64
+  llvm.func @nd_bv64_in71() -> i64
+  llvm.func @nd_bv32_in8() -> i32
+  llvm.func @nd_bv64_in70() -> i64
+  llvm.func @nd_bv64_in69() -> i64
+  llvm.func @nd_bv64_in68() -> i64
+  llvm.func @nd_bv64_in67() -> i64
+  llvm.func @nd_bv64_in66() -> i64
+  llvm.func @nd_bv32_in65() -> i32
+  llvm.func @nd_bv32_in64() -> i32
+  llvm.func @nd_bv32_in63() -> i32
+  llvm.func @nd_bv32_in62() -> i32
+  llvm.func @nd_bv32_in61() -> i32
+  llvm.func @nd_bv32_in60() -> i32
+  llvm.func @nd_bv32_in59() -> i32
+  llvm.func @nd_bv32_in58() -> i32
+  llvm.func @nd_bv32_in57() -> i32
+  llvm.func @nd_bv32_in56() -> i32
+  llvm.func @nd_bv32_in55() -> i32
+  llvm.func @nd_bv32_in54() -> i32
+  llvm.func @nd_bv32_in53() -> i32
+  llvm.func @nd_bv32_in52() -> i32
+  llvm.func @nd_bv32_in51() -> i32
+  llvm.func @nd_bv32_in50() -> i32
+  llvm.func @nd_bv32_in49() -> i32
+  llvm.func @nd_bv32_in48() -> i32
+  llvm.func @nd_bv32_in47() -> i32
+  llvm.func @nd_bv32_in46() -> i32
+  llvm.func @nd_bv32_in45() -> i32
+  llvm.func @nd_bv32_in44() -> i32
+  llvm.func @nd_bv32_in43() -> i32
+  llvm.func @nd_bv32_in42() -> i32
+  llvm.func @nd_bv32_in41() -> i32
+  llvm.func @nd_bv32_in40() -> i32
+  llvm.func @nd_bv32_in39() -> i32
+  llvm.func @nd_bv32_in38() -> i32
+  llvm.func @nd_bv32_in37() -> i32
+  llvm.func @nd_bv32_in36() -> i32
+  llvm.func @nd_bv32_in35() -> i32
+  llvm.func @nd_bv32_in34() -> i32
+  llvm.func @nd_bv32_in33() -> i32
+  llvm.func @nd_bv32_in32() -> i32
+  llvm.func @nd_bv32_in31() -> i32
+  llvm.func @nd_bv32_in30() -> i32
+  llvm.func @nd_bv32_in29() -> i32
+  llvm.func @nd_bv32_in28() -> i32
+  llvm.func @nd_bv32_in27() -> i32
+  llvm.func @nd_bv32_in26() -> i32
+  llvm.func @nd_bv32_in25() -> i32
+  llvm.func @nd_bv32_in24() -> i32
+  llvm.func @nd_bv32_in23() -> i32
+  llvm.func @nd_bv32_in22() -> i32
+  llvm.func @nd_bv32_in7() -> i32
+  llvm.func @nd_bv32_in10() -> i32
+  llvm.func @nd_bv32_in13() -> i32
+  llvm.func @nd_bv32_in6() -> i32
+  llvm.func @nd_bv32_in9() -> i32
+  llvm.func @nd_bv32_in12() -> i32
+  llvm.func @nd_bv8_in5() -> i8
+  llvm.func @nd_bv32_in21() -> i32
+  llvm.func @nd_bv32_in20() -> i32
+  llvm.func @nd_bv32_in19() -> i32
+  llvm.func @nd_bv8_in18() -> i8
+  llvm.func @nd_bv32_in17() -> i32
+  llvm.func @nd_bv32_in16() -> i32
+  llvm.func @nd_bv8_in4() -> i8
+  llvm.func @btor2mlir_print_input_num(i64, i64, i64)
+  llvm.func @nd_bv32_in15() -> i32
+  llvm.func @nd_bv8_st44() -> i8
+  llvm.func @nd_bv8_st43() -> i8
+  llvm.func @nd_bv8_st42() -> i8
+  llvm.func @nd_bv8_st41() -> i8
+  llvm.func @nd_bv8_st40() -> i8
+  llvm.func @nd_bv8_st39() -> i8
+  llvm.func @nd_bv8_st38() -> i8
+  llvm.func @nd_bv8_st37() -> i8
+  llvm.func @nd_bv8_st36() -> i8
+  llvm.func @nd_bv8_st35() -> i8
+  llvm.func @nd_bv8_st34() -> i8
+  llvm.func @nd_bv8_st33() -> i8
+  llvm.func @nd_bv8_st32() -> i8
+  llvm.func @nd_bv8_st31() -> i8
+  llvm.func @nd_bv8_st30() -> i8
+  llvm.func @nd_bv8_st29() -> i8
+  llvm.func @btor2mlir_print_state_num(i64, i64, i64)
+  llvm.func @nd_bv8_st10() -> i8
   llvm.func @main() {
     %0 = llvm.mlir.constant(0 : i24) : i24
     %1 = llvm.mlir.constant(0 : i2) : i2
     %2 = llvm.mlir.constant(false) : i1
     %3 = llvm.mlir.constant(true) : i1
     %4 = llvm.mlir.constant(0 : i48) : i48
-    %5 = llvm.call @nd_bv8() : () -> i8
+    %5 = llvm.call @nd_bv8_st10() : () -> i8
     %6 = llvm.trunc %5 : i8 to i2
-    %7 = llvm.call @nd_bv8() : () -> i8
-    %8 = llvm.call @nd_bv8() : () -> i8
-    %9 = llvm.call @nd_bv8() : () -> i8
-    %10 = llvm.call @nd_bv8() : () -> i8
-    %11 = llvm.call @nd_bv8() : () -> i8
-    %12 = llvm.call @nd_bv8() : () -> i8
-    %13 = llvm.call @nd_bv8() : () -> i8
-    %14 = llvm.call @nd_bv8() : () -> i8
-    %15 = llvm.call @nd_bv8() : () -> i8
-    %16 = llvm.call @nd_bv8() : () -> i8
-    %17 = llvm.call @nd_bv8() : () -> i8
-    %18 = llvm.call @nd_bv8() : () -> i8
-    %19 = llvm.call @nd_bv8() : () -> i8
-    %20 = llvm.call @nd_bv8() : () -> i8
-    %21 = llvm.call @nd_bv8() : () -> i8
-    %22 = llvm.call @nd_bv8() : () -> i8
+    %7 = llvm.call @nd_bv8_st29() : () -> i8
+    %8 = llvm.call @nd_bv8_st30() : () -> i8
+    %9 = llvm.call @nd_bv8_st31() : () -> i8
+    %10 = llvm.call @nd_bv8_st32() : () -> i8
+    %11 = llvm.call @nd_bv8_st33() : () -> i8
+    %12 = llvm.call @nd_bv8_st34() : () -> i8
+    %13 = llvm.call @nd_bv8_st35() : () -> i8
+    %14 = llvm.call @nd_bv8_st36() : () -> i8
+    %15 = llvm.call @nd_bv8_st37() : () -> i8
+    %16 = llvm.call @nd_bv8_st38() : () -> i8
+    %17 = llvm.call @nd_bv8_st39() : () -> i8
+    %18 = llvm.call @nd_bv8_st40() : () -> i8
+    %19 = llvm.call @nd_bv8_st41() : () -> i8
+    %20 = llvm.call @nd_bv8_st42() : () -> i8
+    %21 = llvm.call @nd_bv8_st43() : () -> i8
+    %22 = llvm.call @nd_bv8_st44() : () -> i8
     llvm.br ^bb1(%1, %6, %3, %2, %2, %0, %0, %0, %0, %0, %0, %0, %0, %4, %4, %4, %4, %0, %0, %2, %1 : i2, i2, i1, i1, i1, i24, i24, i24, i24, i24, i24, i24, i24, i48, i48, i48, i48, i24, i24, i1, i2)
   ^bb1(%23: i2, %24: i2, %25: i1, %26: i1, %27: i1, %28: i24, %29: i24, %30: i24, %31: i24, %32: i24, %33: i24, %34: i24, %35: i24, %36: i48, %37: i48, %38: i48, %39: i48, %40: i24, %41: i24, %42: i1, %43: i2):  // 2 preds: ^bb0, ^bb2
-    %44 = llvm.call @nd_bv32() : () -> i32
+    %44 = llvm.call @nd_bv32_in15() : () -> i32
     %45 = llvm.mlir.constant(0 : i24) : i24
-    %46 = llvm.call @nd_bv8() : () -> i8
+    %46 = llvm.call @nd_bv8_in4() : () -> i8
     %47 = llvm.trunc %46 : i8 to i1
     %48 = llvm.mlir.constant(true) : i1
-    %49 = llvm.call @nd_bv32() : () -> i32
-    %50 = llvm.call @nd_bv32() : () -> i32
-    %51 = llvm.call @nd_bv8() : () -> i8
+    %49 = llvm.call @nd_bv32_in16() : () -> i32
+    %50 = llvm.call @nd_bv32_in17() : () -> i32
+    %51 = llvm.call @nd_bv8_in18() : () -> i8
     %52 = llvm.trunc %51 : i8 to i2
     %53 = llvm.mlir.constant(0 : i2) : i2
     %54 = llvm.mlir.constant(true) : i1
@@ -90,11 +212,11 @@ module attributes {llvm.data_layout = ""} {
     %102 = llvm.select %48, %101, %58 : i1, i2
     %103 = llvm.select %55, %102, %52 : i1, i2
     %104 = llvm.select %57, %53, %103 : i1, i2
-    %105 = llvm.call @nd_bv32() : () -> i32
-    %106 = llvm.call @nd_bv32() : () -> i32
-    %107 = llvm.call @nd_bv32() : () -> i32
+    %105 = llvm.call @nd_bv32_in19() : () -> i32
+    %106 = llvm.call @nd_bv32_in20() : () -> i32
+    %107 = llvm.call @nd_bv32_in21() : () -> i32
     %108 = llvm.mlir.constant(-2 : i2) : i2
-    %109 = llvm.call @nd_bv8() : () -> i8
+    %109 = llvm.call @nd_bv8_in5() : () -> i8
     %110 = llvm.trunc %109 : i8 to i2
     %111 = llvm.select %47, %110, %24 : i1, i2
     %112 = llvm.mlir.constant(0 : i2) : i2
@@ -265,7 +387,7 @@ module attributes {llvm.data_layout = ""} {
     %277 = llvm.mlir.constant(0 : i112) : i112
     %278 = llvm.lshr %276, %277  : i112
     %279 = llvm.trunc %278 : i112 to i48
-    %280 = llvm.call @nd_bv32() : () -> i32
+    %280 = llvm.call @nd_bv32_in12() : () -> i32
     %281 = llvm.trunc %280 : i32 to i24
     %282 = llvm.mlir.constant(0 : i24) : i24
     %283 = llvm.lshr %281, %282  : i24
@@ -273,7 +395,7 @@ module attributes {llvm.data_layout = ""} {
     %285 = llvm.mlir.constant(0 : i24) : i24
     %286 = llvm.lshr %281, %285  : i24
     %287 = llvm.trunc %286 : i24 to i23
-    %288 = llvm.call @nd_bv32() : () -> i32
+    %288 = llvm.call @nd_bv32_in9() : () -> i32
     %289 = llvm.trunc %288 : i32 to i24
     %290 = llvm.mlir.constant(23 : i24) : i24
     %291 = llvm.lshr %289, %290  : i24
@@ -300,7 +422,7 @@ module attributes {llvm.data_layout = ""} {
     %312 = llvm.mlir.constant(0 : i24) : i24
     %313 = llvm.lshr %289, %312  : i24
     %314 = llvm.trunc %313 : i24 to i23
-    %315 = llvm.call @nd_bv32() : () -> i32
+    %315 = llvm.call @nd_bv32_in6() : () -> i32
     %316 = llvm.trunc %315 : i32 to i24
     %317 = llvm.mlir.constant(23 : i24) : i24
     %318 = llvm.lshr %316, %317  : i24
@@ -726,7 +848,7 @@ module attributes {llvm.data_layout = ""} {
     %738 = llvm.select %370, %649, %59 : i1, i1
     %739 = llvm.select %377, %660, %738 : i1, i1
     %740 = llvm.select %365, %667, %739 : i1, i1
-    %741 = llvm.call @nd_bv32() : () -> i32
+    %741 = llvm.call @nd_bv32_in13() : () -> i32
     %742 = llvm.trunc %741 : i32 to i24
     %743 = llvm.mlir.constant(0 : i24) : i24
     %744 = llvm.lshr %742, %743  : i24
@@ -734,7 +856,7 @@ module attributes {llvm.data_layout = ""} {
     %746 = llvm.mlir.constant(0 : i24) : i24
     %747 = llvm.lshr %742, %746  : i24
     %748 = llvm.trunc %747 : i24 to i23
-    %749 = llvm.call @nd_bv32() : () -> i32
+    %749 = llvm.call @nd_bv32_in10() : () -> i32
     %750 = llvm.trunc %749 : i32 to i24
     %751 = llvm.mlir.constant(23 : i24) : i24
     %752 = llvm.lshr %750, %751  : i24
@@ -761,7 +883,7 @@ module attributes {llvm.data_layout = ""} {
     %773 = llvm.mlir.constant(0 : i24) : i24
     %774 = llvm.lshr %750, %773  : i24
     %775 = llvm.trunc %774 : i24 to i23
-    %776 = llvm.call @nd_bv32() : () -> i32
+    %776 = llvm.call @nd_bv32_in7() : () -> i32
     %777 = llvm.trunc %776 : i32 to i24
     %778 = llvm.mlir.constant(23 : i24) : i24
     %779 = llvm.lshr %777, %778  : i24
@@ -2854,45 +2976,45 @@ module attributes {llvm.data_layout = ""} {
     %2866 = llvm.or %2864, %2865  : i24
     %2867 = llvm.icmp "ult" %2866, %2861 : i24
     %2868 = llvm.select %2867, %1562, %1560 : i1, i24
-    %2869 = llvm.call @nd_bv32() : () -> i32
-    %2870 = llvm.call @nd_bv32() : () -> i32
-    %2871 = llvm.call @nd_bv32() : () -> i32
-    %2872 = llvm.call @nd_bv32() : () -> i32
+    %2869 = llvm.call @nd_bv32_in22() : () -> i32
+    %2870 = llvm.call @nd_bv32_in23() : () -> i32
+    %2871 = llvm.call @nd_bv32_in24() : () -> i32
+    %2872 = llvm.call @nd_bv32_in25() : () -> i32
     %2873 = llvm.mlir.constant(0 : i48) : i48
-    %2874 = llvm.call @nd_bv32() : () -> i32
-    %2875 = llvm.call @nd_bv32() : () -> i32
-    %2876 = llvm.call @nd_bv32() : () -> i32
-    %2877 = llvm.call @nd_bv32() : () -> i32
-    %2878 = llvm.call @nd_bv32() : () -> i32
-    %2879 = llvm.call @nd_bv32() : () -> i32
-    %2880 = llvm.call @nd_bv32() : () -> i32
-    %2881 = llvm.call @nd_bv32() : () -> i32
-    %2882 = llvm.call @nd_bv32() : () -> i32
-    %2883 = llvm.call @nd_bv32() : () -> i32
-    %2884 = llvm.call @nd_bv32() : () -> i32
-    %2885 = llvm.call @nd_bv32() : () -> i32
-    %2886 = llvm.call @nd_bv32() : () -> i32
-    %2887 = llvm.call @nd_bv32() : () -> i32
-    %2888 = llvm.call @nd_bv32() : () -> i32
-    %2889 = llvm.call @nd_bv32() : () -> i32
+    %2874 = llvm.call @nd_bv32_in26() : () -> i32
+    %2875 = llvm.call @nd_bv32_in27() : () -> i32
+    %2876 = llvm.call @nd_bv32_in28() : () -> i32
+    %2877 = llvm.call @nd_bv32_in29() : () -> i32
+    %2878 = llvm.call @nd_bv32_in30() : () -> i32
+    %2879 = llvm.call @nd_bv32_in31() : () -> i32
+    %2880 = llvm.call @nd_bv32_in32() : () -> i32
+    %2881 = llvm.call @nd_bv32_in33() : () -> i32
+    %2882 = llvm.call @nd_bv32_in34() : () -> i32
+    %2883 = llvm.call @nd_bv32_in35() : () -> i32
+    %2884 = llvm.call @nd_bv32_in36() : () -> i32
+    %2885 = llvm.call @nd_bv32_in37() : () -> i32
+    %2886 = llvm.call @nd_bv32_in38() : () -> i32
+    %2887 = llvm.call @nd_bv32_in39() : () -> i32
+    %2888 = llvm.call @nd_bv32_in40() : () -> i32
+    %2889 = llvm.call @nd_bv32_in41() : () -> i32
     %2890 = llvm.select %47, %59, %94 : i1, i1
-    %2891 = llvm.call @nd_bv32() : () -> i32
-    %2892 = llvm.call @nd_bv32() : () -> i32
-    %2893 = llvm.call @nd_bv32() : () -> i32
-    %2894 = llvm.call @nd_bv32() : () -> i32
-    %2895 = llvm.call @nd_bv32() : () -> i32
-    %2896 = llvm.call @nd_bv32() : () -> i32
-    %2897 = llvm.call @nd_bv32() : () -> i32
-    %2898 = llvm.call @nd_bv32() : () -> i32
-    %2899 = llvm.call @nd_bv32() : () -> i32
-    %2900 = llvm.call @nd_bv32() : () -> i32
-    %2901 = llvm.call @nd_bv32() : () -> i32
-    %2902 = llvm.call @nd_bv32() : () -> i32
-    %2903 = llvm.call @nd_bv32() : () -> i32
-    %2904 = llvm.call @nd_bv32() : () -> i32
-    %2905 = llvm.call @nd_bv32() : () -> i32
-    %2906 = llvm.call @nd_bv32() : () -> i32
-    %2907 = llvm.call @nd_bv32() : () -> i32
+    %2891 = llvm.call @nd_bv32_in42() : () -> i32
+    %2892 = llvm.call @nd_bv32_in43() : () -> i32
+    %2893 = llvm.call @nd_bv32_in44() : () -> i32
+    %2894 = llvm.call @nd_bv32_in45() : () -> i32
+    %2895 = llvm.call @nd_bv32_in46() : () -> i32
+    %2896 = llvm.call @nd_bv32_in47() : () -> i32
+    %2897 = llvm.call @nd_bv32_in48() : () -> i32
+    %2898 = llvm.call @nd_bv32_in49() : () -> i32
+    %2899 = llvm.call @nd_bv32_in50() : () -> i32
+    %2900 = llvm.call @nd_bv32_in51() : () -> i32
+    %2901 = llvm.call @nd_bv32_in52() : () -> i32
+    %2902 = llvm.call @nd_bv32_in53() : () -> i32
+    %2903 = llvm.call @nd_bv32_in54() : () -> i32
+    %2904 = llvm.call @nd_bv32_in55() : () -> i32
+    %2905 = llvm.call @nd_bv32_in56() : () -> i32
+    %2906 = llvm.call @nd_bv32_in57() : () -> i32
+    %2907 = llvm.call @nd_bv32_in58() : () -> i32
     %2908 = llvm.trunc %2907 : i32 to i24
     %2909 = llvm.mlir.constant(24 : i96) : i96
     %2910 = llvm.lshr %206, %2909  : i96
@@ -2902,7 +3024,7 @@ module attributes {llvm.data_layout = ""} {
     %2914 = llvm.select %48, %2913, %187 : i1, i24
     %2915 = llvm.select %184, %2914, %2908 : i1, i24
     %2916 = llvm.select %186, %45, %2915 : i1, i24
-    %2917 = llvm.call @nd_bv32() : () -> i32
+    %2917 = llvm.call @nd_bv32_in59() : () -> i32
     %2918 = llvm.trunc %2917 : i32 to i24
     %2919 = llvm.mlir.constant(true) : i1
     %2920 = llvm.xor %47, %2919  : i1
@@ -2917,7 +3039,7 @@ module attributes {llvm.data_layout = ""} {
     %2929 = llvm.select %114, %2928, %136 : i1, i24
     %2930 = llvm.select %133, %2929, %2918 : i1, i24
     %2931 = llvm.select %135, %45, %2930 : i1, i24
-    %2932 = llvm.call @nd_bv32() : () -> i32
+    %2932 = llvm.call @nd_bv32_in60() : () -> i32
     %2933 = llvm.trunc %2932 : i32 to i24
     %2934 = llvm.mlir.constant(true) : i1
     %2935 = llvm.xor %47, %2934  : i1
@@ -2932,7 +3054,7 @@ module attributes {llvm.data_layout = ""} {
     %2944 = llvm.select %114, %2943, %141 : i1, i24
     %2945 = llvm.select %138, %2944, %2933 : i1, i24
     %2946 = llvm.select %140, %45, %2945 : i1, i24
-    %2947 = llvm.call @nd_bv32() : () -> i32
+    %2947 = llvm.call @nd_bv32_in61() : () -> i32
     %2948 = llvm.trunc %2947 : i32 to i24
     %2949 = llvm.mlir.constant(true) : i1
     %2950 = llvm.xor %47, %2949  : i1
@@ -2947,7 +3069,7 @@ module attributes {llvm.data_layout = ""} {
     %2959 = llvm.select %114, %2958, %151 : i1, i24
     %2960 = llvm.select %148, %2959, %2948 : i1, i24
     %2961 = llvm.select %150, %45, %2960 : i1, i24
-    %2962 = llvm.call @nd_bv32() : () -> i32
+    %2962 = llvm.call @nd_bv32_in62() : () -> i32
     %2963 = llvm.trunc %2962 : i32 to i24
     %2964 = llvm.mlir.constant(true) : i1
     %2965 = llvm.xor %47, %2964  : i1
@@ -2962,7 +3084,7 @@ module attributes {llvm.data_layout = ""} {
     %2974 = llvm.select %114, %2973, %161 : i1, i24
     %2975 = llvm.select %158, %2974, %2963 : i1, i24
     %2976 = llvm.select %160, %45, %2975 : i1, i24
-    %2977 = llvm.call @nd_bv32() : () -> i32
+    %2977 = llvm.call @nd_bv32_in63() : () -> i32
     %2978 = llvm.trunc %2977 : i32 to i24
     %2979 = llvm.mlir.constant(0 : i96) : i96
     %2980 = llvm.lshr %206, %2979  : i96
@@ -2972,7 +3094,7 @@ module attributes {llvm.data_layout = ""} {
     %2984 = llvm.select %48, %2983, %177 : i1, i24
     %2985 = llvm.select %174, %2984, %2978 : i1, i24
     %2986 = llvm.select %176, %45, %2985 : i1, i24
-    %2987 = llvm.call @nd_bv32() : () -> i32
+    %2987 = llvm.call @nd_bv32_in64() : () -> i32
     %2988 = llvm.trunc %2987 : i32 to i24
     %2989 = llvm.mlir.constant(48 : i96) : i96
     %2990 = llvm.lshr %206, %2989  : i96
@@ -2982,7 +3104,7 @@ module attributes {llvm.data_layout = ""} {
     %2994 = llvm.select %48, %2993, %82 : i1, i24
     %2995 = llvm.select %79, %2994, %2988 : i1, i24
     %2996 = llvm.select %81, %45, %2995 : i1, i24
-    %2997 = llvm.call @nd_bv32() : () -> i32
+    %2997 = llvm.call @nd_bv32_in65() : () -> i32
     %2998 = llvm.trunc %2997 : i32 to i24
     %2999 = llvm.mlir.constant(72 : i96) : i96
     %3000 = llvm.lshr %206, %2999  : i96
@@ -2992,7 +3114,7 @@ module attributes {llvm.data_layout = ""} {
     %3004 = llvm.select %48, %3003, %71 : i1, i24
     %3005 = llvm.select %68, %3004, %2998 : i1, i24
     %3006 = llvm.select %70, %45, %3005 : i1, i24
-    %3007 = llvm.call @nd_bv64() : () -> i64
+    %3007 = llvm.call @nd_bv64_in66() : () -> i64
     %3008 = llvm.trunc %3007 : i64 to i48
     %3009 = llvm.mlir.constant(0 : i48) : i48
     %3010 = llvm.lshr %2938, %3009  : i48
@@ -3655,7 +3777,7 @@ module attributes {llvm.data_layout = ""} {
     %3667 = llvm.or %3665, %3666  : i48
     %3668 = llvm.select %2935, %3667, %3008 : i1, i48
     %3669 = llvm.select %2937, %2873, %3668 : i1, i48
-    %3670 = llvm.call @nd_bv64() : () -> i64
+    %3670 = llvm.call @nd_bv64_in67() : () -> i64
     %3671 = llvm.trunc %3670 : i64 to i48
     %3672 = llvm.mlir.constant(0 : i48) : i48
     %3673 = llvm.lshr %2923, %3672  : i48
@@ -4318,7 +4440,7 @@ module attributes {llvm.data_layout = ""} {
     %4330 = llvm.or %4328, %4329  : i48
     %4331 = llvm.select %2920, %4330, %3671 : i1, i48
     %4332 = llvm.select %2922, %2873, %4331 : i1, i48
-    %4333 = llvm.call @nd_bv64() : () -> i64
+    %4333 = llvm.call @nd_bv64_in68() : () -> i64
     %4334 = llvm.trunc %4333 : i64 to i48
     %4335 = llvm.mlir.constant(0 : i48) : i48
     %4336 = llvm.lshr %2968, %4335  : i48
@@ -4823,7 +4945,7 @@ module attributes {llvm.data_layout = ""} {
     %4835 = llvm.or %4833, %4834  : i48
     %4836 = llvm.select %2965, %4835, %4334 : i1, i48
     %4837 = llvm.select %2967, %2873, %4836 : i1, i48
-    %4838 = llvm.call @nd_bv64() : () -> i64
+    %4838 = llvm.call @nd_bv64_in69() : () -> i64
     %4839 = llvm.trunc %4838 : i64 to i48
     %4840 = llvm.mlir.constant(0 : i48) : i48
     %4841 = llvm.lshr %2953, %4840  : i48
@@ -5328,28 +5450,28 @@ module attributes {llvm.data_layout = ""} {
     %5340 = llvm.or %5338, %5339  : i48
     %5341 = llvm.select %2950, %5340, %4839 : i1, i48
     %5342 = llvm.select %2952, %2873, %5341 : i1, i48
-    %5343 = llvm.call @nd_bv64() : () -> i64
-    %5344 = llvm.call @nd_bv32() : () -> i32
-    %5345 = llvm.call @nd_bv64() : () -> i64
-    %5346 = llvm.call @nd_bv64() : () -> i64
-    %5347 = llvm.call @nd_bv64() : () -> i64
-    %5348 = llvm.call @nd_bv32() : () -> i32
-    %5349 = llvm.call @nd_bv64() : () -> i64
-    %5350 = llvm.call @nd_bv64() : () -> i64
-    %5351 = llvm.call @nd_bv64() : () -> i64
-    %5352 = llvm.call @nd_bv32() : () -> i32
-    %5353 = llvm.call @nd_bv64() : () -> i64
-    %5354 = llvm.call @nd_bv64() : () -> i64
-    %5355 = llvm.call @nd_bv32() : () -> i32
-    %5356 = llvm.call @nd_bv64() : () -> i64
-    %5357 = llvm.call @nd_bv32() : () -> i32
-    %5358 = llvm.call @nd_bv32() : () -> i32
-    %5359 = llvm.call @nd_bv64() : () -> i64
-    %5360 = llvm.call @nd_bv32() : () -> i32
-    %5361 = llvm.call @nd_bv32() : () -> i32
-    %5362 = llvm.call @nd_bv64() : () -> i64
-    %5363 = llvm.call @nd_bv32() : () -> i32
-    %5364 = llvm.call @nd_bv32() : () -> i32
+    %5343 = llvm.call @nd_bv64_in70() : () -> i64
+    %5344 = llvm.call @nd_bv32_in8() : () -> i32
+    %5345 = llvm.call @nd_bv64_in71() : () -> i64
+    %5346 = llvm.call @nd_bv64_in72() : () -> i64
+    %5347 = llvm.call @nd_bv64_in73() : () -> i64
+    %5348 = llvm.call @nd_bv32_in11() : () -> i32
+    %5349 = llvm.call @nd_bv64_in74() : () -> i64
+    %5350 = llvm.call @nd_bv64_in75() : () -> i64
+    %5351 = llvm.call @nd_bv64_in76() : () -> i64
+    %5352 = llvm.call @nd_bv32_in14() : () -> i32
+    %5353 = llvm.call @nd_bv64_in77() : () -> i64
+    %5354 = llvm.call @nd_bv64_in78() : () -> i64
+    %5355 = llvm.call @nd_bv32_in79() : () -> i32
+    %5356 = llvm.call @nd_bv64_in80() : () -> i64
+    %5357 = llvm.call @nd_bv32_in3() : () -> i32
+    %5358 = llvm.call @nd_bv32_in81() : () -> i32
+    %5359 = llvm.call @nd_bv64_in82() : () -> i64
+    %5360 = llvm.call @nd_bv32_in2() : () -> i32
+    %5361 = llvm.call @nd_bv32_in83() : () -> i32
+    %5362 = llvm.call @nd_bv64_in84() : () -> i64
+    %5363 = llvm.call @nd_bv32_in1() : () -> i32
+    %5364 = llvm.call @nd_bv32_in85() : () -> i32
     %5365 = llvm.trunc %5364 : i32 to i24
     %5366 = llvm.mlir.constant(24 : i48) : i48
     %5367 = llvm.lshr %279, %5366  : i48
@@ -5359,7 +5481,7 @@ module attributes {llvm.data_layout = ""} {
     %5371 = llvm.select %48, %5370, %76 : i1, i24
     %5372 = llvm.select %73, %5371, %5365 : i1, i24
     %5373 = llvm.select %75, %45, %5372 : i1, i24
-    %5374 = llvm.call @nd_bv32() : () -> i32
+    %5374 = llvm.call @nd_bv32_in86() : () -> i32
     %5375 = llvm.trunc %5374 : i32 to i24
     %5376 = llvm.mlir.constant(0 : i48) : i48
     %5377 = llvm.lshr %279, %5376  : i48
@@ -5369,25 +5491,25 @@ module attributes {llvm.data_layout = ""} {
     %5381 = llvm.select %48, %5380, %87 : i1, i24
     %5382 = llvm.select %84, %5381, %5375 : i1, i24
     %5383 = llvm.select %86, %45, %5382 : i1, i24
-    %5384 = llvm.call @nd_bv32() : () -> i32
-    %5385 = llvm.call @nd_bv32() : () -> i32
-    %5386 = llvm.call @nd_bv32() : () -> i32
-    %5387 = llvm.call @nd_bv32() : () -> i32
-    %5388 = llvm.call @nd_bv32() : () -> i32
-    %5389 = llvm.call @nd_bv32() : () -> i32
-    %5390 = llvm.call @nd_bv32() : () -> i32
-    %5391 = llvm.call @nd_bv32() : () -> i32
-    %5392 = llvm.call @nd_bv32() : () -> i32
-    %5393 = llvm.call @nd_bv32() : () -> i32
-    %5394 = llvm.call @nd_bv32() : () -> i32
-    %5395 = llvm.call @nd_bv32() : () -> i32
-    %5396 = llvm.call @nd_bv32() : () -> i32
-    %5397 = llvm.call @nd_bv32() : () -> i32
-    %5398 = llvm.call @nd_bv32() : () -> i32
-    %5399 = llvm.call @nd_bv32() : () -> i32
-    %5400 = llvm.call @nd_bv32() : () -> i32
-    %5401 = llvm.call @nd_bv32() : () -> i32
-    %5402 = llvm.call @nd_bv32() : () -> i32
+    %5384 = llvm.call @nd_bv32_in87() : () -> i32
+    %5385 = llvm.call @nd_bv32_in88() : () -> i32
+    %5386 = llvm.call @nd_bv32_in89() : () -> i32
+    %5387 = llvm.call @nd_bv32_in90() : () -> i32
+    %5388 = llvm.call @nd_bv32_in91() : () -> i32
+    %5389 = llvm.call @nd_bv32_in92() : () -> i32
+    %5390 = llvm.call @nd_bv32_in93() : () -> i32
+    %5391 = llvm.call @nd_bv32_in94() : () -> i32
+    %5392 = llvm.call @nd_bv32_in95() : () -> i32
+    %5393 = llvm.call @nd_bv32_in96() : () -> i32
+    %5394 = llvm.call @nd_bv32_in97() : () -> i32
+    %5395 = llvm.call @nd_bv32_in98() : () -> i32
+    %5396 = llvm.call @nd_bv32_in99() : () -> i32
+    %5397 = llvm.call @nd_bv32_in100() : () -> i32
+    %5398 = llvm.call @nd_bv32_in101() : () -> i32
+    %5399 = llvm.call @nd_bv32_in102() : () -> i32
+    %5400 = llvm.call @nd_bv32_in103() : () -> i32
+    %5401 = llvm.call @nd_bv32_in104() : () -> i32
+    %5402 = llvm.call @nd_bv32_in105() : () -> i32
     %5403 = llvm.mlir.constant(true) : i1
     %5404 = llvm.xor %47, %5403  : i1
     %5405 = llvm.mlir.constant(true) : i1
@@ -5398,7 +5520,7 @@ module attributes {llvm.data_layout = ""} {
     %5410 = llvm.trunc %5409 : i2 to i1
     %5411 = llvm.select %114, %5410, %64 : i1, i1
     %5412 = llvm.select %63, %59, %5411 : i1, i1
-    %5413 = llvm.call @nd_bv8() : () -> i8
+    %5413 = llvm.call @nd_bv8_in106() : () -> i8
     %5414 = llvm.trunc %5413 : i8 to i2
     %5415 = llvm.mlir.constant(1 : i2) : i2
     %5416 = llvm.lshr %5407, %5415  : i2

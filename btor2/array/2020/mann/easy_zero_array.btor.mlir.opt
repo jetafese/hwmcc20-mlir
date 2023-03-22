@@ -1,0 +1,36 @@
+module attributes {llvm.data_layout = ""} {
+  llvm.func @__VERIFIER_error()
+  llvm.func @nd_array1024xbv32() -> vector<1024xi32>
+  llvm.func @btor2mlir_print_state_num(i64, i64, i64)
+  llvm.func @nd_bv16_st0() -> i16
+  llvm.func @main() {
+    %0 = llvm.mlir.constant(0 : i10) : i10
+    %1 = llvm.call @nd_bv16_st0() : () -> i16
+    %2 = llvm.trunc %1 : i16 to i10
+    %3 = llvm.call @nd_array1024xbv32() : () -> vector<1024xi32>
+    llvm.br ^bb1(%2, %3, %0 : i10, vector<1024xi32>, i10)
+  ^bb1(%4: i10, %5: vector<1024xi32>, %6: i10):  // 2 preds: ^bb0, ^bb2
+    %7 = llvm.mlir.constant(1 : i10) : i10
+    %8 = llvm.add %6, %7  : i10
+    %9 = llvm.mlir.constant(32 : i10) : i10
+    %10 = llvm.icmp "ule" %6, %9 : i10
+    %11 = llvm.select %10, %8, %6 : i1, i10
+    %12 = llvm.mlir.constant(0 : i32) : i32
+    %13 = llvm.insertelement %12, %5[%6 : i10] : vector<1024xi32>
+    %14 = llvm.extractelement %5[%4 : i10] : vector<1024xi32>
+    %15 = llvm.icmp "ne" %14, %12 : i32
+    %16 = llvm.icmp "ult" %4, %6 : i10
+    %17 = llvm.and %16, %15  : i1
+    %18 = llvm.mlir.constant(true) : i1
+    %19 = llvm.xor %17, %18  : i1
+    llvm.cond_br %19, ^bb2, ^bb3
+  ^bb2:  // pred: ^bb1
+    %20 = llvm.call @nd_bv16_st0() : () -> i16
+    %21 = llvm.trunc %20 : i16 to i10
+    llvm.br ^bb1(%21, %13, %11 : i10, vector<1024xi32>, i10)
+  ^bb3:  // pred: ^bb1
+    llvm.call @__VERIFIER_error() : () -> ()
+    llvm.unreachable
+  }
+}
+

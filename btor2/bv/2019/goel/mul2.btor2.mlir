@@ -9,7 +9,7 @@ module {
     %12 = btor.uext %5 : i64 to i128
     %13 = btor.mul %12, %11 : i128
     %14 = btor.constant 0 : i128
-    %15 = btor.nd_bv : i1
+    %15 = btor.input 5 : i1
     %16 = btor.ite %15, %14, %13 : i128
     %17 = btor.uext %10 : i64 to i128
     %18 = btor.uext %9 : i64 to i128
@@ -17,13 +17,13 @@ module {
     %20 = btor.or %7, %8 : i1
     %21 = btor.ite %20, %19, %4 : i128
     %22 = btor.ite %15, %14, %21 : i128
-    %23 = btor.nd_bv : i64
-    %24 = btor.nd_bv : i1
+    %23 = btor.input 3 : i64
+    %24 = btor.input 1 : i1
     %25 = btor.ite %24, %23, %5 : i64
     %26 = btor.constant 0 : i64
     %27 = btor.ite %15, %26, %25 : i64
-    %28 = btor.nd_bv : i64
-    %29 = btor.nd_bv : i1
+    %28 = btor.input 4 : i64
+    %29 = btor.input 2 : i1
     %30 = btor.ite %29, %28, %6 : i64
     %31 = btor.ite %15, %26, %30 : i64
     %32 = btor.constant true

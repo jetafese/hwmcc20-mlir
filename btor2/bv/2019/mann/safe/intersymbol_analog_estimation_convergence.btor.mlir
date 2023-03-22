@@ -1,13 +1,13 @@
 module {
   func @main() {
     %0 = btor.constant 0 : i16
-    %1 = btor.nd_bv : i1
-    %2 = btor.nd_bv : i1
-    %3 = btor.nd_bv : i16
-    %4 = btor.nd_bv : i1
-    %5 = btor.nd_bv : i4
-    %6 = btor.nd_bv : i4
-    %7 = btor.nd_bv : i16
+    %1 = btor.nd_state 0 : i1
+    %2 = btor.nd_state 1 : i1
+    %3 = btor.nd_state 2 : i16
+    %4 = btor.nd_state 3 : i1
+    %5 = btor.nd_state 5 : i4
+    %6 = btor.nd_state 6 : i4
+    %7 = btor.nd_state 7 : i16
     br ^bb1(%1, %2, %3, %4, %0, %5, %6, %7 : i1, i1, i16, i1, i16, i4, i4, i16)
   ^bb1(%8: i1, %9: i1, %10: i16, %11: i1, %12: i16, %13: i4, %14: i4, %15: i16):  // 2 preds: ^bb0, ^bb1
     %16 = btor.constant true
@@ -21,9 +21,9 @@ module {
     %24 = btor.constant -7 : i4
     %25 = btor.cmp eq, %14, %24 : i4
     %26 = btor.ite %25, %23, %16 : i1
-    %27 = btor.nd_bv : i1
+    %27 = btor.input 2 : i1
     %28 = btor.ite %27, %16, %26 : i1
-    %29 = btor.nd_bv : i1
+    %29 = btor.input 1 : i1
     %30 = btor.constant false
     %31 = btor.ite %27, %30, %29 : i1
     %32 = btor.constant -64 : i7

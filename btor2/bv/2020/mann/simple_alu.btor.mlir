@@ -2,7 +2,7 @@ module {
   func @main() {
     %0 = btor.constant 0 : i16
     %1 = btor.constant true
-    %2 = btor.nd_bv : i4
+    %2 = btor.nd_state 0 : i4
     br ^bb1(%2, %0, %1 : i4, i16, i1)
   ^bb1(%3: i4, %4: i16, %5: i1):  // 2 preds: ^bb0, ^bb1
     %6 = btor.constant 0 : i4
@@ -11,9 +11,9 @@ module {
     %9 = btor.uext %8 : i1 to i16
     %10 = btor.add %4, %9 : i16
     %11 = btor.constant false
-    %12 = btor.nd_bv : i1
-    %13 = btor.nd_bv : i16
-    %14 = btor.nd_bv : i16
+    %12 = btor.input 3 : i1
+    %13 = btor.input 1 : i16
+    %14 = btor.input 0 : i16
     %15 = btor.add %14, %13 : i16
     %16 = btor.sub %14, %13 : i16
     %17 = btor.redor %3 : i4

@@ -1,0 +1,284 @@
+module attributes {llvm.data_layout = ""} {
+  llvm.func @__VERIFIER_error()
+  llvm.func @__SEA_assume(i1)
+  llvm.func @nd_bv32_in11() -> i32
+  llvm.func @nd_bv32_in1() -> i32
+  llvm.func @nd_bv32_in10() -> i32
+  llvm.func @nd_bv16_in9() -> i16
+  llvm.func @nd_bv16_in8() -> i16
+  llvm.func @nd_bv8_in5() -> i8
+  llvm.func @nd_bv8_in4() -> i8
+  llvm.func @nd_bv8_in3() -> i8
+  llvm.func @nd_bv16_in6() -> i16
+  llvm.func @btor2mlir_print_input_num(i64, i64, i64)
+  llvm.func @nd_bv8_in7() -> i8
+  llvm.func @main() {
+    %0 = llvm.mlir.constant(false) : i1
+    %1 = llvm.mlir.constant(0 : i11) : i11
+    %2 = llvm.mlir.constant(dense<0> : vector<1024xi32>) : vector<1024xi32>
+    llvm.br ^bb1(%0, %0, %1, %2 : i1, i1, i11, vector<1024xi32>)
+  ^bb1(%3: i1, %4: i1, %5: i11, %6: vector<1024xi32>):  // 2 preds: ^bb0, ^bb2
+    %7 = llvm.call @nd_bv8_in7() : () -> i8
+    %8 = llvm.trunc %7 : i8 to i1
+    %9 = llvm.mlir.constant(-56 : i8) : i8
+    %10 = llvm.zext %9 : i8 to i32
+    %11 = llvm.call @nd_bv16_in6() : () -> i16
+    %12 = llvm.trunc %11 : i16 to i11
+    %13 = llvm.mlir.constant(0 : i11) : i11
+    %14 = llvm.lshr %12, %13  : i11
+    %15 = llvm.trunc %14 : i11 to i10
+    %16 = llvm.extractelement %6[%15 : i10] : vector<1024xi32>
+    %17 = llvm.icmp "ult" %16, %10 : i32
+    %18 = llvm.icmp "ule" %12, %5 : i11
+    %19 = llvm.mlir.constant(false) : i1
+    %20 = llvm.zext %19 : i1 to i11
+    %21 = llvm.icmp "uge" %12, %20 : i11
+    %22 = llvm.and %21, %18  : i1
+    %23 = llvm.select %22, %17, %8 : i1, i1
+    %24 = llvm.mlir.constant(true) : i1
+    %25 = llvm.select %22, %24, %19 : i1, i1
+    %26 = llvm.zext %24 : i1 to i11
+    %27 = llvm.sub %5, %26  : i11
+    %28 = llvm.call @nd_bv8_in3() : () -> i8
+    %29 = llvm.trunc %28 : i8 to i1
+    %30 = llvm.select %29, %27, %5 : i1, i11
+    %31 = llvm.call @nd_bv8_in4() : () -> i8
+    %32 = llvm.trunc %31 : i8 to i1
+    %33 = llvm.select %32, %5, %30 : i1, i11
+    %34 = llvm.mlir.constant(0 : i11) : i11
+    %35 = llvm.call @nd_bv8_in5() : () -> i8
+    %36 = llvm.trunc %35 : i8 to i1
+    %37 = llvm.select %36, %34, %33 : i1, i11
+    %38 = llvm.select %32, %24, %19 : i1, i1
+    %39 = llvm.select %36, %19, %38 : i1, i1
+    %40 = llvm.mlir.constant(1 : i2) : i2
+    %41 = llvm.zext %39 : i1 to i2
+    %42 = llvm.shl %41, %40  : i2
+    %43 = llvm.zext %39 : i1 to i2
+    %44 = llvm.or %42, %43  : i2
+    %45 = llvm.mlir.constant(2 : i3) : i3
+    %46 = llvm.zext %39 : i1 to i3
+    %47 = llvm.shl %46, %45  : i3
+    %48 = llvm.zext %44 : i2 to i3
+    %49 = llvm.or %47, %48  : i3
+    %50 = llvm.mlir.constant(3 : i4) : i4
+    %51 = llvm.zext %39 : i1 to i4
+    %52 = llvm.shl %51, %50  : i4
+    %53 = llvm.zext %49 : i3 to i4
+    %54 = llvm.or %52, %53  : i4
+    %55 = llvm.mlir.constant(4 : i5) : i5
+    %56 = llvm.zext %39 : i1 to i5
+    %57 = llvm.shl %56, %55  : i5
+    %58 = llvm.zext %54 : i4 to i5
+    %59 = llvm.or %57, %58  : i5
+    %60 = llvm.mlir.constant(5 : i6) : i6
+    %61 = llvm.zext %39 : i1 to i6
+    %62 = llvm.shl %61, %60  : i6
+    %63 = llvm.zext %59 : i5 to i6
+    %64 = llvm.or %62, %63  : i6
+    %65 = llvm.mlir.constant(6 : i7) : i7
+    %66 = llvm.zext %39 : i1 to i7
+    %67 = llvm.shl %66, %65  : i7
+    %68 = llvm.zext %64 : i6 to i7
+    %69 = llvm.or %67, %68  : i7
+    %70 = llvm.mlir.constant(7 : i8) : i8
+    %71 = llvm.zext %39 : i1 to i8
+    %72 = llvm.shl %71, %70  : i8
+    %73 = llvm.zext %69 : i7 to i8
+    %74 = llvm.or %72, %73  : i8
+    %75 = llvm.mlir.constant(8 : i9) : i9
+    %76 = llvm.zext %39 : i1 to i9
+    %77 = llvm.shl %76, %75  : i9
+    %78 = llvm.zext %74 : i8 to i9
+    %79 = llvm.or %77, %78  : i9
+    %80 = llvm.mlir.constant(9 : i10) : i10
+    %81 = llvm.zext %39 : i1 to i10
+    %82 = llvm.shl %81, %80  : i10
+    %83 = llvm.zext %79 : i9 to i10
+    %84 = llvm.or %82, %83  : i10
+    %85 = llvm.mlir.constant(10 : i11) : i11
+    %86 = llvm.zext %39 : i1 to i11
+    %87 = llvm.shl %86, %85  : i11
+    %88 = llvm.zext %84 : i10 to i11
+    %89 = llvm.or %87, %88  : i11
+    %90 = llvm.mlir.constant(11 : i12) : i12
+    %91 = llvm.zext %39 : i1 to i12
+    %92 = llvm.shl %91, %90  : i12
+    %93 = llvm.zext %89 : i11 to i12
+    %94 = llvm.or %92, %93  : i12
+    %95 = llvm.mlir.constant(12 : i13) : i13
+    %96 = llvm.zext %39 : i1 to i13
+    %97 = llvm.shl %96, %95  : i13
+    %98 = llvm.zext %94 : i12 to i13
+    %99 = llvm.or %97, %98  : i13
+    %100 = llvm.mlir.constant(13 : i14) : i14
+    %101 = llvm.zext %39 : i1 to i14
+    %102 = llvm.shl %101, %100  : i14
+    %103 = llvm.zext %99 : i13 to i14
+    %104 = llvm.or %102, %103  : i14
+    %105 = llvm.mlir.constant(14 : i15) : i15
+    %106 = llvm.zext %39 : i1 to i15
+    %107 = llvm.shl %106, %105  : i15
+    %108 = llvm.zext %104 : i14 to i15
+    %109 = llvm.or %107, %108  : i15
+    %110 = llvm.mlir.constant(15 : i16) : i16
+    %111 = llvm.zext %39 : i1 to i16
+    %112 = llvm.shl %111, %110  : i16
+    %113 = llvm.zext %109 : i15 to i16
+    %114 = llvm.or %112, %113  : i16
+    %115 = llvm.mlir.constant(16 : i17) : i17
+    %116 = llvm.zext %39 : i1 to i17
+    %117 = llvm.shl %116, %115  : i17
+    %118 = llvm.zext %114 : i16 to i17
+    %119 = llvm.or %117, %118  : i17
+    %120 = llvm.mlir.constant(17 : i18) : i18
+    %121 = llvm.zext %39 : i1 to i18
+    %122 = llvm.shl %121, %120  : i18
+    %123 = llvm.zext %119 : i17 to i18
+    %124 = llvm.or %122, %123  : i18
+    %125 = llvm.mlir.constant(18 : i19) : i19
+    %126 = llvm.zext %39 : i1 to i19
+    %127 = llvm.shl %126, %125  : i19
+    %128 = llvm.zext %124 : i18 to i19
+    %129 = llvm.or %127, %128  : i19
+    %130 = llvm.mlir.constant(19 : i20) : i20
+    %131 = llvm.zext %39 : i1 to i20
+    %132 = llvm.shl %131, %130  : i20
+    %133 = llvm.zext %129 : i19 to i20
+    %134 = llvm.or %132, %133  : i20
+    %135 = llvm.mlir.constant(20 : i21) : i21
+    %136 = llvm.zext %39 : i1 to i21
+    %137 = llvm.shl %136, %135  : i21
+    %138 = llvm.zext %134 : i20 to i21
+    %139 = llvm.or %137, %138  : i21
+    %140 = llvm.mlir.constant(21 : i22) : i22
+    %141 = llvm.zext %39 : i1 to i22
+    %142 = llvm.shl %141, %140  : i22
+    %143 = llvm.zext %139 : i21 to i22
+    %144 = llvm.or %142, %143  : i22
+    %145 = llvm.mlir.constant(22 : i23) : i23
+    %146 = llvm.zext %39 : i1 to i23
+    %147 = llvm.shl %146, %145  : i23
+    %148 = llvm.zext %144 : i22 to i23
+    %149 = llvm.or %147, %148  : i23
+    %150 = llvm.mlir.constant(23 : i24) : i24
+    %151 = llvm.zext %39 : i1 to i24
+    %152 = llvm.shl %151, %150  : i24
+    %153 = llvm.zext %149 : i23 to i24
+    %154 = llvm.or %152, %153  : i24
+    %155 = llvm.mlir.constant(24 : i25) : i25
+    %156 = llvm.zext %39 : i1 to i25
+    %157 = llvm.shl %156, %155  : i25
+    %158 = llvm.zext %154 : i24 to i25
+    %159 = llvm.or %157, %158  : i25
+    %160 = llvm.mlir.constant(25 : i26) : i26
+    %161 = llvm.zext %39 : i1 to i26
+    %162 = llvm.shl %161, %160  : i26
+    %163 = llvm.zext %159 : i25 to i26
+    %164 = llvm.or %162, %163  : i26
+    %165 = llvm.mlir.constant(26 : i27) : i27
+    %166 = llvm.zext %39 : i1 to i27
+    %167 = llvm.shl %166, %165  : i27
+    %168 = llvm.zext %164 : i26 to i27
+    %169 = llvm.or %167, %168  : i27
+    %170 = llvm.mlir.constant(27 : i28) : i28
+    %171 = llvm.zext %39 : i1 to i28
+    %172 = llvm.shl %171, %170  : i28
+    %173 = llvm.zext %169 : i27 to i28
+    %174 = llvm.or %172, %173  : i28
+    %175 = llvm.mlir.constant(28 : i29) : i29
+    %176 = llvm.zext %39 : i1 to i29
+    %177 = llvm.shl %176, %175  : i29
+    %178 = llvm.zext %174 : i28 to i29
+    %179 = llvm.or %177, %178  : i29
+    %180 = llvm.mlir.constant(29 : i30) : i30
+    %181 = llvm.zext %39 : i1 to i30
+    %182 = llvm.shl %181, %180  : i30
+    %183 = llvm.zext %179 : i29 to i30
+    %184 = llvm.or %182, %183  : i30
+    %185 = llvm.mlir.constant(30 : i31) : i31
+    %186 = llvm.zext %39 : i1 to i31
+    %187 = llvm.shl %186, %185  : i31
+    %188 = llvm.zext %184 : i30 to i31
+    %189 = llvm.or %187, %188  : i31
+    %190 = llvm.mlir.constant(31 : i32) : i32
+    %191 = llvm.zext %39 : i1 to i32
+    %192 = llvm.shl %191, %190  : i32
+    %193 = llvm.zext %189 : i31 to i32
+    %194 = llvm.or %192, %193  : i32
+    %195 = llvm.mlir.constant(-1 : i32) : i32
+    %196 = llvm.xor %194, %195  : i32
+    %197 = llvm.call @nd_bv16_in8() : () -> i16
+    %198 = llvm.trunc %197 : i16 to i10
+    %199 = llvm.mlir.constant(0 : i11) : i11
+    %200 = llvm.lshr %5, %199  : i11
+    %201 = llvm.trunc %200 : i11 to i10
+    %202 = llvm.select %32, %201, %198 : i1, i10
+    %203 = llvm.call @nd_bv16_in9() : () -> i16
+    %204 = llvm.trunc %203 : i16 to i10
+    %205 = llvm.select %36, %204, %202 : i1, i10
+    %206 = llvm.extractelement %6[%205 : i10] : vector<1024xi32>
+    %207 = llvm.and %206, %196  : i32
+    %208 = llvm.call @nd_bv32_in10() : () -> i32
+    %209 = llvm.trunc %208 : i32 to i32
+    %210 = llvm.call @nd_bv32_in1() : () -> i32
+    %211 = llvm.trunc %210 : i32 to i32
+    %212 = llvm.select %32, %211, %209 : i1, i32
+    %213 = llvm.call @nd_bv32_in11() : () -> i32
+    %214 = llvm.trunc %213 : i32 to i32
+    %215 = llvm.select %36, %214, %212 : i1, i32
+    %216 = llvm.and %215, %194  : i32
+    %217 = llvm.or %216, %207  : i32
+    %218 = llvm.insertelement %217, %6[%205 : i10] : vector<1024xi32>
+    %219 = llvm.bitcast %194 : i32 to vector<32xi1>
+    %220 = "llvm.intr.vector.reduce.or"(%219) : (vector<32xi1>) -> i1
+    %221 = llvm.select %220, %218, %6 : i1, vector<1024xi32>
+    %222 = llvm.mlir.constant(true) : i1
+    %223 = llvm.xor %24, %222  : i1
+    %224 = llvm.zext %9 : i8 to i32
+    %225 = llvm.icmp "ult" %211, %224 : i32
+    %226 = llvm.or %225, %223  : i1
+    llvm.call @__SEA_assume(%226) : (i1) -> ()
+    %227 = llvm.mlir.constant(true) : i1
+    %228 = llvm.xor %24, %227  : i1
+    %229 = llvm.mlir.constant(true) : i1
+    %230 = llvm.xor %29, %229  : i1
+    %231 = llvm.mlir.constant(true) : i1
+    %232 = llvm.xor %32, %231  : i1
+    %233 = llvm.or %232, %230  : i1
+    %234 = llvm.or %233, %228  : i1
+    llvm.call @__SEA_assume(%234) : (i1) -> ()
+    %235 = llvm.mlir.constant(true) : i1
+    %236 = llvm.xor %24, %235  : i1
+    %237 = llvm.bitcast %5 : i11 to vector<11xi1>
+    %238 = "llvm.intr.vector.reduce.or"(%237) : (vector<11xi1>) -> i1
+    %239 = llvm.mlir.constant(true) : i1
+    %240 = llvm.xor %238, %239  : i1
+    %241 = llvm.mlir.constant(true) : i1
+    %242 = llvm.xor %240, %241  : i1
+    %243 = llvm.or %242, %230  : i1
+    %244 = llvm.or %243, %236  : i1
+    llvm.call @__SEA_assume(%244) : (i1) -> ()
+    %245 = llvm.mlir.constant(true) : i1
+    %246 = llvm.xor %24, %245  : i1
+    %247 = llvm.mlir.constant(-1024 : i11) : i11
+    %248 = llvm.icmp "eq" %5, %247 : i11
+    %249 = llvm.mlir.constant(true) : i1
+    %250 = llvm.xor %248, %249  : i1
+    %251 = llvm.or %250, %232  : i1
+    %252 = llvm.or %251, %246  : i1
+    llvm.call @__SEA_assume(%252) : (i1) -> ()
+    %253 = llvm.mlir.constant(true) : i1
+    %254 = llvm.xor %3, %253  : i1
+    %255 = llvm.and %4, %254  : i1
+    %256 = llvm.mlir.constant(true) : i1
+    %257 = llvm.xor %255, %256  : i1
+    llvm.cond_br %257, ^bb2, ^bb3
+  ^bb2:  // pred: ^bb1
+    llvm.br ^bb1(%23, %25, %37, %221 : i1, i1, i11, vector<1024xi32>)
+  ^bb3:  // pred: ^bb1
+    llvm.call @__VERIFIER_error() : () -> ()
+    llvm.unreachable
+  }
+}
+

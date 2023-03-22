@@ -1,7 +1,20 @@
 module attributes {llvm.data_layout = ""} {
   llvm.func @__VERIFIER_error()
-  llvm.func @nd_bv8() -> i8
-  llvm.func @nd_bv16() -> i16
+  llvm.func @nd_bv16_in5() -> i16
+  llvm.func @nd_bv16_in4() -> i16
+  llvm.func @nd_bv16_in1() -> i16
+  llvm.func @nd_bv16_in0() -> i16
+  llvm.func @nd_bv8_in8() -> i8
+  llvm.func @nd_bv16_in9() -> i16
+  llvm.func @nd_bv8_in12() -> i8
+  llvm.func @nd_bv8_in17() -> i8
+  llvm.func @nd_bv8_in7() -> i8
+  llvm.func @nd_bv8_in6() -> i8
+  llvm.func @nd_bv8_in10() -> i8
+  llvm.func @nd_bv16_in16() -> i16
+  llvm.func @nd_bv16_in3() -> i16
+  llvm.func @btor2mlir_print_input_num(i64, i64, i64)
+  llvm.func @nd_bv16_in2() -> i16
   llvm.func @main() {
     %0 = llvm.mlir.constant(false) : i1
     %1 = llvm.mlir.constant(0 : i12) : i12
@@ -14,9 +27,9 @@ module attributes {llvm.data_layout = ""} {
     %17 = llvm.select %15, %8, %7 : i1, i12
     %18 = llvm.select %15, %17, %16 : i1, i12
     %19 = llvm.select %15, %10, %9 : i1, i12
-    %20 = llvm.call @nd_bv16() : () -> i16
+    %20 = llvm.call @nd_bv16_in2() : () -> i16
     %21 = llvm.trunc %20 : i16 to i12
-    %22 = llvm.call @nd_bv16() : () -> i16
+    %22 = llvm.call @nd_bv16_in3() : () -> i16
     %23 = llvm.trunc %22 : i16 to i12
     %24 = llvm.select %15, %23, %21 : i1, i12
     %25 = llvm.select %15, %24, %19 : i1, i12
@@ -24,21 +37,21 @@ module attributes {llvm.data_layout = ""} {
     %27 = llvm.mlir.constant(0 : i12) : i12
     %28 = llvm.lshr %5, %27  : i12
     %29 = llvm.trunc %28 : i12 to i1
-    %30 = llvm.call @nd_bv16() : () -> i16
+    %30 = llvm.call @nd_bv16_in16() : () -> i16
     %31 = llvm.trunc %30 : i16 to i12
     %32 = llvm.mlir.constant(5 : i4) : i4
-    %33 = llvm.call @nd_bv8() : () -> i8
+    %33 = llvm.call @nd_bv8_in10() : () -> i8
     %34 = llvm.trunc %33 : i8 to i4
     %35 = llvm.icmp "eq" %34, %32 : i4
     %36 = llvm.mlir.constant(4 : i4) : i4
     %37 = llvm.icmp "eq" %34, %36 : i4
     %38 = llvm.mlir.constant(1 : i4) : i4
     %39 = llvm.icmp "eq" %34, %38 : i4
-    %40 = llvm.call @nd_bv8() : () -> i8
+    %40 = llvm.call @nd_bv8_in6() : () -> i8
     %41 = llvm.trunc %40 : i8 to i1
     %42 = llvm.mlir.constant(true) : i1
     %43 = llvm.xor %41, %42  : i1
-    %44 = llvm.call @nd_bv8() : () -> i8
+    %44 = llvm.call @nd_bv8_in7() : () -> i8
     %45 = llvm.trunc %44 : i8 to i1
     %46 = llvm.and %45, %43  : i1
     %47 = llvm.mlir.constant(true) : i1
@@ -56,7 +69,7 @@ module attributes {llvm.data_layout = ""} {
     %59 = llvm.mlir.constant(0 : i12) : i12
     %60 = llvm.lshr %58, %59  : i12
     %61 = llvm.trunc %60 : i12 to i1
-    %62 = llvm.call @nd_bv8() : () -> i8
+    %62 = llvm.call @nd_bv8_in17() : () -> i8
     %63 = llvm.trunc %62 : i8 to i3
     %64 = llvm.mlir.constant(1 : i3) : i3
     %65 = llvm.add %12, %64  : i3
@@ -843,7 +856,7 @@ module attributes {llvm.data_layout = ""} {
     %846 = llvm.or %844, %845  : i12
     %847 = llvm.mlir.constant(1 : i12) : i12
     %848 = llvm.sub %11, %847  : i12
-    %849 = llvm.call @nd_bv8() : () -> i8
+    %849 = llvm.call @nd_bv8_in12() : () -> i8
     %850 = llvm.trunc %849 : i8 to i1
     %851 = llvm.mlir.constant(-1 : i4) : i4
     %852 = llvm.icmp "eq" %34, %851 : i4
@@ -858,7 +871,7 @@ module attributes {llvm.data_layout = ""} {
     %861 = llvm.and %860, %858  : i1
     %862 = llvm.and %861, %850  : i1
     %863 = llvm.select %862, %848, %11 : i1, i12
-    %864 = llvm.call @nd_bv16() : () -> i16
+    %864 = llvm.call @nd_bv16_in9() : () -> i16
     %865 = llvm.trunc %864 : i16 to i12
     %866 = llvm.mlir.constant(true) : i1
     %867 = llvm.xor %850, %866  : i1
@@ -903,7 +916,7 @@ module attributes {llvm.data_layout = ""} {
     %906 = llvm.or %905, %892  : i1
     %907 = llvm.and %906, %886  : i1
     %908 = llvm.select %907, %885, %884 : i1, i3
-    %909 = llvm.call @nd_bv8() : () -> i8
+    %909 = llvm.call @nd_bv8_in8() : () -> i8
     %910 = llvm.trunc %909 : i8 to i1
     %911 = llvm.mlir.constant(0 : i11) : i11
     %912 = llvm.mlir.constant(1 : i12) : i12
@@ -921,9 +934,9 @@ module attributes {llvm.data_layout = ""} {
     %924 = llvm.trunc %923 : i3 to i1
     %925 = llvm.select %924, %921, %920 : i1, i12
     %926 = llvm.select %919, %10, %9 : i1, i12
-    %927 = llvm.call @nd_bv16() : () -> i16
+    %927 = llvm.call @nd_bv16_in0() : () -> i16
     %928 = llvm.trunc %927 : i16 to i12
-    %929 = llvm.call @nd_bv16() : () -> i16
+    %929 = llvm.call @nd_bv16_in1() : () -> i16
     %930 = llvm.trunc %929 : i16 to i12
     %931 = llvm.select %919, %930, %928 : i1, i12
     %932 = llvm.select %924, %931, %926 : i1, i12
@@ -1019,9 +1032,9 @@ module attributes {llvm.data_layout = ""} {
     %1022 = llvm.select %15, %8, %7 : i1, i12
     %1023 = llvm.select %15, %1022, %1021 : i1, i12
     %1024 = llvm.select %15, %10, %9 : i1, i12
-    %1025 = llvm.call @nd_bv16() : () -> i16
+    %1025 = llvm.call @nd_bv16_in4() : () -> i16
     %1026 = llvm.trunc %1025 : i16 to i12
-    %1027 = llvm.call @nd_bv16() : () -> i16
+    %1027 = llvm.call @nd_bv16_in5() : () -> i16
     %1028 = llvm.trunc %1027 : i16 to i12
     %1029 = llvm.select %15, %1028, %1026 : i1, i12
     %1030 = llvm.select %15, %1029, %1024 : i1, i12
