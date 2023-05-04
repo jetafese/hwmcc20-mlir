@@ -1,0 +1,16 @@
+index,btor_time,status
+anderson.3.prop1-back-serstep.btor2,0.239,sat
+at.6.prop1-back-serstep.btor2,80.938,sat
+blocks.4.prop1-back-serstep.btor2,299.561,
+brp2.2.prop1-func-interl.btor2,0.573,unsat
+brp2.3.prop1-back-serstep.btor2,2.81,unsat
+brp2.6.prop3-back-serstep.btor2,3.884,unsat
+elevator.4.prop1-func-interl.btor2,0.002,
+frogs.5.prop1-func-interl.btor2,25.317,unsat
+krebs.3.prop1-func-interl.btor2,0.466,unsat
+mcs.3.prop1-back-serstep.btor2,299.185,
+msmie.3.prop1-func-interl.btor2,128.301,unsat
+peg_solitaire.3.prop1-back-serstep.btor2,299.776,
+pgm_protocol.3.prop5-func-interl.btor2,4.202,unsat
+pgm_protocol.7.prop1-back-serstep.btor2,8.56,unsat
+rushhour.4.prop1-func-interl.btor2,23.661,unsat

@@ -1,0 +1,3 @@
+./get_btor_seahorn.sh /home/jetafese/hwmc20-mlir/btor2/bv/2019/wolf/2019C/qspiflash_qflexpress_divfive-p064.btor
+btor2mlir-translate --import-btor /home/jetafese/hwmc20-mlir/btor2/bv/2019/wolf/2019C/qspiflash_qflexpress_divfive-p064.btor > /home/jetafese/hwmc20-mlir/btor2/bv/2019/wolf/2019C/qspiflash_qflexpress_divfive-p064.btor.mlir
+btor2mlir-translate --export-btor /home/jetafese/hwmc20-mlir/btor2/bv/2019/wolf/2019C/qspiflash_qflexpress_divfive-p064.btor.mlir > /home/jetafese/hwmc20-mlir/btor2/bv/2019/wolf/2019C/qspiflash_qflexpress_divfive-p064.btor.export.btor

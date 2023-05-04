@@ -1,0 +1,35 @@
+Info: pointer size: 8, word size: 8
+Info: Trackable memory is not present
+Functions: 
+NONE
+Globals: 
+NONE
+res is 0
+res is 0
+res is 0
+res is 0
+res is 0
+res is 0
+res is 0
+res is 0
+res is 0
+res is 0
+res is 0
+res is 0
+res is 0
+res is 0
+res is 0
+res is 0
+res is 0
+res is 0
+res is 0
+res is 0
+res is 0
+(sat.stats   :conflicts  :restarts         :learned/bin    :gc          :time)
+(sat.stats          :decisions :clauses/bin       :units       :memory       )
+(sat.stats      0      0    0 58673/12812     0/0   0       0    48.03   0.00)
+(sat.stats    102    224    0 58666/12812    95/20 212       0    48.32   0.02)
+
+real	0m28.600s
+user	0m28.031s
+sys	0m0.231s

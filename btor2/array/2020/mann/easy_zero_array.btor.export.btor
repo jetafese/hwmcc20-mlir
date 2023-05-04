@@ -1,0 +1,23 @@
+1 sort bitvec 10
+2 constd 1 0
+3 state 1
+4 sort bitvec 32
+5 sort array 1 4
+6 state 5
+7 state 1
+8 init 1 7 2
+9 constd 1 1
+10 add 1 7 9
+11 constd 1 32
+12 sort bitvec 1
+13 ulte 12 7 11
+14 ite 1 13 10 7
+15 constd 4 0
+16 write 5 6 7 15
+17 read 4 6 3
+18 neq 12 17 15
+19 ult 12 3 7
+20 and 12 19 18
+21 bad 20
+22 next 5 6 16
+23 next 1 7 14

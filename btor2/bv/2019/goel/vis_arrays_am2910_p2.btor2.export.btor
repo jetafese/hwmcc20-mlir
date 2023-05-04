@@ -1,0 +1,103 @@
+1 sort bitvec 1
+2 constd 1 0
+3 sort bitvec 3
+4 constd 3 0
+5 sort bitvec 12
+6 constd 5 0
+7 state 1
+8 state 3
+9 state 3
+10 state 5
+11 init 1 7 2
+12 init 3 8 4
+13 init 3 9 4
+14 init 5 10 6
+15 constd 1 -1
+16 constd 3 0
+17 sort bitvec 4
+18 constd 17 0
+19 input 17
+20 eq 1 19 18
+21 ite 3 20 16 9
+22 constd 3 1
+23 add 3 9 22
+24 constd 3 -3
+25 neq 1 9 24
+26 constd 17 5
+27 eq 1 19 26
+28 constd 17 4
+29 eq 1 19 28
+30 constd 17 1
+31 eq 1 19 30
+32 input 1
+33 not 1 32
+34 input 1
+35 and 1 34 33
+36 not 1 35
+37 and 1 36 31
+38 or 1 37 29
+39 or 1 38 27
+40 and 1 39 25
+41 ite 3 40 23 21
+42 sub 3 9 22
+43 neq 1 9 16
+44 constd 17 -1
+45 eq 1 19 44
+46 constd 17 -8
+47 eq 1 19 46
+48 or 1 47 45
+49 redor 1 10
+50 not 1 49
+51 and 1 50 48
+52 eq 1 19 44
+53 constd 17 -3
+54 eq 1 19 53
+55 constd 17 -5
+56 eq 1 19 55
+57 constd 17 -6
+58 eq 1 19 57
+59 or 1 58 56
+60 or 1 59 54
+61 or 1 60 52
+62 not 1 35
+63 and 1 62 61
+64 or 1 63 51
+65 and 1 64 43
+66 ite 3 65 42 41
+67 constd 5 1
+68 sub 5 10 67
+69 input 1
+70 eq 1 19 44
+71 constd 17 -7
+72 eq 1 19 71
+73 eq 1 19 46
+74 or 1 73 72
+75 or 1 74 70
+76 and 1 49 75
+77 and 1 76 69
+78 ite 5 77 68 10
+79 input 5
+80 not 1 69
+81 eq 1 19 28
+82 not 1 35
+83 and 1 82 81
+84 constd 17 -4
+85 eq 1 19 84
+86 or 1 85 83
+87 or 1 86 80
+88 ite 5 87 79 78
+89 constd 3 -1
+90 eq 1 9 89
+91 constd 3 -2
+92 neq 1 8 91
+93 constd 1 0
+94 eq 1 7 93
+95 or 1 94 92
+96 or 1 95 90
+97 not 1 96
+98 and 1 15 97
+99 bad 98
+100 next 1 7 15
+101 next 3 8 9
+102 next 3 9 66
+103 next 5 10 88

@@ -1,0 +1,50 @@
+
+real	0m0.131s
+user	0m0.075s
+sys	0m0.025s
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  map::at
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace.
+Stack dump:
+0.	Program arguments: btor2mlir-translate --export-btor /home/jetafese/hwmc20-mlir/btor2/array/2019/wolf/2019C/zipcpu_zipcpu_dcache-p451.btor.mlir
+ #0 0x00007f9bbb7f26a1 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) (/usr/lib/llvm-14/lib/libLLVM-14.so.1+0xe4e6a1)
+ #1 0x00007f9bbb7f03ee llvm::sys::RunSignalHandlers() (/usr/lib/llvm-14/lib/libLLVM-14.so.1+0xe4c3ee)
+ #2 0x00007f9bbb7f2bdb (/usr/lib/llvm-14/lib/libLLVM-14.so.1+0xe4ebdb)
+ #3 0x00007f9bc12d0980 __restore_rt (/lib/x86_64-linux-gnu/libpthread.so.0+0x12980)
+ #4 0x00007f9bb9c2ee87 raise /build/glibc-CVJwZb/glibc-2.27/signal/../sysdeps/unix/sysv/linux/raise.c:51:0
+ #5 0x00007f9bb9c307f1 abort /build/glibc-CVJwZb/glibc-2.27/stdlib/abort.c:81:0
+ #6 0x00007f9bba6340a9 (/usr/lib/x86_64-linux-gnu/libstdc++.so.6+0x9d0a9)
+ #7 0x00007f9bba63f506 (/usr/lib/x86_64-linux-gnu/libstdc++.so.6+0xa8506)
+ #8 0x00007f9bba63f571 (/usr/lib/x86_64-linux-gnu/libstdc++.so.6+0xa8571)
+ #9 0x00007f9bba63f7f5 (/usr/lib/x86_64-linux-gnu/libstdc++.so.6+0xa87f5)
+#10 0x00007f9bba63691d std::__throw_out_of_range(char const*) (/usr/lib/x86_64-linux-gnu/libstdc++.so.6+0x9f91d)
+#11 0x00005614d19a7dff llvm::hashing::detail::get_execution_seed() /usr/lib/llvm-14/include/llvm/ADT/Hashing.h:333:3
+#12 0x00005614d19a7dff llvm::hashing::detail::hash_integer_value(unsigned long) /usr/lib/llvm-14/include/llvm/ADT/Hashing.h:623:25
+#13 0x00005614d19a7dff llvm::hash_code llvm::hash_value<mlir::detail::ValueImpl>(mlir::detail::ValueImpl const*) /usr/lib/llvm-14/include/llvm/ADT/Hashing.h:643:10
+#14 0x00005614d19a7dff mlir::hash_value(mlir::Value) /usr/lib/llvm-14/include/mlir/IR/Value.h:457:10
+#15 0x00005614d19a7dff mlir::btor::Serialize::getOpFromCache(mlir::Value const&) /home/jetafese/btor2mlir-1/include/Target/Btor/BtorIRToBtorTranslation.h:67:30
+#16 0x00005614d19a7fc8 mlir::btor::Serialize::buildBinaryOperation(mlir::Value const&, mlir::Value const&, mlir::Value const&, mlir::Type, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) /home/jetafese/btor2mlir-1/lib/Target/Btor/BtorIRToBtorTranslation.cpp:52:42
+#17 0x00005614d19a9308 mlir::btor::Serialize::createBtorLine(mlir::btor::AndOp&, bool) /home/jetafese/btor2mlir-1/lib/Target/Btor/BtorIRToBtorTranslation.cpp:233:10
+#18 0x00005614d19ac30f auto mlir::btor::Serialize::createBtor(mlir::Operation&, bool)::$_0::operator()<mlir::btor::AndOp>(mlir::btor::AndOp) const /home/jetafese/btor2mlir-1/lib/Target/Btor/BtorIRToBtorTranslation.cpp:0:37
+#19 0x00005614d19ac30f llvm::TypeSwitch<mlir::Operation*, mlir::LogicalResult>& llvm::TypeSwitch<mlir::Operation*, mlir::LogicalResult>::Case<mlir::btor::AndOp, mlir::btor::Serialize::createBtor(mlir::Operation&, bool)::$_0&>(mlir::btor::Serialize::createBtor(mlir::Operation&, bool)::$_0&) /usr/lib/llvm-14/include/llvm/ADT/TypeSwitch.h:122:16
+#20 0x00005614d19ac30f mlir::btor::Serialize::createBtor(mlir::Operation&, bool) /home/jetafese/btor2mlir-1/lib/Target/Btor/BtorIRToBtorTranslation.cpp:460:12
+#21 0x00005614d19ac838 mlir::LogicalResult::succeeded() const /usr/lib/llvm-14/include/mlir/Support/LogicalResult.h:41:35
+#22 0x00005614d19ac838 mlir::LogicalResult::failed() const /usr/lib/llvm-14/include/mlir/Support/LogicalResult.h:44:33
+#23 0x00005614d19ac838 mlir::failed(mlir::LogicalResult) /usr/lib/llvm-14/include/mlir/Support/LogicalResult.h:72:58
+#24 0x00005614d19ac838 mlir::btor::Serialize::translateInitFunction(mlir::Block&) /home/jetafese/btor2mlir-1/lib/Target/Btor/BtorIRToBtorTranslation.cpp:497:9
+#25 0x00005614d19ac838 mlir::btor::Serialize::translateMainFunction() /home/jetafese/btor2mlir-1/lib/Target/Btor/BtorIRToBtorTranslation.cpp:536:7
+#26 0x00005614d19acc05 mlir::LogicalResult::succeeded() const /usr/lib/llvm-14/include/mlir/Support/LogicalResult.h:41:35
+#27 0x00005614d19acc05 mlir::LogicalResult::failed() const /usr/lib/llvm-14/include/mlir/Support/LogicalResult.h:44:33
+#28 0x00005614d19acc05 serializeModule(mlir::ModuleOp, llvm::raw_ostream&) /home/jetafese/btor2mlir-1/lib/Target/Btor/BtorIRToBtorTranslation.cpp:554:41
+#29 0x00005614d19acc05 mlir::btor::registerToBtorTranslation()::$_3::operator()(mlir::ModuleOp, llvm::raw_ostream&) const /home/jetafese/btor2mlir-1/lib/Target/Btor/BtorIRToBtorTranslation.cpp:566:16
+#30 0x00005614d19acc05 std::_Function_handler<mlir::LogicalResult (mlir::ModuleOp, llvm::raw_ostream&), mlir::btor::registerToBtorTranslation()::$_3>::_M_invoke(std::_Any_data const&, mlir::ModuleOp&&, llvm::raw_ostream&) /usr/bin/../lib/gcc/x86_64-linux-gnu/8/../../../../include/c++/8/bits/std_function.h:282:9
+#31 0x00005614d1ce140f std::_Function_handler<mlir::LogicalResult (llvm::SourceMgr&, llvm::raw_ostream&, mlir::MLIRContext*), mlir::TranslateFromMLIRRegistration::TranslateFromMLIRRegistration(llvm::StringRef, std::function<mlir::LogicalResult (mlir::ModuleOp, llvm::raw_ostream&)> const&, std::function<void (mlir::DialectRegistry&)> const&)::$_1>::_M_invoke(std::_Any_data const&, llvm::SourceMgr&, llvm::raw_ostream&, mlir::MLIRContext*&&) TypeFromLLVM.cpp:0:0
+#32 0x00005614d1ce08bb mlir::mlirTranslateMain(int, char**, llvm::StringRef)::$_3::operator()(std::unique_ptr<llvm::MemoryBuffer, std::default_delete<llvm::MemoryBuffer> >, llvm::raw_ostream&) const TypeFromLLVM.cpp:0:0
+#33 0x00005614d1cdfaec mlir::mlirTranslateMain(int, char**, llvm::StringRef) (/home/jetafese/btor2mlir-1/build/bin/btor2mlir-translate+0x504aec)
+#34 0x00005614d1920125 mlir::LogicalResult::succeeded() const /usr/lib/llvm-14/include/mlir/Support/LogicalResult.h:41:35
+#35 0x00005614d1920125 mlir::LogicalResult::failed() const /usr/lib/llvm-14/include/mlir/Support/LogicalResult.h:44:33
+#36 0x00005614d1920125 mlir::failed(mlir::LogicalResult) /usr/lib/llvm-14/include/mlir/Support/LogicalResult.h:72:58
+#37 0x00005614d1920125 main /home/jetafese/btor2mlir-1/btor2mlir-translate/btor2mlir-translate.cpp:27:10
+#38 0x00007f9bb9c11c87 __libc_start_main /build/glibc-CVJwZb/glibc-2.27/csu/../csu/libc-start.c:344:0
+#39 0x00005614d192002a _start (/home/jetafese/btor2mlir-1/build/bin/btor2mlir-translate+0x14502a)
+./get_btor_seahorn.sh: line 5: 13563 Aborted                 (core dumped) btor2mlir-translate --export-btor $1.mlir > $1.export.btor

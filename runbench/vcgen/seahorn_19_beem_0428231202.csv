@@ -1,0 +1,16 @@
+index,BMC,Control,Thinned,bmc_circ_sz,bmc_dag_sz,btor_time,seahorn_total
+anderson.3.prop1-back-serstep.btor2,0.52,dependence,Gate,4,12623,26.026,1.14
+at.6.prop1-back-serstep.btor2,1.75,dependence,Gate,4,41272,98.756,3.69
+blocks.4.prop1-back-serstep.btor2,1.94,dependence,Gate,4,30670,82.622,3.49
+brp2.2.prop1-func-interl.btor2,0.57,dependence,Gate,4,14505,117.884,1.25
+brp2.3.prop1-back-serstep.btor2,1.02,dependence,Gate,4,23667,79.894,2.17
+brp2.6.prop3-back-serstep.btor2,1.02,dependence,Gate,4,23674,79.943,2.17
+elevator.4.prop1-func-interl.btor2,0.68,dependence,Gate,4,18490,146.64600000000002,1.48
+frogs.5.prop1-func-interl.btor2,1.69,dependence,Gate,4,31758,44.734,3.30
+krebs.3.prop1-func-interl.btor2,0.01,dependence,Gate,6,21,4.054,0.10
+mcs.3.prop1-back-serstep.btor2,1.28,dependence,Gate,4,30646,79.244,2.77
+msmie.3.prop1-func-interl.btor2,,,,,,33.029,
+peg_solitaire.3.prop1-back-serstep.btor2,,,,,,27.229,
+pgm_protocol.3.prop5-func-interl.btor2,,,,,,35.921,
+pgm_protocol.7.prop1-back-serstep.btor2,,,,,,30.546,
+rushhour.4.prop1-func-interl.btor2,7.94,dependence,Gate,4,106120,159.766,13.21

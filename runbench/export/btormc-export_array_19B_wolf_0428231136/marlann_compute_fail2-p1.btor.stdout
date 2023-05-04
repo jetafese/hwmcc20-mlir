@@ -1,0 +1,402 @@
+./btormc-export_get_btor.sh /home/jetafese/hwmc20-mlir/btor2/array/2019/wolf/2019B/marlann_compute_fail2-p1.btor
+[btormc] parsing input file...
+[btormc] finished parsing
+[btor>mc] calling BMC on 1 properties from bound 0 up-to maximum bound k = 20
+[btor>mc] trace generation enabled
+[btor>mc] new forward manager
+[btor>mc] initialized forward frame at bound k = 0
+[btor>mc] checking forward frame at bound k = 0
+[btor>mc] checking forward frame bad state property 0 at bound k = 0
+[btor>core] calling SAT
+[btor>core] found UFs, disable slice elimination
+[btor>varsubst] 1 variables substituted in 0.0 seconds
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] enabled core engine
+[btor>sat] Lingeling allows both incremental and non-incremental mode
+[btor>sat] initialized Lingeling
+[lingeling] Lingeling
+[lingeling] 
+[lingeling] Version bcp 4fe47dd5a6ef91df6dca4bad81326f992dc3fbab
+[lingeling] 
+[lingeling] Copyright (C) 2010-2016 Armin Biere JKU Linz Austria.
+[lingeling] All rights reserved.
+[lingeling] 
+[lingeling] released Tue Nov 22 09:56:45 EST 2022
+[lingeling] compiled Tue Nov 22 09:56:45 EST 2022
+[lingeling] 
+[lingeling] gcc (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0
+[lingeling] -W -Wall -O3 -fPIC -DNLGLOG -DNDEBUG -DNCHKSOL -DNLGLDRUPLIG
+[lingeling] -DNLGLYALSAT -DNLGLFILES -DNLGLDEMA
+[lingeling] Linux lilla-my 4.15.0-156-generic x86_64
+[lingeling] 
+[btor>slvfun] 0 AIG vars, 0 AIG ands, 0 CNF vars, 0 CNF clauses
+[btor>core] SAT call 2 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 0 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 0
+[btor>mc] initialized forward frame at bound k = 1
+[btor>mc] checking forward frame at bound k = 1
+[btor>mc] checking forward frame bad state property 0 at bound k = 1
+[btor>core] calling SAT
+[btor>core] found UFs, disable slice elimination
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 0 AIG vars, 0 AIG ands, 0 CNF vars, 0 CNF clauses
+[btor>core] SAT call 3 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 1 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 1
+[btor>mc] initialized forward frame at bound k = 2
+[btor>mc] checking forward frame at bound k = 2
+[btor>mc] checking forward frame bad state property 0 at bound k = 2
+[btor>core] calling SAT
+[btor>core] found UFs, disable slice elimination
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 0 AIG vars, 0 AIG ands, 0 CNF vars, 0 CNF clauses
+[btor>core] SAT call 4 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 2 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 2
+[btor>mc] initialized forward frame at bound k = 3
+[btor>mc] checking forward frame at bound k = 3
+[btor>mc] checking forward frame bad state property 0 at bound k = 3
+[btor>core] calling SAT
+[btor>core] found UFs, disable slice elimination
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 0 AIG vars, 0 AIG ands, 0 CNF vars, 0 CNF clauses
+[btor>core] SAT call 5 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 3 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 3
+[btor>mc] initialized forward frame at bound k = 4
+[btor>mc] checking forward frame at bound k = 4
+[btor>mc] checking forward frame bad state property 0 at bound k = 4
+[btor>core] calling SAT
+[btor>core] found UFs, disable slice elimination
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 0 AIG vars, 0 AIG ands, 0 CNF vars, 0 CNF clauses
+[btor>core] SAT call 6 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 4 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 4
+[btor>mc] initialized forward frame at bound k = 5
+[btor>mc] checking forward frame at bound k = 5
+[btor>mc] checking forward frame bad state property 0 at bound k = 5
+[btor>core] calling SAT
+[btor>core] found UFs, disable slice elimination
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 0 AIG vars, 0 AIG ands, 0 CNF vars, 0 CNF clauses
+[btor>core] SAT call 7 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 5 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 5
+[btor>mc] initialized forward frame at bound k = 6
+[btor>mc] checking forward frame at bound k = 6
+[btor>mc] checking forward frame bad state property 0 at bound k = 6
+[btor>core] calling SAT
+[btor>core] found UFs, disable slice elimination
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 0 AIG vars, 0 AIG ands, 0 CNF vars, 0 CNF clauses
+[btor>core] SAT call 8 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 6 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 6
+[btor>mc] initialized forward frame at bound k = 7
+[btor>mc] checking forward frame at bound k = 7
+[btor>mc] checking forward frame bad state property 0 at bound k = 7
+[btor>core] calling SAT
+[btor>core] found UFs, disable slice elimination
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 332 AIG vars, 663 AIG ands, 769 CNF vars, 1453 CNF clauses
+[btor>core] SAT call 9 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 7 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 7
+[btor>mc] initialized forward frame at bound k = 8
+[btor>mc] checking forward frame at bound k = 8
+[btor>mc] checking forward frame bad state property 0 at bound k = 8
+[btor>core] calling SAT
+[btor>core] found UFs, disable slice elimination
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 398 AIG vars, 957 AIG ands, 1078 CNF vars, 2226 CNF clauses
+[btor>core] SAT call 10 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 8 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 8
+[btor>mc] initialized forward frame at bound k = 9
+[btor>mc] checking forward frame at bound k = 9
+[btor>mc] checking forward frame bad state property 0 at bound k = 9
+[btor>core] calling SAT
+[btor>core] found UFs, disable slice elimination
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 560 AIG vars, 1525 AIG ands, 1635 CNF vars, 3516 CNF clauses
+[btor>core] SAT call 11 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 9 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 9
+[btor>mc] initialized forward frame at bound k = 10
+[btor>mc] checking forward frame at bound k = 10
+[btor>mc] checking forward frame bad state property 0 at bound k = 10
+[btor>core] calling SAT
+[btor>core] found UFs, disable slice elimination
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 722 AIG vars, 2093 AIG ands, 2192 CNF vars, 4806 CNF clauses
+[btor>core] SAT call 12 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 10 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 10
+[btor>mc] initialized forward frame at bound k = 11
+[btor>mc] checking forward frame at bound k = 11
+[btor>mc] checking forward frame bad state property 0 at bound k = 11
+[btor>core] calling SAT
+[btor>core] found UFs, disable slice elimination
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 884 AIG vars, 2620 AIG ands, 2724 CNF vars, 6012 CNF clauses
+[btor>core] SAT call 13 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 11 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 11
+[btor>mc] initialized forward frame at bound k = 12
+[btor>mc] checking forward frame at bound k = 12
+[btor>mc] checking forward frame bad state property 0 at bound k = 12
+[btor>core] calling SAT
+[btor>core] found UFs, disable slice elimination
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 1096 AIG vars, 3563 AIG ands, 3611 CNF vars, 8188 CNF clauses
+[btorcore] 1 iterations, 5 lemmas, 0 ext. lemmas, vars 129, applies 47
+[btor>slvfun] 1096 AIG vars, 4379 AIG ands, 4017 CNF vars, 9611 CNF clauses
+[btorcore] 2 iterations, 11 lemmas, 0 ext. lemmas, vars 129, applies 47
+[btor>slvfun] 1096 AIG vars, 5360 AIG ands, 4506 CNF vars, 11324 CNF clauses
+[btor>core] SAT call 14 returned 10 in 0.000 seconds
+[btor>mc] bad state property 0 reachable at bound k = 12 SATISFIABLE
+sat
+b0
+#0
+0 0 state0#0
+1 0 state1#0
+2 00000000 state2#0
+3 00000000000000000 state3#0
+4 0 state4#0
+5 0 state5#0
+8 000000000 state8#0
+9 10000010000000001 state9#0
+10 00000000000000000000000000000000 state10#0
+11 00000000000000000000000000000000 state11#0
+12 000000000 state12#0
+13 00000000000000000000000000000000 state13#0
+14 00000000000000000000000000000000 state14#0
+15 0 state15#0
+16 0 state16#0
+17 0 state17#0
+18 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 state18#0
+19 0000000000000000 state19#0
+20 0000000000000000 state20#0
+21 0000000000000000 state21#0
+22 0000000000000000 state22#0
+23 0000000000000000 state23#0
+24 0000000000000000 state24#0
+25 0000000000000000 state25#0
+26 0000000000000000 state26#0
+27 0000000000000000 state27#0
+28 0000000000000000 state28#0
+29 0000000000000000 state29#0
+30 0000000000000000 state30#0
+31 0000000000000000 state31#0
+32 0000000000000000 state32#0
+33 0000000000000000 state33#0
+34 0000000000000000 state34#0
+35 0000000000000000 state35#0
+36 0000000000000000 state36#0
+37 0000000000000000 state37#0
+38 0000000000000000 state38#0
+39 0000000000000000 state39#0
+40 0000000000000000 state40#0
+41 0000000000000000 state41#0
+42 0000000000000000 state42#0
+43 00000000000000000000000000000000 state43#0
+44 00000000000000000000 state44#0
+45 000000000 state45#0
+46 0 state46#0
+47 0 state47#0
+48 00000000000000000000000000000000 state48#0
+49 0 state49#0
+50 00000000000000000000000000000000 state50#0
+51 0 state51#0
+52 00000000000000000000000000000000 state52#0
+53 0 state53#0
+54 00000000000000000000000000000000 state54#0
+55 0 state55#0
+56 00000000000000000000000000000000 state56#0
+57 000000000000000000000000000000000000000000000000000000000000000000000000 state57#0
+58 0 state58#0
+59 00000000000000000000000000000000 state59#0
+60 000000000000000000000000000000000000 state60#0
+61 0 state61#0
+62 000000000000000000 state62#0
+63 0 state63#0
+64 0 state64#0
+65 10000010000000000000000000000001 state65#0
+66 00000000000000000000000000000000 state66#0
+67 [101111111] 10111111111111111111111111111111 state67@0
+67 [111111111] 11111111111111111111111111111111 state67@0
+67 [000000000] 10111111111111111111111111011111 state67@0
+67 [010000000] 11111111111111111111111111011111 state67@0
+69 0000000000000000000000000000000000000000000000000000000000000000 state69#0
+@0
+0 1 input0@0
+1 0000000000000000000000000000000000000000000000000000000000000000 input1@0
+2 00000000000000000000000000000000 input2@0
+3 0 input3@0
+#1
+69 0000000000000000000000000000000000000000000000000000000000000000 state69#1
+@1
+0 0 input0@1
+1 0000000000000000000000000000000000000000000000000000000000000000 input1@1
+2 10000010000000000101111111010101 input2@1
+3 1 input3@1
+#2
+69 0000000000000000000000000000000000000000000000000000000000000000 state69#2
+@2
+0 0 input0@2
+1 0000000000000000000000000000000000000000000000000000000000000000 input1@2
+2 00000000000000000101111111011001 input2@2
+3 0 input3@2
+#3
+69 0000000000000000000000000000000000000000000000000000000000000000 state69#3
+@3
+0 0 input0@3
+1 0000000000000000000000000000000000000000000000000000000000000000 input1@3
+2 11111111111111111111111111101101 input2@3
+3 0 input3@3
+#4
+69 0000000000000000000000000000000000000000000000000000000000000000 state69#4
+@4
+0 0 input0@4
+1 0000000000000000000000000000000000000000000000000000000000000000 input1@4
+2 11111111111111111111111111101101 input2@4
+3 1 input3@4
+#5
+69 0000000000000000000000000000000000000000000000000000000000000000 state69#5
+@5
+0 0 input0@5
+1 0000000000000000000000000000000000000000000000000000000000000000 input1@5
+2 11111111111111111111111111011111 input2@5
+3 1 input3@5
+#6
+69 0000000000000000000000000000000000000000000000000000000000000000 state69#6
+@6
+0 0 input0@6
+1 0000000000000000000000000000000011111111111111111011111111110111 input1@6
+2 11111111111111111111111111000110 input2@6
+3 1 input3@6
+#7
+69 0000000000000000000000000000000000000000000000000000000000000000 state69#7
+@7
+0 0 input0@7
+1 0000000000000000000000000000000011111111111111111111111111111111 input1@7
+2 00000000000000000000000000011110 input2@7
+3 1 input3@7
+#8
+69 0000000000000000000000000000000000000000000000000000000000000000 state69#8
+@8
+0 0 input0@8
+1 0000000000000000000000000000000001111001111111001111111001110101 input1@8
+2 00000000000000000000000000000100 input2@8
+3 1 input3@8
+#9
+69 0000000000000000000000000000000000000000000000000000000000000000 state69#9
+@9
+0 0 input0@9
+1 0000000000000000000000000000000011001110110111111111100111110101 input1@9
+2 00000000000000000010000000101000 input2@9
+3 1 input3@9
+#10
+69 0000000000000000000000000000000000000000000000000000000000000000 state69#10
+@10
+0 0 input0@10
+1 0000000000000000000000000000000000000000000000000000000000000000 input1@10
+2 00000000000000000000000000000110 input2@10
+3 1 input3@10
+#11
+69 0000000000000000000000000000000000000000000000000000000000000000 state69#11
+@11
+0 0 input0@11
+1 0000000000000000000000000000000000000000000000000000000000000000 input1@11
+2 00000000000000000000000000000000 input2@11
+3 0 input3@11
+#12
+69 0000000000000000000000000000000000000000000000000000000000000000 state69#12
+@12
+0 0 input0@12
+1 0000000000000000000000000000000000000000000000000000000000000000 input1@12
+2 00000000000000000000000000000000 input2@12
+3 0 input3@12
+.
+[btor>mc] found 1 reachable and 0 unreachable bad state properties at bound k = 12
+[btor>mc] deleting model checker: 4 inputs, 70 states, 1 bad, 1 constraints
+btormc /home/jetafese/hwmc20-mlir/btor2/array/2019/wolf/2019B/marlann_compute_fail2-p1.btor.export.btor

@@ -1,0 +1,4 @@
+index,btor_time,status
+arbitrated_fifos_n2d8w8.btor,42.202,unsat
+ridecore_array_unknown.btor,299.086,
+ridecore_array_unsafe.btor,95.929,sat

@@ -1,0 +1,5 @@
+boolector: can not read '/home/jetafese/hwmc20-mlir/btor2/bv/2019/wolf/2018D/picorv32-check-p12.btor.mlir.opt.ll.smt2'
+
+real	0m0.037s
+user	0m0.000s
+sys	0m0.004s

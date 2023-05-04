@@ -1,0 +1,4 @@
+./boolector_get_btor.sh /home/jetafese/hwmc20-mlir/btor2/bv/2019/goel/cal107.btor2
+[btor>main] CAUGHT SIGNAL 15
+unknown
+boolector /home/jetafese/hwmc20-mlir/btor2/bv/2019/goel/cal107.btor2 

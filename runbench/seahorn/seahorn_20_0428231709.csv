@@ -1,0 +1,16 @@
+index,BMC,BMC_solve,Control,Result,Thinned,bmc_circ_sz,bmc_dag_sz,btor_time,seahorn_total,status
+rast-p00.btor,,,,,,,,79.285,,
+rast-p01.btor,0.46,0.24,dependence,TRUE,Gate,4,23921,18.45,1.98,unsat
+rast-p03.btor,0.31,0.22,dependence,FALSE,Gate,4,9162,9.205,1.22,sat
+rast-p04.btor,0.67,0.42,dependence,TRUE,Gate,4,23921,18.743,2.20,unsat
+rast-p06.btor,0.10,0.08,dependence,FALSE,Gate,4,1048,4.659,0.70,sat
+rast-p11.btor,1.93,1.36,dependence,TRUE,Gate,4,45077,82.282,4.26,unsat
+rast-p14.btor,,,,,,,,80.256,,
+rast-p16.btor,13.70,13.10,dependence,TRUE,Gate,4,50580,96.65899999999999,16.16,unsat
+rast-p17.btor,4.17,3.45,dependence,TRUE,Gate,4,50577,88.664,6.73,unsat
+rast-p18.btor,0.12,0.09,dependence,FALSE,Gate,4,988,4.54,0.71,sat
+rast-p19.btor,0.10,0.09,dependence,FALSE,Gate,4,1048,4.593,0.69,sat
+rast-p21.btor,0.48,0.37,dependence,TRUE,Gate,4,10943,10.658,1.49,unsat
+simple_alu.btor,,,dependence,,Gate,,,0.466,0.01,
+stack-p1.btor,57.10,57.03,dependence,FALSE,Gate,4,6964,66.517,57.54,sat
+stack-p2.btor,0.01,0.00,dependence,TRUE,Gate,6,21,1.122,0.07,unsat

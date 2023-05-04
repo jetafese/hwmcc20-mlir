@@ -1,0 +1,10 @@
+Info: pointer size: 8, word size: 8
+Info: Trackable memory is not present
+Functions: 
+NONE
+Globals: 
+NONE
+
+real	0m8.757s
+user	0m8.616s
+sys	0m0.130s

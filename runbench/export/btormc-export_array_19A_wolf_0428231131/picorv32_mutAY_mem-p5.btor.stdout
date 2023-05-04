@@ -1,0 +1,1564 @@
+./btormc-export_get_btor.sh /home/jetafese/hwmc20-mlir/btor2/array/2019/wolf/2019A/picorv32_mutAY_mem-p5.btor
+[btormc] parsing input file...
+[btormc] finished parsing
+[btor>mc] calling BMC on 1 properties from bound 0 up-to maximum bound k = 20
+[btor>mc] trace generation enabled
+[btor>mc] new forward manager
+[btor>mc] initialized forward frame at bound k = 0
+[btor>mc] checking forward frame at bound k = 0
+[btor>mc] checking forward frame bad state property 0 at bound k = 0
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>varsubst] 1 variables substituted in 0.0 seconds
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] enabled core engine
+[btor>sat] Lingeling allows both incremental and non-incremental mode
+[btor>sat] initialized Lingeling
+[lingeling] Lingeling
+[lingeling] 
+[lingeling] Version bcp 4fe47dd5a6ef91df6dca4bad81326f992dc3fbab
+[lingeling] 
+[lingeling] Copyright (C) 2010-2016 Armin Biere JKU Linz Austria.
+[lingeling] All rights reserved.
+[lingeling] 
+[lingeling] released Tue Nov 22 09:56:45 EST 2022
+[lingeling] compiled Tue Nov 22 09:56:45 EST 2022
+[lingeling] 
+[lingeling] gcc (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0
+[lingeling] -W -Wall -O3 -fPIC -DNLGLOG -DNDEBUG -DNCHKSOL -DNLGLDRUPLIG
+[lingeling] -DNLGLYALSAT -DNLGLFILES -DNLGLDEMA
+[lingeling] Linux lilla-my 4.15.0-156-generic x86_64
+[lingeling] 
+[btor>slvfun] 0 AIG vars, 0 AIG ands, 0 CNF vars, 0 CNF clauses
+[btor>core] SAT call 2 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 0 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 0
+[btor>mc] initialized forward frame at bound k = 1
+[btor>mc] checking forward frame at bound k = 1
+[btor>mc] checking forward frame bad state property 0 at bound k = 1
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 0 AIG vars, 0 AIG ands, 0 CNF vars, 0 CNF clauses
+[btor>core] SAT call 3 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 1 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 1
+[btor>mc] initialized forward frame at bound k = 2
+[btor>mc] checking forward frame at bound k = 2
+[btor>mc] checking forward frame bad state property 0 at bound k = 2
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 0 AIG vars, 0 AIG ands, 0 CNF vars, 0 CNF clauses
+[btor>core] SAT call 4 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 2 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 2
+[btor>mc] initialized forward frame at bound k = 3
+[btor>mc] checking forward frame at bound k = 3
+[btor>mc] checking forward frame bad state property 0 at bound k = 3
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 0 AIG vars, 0 AIG ands, 0 CNF vars, 0 CNF clauses
+[btor>core] SAT call 5 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 3 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 3
+[btor>mc] initialized forward frame at bound k = 4
+[btor>mc] checking forward frame at bound k = 4
+[btor>mc] checking forward frame bad state property 0 at bound k = 4
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 13 AIG vars, 68 AIG ands, 57 CNF vars, 144 CNF clauses
+[btor>core] SAT call 6 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 4 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 4
+[btor>mc] initialized forward frame at bound k = 5
+[btor>mc] checking forward frame at bound k = 5
+[btor>mc] checking forward frame bad state property 0 at bound k = 5
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 15 AIG vars, 92 AIG ands, 83 CNF vars, 216 CNF clauses
+[btor>core] SAT call 7 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 5 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 5
+[btor>mc] initialized forward frame at bound k = 6
+[btor>mc] checking forward frame at bound k = 6
+[btor>mc] checking forward frame bad state property 0 at bound k = 6
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 552 AIG vars, 5903 AIG ands, 4539 CNF vars, 13059 CNF clauses
+[btor>core] SAT call 8 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 6 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 6
+[btor>mc] initialized forward frame at bound k = 7
+[btor>mc] checking forward frame at bound k = 7
+[btor>mc] checking forward frame bad state property 0 at bound k = 7
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 800 AIG vars, 12988 AIG ands, 10382 CNF vars, 30686 CNF clauses
+[btor>core] SAT call 9 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 7 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 7
+[btor>mc] initialized forward frame at bound k = 8
+[btor>mc] checking forward frame at bound k = 8
+[btor>mc] checking forward frame bad state property 0 at bound k = 8
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 1778 AIG vars, 30984 AIG ands, 23414 CNF vars, 70138 CNF clauses
+[btor>core] SAT call 10 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 8 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 8
+[btor>mc] initialized forward frame at bound k = 9
+[btor>mc] checking forward frame at bound k = 9
+[btor>mc] checking forward frame bad state property 0 at bound k = 9
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 2720 AIG vars, 55110 AIG ands, 39564 CNF vars, 120605 CNF clauses
+[btorcore] 1 iterations, 5 lemmas, 0 ext. lemmas, vars 699, applies 32
+[btor>slvfun] 2720 AIG vars, 55621 AIG ands, 39853 CNF vars, 121583 CNF clauses
+[btor>core] SAT call 11 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 9 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 9
+[btor>mc] initialized forward frame at bound k = 10
+[btor>mc] checking forward frame at bound k = 10
+[btor>mc] checking forward frame bad state property 0 at bound k = 10
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>skel] found 3874 skeleton literals in 5 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 103 new constraints in 0.0 seconds
+[btor>embed] replaced 8 embedded constraints in 0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 2 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 0
+[btor>slvfun] 3662 AIG vars, 80664 AIG ands, 88746 CNF vars, 278458 CNF clauses
+[btor>core] SAT call 12 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 10 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 10
+[btor>mc] initialized forward frame at bound k = 11
+[btor>mc] checking forward frame at bound k = 11
+[btor>mc] checking forward frame bad state property 0 at bound k = 11
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>skel] found 3768 skeleton literals in 29 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 3 new constraints in 0.0 seconds
+[btor>embed] replaced 1 embedded constraints in 0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 2 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 0
+[btor>slvfun] 4604 AIG vars, 107310 AIG ands, 119050 CNF vars, 375776 CNF clauses
+[btorcore] 2 iterations, 10 lemmas, 0 ext. lemmas, vars 795, applies 48
+[btor>slvfun] 4604 AIG vars, 108055 AIG ands, 119425 CNF vars, 377086 CNF clauses
+[btorcore] 3 iterations, 15 lemmas, 0 ext. lemmas, vars 795, applies 48
+[btor>slvfun] 4604 AIG vars, 108683 AIG ands, 119757 CNF vars, 378230 CNF clauses
+[btorcore] 4 iterations, 18 lemmas, 0 ext. lemmas, vars 795, applies 48
+[btor>slvfun] 4604 AIG vars, 109011 AIG ands, 119937 CNF vars, 378844 CNF clauses
+[btorcore] 5 iterations, 21 lemmas, 0 ext. lemmas, vars 795, applies 48
+[btor>slvfun] 4604 AIG vars, 109361 AIG ands, 120129 CNF vars, 379499 CNF clauses
+[btorcore] 6 iterations, 23 lemmas, 0 ext. lemmas, vars 795, applies 48
+[btor>slvfun] 4604 AIG vars, 109415 AIG ands, 120173 CNF vars, 379636 CNF clauses
+[btorcore] 7 iterations, 24 lemmas, 0 ext. lemmas, vars 795, applies 48
+[btor>slvfun] 4604 AIG vars, 109417 AIG ands, 120175 CNF vars, 379642 CNF clauses
+[btorcore] 8 iterations, 25 lemmas, 0 ext. lemmas, vars 795, applies 48
+[btor>slvfun] 4604 AIG vars, 109439 AIG ands, 120187 CNF vars, 379683 CNF clauses
+[btorcore] 9 iterations, 27 lemmas, 0 ext. lemmas, vars 795, applies 48
+[btor>slvfun] 4604 AIG vars, 109716 AIG ands, 120326 CNF vars, 380169 CNF clauses
+[btorcore] 10 iterations, 28 lemmas, 0 ext. lemmas, vars 795, applies 48
+[btor>slvfun] 4604 AIG vars, 109719 AIG ands, 120329 CNF vars, 380178 CNF clauses
+[btor>core] SAT call 13 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 11 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 11
+[btor>mc] initialized forward frame at bound k = 12
+[btor>mc] checking forward frame at bound k = 12
+[btor>mc] checking forward frame bad state property 0 at bound k = 12
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>skel] found 9456 skeleton literals in 53 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 87 new constraints in 0.0 seconds
+[btor>embed] replaced 12 embedded constraints in 0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 2 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 0
+[btor>slvfun] 5546 AIG vars, 133330 AIG ands, 176167 CNF vars, 561936 CNF clauses
+[btorcore] 11 iterations, 33 lemmas, 0 ext. lemmas, vars 843, applies 56
+[btor>slvfun] 5546 AIG vars, 133958 AIG ands, 176499 CNF vars, 563080 CNF clauses
+[btorcore] 12 iterations, 35 lemmas, 0 ext. lemmas, vars 843, applies 56
+[btor>slvfun] 5546 AIG vars, 134114 AIG ands, 176581 CNF vars, 563363 CNF clauses
+[btorcore] 13 iterations, 39 lemmas, 0 ext. lemmas, vars 843, applies 56
+[btor>slvfun] 5546 AIG vars, 134581 AIG ands, 176816 CNF vars, 564184 CNF clauses
+[btorcore] 14 iterations, 42 lemmas, 0 ext. lemmas, vars 843, applies 56
+[btor>slvfun] 5546 AIG vars, 134833 AIG ands, 176974 CNF vars, 564705 CNF clauses
+[btorcore] 15 iterations, 47 lemmas, 0 ext. lemmas, vars 843, applies 56
+[btor>slvfun] 5546 AIG vars, 135498 AIG ands, 177309 CNF vars, 565875 CNF clauses
+[btorcore] 16 iterations, 51 lemmas, 0 ext. lemmas, vars 843, applies 56
+[btor>slvfun] 5546 AIG vars, 135844 AIG ands, 177487 CNF vars, 566493 CNF clauses
+[btorcore] 17 iterations, 56 lemmas, 0 ext. lemmas, vars 843, applies 56
+[btor>slvfun] 5546 AIG vars, 136323 AIG ands, 177744 CNF vars, 567375 CNF clauses
+[btorcore] 18 iterations, 57 lemmas, 0 ext. lemmas, vars 843, applies 56
+[btor>slvfun] 5546 AIG vars, 136452 AIG ands, 177809 CNF vars, 567602 CNF clauses
+[btorcore] 19 iterations, 58 lemmas, 0 ext. lemmas, vars 843, applies 56
+[btor>slvfun] 5546 AIG vars, 136600 AIG ands, 177883 CNF vars, 567861 CNF clauses
+[btorcore] 20 iterations, 60 lemmas, 0 ext. lemmas, vars 843, applies 56
+[btor>slvfun] 5546 AIG vars, 136625 AIG ands, 177898 CNF vars, 567911 CNF clauses
+[btor>core] SAT call 14 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 12 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 12
+[btor>mc] initialized forward frame at bound k = 13
+[btor>mc] checking forward frame at bound k = 13
+[btor>mc] checking forward frame bad state property 0 at bound k = 13
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>skel] found 12499 skeleton literals in 105 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 63 new constraints in 0.0 seconds
+[btor>embed] replaced 5 embedded constraints in 0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 2 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 0
+[btor>slvfun] 6488 AIG vars, 159549 AIG ands, 244109 CNF vars, 782785 CNF clauses
+[btorcore] 21 iterations, 66 lemmas, 0 ext. lemmas, vars 891, applies 64
+[btor>slvfun] 6488 AIG vars, 160372 AIG ands, 244542 CNF vars, 784279 CNF clauses
+[btorcore] 22 iterations, 74 lemmas, 0 ext. lemmas, vars 891, applies 64
+[btor>slvfun] 6488 AIG vars, 161411 AIG ands, 245083 CNF vars, 786151 CNF clauses
+[btorcore] 23 iterations, 79 lemmas, 0 ext. lemmas, vars 891, applies 64
+[btor>slvfun] 6488 AIG vars, 161571 AIG ands, 245169 CNF vars, 786446 CNF clauses
+[btorcore] 24 iterations, 80 lemmas, 0 ext. lemmas, vars 891, applies 64
+[btor>slvfun] 6488 AIG vars, 161593 AIG ands, 245181 CNF vars, 786487 CNF clauses
+[btorcore] 25 iterations, 81 lemmas, 0 ext. lemmas, vars 891, applies 64
+[btor>slvfun] 6488 AIG vars, 161615 AIG ands, 245193 CNF vars, 786528 CNF clauses
+[btorcore] 26 iterations, 83 lemmas, 0 ext. lemmas, vars 891, applies 64
+[btor>slvfun] 6488 AIG vars, 161873 AIG ands, 245323 CNF vars, 786982 CNF clauses
+[btorcore] 27 iterations, 90 lemmas, 0 ext. lemmas, vars 891, applies 64
+[btor>slvfun] 6488 AIG vars, 162508 AIG ands, 245662 CNF vars, 788147 CNF clauses
+[btorcore] 28 iterations, 93 lemmas, 0 ext. lemmas, vars 891, applies 64
+[btor>slvfun] 6488 AIG vars, 162839 AIG ands, 245845 CNF vars, 788770 CNF clauses
+[btorcore] 29 iterations, 95 lemmas, 0 ext. lemmas, vars 891, applies 64
+[btor>slvfun] 6488 AIG vars, 162877 AIG ands, 245873 CNF vars, 788859 CNF clauses
+[btorcore] 30 iterations, 97 lemmas, 0 ext. lemmas, vars 891, applies 64
+[btor>slvfun] 6488 AIG vars, 162920 AIG ands, 245896 CNF vars, 788938 CNF clauses
+[btor>core] SAT call 15 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 13 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 13
+[btor>mc] initialized forward frame at bound k = 14
+[btor>mc] checking forward frame at bound k = 14
+[btor>mc] checking forward frame bad state property 0 at bound k = 14
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>skel] found 15798 skeleton literals in 155 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 61 new constraints in 0.0 seconds
+[btor>embed] replaced 5 embedded constraints in 0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 2 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 0
+[btor>slvfun] 7430 AIG vars, 186668 AIG ands, 332881 CNF vars, 1071663 CNF clauses
+[btorcore] 31 iterations, 101 lemmas, 0 ext. lemmas, vars 939, applies 72
+[btor>slvfun] 7430 AIG vars, 187193 AIG ands, 333164 CNF vars, 1072633 CNF clauses
+[btorcore] 32 iterations, 107 lemmas, 0 ext. lemmas, vars 939, applies 72
+[btor>slvfun] 7430 AIG vars, 188027 AIG ands, 333584 CNF vars, 1074100 CNF clauses
+[btorcore] 33 iterations, 110 lemmas, 0 ext. lemmas, vars 939, applies 72
+[btor>slvfun] 7430 AIG vars, 188187 AIG ands, 333670 CNF vars, 1074395 CNF clauses
+[btorcore] 34 iterations, 112 lemmas, 0 ext. lemmas, vars 939, applies 72
+[btor>slvfun] 7430 AIG vars, 188292 AIG ands, 333755 CNF vars, 1074660 CNF clauses
+[btorcore] 35 iterations, 116 lemmas, 0 ext. lemmas, vars 939, applies 72
+[btor>slvfun] 7430 AIG vars, 188788 AIG ands, 334019 CNF vars, 1075568 CNF clauses
+[btorcore] 36 iterations, 117 lemmas, 0 ext. lemmas, vars 939, applies 72
+[btor>slvfun] 7430 AIG vars, 188917 AIG ands, 334084 CNF vars, 1075795 CNF clauses
+[btorcore] 37 iterations, 119 lemmas, 0 ext. lemmas, vars 939, applies 72
+[btor>slvfun] 7430 AIG vars, 189086 AIG ands, 334169 CNF vars, 1076092 CNF clauses
+[btorcore] 38 iterations, 129 lemmas, 0 ext. lemmas, vars 939, applies 72
+[btor>slvfun] 7430 AIG vars, 190558 AIG ands, 334901 CNF vars, 1078658 CNF clauses
+[btorcore] 39 iterations, 132 lemmas, 0 ext. lemmas, vars 939, applies 72
+[btor>slvfun] 7430 AIG vars, 191002 AIG ands, 335123 CNF vars, 1079435 CNF clauses
+[btorcore] 40 iterations, 133 lemmas, 0 ext. lemmas, vars 939, applies 72
+[btor>slvfun] 7430 AIG vars, 191150 AIG ands, 335197 CNF vars, 1079694 CNF clauses
+[btorcore] 41 iterations, 135 lemmas, 0 ext. lemmas, vars 939, applies 72
+[btor>slvfun] 7430 AIG vars, 191156 AIG ands, 335203 CNF vars, 1079712 CNF clauses
+[btorcore] 42 iterations, 140 lemmas, 0 ext. lemmas, vars 939, applies 72
+[btor>slvfun] 7430 AIG vars, 191289 AIG ands, 335306 CNF vars, 1080036 CNF clauses
+[btorcore] 43 iterations, 143 lemmas, 0 ext. lemmas, vars 939, applies 72
+[btor>slvfun] 7430 AIG vars, 191606 AIG ands, 335465 CNF vars, 1080592 CNF clauses
+[btorcore] 44 iterations, 147 lemmas, 0 ext. lemmas, vars 939, applies 72
+[btor>slvfun] 7430 AIG vars, 192032 AIG ands, 335679 CNF vars, 1081340 CNF clauses
+[btorcore] 45 iterations, 150 lemmas, 0 ext. lemmas, vars 939, applies 72
+[btor>slvfun] 7430 AIG vars, 192203 AIG ands, 335766 CNF vars, 1081643 CNF clauses
+[btorcore] 46 iterations, 153 lemmas, 0 ext. lemmas, vars 939, applies 72
+[btor>slvfun] 7430 AIG vars, 192502 AIG ands, 335917 CNF vars, 1082170 CNF clauses
+[btorcore] 47 iterations, 156 lemmas, 0 ext. lemmas, vars 939, applies 72
+[btor>slvfun] 7430 AIG vars, 192811 AIG ands, 336078 CNF vars, 1082727 CNF clauses
+[btorcore] 48 iterations, 157 lemmas, 0 ext. lemmas, vars 939, applies 72
+[btor>slvfun] 7430 AIG vars, 192940 AIG ands, 336143 CNF vars, 1082954 CNF clauses
+[btorcore] 49 iterations, 158 lemmas, 0 ext. lemmas, vars 939, applies 72
+[btor>slvfun] 7430 AIG vars, 193069 AIG ands, 336208 CNF vars, 1083181 CNF clauses
+[btorcore] 50 iterations, 162 lemmas, 0 ext. lemmas, vars 939, applies 72
+[btor>slvfun] 7430 AIG vars, 193394 AIG ands, 336375 CNF vars, 1083761 CNF clauses
+[btorcore] 51 iterations, 164 lemmas, 0 ext. lemmas, vars 939, applies 72
+[btor>slvfun] 7430 AIG vars, 193534 AIG ands, 336451 CNF vars, 1084021 CNF clauses
+[btorcore] 52 iterations, 167 lemmas, 0 ext. lemmas, vars 939, applies 72
+[btor>slvfun] 7430 AIG vars, 193548 AIG ands, 336465 CNF vars, 1084063 CNF clauses
+[btorcore] 53 iterations, 171 lemmas, 0 ext. lemmas, vars 939, applies 72
+[btor>slvfun] 7430 AIG vars, 193642 AIG ands, 336519 CNF vars, 1084245 CNF clauses
+[btorcore] 54 iterations, 172 lemmas, 0 ext. lemmas, vars 939, applies 72
+[btor>slvfun] 7430 AIG vars, 193694 AIG ands, 336561 CNF vars, 1084376 CNF clauses
+[btorcore] 55 iterations, 177 lemmas, 0 ext. lemmas, vars 939, applies 72
+[btor>slvfun] 7430 AIG vars, 193852 AIG ands, 336645 CNF vars, 1084665 CNF clauses
+[btor lglclone1]   38.702  22% simplifying
+[btor lglclone1]  138.579  78% search
+[btor lglclone1] ==================================
+[btor lglclone1]  178.058 100% all
+[btor lglclone1] 
+[btor lglclone1]         99770 conflicts,         560.3 confs/sec
+[btor lglclone1]          3310 ternaries,          30.1 confs/ternary
+[btor lglclone1]           951 binaries,          104.9 confs/binary
+[btor lglclone1]            11 iterations,       9070.0 confs/iteration
+[btor lglclone1] 
+[btor lglclone1]            41 reductions,          0.2 redus/sec,   2433.4 confs/reduction
+[btor lglclone1]          1278 restarts,            7.2 rests/sec,     78.1 confs/restart
+[btor lglclone1]        703748 decisions,        3952.4 decis/sec,      7.1 decis/conflict
+[btor lglclone1]     603960068 propagations,  3391928.4 props/sec,    858.2 props/decision
+[btor lglclone1] 
+[btor lglclone1] 178.1 seconds, 96.6 MB
+[btor>core] SAT call 16 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 14 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 14
+[btor>mc] initialized forward frame at bound k = 15
+[btor>mc] checking forward frame at bound k = 15
+[btor>mc] checking forward frame bad state property 0 at bound k = 15
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>skel] found 19556 skeleton literals in 251 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 42 new constraints in 0.0 seconds
+[btor>embed] replaced 2 embedded constraints in 0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 2 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 0
+[btor>slvfun] 8372 AIG vars, 218682 AIG ands, 435946 CNF vars, 1408710 CNF clauses
+[btorcore] 56 iterations, 183 lemmas, 0 ext. lemmas, vars 987, applies 80
+[btor>slvfun] 8372 AIG vars, 219362 AIG ands, 436290 CNF vars, 1409910 CNF clauses
+[btorcore] 57 iterations, 188 lemmas, 0 ext. lemmas, vars 987, applies 80
+[btor>slvfun] 8372 AIG vars, 219803 AIG ands, 436519 CNF vars, 1410703 CNF clauses
+[btorcore] 58 iterations, 189 lemmas, 0 ext. lemmas, vars 987, applies 80
+[btor>slvfun] 8372 AIG vars, 219856 AIG ands, 436562 CNF vars, 1410837 CNF clauses
+[btorcore] 59 iterations, 191 lemmas, 0 ext. lemmas, vars 987, applies 80
+[btor>slvfun] 8372 AIG vars, 220114 AIG ands, 436692 CNF vars, 1411291 CNF clauses
+[btorcore] 60 iterations, 193 lemmas, 0 ext. lemmas, vars 987, applies 80
+[btor>slvfun] 8372 AIG vars, 220372 AIG ands, 436822 CNF vars, 1411745 CNF clauses
+[btorcore] 61 iterations, 197 lemmas, 0 ext. lemmas, vars 987, applies 80
+[btor>slvfun] 8372 AIG vars, 220752 AIG ands, 437034 CNF vars, 1412465 CNF clauses
+[btorcore] 62 iterations, 200 lemmas, 0 ext. lemmas, vars 987, applies 80
+[btor>slvfun] 8372 AIG vars, 221108 AIG ands, 437232 CNF vars, 1413138 CNF clauses
+[btorcore] 63 iterations, 201 lemmas, 0 ext. lemmas, vars 987, applies 80
+[btor>slvfun] 8372 AIG vars, 221237 AIG ands, 437297 CNF vars, 1413365 CNF clauses
+[btorcore] 64 iterations, 204 lemmas, 0 ext. lemmas, vars 987, applies 80
+[btor>slvfun] 8372 AIG vars, 221380 AIG ands, 437376 CNF vars, 1413634 CNF clauses
+[btorcore] 65 iterations, 206 lemmas, 0 ext. lemmas, vars 987, applies 80
+[btor>slvfun] 8372 AIG vars, 221430 AIG ands, 437406 CNF vars, 1413734 CNF clauses
+[btorcore] 66 iterations, 208 lemmas, 0 ext. lemmas, vars 987, applies 80
+[btor>slvfun] 8372 AIG vars, 221688 AIG ands, 437536 CNF vars, 1414188 CNF clauses
+[btorcore] 67 iterations, 213 lemmas, 0 ext. lemmas, vars 987, applies 80
+[btor>slvfun] 8372 AIG vars, 221851 AIG ands, 437625 CNF vars, 1414492 CNF clauses
+[btorcore] 68 iterations, 216 lemmas, 0 ext. lemmas, vars 987, applies 80
+[btor>slvfun] 8372 AIG vars, 221863 AIG ands, 437637 CNF vars, 1414528 CNF clauses
+[btorcore] 69 iterations, 218 lemmas, 0 ext. lemmas, vars 987, applies 80
+[btor>slvfun] 8372 AIG vars, 222024 AIG ands, 437724 CNF vars, 1414826 CNF clauses
+[btorcore] 70 iterations, 220 lemmas, 0 ext. lemmas, vars 987, applies 80
+[btor>slvfun] 8372 AIG vars, 222028 AIG ands, 437728 CNF vars, 1414838 CNF clauses
+[btorcore] 71 iterations, 223 lemmas, 0 ext. lemmas, vars 987, applies 80
+[btor>slvfun] 8372 AIG vars, 222219 AIG ands, 437825 CNF vars, 1415176 CNF clauses
+[btorcore] 72 iterations, 227 lemmas, 0 ext. lemmas, vars 987, applies 80
+[btor>slvfun] 8372 AIG vars, 222434 AIG ands, 437956 CNF vars, 1415611 CNF clauses
+[btorcore] 73 iterations, 231 lemmas, 0 ext. lemmas, vars 987, applies 80
+[btor>slvfun] 8372 AIG vars, 222968 AIG ands, 438224 CNF vars, 1416548 CNF clauses
+[btorcore] 74 iterations, 232 lemmas, 0 ext. lemmas, vars 987, applies 80
+[btor>slvfun] 8372 AIG vars, 222993 AIG ands, 438239 CNF vars, 1416598 CNF clauses
+[btorcore] 75 iterations, 233 lemmas, 0 ext. lemmas, vars 987, applies 80
+[btor>slvfun] 8372 AIG vars, 223122 AIG ands, 438304 CNF vars, 1416825 CNF clauses
+[btorcore] 76 iterations, 236 lemmas, 0 ext. lemmas, vars 987, applies 80
+[btor>slvfun] 8372 AIG vars, 223156 AIG ands, 438328 CNF vars, 1416902 CNF clauses
+[btorcore] 77 iterations, 238 lemmas, 0 ext. lemmas, vars 987, applies 80
+[btor>slvfun] 8372 AIG vars, 223204 AIG ands, 438356 CNF vars, 1416996 CNF clauses
+[btorcore] 78 iterations, 242 lemmas, 0 ext. lemmas, vars 987, applies 80
+[btor>slvfun] 8372 AIG vars, 223650 AIG ands, 438580 CNF vars, 1417779 CNF clauses
+[btorcore] 79 iterations, 247 lemmas, 0 ext. lemmas, vars 987, applies 80
+[btor>slvfun] 8372 AIG vars, 224214 AIG ands, 438882 CNF vars, 1418816 CNF clauses
+[btorcore] 80 iterations, 249 lemmas, 0 ext. lemmas, vars 987, applies 80
+[btor>slvfun] 8372 AIG vars, 224365 AIG ands, 438959 CNF vars, 1419084 CNF clauses
+[btorcore] 81 iterations, 251 lemmas, 0 ext. lemmas, vars 987, applies 80
+[btor>slvfun] 8372 AIG vars, 224538 AIG ands, 439048 CNF vars, 1419393 CNF clauses
+[btorcore] 82 iterations, 253 lemmas, 0 ext. lemmas, vars 987, applies 80
+[btor>slvfun] 8372 AIG vars, 224715 AIG ands, 439141 CNF vars, 1419714 CNF clauses
+[btorcore] 83 iterations, 258 lemmas, 0 ext. lemmas, vars 987, applies 80
+[btor>slvfun] 8372 AIG vars, 224798 AIG ands, 439204 CNF vars, 1419913 CNF clauses
+[btorcore] 84 iterations, 260 lemmas, 0 ext. lemmas, vars 987, applies 80
+[btor>slvfun] 8372 AIG vars, 224802 AIG ands, 439208 CNF vars, 1419925 CNF clauses
+[btorcore] 85 iterations, 262 lemmas, 0 ext. lemmas, vars 987, applies 80
+[btor>slvfun] 8372 AIG vars, 224807 AIG ands, 439213 CNF vars, 1419940 CNF clauses
+[btorcore] 86 iterations, 263 lemmas, 0 ext. lemmas, vars 987, applies 80
+[btor>slvfun] 8372 AIG vars, 224955 AIG ands, 439287 CNF vars, 1420199 CNF clauses
+[btorcore] 87 iterations, 266 lemmas, 0 ext. lemmas, vars 987, applies 80
+[btor>slvfun] 8372 AIG vars, 224985 AIG ands, 439307 CNF vars, 1420264 CNF clauses
+[btorcore] 88 iterations, 269 lemmas, 0 ext. lemmas, vars 987, applies 80
+[btor>slvfun] 8372 AIG vars, 224991 AIG ands, 439313 CNF vars, 1420282 CNF clauses
+[btorcore] 89 iterations, 272 lemmas, 0 ext. lemmas, vars 987, applies 80
+[btor>slvfun] 8372 AIG vars, 225000 AIG ands, 439322 CNF vars, 1420309 CNF clauses
+[btorcore] 90 iterations, 274 lemmas, 0 ext. lemmas, vars 987, applies 80
+[btor>slvfun] 8372 AIG vars, 225004 AIG ands, 439326 CNF vars, 1420321 CNF clauses
+[btorcore] 91 iterations, 277 lemmas, 0 ext. lemmas, vars 987, applies 80
+[btor>slvfun] 8372 AIG vars, 225045 AIG ands, 439357 CNF vars, 1420419 CNF clauses
+[btorcore] 92 iterations, 278 lemmas, 0 ext. lemmas, vars 987, applies 80
+[btor>slvfun] 8372 AIG vars, 225048 AIG ands, 439360 CNF vars, 1420428 CNF clauses
+[btorcore] 93 iterations, 279 lemmas, 0 ext. lemmas, vars 987, applies 80
+[btor>slvfun] 8372 AIG vars, 225050 AIG ands, 439362 CNF vars, 1420434 CNF clauses
+[btorcore] 94 iterations, 281 lemmas, 0 ext. lemmas, vars 987, applies 80
+[btor>slvfun] 8372 AIG vars, 225308 AIG ands, 439492 CNF vars, 1420888 CNF clauses
+[btor>core] SAT call 17 returned 10 in 0.000 seconds
+[btor>mc] bad state property 0 reachable at bound k = 15 SATISFIABLE
+sat
+b0
+#0
+0 0 state0#0
+1 0 state1#0
+2 1 state2#0
+3 0 state3#0
+4 0 state4#0
+5 0 state5#0
+6 00000000000000000000000000000000 state6#0
+7 00000000000000000000000000000000 state7#0
+8 0010 state8#0
+9 0001 state9#0
+10 00000000000000000000000000000000 state10#0
+11 00000000000000000000000000000000 state11#0
+13 00110100000100001101100000000000 state13#0
+14 00110010000100001101100000000000 state14#0
+15 0 state15#0
+16 00000000000000000000000000000000 state16#0
+17 0 state17#0
+18 1 state18#0
+19 0 state19#0
+20 0 state20#0
+21 0 state21#0
+22 0 state22#0
+23 0 state23#0
+24 0 state24#0
+25 0 state25#0
+26 0 state26#0
+27 0 state27#0
+28 0 state28#0
+29 0 state29#0
+30 0 state30#0
+31 0 state31#0
+32 0 state32#0
+33 0 state33#0
+34 0 state34#0
+35 0 state35#0
+36 0 state36#0
+37 0 state37#0
+38 00000000000000000000000000000000 state38#0
+39 0 state39#0
+40 0 state40#0
+41 0 state41#0
+42 00 state42#0
+43 1 state43#0
+44 0000000000000000000000000000000000000000000000000000000000000000 state44#0
+45 0000000000000000000000000000000000000000000000000000000000000000 state45#0
+46 00000000 state46#0
+48 01000 state48#0
+49 00000 state49#0
+50 00000000000000000000000000000000 state50#0
+51 00000000000000000000000000000000 state51#0
+52 00000000000000000000000000000000 state52#0
+53 00000000000000000000000000000010 state53#0
+54 0 state54#0
+55 00000000000000000000000000000000 state55#0
+56 0 state56#0
+57 1 state57#0
+58 00000000000000000000000000000000 state58#0
+59 00000000000000000000000000000000 state59#0
+60 00000000000000000000000000000000 state60#0
+61 10000 state61#0
+62 1 state62#0
+63 1 state63#0
+64 0 state64#0
+65 0 state65#0
+66 0 state66#0
+67 0 state67#0
+68 0 state68#0
+69 0 state69#0
+70 1 state70#0
+71 0 state71#0
+72 0 state72#0
+73 0 state73#0
+74 0 state74#0
+75 0 state75#0
+76 0 state76#0
+77 0 state77#0
+78 0 state78#0
+79 0 state79#0
+80 0 state80#0
+81 0 state81#0
+82 0 state82#0
+83 0 state83#0
+84 0 state84#0
+85 0 state85#0
+86 0 state86#0
+87 0 state87#0
+88 0 state88#0
+89 0 state89#0
+90 0 state90#0
+91 0 state91#0
+92 1 state92#0
+93 0 state93#0
+94 0 state94#0
+95 0 state95#0
+96 0 state96#0
+97 0 state97#0
+98 0 state98#0
+99 0 state99#0
+100 0 state100#0
+101 0 state101#0
+102 0 state102#0
+103 0 state103#0
+104 0 state104#0
+105 0 state105#0
+106 0 state106#0
+107 0 state107#0
+108 00000 state108#0
+109 1100100001010011 state109#0
+110 0 state110#0
+111 0 state111#0
+112 0 state112#0
+113 0 state113#0
+114 0 state114#0
+115 00 state115#0
+116 00100001000000011001000110000000 state116#0
+117 0 state117#0
+118 00000000000000000000000000000000 state118#0
+119 11 state119#0
+120 0000 state120#0
+121 00000000000000000000000000000000 state121#0
+122 00000000 state122#0
+123 0000000000000000 state123#0
+124 00000 state124#0
+125 00000000000000000000000000000000 state125#0
+126 00000000000000000000000000000000 state126#0
+127 00000000000000000000000000000000 state127#0
+128 0 state128#0
+129 00000000000000000000000000000000 state129#0
+130 0 state130#0
+131 1 state131#0
+132 0 state132#0
+133 0 state133#0
+134 0 state134#0
+135 0 state135#0
+136 0 state136#0
+137 0 state137#0
+138 0 state138#0
+139 0 state139#0
+140 0 state140#0
+141 0 state141#0
+142 0 state142#0
+143 0 state143#0
+144 0 state144#0
+145 0 state145#0
+146 0 state146#0
+147 0 state147#0
+148 0 state148#0
+149 0 state149#0
+150 0 state150#0
+151 00000000000000000000000000000000 state151#0
+152 0 state152#0
+153 0 state153#0
+154 0 state154#0
+155 00 state155#0
+156 1 state156#0
+157 0000000000000000000000000000000000000000000000000000000000000000 state157#0
+158 0000000000000000000000000000000000000000000000000000000000000000 state158#0
+159 00000000 state159#0
+161 11000 state161#0
+162 00000 state162#0
+163 00000000000000000000000000000000 state163#0
+164 00000000000000000000000000000000 state164#0
+165 00000000000000000000000000000000 state165#0
+166 00000000000000000000000000000010 state166#0
+167 0 state167#0
+168 00000000000000000000000000000000 state168#0
+169 0 state169#0
+170 1 state170#0
+171 00000000000000000000000000000000 state171#0
+172 00000000000000000000000000000000 state172#0
+173 00000000000000000000000000000000 state173#0
+174 10000 state174#0
+175 1 state175#0
+176 1 state176#0
+177 0 state177#0
+178 0 state178#0
+179 0 state179#0
+180 0 state180#0
+181 0 state181#0
+182 0 state182#0
+183 1 state183#0
+184 0 state184#0
+185 0 state185#0
+186 0 state186#0
+187 0 state187#0
+188 0 state188#0
+189 0 state189#0
+190 0 state190#0
+191 0 state191#0
+192 0 state192#0
+193 0 state193#0
+194 0 state194#0
+195 0 state195#0
+196 0 state196#0
+197 0 state197#0
+198 0 state198#0
+199 0 state199#0
+200 0 state200#0
+201 0 state201#0
+202 0 state202#0
+203 0 state203#0
+204 0 state204#0
+205 0 state205#0
+206 0 state206#0
+207 0 state207#0
+208 0 state208#0
+209 0 state209#0
+210 0 state210#0
+211 0 state211#0
+212 0 state212#0
+213 0 state213#0
+214 0 state214#0
+215 0 state215#0
+216 0 state216#0
+217 0 state217#0
+218 0 state218#0
+219 0 state219#0
+220 0 state220#0
+221 00000 state221#0
+222 1100010001010011 state222#0
+223 1 state223#0
+224 0 state224#0
+225 0 state225#0
+226 0 state226#0
+227 0 state227#0
+228 00 state228#0
+229 10000000100000110110000100000001 state229#0
+230 0 state230#0
+231 00000000000000000000000000000000 state231#0
+232 11 state232#0
+233 0000 state233#0
+234 00000000000000000000000000000000 state234#0
+235 00000000 state235#0
+236 0000000000000000 state236#0
+237 00000 state237#0
+238 00000000000000000000000000000000 state238#0
+239 00000000000000000000000000000000 state239#0
+240 00000000000000000000000000000000 state240#0
+241 0 state241#0
+242 0 state242#0
+243 000000000000000000000000000000 state243#0
+244 00000000000000000000000000000000 state244#0
+245 00000000000000000000000000000000 state245#0
+246 00000000000000000000000000000000 state246#0
+247 00000000000000000000000000000000 state247#0
+248 1 state248#0
+249 0 state249#0
+250 0 state250#0
+251 0 state251#0
+252 00000 state252#0
+253 00000000000000000000000000000000 state253#0
+254 00000000000000000000000000000000 state254#0
+255 0 state255#0
+256 0 state256#0
+257 000000000000000000000000000000 state257#0
+258 00000000000000000000000000000000 state258#0
+259 00000000000000000000000000000000 state259#0
+260 00000000000000000000000000000000 state260#0
+261 00000000000000000000000000000000 state261#0
+262 0 state262#0
+263 0 state263#0
+264 0 state264#0
+265 0 state265#0
+266 00000 state266#0
+@0
+0 0 input0@0
+1 1 input1@0
+2 00001000100000110000000000000001 input2@0
+3 00000000000000000000000000000000 input3@0
+#1
+16 00000000000000000000000000000000 state16#1
+29 0 state29#1
+50 00000000000000000000000000000000 state50#1
+118 00000000000000000000000000000000 state118#1
+120 0000 state120#1
+121 00000000000000000000000000000000 state121#1
+122 00000000 state122#1
+123 0000000000000000 state123#1
+129 00000000000000000000000000000000 state129#1
+142 0 state142#1
+163 00000000000000000000000000000000 state163#1
+231 00000000000000000000000000000000 state231#1
+233 0000 state233#1
+234 00000000000000000000000000000000 state234#1
+235 00000000 state235#1
+236 0000000000000000 state236#1
+239 00000000000000000000000000000000 state239#1
+240 00000000000000000000000000000000 state240#1
+241 0 state241#1
+242 0 state242#1
+243 000000000000000000000000000000 state243#1
+244 00000000000000000000000000000000 state244#1
+245 00000000000000000000000000000000 state245#1
+246 00000000000000000000000000000000 state246#1
+247 00000000000000000000000000000000 state247#1
+248 0 state248#1
+249 0 state249#1
+250 0 state250#1
+251 0 state251#1
+252 00000 state252#1
+253 00000000000000000000000000000000 state253#1
+254 00000000000000000000000000000000 state254#1
+255 0 state255#1
+256 0 state256#1
+257 000000000000000000000000000000 state257#1
+258 00000000000000000000000000000000 state258#1
+259 00000000000000000000000000000000 state259#1
+260 00000000000000000000000000000000 state260#1
+261 00000000000000000000000000000000 state261#1
+262 0 state262#1
+263 0 state263#1
+264 0 state264#1
+265 0 state265#1
+266 00000 state266#1
+@1
+0 1 input0@1
+1 0 input1@1
+2 00000000000000000000000000000000 input2@1
+3 00000000000000000000000000000000 input3@1
+#2
+16 00000000000000000000000000000000 state16#2
+29 0 state29#2
+50 00000000000000000000000000000000 state50#2
+118 00000000000000000000000000000000 state118#2
+120 0000 state120#2
+121 00000000000000000000000000000000 state121#2
+122 00000000 state122#2
+123 0000000000000000 state123#2
+129 00000000000000000000000000000000 state129#2
+142 0 state142#2
+163 00000000000000000000000000000000 state163#2
+231 00000000000000000000000000000000 state231#2
+233 0000 state233#2
+234 00000000000000000000000000000000 state234#2
+235 00000000 state235#2
+236 0000000000000000 state236#2
+239 00000000000000000000000000000000 state239#2
+240 00000000000000000000000000000000 state240#2
+241 0 state241#2
+242 0 state242#2
+243 000000000000000000000000000000 state243#2
+244 00000000000000000000000000000000 state244#2
+245 00000000000000000000000000000000 state245#2
+246 00000000000000000000000000000000 state246#2
+247 00000000000000000000000000000000 state247#2
+248 0 state248#2
+249 0 state249#2
+250 0 state250#2
+251 0 state251#2
+252 00000 state252#2
+253 00000000000000000000000000000000 state253#2
+254 00000000000000000000000000000000 state254#2
+255 0 state255#2
+256 0 state256#2
+257 000000000000000000000000000000 state257#2
+258 00000000000000000000000000000000 state258#2
+259 00000000000000000000000000000000 state259#2
+260 00000000000000000000000000000000 state260#2
+261 00000000000000000000000000000000 state261#2
+262 0 state262#2
+263 0 state263#2
+264 0 state264#2
+265 0 state265#2
+266 00000 state266#2
+@2
+0 1 input0@2
+1 0 input1@2
+2 00000000000000000000000000000000 input2@2
+3 00000000000000000000000000000000 input3@2
+#3
+16 00000000000000000000000000000000 state16#3
+29 0 state29#3
+50 00000000000000000000000000000000 state50#3
+118 00000000000000000000000000000000 state118#3
+120 0000 state120#3
+121 00000000000000000000000000000000 state121#3
+122 00000000 state122#3
+123 0000000000000000 state123#3
+129 00000000000000000000000000000000 state129#3
+142 0 state142#3
+163 00000000000000000000000000000000 state163#3
+231 00000000000000000000000000000000 state231#3
+233 0000 state233#3
+234 00000000000000000000000000000000 state234#3
+235 00000000 state235#3
+236 0000000000000000 state236#3
+239 00000000000000000000000000000000 state239#3
+240 00000000000000000000000000000000 state240#3
+241 0 state241#3
+242 0 state242#3
+243 000000000000000000000000000000 state243#3
+244 00000000000000000000000000000000 state244#3
+245 00000000000000000000000000000000 state245#3
+246 00000000000000000000000000000000 state246#3
+247 00000000000000000000000000000000 state247#3
+248 0 state248#3
+249 0 state249#3
+250 0 state250#3
+251 0 state251#3
+252 00000 state252#3
+253 00000000000000000000000000000000 state253#3
+254 00000000000000000000000000000000 state254#3
+255 0 state255#3
+256 0 state256#3
+257 000000000000000000000000000000 state257#3
+258 00000000000000000000000000000000 state258#3
+259 00000000000000000000000000000000 state259#3
+260 00000000000000000000000000000000 state260#3
+261 00000000000000000000000000000000 state261#3
+262 0 state262#3
+263 0 state263#3
+264 0 state264#3
+265 0 state265#3
+266 00000 state266#3
+@3
+0 1 input0@3
+1 1 input1@3
+2 00000110000000010010000000001011 input2@3
+3 00000000000000000000000000000000 input3@3
+#4
+16 00000000000000000000000000000000 state16#4
+29 0 state29#4
+50 00000000000000000000000000000000 state50#4
+118 00000000000000000000000000000000 state118#4
+120 0000 state120#4
+121 00000000000000000000000000000000 state121#4
+122 00000000 state122#4
+123 0000000000000000 state123#4
+129 00000000000000000000000000000000 state129#4
+142 0 state142#4
+163 00000000000000000000000000000000 state163#4
+231 00000000000000000000000000000000 state231#4
+233 0000 state233#4
+234 00000000000000000000000000000000 state234#4
+235 00000000 state235#4
+236 0000000000000000 state236#4
+239 00000000000000000000000000000000 state239#4
+240 00000000000000000000000000000000 state240#4
+241 0 state241#4
+242 0 state242#4
+243 000000000000000000000000000000 state243#4
+244 00000000000000000000000000000000 state244#4
+245 00000000000000000000000000000000 state245#4
+246 00000000000000000000000000000000 state246#4
+247 00000000000000000000000000000000 state247#4
+248 0 state248#4
+249 0 state249#4
+250 0 state250#4
+251 0 state251#4
+252 00000 state252#4
+253 00000000000000000000000000000000 state253#4
+254 00000000000000000000000000000000 state254#4
+255 0 state255#4
+256 0 state256#4
+257 000000000000000000000000000000 state257#4
+258 00000000000000000000000000000000 state258#4
+259 00000000000000000000000000000000 state259#4
+260 00000000000000000000000000000000 state260#4
+261 00000000000000000000000000000000 state261#4
+262 0 state262#4
+263 0 state263#4
+264 0 state264#4
+265 0 state265#4
+266 00000 state266#4
+@4
+0 1 input0@4
+1 1 input1@4
+2 10001000000000101100000001100001 input2@4
+3 00000000000000000000000000000000 input3@4
+#5
+16 00000000000000000000000000000000 state16#5
+29 0 state29#5
+50 10000000000000000000000000000000 state50#5
+118 00000000000000000000000000000000 state118#5
+120 0000 state120#5
+121 00000000000000000000000000000000 state121#5
+122 00000000 state122#5
+123 0000000000000000 state123#5
+129 00000000000000000000000000000000 state129#5
+142 0 state142#5
+163 10000000000000000000000000000000 state163#5
+231 00000000000000000000000000000000 state231#5
+233 0000 state233#5
+234 00000000000000000000000000000000 state234#5
+235 00000000 state235#5
+236 0000000000000000 state236#5
+239 00110000000100001101100000000000 state239#5
+240 00110000000100001101100000000000 state240#5
+241 0 state241#5
+242 1 state242#5
+243 000000000000000000000000000001 state243#5
+244 00000000000000000000000000000000 state244#5
+245 00000000000000000000000000000000 state245#5
+246 00000000000000000000000000000000 state246#5
+247 00000000000000000000000000000101 state247#5
+248 0 state248#5
+249 0 state249#5
+250 0 state250#5
+251 0 state251#5
+252 00000 state252#5
+253 00000000000000000000000000000000 state253#5
+254 00000000000000000000000000000000 state254#5
+255 0 state255#5
+256 0 state256#5
+257 000000000000000000000000000000 state257#5
+258 00000000000000000000000000000000 state258#5
+259 00000000000000000000000000000000 state259#5
+260 00000000000000000000000000000000 state260#5
+261 00000000000000000000000000000001 state261#5
+262 0 state262#5
+263 0 state263#5
+264 0 state264#5
+265 0 state265#5
+266 00000 state266#5
+@5
+0 1 input0@5
+1 1 input1@5
+2 00000110000000110101010010001001 input2@5
+3 00000000000000000000000000000000 input3@5
+#6
+16 00110000000000001101100000000000 state16#6
+29 0 state29#6
+50 00000000101000001010001000100000 state50#6
+118 00000000000000000000000000000000 state118#6
+120 0000 state120#6
+121 00000000000000000000000000000000 state121#6
+122 00000000 state122#6
+123 0000000000000000 state123#6
+129 00000000000000000000000000001110 state129#6
+142 0 state142#6
+163 00001010101000101000000010001000 state163#6
+231 00000000000000000000000000000000 state231#6
+233 0000 state233#6
+234 00000000000000000000000000000000 state234#6
+235 00000000 state235#6
+236 0000000000000000 state236#6
+239 00000000000000000000000000000000 state239#6
+240 00000000000000000000000000000000 state240#6
+241 1 state241#6
+242 0 state242#6
+243 000000000000000000000000000000 state243#6
+244 00100000001000110101010110100101 state244#6
+245 00000000000000000000000000000000 state245#6
+246 00000000000000000000000000000000 state246#6
+247 00000000000000000000000000000001 state247#6
+248 0 state248#6
+249 1 state249#6
+250 0 state250#6
+251 0 state251#6
+252 00000 state252#6
+253 00000000000000000000000000000000 state253#6
+254 00000000000000000000000000000010 state254#6
+255 0 state255#6
+256 1 state256#6
+257 000000000000000000000000000000 state257#6
+258 11110000000000110110101011000000 state258#6
+259 00000000000000000000000000000010 state259#6
+260 00000000000000000000000000000000 state260#6
+261 00000000000000000000000000000000 state261#6
+262 0 state262#6
+263 1 state263#6
+264 0 state264#6
+265 0 state265#6
+266 00000 state266#6
+@6
+0 1 input0@6
+1 1 input1@6
+2 00100000001000011001110110110001 input2@6
+3 00000000000000000000000000000000 input3@6
+#7
+16 00000000001000000000000000000000 state16#7
+29 1 state29#7
+50 00000000000000000000000000000000 state50#7
+118 00000000000000000000000000000000 state118#7
+120 0001 state120#7
+121 00000000000000000000000011111111 state121#7
+122 10010101 state122#7
+123 0000000000000000 state123#7
+129 00000000000000000000100000000001 state129#7
+142 1 state142#7
+163 00000000000000000000000000000110 state163#7
+231 00000000000000000000000000000000 state231#7
+233 0010 state233#7
+234 00000000000000000000000001111111 state234#7
+235 10010101 state235#7
+236 0000000000000000 state236#7
+239 00000000000000000000000000000000 state239#7
+240 00000000000000000000000000000000 state240#7
+241 0 state241#7
+242 1 state242#7
+243 000000000000000000000000000001 state243#7
+244 11111111111111111111000000000000 state244#7
+245 00000000000000000000000000000010 state245#7
+246 00000000000000000000000000000000 state246#7
+247 00000000000000000000000000000010 state247#7
+248 0 state248#7
+249 1 state249#7
+250 0 state250#7
+251 1 state251#7
+252 00000 state252#7
+253 00000000000000000000000000000000 state253#7
+254 00000000000000000000000000000010 state254#7
+255 1 state255#7
+256 0 state256#7
+257 000000000000000000000000000000 state257#7
+258 11111111111111111111000000000000 state258#7
+259 00000000000000000000000000000010 state259#7
+260 00000000000000000000000000000000 state260#7
+261 00000000000000000000000000000000 state261#7
+262 0 state262#7
+263 1 state263#7
+264 1 state264#7
+265 0 state265#7
+266 00000 state266#7
+@7
+0 1 input0@7
+1 1 input1@7
+2 11000000000000100000100001110000 input2@7
+3 00000000000000000000000000000000 input3@7
+#8
+16 00100000001000011011000000000001 state16#8
+29 1 state29#8
+50 00000000000000000000000000000100 state50#8
+118 00000000000000000000000000000000 state118#8
+120 0010 state120#8
+121 00000000000000000000000000100010 state121#8
+122 00001010 state122#8
+123 0000000000000000 state123#8
+129 00000000000000000000000000010000 state129#8
+142 0 state142#8
+163 00000000000000000000000000000010 state163#8
+231 00000000000000000000000000000000 state231#8
+233 0011 state233#8
+234 00000000000000000000000000000001 state234#8
+235 00001010 state235#8
+236 0000000000000000 state236#8
+239 00000000000000000000000000000010 state239#8
+240 00000000000000000000000000000000 state240#8
+241 1 state241#8
+242 1 state242#8
+243 000000100000000001000000000001 state243#8
+244 00000000000000000000000000000010 state244#8
+245 00000000000000000000000000100000 state245#8
+246 00000000000000000000000000000000 state246#8
+247 00000000000000000000000000000001 state247#8
+248 0 state248#8
+249 1 state249#8
+250 1 state250#8
+251 0 state251#8
+252 00000 state252#8
+253 00000000000000000000000000000010 state253#8
+254 00000000000000000000000000000010 state254#8
+255 1 state255#8
+256 1 state256#8
+257 000000000000000000000010000001 state257#8
+258 00000000000000000000000000000010 state258#8
+259 00000000000000000000000000000001 state259#8
+260 00000000000000000000000000000000 state260#8
+261 00000000000000000000000000000001 state261#8
+262 0 state262#8
+263 0 state263#8
+264 0 state264#8
+265 0 state265#8
+266 00000 state266#8
+@8
+0 1 input0@8
+1 0 input1@8
+2 00000100000101110010101110000011 input2@8
+3 00000000000000000000000000000000 input3@8
+#9
+16 00010100000100000101100000000000 state16#9
+29 1 state29#9
+50 00010000000100000100101100000110 state50#9
+118 00000000000000000000000000000000 state118#9
+120 0010 state120#9
+121 00000000000000000000000000000000 state121#9
+122 10011011 state122#9
+123 0000000000000000 state123#9
+129 00000000000000000000000000000001 state129#9
+142 1 state142#9
+163 00101001000001111011100101111100 state163#9
+231 00000000000000000000000000000000 state231#9
+233 0010 state233#9
+234 00000000000000000000000000000010 state234#9
+235 10011001 state235#9
+236 0000000000000000 state236#9
+239 00000000000100000000000000000000 state239#9
+240 11111111111111111111111111111111 state240#9
+241 0 state241#9
+242 1 state242#9
+243 111000111101011110101111010110 state243#9
+244 00000000000000000000000000000101 state244#9
+245 00000000000000000000000000000011 state245#9
+246 10100101010110101011111010101000 state246#9
+247 00000000000000000000000000000010 state247#9
+248 0 state248#9
+249 1 state249#9
+250 0 state250#9
+251 0 state251#9
+252 00000 state252#9
+253 00000000000000000000000000000000 state253#9
+254 10111100110001000001111111111111 state254#9
+255 0 state255#9
+256 0 state256#9
+257 110001001110101010010111001010 state257#9
+258 00000000000000000000000000000101 state258#9
+259 00000000000000000000000000000010 state259#9
+260 00000000000000000000000000000010 state260#9
+261 00000000000000000000000000000010 state261#9
+262 0 state262#9
+263 0 state263#9
+264 1 state264#9
+265 0 state265#9
+266 00000 state266#9
+@9
+0 1 input0@9
+1 1 input1@9
+2 11001000001000111000000100100011 input2@9
+3 00010000001000000100000010000001 input3@9
+#10
+16 00000000000000000000000000000011 state16#10
+29 1 state29#10
+50 00010011000100010000101000101010 state50#10
+118 00000000000000000000000000000000 state118#10
+120 1110 state120#10
+121 00000000000000000000000000000011 state121#10
+122 00000100 state122#10
+123 0000000000000000 state123#10
+129 00000000000000000000000000000000 state129#10
+142 1 state142#10
+163 10100011110111110110001101101001 state163#10
+231 00000000000000000000000000000000 state231#10
+233 0000 state233#10
+234 00000000000000000000000000000011 state234#10
+235 00001000 state235#10
+236 0000000000000000 state236#10
+239 00000000000000000000000000000000 state239#10
+240 00000000000000000000000000000000 state240#10
+241 1 state241#10
+242 1 state242#10
+243 111111111111111111111111111111 state243#10
+244 00000000000000000000000000000100 state244#10
+245 00000000000000000000000000000100 state245#10
+246 00000000000000000000000000000000 state246#10
+247 00000000000000000000000000000010 state247#10
+248 0 state248#10
+249 0 state249#10
+250 0 state250#10
+251 1 state251#10
+252 00000 state252#10
+253 00000000000000000000000000000000 state253#10
+254 00000000000000000000000000000000 state254#10
+255 1 state255#10
+256 1 state256#10
+257 111111111111111111111111111111 state257#10
+258 00000000000000000000000000000100 state258#10
+259 00000000000000000000000000000011 state259#10
+260 00000000000000000000000000000000 state260#10
+261 00000000000000000000000000000010 state261#10
+262 0 state262#10
+263 0 state263#10
+264 1 state264#10
+265 0 state265#10
+266 00000 state266#10
+@10
+0 1 input0@10
+1 1 input1@10
+2 11000100010011011000111010100011 input2@10
+3 11101111110111111011111101111100 input3@10
+#11
+16 00000000000000000000000000000001 state16#11
+29 1 state29#11
+50 00000000000000000000000000000011 state50#11
+118 00000000000000000000000000000000 state118#11
+120 0100 state120#11
+121 00000000000000000000000001111111 state121#11
+122 10000000 state122#11
+123 0000000000000000 state123#11
+129 00000000000000000000000000000001 state129#11
+142 1 state142#11
+163 00000000000000000000000000000001 state163#11
+231 00000000000000000000000000000000 state231#11
+233 0100 state233#11
+234 00000000000000000000000001111111 state234#11
+235 10100000 state235#11
+236 0000000000000000 state236#11
+239 00000001000000000000000000000000 state239#11
+240 00000000000000000000000000000000 state240#11
+241 1 state241#11
+242 1 state242#11
+243 111111111111111111111111111111 state243#11
+244 00000000000000000000000000000010 state244#11
+245 11111111111111111111111100100001 state245#11
+246 00000000000000000000000000000000 state246#11
+247 00000000000000000000000000000010 state247#11
+248 0 state248#11
+249 1 state249#11
+250 1 state250#11
+251 0 state251#11
+252 00000 state252#11
+253 00000000000000000000000000000011 state253#11
+254 00000000000000000000000000000000 state254#11
+255 0 state255#11
+256 0 state256#11
+257 100000000000000000000000000000 state257#11
+258 00000000000000000000000000000000 state258#11
+259 11111111111111111111111100100011 state259#11
+260 00000000000000000000000000000000 state260#11
+261 00000000000000000000000000000010 state261#11
+262 0 state262#11
+263 0 state263#11
+264 0 state264#11
+265 1 state265#11
+266 00000 state266#11
+@11
+0 1 input0@11
+1 0 input1@11
+2 00000101110001111010000100001011 input2@11
+3 00000000000000000000000000000000 input3@11
+#12
+16 00000000000000000000000000000001 state16#12
+29 1 state29#12
+50 00000000000000000000000000001000 state50#12
+118 00000000000000000000000000000000 state118#12
+120 0100 state120#12
+121 00000000000000000000000001111111 state121#12
+122 10101001 state122#12
+123 0000000000000000 state123#12
+129 11111111111111111111111111111111 state129#12
+142 0 state142#12
+163 00000000000000000000000000001000 state163#12
+231 00000000000000000000000000000000 state231#12
+233 0100 state233#12
+234 00000000000000000000000001111111 state234#12
+235 10101001 state235#12
+236 0000000000000000 state236#12
+239 00000000000000000000000000000000 state239#12
+240 00000000000000000000000000000000 state240#12
+241 1 state241#12
+242 1 state242#12
+243 111111111111111111111111111111 state243#12
+244 00000000000000000000000000000110 state244#12
+245 11111111111111111111111111111111 state245#12
+246 00000000000000000000000000000000 state246#12
+247 00000000000000000000000000000010 state247#12
+248 0 state248#12
+249 0 state249#12
+250 0 state250#12
+251 0 state251#12
+252 00000 state252#12
+253 00000000000000000000000000000011 state253#12
+254 00000000000000000000000000000000 state254#12
+255 0 state255#12
+256 0 state256#12
+257 000000000000000000000000000001 state257#12
+258 00000000000000000000000000000000 state258#12
+259 11111111111111111111111111111111 state259#12
+260 11111111111111111111111010000110 state260#12
+261 00000000000000000000000000000010 state261#12
+262 0 state262#12
+263 0 state263#12
+264 1 state264#12
+265 0 state265#12
+266 00000 state266#12
+@12
+0 1 input0@12
+1 1 input1@12
+2 10100100000011011010100000000010 input2@12
+3 00000000000000000000000000000100 input3@12
+#13
+16 00000000000000000000000000000000 state16#13
+29 1 state29#13
+50 00000000000000000000000000000000 state50#13
+118 00000000000000000000000000000000 state118#13
+120 0100 state120#13
+121 00000000000000000000000001111111 state121#13
+122 00000011 state122#13
+123 0000000000000000 state123#13
+129 00000000000000000000000000000000 state129#13
+142 1 state142#13
+163 00000000000000000000000000000000 state163#13
+231 00000000000000000000000000000000 state231#13
+233 0100 state233#13
+234 00000000000000000000000001111111 state234#13
+235 00000000 state235#13
+236 0000000000000000 state236#13
+239 00000000000000000000000000000000 state239#13
+240 00000000000000000000000000000000 state240#13
+241 0 state241#13
+242 0 state242#13
+243 000000000000000000000000000000 state243#13
+244 00000000000000000000000000000100 state244#13
+245 11111111111111111111111111111111 state245#13
+246 00000000000000000000000000000010 state246#13
+247 00000000000000000000000000000010 state247#13
+248 0 state248#13
+249 0 state249#13
+250 0 state250#13
+251 1 state251#13
+252 00000 state252#13
+253 00000000000000000000000000000000 state253#13
+254 00000000000000000000000000000000 state254#13
+255 0 state255#13
+256 0 state256#13
+257 000000000000000000000000000000 state257#13
+258 00000000000000000000000000111100 state258#13
+259 11111111111111111111111111111111 state259#13
+260 00000000000000000000000000001101 state260#13
+261 00000000000000000000000000111111 state261#13
+262 0 state262#13
+263 0 state263#13
+264 0 state264#13
+265 1 state265#13
+266 00000 state266#13
+@13
+0 1 input0@13
+1 1 input1@13
+2 11000100001000010010010000000010 input2@13
+3 00000000000000000000000000000000 input3@13
+#14
+16 00000000000000000000000000000000 state16#14
+29 0 state29#14
+50 00000000000000000000000000000000 state50#14
+118 00000000000000000000000000000000 state118#14
+120 0000 state120#14
+121 00000000000000000000000000000000 state121#14
+122 00000000 state122#14
+123 0000000000000000 state123#14
+129 00000000000000000000000000000000 state129#14
+142 0 state142#14
+163 00000000000000000000000000000000 state163#14
+231 00000000000000000000000000000000 state231#14
+233 0100 state233#14
+234 00000000000000000000000000000000 state234#14
+235 00000000 state235#14
+236 0000000000000000 state236#14
+239 00000000000000000000000000000000 state239#14
+240 00000000000000000000000000000000 state240#14
+241 0 state241#14
+242 0 state242#14
+243 000000000000000000000000000000 state243#14
+244 00000000000000000000000000000000 state244#14
+245 00000000000000000000000000000000 state245#14
+246 00000000000000000000000000000000 state246#14
+247 00000000000000000000000000000000 state247#14
+248 0 state248#14
+249 0 state249#14
+250 0 state250#14
+251 0 state251#14
+252 00000 state252#14
+253 00000000000000000000000000000000 state253#14
+254 00000000000000000000000000000000 state254#14
+255 0 state255#14
+256 0 state256#14
+257 000000000000000000000000000000 state257#14
+258 00000000000000000000000000000000 state258#14
+259 00000000000000000000000000000000 state259#14
+260 00000000000000000000000000000000 state260#14
+261 00000000000000000000000000000000 state261#14
+262 0 state262#14
+263 0 state263#14
+264 0 state264#14
+265 0 state265#14
+266 00000 state266#14
+@14
+0 1 input0@14
+1 0 input1@14
+2 00000000000000000000000000000000 input2@14
+3 00000000000000000000000000000000 input3@14
+#15
+16 00000000000000000000000000000000 state16#15
+29 0 state29#15
+50 00000000000000000000000000000000 state50#15
+118 00000000000000000000000000000000 state118#15
+120 0000 state120#15
+121 00000000000000000000000000000000 state121#15
+122 00000000 state122#15
+123 0000000000000000 state123#15
+129 00000000000000000000000000000000 state129#15
+142 0 state142#15
+163 00000000000000000000000000000000 state163#15
+231 00000000000000000000000000000000 state231#15
+233 0000 state233#15
+234 00000000000000000000000000000000 state234#15
+235 00000000 state235#15
+236 0000000000000000 state236#15
+239 00000000000000000000000000000000 state239#15
+240 00000000000000000000000000000000 state240#15
+241 0 state241#15
+242 0 state242#15
+243 000000000000000000000000000000 state243#15
+244 00000000000000000000000000000000 state244#15
+245 00000000000000000000000000000000 state245#15
+246 00000000000000000000000000000000 state246#15
+247 00000000000000000000000000000000 state247#15
+248 0 state248#15
+249 0 state249#15
+250 0 state250#15
+251 0 state251#15
+252 00000 state252#15
+253 00000000000000000000000000000000 state253#15
+254 00000000000000000000000000000000 state254#15
+255 0 state255#15
+256 0 state256#15
+257 000000000000000000000000000000 state257#15
+258 00000000000000000000000000000000 state258#15
+259 00000000000000000000000000000000 state259#15
+260 00000000000000000000000000000000 state260#15
+261 00000000000000000000000000000000 state261#15
+262 0 state262#15
+263 0 state263#15
+264 0 state264#15
+265 0 state265#15
+266 00000 state266#15
+@15
+0 1 input0@15
+1 0 input1@15
+2 00000000000000000000000000000000 input2@15
+3 00000000000000000000000000000000 input3@15
+.
+[btor>mc] found 1 reachable and 0 unreachable bad state properties at bound k = 15
+[btor>mc] deleting model checker: 4 inputs, 267 states, 1 bad, 1 constraints
+btormc /home/jetafese/hwmc20-mlir/btor2/array/2019/wolf/2019A/picorv32_mutAY_mem-p5.btor.export.btor

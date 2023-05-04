@@ -1,0 +1,4 @@
+index,BMC,BMC_solve,Control,Result,Thinned,bmc_circ_sz,bmc_dag_sz,btor_time,seahorn_total,status
+marlann_compute_cp_fail1-p2.btor,0.15,0.09,dependence,TRUE,Gate,4,6234,7.892,0.49,unsat
+marlann_compute_cp_fail2-p0.btor,1.00,0.94,dependence,TRUE,Gate,4,6640,8.882,1.34,unsat
+marlann_compute_cp_pass-p2.btor,0.15,0.09,dependence,TRUE,Gate,4,6297,7.897,0.49,unsat

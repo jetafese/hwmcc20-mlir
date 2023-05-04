@@ -1,0 +1,7 @@
+[btor2parser] memory allocation failed
+timeout: the monitored command dumped core
+./btormc_get_btor.sh: line 3: 32259 Aborted                 timeout 300 $HOME/boolector/build/bin/btormc $1 -v
+
+real	0m0.141s
+user	0m0.002s
+sys	0m0.000s

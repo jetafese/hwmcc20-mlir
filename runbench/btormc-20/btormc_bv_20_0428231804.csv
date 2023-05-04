@@ -1,0 +1,16 @@
+index,btor_time,status
+rast-p00.btor,35.203,unsat
+rast-p01.btor,1.617,unsat
+rast-p03.btor,0.06,sat
+rast-p04.btor,1.511,unsat
+rast-p06.btor,0.034,sat
+rast-p11.btor,1.351,unsat
+rast-p14.btor,204.325,unsat
+rast-p16.btor,8.017,unsat
+rast-p17.btor,3.239,unsat
+rast-p18.btor,0.037,sat
+rast-p19.btor,0.036,sat
+rast-p21.btor,1.406,unsat
+simple_alu.btor,0.007,unsat
+stack-p1.btor,0.007,sat
+stack-p2.btor,0.454,unsat

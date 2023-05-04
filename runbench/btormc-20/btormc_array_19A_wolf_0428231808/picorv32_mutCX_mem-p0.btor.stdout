@@ -1,0 +1,438 @@
+./btormc_get_btor.sh /home/jetafese/hwmc20-mlir/btor2/array/2019/wolf/2019A/picorv32_mutCX_mem-p0.btor
+[btormc] parsing input file...
+[btormc] finished parsing
+[btor>mc] calling BMC on 1 properties from bound 0 up-to maximum bound k = 20
+[btor>mc] trace generation enabled
+[btor>mc] new forward manager
+[btor>mc] initialized forward frame at bound k = 0
+[btor>mc] checking forward frame at bound k = 0
+[btor>mc] checking forward frame bad state property 0 at bound k = 0
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>varsubst] 1 variables substituted in 0.0 seconds
+[btor>skel] found 2371 skeleton literals in 177 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 0
+[btor>slvfun] enabled core engine
+[btor>sat] Lingeling allows both incremental and non-incremental mode
+[btor>sat] initialized Lingeling
+[lingeling] Lingeling
+[lingeling] 
+[lingeling] Version bcp 4fe47dd5a6ef91df6dca4bad81326f992dc3fbab
+[lingeling] 
+[lingeling] Copyright (C) 2010-2016 Armin Biere JKU Linz Austria.
+[lingeling] All rights reserved.
+[lingeling] 
+[lingeling] released Tue Nov 22 09:56:45 EST 2022
+[lingeling] compiled Tue Nov 22 09:56:45 EST 2022
+[lingeling] 
+[lingeling] gcc (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0
+[lingeling] -W -Wall -O3 -fPIC -DNLGLOG -DNDEBUG -DNCHKSOL -DNLGLDRUPLIG
+[lingeling] -DNLGLYALSAT -DNLGLFILES -DNLGLDEMA
+[lingeling] Linux lilla-my 4.15.0-156-generic x86_64
+[lingeling] 
+[btor>slvfun] 921 AIG vars, 14162 AIG ands, 9952 CNF vars, 30006 CNF clauses
+[btor>core] SAT call 2 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 0 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 0
+[btor>mc] initialized forward frame at bound k = 1
+[btor>mc] checking forward frame at bound k = 1
+[btor>mc] checking forward frame bad state property 0 at bound k = 1
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>skel] found 3961 skeleton literals in 312 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 24 new constraints in 0.0 seconds
+[btor>embed] replaced 4 embedded constraints in 0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 2 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 0
+[btor>slvfun] 934 AIG vars, 20406 AIG ands, 14278 CNF vars, 44147 CNF clauses
+[btor>core] SAT call 3 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 1 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 1
+[btor>mc] initialized forward frame at bound k = 2
+[btor>mc] checking forward frame at bound k = 2
+[btor>mc] checking forward frame bad state property 0 at bound k = 2
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>skel] found 3952 skeleton literals in 319 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 18 new constraints in 0.0 seconds
+[btor>embed] replaced 2 embedded constraints in 0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 2 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 0
+[btor>slvfun] 945 AIG vars, 20836 AIG ands, 14514 CNF vars, 44940 CNF clauses
+[btor>core] SAT call 4 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 2 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 2
+[btor>mc] initialized forward frame at bound k = 3
+[btor>mc] checking forward frame at bound k = 3
+[btor>mc] checking forward frame bad state property 0 at bound k = 3
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>skel] found 5200 skeleton literals in 436 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 2 new constraints in 0.0 seconds
+[btor>embed] replaced 1 embedded constraints in 0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 2 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 0
+[btor>slvfun] 989 AIG vars, 25862 AIG ands, 17838 CNF vars, 55731 CNF clauses
+[btor>core] SAT call 5 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 3 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 3
+[btor>mc] initialized forward frame at bound k = 4
+[btor>mc] checking forward frame at bound k = 4
+[btor>mc] checking forward frame bad state property 0 at bound k = 4
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>skel] found 6895 skeleton literals in 585 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 21 new constraints in 0.0 seconds
+[btor>embed] replaced 3 embedded constraints in 0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 2 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 0
+[btor>slvfun] 1193 AIG vars, 32399 AIG ands, 22559 CNF vars, 70430 CNF clauses
+[btor>core] SAT call 6 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 4 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 4
+[btor>mc] initialized forward frame at bound k = 5
+[btor>mc] checking forward frame at bound k = 5
+[btor>mc] checking forward frame bad state property 0 at bound k = 5
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>skel] found 9869 skeleton literals in 764 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 24 new constraints in 0.0 seconds
+[btor>embed] replaced 6 embedded constraints in 0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 2 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 0
+[btor>slvfun] 1365 AIG vars, 45157 AIG ands, 31479 CNF vars, 99072 CNF clauses
+[btor>core] SAT call 7 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 5 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 5
+[btor>mc] initialized forward frame at bound k = 6
+[btor>mc] checking forward frame at bound k = 6
+[btor>mc] checking forward frame bad state property 0 at bound k = 6
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>skel] found 13280 skeleton literals in 964 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 23 new constraints in 0.0 seconds
+[btor>embed] replaced 3 embedded constraints in 0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 2 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 0
+[btor>slvfun] 2065 AIG vars, 64225 AIG ands, 49081 CNF vars, 154475 CNF clauses
+[btor>core] SAT call 8 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 6 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 6
+[btor>mc] initialized forward frame at bound k = 7
+[btor>mc] checking forward frame at bound k = 7
+[btor>mc] checking forward frame bad state property 0 at bound k = 7
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>skel] found 17000 skeleton literals in 1168 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 57 new constraints in 0.0 seconds
+[btor>embed] replaced 7 embedded constraints in 0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 2 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 0
+[btor>slvfun] 2927 AIG vars, 93283 AIG ands, 81558 CNF vars, 258720 CNF clauses
+[btor>core] SAT call 9 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 7 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 7
+[btor>mc] initialized forward frame at bound k = 8
+[btor>mc] checking forward frame at bound k = 8
+[btor>mc] checking forward frame bad state property 0 at bound k = 8
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>skel] found 21091 skeleton literals in 1376 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 46 new constraints in 0.0 seconds
+[btor>embed] replaced 9 embedded constraints in 0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 2 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 0
+[btor>slvfun] 3933 AIG vars, 125326 AIG ands, 103829 CNF vars, 329007 CNF clauses
+[btor>core] SAT call 10 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 8 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 8
+[btor>mc] initialized forward frame at bound k = 9
+[btor>mc] checking forward frame at bound k = 9
+[btor>mc] checking forward frame bad state property 0 at bound k = 9
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>skel] found 25253 skeleton literals in 1582 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 60 new constraints in 0.0 seconds
+[btor>embed] replaced 3 embedded constraints in 0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 2 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 0
+[btor>slvfun] 4939 AIG vars, 158151 AIG ands, 166441 CNF vars, 531703 CNF clauses
+[btorcore] 1 iterations, 9 lemmas, 0 ext. lemmas, vars 709, applies 32
+[btor>slvfun] 4939 AIG vars, 159223 AIG ands, 166995 CNF vars, 533624 CNF clauses
+[btor>core] SAT call 11 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 9 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 9
+[btor>mc] initialized forward frame at bound k = 10
+[btor>mc] checking forward frame at bound k = 10
+[btor>mc] checking forward frame bad state property 0 at bound k = 10
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>skel] found 29577 skeleton literals in 1799 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 30 new constraints in 0.0 seconds
+[btor>embed] replaced 4 embedded constraints in 0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 2 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 0
+[btor>slvfun] 5945 AIG vars, 192315 AIG ands, 228998 CNF vars, 735471 CNF clauses
+[btor>core] SAT call 12 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 10 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 10
+[btor>mc] initialized forward frame at bound k = 11
+[btor>mc] checking forward frame at bound k = 11
+[btor>mc] checking forward frame bad state property 0 at bound k = 11
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>skel] found 33934 skeleton literals in 2006 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 33 new constraints in 0.0 seconds
+[btor>embed] replaced 6 embedded constraints in 0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 2 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 0
+[btor>slvfun] 6951 AIG vars, 225533 AIG ands, 255343 CNF vars, 819738 CNF clauses
+[btorcore] 2 iterations, 13 lemmas, 0 ext. lemmas, vars 807, applies 48
+[btor>slvfun] 6951 AIG vars, 225808 AIG ands, 255514 CNF vars, 820303 CNF clauses
+[btorcore] 3 iterations, 21 lemmas, 0 ext. lemmas, vars 807, applies 48
+[btor>slvfun] 6951 AIG vars, 226883 AIG ands, 256071 CNF vars, 822233 CNF clauses
+[btorcore] 4 iterations, 26 lemmas, 0 ext. lemmas, vars 807, applies 48
+[btor>slvfun] 6951 AIG vars, 227333 AIG ands, 256299 CNF vars, 823028 CNF clauses
+[btorcore] 5 iterations, 30 lemmas, 0 ext. lemmas, vars 807, applies 48
+[btor>slvfun] 6951 AIG vars, 227548 AIG ands, 256410 CNF vars, 823413 CNF clauses
+[btorcore] 6 iterations, 32 lemmas, 0 ext. lemmas, vars 807, applies 48
+[btor>slvfun] 6951 AIG vars, 227699 AIG ands, 256487 CNF vars, 823681 CNF clauses
+[btorcore] 7 iterations, 33 lemmas, 0 ext. lemmas, vars 807, applies 48
+[btor>slvfun] 6951 AIG vars, 227828 AIG ands, 256552 CNF vars, 823908 CNF clauses
+[btorcore] 8 iterations, 34 lemmas, 0 ext. lemmas, vars 807, applies 48
+[btor>slvfun] 6951 AIG vars, 227957 AIG ands, 256617 CNF vars, 824135 CNF clauses
+[btorcore] 9 iterations, 37 lemmas, 0 ext. lemmas, vars 807, applies 48
+[btor>slvfun] 6951 AIG vars, 228286 AIG ands, 256798 CNF vars, 824752 CNF clauses
+[btor>core] SAT call 13 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 11 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 11
+[btor>mc] initialized forward frame at bound k = 12
+[btor>mc] checking forward frame at bound k = 12
+[btor>mc] checking forward frame bad state property 0 at bound k = 12
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>skel] found 38411 skeleton literals in 2241 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 34 new constraints in 0.0 seconds
+[btor>embed] replaced 7 embedded constraints in 0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 2 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 0
+[btor>slvfun] 7957 AIG vars, 261511 AIG ands, 283145 CNF vars, 909029 CNF clauses
+[btorcore] 10 iterations, 42 lemmas, 0 ext. lemmas, vars 856, applies 56
+[btor>slvfun] 7957 AIG vars, 262025 AIG ands, 283437 CNF vars, 910016 CNF clauses
+[btorcore] 11 iterations, 47 lemmas, 0 ext. lemmas, vars 856, applies 56
+[btor>slvfun] 7957 AIG vars, 262512 AIG ands, 283682 CNF vars, 910872 CNF clauses
+[btorcore] 12 iterations, 54 lemmas, 0 ext. lemmas, vars 856, applies 56
+[btor>slvfun] 7957 AIG vars, 263487 AIG ands, 284169 CNF vars, 912577 CNF clauses
+[btorcore] 13 iterations, 56 lemmas, 0 ext. lemmas, vars 856, applies 56
+[btor>slvfun] 7957 AIG vars, 263782 AIG ands, 284316 CNF vars, 913092 CNF clauses
+[btorcore] 14 iterations, 59 lemmas, 0 ext. lemmas, vars 856, applies 56
+[btor>slvfun] 7957 AIG vars, 264102 AIG ands, 284478 CNF vars, 913657 CNF clauses
+[btorcore] 15 iterations, 63 lemmas, 0 ext. lemmas, vars 856, applies 56
+[btor>slvfun] 7957 AIG vars, 264492 AIG ands, 284680 CNF vars, 914357 CNF clauses
+[btorcore] 16 iterations, 67 lemmas, 0 ext. lemmas, vars 856, applies 56
+[btor>slvfun] 7957 AIG vars, 264898 AIG ands, 284884 CNF vars, 915070 CNF clauses
+[btorcore] 17 iterations, 70 lemmas, 0 ext. lemmas, vars 856, applies 56
+[btor>slvfun] 7957 AIG vars, 265179 AIG ands, 285027 CNF vars, 915568 CNF clauses
+[btorcore] 18 iterations, 71 lemmas, 0 ext. lemmas, vars 856, applies 56
+[btor>slvfun] 7957 AIG vars, 265308 AIG ands, 285092 CNF vars, 915795 CNF clauses
+[btorcore] 19 iterations, 74 lemmas, 0 ext. lemmas, vars 856, applies 56
+[btor>slvfun] 7957 AIG vars, 265660 AIG ands, 285286 CNF vars, 916456 CNF clauses
+[btorcore] 20 iterations, 77 lemmas, 0 ext. lemmas, vars 856, applies 56
+[btor>slvfun] 7957 AIG vars, 265843 AIG ands, 285385 CNF vars, 916795 CNF clauses
+[btorcore] 21 iterations, 82 lemmas, 0 ext. lemmas, vars 856, applies 56
+[btor>slvfun] 7957 AIG vars, 266236 AIG ands, 285600 CNF vars, 917529 CNF clauses
+[btor>core] SAT call 14 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 12 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 12
+[btor>mc] initialized forward frame at bound k = 13
+[btor>mc] checking forward frame at bound k = 13
+[btor>mc] checking forward frame bad state property 0 at bound k = 13
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>skel] found 42968 skeleton literals in 2493 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 34 new constraints in 0.0 seconds
+[btor>embed] replaced 7 embedded constraints in 0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 2 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 0
+[btor>slvfun] 8963 AIG vars, 299489 AIG ands, 311961 CNF vars, 1001856 CNF clauses
+[btorcore] 22 iterations, 88 lemmas, 0 ext. lemmas, vars 905, applies 64
+[btor>slvfun] 8963 AIG vars, 300155 AIG ands, 312331 CNF vars, 1003114 CNF clauses
+[btorcore] 23 iterations, 93 lemmas, 0 ext. lemmas, vars 905, applies 64
+[btor>slvfun] 8963 AIG vars, 300876 AIG ands, 312692 CNF vars, 1004377 CNF clauses
+[btorcore] 24 iterations, 100 lemmas, 0 ext. lemmas, vars 905, applies 64
+[btor>slvfun] 8963 AIG vars, 301679 AIG ands, 313115 CNF vars, 1005836 CNF clauses
+[btorcore] 25 iterations, 104 lemmas, 0 ext. lemmas, vars 905, applies 64
+[btor>slvfun] 8963 AIG vars, 302123 AIG ands, 313357 CNF vars, 1006663 CNF clauses
+[btorcore] 26 iterations, 106 lemmas, 0 ext. lemmas, vars 905, applies 64
+[btor>slvfun] 8963 AIG vars, 302169 AIG ands, 313383 CNF vars, 1006751 CNF clauses
+[btorcore] 27 iterations, 109 lemmas, 0 ext. lemmas, vars 905, applies 64
+[btor>slvfun] 8963 AIG vars, 302595 AIG ands, 313597 CNF vars, 1007499 CNF clauses
+[btorcore] 28 iterations, 113 lemmas, 0 ext. lemmas, vars 905, applies 64
+[btor>slvfun] 8963 AIG vars, 303043 AIG ands, 313823 CNF vars, 1008288 CNF clauses
+[btorcore] 29 iterations, 116 lemmas, 0 ext. lemmas, vars 905, applies 64
+[btor>slvfun] 8963 AIG vars, 303197 AIG ands, 313903 CNF vars, 1008565 CNF clauses
+[btorcore] 30 iterations, 121 lemmas, 0 ext. lemmas, vars 905, applies 64
+[btor>slvfun] 8963 AIG vars, 303509 AIG ands, 314067 CNF vars, 1009131 CNF clauses
+[btorcore] 31 iterations, 130 lemmas, 0 ext. lemmas, vars 905, applies 64
+[btor>slvfun] 8963 AIG vars, 304303 AIG ands, 314471 CNF vars, 1010538 CNF clauses
+[btorcore] 32 iterations, 134 lemmas, 0 ext. lemmas, vars 905, applies 64
+[btor>slvfun] 8963 AIG vars, 304513 AIG ands, 314597 CNF vars, 1010958 CNF clauses
+[btorcore] 33 iterations, 138 lemmas, 0 ext. lemmas, vars 905, applies 64
+[btor>slvfun] 8963 AIG vars, 304695 AIG ands, 314739 CNF vars, 1011404 CNF clauses
+[btorcore] 34 iterations, 142 lemmas, 0 ext. lemmas, vars 905, applies 64
+[btor>slvfun] 8963 AIG vars, 305103 AIG ands, 314945 CNF vars, 1012123 CNF clauses
+[btor>core] SAT call 15 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 13 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 13
+[btor>mc] initialized forward frame at bound k = 14
+[btor>mc] checking forward frame at bound k = 14
+[btor>mc] checking forward frame bad state property 0 at bound k = 14
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>skel] found 47593 skeleton literals in 2760 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 85 new constraints in 0.0 seconds
+[btor>embed] replaced 4 embedded constraints in 0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 2 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 0
+[btor>slvfun] 9969 AIG vars, 337049 AIG ands, 495178 CNF vars, 1603146 CNF clauses
+[btorcore] 35 iterations, 147 lemmas, 0 ext. lemmas, vars 954, applies 72
+[btor>slvfun] 9969 AIG vars, 337576 AIG ands, 495463 CNF vars, 1604122 CNF clauses
+[btorcore] 36 iterations, 153 lemmas, 0 ext. lemmas, vars 954, applies 72
+[btor>slvfun] 9969 AIG vars, 338364 AIG ands, 495861 CNF vars, 1605511 CNF clauses
+[btorcore] 37 iterations, 157 lemmas, 0 ext. lemmas, vars 954, applies 72
+[btor>slvfun] 9969 AIG vars, 338690 AIG ands, 496029 CNF vars, 1606094 CNF clauses
+[btorcore] 38 iterations, 161 lemmas, 0 ext. lemmas, vars 954, applies 72
+[btor>slvfun] 9969 AIG vars, 339177 AIG ands, 496294 CNF vars, 1607000 CNF clauses
+[btorcore] 39 iterations, 167 lemmas, 0 ext. lemmas, vars 954, applies 72
+[btor>slvfun] 9969 AIG vars, 339711 AIG ands, 496586 CNF vars, 1607997 CNF clauses
+[btorcore] 40 iterations, 171 lemmas, 0 ext. lemmas, vars 954, applies 72
+[btor>slvfun] 9969 AIG vars, 340118 AIG ands, 496791 CNF vars, 1608713 CNF clauses
+[btorcore] 41 iterations, 174 lemmas, 0 ext. lemmas, vars 954, applies 72
+[btor>slvfun] 9969 AIG vars, 340562 AIG ands, 497013 CNF vars, 1609490 CNF clauses
+[btorcore] 42 iterations, 175 lemmas, 0 ext. lemmas, vars 954, applies 72
+[btor>slvfun] 9969 AIG vars, 340691 AIG ands, 497078 CNF vars, 1609717 CNF clauses
+[btorcore] 43 iterations, 177 lemmas, 0 ext. lemmas, vars 954, applies 72
+[btor>slvfun] 9969 AIG vars, 340845 AIG ands, 497158 CNF vars, 1609994 CNF clauses
+[btorcore] 44 iterations, 180 lemmas, 0 ext. lemmas, vars 954, applies 72
+[btor>slvfun] 9969 AIG vars, 341043 AIG ands, 497262 CNF vars, 1610353 CNF clauses
+[btorcore] 45 iterations, 185 lemmas, 0 ext. lemmas, vars 954, applies 72
+[btor>slvfun] 9969 AIG vars, 341163 AIG ands, 497352 CNF vars, 1610638 CNF clauses
+[btorcore] 46 iterations, 191 lemmas, 0 ext. lemmas, vars 954, applies 72
+[btor>slvfun] 9969 AIG vars, 341393 AIG ands, 497498 CNF vars, 1611118 CNF clauses
+[btorcore] 47 iterations, 195 lemmas, 0 ext. lemmas, vars 954, applies 72
+[btor>slvfun] 9969 AIG vars, 341576 AIG ands, 497641 CNF vars, 1611567 CNF clauses
+[btorcore] 48 iterations, 202 lemmas, 0 ext. lemmas, vars 954, applies 72
+[btor>slvfun] 9969 AIG vars, 342291 AIG ands, 498006 CNF vars, 1612837 CNF clauses
+[btorcore] 49 iterations, 204 lemmas, 0 ext. lemmas, vars 954, applies 72
+[btor>slvfun] 9969 AIG vars, 342459 AIG ands, 498090 CNF vars, 1613131 CNF clauses
+[btorcore] 50 iterations, 208 lemmas, 0 ext. lemmas, vars 954, applies 72
+[btor>slvfun] 9969 AIG vars, 342508 AIG ands, 498119 CNF vars, 1613228 CNF clauses
+[btorcore] 51 iterations, 211 lemmas, 0 ext. lemmas, vars 954, applies 72
+[btor>slvfun] 9969 AIG vars, 342818 AIG ands, 498291 CNF vars, 1613813 CNF clauses
+[btorcore] 52 iterations, 213 lemmas, 0 ext. lemmas, vars 954, applies 72
+[btor>slvfun] 9969 AIG vars, 343095 AIG ands, 498430 CNF vars, 1614299 CNF clauses
+[btorcore] 53 iterations, 214 lemmas, 0 ext. lemmas, vars 954, applies 72
+[btor>slvfun] 9969 AIG vars, 343097 AIG ands, 498432 CNF vars, 1614305 CNF clauses
+[btorcore] 54 iterations, 215 lemmas, 0 ext. lemmas, vars 954, applies 72
+[btor>slvfun] 9969 AIG vars, 343099 AIG ands, 498434 CNF vars, 1614311 CNF clauses
+[btorcore] 55 iterations, 217 lemmas, 0 ext. lemmas, vars 954, applies 72
+[btor>slvfun] 9969 AIG vars, 343375 AIG ands, 498572 CNF vars, 1614794 CNF clauses
+[btorcore] 56 iterations, 218 lemmas, 0 ext. lemmas, vars 954, applies 72
+[btor>slvfun] 9969 AIG vars, 343377 AIG ands, 498574 CNF vars, 1614800 CNF clauses
+[btorcore] 57 iterations, 219 lemmas, 0 ext. lemmas, vars 954, applies 72
+[btor>slvfun] 9969 AIG vars, 343424 AIG ands, 498601 CNF vars, 1614891 CNF clauses
+[btorcore] 58 iterations, 221 lemmas, 0 ext. lemmas, vars 954, applies 72
+[btor>slvfun] 9969 AIG vars, 343480 AIG ands, 498647 CNF vars, 1615034 CNF clauses
+btormc /home/jetafese/hwmc20-mlir/btor2/array/2019/wolf/2019A/picorv32_mutCX_mem-p0.btor 

@@ -1,0 +1,37 @@
+Info: pointer size: 8, word size: 8
+Info: Trackable memory is not present
+Functions: 
+NONE
+Globals: 
+NONE
+(sat.stats   :conflicts  :restarts        :learned/bin    :gc          :time)
+(sat.stats          :decisions :clauses/bin      :units       :memory       )
+(sat.stats      0      0    0  9567/4837     0/0   0       0    41.14   0.00)
+(sat.stats    102   1527    0  8647/4375   100/19 198       0    41.14   0.00)
+(sat.stats    102   1527    0  8647/4375   100/19 198       0    41.14   0.00)
+(sat.stats    102   1527    0  8647/4375   100/19 198       0    41.14   0.00)
+(sat.stats    102   1527    0  5756/2141     9/4 198       0    41.89   0.02)
+(sat.stats    105   1535    1  5756/2141    12/4 198       0    41.89   0.02)
+(sat.stats :conflicts    :restarts       :learned/bin     :gc          :time)
+(sat.stats       :decisions   :clauses/bin     :units         :memory       )
+(sat.stats    115   1637    2  5756/2141    22/4 198       0    41.89   0.02)
+(sat.stats    124   1646    3  5756/2141    31/4 198       0    41.89   0.02)
+(sat.stats    128   1667    4  5756/2141    35/4 198       0    41.89   0.02)
+(sat.stats    132   1669    5  5756/2141    39/4 198       0    41.89   0.02)
+(sat.stats    135   1672    6  5756/2141    42/4 198       0    41.89   0.02)
+(sat.stats    138   1710    7  5756/2141    45/4 198       0    41.89   0.02)
+(sat.stats    142   1763    8  5756/2141    49/4 198       0    41.89   0.02)
+(sat.stats    163   2087    9  5756/2141    70/7 198       0    41.89   0.02)
+(sat.stats    166   2182   10  5756/2141    73/7 198       0    41.89   0.02)
+(sat.stats    170   2185   11  5756/2141    77/8 198       0    41.89   0.02)
+(sat.stats    174   2191   12  5756/2141    81/9 198       0    41.89   0.02)
+(sat.stats :conflicts   :restarts       :learned/bin       :gc          :time)
+(sat.stats       :decisions   :clauses/bin      :units         :memory       )
+(sat.stats    211   2511   20  5752/2140   116/11 199       0    41.89   0.02)
+(sat.stats    400   4004   33  5752/2140   305/36 199       0    41.99   0.03)
+(sat.stats    504   4678   34  5748/2139   401/43 204       0    41.99   0.03)
+(sat.stats    706   5626   46  5748/2139   588/61 302       0    41.99   0.03)
+
+real	0m7.999s
+user	0m7.892s
+sys	0m0.111s

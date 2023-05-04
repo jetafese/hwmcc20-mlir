@@ -1,0 +1,2 @@
+./boolector_get_btor.sh /home/jetafese/hwmc20-mlir/btor2/bv/2019/wolf/2019A/picorv32_mutCY_nomem-p0.btor
+boolector /home/jetafese/hwmc20-mlir/btor2/bv/2019/wolf/2019A/picorv32_mutCY_nomem-p0.btor 

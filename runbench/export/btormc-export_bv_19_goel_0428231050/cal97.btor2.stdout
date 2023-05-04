@@ -1,0 +1,161 @@
+./btormc-export_get_btor.sh /home/jetafese/hwmc20-mlir/btor2/bv/2019/goel/cal97.btor2
+[btormc] parsing input file...
+[btormc] finished parsing
+[btor>mc] calling BMC on 1 properties from bound 0 up-to maximum bound k = 20
+[btor>mc] trace generation enabled
+[btor>mc] new forward manager
+[btor>mc] initialized forward frame at bound k = 0
+[btor>mc] checking forward frame at bound k = 0
+[btor>mc] checking forward frame bad state property 0 at bound k = 0
+[btor>core] calling SAT
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] enabled core engine
+[btor>sat] Lingeling allows both incremental and non-incremental mode
+[btor>sat] initialized Lingeling
+[lingeling] Lingeling
+[lingeling] 
+[lingeling] Version bcp 4fe47dd5a6ef91df6dca4bad81326f992dc3fbab
+[lingeling] 
+[lingeling] Copyright (C) 2010-2016 Armin Biere JKU Linz Austria.
+[lingeling] All rights reserved.
+[lingeling] 
+[lingeling] released Tue Nov 22 09:56:45 EST 2022
+[lingeling] compiled Tue Nov 22 09:56:45 EST 2022
+[lingeling] 
+[lingeling] gcc (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0
+[lingeling] -W -Wall -O3 -fPIC -DNLGLOG -DNDEBUG -DNCHKSOL -DNLGLDRUPLIG
+[lingeling] -DNLGLYALSAT -DNLGLFILES -DNLGLDEMA
+[lingeling] Linux lilla-my 4.15.0-156-generic x86_64
+[lingeling] 
+[btor>slvfun] 0 AIG vars, 0 AIG ands, 0 CNF vars, 0 CNF clauses
+[btor>core] SAT call 2 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 0 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 0
+[btor>mc] initialized forward frame at bound k = 1
+[btor>mc] checking forward frame at bound k = 1
+[btor>mc] checking forward frame bad state property 0 at bound k = 1
+[btor>core] calling SAT
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 0 AIG vars, 0 AIG ands, 0 CNF vars, 0 CNF clauses
+[btor>core] SAT call 3 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 1 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 1
+[btor>mc] initialized forward frame at bound k = 2
+[btor>mc] checking forward frame at bound k = 2
+[btor>mc] checking forward frame bad state property 0 at bound k = 2
+[btor>core] calling SAT
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 267 AIG vars, 4540 AIG ands, 3764 CNF vars, 11202 CNF clauses
+[btor>core] SAT call 4 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 2 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 2
+[btor>mc] initialized forward frame at bound k = 3
+[btor>mc] checking forward frame at bound k = 3
+[btor>mc] checking forward frame bad state property 0 at bound k = 3
+[btor>core] calling SAT
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 508 AIG vars, 11816 AIG ands, 9145 CNF vars, 27791 CNF clauses
+[btor lglclone1]    7.296  19% simplifying
+[btor lglclone1]   30.564  81% search
+[btor lglclone1] ==================================
+[btor lglclone1]   37.860 100% all
+[btor lglclone1] 
+[btor lglclone1]        212018 conflicts,        5600.0 confs/sec
+[btor lglclone1]          2141 ternaries,          99.0 confs/ternary
+[btor lglclone1]           350 binaries,          605.8 confs/binary
+[btor lglclone1]             8 iterations,      26502.2 confs/iteration
+[btor lglclone1] 
+[btor lglclone1]            56 reductions,          1.5 redus/sec,   3786.0 confs/reduction
+[btor lglclone1]          5266 restarts,          139.1 rests/sec,     40.3 confs/restart
+[btor lglclone1]        354212 decisions,        9355.8 decis/sec,      1.7 decis/conflict
+[btor lglclone1]      41116801 propagations,  1086018.8 props/sec,    116.1 props/decision
+[btor lglclone1] 
+[btor lglclone1] 37.9 seconds, 7.4 MB
+[btor>core] SAT call 5 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 3 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 3
+[btor>mc] initialized forward frame at bound k = 4
+[btor>mc] checking forward frame at bound k = 4
+[btor>mc] checking forward frame bad state property 0 at bound k = 4
+[btor>core] calling SAT
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 835 AIG vars, 20381 AIG ands, 15325 CNF vars, 46785 CNF clauses
+[btor lglclone2]   14.409  14% simplifying
+[btor lglclone2]   86.755  86% search
+[btor lglclone2] ==================================
+[btor lglclone2]  101.165 100% all
+[btor lglclone2] 
+[btor lglclone2]        453909 conflicts,        4486.8 confs/sec
+[btor lglclone2]          4161 ternaries,         109.1 confs/ternary
+[btor lglclone2]           716 binaries,          634.0 confs/binary
+[btor lglclone2]            14 iterations,      32422.1 confs/iteration
+[btor lglclone2] 
+[btor lglclone2]            97 reductions,          1.0 redus/sec,   4679.5 confs/reduction
+[btor lglclone2]          7214 restarts,           71.3 rests/sec,     62.9 confs/restart
+[btor lglclone2]        734856 decisions,        7264.0 decis/sec,      1.6 decis/conflict
+[btor lglclone2]     129234450 propagations,  1277464.8 props/sec,    175.9 props/decision
+[btor lglclone2] 
+[btor lglclone2] 101.2 seconds, 10.9 MB
+[btor>core] SAT call 6 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 4 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 4
+[btor>mc] initialized forward frame at bound k = 5
+[btor>mc] checking forward frame at bound k = 5
+[btor>mc] checking forward frame bad state property 0 at bound k = 5
+[btor>core] calling SAT
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 1259 AIG vars, 35160 AIG ands, 25350 CNF vars, 78313 CNF clauses
+[btor lglclone3]   26.038  15% simplifying
+[btor lglclone3]  152.666  85% search
+[btor lglclone3] ==================================
+[btor lglclone3]  178.706 100% all
+[btor lglclone3] 
+[btor lglclone3]        684374 conflicts,        3829.6 confs/sec
+[btor lglclone3]          6190 ternaries,         110.6 confs/ternary
+[btor lglclone3]          1077 binaries,          635.4 confs/binary
+[btor lglclone3]            19 iterations,      36019.7 confs/iteration
+[btor lglclone3] 
+[btor lglclone3]           138 reductions,          0.8 redus/sec,   4959.2 confs/reduction
+[btor lglclone3]         14445 restarts,           80.8 rests/sec,     47.4 confs/restart
+[btor lglclone3]       1375231 decisions,        7695.5 decis/sec,      2.0 decis/conflict
+[btor lglclone3]     235301317 propagations,  1316697.4 props/sec,    171.1 props/decision
+[btor lglclone3] 
+[btor lglclone3] 178.7 seconds, 19.1 MB
+[btor>core] SAT call 7 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 5 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 5
+[btor>mc] initialized forward frame at bound k = 6
+[btor>mc] checking forward frame at bound k = 6
+[btor>mc] checking forward frame bad state property 0 at bound k = 6
+[btor>core] calling SAT
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 1596 AIG vars, 55976 AIG ands, 38728 CNF vars, 121538 CNF clauses
+btormc /home/jetafese/hwmc20-mlir/btor2/bv/2019/goel/cal97.btor2.export.btor

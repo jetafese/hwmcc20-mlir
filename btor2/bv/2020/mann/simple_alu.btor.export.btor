@@ -1,0 +1,35 @@
+1 sort bitvec 16
+2 constd 1 0
+3 sort bitvec 1
+4 constd 3 -1
+5 sort bitvec 4
+6 state 5
+7 state 1
+8 state 3
+9 init 1 7 2
+10 init 3 8 4
+11 constd 5 0
+12 ite 5 8 11 6
+13 constd 3 -1
+14 uext 1 13 15
+15 add 1 7 14
+16 constd 3 0
+17 input 3
+18 input 1
+19 input 1
+20 add 1 19 18
+21 sub 1 19 18
+22 redor 3 6
+23 not 3 22
+24 ite 1 23 20 21
+25 eq 3 24 20
+26 uext 1 16 15
+27 ugt 3 7 26
+28 ite 3 27 25 17
+29 not 3 28
+30 ite 3 27 13 16
+31 and 3 30 29
+32 bad 31
+33 next 5 6 12
+34 next 1 7 15
+35 next 3 8 16

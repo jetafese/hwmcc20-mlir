@@ -1,0 +1,4 @@
+index,BMC,Control,Thinned,bmc_circ_sz,bmc_dag_sz,btor_time,seahorn_total
+marlann_compute_cp_fail1-p2.btor,0.29,dependence,Gate,4,6234,8.478,0.67
+marlann_compute_cp_fail2-p0.btor,0.27,dependence,Gate,4,6640,8.616,0.64
+marlann_compute_cp_pass-p2.btor,0.26,dependence,Gate,4,6297,8.52,0.61

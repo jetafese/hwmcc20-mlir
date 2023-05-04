@@ -1,0 +1,3 @@
+./boolector_get_btor.sh /home/jetafese/hwmc20-mlir/btor2/bv/2019/goel/cal37.btor2
+unsat
+boolector /home/jetafese/hwmc20-mlir/btor2/bv/2019/goel/cal37.btor2 

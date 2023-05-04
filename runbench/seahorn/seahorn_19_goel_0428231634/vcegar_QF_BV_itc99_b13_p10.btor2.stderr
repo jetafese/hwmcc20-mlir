@@ -1,0 +1,7 @@
+WARNING: The program has no main() function.
+WARNING: Possibly all assertions have been discharged by the front-end
+WARNING: Alternatively, use --entry ENTRY option to specify acustom entry point
+
+real	0m1.410s
+user	0m0.639s
+sys	0m0.137s

@@ -1,0 +1,4 @@
+index,btor_time,status
+marlann_compute_cp_fail1-p2.btor,0.401,unsat
+marlann_compute_cp_fail2-p0.btor,0.714,unsat
+marlann_compute_cp_pass-p2.btor,0.334,unsat

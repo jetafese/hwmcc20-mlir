@@ -1,0 +1,35 @@
+Info: pointer size: 8, word size: 8
+Info: Trackable memory is not present
+Functions: 
+NONE
+Globals: 
+NONE
+(sat.stats   :conflicts  :restarts         :learned/bin    :gc          :time)
+(sat.stats          :decisions :clauses/bin       :units       :memory       )
+(sat.stats      0      0    0 39309/15357     0/0   0       0    47.67   0.00)
+(sat.stats    243    895    0 39250/15339   242/31  13       0    47.95   0.02)
+(sat.stats    243    895    0 39250/15339   242/31  13       0    47.95   0.02)
+(sat.stats    243    895    0 39250/15339   242/31  13       0    47.95   0.02)
+(sat.stats    243    895    0 33767/9702   152/25 431       0    51.36   0.21)
+(sat.stats    247    911    1 29016/6942   149/26 431       0    51.26   0.22)
+(sat.stats :conflicts    :restarts      :learned/bin       :gc          :time)
+(sat.stats        :decisions :clauses/bin       :units         :memory       )
+(sat.stats    261    941    2 29016/6942   163/28 431       0    51.26   0.22)
+(sat.stats    264    943    3 29016/6942   166/28 431       0    51.26   0.22)
+(sat.stats    268    945    4 29016/6942   170/28 431       0    51.26   0.22)
+(sat.stats    274    952    5 29016/6942   176/28 431       0    51.26   0.22)
+(sat.stats    278    960    6 29016/6942   180/28 431       0    51.26   0.22)
+(sat.stats    281    962    7 29016/6942   183/28 431       0    51.26   0.22)
+(sat.stats    284    975    8 29016/6942   186/28 431       0    51.26   0.22)
+(sat.stats    287    978    9 29016/6942   189/28 431       0    51.26   0.22)
+(sat.stats    290    986   10 29016/6942   192/29 431       0    51.26   0.22)
+(sat.stats    294    988   11 29016/6942   196/29 431       0    51.26   0.22)
+(sat.stats    297    990   12 29016/6942   199/29 431       0    51.26   0.22)
+(sat.stats    300    995   13 29016/6942   202/30 431       0    51.26   0.23)
+(sat.stats    333   1063   15 29016/6942   235/31 431       0    51.26   0.23)
+(sat.stats    534   1434   34 29016/6942   434/39 507       0    51.26   0.24)
+(sat.stats    548   1453   35 28066/6970   325/42 617       0    51.26   0.25)
+
+real	0m26.209s
+user	0m25.995s
+sys	0m0.186s

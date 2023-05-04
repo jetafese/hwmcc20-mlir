@@ -1,0 +1,4 @@
+index,btor_time,status
+array_swap.btor,7.449,unsat
+easy_zero_array.btor,0.581,unsat
+simple-stack-pred1.btor,9.887,unsat

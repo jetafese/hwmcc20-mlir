@@ -1,0 +1,707 @@
+./btormc_get_btor.sh /home/jetafese/hwmc20-mlir/btor2/bv/2019/mann/data-integrity/unsafe/arbitrated_top_n5_w64_d16_e0.btor2
+[btormc] parsing input file...
+[btormc] finished parsing
+[btor>mc] calling BMC on 1 properties from bound 0 up-to maximum bound k = 20
+[btor>mc] trace generation enabled
+[btor>mc] new forward manager
+[btor>mc] initialized forward frame at bound k = 0
+[btor>mc] checking forward frame at bound k = 0
+[btor>mc] checking forward frame bad state property 0 at bound k = 0
+[btor>core] calling SAT
+[btor>varsubst] 1 variables substituted in 0.0 seconds
+[btor>skel] found 46 skeleton literals in 15 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 0
+[btor>slvfun] enabled core engine
+[btor>sat] Lingeling allows both incremental and non-incremental mode
+[btor>sat] initialized Lingeling
+[lingeling] Lingeling
+[lingeling] 
+[lingeling] Version bcp 4fe47dd5a6ef91df6dca4bad81326f992dc3fbab
+[lingeling] 
+[lingeling] Copyright (C) 2010-2016 Armin Biere JKU Linz Austria.
+[lingeling] All rights reserved.
+[lingeling] 
+[lingeling] released Tue Nov 22 09:56:45 EST 2022
+[lingeling] compiled Tue Nov 22 09:56:45 EST 2022
+[lingeling] 
+[lingeling] gcc (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0
+[lingeling] -W -Wall -O3 -fPIC -DNLGLOG -DNDEBUG -DNCHKSOL -DNLGLDRUPLIG
+[lingeling] -DNLGLYALSAT -DNLGLFILES -DNLGLDEMA
+[lingeling] Linux lilla-my 4.15.0-156-generic x86_64
+[lingeling] 
+[btor>slvfun] 59 AIG vars, 88 AIG ands, 149 CNF vars, 270 CNF clauses
+[btor>core] SAT call 2 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 0 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 0
+[btor>mc] initialized forward frame at bound k = 1
+[btor>mc] checking forward frame at bound k = 1
+[btor>mc] checking forward frame bad state property 0 at bound k = 1
+[btor>core] calling SAT
+[btor>varsubst] 1 variables substituted in 0.0 seconds
+[btor>embed] replaced 5 embedded constraints in 0 seconds
+[btor>skel] found 57 skeleton literals in 20 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 0
+[btor>slvfun] 63 AIG vars, 101 AIG ands, 168 CNF vars, 315 CNF clauses
+[btor>core] SAT call 3 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 1 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 1
+[btor>mc] initialized forward frame at bound k = 2
+[btor>mc] checking forward frame at bound k = 2
+[btor>mc] checking forward frame bad state property 0 at bound k = 2
+[btor>core] calling SAT
+[btor>varsubst] 1 variables substituted in 0.0 seconds
+[btor>skel] found 108 skeleton literals in 35 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 0
+[btor>slvfun] 719 AIG vars, 159 AIG ands, 878 CNF vars, 480 CNF clauses
+[btor>core] SAT call 4 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 2 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 2
+[btor>mc] initialized forward frame at bound k = 3
+[btor>mc] checking forward frame at bound k = 3
+[btor>mc] checking forward frame bad state property 0 at bound k = 3
+[btor>core] calling SAT
+[btor>varsubst] 1 variables substituted in 0.0 seconds
+[btor>skel] found 154 skeleton literals in 50 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 10 new constraints in 0.0 seconds
+[btor>embed] replaced 10 embedded constraints in 0 seconds
+[btor>preprocess] 2 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 0
+[btor>slvfun] 1370 AIG vars, 247 AIG ands, 1629 CNF vars, 783 CNF clauses
+[btor>core] SAT call 5 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 3 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 3
+[btor>mc] initialized forward frame at bound k = 4
+[btor>mc] checking forward frame at bound k = 4
+[btor>mc] checking forward frame bad state property 0 at bound k = 4
+[btor>core] calling SAT
+[btor>varsubst] 1 variables substituted in 0.0 seconds
+[btor>skel] found 175 skeleton literals in 60 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 5 new constraints in 0.0 seconds
+[btor>embed] replaced 5 embedded constraints in 0 seconds
+[btor>preprocess] 2 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 0
+[btor>slvfun] 2021 AIG vars, 909 AIG ands, 2851 CNF vars, 2544 CNF clauses
+[btor>core] SAT call 6 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 4 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 4
+[btor>mc] initialized forward frame at bound k = 5
+[btor>mc] checking forward frame at bound k = 5
+[btor>mc] checking forward frame bad state property 0 at bound k = 5
+[btor>core] calling SAT
+[btor>varsubst] 1 variables substituted in 0.0 seconds
+[btor>skel] found 216 skeleton literals in 75 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 5 new constraints in 0.0 seconds
+[btor>embed] replaced 5 embedded constraints in 0 seconds
+[btor>preprocess] 2 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 0
+[btor>slvfun] 2672 AIG vars, 3537 AIG ands, 5982 CNF vars, 10087 CNF clauses
+[btor>core] SAT call 7 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 5 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 5
+[btor>mc] initialized forward frame at bound k = 6
+[btor>mc] checking forward frame at bound k = 6
+[btor>mc] checking forward frame bad state property 0 at bound k = 6
+[btor>core] calling SAT
+[btor>varsubst] 1 variables substituted in 0.0 seconds
+[btor>skel] found 257 skeleton literals in 90 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 0
+[btor>slvfun] 3323 AIG vars, 7768 AIG ands, 10678 CNF vars, 22353 CNF clauses
+[btor>core] SAT call 8 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 6 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 6
+[btor>mc] initialized forward frame at bound k = 7
+[btor>mc] checking forward frame at bound k = 7
+[btor>mc] checking forward frame bad state property 0 at bound k = 7
+[btor>core] calling SAT
+[btor>varsubst] 1 variables substituted in 0.0 seconds
+[btor>skel] found 303 skeleton literals in 105 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 0
+[btor>slvfun] 3974 AIG vars, 15054 AIG ands, 18384 CNF vars, 43731 CNF clauses
+[btor>core] SAT call 9 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 7 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 7
+[btor>mc] initialized forward frame at bound k = 8
+[btor>mc] checking forward frame at bound k = 8
+[btor>mc] checking forward frame bad state property 0 at bound k = 8
+[btor>core] calling SAT
+[btor>varsubst] 1 variables substituted in 0.0 seconds
+[btor>skel] found 349 skeleton literals in 120 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 0
+[btor>slvfun] 4625 AIG vars, 22410 AIG ands, 26106 CNF vars, 65184 CNF clauses
+[btor>core] SAT call 10 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 8 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 8
+[btor>mc] initialized forward frame at bound k = 9
+[btor>mc] checking forward frame at bound k = 9
+[btor>mc] checking forward frame bad state property 0 at bound k = 9
+[btor>core] calling SAT
+[btor>varsubst] 1 variables substituted in 0.0 seconds
+[btor>skel] found 395 skeleton literals in 135 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 0
+[btor>slvfun] 5276 AIG vars, 29851 AIG ands, 33855 CNF vars, 86747 CNF clauses
+[btor>core] SAT call 11 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 9 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 9
+[btor>mc] initialized forward frame at bound k = 10
+[btor>mc] checking forward frame at bound k = 10
+[btor>mc] checking forward frame bad state property 0 at bound k = 10
+[btor>core] calling SAT
+[btor>varsubst] 1 variables substituted in 0.0 seconds
+[btor>skel] found 441 skeleton literals in 150 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 0
+[btor>slvfun] 5927 AIG vars, 37264 AIG ands, 41592 CNF vars, 108266 CNF clauses
+[btor>core] SAT call 12 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 10 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 10
+[btor>mc] initialized forward frame at bound k = 11
+[btor>mc] checking forward frame at bound k = 11
+[btor>mc] checking forward frame bad state property 0 at bound k = 11
+[btor>core] calling SAT
+[btor>varsubst] 1 variables substituted in 0.0 seconds
+[btor>skel] found 487 skeleton literals in 165 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 0
+[btor>slvfun] 6578 AIG vars, 44725 AIG ands, 49345 CNF vars, 129849 CNF clauses
+[btor>core] SAT call 13 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 11 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 11
+[btor>mc] initialized forward frame at bound k = 12
+[btor>mc] checking forward frame at bound k = 12
+[btor>mc] checking forward frame bad state property 0 at bound k = 12
+[btor>core] calling SAT
+[btor>varsubst] 1 variables substituted in 0.0 seconds
+[btor>skel] found 533 skeleton literals in 180 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 0
+[btor>slvfun] 7229 AIG vars, 52191 AIG ands, 57099 CNF vars, 151437 CNF clauses
+[btor>core] SAT call 14 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 12 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 12
+[btor>mc] initialized forward frame at bound k = 13
+[btor>mc] checking forward frame at bound k = 13
+[btor>mc] checking forward frame bad state property 0 at bound k = 13
+[btor>core] calling SAT
+[btor>varsubst] 1 variables substituted in 0.0 seconds
+[btor>skel] found 579 skeleton literals in 195 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 0
+[btor>slvfun] 7880 AIG vars, 59667 AIG ands, 64855 CNF vars, 173035 CNF clauses
+[btor>core] SAT call 15 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 13 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 13
+[btor>mc] initialized forward frame at bound k = 14
+[btor>mc] checking forward frame at bound k = 14
+[btor>mc] checking forward frame bad state property 0 at bound k = 14
+[btor>core] calling SAT
+[btor>varsubst] 1 variables substituted in 0.0 seconds
+[btor>skel] found 625 skeleton literals in 210 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 0
+[btor>slvfun] 8531 AIG vars, 67143 AIG ands, 72611 CNF vars, 194633 CNF clauses
+[btor>core] SAT call 16 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 14 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 14
+[btor>mc] initialized forward frame at bound k = 15
+[btor>mc] checking forward frame at bound k = 15
+[btor>mc] checking forward frame bad state property 0 at bound k = 15
+[btor>core] calling SAT
+[btor>varsubst] 1 variables substituted in 0.0 seconds
+[btor>skel] found 671 skeleton literals in 225 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 4 new constraints in 0.0 seconds
+[btor>embed] replaced 4 embedded constraints in 0 seconds
+[btor>preprocess] 2 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 0
+[btor>slvfun] 9182 AIG vars, 74615 AIG ands, 80367 CNF vars, 216231 CNF clauses
+[btor>core] SAT call 17 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 15 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 15
+[btor>mc] initialized forward frame at bound k = 16
+[btor>mc] checking forward frame at bound k = 16
+[btor>mc] checking forward frame bad state property 0 at bound k = 16
+[btor>core] calling SAT
+[btor>varsubst] 1 variables substituted in 0.0 seconds
+[btor>skel] found 713 skeleton literals in 240 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 1 new constraints in 0.0 seconds
+[btor>embed] replaced 1 embedded constraints in 0 seconds
+[btor>preprocess] 2 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 0
+[btor>slvfun] 9833 AIG vars, 82090 AIG ands, 88123 CNF vars, 237829 CNF clauses
+[btor>core] SAT call 18 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 16 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 16
+[btor>mc] initialized forward frame at bound k = 17
+[btor>mc] checking forward frame at bound k = 17
+[btor>mc] checking forward frame bad state property 0 at bound k = 17
+[btor>core] calling SAT
+[btor>varsubst] 1 variables substituted in 0.0 seconds
+[btor>skel] found 758 skeleton literals in 255 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 0
+[btor>slvfun] 10484 AIG vars, 89566 AIG ands, 95879 CNF vars, 259427 CNF clauses
+[btor>core] SAT call 19 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 17 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 17
+[btor>mc] initialized forward frame at bound k = 18
+[btor>mc] checking forward frame at bound k = 18
+[btor>mc] checking forward frame bad state property 0 at bound k = 18
+[btor>core] calling SAT
+[btor>varsubst] 1 variables substituted in 0.0 seconds
+[btor>skel] found 804 skeleton literals in 270 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 0
+[btor>slvfun] 11135 AIG vars, 97032 AIG ands, 103633 CNF vars, 281015 CNF clauses
+[btor lglclone1]   19.485  23% simplifying
+[btor lglclone1]   64.474  77% search
+[btor lglclone1] ==================================
+[btor lglclone1]   83.976 100% all
+[btor lglclone1] 
+[btor lglclone1]        230619 conflicts,        2746.2 confs/sec
+[btor lglclone1]          1340 ternaries,         172.1 confs/ternary
+[btor lglclone1]           350 binaries,          658.9 confs/binary
+[btor lglclone1]             6 iterations,      38436.5 confs/iteration
+[btor lglclone1] 
+[btor lglclone1]            94 reductions,          1.1 redus/sec,   2453.4 confs/reduction
+[btor lglclone1]           830 restarts,            9.9 rests/sec,    277.9 confs/restart
+[btor lglclone1]        321877 decisions,        3832.9 decis/sec,      1.4 decis/conflict
+[btor lglclone1]     327014362 propagations,  3894125.3 props/sec,   1016.0 props/decision
+[btor lglclone1] 
+[btor lglclone1] 84.0 seconds, 27.7 MB
+[btor>core] SAT call 20 returned 10 in 0.000 seconds
+[btor>mc] bad state property 0 reachable at bound k = 18 SATISFIABLE
+sat
+b0
+#0
+0 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[4].f.entry_gen[15].ff_entry_inst.Q#0
+1 00000 gen_fifos[4].f.ff_rdPtr.Q#0
+2 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[4].f.entry_gen[14].ff_entry_inst.Q#0
+3 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[4].f.entry_gen[13].ff_entry_inst.Q#0
+4 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[4].f.entry_gen[12].ff_entry_inst.Q#0
+5 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[4].f.entry_gen[11].ff_entry_inst.Q#0
+6 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[4].f.entry_gen[10].ff_entry_inst.Q#0
+7 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[4].f.entry_gen[9].ff_entry_inst.Q#0
+8 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[4].f.entry_gen[8].ff_entry_inst.Q#0
+9 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[4].f.entry_gen[7].ff_entry_inst.Q#0
+10 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[4].f.entry_gen[6].ff_entry_inst.Q#0
+11 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[4].f.entry_gen[5].ff_entry_inst.Q#0
+12 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[4].f.entry_gen[4].ff_entry_inst.Q#0
+13 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[4].f.entry_gen[3].ff_entry_inst.Q#0
+14 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[4].f.entry_gen[2].ff_entry_inst.Q#0
+15 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[4].f.entry_gen[1].ff_entry_inst.Q#0
+16 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[4].f.entry_gen[0].ff_entry_inst.Q#0
+17 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[3].f.entry_gen[15].ff_entry_inst.Q#0
+18 00000 gen_fifos[3].f.ff_rdPtr.Q#0
+19 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[3].f.entry_gen[14].ff_entry_inst.Q#0
+20 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[3].f.entry_gen[13].ff_entry_inst.Q#0
+21 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[3].f.entry_gen[12].ff_entry_inst.Q#0
+22 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[3].f.entry_gen[11].ff_entry_inst.Q#0
+23 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[3].f.entry_gen[10].ff_entry_inst.Q#0
+24 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[3].f.entry_gen[9].ff_entry_inst.Q#0
+25 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[3].f.entry_gen[8].ff_entry_inst.Q#0
+26 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[3].f.entry_gen[7].ff_entry_inst.Q#0
+27 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[3].f.entry_gen[6].ff_entry_inst.Q#0
+28 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[3].f.entry_gen[5].ff_entry_inst.Q#0
+29 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[3].f.entry_gen[4].ff_entry_inst.Q#0
+30 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[3].f.entry_gen[3].ff_entry_inst.Q#0
+31 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[3].f.entry_gen[2].ff_entry_inst.Q#0
+32 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[3].f.entry_gen[1].ff_entry_inst.Q#0
+33 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[3].f.entry_gen[0].ff_entry_inst.Q#0
+34 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[2].f.entry_gen[15].ff_entry_inst.Q#0
+35 00000 gen_fifos[2].f.ff_rdPtr.Q#0
+36 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[2].f.entry_gen[14].ff_entry_inst.Q#0
+37 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[2].f.entry_gen[13].ff_entry_inst.Q#0
+38 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[2].f.entry_gen[12].ff_entry_inst.Q#0
+39 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[2].f.entry_gen[11].ff_entry_inst.Q#0
+40 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[2].f.entry_gen[10].ff_entry_inst.Q#0
+41 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[2].f.entry_gen[9].ff_entry_inst.Q#0
+42 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[2].f.entry_gen[8].ff_entry_inst.Q#0
+43 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[2].f.entry_gen[7].ff_entry_inst.Q#0
+44 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[2].f.entry_gen[6].ff_entry_inst.Q#0
+45 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[2].f.entry_gen[5].ff_entry_inst.Q#0
+46 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[2].f.entry_gen[4].ff_entry_inst.Q#0
+47 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[2].f.entry_gen[3].ff_entry_inst.Q#0
+48 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[2].f.entry_gen[2].ff_entry_inst.Q#0
+49 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[2].f.entry_gen[1].ff_entry_inst.Q#0
+50 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[2].f.entry_gen[0].ff_entry_inst.Q#0
+51 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[1].f.entry_gen[15].ff_entry_inst.Q#0
+52 00000 gen_fifos[1].f.ff_rdPtr.Q#0
+53 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[1].f.entry_gen[14].ff_entry_inst.Q#0
+54 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[1].f.entry_gen[13].ff_entry_inst.Q#0
+55 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[1].f.entry_gen[12].ff_entry_inst.Q#0
+56 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[1].f.entry_gen[11].ff_entry_inst.Q#0
+57 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[1].f.entry_gen[10].ff_entry_inst.Q#0
+58 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[1].f.entry_gen[9].ff_entry_inst.Q#0
+59 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[1].f.entry_gen[8].ff_entry_inst.Q#0
+60 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[1].f.entry_gen[7].ff_entry_inst.Q#0
+61 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[1].f.entry_gen[6].ff_entry_inst.Q#0
+62 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[1].f.entry_gen[5].ff_entry_inst.Q#0
+63 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[1].f.entry_gen[4].ff_entry_inst.Q#0
+64 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[1].f.entry_gen[3].ff_entry_inst.Q#0
+65 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[1].f.entry_gen[2].ff_entry_inst.Q#0
+66 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[1].f.entry_gen[1].ff_entry_inst.Q#0
+67 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[1].f.entry_gen[0].ff_entry_inst.Q#0
+68 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[0].f.entry_gen[15].ff_entry_inst.Q#0
+69 00000 gen_fifos[0].f.ff_rdPtr.Q#0
+70 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[0].f.entry_gen[14].ff_entry_inst.Q#0
+71 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[0].f.entry_gen[13].ff_entry_inst.Q#0
+72 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[0].f.entry_gen[12].ff_entry_inst.Q#0
+73 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[0].f.entry_gen[11].ff_entry_inst.Q#0
+74 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[0].f.entry_gen[10].ff_entry_inst.Q#0
+75 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[0].f.entry_gen[9].ff_entry_inst.Q#0
+76 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[0].f.entry_gen[8].ff_entry_inst.Q#0
+77 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[0].f.entry_gen[7].ff_entry_inst.Q#0
+78 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[0].f.entry_gen[6].ff_entry_inst.Q#0
+79 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[0].f.entry_gen[5].ff_entry_inst.Q#0
+80 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[0].f.entry_gen[4].ff_entry_inst.Q#0
+81 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[0].f.entry_gen[3].ff_entry_inst.Q#0
+82 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[0].f.entry_gen[2].ff_entry_inst.Q#0
+83 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[0].f.entry_gen[1].ff_entry_inst.Q#0
+84 0000000000000000000000000000000000000000000000000000000000000000 gen_fifos[0].f.entry_gen[0].ff_entry_inst.Q#0
+85 0 sb.ff_en.Q#0
+86 0 sb.ff_magic_packet_exited.Q#0
+87 000000 sb.mpt.ff_cnt.Q#0
+88 0000000000000000000000000000000000000000000000000000000000000000 sb.ff_magic_packet.Q#0
+89 00000 gen_fifos[3].cc.credits#0
+90 11101 gen_fifos[4].cc.credits#0
+91 00000 gen_fifos[0].cc.credits#0
+92 11111 gen_fifos[1].cc.credits#0
+93 11111 gen_fifos[2].cc.credits#0
+94 10001 gen_fifos[2].f.cnt#0
+95 01000 gen_fifos[3].f.cnt#0
+96 11000 gen_fifos[4].f.cnt#0
+97 01010 gen_fifos[0].f.cnt#0
+98 10111 gen_fifos[1].f.cnt#0
+100 00000 gen_fifos[0].f.ff_wrPtr.Q#0
+101 00000 gen_fifos[1].f.ff_wrPtr.Q#0
+102 00000 gen_fifos[2].f.ff_wrPtr.Q#0
+103 00000 gen_fifos[3].f.ff_wrPtr.Q#0
+104 00000 gen_fifos[4].f.ff_wrPtr.Q#0
+@0
+0 0 all_ones@0
+1 0 clk@0
+2 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 flat_data_in@0
+3 110 gnt_sel@0
+4 00000 push@0
+5 1 req@0
+6 1 rst@0
+7 0 start@0
+8 0000000000000000000000000000000000000000000000000000000000000000 input8@0
+9 0000000000000000000000000000000000000000000000000000000000000000 input9@0
+10 0000000000000000000000000000000000000000000000000000000000000000 input10@0
+11 0000000000000000000000000000000000000000000000000000000000000000 input11@0
+12 0000000000000000000000000000000000000000000000000000000000000000 input12@0
+13 0 input13@0
+@1
+0 1 all_ones@1
+1 0 clk@1
+2 11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 flat_data_in@1
+3 000 gnt_sel@1
+4 01101 push@1
+5 0 req@1
+6 0 rst@1
+7 1 start@1
+8 0000000000000000000000000000000000000000000000000000000000000000 input8@1
+9 0000000000000000000000000000000000000000000000000000000000000000 input9@1
+10 0000000000000000000000000000000000000000000000000000000000000000 input10@1
+11 0000000000000000000000000000000000000000000000000000000000000000 input11@1
+12 0000000000000000000000000000000000000000000000000000000000000000 input12@1
+13 0 input13@1
+@2
+0 1 all_ones@2
+1 0 clk@2
+2 11111111111111111111111111111111111111111111111111111111111111101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 flat_data_in@2
+3 110 gnt_sel@2
+4 11001 push@2
+5 0 req@2
+6 0 rst@2
+7 0 start@2
+8 1111111111111111111111111111111111111111111111111111111111111111 input8@2
+9 1111111111111111111111111111111111111111111111111111111111111111 input9@2
+10 1111111111111111111111111111111111111111111111111111111111111111 input10@2
+11 1111111111111111111111111111111111111111111111111111111111111111 input11@2
+12 1111111111111111111111111111111111111111111111111111111111111111 input12@2
+13 0 input13@2
+@3
+0 1 all_ones@3
+1 0 clk@3
+2 11111111111111111111111111111111111111111111111111111111111111101111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110 flat_data_in@3
+3 011 gnt_sel@3
+4 11111 push@3
+5 0 req@3
+6 0 rst@3
+7 0 start@3
+8 1111111111111111111111111111111111111111111111111111111111111111 input8@3
+9 1111111111111111111111111111111111111111111111111111111111111111 input9@3
+10 1111111111111111111111111111111111111111111111111111111111111111 input10@3
+11 1111111111111111111111111111111111111111111111111111111111111111 input11@3
+12 1111111111111111111111111111111111111111111111111111111111111111 input12@3
+13 0 input13@3
+@4
+0 1 all_ones@4
+1 0 clk@4
+2 11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110 flat_data_in@4
+3 101 gnt_sel@4
+4 00001 push@4
+5 1 req@4
+6 0 rst@4
+7 0 start@4
+8 0000000000000000000000000000000000000000000000000000000000000000 input8@4
+9 0000000000000000000000000000000000000000000000000000000000000000 input9@4
+10 0000000000000000000000000000000000000000000000000000000000000000 input10@4
+11 0000000000000000000000000000000000000000000000000000000000000000 input11@4
+12 0000000000000000000000000000000000000000000000000000000000000000 input12@4
+13 0 input13@4
+@5
+0 1 all_ones@5
+1 0 clk@5
+2 11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 flat_data_in@5
+3 111 gnt_sel@5
+4 10011 push@5
+5 1 req@5
+6 0 rst@5
+7 0 start@5
+8 0000000000000000000000000000000000000000000000000000000000000000 input8@5
+9 0000000000000000000000000000000000000000000000000000000000000000 input9@5
+10 0000000000000000000000000000000000000000000000000000000000000000 input10@5
+11 0000000000000000000000000000000000000000000000000000000000000000 input11@5
+12 0000000000000000000000000000000000000000000000000000000000000000 input12@5
+13 0 input13@5
+@6
+0 1 all_ones@6
+1 0 clk@6
+2 11111111111111111111111111111111111111111111111111111111111111101111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 flat_data_in@6
+3 111 gnt_sel@6
+4 10011 push@6
+5 1 req@6
+6 0 rst@6
+7 0 start@6
+8 0000000000000000000000000000000000000000000000000000000000000000 input8@6
+9 0000000000000000000000000000000000000000000000000000000000000000 input9@6
+10 0000000000000000000000000000000000000000000000000000000000000000 input10@6
+11 0000000000000000000000000000000000000000000000000000000000000000 input11@6
+12 0000000000000000000000000000000000000000000000000000000000000000 input12@6
+13 0 input13@6
+@7
+0 1 all_ones@7
+1 0 clk@7
+2 11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110 flat_data_in@7
+3 111 gnt_sel@7
+4 01011 push@7
+5 1 req@7
+6 0 rst@7
+7 0 start@7
+8 0000000000000000000000000000000000000000000000000000000000000000 input8@7
+9 0000000000000000000000000000000000000000000000000000000000000000 input9@7
+10 0000000000000000000000000000000000000000000000000000000000000000 input10@7
+11 0000000000000000000000000000000000000000000000000000000000000000 input11@7
+12 0000000000000000000000000000000000000000000000000000000000000000 input12@7
+13 0 input13@7
+@8
+0 1 all_ones@8
+1 0 clk@8
+2 11111111111111111111111111111111111111111111111111111111111111101111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110 flat_data_in@8
+3 001 gnt_sel@8
+4 11011 push@8
+5 0 req@8
+6 0 rst@8
+7 0 start@8
+8 0000000000000000000000000000000000000000000000000000000000000000 input8@8
+9 0000000000000000000000000000000000000000000000000000000000000000 input9@8
+10 0000000000000000000000000000000000000000000000000000000000000000 input10@8
+11 0000000000000000000000000000000000000000000000000000000000000000 input11@8
+12 0000000000000000000000000000000000000000000000000000000000000000 input12@8
+13 0 input13@8
+@9
+0 1 all_ones@9
+1 0 clk@9
+2 11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111011111111111111111111111111111111111111111111111111111111111111101111111111111111111111111111111111111111111111111111111111111111 flat_data_in@9
+3 111 gnt_sel@9
+4 11111 push@9
+5 1 req@9
+6 0 rst@9
+7 0 start@9
+8 0000000000000000000000000000000000000000000000000000000000000000 input8@9
+9 0000000000000000000000000000000000000000000000000000000000000000 input9@9
+10 0000000000000000000000000000000000000000000000000000000000000000 input10@9
+11 0000000000000000000000000000000000000000000000000000000000000000 input11@9
+12 0000000000000000000000000000000000000000000000000000000000000000 input12@9
+13 0 input13@9
+@10
+0 1 all_ones@10
+1 0 clk@10
+2 11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 flat_data_in@10
+3 111 gnt_sel@10
+4 11101 push@10
+5 1 req@10
+6 0 rst@10
+7 0 start@10
+8 0000000000000000000000000000000000000000000000000000000000000000 input8@10
+9 0000000000000000000000000000000000000000000000000000000000000000 input9@10
+10 0000000000000000000000000000000000000000000000000000000000000000 input10@10
+11 0000000000000000000000000000000000000000000000000000000000000000 input11@10
+12 0000000000000000000000000000000000000000000000000000000000000000 input12@10
+13 0 input13@10
+@11
+0 1 all_ones@11
+1 0 clk@11
+2 11111111111111111111111111111111111111111111111111111111111111101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111011111111111111111111111111111111111111111111111111111111111111101111111111111111111111111111111111111111111111111111111111111110 flat_data_in@11
+3 001 gnt_sel@11
+4 00001 push@11
+5 0 req@11
+6 0 rst@11
+7 0 start@11
+8 0000000000000000000000000000000000000000000000000000000000000000 input8@11
+9 0000000000000000000000000000000000000000000000000000000000000000 input9@11
+10 0000000000000000000000000000000000000000000000000000000000000000 input10@11
+11 0000000000000000000000000000000000000000000000000000000000000000 input11@11
+12 0000000000000000000000000000000000000000000000000000000000000000 input12@11
+13 0 input13@11
+@12
+0 1 all_ones@12
+1 0 clk@12
+2 11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110 flat_data_in@12
+3 111 gnt_sel@12
+4 00011 push@12
+5 1 req@12
+6 0 rst@12
+7 0 start@12
+8 0000000000000000000000000000000000000000000000000000000000000000 input8@12
+9 0000000000000000000000000000000000000000000000000000000000000000 input9@12
+10 0000000000000000000000000000000000000000000000000000000000000000 input10@12
+11 0000000000000000000000000000000000000000000000000000000000000000 input11@12
+12 0000000000000000000000000000000000000000000000000000000000000000 input12@12
+13 0 input13@12
+@13
+0 1 all_ones@13
+1 0 clk@13
+2 11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110 flat_data_in@13
+3 111 gnt_sel@13
+4 00101 push@13
+5 1 req@13
+6 0 rst@13
+7 0 start@13
+8 0000000000000000000000000000000000000000000000000000000000000000 input8@13
+9 0000000000000000000000000000000000000000000000000000000000000000 input9@13
+10 0000000000000000000000000000000000000000000000000000000000000000 input10@13
+11 0000000000000000000000000000000000000000000000000000000000000000 input11@13
+12 0000000000000000000000000000000000000000000000000000000000000000 input12@13
+13 0 input13@13
+@14
+0 1 all_ones@14
+1 0 clk@14
+2 11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 flat_data_in@14
+3 101 gnt_sel@14
+4 00001 push@14
+5 1 req@14
+6 0 rst@14
+7 0 start@14
+8 0000000000000000000000000000000000000000000000000000000000000000 input8@14
+9 0000000000000000000000000000000000000000000000000000000000000000 input9@14
+10 0000000000000000000000000000000000000000000000000000000000000000 input10@14
+11 0000000000000000000000000000000000000000000000000000000000000000 input11@14
+12 0000000000000000000000000000000000000000000000000000000000000000 input12@14
+13 0 input13@14
+@15
+0 1 all_ones@15
+1 0 clk@15
+2 11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 flat_data_in@15
+3 101 gnt_sel@15
+4 00001 push@15
+5 1 req@15
+6 0 rst@15
+7 0 start@15
+8 0000000000000000000000000000000000000000000000000000000000000000 input8@15
+9 0000000000000000000000000000000000000000000000000000000000000000 input9@15
+10 0000000000000000000000000000000000000000000000000000000000000000 input10@15
+11 0000000000000000000000000000000000000000000000000000000000000000 input11@15
+12 0000000000000000000000000000000000000000000000000000000000000000 input12@15
+13 0 input13@15
+@16
+0 1 all_ones@16
+1 0 clk@16
+2 11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 flat_data_in@16
+3 001 gnt_sel@16
+4 00001 push@16
+5 0 req@16
+6 0 rst@16
+7 0 start@16
+8 0000000000000000000000000000000000000000000000000000000000000000 input8@16
+9 0000000000000000000000000000000000000000000000000000000000000000 input9@16
+10 0000000000000000000000000000000000000000000000000000000000000000 input10@16
+11 0000000000000000000000000000000000000000000000000000000000000000 input11@16
+12 0000000000000000000000000000000000000000000000000000000000000000 input12@16
+13 0 input13@16
+@17
+0 1 all_ones@17
+1 0 clk@17
+2 11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110 flat_data_in@17
+3 110 gnt_sel@17
+4 00001 push@17
+5 1 req@17
+6 0 rst@17
+7 1 start@17
+8 0000000000000000000000000000000000000000000000000000000000000000 input8@17
+9 0000000000000000000000000000000000000000000000000000000000000000 input9@17
+10 0000000000000000000000000000000000000000000000000000000000000000 input10@17
+11 0000000000000000000000000000000000000000000000000000000000000000 input11@17
+12 0000000000000000000000000000000000000000000000000000000000000000 input12@17
+13 0 input13@17
+@18
+0 0 all_ones@18
+1 0 clk@18
+2 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 flat_data_in@18
+3 000 gnt_sel@18
+4 00000 push@18
+5 1 req@18
+6 0 rst@18
+7 0 start@18
+8 0000000000000000000000000000000000000000000000000000000000000000 input8@18
+9 0000000000000000000000000000000000000000000000000000000000000000 input9@18
+10 0000000000000000000000000000000000000000000000000000000000000000 input10@18
+11 0000000000000000000000000000000000000000000000000000000000000000 input11@18
+12 0000000000000000000000000000000000000000000000000000000000000000 input12@18
+13 0 input13@18
+.
+[btor>mc] found 1 reachable and 0 unreachable bad state properties at bound k = 18
+[btor>mc] deleting model checker: 14 inputs, 105 states, 1 bad, 16 constraints
+btormc /home/jetafese/hwmc20-mlir/btor2/bv/2019/mann/data-integrity/unsafe/arbitrated_top_n5_w64_d16_e0.btor2 

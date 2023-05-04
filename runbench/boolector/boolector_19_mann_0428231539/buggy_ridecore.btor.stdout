@@ -1,0 +1,2 @@
+./boolector_get_btor.sh /home/jetafese/hwmc20-mlir/btor2/bv/2019/mann/unsafe/buggy_ridecore.btor
+boolector /home/jetafese/hwmc20-mlir/btor2/bv/2019/mann/unsafe/buggy_ridecore.btor 

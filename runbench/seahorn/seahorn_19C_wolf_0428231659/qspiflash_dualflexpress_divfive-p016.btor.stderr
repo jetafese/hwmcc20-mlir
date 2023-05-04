@@ -1,0 +1,41 @@
+Info: pointer size: 8, word size: 8
+Info: Trackable memory is not present
+Functions: 
+NONE
+Globals: 
+NONE
+(sat.stats   :conflicts  :restarts         :learned/bin    :gc          :time)
+(sat.stats          :decisions :clauses/bin       :units       :memory       )
+(sat.stats      0      0    0 38904/15729     0/0   0       0    47.36   0.00)
+(sat.stats    174    931    0 38895/15726   172/31  89       0    47.55   0.01)
+(sat.stats    174    931    0 38895/15726   172/31  89       0    47.55   0.02)
+(sat.stats    174    931    0 38895/15726   172/31  89       0    47.55   0.02)
+(sat.stats    174    931    0 32878/9879    76/24 291       0    51.04   0.18)
+(sat.stats    177    959    1 30192/8150    78/25 291       0    50.94   0.18)
+(sat.stats :conflicts    :restarts       :learned/bin      :gc          :time)
+(sat.stats        :decisions :clauses/bin       :units         :memory       )
+(sat.stats    180    976    2 30192/8150    81/26 291       0    50.94   0.18)
+(sat.stats    183    997    3 30192/8150    84/29 291       0    50.94   0.18)
+(sat.stats    186   1003    4 30192/8150    87/31 291       0    50.94   0.18)
+(sat.stats    192   1036    5 30192/8150    93/32 291       0    50.94   0.18)
+(sat.stats    195   1046    6 30192/8150    96/32 291       0    50.94   0.18)
+(sat.stats    198   1055    7 30192/8150    99/33 291       0    50.94   0.18)
+(sat.stats    513   2029    8 30192/8150   412/70 297       0    50.94   0.20)
+(sat.stats    534   2062    9 30192/8150   433/71 297       0    50.94   0.20)
+(sat.stats    537   2063   10 30192/8150   436/71 297       0    50.94   0.20)
+(sat.stats    540   2064   11 30192/8150   439/71 297       0    50.94   0.20)
+(sat.stats    543   2076   12 30192/8150   442/71 297       0    50.94   0.21)
+(sat.stats    546   2082   13 30192/8150   445/71 297       0    50.94   0.21)
+(sat.stats    549   2092   14 30192/8150   448/71 297       0    50.94   0.21)
+(sat.stats    553   2105   15 30192/8150   452/71 297       0    50.94   0.21)
+(sat.stats    710   2416   35 30192/8150   609/78 297       0    50.94   0.22)
+(sat.stats :conflicts   :restarts       :learned/bin       :gc          :time)
+(sat.stats       :decisions  :clauses/bin       :units         :memory       )
+(sat.stats   1071   3174   72 30192/8150   970/90 297       0    51.04   0.24)
+(sat.stats   1601   4287  151 30192/8150  1500/114 297       0    51.04   0.28)
+(sat.stats   2445   6281  270 30157/8149  2340/142 297       0    51.14   0.34)
+(sat.stats   2665   6776  289 30152/8154  2214/145 1030       0    51.14   0.35)
+
+real	0m24.892s
+user	0m24.675s
+sys	0m0.177s

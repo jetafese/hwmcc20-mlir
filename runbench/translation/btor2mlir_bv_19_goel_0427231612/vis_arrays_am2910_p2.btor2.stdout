@@ -1,0 +1,3 @@
+./get_btor_seahorn.sh /home/jetafese/hwmc20-mlir/btor2/bv/2019/goel/vis_arrays_am2910_p2.btor2
+btor2mlir-translate --import-btor /home/jetafese/hwmc20-mlir/btor2/bv/2019/goel/vis_arrays_am2910_p2.btor2 > /home/jetafese/hwmc20-mlir/btor2/bv/2019/goel/vis_arrays_am2910_p2.btor2.mlir
+btor2mlir-translate --export-btor /home/jetafese/hwmc20-mlir/btor2/bv/2019/goel/vis_arrays_am2910_p2.btor2.mlir > /home/jetafese/hwmc20-mlir/btor2/bv/2019/goel/vis_arrays_am2910_p2.btor2.export.btor

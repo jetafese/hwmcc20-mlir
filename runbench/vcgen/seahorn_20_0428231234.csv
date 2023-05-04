@@ -1,0 +1,16 @@
+index,BMC,Control,Thinned,bmc_circ_sz,bmc_dag_sz,btor_time,seahorn_total
+rast-p00.btor,2.28,dependence,Gate,4,47230,85.215,4.58
+rast-p01.btor,1.16,dependence,Gate,4,23921,20.799,2.69
+rast-p03.btor,0.45,dependence,Gate,4,9162,10.173,1.35
+rast-p04.btor,1.18,dependence,Gate,4,23921,20.801,2.72
+rast-p06.btor,0.05,dependence,Gate,4,1048,5.115,0.64
+rast-p11.btor,2.21,dependence,Gate,4,45077,86.849,4.58
+rast-p14.btor,2.39,dependence,Gate,4,50579,89.936,4.81
+rast-p16.btor,2.34,dependence,Gate,4,50580,93.833,4.77
+rast-p17.btor,2.51,dependence,Gate,4,50577,88.858,4.98
+rast-p18.btor,0.04,dependence,Gate,4,988,4.974,0.63
+rast-p19.btor,0.05,dependence,Gate,4,1048,5.199,0.66
+rast-p21.btor,0.52,dependence,Gate,4,10943,11.607,1.51
+simple_alu.btor,,dependence,Gate,,,0.535,0.01
+stack-p1.btor,0.40,dependence,Gate,4,6964,10.29,0.82
+stack-p2.btor,0.00,dependence,Gate,6,21,1.329,0.06

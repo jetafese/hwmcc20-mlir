@@ -1,0 +1,16 @@
+index,btor_time
+rast-p00.btor,0.03
+rast-p01.btor,0.047
+rast-p03.btor,0.052
+rast-p04.btor,0.057
+rast-p06.btor,0.036
+rast-p11.btor,0.035
+rast-p14.btor,0.037
+rast-p16.btor,0.048
+rast-p17.btor,0.046
+rast-p18.btor,0.032
+rast-p19.btor,0.032
+rast-p21.btor,0.035
+simple_alu.btor,0.016
+stack-p1.btor,0.009
+stack-p2.btor,0.019

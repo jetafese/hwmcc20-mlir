@@ -1,0 +1,1447 @@
+./btormc_get_btor.sh /home/jetafese/hwmc20-mlir/btor2/bv/2019/beem/at.6.prop1-back-serstep.btor2
+[btormc] parsing input file...
+[btormc] finished parsing
+[btor>mc] calling BMC on 1 properties from bound 0 up-to maximum bound k = 20
+[btor>mc] trace generation enabled
+[btor>mc] new forward manager
+[btor>mc] initialized forward frame at bound k = 0
+[btor>mc] checking forward frame at bound k = 0
+[btor>mc] checking forward frame bad state property 0 at bound k = 0
+[btor>core] calling SAT
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] enabled core engine
+[btor>sat] Lingeling allows both incremental and non-incremental mode
+[btor>sat] initialized Lingeling
+[lingeling] Lingeling
+[lingeling] 
+[lingeling] Version bcp 4fe47dd5a6ef91df6dca4bad81326f992dc3fbab
+[lingeling] 
+[lingeling] Copyright (C) 2010-2016 Armin Biere JKU Linz Austria.
+[lingeling] All rights reserved.
+[lingeling] 
+[lingeling] released Tue Nov 22 09:56:45 EST 2022
+[lingeling] compiled Tue Nov 22 09:56:45 EST 2022
+[lingeling] 
+[lingeling] gcc (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0
+[lingeling] -W -Wall -O3 -fPIC -DNLGLOG -DNDEBUG -DNCHKSOL -DNLGLDRUPLIG
+[lingeling] -DNLGLYALSAT -DNLGLFILES -DNLGLDEMA
+[lingeling] Linux lilla-my 4.15.0-156-generic x86_64
+[lingeling] 
+[btor>slvfun] 0 AIG vars, 0 AIG ands, 0 CNF vars, 0 CNF clauses
+[btor>core] SAT call 2 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 0 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 0
+[btor>mc] initialized forward frame at bound k = 1
+[btor>mc] checking forward frame at bound k = 1
+[btor>mc] checking forward frame bad state property 0 at bound k = 1
+[btor>core] calling SAT
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 125 AIG vars, 84 AIG ands, 207 CNF vars, 247 CNF clauses
+[btor>core] SAT call 3 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 1 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 1
+[btor>mc] initialized forward frame at bound k = 2
+[btor>mc] checking forward frame at bound k = 2
+[btor>mc] checking forward frame bad state property 0 at bound k = 2
+[btor>core] calling SAT
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 321 AIG vars, 2205 AIG ands, 2169 CNF vars, 5745 CNF clauses
+[btor>core] SAT call 4 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 2 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 2
+[btor>mc] initialized forward frame at bound k = 3
+[btor>mc] checking forward frame at bound k = 3
+[btor>mc] checking forward frame bad state property 0 at bound k = 3
+[btor>core] calling SAT
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 517 AIG vars, 4326 AIG ands, 4131 CNF vars, 11243 CNF clauses
+[btor>core] SAT call 5 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 3 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 3
+[btor>mc] initialized forward frame at bound k = 4
+[btor>mc] checking forward frame at bound k = 4
+[btor>mc] checking forward frame bad state property 0 at bound k = 4
+[btor>core] calling SAT
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 713 AIG vars, 6447 AIG ands, 6093 CNF vars, 16741 CNF clauses
+[btor>core] SAT call 6 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 4 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 4
+[btor>mc] initialized forward frame at bound k = 5
+[btor>mc] checking forward frame at bound k = 5
+[btor>mc] checking forward frame bad state property 0 at bound k = 5
+[btor>core] calling SAT
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 909 AIG vars, 8568 AIG ands, 8055 CNF vars, 22239 CNF clauses
+[btor>core] SAT call 7 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 5 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 5
+[btor>mc] initialized forward frame at bound k = 6
+[btor>mc] checking forward frame at bound k = 6
+[btor>mc] checking forward frame bad state property 0 at bound k = 6
+[btor>core] calling SAT
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 1105 AIG vars, 10689 AIG ands, 10017 CNF vars, 27737 CNF clauses
+[btor lglclone1]    2.279  13% simplifying
+[btor lglclone1]   15.319  87% search
+[btor lglclone1] ==================================
+[btor lglclone1]   17.598 100% all
+[btor lglclone1] 
+[btor lglclone1]         70013 conflicts,        3978.5 confs/sec
+[btor lglclone1]           292 ternaries,         239.8 confs/ternary
+[btor lglclone1]            79 binaries,          886.2 confs/binary
+[btor lglclone1]            13 iterations,       5385.6 confs/iteration
+[btor lglclone1] 
+[btor lglclone1]            27 reductions,          1.5 redus/sec,   2593.1 confs/reduction
+[btor lglclone1]           142 restarts,            8.1 rests/sec,    493.0 confs/restart
+[btor lglclone1]        154999 decisions,        8807.8 decis/sec,      2.2 decis/conflict
+[btor lglclone1]      34074881 propagations,  1936298.1 props/sec,    219.8 props/decision
+[btor lglclone1] 
+[btor lglclone1] 17.6 seconds, 28.6 MB
+[btor>core] SAT call 8 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 6 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 6
+[btor>mc] initialized forward frame at bound k = 7
+[btor>mc] checking forward frame at bound k = 7
+[btor>mc] checking forward frame bad state property 0 at bound k = 7
+[btor>core] calling SAT
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 1301 AIG vars, 12810 AIG ands, 11979 CNF vars, 33235 CNF clauses
+[btor lglclone2]    3.095   7% simplifying
+[btor lglclone2]   44.252  94% search
+[btor lglclone2] ==================================
+[btor lglclone2]   47.328 100% all
+[btor lglclone2] 
+[btor lglclone2]        213510 conflicts,        4511.3 confs/sec
+[btor lglclone2]           505 ternaries,         422.8 confs/ternary
+[btor lglclone2]           117 binaries,         1824.9 confs/binary
+[btor lglclone2]             7 iterations,      30501.4 confs/iteration
+[btor lglclone2] 
+[btor lglclone2]            69 reductions,          1.5 redus/sec,   3094.3 confs/reduction
+[btor lglclone2]           491 restarts,           10.4 rests/sec,    434.8 confs/restart
+[btor lglclone2]        449967 decisions,        9507.4 decis/sec,      2.1 decis/conflict
+[btor lglclone2]     105996451 propagations,  2239613.2 props/sec,    235.6 props/decision
+[btor lglclone2] 
+[btor lglclone2] 47.3 seconds, 33.8 MB
+[btor>core] SAT call 9 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 7 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 7
+[btor>mc] initialized forward frame at bound k = 8
+[btor>mc] checking forward frame at bound k = 8
+[btor>mc] checking forward frame bad state property 0 at bound k = 8
+[btor>core] calling SAT
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 1497 AIG vars, 14931 AIG ands, 13941 CNF vars, 38733 CNF clauses
+[btor>core] SAT call 10 returned 10 in 0.000 seconds
+[btor>mc] bad state property 0 reachable at bound k = 8 SATISFIABLE
+sat
+b0
+@0
+0 00000100 v_x@0
+1 00000011 v_y@0
+2 00000001 v_z@0
+3 11111111 v_t_0@0
+4 11111111 v_t_1@0
+5 11111111 v_t_2@0
+6 11111111 v_t_3@0
+7 11111111 v_t_4@0
+8 1 a_q@0
+9 1 a_NCS_P_0@0
+10 0 a_p2_P_0@0
+11 0 a_p3_P_0@0
+12 0 a_p4_P_0@0
+13 0 a_p5_P_0@0
+14 0 a_p6_P_0@0
+15 0 a_p7_P_0@0
+16 0 a_p8_P_0@0
+17 0 a_p9_P_0@0
+18 0 a_CS_P_0@0
+19 0 a_p12_P_0@0
+20 0 a_p13_P_0@0
+21 0 a_NCS_P_1@0
+22 0 a_p2_P_1@0
+23 0 a_p3_P_1@0
+24 0 a_p4_P_1@0
+25 0 a_p5_P_1@0
+26 0 a_p6_P_1@0
+27 0 a_p7_P_1@0
+28 0 a_p8_P_1@0
+29 0 a_p9_P_1@0
+30 1 a_CS_P_1@0
+31 0 a_p12_P_1@0
+32 0 a_p13_P_1@0
+33 0 a_NCS_P_2@0
+34 0 a_p2_P_2@0
+35 1 a_p3_P_2@0
+36 0 a_p4_P_2@0
+37 0 a_p5_P_2@0
+38 0 a_p6_P_2@0
+39 0 a_p7_P_2@0
+40 0 a_p8_P_2@0
+41 0 a_p9_P_2@0
+42 0 a_CS_P_2@0
+43 0 a_p12_P_2@0
+44 0 a_p13_P_2@0
+45 0 a_NCS_P_3@0
+46 0 a_p2_P_3@0
+47 0 a_p3_P_3@0
+48 0 a_p4_P_3@0
+49 0 a_p5_P_3@0
+50 0 a_p6_P_3@0
+51 0 a_p7_P_3@0
+52 0 a_p8_P_3@0
+53 0 a_p9_P_3@0
+54 1 a_CS_P_3@0
+55 0 a_p12_P_3@0
+56 0 a_p13_P_3@0
+57 0 a_NCS_P_4@0
+58 0 a_p2_P_4@0
+59 1 a_p3_P_4@0
+60 0 a_p4_P_4@0
+61 0 a_p5_P_4@0
+62 0 a_p6_P_4@0
+63 0 a_p7_P_4@0
+64 0 a_p8_P_4@0
+65 0 a_p9_P_4@0
+66 0 a_CS_P_4@0
+67 0 a_p12_P_4@0
+68 0 a_p13_P_4@0
+69 0 f00@0
+70 0 f01@0
+71 0 f02@0
+72 0 f03@0
+73 0 f04@0
+74 0 f05@0
+75 0 f06@0
+76 0 f07@0
+77 0 f08@0
+78 0 f09@0
+79 0 f10@0
+80 0 f11@0
+81 0 f12@0
+82 0 f13@0
+83 0 f14@0
+84 0 f15@0
+85 0 f16@0
+86 0 f17@0
+87 0 f18@0
+88 0 f19@0
+89 0 f20@0
+90 0 f21@0
+91 0 f22@0
+92 0 f23@0
+93 0 f24@0
+94 0 f25@0
+95 0 f26@0
+96 0 f27@0
+97 0 f28@0
+98 0 f29@0
+99 0 f30@0
+100 0 f31@0
+101 0 f32@0
+102 0 f33@0
+103 0 f34@0
+104 0 f35@0
+105 0 f36@0
+106 0 f37@0
+107 0 f38@0
+108 0 f39@0
+109 0 f40@0
+110 0 f41@0
+111 0 f42@0
+112 0 f43@0
+113 0 f44@0
+114 0 f45@0
+115 0 f46@0
+116 0 f47@0
+117 0 f48@0
+118 0 f49@0
+119 0 f50@0
+120 0 f51@0
+121 0 f52@0
+122 0 f53@0
+123 0 f54@0
+124 0 f55@0
+125 0 f56@0
+126 0 f57@0
+127 0 f58@0
+128 0 f59@0
+129 0 f60@0
+130 0 f61@0
+131 0 f62@0
+132 0 f63@0
+133 0 f64@0
+134 0 f65@0
+135 0 f66@0
+136 0 f67@0
+137 0 f68@0
+138 0 f69@0
+139 0 f70@0
+@1
+0 00000011 v_x@1
+1 00000000 v_y@1
+2 00000000 v_z@1
+3 00000001 v_t_0@1
+4 00000001 v_t_1@1
+5 11111111 v_t_2@1
+6 11111111 v_t_3@1
+7 11111111 v_t_4@1
+8 1 a_q@1
+9 0 a_NCS_P_0@1
+10 0 a_p2_P_0@1
+11 0 a_p3_P_0@1
+12 0 a_p4_P_0@1
+13 0 a_p5_P_0@1
+14 1 a_p6_P_0@1
+15 0 a_p7_P_0@1
+16 0 a_p8_P_0@1
+17 0 a_p9_P_0@1
+18 0 a_CS_P_0@1
+19 0 a_p12_P_0@1
+20 0 a_p13_P_0@1
+21 0 a_NCS_P_1@1
+22 0 a_p2_P_1@1
+23 0 a_p3_P_1@1
+24 0 a_p4_P_1@1
+25 0 a_p5_P_1@1
+26 0 a_p6_P_1@1
+27 0 a_p7_P_1@1
+28 0 a_p8_P_1@1
+29 1 a_p9_P_1@1
+30 0 a_CS_P_1@1
+31 0 a_p12_P_1@1
+32 0 a_p13_P_1@1
+33 0 a_NCS_P_2@1
+34 0 a_p2_P_2@1
+35 1 a_p3_P_2@1
+36 0 a_p4_P_2@1
+37 0 a_p5_P_2@1
+38 0 a_p6_P_2@1
+39 0 a_p7_P_2@1
+40 0 a_p8_P_2@1
+41 0 a_p9_P_2@1
+42 0 a_CS_P_2@1
+43 0 a_p12_P_2@1
+44 0 a_p13_P_2@1
+45 0 a_NCS_P_3@1
+46 0 a_p2_P_3@1
+47 1 a_p3_P_3@1
+48 0 a_p4_P_3@1
+49 0 a_p5_P_3@1
+50 0 a_p6_P_3@1
+51 0 a_p7_P_3@1
+52 0 a_p8_P_3@1
+53 0 a_p9_P_3@1
+54 0 a_CS_P_3@1
+55 0 a_p12_P_3@1
+56 0 a_p13_P_3@1
+57 1 a_NCS_P_4@1
+58 0 a_p2_P_4@1
+59 0 a_p3_P_4@1
+60 0 a_p4_P_4@1
+61 0 a_p5_P_4@1
+62 0 a_p6_P_4@1
+63 0 a_p7_P_4@1
+64 0 a_p8_P_4@1
+65 0 a_p9_P_4@1
+66 0 a_CS_P_4@1
+67 0 a_p12_P_4@1
+68 0 a_p13_P_4@1
+69 1 f00@1
+70 0 f01@1
+71 0 f02@1
+72 0 f03@1
+73 0 f04@1
+74 0 f05@1
+75 0 f06@1
+76 1 f07@1
+77 0 f08@1
+78 1 f09@1
+79 1 f10@1
+80 1 f11@1
+81 0 f12@1
+82 1 f13@1
+83 1 f14@1
+84 0 f15@1
+85 0 f16@1
+86 0 f17@1
+87 0 f18@1
+88 1 f19@1
+89 0 f20@1
+90 0 f21@1
+91 0 f22@1
+92 0 f23@1
+93 0 f24@1
+94 0 f25@1
+95 0 f26@1
+96 0 f27@1
+97 0 f28@1
+98 0 f29@1
+99 0 f30@1
+100 0 f31@1
+101 0 f32@1
+102 0 f33@1
+103 0 f34@1
+104 0 f35@1
+105 0 f36@1
+106 0 f37@1
+107 0 f38@1
+108 0 f39@1
+109 0 f40@1
+110 0 f41@1
+111 0 f42@1
+112 0 f43@1
+113 1 f44@1
+114 1 f45@1
+115 1 f46@1
+116 1 f47@1
+117 0 f48@1
+118 0 f49@1
+119 0 f50@1
+120 0 f51@1
+121 0 f52@1
+122 0 f53@1
+123 0 f54@1
+124 0 f55@1
+125 0 f56@1
+126 1 f57@1
+127 0 f58@1
+128 0 f59@1
+129 0 f60@1
+130 0 f61@1
+131 0 f62@1
+132 0 f63@1
+133 0 f64@1
+134 0 f65@1
+135 0 f66@1
+136 0 f67@1
+137 0 f68@1
+138 0 f69@1
+139 0 f70@1
+@2
+0 00000011 v_x@2
+1 00000000 v_y@2
+2 00000000 v_z@2
+3 00000010 v_t_0@2
+4 00000010 v_t_1@2
+5 11111111 v_t_2@2
+6 11111111 v_t_3@2
+7 11111111 v_t_4@2
+8 1 a_q@2
+9 0 a_NCS_P_0@2
+10 0 a_p2_P_0@2
+11 0 a_p3_P_0@2
+12 0 a_p4_P_0@2
+13 0 a_p5_P_0@2
+14 1 a_p6_P_0@2
+15 0 a_p7_P_0@2
+16 0 a_p8_P_0@2
+17 0 a_p9_P_0@2
+18 0 a_CS_P_0@2
+19 0 a_p12_P_0@2
+20 0 a_p13_P_0@2
+21 0 a_NCS_P_1@2
+22 0 a_p2_P_1@2
+23 0 a_p3_P_1@2
+24 0 a_p4_P_1@2
+25 0 a_p5_P_1@2
+26 0 a_p6_P_1@2
+27 0 a_p7_P_1@2
+28 0 a_p8_P_1@2
+29 1 a_p9_P_1@2
+30 0 a_CS_P_1@2
+31 0 a_p12_P_1@2
+32 0 a_p13_P_1@2
+33 0 a_NCS_P_2@2
+34 0 a_p2_P_2@2
+35 1 a_p3_P_2@2
+36 0 a_p4_P_2@2
+37 0 a_p5_P_2@2
+38 0 a_p6_P_2@2
+39 0 a_p7_P_2@2
+40 0 a_p8_P_2@2
+41 0 a_p9_P_2@2
+42 0 a_CS_P_2@2
+43 0 a_p12_P_2@2
+44 0 a_p13_P_2@2
+45 0 a_NCS_P_3@2
+46 0 a_p2_P_3@2
+47 1 a_p3_P_3@2
+48 0 a_p4_P_3@2
+49 0 a_p5_P_3@2
+50 0 a_p6_P_3@2
+51 0 a_p7_P_3@2
+52 0 a_p8_P_3@2
+53 0 a_p9_P_3@2
+54 0 a_CS_P_3@2
+55 0 a_p12_P_3@2
+56 0 a_p13_P_3@2
+57 1 a_NCS_P_4@2
+58 0 a_p2_P_4@2
+59 0 a_p3_P_4@2
+60 0 a_p4_P_4@2
+61 0 a_p5_P_4@2
+62 0 a_p6_P_4@2
+63 0 a_p7_P_4@2
+64 0 a_p8_P_4@2
+65 0 a_p9_P_4@2
+66 0 a_CS_P_4@2
+67 0 a_p12_P_4@2
+68 0 a_p13_P_4@2
+69 1 f00@2
+70 0 f01@2
+71 0 f02@2
+72 0 f03@2
+73 0 f04@2
+74 0 f05@2
+75 0 f06@2
+76 0 f07@2
+77 0 f08@2
+78 0 f09@2
+79 0 f10@2
+80 0 f11@2
+81 0 f12@2
+82 0 f13@2
+83 0 f14@2
+84 0 f15@2
+85 0 f16@2
+86 0 f17@2
+87 0 f18@2
+88 0 f19@2
+89 0 f20@2
+90 0 f21@2
+91 0 f22@2
+92 0 f23@2
+93 0 f24@2
+94 0 f25@2
+95 0 f26@2
+96 0 f27@2
+97 0 f28@2
+98 0 f29@2
+99 0 f30@2
+100 0 f31@2
+101 0 f32@2
+102 0 f33@2
+103 0 f34@2
+104 0 f35@2
+105 0 f36@2
+106 0 f37@2
+107 0 f38@2
+108 0 f39@2
+109 0 f40@2
+110 0 f41@2
+111 0 f42@2
+112 0 f43@2
+113 0 f44@2
+114 0 f45@2
+115 0 f46@2
+116 0 f47@2
+117 0 f48@2
+118 0 f49@2
+119 0 f50@2
+120 0 f51@2
+121 0 f52@2
+122 0 f53@2
+123 0 f54@2
+124 0 f55@2
+125 0 f56@2
+126 0 f57@2
+127 0 f58@2
+128 0 f59@2
+129 0 f60@2
+130 0 f61@2
+131 0 f62@2
+132 0 f63@2
+133 0 f64@2
+134 0 f65@2
+135 0 f66@2
+136 0 f67@2
+137 0 f68@2
+138 0 f69@2
+139 0 f70@2
+@3
+0 00000011 v_x@3
+1 00000000 v_y@3
+2 00000000 v_z@3
+3 00000011 v_t_0@3
+4 00000011 v_t_1@3
+5 11111111 v_t_2@3
+6 11111111 v_t_3@3
+7 11111111 v_t_4@3
+8 1 a_q@3
+9 0 a_NCS_P_0@3
+10 0 a_p2_P_0@3
+11 0 a_p3_P_0@3
+12 0 a_p4_P_0@3
+13 0 a_p5_P_0@3
+14 1 a_p6_P_0@3
+15 0 a_p7_P_0@3
+16 0 a_p8_P_0@3
+17 0 a_p9_P_0@3
+18 0 a_CS_P_0@3
+19 0 a_p12_P_0@3
+20 0 a_p13_P_0@3
+21 0 a_NCS_P_1@3
+22 0 a_p2_P_1@3
+23 0 a_p3_P_1@3
+24 0 a_p4_P_1@3
+25 0 a_p5_P_1@3
+26 0 a_p6_P_1@3
+27 0 a_p7_P_1@3
+28 0 a_p8_P_1@3
+29 1 a_p9_P_1@3
+30 0 a_CS_P_1@3
+31 0 a_p12_P_1@3
+32 0 a_p13_P_1@3
+33 0 a_NCS_P_2@3
+34 0 a_p2_P_2@3
+35 1 a_p3_P_2@3
+36 0 a_p4_P_2@3
+37 0 a_p5_P_2@3
+38 0 a_p6_P_2@3
+39 0 a_p7_P_2@3
+40 0 a_p8_P_2@3
+41 0 a_p9_P_2@3
+42 0 a_CS_P_2@3
+43 0 a_p12_P_2@3
+44 0 a_p13_P_2@3
+45 0 a_NCS_P_3@3
+46 0 a_p2_P_3@3
+47 1 a_p3_P_3@3
+48 0 a_p4_P_3@3
+49 0 a_p5_P_3@3
+50 0 a_p6_P_3@3
+51 0 a_p7_P_3@3
+52 0 a_p8_P_3@3
+53 0 a_p9_P_3@3
+54 0 a_CS_P_3@3
+55 0 a_p12_P_3@3
+56 0 a_p13_P_3@3
+57 1 a_NCS_P_4@3
+58 0 a_p2_P_4@3
+59 0 a_p3_P_4@3
+60 0 a_p4_P_4@3
+61 0 a_p5_P_4@3
+62 0 a_p6_P_4@3
+63 0 a_p7_P_4@3
+64 0 a_p8_P_4@3
+65 0 a_p9_P_4@3
+66 0 a_CS_P_4@3
+67 0 a_p12_P_4@3
+68 0 a_p13_P_4@3
+69 1 f00@3
+70 0 f01@3
+71 0 f02@3
+72 0 f03@3
+73 0 f04@3
+74 0 f05@3
+75 0 f06@3
+76 0 f07@3
+77 0 f08@3
+78 0 f09@3
+79 0 f10@3
+80 0 f11@3
+81 0 f12@3
+82 0 f13@3
+83 0 f14@3
+84 0 f15@3
+85 0 f16@3
+86 0 f17@3
+87 0 f18@3
+88 0 f19@3
+89 0 f20@3
+90 0 f21@3
+91 0 f22@3
+92 0 f23@3
+93 0 f24@3
+94 0 f25@3
+95 0 f26@3
+96 0 f27@3
+97 0 f28@3
+98 0 f29@3
+99 0 f30@3
+100 0 f31@3
+101 0 f32@3
+102 0 f33@3
+103 0 f34@3
+104 0 f35@3
+105 0 f36@3
+106 0 f37@3
+107 0 f38@3
+108 0 f39@3
+109 0 f40@3
+110 0 f41@3
+111 0 f42@3
+112 0 f43@3
+113 0 f44@3
+114 0 f45@3
+115 0 f46@3
+116 0 f47@3
+117 0 f48@3
+118 0 f49@3
+119 0 f50@3
+120 0 f51@3
+121 0 f52@3
+122 0 f53@3
+123 0 f54@3
+124 0 f55@3
+125 0 f56@3
+126 0 f57@3
+127 0 f58@3
+128 0 f59@3
+129 0 f60@3
+130 0 f61@3
+131 0 f62@3
+132 0 f63@3
+133 0 f64@3
+134 0 f65@3
+135 0 f66@3
+136 0 f67@3
+137 0 f68@3
+138 0 f69@3
+139 0 f70@3
+@4
+0 00000001 v_x@4
+1 00000000 v_y@4
+2 00000000 v_z@4
+3 00000100 v_t_0@4
+4 00000001 v_t_1@4
+5 11111111 v_t_2@4
+6 11111111 v_t_3@4
+7 11111111 v_t_4@4
+8 1 a_q@4
+9 0 a_NCS_P_0@4
+10 0 a_p2_P_0@4
+11 0 a_p3_P_0@4
+12 0 a_p4_P_0@4
+13 0 a_p5_P_0@4
+14 1 a_p6_P_0@4
+15 0 a_p7_P_0@4
+16 0 a_p8_P_0@4
+17 0 a_p9_P_0@4
+18 0 a_CS_P_0@4
+19 0 a_p12_P_0@4
+20 0 a_p13_P_0@4
+21 0 a_NCS_P_1@4
+22 0 a_p2_P_1@4
+23 0 a_p3_P_1@4
+24 0 a_p4_P_1@4
+25 1 a_p5_P_1@4
+26 0 a_p6_P_1@4
+27 0 a_p7_P_1@4
+28 0 a_p8_P_1@4
+29 0 a_p9_P_1@4
+30 0 a_CS_P_1@4
+31 0 a_p12_P_1@4
+32 0 a_p13_P_1@4
+33 1 a_NCS_P_2@4
+34 0 a_p2_P_2@4
+35 0 a_p3_P_2@4
+36 0 a_p4_P_2@4
+37 0 a_p5_P_2@4
+38 0 a_p6_P_2@4
+39 0 a_p7_P_2@4
+40 0 a_p8_P_2@4
+41 0 a_p9_P_2@4
+42 0 a_CS_P_2@4
+43 0 a_p12_P_2@4
+44 0 a_p13_P_2@4
+45 1 a_NCS_P_3@4
+46 0 a_p2_P_3@4
+47 0 a_p3_P_3@4
+48 0 a_p4_P_3@4
+49 0 a_p5_P_3@4
+50 0 a_p6_P_3@4
+51 0 a_p7_P_3@4
+52 0 a_p8_P_3@4
+53 0 a_p9_P_3@4
+54 0 a_CS_P_3@4
+55 0 a_p12_P_3@4
+56 0 a_p13_P_3@4
+57 1 a_NCS_P_4@4
+58 0 a_p2_P_4@4
+59 0 a_p3_P_4@4
+60 0 a_p4_P_4@4
+61 0 a_p5_P_4@4
+62 0 a_p6_P_4@4
+63 0 a_p7_P_4@4
+64 0 a_p8_P_4@4
+65 0 a_p9_P_4@4
+66 0 a_CS_P_4@4
+67 0 a_p12_P_4@4
+68 0 a_p13_P_4@4
+69 1 f00@4
+70 0 f01@4
+71 0 f02@4
+72 0 f03@4
+73 0 f04@4
+74 0 f05@4
+75 0 f06@4
+76 0 f07@4
+77 0 f08@4
+78 0 f09@4
+79 0 f10@4
+80 0 f11@4
+81 0 f12@4
+82 0 f13@4
+83 0 f14@4
+84 0 f15@4
+85 0 f16@4
+86 0 f17@4
+87 1 f18@4
+88 0 f19@4
+89 0 f20@4
+90 0 f21@4
+91 0 f22@4
+92 0 f23@4
+93 0 f24@4
+94 0 f25@4
+95 0 f26@4
+96 0 f27@4
+97 0 f28@4
+98 1 f29@4
+99 0 f30@4
+100 0 f31@4
+101 0 f32@4
+102 0 f33@4
+103 0 f34@4
+104 0 f35@4
+105 0 f36@4
+106 0 f37@4
+107 0 f38@4
+108 0 f39@4
+109 0 f40@4
+110 0 f41@4
+111 0 f42@4
+112 1 f43@4
+113 0 f44@4
+114 0 f45@4
+115 0 f46@4
+116 0 f47@4
+117 0 f48@4
+118 0 f49@4
+119 0 f50@4
+120 0 f51@4
+121 0 f52@4
+122 0 f53@4
+123 0 f54@4
+124 0 f55@4
+125 0 f56@4
+126 0 f57@4
+127 0 f58@4
+128 0 f59@4
+129 0 f60@4
+130 0 f61@4
+131 0 f62@4
+132 0 f63@4
+133 0 f64@4
+134 0 f65@4
+135 0 f66@4
+136 0 f67@4
+137 0 f68@4
+138 0 f69@4
+139 0 f70@4
+@5
+0 00000001 v_x@5
+1 00000000 v_y@5
+2 00000000 v_z@5
+3 00000101 v_t_0@5
+4 00000010 v_t_1@5
+5 11111111 v_t_2@5
+6 11111111 v_t_3@5
+7 11111111 v_t_4@5
+8 1 a_q@5
+9 0 a_NCS_P_0@5
+10 0 a_p2_P_0@5
+11 0 a_p3_P_0@5
+12 0 a_p4_P_0@5
+13 0 a_p5_P_0@5
+14 1 a_p6_P_0@5
+15 0 a_p7_P_0@5
+16 0 a_p8_P_0@5
+17 0 a_p9_P_0@5
+18 0 a_CS_P_0@5
+19 0 a_p12_P_0@5
+20 0 a_p13_P_0@5
+21 0 a_NCS_P_1@5
+22 0 a_p2_P_1@5
+23 0 a_p3_P_1@5
+24 0 a_p4_P_1@5
+25 1 a_p5_P_1@5
+26 0 a_p6_P_1@5
+27 0 a_p7_P_1@5
+28 0 a_p8_P_1@5
+29 0 a_p9_P_1@5
+30 0 a_CS_P_1@5
+31 0 a_p12_P_1@5
+32 0 a_p13_P_1@5
+33 1 a_NCS_P_2@5
+34 0 a_p2_P_2@5
+35 0 a_p3_P_2@5
+36 0 a_p4_P_2@5
+37 0 a_p5_P_2@5
+38 0 a_p6_P_2@5
+39 0 a_p7_P_2@5
+40 0 a_p8_P_2@5
+41 0 a_p9_P_2@5
+42 0 a_CS_P_2@5
+43 0 a_p12_P_2@5
+44 0 a_p13_P_2@5
+45 1 a_NCS_P_3@5
+46 0 a_p2_P_3@5
+47 0 a_p3_P_3@5
+48 0 a_p4_P_3@5
+49 0 a_p5_P_3@5
+50 0 a_p6_P_3@5
+51 0 a_p7_P_3@5
+52 0 a_p8_P_3@5
+53 0 a_p9_P_3@5
+54 0 a_CS_P_3@5
+55 0 a_p12_P_3@5
+56 0 a_p13_P_3@5
+57 1 a_NCS_P_4@5
+58 0 a_p2_P_4@5
+59 0 a_p3_P_4@5
+60 0 a_p4_P_4@5
+61 0 a_p5_P_4@5
+62 0 a_p6_P_4@5
+63 0 a_p7_P_4@5
+64 0 a_p8_P_4@5
+65 0 a_p9_P_4@5
+66 0 a_CS_P_4@5
+67 0 a_p12_P_4@5
+68 0 a_p13_P_4@5
+69 1 f00@5
+70 0 f01@5
+71 0 f02@5
+72 0 f03@5
+73 0 f04@5
+74 0 f05@5
+75 0 f06@5
+76 0 f07@5
+77 0 f08@5
+78 0 f09@5
+79 0 f10@5
+80 0 f11@5
+81 0 f12@5
+82 0 f13@5
+83 0 f14@5
+84 0 f15@5
+85 0 f16@5
+86 0 f17@5
+87 0 f18@5
+88 0 f19@5
+89 0 f20@5
+90 0 f21@5
+91 0 f22@5
+92 0 f23@5
+93 0 f24@5
+94 0 f25@5
+95 0 f26@5
+96 0 f27@5
+97 0 f28@5
+98 0 f29@5
+99 0 f30@5
+100 0 f31@5
+101 0 f32@5
+102 0 f33@5
+103 0 f34@5
+104 0 f35@5
+105 0 f36@5
+106 0 f37@5
+107 0 f38@5
+108 0 f39@5
+109 0 f40@5
+110 0 f41@5
+111 0 f42@5
+112 0 f43@5
+113 0 f44@5
+114 0 f45@5
+115 0 f46@5
+116 0 f47@5
+117 0 f48@5
+118 0 f49@5
+119 0 f50@5
+120 0 f51@5
+121 0 f52@5
+122 0 f53@5
+123 0 f54@5
+124 0 f55@5
+125 0 f56@5
+126 0 f57@5
+127 0 f58@5
+128 0 f59@5
+129 0 f60@5
+130 0 f61@5
+131 0 f62@5
+132 0 f63@5
+133 0 f64@5
+134 0 f65@5
+135 0 f66@5
+136 0 f67@5
+137 0 f68@5
+138 0 f69@5
+139 0 f70@5
+@6
+0 00000001 v_x@6
+1 00000001 v_y@6
+2 00000000 v_z@6
+3 00000011 v_t_0@6
+4 00000011 v_t_1@6
+5 11111111 v_t_2@6
+6 11111111 v_t_3@6
+7 11111111 v_t_4@6
+8 1 a_q@6
+9 0 a_NCS_P_0@6
+10 0 a_p2_P_0@6
+11 0 a_p3_P_0@6
+12 1 a_p4_P_0@6
+13 0 a_p5_P_0@6
+14 0 a_p6_P_0@6
+15 0 a_p7_P_0@6
+16 0 a_p8_P_0@6
+17 0 a_p9_P_0@6
+18 0 a_CS_P_0@6
+19 0 a_p12_P_0@6
+20 0 a_p13_P_0@6
+21 0 a_NCS_P_1@6
+22 0 a_p2_P_1@6
+23 0 a_p3_P_1@6
+24 0 a_p4_P_1@6
+25 1 a_p5_P_1@6
+26 0 a_p6_P_1@6
+27 0 a_p7_P_1@6
+28 0 a_p8_P_1@6
+29 0 a_p9_P_1@6
+30 0 a_CS_P_1@6
+31 0 a_p12_P_1@6
+32 0 a_p13_P_1@6
+33 1 a_NCS_P_2@6
+34 0 a_p2_P_2@6
+35 0 a_p3_P_2@6
+36 0 a_p4_P_2@6
+37 0 a_p5_P_2@6
+38 0 a_p6_P_2@6
+39 0 a_p7_P_2@6
+40 0 a_p8_P_2@6
+41 0 a_p9_P_2@6
+42 0 a_CS_P_2@6
+43 0 a_p12_P_2@6
+44 0 a_p13_P_2@6
+45 1 a_NCS_P_3@6
+46 0 a_p2_P_3@6
+47 0 a_p3_P_3@6
+48 0 a_p4_P_3@6
+49 0 a_p5_P_3@6
+50 0 a_p6_P_3@6
+51 0 a_p7_P_3@6
+52 0 a_p8_P_3@6
+53 0 a_p9_P_3@6
+54 0 a_CS_P_3@6
+55 0 a_p12_P_3@6
+56 0 a_p13_P_3@6
+57 1 a_NCS_P_4@6
+58 0 a_p2_P_4@6
+59 0 a_p3_P_4@6
+60 0 a_p4_P_4@6
+61 0 a_p5_P_4@6
+62 0 a_p6_P_4@6
+63 0 a_p7_P_4@6
+64 0 a_p8_P_4@6
+65 0 a_p9_P_4@6
+66 0 a_CS_P_4@6
+67 0 a_p12_P_4@6
+68 0 a_p13_P_4@6
+69 1 f00@6
+70 0 f01@6
+71 0 f02@6
+72 1 f03@6
+73 0 f04@6
+74 0 f05@6
+75 1 f06@6
+76 0 f07@6
+77 0 f08@6
+78 0 f09@6
+79 0 f10@6
+80 0 f11@6
+81 0 f12@6
+82 0 f13@6
+83 0 f14@6
+84 0 f15@6
+85 0 f16@6
+86 0 f17@6
+87 0 f18@6
+88 0 f19@6
+89 0 f20@6
+90 0 f21@6
+91 0 f22@6
+92 0 f23@6
+93 0 f24@6
+94 0 f25@6
+95 0 f26@6
+96 0 f27@6
+97 0 f28@6
+98 0 f29@6
+99 0 f30@6
+100 0 f31@6
+101 0 f32@6
+102 0 f33@6
+103 0 f34@6
+104 0 f35@6
+105 0 f36@6
+106 0 f37@6
+107 0 f38@6
+108 0 f39@6
+109 0 f40@6
+110 0 f41@6
+111 0 f42@6
+112 0 f43@6
+113 0 f44@6
+114 0 f45@6
+115 0 f46@6
+116 0 f47@6
+117 0 f48@6
+118 0 f49@6
+119 0 f50@6
+120 0 f51@6
+121 0 f52@6
+122 0 f53@6
+123 0 f54@6
+124 0 f55@6
+125 0 f56@6
+126 0 f57@6
+127 0 f58@6
+128 0 f59@6
+129 0 f60@6
+130 0 f61@6
+131 0 f62@6
+132 0 f63@6
+133 0 f64@6
+134 0 f65@6
+135 0 f66@6
+136 0 f67@6
+137 0 f68@6
+138 0 f69@6
+139 0 f70@6
+@7
+0 00000000 v_x@7
+1 11111111 v_y@7
+2 00000000 v_z@7
+3 11111111 v_t_0@7
+4 11111111 v_t_1@7
+5 11111111 v_t_2@7
+6 11111111 v_t_3@7
+7 11111111 v_t_4@7
+8 1 a_q@7
+9 1 a_NCS_P_0@7
+10 0 a_p2_P_0@7
+11 0 a_p3_P_0@7
+12 0 a_p4_P_0@7
+13 0 a_p5_P_0@7
+14 0 a_p6_P_0@7
+15 0 a_p7_P_0@7
+16 0 a_p8_P_0@7
+17 0 a_p9_P_0@7
+18 0 a_CS_P_0@7
+19 0 a_p12_P_0@7
+20 0 a_p13_P_0@7
+21 1 a_NCS_P_1@7
+22 0 a_p2_P_1@7
+23 0 a_p3_P_1@7
+24 0 a_p4_P_1@7
+25 0 a_p5_P_1@7
+26 0 a_p6_P_1@7
+27 0 a_p7_P_1@7
+28 0 a_p8_P_1@7
+29 0 a_p9_P_1@7
+30 0 a_CS_P_1@7
+31 0 a_p12_P_1@7
+32 0 a_p13_P_1@7
+33 1 a_NCS_P_2@7
+34 0 a_p2_P_2@7
+35 0 a_p3_P_2@7
+36 0 a_p4_P_2@7
+37 0 a_p5_P_2@7
+38 0 a_p6_P_2@7
+39 0 a_p7_P_2@7
+40 0 a_p8_P_2@7
+41 0 a_p9_P_2@7
+42 0 a_CS_P_2@7
+43 0 a_p12_P_2@7
+44 0 a_p13_P_2@7
+45 1 a_NCS_P_3@7
+46 0 a_p2_P_3@7
+47 0 a_p3_P_3@7
+48 0 a_p4_P_3@7
+49 0 a_p5_P_3@7
+50 0 a_p6_P_3@7
+51 0 a_p7_P_3@7
+52 0 a_p8_P_3@7
+53 0 a_p9_P_3@7
+54 0 a_CS_P_3@7
+55 0 a_p12_P_3@7
+56 0 a_p13_P_3@7
+57 1 a_NCS_P_4@7
+58 0 a_p2_P_4@7
+59 0 a_p3_P_4@7
+60 0 a_p4_P_4@7
+61 0 a_p5_P_4@7
+62 0 a_p6_P_4@7
+63 0 a_p7_P_4@7
+64 0 a_p8_P_4@7
+65 0 a_p9_P_4@7
+66 0 a_CS_P_4@7
+67 0 a_p12_P_4@7
+68 0 a_p13_P_4@7
+69 1 f00@7
+70 1 f01@7
+71 1 f02@7
+72 0 f03@7
+73 0 f04@7
+74 0 f05@7
+75 0 f06@7
+76 0 f07@7
+77 0 f08@7
+78 0 f09@7
+79 0 f10@7
+80 0 f11@7
+81 0 f12@7
+82 0 f13@7
+83 0 f14@7
+84 1 f15@7
+85 1 f16@7
+86 1 f17@7
+87 0 f18@7
+88 0 f19@7
+89 0 f20@7
+90 0 f21@7
+91 0 f22@7
+92 0 f23@7
+93 0 f24@7
+94 0 f25@7
+95 0 f26@7
+96 0 f27@7
+97 0 f28@7
+98 0 f29@7
+99 0 f30@7
+100 0 f31@7
+101 0 f32@7
+102 0 f33@7
+103 0 f34@7
+104 0 f35@7
+105 0 f36@7
+106 0 f37@7
+107 0 f38@7
+108 0 f39@7
+109 0 f40@7
+110 0 f41@7
+111 0 f42@7
+112 0 f43@7
+113 0 f44@7
+114 0 f45@7
+115 0 f46@7
+116 0 f47@7
+117 0 f48@7
+118 0 f49@7
+119 0 f50@7
+120 0 f51@7
+121 0 f52@7
+122 0 f53@7
+123 0 f54@7
+124 0 f55@7
+125 0 f56@7
+126 0 f57@7
+127 0 f58@7
+128 0 f59@7
+129 0 f60@7
+130 0 f61@7
+131 0 f62@7
+132 0 f63@7
+133 0 f64@7
+134 0 f65@7
+135 0 f66@7
+136 0 f67@7
+137 0 f68@7
+138 0 f69@7
+139 0 f70@7
+@8
+0 00000000 v_x@8
+1 00000000 v_y@8
+2 00000000 v_z@8
+3 00000000 v_t_0@8
+4 00000000 v_t_1@8
+5 00000000 v_t_2@8
+6 00000000 v_t_3@8
+7 00000000 v_t_4@8
+8 0 a_q@8
+9 0 a_NCS_P_0@8
+10 0 a_p2_P_0@8
+11 0 a_p3_P_0@8
+12 0 a_p4_P_0@8
+13 0 a_p5_P_0@8
+14 0 a_p6_P_0@8
+15 0 a_p7_P_0@8
+16 0 a_p8_P_0@8
+17 0 a_p9_P_0@8
+18 0 a_CS_P_0@8
+19 0 a_p12_P_0@8
+20 0 a_p13_P_0@8
+21 0 a_NCS_P_1@8
+22 0 a_p2_P_1@8
+23 0 a_p3_P_1@8
+24 0 a_p4_P_1@8
+25 0 a_p5_P_1@8
+26 0 a_p6_P_1@8
+27 0 a_p7_P_1@8
+28 0 a_p8_P_1@8
+29 0 a_p9_P_1@8
+30 0 a_CS_P_1@8
+31 0 a_p12_P_1@8
+32 0 a_p13_P_1@8
+33 0 a_NCS_P_2@8
+34 0 a_p2_P_2@8
+35 0 a_p3_P_2@8
+36 0 a_p4_P_2@8
+37 0 a_p5_P_2@8
+38 0 a_p6_P_2@8
+39 0 a_p7_P_2@8
+40 0 a_p8_P_2@8
+41 0 a_p9_P_2@8
+42 0 a_CS_P_2@8
+43 0 a_p12_P_2@8
+44 0 a_p13_P_2@8
+45 0 a_NCS_P_3@8
+46 0 a_p2_P_3@8
+47 0 a_p3_P_3@8
+48 0 a_p4_P_3@8
+49 0 a_p5_P_3@8
+50 0 a_p6_P_3@8
+51 0 a_p7_P_3@8
+52 0 a_p8_P_3@8
+53 0 a_p9_P_3@8
+54 0 a_CS_P_3@8
+55 0 a_p12_P_3@8
+56 0 a_p13_P_3@8
+57 0 a_NCS_P_4@8
+58 0 a_p2_P_4@8
+59 0 a_p3_P_4@8
+60 0 a_p4_P_4@8
+61 0 a_p5_P_4@8
+62 0 a_p6_P_4@8
+63 0 a_p7_P_4@8
+64 0 a_p8_P_4@8
+65 0 a_p9_P_4@8
+66 0 a_CS_P_4@8
+67 0 a_p12_P_4@8
+68 0 a_p13_P_4@8
+69 0 f00@8
+70 0 f01@8
+71 0 f02@8
+72 0 f03@8
+73 0 f04@8
+74 0 f05@8
+75 0 f06@8
+76 0 f07@8
+77 0 f08@8
+78 0 f09@8
+79 0 f10@8
+80 0 f11@8
+81 0 f12@8
+82 0 f13@8
+83 0 f14@8
+84 0 f15@8
+85 0 f16@8
+86 0 f17@8
+87 0 f18@8
+88 0 f19@8
+89 0 f20@8
+90 0 f21@8
+91 0 f22@8
+92 0 f23@8
+93 0 f24@8
+94 0 f25@8
+95 0 f26@8
+96 0 f27@8
+97 0 f28@8
+98 0 f29@8
+99 0 f30@8
+100 0 f31@8
+101 0 f32@8
+102 0 f33@8
+103 0 f34@8
+104 0 f35@8
+105 0 f36@8
+106 0 f37@8
+107 0 f38@8
+108 0 f39@8
+109 0 f40@8
+110 0 f41@8
+111 0 f42@8
+112 0 f43@8
+113 0 f44@8
+114 0 f45@8
+115 0 f46@8
+116 0 f47@8
+117 0 f48@8
+118 0 f49@8
+119 0 f50@8
+120 0 f51@8
+121 0 f52@8
+122 0 f53@8
+123 0 f54@8
+124 0 f55@8
+125 0 f56@8
+126 0 f57@8
+127 0 f58@8
+128 0 f59@8
+129 0 f60@8
+130 0 f61@8
+131 0 f62@8
+132 0 f63@8
+133 0 f64@8
+134 0 f65@8
+135 0 f66@8
+136 0 f67@8
+137 0 f68@8
+138 0 f69@8
+139 0 f70@8
+.
+[btor>mc] found 1 reachable and 0 unreachable bad state properties at bound k = 8
+[btor>mc] deleting model checker: 140 inputs, 71 states, 1 bad, 0 constraints
+btormc /home/jetafese/hwmc20-mlir/btor2/bv/2019/beem/at.6.prop1-back-serstep.btor2 

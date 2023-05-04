@@ -1,0 +1,2 @@
+./boolector_get_btor.sh /home/jetafese/hwmc20-mlir/btor2/bv/2019/wolf/2018D/picorv32-check-p19.btor
+boolector /home/jetafese/hwmc20-mlir/btor2/bv/2019/wolf/2018D/picorv32-check-p19.btor 

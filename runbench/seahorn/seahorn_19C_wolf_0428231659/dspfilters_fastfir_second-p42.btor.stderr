@@ -1,0 +1,39 @@
+Info: pointer size: 8, word size: 8
+Info: Trackable memory is not present
+Functions: 
+NONE
+Globals: 
+NONE
+(sat.stats   :conflicts  :restarts           :learned/bin    :gc          :time)
+(sat.stats          :decisions :clauses/bin         :units      :memory        )
+(sat.stats      0      0    0 835297/331726     0/0   0       0   309.63   0.01)
+(sat.stats    132    731    0 835290/331726   131/3   2       0   314.39   0.37)
+(sat.stats    132    731    0 835290/331726   131/3   2       0   314.39   0.38)
+(sat.stats    132    731    0 835290/331726   131/3   2       0   314.39   0.39)
+(sat.stats    132    731    0 716679/178717    51/3 5555       0   387.57   5.78)
+(sat.stats    136    751    1 654882/169272    52/3 5555       0   385.50   5.88)
+(sat.stats :conflicts    :restarts          :learned/bin      :gc          :time)
+(sat.stats        :decisions :clauses/bin         :units         :memory        )
+(sat.stats    139    762    2 654882/169272    55/4 5555       0   385.50   5.90)
+(sat.stats    142    769    3 654882/169272    58/4 5555       0   385.50   5.91)
+(sat.stats    257   2966    4 654882/169272   169/18 5559       0   386.55   6.09)
+(sat.stats    260   2971    5 654882/169272   172/18 5559       0   386.55   6.10)
+(sat.stats    263   2975    6 654882/169272   175/18 5559       0   386.55   6.11)
+(sat.stats    266   2987    7 654882/169272   178/18 5559       0   386.55   6.12)
+(sat.stats :conflicts    :restarts         :learned/bin        :gc          :time)
+(sat.stats       :decisions  :clauses/bin          :units         :memory        )
+(sat.stats    273   3014    8 654882/169272   185/18 5559       0   386.55   6.14)
+(sat.stats    277   3017    9 654882/169272   189/18 5559       0   386.55   6.15)
+(sat.stats    281   3028   10 654882/169272   193/18 5559       0   386.55   6.16)
+(sat.stats    284   3038   11 654882/169272   196/18 5559       0   386.55   6.17)
+(sat.stats    290   3042   12 654882/169272   202/18 5559       0   386.55   6.18)
+(sat.stats    293   3044   13 654882/169272   205/18 5559       0   386.55   6.19)
+(sat.stats    317   3072   19 654882/169272   229/18 5559       0   386.55   6.21)
+(sat.stats    500   3558   33 654882/169272   412/22 5559       0   386.84   6.34)
+(sat.stats    994   5377   55 654882/169272   906/30 5559       0   387.41   6.58)
+(sat.stats   1064   5492   68 654882/169272   976/31 5559       0   387.41   6.60)
+(sat.stats   1356   6497   86 654671/169214  1254/61 5772       0   387.80   6.89)
+
+real	4m11.509s
+user	4m10.349s
+sys	0m0.972s

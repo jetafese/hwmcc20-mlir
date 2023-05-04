@@ -1,0 +1,3 @@
+./get_btor_seahorn.sh /home/jetafese/hwmc20-mlir/btor2/bv/2020/mann/simple_alu.btor
+btor2mlir-translate --import-btor /home/jetafese/hwmc20-mlir/btor2/bv/2020/mann/simple_alu.btor > /home/jetafese/hwmc20-mlir/btor2/bv/2020/mann/simple_alu.btor.mlir
+btor2mlir-translate --export-btor /home/jetafese/hwmc20-mlir/btor2/bv/2020/mann/simple_alu.btor.mlir > /home/jetafese/hwmc20-mlir/btor2/bv/2020/mann/simple_alu.btor.export.btor

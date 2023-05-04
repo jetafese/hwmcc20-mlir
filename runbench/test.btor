@@ -1,0 +1,47 @@
+1 sort bitvec 10
+2 constd 1 0
+3 sort bitvec 32
+4 sort array 1 3
+5 state 4
+6 state 1
+7 state 4
+8 state 4
+9 state 1
+10 init 1 6 2
+11 init 4 8 7
+12 sort bitvec 1
+13 constd 12 -1
+14 uext 1 13 9
+15 add 1 6 14
+16 constd 1 -2
+17 ulte 12 6 16
+18 ite 1 17 15 6
+19 constd 3 -1
+20 not 3 19
+21 read 3 5 6
+22 and 3 21 20
+23 read 3 7 6
+24 and 3 23 19
+25 or 3 24 22
+26 write 4 5 6 25
+27 redor 12 19
+28 ite 4 27 26 5
+29 not 3 19
+30 read 3 7 6
+31 and 3 30 29
+32 read 3 5 6
+33 and 3 32 19
+34 or 3 33 31
+35 write 4 7 6 34
+36 redor 12 19
+37 ite 4 36 35 7
+38 read 3 8 9
+39 read 3 5 9
+40 neq 12 39 38
+41 ult 12 9 6
+42 and 12 41 40
+43 bad 42
+44 next 4 5 28
+45 next 1 6 18
+46 next 4 7 37
+47 next 4 8 8

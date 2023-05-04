@@ -1,0 +1,1447 @@
+./btormc-export_get_btor.sh /home/jetafese/hwmc20-mlir/btor2/bv/2019/beem/at.6.prop1-back-serstep.btor2
+[btormc] parsing input file...
+[btormc] finished parsing
+[btor>mc] calling BMC on 1 properties from bound 0 up-to maximum bound k = 20
+[btor>mc] trace generation enabled
+[btor>mc] new forward manager
+[btor>mc] initialized forward frame at bound k = 0
+[btor>mc] checking forward frame at bound k = 0
+[btor>mc] checking forward frame bad state property 0 at bound k = 0
+[btor>core] calling SAT
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] enabled core engine
+[btor>sat] Lingeling allows both incremental and non-incremental mode
+[btor>sat] initialized Lingeling
+[lingeling] Lingeling
+[lingeling] 
+[lingeling] Version bcp 4fe47dd5a6ef91df6dca4bad81326f992dc3fbab
+[lingeling] 
+[lingeling] Copyright (C) 2010-2016 Armin Biere JKU Linz Austria.
+[lingeling] All rights reserved.
+[lingeling] 
+[lingeling] released Tue Nov 22 09:56:45 EST 2022
+[lingeling] compiled Tue Nov 22 09:56:45 EST 2022
+[lingeling] 
+[lingeling] gcc (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0
+[lingeling] -W -Wall -O3 -fPIC -DNLGLOG -DNDEBUG -DNCHKSOL -DNLGLDRUPLIG
+[lingeling] -DNLGLYALSAT -DNLGLFILES -DNLGLDEMA
+[lingeling] Linux lilla-my 4.15.0-156-generic x86_64
+[lingeling] 
+[btor>slvfun] 0 AIG vars, 0 AIG ands, 0 CNF vars, 0 CNF clauses
+[btor>core] SAT call 2 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 0 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 0
+[btor>mc] initialized forward frame at bound k = 1
+[btor>mc] checking forward frame at bound k = 1
+[btor>mc] checking forward frame bad state property 0 at bound k = 1
+[btor>core] calling SAT
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 125 AIG vars, 84 AIG ands, 207 CNF vars, 247 CNF clauses
+[btor>core] SAT call 3 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 1 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 1
+[btor>mc] initialized forward frame at bound k = 2
+[btor>mc] checking forward frame at bound k = 2
+[btor>mc] checking forward frame bad state property 0 at bound k = 2
+[btor>core] calling SAT
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 321 AIG vars, 2205 AIG ands, 2169 CNF vars, 5745 CNF clauses
+[btor>core] SAT call 4 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 2 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 2
+[btor>mc] initialized forward frame at bound k = 3
+[btor>mc] checking forward frame at bound k = 3
+[btor>mc] checking forward frame bad state property 0 at bound k = 3
+[btor>core] calling SAT
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 517 AIG vars, 4326 AIG ands, 4131 CNF vars, 11243 CNF clauses
+[btor>core] SAT call 5 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 3 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 3
+[btor>mc] initialized forward frame at bound k = 4
+[btor>mc] checking forward frame at bound k = 4
+[btor>mc] checking forward frame bad state property 0 at bound k = 4
+[btor>core] calling SAT
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 713 AIG vars, 6447 AIG ands, 6093 CNF vars, 16741 CNF clauses
+[btor>core] SAT call 6 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 4 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 4
+[btor>mc] initialized forward frame at bound k = 5
+[btor>mc] checking forward frame at bound k = 5
+[btor>mc] checking forward frame bad state property 0 at bound k = 5
+[btor>core] calling SAT
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 909 AIG vars, 8568 AIG ands, 8055 CNF vars, 22239 CNF clauses
+[btor>core] SAT call 7 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 5 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 5
+[btor>mc] initialized forward frame at bound k = 6
+[btor>mc] checking forward frame at bound k = 6
+[btor>mc] checking forward frame bad state property 0 at bound k = 6
+[btor>core] calling SAT
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 1105 AIG vars, 10689 AIG ands, 10017 CNF vars, 27737 CNF clauses
+[btor>core] SAT call 8 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 6 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 6
+[btor>mc] initialized forward frame at bound k = 7
+[btor>mc] checking forward frame at bound k = 7
+[btor>mc] checking forward frame bad state property 0 at bound k = 7
+[btor>core] calling SAT
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 1301 AIG vars, 12810 AIG ands, 11979 CNF vars, 33235 CNF clauses
+[btor lglclone1]    2.185   7% simplifying
+[btor lglclone1]   28.074  93% search
+[btor lglclone1] ==================================
+[btor lglclone1]   30.259 100% all
+[btor lglclone1] 
+[btor lglclone1]        178301 conflicts,        5892.5 confs/sec
+[btor lglclone1]          1090 ternaries,         163.6 confs/ternary
+[btor lglclone1]           322 binaries,          553.7 confs/binary
+[btor lglclone1]            25 iterations,       7132.0 confs/iteration
+[btor lglclone1] 
+[btor lglclone1]            57 reductions,          1.9 redus/sec,   3128.1 confs/reduction
+[btor lglclone1]           842 restarts,           27.8 rests/sec,    211.8 confs/restart
+[btor lglclone1]        367574 decisions,       12147.6 decis/sec,      2.1 decis/conflict
+[btor lglclone1]      75027643 propagations,  2479514.8 props/sec,    204.1 props/decision
+[btor lglclone1] 
+[btor lglclone1] 30.3 seconds, 25.3 MB
+[btor>core] SAT call 9 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 7 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 7
+[btor>mc] initialized forward frame at bound k = 8
+[btor>mc] checking forward frame at bound k = 8
+[btor>mc] checking forward frame bad state property 0 at bound k = 8
+[btor>core] calling SAT
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 1497 AIG vars, 14931 AIG ands, 13941 CNF vars, 38733 CNF clauses
+[btor lglclone2]    3.226   6% simplifying
+[btor lglclone2]   47.855  94% search
+[btor lglclone2] ==================================
+[btor lglclone2]   51.072 100% all
+[btor lglclone2] 
+[btor lglclone2]        286551 conflicts,        5610.8 confs/sec
+[btor lglclone2]          1190 ternaries,         240.8 confs/ternary
+[btor lglclone2]           188 binaries,         1524.2 confs/binary
+[btor lglclone2]             0 iterations,          0.0 confs/iteration
+[btor lglclone2] 
+[btor lglclone2]            87 reductions,          1.7 redus/sec,   3293.7 confs/reduction
+[btor lglclone2]          1766 restarts,           34.6 rests/sec,    162.3 confs/restart
+[btor lglclone2]        659701 decisions,       12917.2 decis/sec,      2.3 decis/conflict
+[btor lglclone2]     110500785 propagations,  2163646.0 props/sec,    167.5 props/decision
+[btor lglclone2] 
+[btor lglclone2] 51.1 seconds, 35.3 MB
+[btor>core] SAT call 10 returned 10 in 0.000 seconds
+[btor>mc] bad state property 0 reachable at bound k = 8 SATISFIABLE
+sat
+b0
+@0
+0 00000010 input0@0
+1 00000010 input1@0
+2 00000001 input2@0
+3 11111111 input3@0
+4 11111111 input4@0
+5 11111111 input5@0
+6 11111111 input6@0
+7 11111111 input7@0
+8 1 input8@0
+9 0 input9@0
+10 0 input10@0
+11 1 input11@0
+12 0 input12@0
+13 0 input13@0
+14 0 input14@0
+15 0 input15@0
+16 0 input16@0
+17 0 input17@0
+18 0 input18@0
+19 0 input19@0
+20 0 input20@0
+21 1 input21@0
+22 0 input22@0
+23 0 input23@0
+24 0 input24@0
+25 0 input25@0
+26 0 input26@0
+27 0 input27@0
+28 0 input28@0
+29 0 input29@0
+30 0 input30@0
+31 0 input31@0
+32 0 input32@0
+33 0 input33@0
+34 0 input34@0
+35 0 input35@0
+36 0 input36@0
+37 0 input37@0
+38 0 input38@0
+39 0 input39@0
+40 0 input40@0
+41 0 input41@0
+42 1 input42@0
+43 0 input43@0
+44 0 input44@0
+45 0 input45@0
+46 0 input46@0
+47 0 input47@0
+48 0 input48@0
+49 0 input49@0
+50 0 input50@0
+51 0 input51@0
+52 0 input52@0
+53 0 input53@0
+54 1 input54@0
+55 0 input55@0
+56 0 input56@0
+57 0 input57@0
+58 0 input58@0
+59 1 input59@0
+60 0 input60@0
+61 0 input61@0
+62 0 input62@0
+63 0 input63@0
+64 0 input64@0
+65 0 input65@0
+66 0 input66@0
+67 0 input67@0
+68 0 input68@0
+69 0 input69@0
+70 0 input70@0
+71 0 input71@0
+72 0 input72@0
+73 0 input73@0
+74 0 input74@0
+75 0 input75@0
+76 0 input76@0
+77 0 input77@0
+78 0 input78@0
+79 0 input79@0
+80 0 input80@0
+81 0 input81@0
+82 0 input82@0
+83 0 input83@0
+84 0 input84@0
+85 0 input85@0
+86 0 input86@0
+87 0 input87@0
+88 0 input88@0
+89 0 input89@0
+90 0 input90@0
+91 0 input91@0
+92 0 input92@0
+93 0 input93@0
+94 0 input94@0
+95 0 input95@0
+96 0 input96@0
+97 0 input97@0
+98 0 input98@0
+99 0 input99@0
+100 0 input100@0
+101 0 input101@0
+102 0 input102@0
+103 0 input103@0
+104 0 input104@0
+105 0 input105@0
+106 0 input106@0
+107 0 input107@0
+108 0 input108@0
+109 0 input109@0
+110 0 input110@0
+111 0 input111@0
+112 0 input112@0
+113 0 input113@0
+114 0 input114@0
+115 0 input115@0
+116 0 input116@0
+117 0 input117@0
+118 0 input118@0
+119 0 input119@0
+120 0 input120@0
+121 0 input121@0
+122 0 input122@0
+123 0 input123@0
+124 0 input124@0
+125 0 input125@0
+126 0 input126@0
+127 0 input127@0
+128 0 input128@0
+129 0 input129@0
+130 0 input130@0
+131 0 input131@0
+132 0 input132@0
+133 0 input133@0
+134 0 input134@0
+135 0 input135@0
+136 0 input136@0
+137 0 input137@0
+138 0 input138@0
+139 0 input139@0
+@1
+0 00000010 input0@1
+1 00000001 input1@1
+2 00000000 input2@1
+3 11111111 input3@1
+4 00000001 input4@1
+5 11111111 input5@1
+6 00000001 input6@1
+7 11111111 input7@1
+8 1 input8@1
+9 0 input9@1
+10 0 input10@1
+11 1 input11@1
+12 0 input12@1
+13 0 input13@1
+14 0 input14@1
+15 0 input15@1
+16 0 input16@1
+17 0 input17@1
+18 0 input18@1
+19 0 input19@1
+20 0 input20@1
+21 0 input21@1
+22 0 input22@1
+23 0 input23@1
+24 0 input24@1
+25 0 input25@1
+26 1 input26@1
+27 0 input27@1
+28 0 input28@1
+29 0 input29@1
+30 0 input30@1
+31 0 input31@1
+32 0 input32@1
+33 0 input33@1
+34 0 input34@1
+35 1 input35@1
+36 0 input36@1
+37 0 input37@1
+38 0 input38@1
+39 0 input39@1
+40 0 input40@1
+41 0 input41@1
+42 0 input42@1
+43 0 input43@1
+44 0 input44@1
+45 0 input45@1
+46 0 input46@1
+47 0 input47@1
+48 0 input48@1
+49 0 input49@1
+50 0 input50@1
+51 0 input51@1
+52 0 input52@1
+53 1 input53@1
+54 0 input54@1
+55 0 input55@1
+56 0 input56@1
+57 0 input57@1
+58 0 input58@1
+59 1 input59@1
+60 0 input60@1
+61 0 input61@1
+62 0 input62@1
+63 0 input63@1
+64 0 input64@1
+65 0 input65@1
+66 0 input66@1
+67 0 input67@1
+68 0 input68@1
+69 0 input69@1
+70 0 input70@1
+71 0 input71@1
+72 0 input72@1
+73 0 input73@1
+74 0 input74@1
+75 0 input75@1
+76 0 input76@1
+77 0 input77@1
+78 0 input78@1
+79 0 input79@1
+80 0 input80@1
+81 0 input81@1
+82 0 input82@1
+83 0 input83@1
+84 0 input84@1
+85 0 input85@1
+86 0 input86@1
+87 0 input87@1
+88 1 input88@1
+89 0 input89@1
+90 0 input90@1
+91 0 input91@1
+92 0 input92@1
+93 0 input93@1
+94 0 input94@1
+95 0 input95@1
+96 0 input96@1
+97 0 input97@1
+98 0 input98@1
+99 0 input99@1
+100 0 input100@1
+101 0 input101@1
+102 1 input102@1
+103 1 input103@1
+104 0 input104@1
+105 0 input105@1
+106 0 input106@1
+107 0 input107@1
+108 1 input108@1
+109 1 input109@1
+110 0 input110@1
+111 1 input111@1
+112 1 input112@1
+113 0 input113@1
+114 1 input114@1
+115 1 input115@1
+116 0 input116@1
+117 0 input117@1
+118 1 input118@1
+119 0 input119@1
+120 1 input120@1
+121 0 input121@1
+122 0 input122@1
+123 0 input123@1
+124 0 input124@1
+125 0 input125@1
+126 0 input126@1
+127 0 input127@1
+128 0 input128@1
+129 0 input129@1
+130 0 input130@1
+131 0 input131@1
+132 0 input132@1
+133 0 input133@1
+134 0 input134@1
+135 0 input135@1
+136 0 input136@1
+137 0 input137@1
+138 0 input138@1
+139 1 input139@1
+@2
+0 00000100 input0@2
+1 00000001 input1@2
+2 00000000 input2@2
+3 11111111 input3@2
+4 00000010 input4@2
+5 11111111 input5@2
+6 00000010 input6@2
+7 11111111 input7@2
+8 1 input8@2
+9 0 input9@2
+10 0 input10@2
+11 1 input11@2
+12 0 input12@2
+13 0 input13@2
+14 0 input14@2
+15 0 input15@2
+16 0 input16@2
+17 0 input17@2
+18 0 input18@2
+19 0 input19@2
+20 0 input20@2
+21 0 input21@2
+22 0 input22@2
+23 0 input23@2
+24 0 input24@2
+25 0 input25@2
+26 1 input26@2
+27 0 input27@2
+28 0 input28@2
+29 0 input29@2
+30 0 input30@2
+31 0 input31@2
+32 0 input32@2
+33 1 input33@2
+34 0 input34@2
+35 0 input35@2
+36 0 input36@2
+37 0 input37@2
+38 0 input38@2
+39 0 input39@2
+40 0 input40@2
+41 0 input41@2
+42 0 input42@2
+43 0 input43@2
+44 0 input44@2
+45 0 input45@2
+46 0 input46@2
+47 0 input47@2
+48 0 input48@2
+49 0 input49@2
+50 0 input50@2
+51 0 input51@2
+52 0 input52@2
+53 1 input53@2
+54 0 input54@2
+55 0 input55@2
+56 0 input56@2
+57 0 input57@2
+58 0 input58@2
+59 1 input59@2
+60 0 input60@2
+61 0 input61@2
+62 0 input62@2
+63 0 input63@2
+64 0 input64@2
+65 0 input65@2
+66 0 input66@2
+67 0 input67@2
+68 0 input68@2
+69 0 input69@2
+70 0 input70@2
+71 0 input71@2
+72 0 input72@2
+73 0 input73@2
+74 0 input74@2
+75 0 input75@2
+76 0 input76@2
+77 0 input77@2
+78 0 input78@2
+79 0 input79@2
+80 0 input80@2
+81 0 input81@2
+82 0 input82@2
+83 0 input83@2
+84 0 input84@2
+85 0 input85@2
+86 0 input86@2
+87 0 input87@2
+88 0 input88@2
+89 0 input89@2
+90 0 input90@2
+91 0 input91@2
+92 0 input92@2
+93 0 input93@2
+94 0 input94@2
+95 0 input95@2
+96 0 input96@2
+97 0 input97@2
+98 0 input98@2
+99 0 input99@2
+100 0 input100@2
+101 0 input101@2
+102 0 input102@2
+103 0 input103@2
+104 0 input104@2
+105 0 input105@2
+106 0 input106@2
+107 0 input107@2
+108 0 input108@2
+109 0 input109@2
+110 1 input110@2
+111 0 input111@2
+112 0 input112@2
+113 0 input113@2
+114 0 input114@2
+115 0 input115@2
+116 0 input116@2
+117 0 input117@2
+118 0 input118@2
+119 0 input119@2
+120 0 input120@2
+121 0 input121@2
+122 0 input122@2
+123 0 input123@2
+124 0 input124@2
+125 0 input125@2
+126 0 input126@2
+127 0 input127@2
+128 0 input128@2
+129 0 input129@2
+130 0 input130@2
+131 0 input131@2
+132 0 input132@2
+133 0 input133@2
+134 0 input134@2
+135 0 input135@2
+136 0 input136@2
+137 0 input137@2
+138 0 input138@2
+139 1 input139@2
+@3
+0 00000011 input0@3
+1 00000001 input1@3
+2 00000000 input2@3
+3 11111111 input3@3
+4 00000011 input4@3
+5 11111111 input5@3
+6 00000011 input6@3
+7 11111111 input7@3
+8 1 input8@3
+9 1 input9@3
+10 0 input10@3
+11 0 input11@3
+12 0 input12@3
+13 0 input13@3
+14 0 input14@3
+15 0 input15@3
+16 0 input16@3
+17 0 input17@3
+18 0 input18@3
+19 0 input19@3
+20 0 input20@3
+21 0 input21@3
+22 0 input22@3
+23 0 input23@3
+24 0 input24@3
+25 0 input25@3
+26 1 input26@3
+27 0 input27@3
+28 0 input28@3
+29 0 input29@3
+30 0 input30@3
+31 0 input31@3
+32 0 input32@3
+33 1 input33@3
+34 0 input34@3
+35 0 input35@3
+36 0 input36@3
+37 0 input37@3
+38 0 input38@3
+39 0 input39@3
+40 0 input40@3
+41 0 input41@3
+42 0 input42@3
+43 0 input43@3
+44 0 input44@3
+45 0 input45@3
+46 0 input46@3
+47 0 input47@3
+48 0 input48@3
+49 0 input49@3
+50 0 input50@3
+51 0 input51@3
+52 0 input52@3
+53 1 input53@3
+54 0 input54@3
+55 0 input55@3
+56 0 input56@3
+57 1 input57@3
+58 0 input58@3
+59 0 input59@3
+60 0 input60@3
+61 0 input61@3
+62 0 input62@3
+63 0 input63@3
+64 0 input64@3
+65 0 input65@3
+66 0 input66@3
+67 0 input67@3
+68 0 input68@3
+69 0 input69@3
+70 0 input70@3
+71 0 input71@3
+72 0 input72@3
+73 0 input73@3
+74 0 input74@3
+75 0 input75@3
+76 0 input76@3
+77 0 input77@3
+78 0 input78@3
+79 0 input79@3
+80 0 input80@3
+81 0 input81@3
+82 1 input82@3
+83 0 input83@3
+84 0 input84@3
+85 0 input85@3
+86 0 input86@3
+87 0 input87@3
+88 0 input88@3
+89 0 input89@3
+90 0 input90@3
+91 0 input91@3
+92 0 input92@3
+93 0 input93@3
+94 0 input94@3
+95 0 input95@3
+96 0 input96@3
+97 0 input97@3
+98 0 input98@3
+99 0 input99@3
+100 0 input100@3
+101 0 input101@3
+102 0 input102@3
+103 0 input103@3
+104 0 input104@3
+105 0 input105@3
+106 0 input106@3
+107 0 input107@3
+108 0 input108@3
+109 0 input109@3
+110 0 input110@3
+111 0 input111@3
+112 0 input112@3
+113 0 input113@3
+114 0 input114@3
+115 0 input115@3
+116 0 input116@3
+117 0 input117@3
+118 0 input118@3
+119 0 input119@3
+120 0 input120@3
+121 0 input121@3
+122 0 input122@3
+123 0 input123@3
+124 0 input124@3
+125 0 input125@3
+126 0 input126@3
+127 0 input127@3
+128 0 input128@3
+129 0 input129@3
+130 0 input130@3
+131 0 input131@3
+132 0 input132@3
+133 0 input133@3
+134 0 input134@3
+135 0 input135@3
+136 0 input136@3
+137 0 input137@3
+138 1 input138@3
+139 1 input139@3
+@4
+0 00000011 input0@4
+1 00000001 input1@4
+2 00000000 input2@4
+3 11111111 input3@4
+4 00000100 input4@4
+5 11111111 input5@4
+6 00000001 input6@4
+7 11111111 input7@4
+8 1 input8@4
+9 1 input9@4
+10 0 input10@4
+11 0 input11@4
+12 0 input12@4
+13 0 input13@4
+14 0 input14@4
+15 0 input15@4
+16 0 input16@4
+17 0 input17@4
+18 0 input18@4
+19 0 input19@4
+20 0 input20@4
+21 0 input21@4
+22 0 input22@4
+23 0 input23@4
+24 0 input24@4
+25 0 input25@4
+26 1 input26@4
+27 0 input27@4
+28 0 input28@4
+29 0 input29@4
+30 0 input30@4
+31 0 input31@4
+32 0 input32@4
+33 1 input33@4
+34 0 input34@4
+35 0 input35@4
+36 0 input36@4
+37 0 input37@4
+38 0 input38@4
+39 0 input39@4
+40 0 input40@4
+41 0 input41@4
+42 0 input42@4
+43 0 input43@4
+44 0 input44@4
+45 0 input45@4
+46 0 input46@4
+47 0 input47@4
+48 0 input48@4
+49 1 input49@4
+50 0 input50@4
+51 0 input51@4
+52 0 input52@4
+53 0 input53@4
+54 0 input54@4
+55 0 input55@4
+56 0 input56@4
+57 1 input57@4
+58 0 input58@4
+59 0 input59@4
+60 0 input60@4
+61 0 input61@4
+62 0 input62@4
+63 0 input63@4
+64 0 input64@4
+65 0 input65@4
+66 0 input66@4
+67 0 input67@4
+68 0 input68@4
+69 0 input69@4
+70 0 input70@4
+71 0 input71@4
+72 0 input72@4
+73 0 input73@4
+74 0 input74@4
+75 0 input75@4
+76 0 input76@4
+77 0 input77@4
+78 0 input78@4
+79 0 input79@4
+80 0 input80@4
+81 0 input81@4
+82 0 input82@4
+83 0 input83@4
+84 0 input84@4
+85 0 input85@4
+86 0 input86@4
+87 0 input87@4
+88 0 input88@4
+89 1 input89@4
+90 0 input90@4
+91 0 input91@4
+92 0 input92@4
+93 0 input93@4
+94 0 input94@4
+95 0 input95@4
+96 0 input96@4
+97 0 input97@4
+98 0 input98@4
+99 0 input99@4
+100 0 input100@4
+101 0 input101@4
+102 0 input102@4
+103 0 input103@4
+104 0 input104@4
+105 0 input105@4
+106 0 input106@4
+107 0 input107@4
+108 0 input108@4
+109 0 input109@4
+110 0 input110@4
+111 0 input111@4
+112 0 input112@4
+113 0 input113@4
+114 0 input114@4
+115 0 input115@4
+116 0 input116@4
+117 0 input117@4
+118 0 input118@4
+119 0 input119@4
+120 0 input120@4
+121 0 input121@4
+122 0 input122@4
+123 0 input123@4
+124 0 input124@4
+125 0 input125@4
+126 0 input126@4
+127 0 input127@4
+128 0 input128@4
+129 0 input129@4
+130 0 input130@4
+131 0 input131@4
+132 0 input132@4
+133 0 input133@4
+134 0 input134@4
+135 0 input135@4
+136 0 input136@4
+137 0 input137@4
+138 0 input138@4
+139 1 input139@4
+@5
+0 00000011 input0@5
+1 00000001 input1@5
+2 00000000 input2@5
+3 11111111 input3@5
+4 00000101 input4@5
+5 11111111 input5@5
+6 00000010 input6@5
+7 11111111 input7@5
+8 1 input8@5
+9 1 input9@5
+10 0 input10@5
+11 0 input11@5
+12 0 input12@5
+13 0 input13@5
+14 0 input14@5
+15 0 input15@5
+16 0 input16@5
+17 0 input17@5
+18 0 input18@5
+19 0 input19@5
+20 0 input20@5
+21 0 input21@5
+22 0 input22@5
+23 0 input23@5
+24 0 input24@5
+25 0 input25@5
+26 1 input26@5
+27 0 input27@5
+28 0 input28@5
+29 0 input29@5
+30 0 input30@5
+31 0 input31@5
+32 0 input32@5
+33 1 input33@5
+34 0 input34@5
+35 0 input35@5
+36 0 input36@5
+37 0 input37@5
+38 0 input38@5
+39 0 input39@5
+40 0 input40@5
+41 0 input41@5
+42 0 input42@5
+43 0 input43@5
+44 0 input44@5
+45 0 input45@5
+46 0 input46@5
+47 0 input47@5
+48 0 input48@5
+49 1 input49@5
+50 0 input50@5
+51 0 input51@5
+52 0 input52@5
+53 0 input53@5
+54 0 input54@5
+55 0 input55@5
+56 0 input56@5
+57 1 input57@5
+58 0 input58@5
+59 0 input59@5
+60 0 input60@5
+61 0 input61@5
+62 0 input62@5
+63 0 input63@5
+64 0 input64@5
+65 0 input65@5
+66 0 input66@5
+67 0 input67@5
+68 0 input68@5
+69 0 input69@5
+70 0 input70@5
+71 0 input71@5
+72 0 input72@5
+73 0 input73@5
+74 0 input74@5
+75 0 input75@5
+76 0 input76@5
+77 0 input77@5
+78 0 input78@5
+79 0 input79@5
+80 0 input80@5
+81 0 input81@5
+82 0 input82@5
+83 0 input83@5
+84 0 input84@5
+85 0 input85@5
+86 0 input86@5
+87 0 input87@5
+88 0 input88@5
+89 0 input89@5
+90 0 input90@5
+91 0 input91@5
+92 0 input92@5
+93 0 input93@5
+94 0 input94@5
+95 0 input95@5
+96 0 input96@5
+97 0 input97@5
+98 0 input98@5
+99 0 input99@5
+100 0 input100@5
+101 0 input101@5
+102 0 input102@5
+103 0 input103@5
+104 0 input104@5
+105 0 input105@5
+106 0 input106@5
+107 0 input107@5
+108 0 input108@5
+109 0 input109@5
+110 0 input110@5
+111 0 input111@5
+112 0 input112@5
+113 0 input113@5
+114 0 input114@5
+115 0 input115@5
+116 0 input116@5
+117 0 input117@5
+118 0 input118@5
+119 0 input119@5
+120 0 input120@5
+121 0 input121@5
+122 0 input122@5
+123 0 input123@5
+124 0 input124@5
+125 0 input125@5
+126 0 input126@5
+127 0 input127@5
+128 0 input128@5
+129 0 input129@5
+130 0 input130@5
+131 0 input131@5
+132 0 input132@5
+133 0 input133@5
+134 0 input134@5
+135 0 input135@5
+136 0 input136@5
+137 0 input137@5
+138 0 input138@5
+139 1 input139@5
+@6
+0 00000011 input0@6
+1 00000011 input1@6
+2 00000000 input2@6
+3 11111111 input3@6
+4 00000011 input4@6
+5 11111111 input5@6
+6 00000011 input6@6
+7 11111111 input7@6
+8 1 input8@6
+9 1 input9@6
+10 0 input10@6
+11 0 input11@6
+12 0 input12@6
+13 0 input13@6
+14 0 input14@6
+15 0 input15@6
+16 0 input16@6
+17 0 input17@6
+18 0 input18@6
+19 0 input19@6
+20 0 input20@6
+21 0 input21@6
+22 0 input22@6
+23 0 input23@6
+24 1 input24@6
+25 0 input25@6
+26 0 input26@6
+27 0 input27@6
+28 0 input28@6
+29 0 input29@6
+30 0 input30@6
+31 0 input31@6
+32 0 input32@6
+33 1 input33@6
+34 0 input34@6
+35 0 input35@6
+36 0 input36@6
+37 0 input37@6
+38 0 input38@6
+39 0 input39@6
+40 0 input40@6
+41 0 input41@6
+42 0 input42@6
+43 0 input43@6
+44 0 input44@6
+45 0 input45@6
+46 0 input46@6
+47 0 input47@6
+48 0 input48@6
+49 1 input49@6
+50 0 input50@6
+51 0 input51@6
+52 0 input52@6
+53 0 input53@6
+54 0 input54@6
+55 0 input55@6
+56 0 input56@6
+57 1 input57@6
+58 0 input58@6
+59 0 input59@6
+60 0 input60@6
+61 0 input61@6
+62 0 input62@6
+63 0 input63@6
+64 0 input64@6
+65 0 input65@6
+66 0 input66@6
+67 0 input67@6
+68 0 input68@6
+69 0 input69@6
+70 0 input70@6
+71 0 input71@6
+72 0 input72@6
+73 0 input73@6
+74 0 input74@6
+75 0 input75@6
+76 0 input76@6
+77 0 input77@6
+78 0 input78@6
+79 0 input79@6
+80 0 input80@6
+81 0 input81@6
+82 0 input82@6
+83 0 input83@6
+84 0 input84@6
+85 0 input85@6
+86 0 input86@6
+87 0 input87@6
+88 0 input88@6
+89 0 input89@6
+90 0 input90@6
+91 0 input91@6
+92 0 input92@6
+93 0 input93@6
+94 0 input94@6
+95 0 input95@6
+96 0 input96@6
+97 0 input97@6
+98 0 input98@6
+99 0 input99@6
+100 0 input100@6
+101 0 input101@6
+102 0 input102@6
+103 0 input103@6
+104 0 input104@6
+105 0 input105@6
+106 0 input106@6
+107 0 input107@6
+108 0 input108@6
+109 0 input109@6
+110 0 input110@6
+111 0 input111@6
+112 0 input112@6
+113 0 input113@6
+114 0 input114@6
+115 0 input115@6
+116 0 input116@6
+117 0 input117@6
+118 0 input118@6
+119 0 input119@6
+120 0 input120@6
+121 1 input121@6
+122 1 input122@6
+123 0 input123@6
+124 0 input124@6
+125 0 input125@6
+126 0 input126@6
+127 0 input127@6
+128 0 input128@6
+129 0 input129@6
+130 0 input130@6
+131 0 input131@6
+132 0 input132@6
+133 0 input133@6
+134 0 input134@6
+135 0 input135@6
+136 0 input136@6
+137 0 input137@6
+138 0 input138@6
+139 1 input139@6
+@7
+0 00000000 input0@7
+1 11111111 input1@7
+2 00000000 input2@7
+3 11111111 input3@7
+4 11111111 input4@7
+5 11111111 input5@7
+6 11111111 input6@7
+7 11111111 input7@7
+8 1 input8@7
+9 1 input9@7
+10 0 input10@7
+11 0 input11@7
+12 0 input12@7
+13 0 input13@7
+14 0 input14@7
+15 0 input15@7
+16 0 input16@7
+17 0 input17@7
+18 0 input18@7
+19 0 input19@7
+20 0 input20@7
+21 1 input21@7
+22 0 input22@7
+23 0 input23@7
+24 0 input24@7
+25 0 input25@7
+26 0 input26@7
+27 0 input27@7
+28 0 input28@7
+29 0 input29@7
+30 0 input30@7
+31 0 input31@7
+32 0 input32@7
+33 1 input33@7
+34 0 input34@7
+35 0 input35@7
+36 0 input36@7
+37 0 input37@7
+38 0 input38@7
+39 0 input39@7
+40 0 input40@7
+41 0 input41@7
+42 0 input42@7
+43 0 input43@7
+44 0 input44@7
+45 1 input45@7
+46 0 input46@7
+47 0 input47@7
+48 0 input48@7
+49 0 input49@7
+50 0 input50@7
+51 0 input51@7
+52 0 input52@7
+53 0 input53@7
+54 0 input54@7
+55 0 input55@7
+56 0 input56@7
+57 1 input57@7
+58 0 input58@7
+59 0 input59@7
+60 0 input60@7
+61 0 input61@7
+62 0 input62@7
+63 0 input63@7
+64 0 input64@7
+65 0 input65@7
+66 0 input66@7
+67 0 input67@7
+68 0 input68@7
+69 0 input69@7
+70 0 input70@7
+71 0 input71@7
+72 0 input72@7
+73 0 input73@7
+74 0 input74@7
+75 0 input75@7
+76 0 input76@7
+77 0 input77@7
+78 0 input78@7
+79 0 input79@7
+80 0 input80@7
+81 0 input81@7
+82 0 input82@7
+83 0 input83@7
+84 0 input84@7
+85 0 input85@7
+86 0 input86@7
+87 0 input87@7
+88 0 input88@7
+89 0 input89@7
+90 0 input90@7
+91 0 input91@7
+92 0 input92@7
+93 0 input93@7
+94 1 input94@7
+95 1 input95@7
+96 1 input96@7
+97 0 input97@7
+98 0 input98@7
+99 0 input99@7
+100 0 input100@7
+101 0 input101@7
+102 0 input102@7
+103 0 input103@7
+104 0 input104@7
+105 0 input105@7
+106 0 input106@7
+107 0 input107@7
+108 0 input108@7
+109 0 input109@7
+110 0 input110@7
+111 0 input111@7
+112 0 input112@7
+113 0 input113@7
+114 0 input114@7
+115 0 input115@7
+116 0 input116@7
+117 0 input117@7
+118 0 input118@7
+119 0 input119@7
+120 0 input120@7
+121 0 input121@7
+122 0 input122@7
+123 1 input123@7
+124 1 input124@7
+125 0 input125@7
+126 0 input126@7
+127 0 input127@7
+128 0 input128@7
+129 0 input129@7
+130 0 input130@7
+131 0 input131@7
+132 0 input132@7
+133 0 input133@7
+134 0 input134@7
+135 0 input135@7
+136 0 input136@7
+137 0 input137@7
+138 0 input138@7
+139 1 input139@7
+@8
+0 00000000 input0@8
+1 00000000 input1@8
+2 00000000 input2@8
+3 00000000 input3@8
+4 00000000 input4@8
+5 00000000 input5@8
+6 00000000 input6@8
+7 00000000 input7@8
+8 0 input8@8
+9 0 input9@8
+10 0 input10@8
+11 0 input11@8
+12 0 input12@8
+13 0 input13@8
+14 0 input14@8
+15 0 input15@8
+16 0 input16@8
+17 0 input17@8
+18 0 input18@8
+19 0 input19@8
+20 0 input20@8
+21 0 input21@8
+22 0 input22@8
+23 0 input23@8
+24 0 input24@8
+25 0 input25@8
+26 0 input26@8
+27 0 input27@8
+28 0 input28@8
+29 0 input29@8
+30 0 input30@8
+31 0 input31@8
+32 0 input32@8
+33 0 input33@8
+34 0 input34@8
+35 0 input35@8
+36 0 input36@8
+37 0 input37@8
+38 0 input38@8
+39 0 input39@8
+40 0 input40@8
+41 0 input41@8
+42 0 input42@8
+43 0 input43@8
+44 0 input44@8
+45 0 input45@8
+46 0 input46@8
+47 0 input47@8
+48 0 input48@8
+49 0 input49@8
+50 0 input50@8
+51 0 input51@8
+52 0 input52@8
+53 0 input53@8
+54 0 input54@8
+55 0 input55@8
+56 0 input56@8
+57 0 input57@8
+58 0 input58@8
+59 0 input59@8
+60 0 input60@8
+61 0 input61@8
+62 0 input62@8
+63 0 input63@8
+64 0 input64@8
+65 0 input65@8
+66 0 input66@8
+67 0 input67@8
+68 0 input68@8
+69 0 input69@8
+70 0 input70@8
+71 0 input71@8
+72 0 input72@8
+73 0 input73@8
+74 0 input74@8
+75 0 input75@8
+76 0 input76@8
+77 0 input77@8
+78 0 input78@8
+79 0 input79@8
+80 0 input80@8
+81 0 input81@8
+82 0 input82@8
+83 0 input83@8
+84 0 input84@8
+85 0 input85@8
+86 0 input86@8
+87 0 input87@8
+88 0 input88@8
+89 0 input89@8
+90 0 input90@8
+91 0 input91@8
+92 0 input92@8
+93 0 input93@8
+94 0 input94@8
+95 0 input95@8
+96 0 input96@8
+97 0 input97@8
+98 0 input98@8
+99 0 input99@8
+100 0 input100@8
+101 0 input101@8
+102 0 input102@8
+103 0 input103@8
+104 0 input104@8
+105 0 input105@8
+106 0 input106@8
+107 0 input107@8
+108 0 input108@8
+109 0 input109@8
+110 0 input110@8
+111 0 input111@8
+112 0 input112@8
+113 0 input113@8
+114 0 input114@8
+115 0 input115@8
+116 0 input116@8
+117 0 input117@8
+118 0 input118@8
+119 0 input119@8
+120 0 input120@8
+121 0 input121@8
+122 0 input122@8
+123 0 input123@8
+124 0 input124@8
+125 0 input125@8
+126 0 input126@8
+127 0 input127@8
+128 0 input128@8
+129 0 input129@8
+130 0 input130@8
+131 0 input131@8
+132 0 input132@8
+133 0 input133@8
+134 0 input134@8
+135 0 input135@8
+136 0 input136@8
+137 0 input137@8
+138 0 input138@8
+139 0 input139@8
+.
+[btor>mc] found 1 reachable and 0 unreachable bad state properties at bound k = 8
+[btor>mc] deleting model checker: 140 inputs, 71 states, 1 bad, 0 constraints
+btormc /home/jetafese/hwmc20-mlir/btor2/bv/2019/beem/at.6.prop1-back-serstep.btor2.export.btor

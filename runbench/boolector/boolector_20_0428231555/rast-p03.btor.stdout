@@ -1,0 +1,3 @@
+./boolector_get_btor.sh /home/jetafese/hwmc20-mlir/btor2/bv/2020/mann/rast-p03.btor
+sat
+boolector /home/jetafese/hwmc20-mlir/btor2/bv/2020/mann/rast-p03.btor 

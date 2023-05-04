@@ -1,0 +1,35 @@
+Info: pointer size: 8, word size: 8
+Info: Trackable memory is not present
+Functions: 
+NONE
+Globals: 
+NONE
+(sat.stats   :conflicts  :restarts        :learned/bin    :gc          :time)
+(sat.stats          :decisions :clauses/bin      :units       :memory       )
+(sat.stats      0      0    0  8092/3137     0/0   0       0    39.05   0.00)
+(sat.stats    113    801    0  8087/3136   112/16   1       0    39.05   0.00)
+(sat.stats    113    801    0  8087/3136   112/16   1       0    39.05   0.00)
+(sat.stats    113    801    0  8087/3136   112/16   1       0    39.05   0.00)
+(sat.stats    113    801    0  4641/665    53/4   2       0    40.15   0.03)
+(sat.stats    116    843    1  4641/665    56/5   2       0    40.15   0.03)
+(sat.stats :conflicts    :restarts      :learned/bin     :gc          :time)
+(sat.stats       :decisions   :clauses/bin      :units       :memory       )
+(sat.stats    154   1074    2  4641/665    93/7   3       0    40.15   0.03)
+(sat.stats    159   1093    3  4641/665    98/9   3       0    40.15   0.03)
+(sat.stats    163   1102    4  4641/665   102/9   3       0    40.15   0.03)
+(sat.stats    166   1104    5  4641/665   105/9   3       0    40.15   0.03)
+(sat.stats    169   1109    6  4641/665   108/9   3       0    40.15   0.03)
+(sat.stats    173   1112    7  4641/665   112/9   3       0    40.15   0.03)
+(sat.stats    176   1118    8  4641/665   115/9   3       0    40.15   0.03)
+(sat.stats    179   1122    9  4641/665   118/9   3       0    40.15   0.03)
+(sat.stats    182   1126   10  4641/665   121/9   3       0    40.15   0.03)
+(sat.stats :conflicts   :restarts      :learned/bin       :gc          :time)
+(sat.stats       :decisions   :clauses/bin       :units       :memory       )
+(sat.stats    185   1127   11  4641/665   124/10   3       0    40.15   0.03)
+(sat.stats    189   1137   12  4641/665   128/10   3       0    40.15   0.03)
+(sat.stats    209   1176   17  4641/665   148/11   3       0    40.15   0.04)
+(sat.stats    277   1452   28  4620/665   209/24  15       0    40.15   0.04)
+
+real	0m4.321s
+user	0m3.943s
+sys	0m0.153s

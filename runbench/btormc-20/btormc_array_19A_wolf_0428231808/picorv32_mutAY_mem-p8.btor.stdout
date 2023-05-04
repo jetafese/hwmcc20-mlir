@@ -1,0 +1,1270 @@
+./btormc_get_btor.sh /home/jetafese/hwmc20-mlir/btor2/array/2019/wolf/2019A/picorv32_mutAY_mem-p8.btor
+[btormc] parsing input file...
+[btormc] finished parsing
+[btor>mc] calling BMC on 1 properties from bound 0 up-to maximum bound k = 20
+[btor>mc] trace generation enabled
+[btor>mc] new forward manager
+[btor>mc] initialized forward frame at bound k = 0
+[btor>mc] checking forward frame at bound k = 0
+[btor>mc] checking forward frame bad state property 0 at bound k = 0
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>varsubst] 1 variables substituted in 0.0 seconds
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] enabled core engine
+[btor>sat] Lingeling allows both incremental and non-incremental mode
+[btor>sat] initialized Lingeling
+[lingeling] Lingeling
+[lingeling] 
+[lingeling] Version bcp 4fe47dd5a6ef91df6dca4bad81326f992dc3fbab
+[lingeling] 
+[lingeling] Copyright (C) 2010-2016 Armin Biere JKU Linz Austria.
+[lingeling] All rights reserved.
+[lingeling] 
+[lingeling] released Tue Nov 22 09:56:45 EST 2022
+[lingeling] compiled Tue Nov 22 09:56:45 EST 2022
+[lingeling] 
+[lingeling] gcc (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0
+[lingeling] -W -Wall -O3 -fPIC -DNLGLOG -DNDEBUG -DNCHKSOL -DNLGLDRUPLIG
+[lingeling] -DNLGLYALSAT -DNLGLFILES -DNLGLDEMA
+[lingeling] Linux lilla-my 4.15.0-156-generic x86_64
+[lingeling] 
+[btor>slvfun] 0 AIG vars, 0 AIG ands, 0 CNF vars, 0 CNF clauses
+[btor>core] SAT call 2 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 0 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 0
+[btor>mc] initialized forward frame at bound k = 1
+[btor>mc] checking forward frame at bound k = 1
+[btor>mc] checking forward frame bad state property 0 at bound k = 1
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 0 AIG vars, 0 AIG ands, 0 CNF vars, 0 CNF clauses
+[btor>core] SAT call 3 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 1 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 1
+[btor>mc] initialized forward frame at bound k = 2
+[btor>mc] checking forward frame at bound k = 2
+[btor>mc] checking forward frame bad state property 0 at bound k = 2
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 0 AIG vars, 0 AIG ands, 0 CNF vars, 0 CNF clauses
+[btor>core] SAT call 4 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 2 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 2
+[btor>mc] initialized forward frame at bound k = 3
+[btor>mc] checking forward frame at bound k = 3
+[btor>mc] checking forward frame bad state property 0 at bound k = 3
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 131 AIG vars, 252 AIG ands, 383 CNF vars, 756 CNF clauses
+[btor>core] SAT call 5 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 3 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 3
+[btor>mc] initialized forward frame at bound k = 4
+[btor>mc] checking forward frame at bound k = 4
+[btor>mc] checking forward frame bad state property 0 at bound k = 4
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 133 AIG vars, 633 AIG ands, 586 CNF vars, 1449 CNF clauses
+[btor>core] SAT call 6 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 4 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 4
+[btor>mc] initialized forward frame at bound k = 5
+[btor>mc] checking forward frame at bound k = 5
+[btor>mc] checking forward frame bad state property 0 at bound k = 5
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 135 AIG vars, 1028 AIG ands, 803 CNF vars, 2184 CNF clauses
+[btor>core] SAT call 7 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 5 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 5
+[btor>mc] initialized forward frame at bound k = 6
+[btor>mc] checking forward frame at bound k = 6
+[btor>mc] checking forward frame bad state property 0 at bound k = 6
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 672 AIG vars, 7689 AIG ands, 5705 CNF vars, 16567 CNF clauses
+[btor>core] SAT call 8 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 6 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 6
+[btor>mc] initialized forward frame at bound k = 7
+[btor>mc] checking forward frame at bound k = 7
+[btor>mc] checking forward frame bad state property 0 at bound k = 7
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 984 AIG vars, 15921 AIG ands, 12281 CNF vars, 36480 CNF clauses
+[btor>core] SAT call 9 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 7 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 7
+[btor>mc] initialized forward frame at bound k = 8
+[btor>mc] checking forward frame at bound k = 8
+[btor>mc] checking forward frame bad state property 0 at bound k = 8
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 1822 AIG vars, 34044 AIG ands, 25160 CNF vars, 75962 CNF clauses
+[btor>core] SAT call 10 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 8 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 8
+[btor>mc] initialized forward frame at bound k = 9
+[btor>mc] checking forward frame at bound k = 9
+[btor>mc] checking forward frame bad state property 0 at bound k = 9
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>skel] found 0 skeleton literals in 0 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 0 new constraints in 0.0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 10
+[btor>slvfun] 2760 AIG vars, 59052 AIG ands, 41693 CNF vars, 127838 CNF clauses
+[btorcore] 1 iterations, 6 lemmas, 0 ext. lemmas, vars 709, applies 32
+[btor>slvfun] 2760 AIG vars, 59711 AIG ands, 42056 CNF vars, 129075 CNF clauses
+[btor>core] SAT call 11 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 9 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 9
+[btor>mc] initialized forward frame at bound k = 10
+[btor>mc] checking forward frame at bound k = 10
+[btor>mc] checking forward frame bad state property 0 at bound k = 10
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>skel] found 3888 skeleton literals in 6 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 104 new constraints in 0.0 seconds
+[btor>embed] replaced 8 embedded constraints in 0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 2 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 0
+[btor>slvfun] 3694 AIG vars, 84588 AIG ands, 92451 CNF vars, 291278 CNF clauses
+[btorcore] 2 iterations, 7 lemmas, 0 ext. lemmas, vars 758, applies 40
+[btor>slvfun] 3694 AIG vars, 84735 AIG ands, 92524 CNF vars, 291534 CNF clauses
+[btorcore] 3 iterations, 8 lemmas, 0 ext. lemmas, vars 758, applies 40
+[btor>slvfun] 3694 AIG vars, 84884 AIG ands, 92599 CNF vars, 291796 CNF clauses
+[btorcore] 4 iterations, 9 lemmas, 0 ext. lemmas, vars 758, applies 40
+[btor>slvfun] 3694 AIG vars, 85033 AIG ands, 92674 CNF vars, 292058 CNF clauses
+[btor>core] SAT call 12 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 10 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 10
+[btor>mc] initialized forward frame at bound k = 11
+[btor>mc] checking forward frame at bound k = 11
+[btor>mc] checking forward frame bad state property 0 at bound k = 11
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>skel] found 3793 skeleton literals in 34 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 1 new constraints in 0.0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 1 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 0
+[btor>slvfun] 4628 AIG vars, 111999 AIG ands, 110950 CNF vars, 349435 CNF clauses
+[btorcore] 5 iterations, 13 lemmas, 0 ext. lemmas, vars 807, applies 48
+[btor>slvfun] 4628 AIG vars, 112480 AIG ands, 111209 CNF vars, 350323 CNF clauses
+[btorcore] 6 iterations, 15 lemmas, 0 ext. lemmas, vars 807, applies 48
+[btor>slvfun] 4628 AIG vars, 112778 AIG ands, 111359 CNF vars, 350847 CNF clauses
+[btorcore] 7 iterations, 16 lemmas, 0 ext. lemmas, vars 807, applies 48
+[btor>slvfun] 4628 AIG vars, 112800 AIG ands, 111371 CNF vars, 350888 CNF clauses
+[btorcore] 8 iterations, 17 lemmas, 0 ext. lemmas, vars 807, applies 48
+[btor>slvfun] 4628 AIG vars, 112929 AIG ands, 111436 CNF vars, 351115 CNF clauses
+[btorcore] 9 iterations, 20 lemmas, 0 ext. lemmas, vars 807, applies 48
+[btor>slvfun] 4628 AIG vars, 113152 AIG ands, 111565 CNF vars, 351549 CNF clauses
+[btorcore] 10 iterations, 21 lemmas, 0 ext. lemmas, vars 807, applies 48
+[btor>slvfun] 4628 AIG vars, 113281 AIG ands, 111630 CNF vars, 351776 CNF clauses
+[btorcore] 11 iterations, 27 lemmas, 0 ext. lemmas, vars 807, applies 48
+[btor>slvfun] 4628 AIG vars, 113832 AIG ands, 111939 CNF vars, 352824 CNF clauses
+[btorcore] 12 iterations, 34 lemmas, 0 ext. lemmas, vars 807, applies 48
+[btor>slvfun] 4628 AIG vars, 114575 AIG ands, 112312 CNF vars, 354128 CNF clauses
+[btorcore] 13 iterations, 38 lemmas, 0 ext. lemmas, vars 807, applies 48
+[btor>slvfun] 4628 AIG vars, 114937 AIG ands, 112526 CNF vars, 354844 CNF clauses
+[btorcore] 14 iterations, 40 lemmas, 0 ext. lemmas, vars 807, applies 48
+[btor>slvfun] 4628 AIG vars, 115233 AIG ands, 112674 CNF vars, 355362 CNF clauses
+[btorcore] 15 iterations, 43 lemmas, 0 ext. lemmas, vars 807, applies 48
+[btor>slvfun] 4628 AIG vars, 115403 AIG ands, 112760 CNF vars, 355662 CNF clauses
+[btorcore] 16 iterations, 44 lemmas, 0 ext. lemmas, vars 807, applies 48
+[btor>slvfun] 4628 AIG vars, 115550 AIG ands, 112833 CNF vars, 355918 CNF clauses
+[btorcore] 17 iterations, 45 lemmas, 0 ext. lemmas, vars 807, applies 48
+[btor>slvfun] 4628 AIG vars, 115679 AIG ands, 112898 CNF vars, 356145 CNF clauses
+[btorcore] 18 iterations, 46 lemmas, 0 ext. lemmas, vars 807, applies 48
+[btor>slvfun] 4628 AIG vars, 115808 AIG ands, 112963 CNF vars, 356372 CNF clauses
+[btor lglclone1]    8.948  15% simplifying
+[btor lglclone1]   49.267  85% search
+[btor lglclone1] ==================================
+[btor lglclone1]   58.296 100% all
+[btor lglclone1] 
+[btor lglclone1]        107614 conflicts,        1846.0 confs/sec
+[btor lglclone1]          2553 ternaries,          42.2 confs/ternary
+[btor lglclone1]           338 binaries,          318.4 confs/binary
+[btor lglclone1]            12 iterations,       8967.8 confs/iteration
+[btor lglclone1] 
+[btor lglclone1]            42 reductions,          0.7 redus/sec,   2562.2 confs/reduction
+[btor lglclone1]          2069 restarts,           35.5 rests/sec,     52.0 confs/restart
+[btor lglclone1]        522056 decisions,        8955.3 decis/sec,      4.9 decis/conflict
+[btor lglclone1]     256860830 propagations,  4406157.1 props/sec,    492.0 props/decision
+[btor lglclone1] 
+[btor lglclone1] 58.3 seconds, 34.8 MB
+[btor>core] SAT call 13 returned 20 in 0.000 seconds
+[btor>mc] bad state property 0 at bound k = 11 UNSATISFIABLE
+[btor>mc] found 0 reachable and 0 unreachable bad state properties at bound k = 11
+[btor>mc] initialized forward frame at bound k = 12
+[btor>mc] checking forward frame at bound k = 12
+[btor>mc] checking forward frame bad state property 0 at bound k = 12
+[btor>core] calling SAT
+[btor>core] no UFs or function equalities, enable beta-reduction=all
+[btor>skel] found 9531 skeleton literals in 71 constraints
+[btor>skel] skeleton preprocessing result 0
+[btor>skel] skeleton preprocessing produced 133 new constraints in 0.0 seconds
+[btor>embed] replaced 13 embedded constraints in 0 seconds
+[btor>extract] set: 0 (0), set_inc: 0 (0), set_itoi: 0 (0), set_itoip1: 0 (0), cpy: 0 (0)
+[btor>extract] extracted 0 lambdas in 0.000 seconds
+[btor>merge] merged 0 lambdas in 0.00 seconds
+[btor>elimapplies] eliminate 0 applications in round 1
+[btor>elimapplies] eliminated 0 function applications in 0.0 seconds
+[btor>preprocess] 2 rewriting rounds in 0.0 seconds
+[btor>preprocess] simplification returned 0
+[btor>slvfun] 5562 AIG vars, 137343 AIG ands, 177627 CNF vars, 566856 CNF clauses
+[btorcore] 19 iterations, 52 lemmas, 0 ext. lemmas, vars 856, applies 56
+[btor>slvfun] 5562 AIG vars, 138006 AIG ands, 177994 CNF vars, 568105 CNF clauses
+[btorcore] 20 iterations, 57 lemmas, 0 ext. lemmas, vars 856, applies 56
+[btor>slvfun] 5562 AIG vars, 138785 AIG ands, 178383 CNF vars, 569467 CNF clauses
+[btorcore] 21 iterations, 59 lemmas, 0 ext. lemmas, vars 856, applies 56
+[btor>slvfun] 5562 AIG vars, 139043 AIG ands, 178513 CNF vars, 569921 CNF clauses
+[btorcore] 22 iterations, 64 lemmas, 0 ext. lemmas, vars 856, applies 56
+[btor>slvfun] 5562 AIG vars, 139514 AIG ands, 178752 CNF vars, 570754 CNF clauses
+[btorcore] 23 iterations, 68 lemmas, 0 ext. lemmas, vars 856, applies 56
+[btor>slvfun] 5562 AIG vars, 139836 AIG ands, 178916 CNF vars, 571325 CNF clauses
+[btorcore] 24 iterations, 72 lemmas, 0 ext. lemmas, vars 856, applies 56
+[btor>slvfun] 5562 AIG vars, 140388 AIG ands, 179192 CNF vars, 572291 CNF clauses
+[btorcore] 25 iterations, 74 lemmas, 0 ext. lemmas, vars 856, applies 56
+[btor>slvfun] 5562 AIG vars, 140436 AIG ands, 179220 CNF vars, 572385 CNF clauses
+[btorcore] 26 iterations, 82 lemmas, 0 ext. lemmas, vars 856, applies 56
+[btor>slvfun] 5562 AIG vars, 140857 AIG ands, 179453 CNF vars, 573178 CNF clauses
+[btor lglclone2]   51.380  35% simplifying
+[btor lglclone2]   97.040  65% search
+[btor lglclone2] ==================================
+[btor lglclone2]  148.577 100% all
+[btor lglclone2] 
+[btor lglclone2]        198831 conflicts,        1338.2 confs/sec
+[btor lglclone2]          4460 ternaries,          44.6 confs/ternary
+[btor lglclone2]           535 binaries,          371.6 confs/binary
+[btor lglclone2]             3 iterations,      66277.0 confs/iteration
+[btor lglclone2] 
+[btor lglclone2]            73 reductions,          0.5 redus/sec,   2723.7 confs/reduction
+[btor lglclone2]          2591 restarts,           17.4 rests/sec,     76.7 confs/restart
+[btor lglclone2]        912470 decisions,        6141.4 decis/sec,      4.6 decis/conflict
+[btor lglclone2]     465183877 propagations,  3130919.3 props/sec,    509.8 props/decision
+[btor lglclone2] 
+[btor lglclone2] 148.6 seconds, 69.8 MB
+[btorcore] 27 iterations, 88 lemmas, 0 ext. lemmas, vars 856, applies 56
+[btor>slvfun] 5562 AIG vars, 141591 AIG ands, 179837 CNF vars, 574505 CNF clauses
+[btor lglclone3]   53.500  24% simplifying
+[btor lglclone3]  170.928  76% search
+[btor lglclone3] ==================================
+[btor lglclone3]  224.588 100% all
+[btor lglclone3] 
+[btor lglclone3]        329109 conflicts,        1465.4 confs/sec
+[btor lglclone3]          5097 ternaries,          64.6 confs/ternary
+[btor lglclone3]           652 binaries,          504.8 confs/binary
+[btor lglclone3]             3 iterations,     109703.0 confs/iteration
+[btor lglclone3] 
+[btor lglclone3]           107 reductions,          0.5 redus/sec,   3075.8 confs/reduction
+[btor lglclone3]          2802 restarts,           12.5 rests/sec,    117.5 confs/restart
+[btor lglclone3]       1227772 decisions,        5466.8 decis/sec,      3.7 decis/conflict
+[btor lglclone3]     765863291 propagations,  3410081.0 props/sec,    623.8 props/decision
+[btor lglclone3] 
+[btor lglclone3] 224.6 seconds, 73.4 MB
+[btorcore] 28 iterations, 89 lemmas, 0 ext. lemmas, vars 856, applies 56
+[btor>slvfun] 5562 AIG vars, 141613 AIG ands, 179849 CNF vars, 574546 CNF clauses
+[btorcore] 29 iterations, 91 lemmas, 0 ext. lemmas, vars 856, applies 56
+[btor>slvfun] 5562 AIG vars, 141764 AIG ands, 179926 CNF vars, 574814 CNF clauses
+[btorcore] 30 iterations, 92 lemmas, 0 ext. lemmas, vars 856, applies 56
+[btor>slvfun] 5562 AIG vars, 141785 AIG ands, 179937 CNF vars, 574852 CNF clauses
+[btor>core] SAT call 14 returned 10 in 0.000 seconds
+[btor>mc] bad state property 0 reachable at bound k = 12 SATISFIABLE
+sat
+b0
+#0
+0 0 ref.trap#0
+1 0 uut.trap#0
+2 0 ref.mem_valid#0
+3 0 uut.mem_valid#0
+4 0 ref.mem_instr#0
+5 0 uut.mem_instr#0
+6 00000000000000000000000000100000 ref.mem_addr#0
+7 00000000000000000000000000011000 uut.mem_addr#0
+8 0000 ref.mem_wstrb#0
+9 0000 uut.mem_wstrb#0
+10 00000000000000000000000000000000 ref.mem_wdata#0
+11 00000000000000000000000000000000 uut.mem_wdata#0
+13 01101101111111000000000000000000 ref.reg_op1#0
+14 11101000000000000000000000000000 ref.reg_op2#0
+15 0 ref.instr_sub#0
+16 00000000000000000000000000000000 state16#0
+17 0 ref.instr_sra#0
+18 0 ref.instr_srai#0
+19 0 ref.instr_srl#0
+20 0 ref.instr_srli#0
+21 0 ref.instr_sll#0
+22 0 ref.instr_slli#0
+23 0 ref.instr_andi#0
+24 0 ref.instr_and#0
+25 0 ref.instr_ori#0
+26 0 ref.instr_or#0
+27 0 ref.instr_xori#0
+28 0 ref.instr_xor#0
+29 0 state29#0
+30 0 ref.is_sltiu_bltu_sltu#0
+31 0 ref.is_slti_blt_slt#0
+32 0 ref.instr_bgeu#0
+33 0 ref.instr_bge#0
+34 0 ref.instr_bne#0
+35 0 ref.instr_beq#0
+36 0 ref.is_compare#0
+37 0 ref.is_lui_auipc_jal_jalr_addi_add_sub#0
+38 00000000000000000000000000000000 ref.alu_out_q#0
+39 0 ref.prefetched_high_word#0
+40 0 ref.clear_prefetched_high_word_q#0
+41 0 ref.latched_branch#0
+42 00 ref.irq_state#0
+43 0 ref.compressed_instr#0
+44 0000000000000000000000000000000000000000000000000000000000000000 ref.count_cycle#0
+45 0000000000000000000000000000000000000000000000000000000000000000 ref.count_instr#0
+46 00000000 ref.cpu_state#0
+48 11100 ref.decoded_rs1#0
+49 01101 ref.decoded_rs2#0
+50 00000000000000000000000000000000 state50#0
+51 00000000000000000000000000000000 ref.irq_pending#0
+52 00000000000000000000000000000000 ref.irq_mask#0
+53 00000000000000000000000000000010 ref.reg_next_pc#0
+54 0 ref.latched_compr#0
+55 00000000000000000000000000000000 ref.reg_out#0
+56 0 ref.latched_stalu#0
+57 1 ref.latched_store#0
+58 00000000000000000000000000000000 ref.reg_pc#0
+59 11010000001000000100000000000010 ref.decoded_imm#0
+60 00000000000000000000000000000000 ref.decoded_imm_j#0
+61 00000 ref.decoded_rd#0
+62 1 ref.decoder_pseudo_trigger#0
+63 1 ref.decoder_trigger#0
+64 0 ref.do_waitirq#0
+65 0 ref.instr_add#0
+66 0 ref.instr_addi#0
+67 0 ref.instr_auipc#0
+68 0 ref.instr_blt#0
+69 0 ref.instr_bltu#0
+70 1 ref.instr_jal#0
+71 0 ref.instr_jalr#0
+72 0 ref.instr_lb#0
+73 0 ref.instr_lbu#0
+74 0 ref.instr_lh#0
+75 0 ref.instr_lhu#0
+76 1 ref.instr_lui#0
+77 0 ref.instr_lw#0
+78 0 ref.instr_maskirq#0
+79 0 ref.instr_rdcycle#0
+80 0 ref.instr_rdcycleh#0
+81 0 ref.instr_rdinstr#0
+82 0 ref.instr_rdinstrh#0
+83 0 ref.instr_retirq#0
+84 0 ref.instr_sb#0
+85 0 ref.instr_sh#0
+86 0 ref.instr_slt#0
+87 0 ref.instr_slti#0
+88 0 ref.instr_sltiu#0
+89 0 ref.instr_sltu#0
+90 0 ref.instr_sw#0
+91 0 ref.instr_timer#0
+92 0 ref.instr_waitirq#0
+93 0 ref.irq_active#0
+94 0 ref.irq_delay#0
+95 0 ref.is_alu_reg_imm#0
+96 0 ref.is_alu_reg_reg#0
+97 1 ref.is_beq_bne_blt_bge_bltu_bgeu#0
+98 0 ref.is_jalr_addi_slti_sltiu_xori_ori_andi#0
+99 0 ref.is_lb_lh_lw_lbu_lhu#0
+100 0 ref.is_lbu_lhu_lw#0
+101 0 ref.is_lui_auipc_jal#0
+102 0 ref.is_sb_sh_sw#0
+103 0 ref.is_slli_srli_srai#0
+104 0 ref.last_mem_valid#0
+105 0 ref.latched_is_lb#0
+106 0 ref.latched_is_lh#0
+107 0 ref.latched_is_lu#0
+108 10010 ref.latched_rd#0
+109 1100110111001101 ref.mem_16bit_buffer#0
+110 1 ref.mem_do_prefetch#0
+111 0 ref.mem_do_rdata#0
+112 0 ref.mem_do_rinst#0
+113 0 ref.mem_do_wdata#0
+114 0 ref.mem_la_secondword#0
+115 00 ref.mem_state#0
+116 01101110110111100100010001101111 ref.mem_rdata_q#0
+117 0 ref.mem_la_firstword_reg#0
+118 00000000000000000000000000000000 state118#0
+119 00 ref.mem_wordsize#0
+120 0000 state120#0
+121 00000000000000000000000000000000 state121#0
+122 00000000 state122#0
+123 0000000000000000 state123#0
+124 00000 ref.reg_sh#0
+125 00000000000000000000000000000000 ref.timer#0
+126 11111111111111001000000000000001 uut.reg_op1#0
+127 00111111100011000000000001010000 uut.reg_op2#0
+128 0 uut.instr_sub#0
+129 00000000000000000000000000000000 state129#0
+130 0 uut.instr_sra#0
+131 0 uut.instr_srai#0
+132 0 uut.instr_srl#0
+133 0 uut.instr_srli#0
+134 0 uut.instr_sll#0
+135 0 uut.instr_slli#0
+136 0 uut.instr_andi#0
+137 0 uut.instr_and#0
+138 0 uut.instr_ori#0
+139 0 uut.instr_or#0
+140 0 uut.instr_xori#0
+141 0 uut.instr_xor#0
+142 0 state142#0
+143 0 uut.is_sltiu_bltu_sltu#0
+144 0 uut.is_slti_blt_slt#0
+145 0 uut.instr_bgeu#0
+146 0 uut.instr_bge#0
+147 0 uut.instr_bne#0
+148 0 uut.instr_beq#0
+149 0 uut.is_compare#0
+150 0 uut.is_lui_auipc_jal_jalr_addi_add_sub#0
+151 00000000000000000000000000000000 uut.alu_out_q#0
+152 0 uut.prefetched_high_word#0
+153 0 uut.clear_prefetched_high_word_q#0
+154 0 uut.latched_branch#0
+155 00 uut.irq_state#0
+156 0 uut.compressed_instr#0
+157 0000000000000000000000000000000000000000000000000000000000000000 uut.count_cycle#0
+158 0000000000000000000000000000000000000000000000000000000000000000 uut.count_instr#0
+159 00000000 uut.cpu_state#0
+161 11100 uut.decoded_rs1#0
+162 01101 uut.decoded_rs2#0
+163 00000000000000000000000000000000 state163#0
+164 00000000000000000000000000000000 uut.irq_pending#0
+165 00000000000000000000000000000000 uut.irq_mask#0
+166 00000000000000000000000000000010 uut.reg_next_pc#0
+167 0 uut.latched_compr#0
+168 00000000000000000000000000000000 uut.reg_out#0
+169 0 uut.latched_stalu#0
+170 1 uut.latched_store#0
+171 00000000000000000000000000000000 uut.reg_pc#0
+172 00000000000000000000000010101110 uut.decoded_imm#0
+173 00000000000000001100101001000000 uut.decoded_imm_j#0
+174 00100 uut.decoded_rd#0
+175 1 uut.decoder_pseudo_trigger#0
+176 1 uut.decoder_trigger#0
+177 0 uut.do_waitirq#0
+178 0 uut.instr_add#0
+179 0 uut.instr_addi#0
+180 0 uut.instr_auipc#0
+181 0 uut.instr_blt#0
+182 0 uut.instr_bltu#0
+183 1 uut.instr_jal#0
+184 0 uut.instr_jalr#0
+185 0 uut.instr_lb#0
+186 0 uut.instr_lbu#0
+187 1 uut.instr_lh#0
+188 0 uut.instr_lhu#0
+189 0 uut.instr_lui#0
+190 0 uut.instr_lw#0
+191 0 uut.instr_maskirq#0
+192 0 uut.instr_rdcycle#0
+193 0 uut.instr_rdcycleh#0
+194 0 uut.instr_rdinstr#0
+195 0 uut.instr_rdinstrh#0
+196 0 uut.instr_retirq#0
+197 0 uut.instr_sb#0
+198 0 uut.instr_sh#0
+199 0 uut.instr_slt#0
+200 0 uut.instr_slti#0
+201 0 uut.instr_sltiu#0
+202 0 uut.instr_sltu#0
+203 0 uut.instr_sw#0
+204 0 uut.instr_timer#0
+205 0 uut.instr_waitirq#0
+206 0 uut.irq_active#0
+207 0 uut.irq_delay#0
+208 0 uut.is_alu_reg_imm#0
+209 0 uut.is_alu_reg_reg#0
+210 0 uut.is_beq_bne_blt_bge_bltu_bgeu#0
+211 0 uut.is_jalr_addi_slti_sltiu_xori_ori_andi#0
+212 0 uut.is_lb_lh_lw_lbu_lhu#0
+213 0 uut.is_lbu_lhu_lw#0
+214 0 uut.is_lui_auipc_jal#0
+215 0 uut.is_sb_sh_sw#0
+216 0 uut.is_slli_srli_srai#0
+217 0 uut.last_mem_valid#0
+218 0 uut.latched_is_lb#0
+219 0 uut.latched_is_lh#0
+220 0 uut.latched_is_lu#0
+221 00011 uut.latched_rd#0
+222 1100100110101101 uut.mem_16bit_buffer#0
+223 0 uut.mem_do_prefetch#0
+224 0 uut.mem_do_rdata#0
+225 0 uut.mem_do_rinst#0
+226 0 uut.mem_do_wdata#0
+227 0 uut.mem_la_secondword#0
+228 00 uut.mem_state#0
+229 11101111110111100101000101101111 uut.mem_rdata_q#0
+230 0 uut.mem_la_firstword_reg#0
+231 00000000000000000000000000000000 state231#0
+232 01 uut.mem_wordsize#0
+233 0000 state233#0
+234 00000000000000000000000000000000 state234#0
+235 00000000 state235#0
+236 0000000000000000 state236#0
+237 00000 uut.reg_sh#0
+238 00000000000000000000000000000000 uut.timer#0
+239 00000000000000000000000000000000 state239#0
+240 00000000000000000000000000000000 state240#0
+241 0 state241#0
+242 0 state242#0
+243 000000000000000000000000000000 state243#0
+244 00000000000000000000000000000000 state244#0
+245 00000000000000000000000000000000 state245#0
+246 00000000000000000000000000000000 state246#0
+247 00000000000000000000000000000000 state247#0
+248 0 state248#0
+249 0 state249#0
+250 0 state250#0
+251 0 state251#0
+252 00000 state252#0
+253 00000000000000000000000000000000 state253#0
+254 00000000000000000000000000000000 state254#0
+255 0 state255#0
+256 0 state256#0
+257 000000000000000000000000000000 state257#0
+258 00000000000000000000000000000000 state258#0
+259 00000000000000000000000000000000 state259#0
+260 00000000000000000000000000000000 state260#0
+261 00000000000000000000000000000000 state261#0
+262 1 state262#0
+263 0 state263#0
+264 0 state264#0
+265 0 state265#0
+266 00000 state266#0
+@0
+0 0 clk@0
+1 00000000000000000000000000000000 irq@0
+2 10011000000000000100100000100111 mem_rdata@0
+3 1 mem_ready@0
+4 0 resetn@0
+#1
+16 00000000000000000000000000000000 state16#1
+29 0 state29#1
+50 00000000000000000000000000000000 state50#1
+118 00000000000000000000000000000000 state118#1
+120 0000 state120#1
+121 00000000000000000000000000000000 state121#1
+122 00000000 state122#1
+123 0000000000000000 state123#1
+129 00000000000000000000000000000000 state129#1
+142 0 state142#1
+163 00000000000000000000000000000000 state163#1
+231 00000000000000000000000000000000 state231#1
+233 0000 state233#1
+234 00000000000000000000000000000000 state234#1
+235 00000000 state235#1
+236 0000000000000000 state236#1
+239 00000000000000000000000000000000 state239#1
+240 00000000000000000000000000000000 state240#1
+241 0 state241#1
+242 0 state242#1
+243 000000000000000000000000000000 state243#1
+244 00000000000000000000000000000000 state244#1
+245 00000000000000000000000000000000 state245#1
+246 00000000000000000000000000000000 state246#1
+247 00000000000000000000000000000000 state247#1
+248 0 state248#1
+249 0 state249#1
+250 0 state250#1
+251 0 state251#1
+252 00000 state252#1
+253 00000000000000000000000000000000 state253#1
+254 00000000000000000000000000000000 state254#1
+255 0 state255#1
+256 0 state256#1
+257 000000000000000000000000000000 state257#1
+258 00000000000000000000000000000000 state258#1
+259 00000000000000000000000000000000 state259#1
+260 00000000000000000000000000000000 state260#1
+261 00000000000000000000000000000000 state261#1
+262 0 state262#1
+263 0 state263#1
+264 0 state264#1
+265 0 state265#1
+266 00000 state266#1
+@1
+0 0 clk@1
+1 00000000000000000000000000000000 irq@1
+2 00000000000000000000000000000000 mem_rdata@1
+3 0 mem_ready@1
+4 1 resetn@1
+#2
+16 00000000000000000000000000000000 state16#2
+29 0 state29#2
+50 00000000000000000000000000000000 state50#2
+118 00000000000000000000000000000000 state118#2
+120 0000 state120#2
+121 00000000000000000000000000000000 state121#2
+122 00000000 state122#2
+123 0000000000000000 state123#2
+129 00000000000000000000000000000000 state129#2
+142 0 state142#2
+163 00000000000000000000000000000000 state163#2
+231 00000000000000000000000000000000 state231#2
+233 0000 state233#2
+234 00000000000000000000000000000000 state234#2
+235 00000000 state235#2
+236 0000000000000000 state236#2
+239 00000000000000000000000000000000 state239#2
+240 00000000000000000000000000000000 state240#2
+241 0 state241#2
+242 0 state242#2
+243 000000000000000000000000000000 state243#2
+244 00000000000000000000000000000000 state244#2
+245 00000000000000000000000000000000 state245#2
+246 00000000000000000000000000000000 state246#2
+247 00000000000000000000000000000000 state247#2
+248 0 state248#2
+249 0 state249#2
+250 0 state250#2
+251 0 state251#2
+252 00000 state252#2
+253 00000000000000000000000000000000 state253#2
+254 00000000000000000000000000000000 state254#2
+255 0 state255#2
+256 0 state256#2
+257 000000000000000000000000000000 state257#2
+258 00000000000000000000000000000000 state258#2
+259 00000000000000000000000000000000 state259#2
+260 00000000000000000000000000000000 state260#2
+261 00000000000000000000000000000000 state261#2
+262 0 state262#2
+263 0 state263#2
+264 0 state264#2
+265 0 state265#2
+266 00000 state266#2
+@2
+0 0 clk@2
+1 00000000000000000000000000000000 irq@2
+2 00000000000000000000000000000000 mem_rdata@2
+3 0 mem_ready@2
+4 1 resetn@2
+#3
+16 00000000000000000000000000000000 state16#3
+29 0 state29#3
+50 00000000000000000000000000000000 state50#3
+118 00000000000000000000000000000000 state118#3
+120 0000 state120#3
+121 00000000000000000000000000000000 state121#3
+122 00000000 state122#3
+123 0000000000000000 state123#3
+129 00000000000000000000000000000000 state129#3
+142 0 state142#3
+163 00000000000000000000000000000000 state163#3
+231 00000000000000000000000000000000 state231#3
+233 0000 state233#3
+234 00000000000000000000000000000000 state234#3
+235 00000000 state235#3
+236 0000000000000000 state236#3
+239 00000000000000000000000000000000 state239#3
+240 00000000000000000000000000000000 state240#3
+241 0 state241#3
+242 0 state242#3
+243 000000000000000000000000000000 state243#3
+244 00000000000000000000000000000000 state244#3
+245 00000000000000000000000000000000 state245#3
+246 00000000000000000000000000000000 state246#3
+247 00000000000000000000000000000000 state247#3
+248 0 state248#3
+249 0 state249#3
+250 0 state250#3
+251 0 state251#3
+252 00000 state252#3
+253 00000000000000000000000000000000 state253#3
+254 00000000000000000000000000000000 state254#3
+255 0 state255#3
+256 0 state256#3
+257 000000000000000000000000000000 state257#3
+258 00000000000000000000000000000000 state258#3
+259 00000000000000000000000000000000 state259#3
+260 00000000000000000000000000000000 state260#3
+261 00000000000000000000000000000000 state261#3
+262 0 state262#3
+263 0 state263#3
+264 0 state264#3
+265 0 state265#3
+266 00000 state266#3
+@3
+0 0 clk@3
+1 00000000000000000000000000000000 irq@3
+2 00000111110110111111000000001011 mem_rdata@3
+3 1 mem_ready@3
+4 1 resetn@3
+#4
+16 00000000000000000000000000000000 state16#4
+29 0 state29#4
+50 00000000000000000000000000000000 state50#4
+118 00000000000000000000000000000000 state118#4
+120 0000 state120#4
+121 00000000000000000000000000000000 state121#4
+122 00000000 state122#4
+123 0000000000000000 state123#4
+129 00000000000000000000000000000000 state129#4
+142 0 state142#4
+163 00000000000000000000000000000000 state163#4
+231 00000000000000000000000000000000 state231#4
+233 0000 state233#4
+234 00000000000000000000000000000000 state234#4
+235 00000000 state235#4
+236 0000000000000000 state236#4
+239 00000000000000000000000000000000 state239#4
+240 00000000000000000000000000000000 state240#4
+241 0 state241#4
+242 0 state242#4
+243 000000000000000000000000000000 state243#4
+244 00000000000000000000000000000000 state244#4
+245 00000000000000000000000000000000 state245#4
+246 00000000000000000000000000000000 state246#4
+247 00000000000000000000000000000000 state247#4
+248 0 state248#4
+249 0 state249#4
+250 0 state250#4
+251 0 state251#4
+252 00000 state252#4
+253 00000000000000000000000000000000 state253#4
+254 00000000000000000000000000000000 state254#4
+255 0 state255#4
+256 0 state256#4
+257 000000000000000000000000000000 state257#4
+258 00000000000000000000000000000000 state258#4
+259 00000000000000000000000000000000 state259#4
+260 00000000000000000000000000000000 state260#4
+261 00000000000000000000000000000000 state261#4
+262 0 state262#4
+263 0 state263#4
+264 0 state264#4
+265 0 state265#4
+266 00000 state266#4
+@4
+0 0 clk@4
+1 00000000000000000000000000000000 irq@4
+2 10111011101101011011011101111001 mem_rdata@4
+3 1 mem_ready@4
+4 1 resetn@4
+#5
+16 00000000000000000000000000000000 state16#5
+29 0 state29#5
+50 00000000000000000000000000000100 state50#5
+118 00000000000000000000000000000000 state118#5
+120 0000 state120#5
+121 00000000000000000000000000000000 state121#5
+122 00000000 state122#5
+123 0000000000000000 state123#5
+129 00000000000000000000000000000000 state129#5
+142 0 state142#5
+163 00000000000000000000000000000100 state163#5
+231 00000000000000000000000000000000 state231#5
+233 0000 state233#5
+234 00000000000000000000000000000000 state234#5
+235 00000000 state235#5
+236 0000000000000000 state236#5
+239 00000010001100000000000000000000 state239#5
+240 00001000001000001100000000000000 state240#5
+241 1 state241#5
+242 1 state242#5
+243 000000000000000000000000000000 state243#5
+244 00000000000000000000000000000000 state244#5
+245 00000000000000000000000000000000 state245#5
+246 11111111111111111111111111111011 state246#5
+247 00000000000000000000000000000000 state247#5
+248 0 state248#5
+249 0 state249#5
+250 0 state250#5
+251 0 state251#5
+252 00000 state252#5
+253 10000011100100000000010010100110 state253#5
+254 00000111110001000100111011011100 state254#5
+255 1 state255#5
+256 0 state256#5
+257 000000000000000000000000000001 state257#5
+258 00000000000000000000000000000000 state258#5
+259 00000000000000000000000000000000 state259#5
+260 11111111111111111111111111111111 state260#5
+261 00000000000000000000000000000001 state261#5
+262 0 state262#5
+263 0 state263#5
+264 0 state264#5
+265 0 state265#5
+266 00000 state266#5
+@5
+0 0 clk@5
+1 00000000000000000000000000000000 irq@5
+2 11111101011001110110111110000001 mem_rdata@5
+3 0 mem_ready@5
+4 1 resetn@5
+#6
+16 11100000000011000000000000001000 state16#6
+29 1 state29#6
+50 11111111111111111111111111111111 state50#6
+118 00000000000000000000000000000000 state118#6
+120 0000 state120#6
+121 00000000000000000000000000000000 state121#6
+122 00000000 state122#6
+123 0000000000000000 state123#6
+129 00001110000010000010000000001000 state129#6
+142 0 state142#6
+163 11111111111111111111111111111111 state163#6
+231 00000000000000000000000000000000 state231#6
+233 0000 state233#6
+234 00000000000000000000000000000000 state234#6
+235 00000000 state235#6
+236 0000000000000000 state236#6
+239 00000000010000010111111110101100 state239#6
+240 10010010100100001101111110111100 state240#6
+241 1 state241#6
+242 1 state242#6
+243 000000000000000000000000000100 state243#6
+244 00000000000000000000000010000010 state244#6
+245 11111111010101111010111001111100 state245#6
+246 00000000000000000000000000000000 state246#6
+247 00000000000000000000000000000001 state247#6
+248 0 state248#6
+249 1 state249#6
+250 0 state250#6
+251 0 state251#6
+252 00000 state252#6
+253 11111111111110011101111110111100 state253#6
+254 10000000000000000001110110011100 state254#6
+255 0 state255#6
+256 1 state256#6
+257 000000000000000000000000000101 state257#6
+258 00000000000000000000000010000000 state258#6
+259 00011110111011111101111101111100 state259#6
+260 00000000000000000000000000000000 state260#6
+261 00000000000000000000000000000100 state261#6
+262 0 state262#6
+263 1 state263#6
+264 0 state264#6
+265 0 state265#6
+266 00000 state266#6
+@6
+0 0 clk@6
+1 00000000000000000000000000000000 irq@6
+2 01011011111011110010111111101111 mem_rdata@6
+3 0 mem_ready@6
+4 1 resetn@6
+#7
+16 01010101011001000000000000000000 state16#7
+29 1 state29#7
+50 00000000000000000000000000000000 state50#7
+118 00000000000000000000000000000000 state118#7
+120 0000 state120#7
+121 00000000000000000000000001111111 state121#7
+122 01101111 state122#7
+123 0000000000000000 state123#7
+129 00001011100010000000000001001000 state129#7
+142 0 state142#7
+163 00000000000000000000000000000000 state163#7
+231 00000000000000000000000000000000 state231#7
+233 0000 state233#7
+234 00000000000000000000000000001010 state234#7
+235 01101111 state235#7
+236 0000000000000000 state236#7
+239 01100000100100010111110110011100 state239#7
+240 00000001000000000001111100110100 state240#7
+241 1 state241#7
+242 0 state242#7
+243 000000000000000000000000000001 state243#7
+244 00000000000000000000111110000110 state244#7
+245 00000000000000100000000011111111 state245#7
+246 00000000000000000000000000000000 state246#7
+247 00000000000000000000000000000000 state247#7
+248 0 state248#7
+249 1 state249#7
+250 0 state250#7
+251 1 state251#7
+252 00000 state252#7
+253 00000000100000001101110000000100 state253#7
+254 11111000001000001001111110111100 state254#7
+255 0 state255#7
+256 0 state256#7
+257 000000000000000000000000000001 state257#7
+258 00000000000000000000111111010100 state258#7
+259 00000000000000000000000010111111 state259#7
+260 00000000000000000000000000000000 state260#7
+261 00000000000000000000000000000000 state261#7
+262 0 state262#7
+263 1 state263#7
+264 1 state264#7
+265 1 state265#7
+266 00000 state266#7
+@7
+0 0 clk@7
+1 00000000000000000000000000000000 irq@7
+2 01110011111110111001000000000010 mem_rdata@7
+3 1 mem_ready@7
+4 1 resetn@7
+#8
+16 11110111111111000000000000000000 state16#8
+29 0 state29#8
+50 00000000000000000100000000000100 state50#8
+118 00000000000000000000000000000000 state118#8
+120 0000 state120#8
+121 00000000000000000000000001110101 state121#8
+122 01100010 state122#8
+123 0000000000000000 state123#8
+129 00111111100010001000000001010001 state129#8
+142 0 state142#8
+163 10000000000000000000000000000100 state163#8
+231 00000000000000000000000000000000 state231#8
+233 0000 state233#8
+234 00000000000000000000000001111111 state234#8
+235 01100010 state235#8
+236 0000000000000000 state236#8
+239 00000000000000000000000000000000 state239#8
+240 11111111111100111111111110111100 state240#8
+241 1 state241#8
+242 1 state242#8
+243 110000000100100100100100100100 state243#8
+244 00000000000000000000111111111100 state244#8
+245 00001001010000001000100011101101 state245#8
+246 00000000000000000000000000000000 state246#8
+247 00000000000000000000000000000000 state247#8
+248 0 state248#8
+249 0 state249#8
+250 1 state250#8
+251 0 state251#8
+252 00000 state252#8
+253 00000000000000000000000000000100 state253#8
+254 01111101111110101011111110111100 state254#8
+255 1 state255#8
+256 1 state256#8
+257 000000100100100100100100100000 state257#8
+258 11111111111111111111111111111110 state258#8
+259 00000000000000001000100011111101 state259#8
+260 00000000000000000000000000000000 state260#8
+261 00000000000000000000000000000000 state261#8
+262 0 state262#8
+263 0 state263#8
+264 1 state264#8
+265 0 state265#8
+266 00000 state266#8
+@8
+0 0 clk@8
+1 00000000000000000000000000000000 irq@8
+2 00001001011011110000100110001001 mem_rdata@8
+3 1 mem_ready@8
+4 1 resetn@8
+#9
+16 00000000000000000000000000000001 state16#9
+29 0 state29#9
+50 00000000000000000000000000000100 state50#9
+118 00000000000000000000000000000000 state118#9
+120 0000 state120#9
+121 00000000000000000000000011011111 state121#9
+122 10111011 state122#9
+123 0000000000000000 state123#9
+129 00000000000000000000000000000011 state129#9
+142 0 state142#9
+163 00000000000000000000000000000100 state163#9
+231 00000000000000000000000000000000 state231#9
+233 0000 state233#9
+234 00000000000000000000000001101111 state234#9
+235 10000001 state235#9
+236 0000000000000000 state236#9
+239 11010000000000000000110111111100 state239#9
+240 11010000001000000100100010111000 state240#9
+241 0 state241#9
+242 1 state242#9
+243 000000000000000000000000000000 state243#9
+244 00000000000000000000110101111110 state244#9
+245 01111111110101111111110011111111 state245#9
+246 00000000000000000000000000000010 state246#9
+247 00000000000000000000000000000000 state247#9
+248 0 state248#9
+249 1 state249#9
+250 1 state250#9
+251 0 state251#9
+252 00000 state252#9
+253 10000000000010000000100000010000 state253#9
+254 00000000000010000000100000000000 state254#9
+255 1 state255#9
+256 1 state256#9
+257 000000000000000000000000000000 state257#9
+258 11111111111111111111111111111010 state258#9
+259 11111111111111110000000001000111 state259#9
+260 00000000000000000000000000000000 state260#9
+261 00000000000000000000000000000000 state261#9
+262 0 state262#9
+263 1 state263#9
+264 0 state264#9
+265 0 state265#9
+266 00000 state266#9
+@9
+0 0 clk@9
+1 00000000000000000100000000000000 irq@9
+2 00001001011101110010100111101001 mem_rdata@9
+3 0 mem_ready@9
+4 1 resetn@9
+#10
+16 00000000000000000000000000000000 state16#10
+29 1 state29#10
+50 00000000000000000000000000000000 state50#10
+118 00000000000000000000000000000000 state118#10
+120 0000 state120#10
+121 00000000000000000000000001111111 state121#10
+122 11101111 state122#10
+123 0000000000000000 state123#10
+129 00000000000000000000000000000000 state129#10
+142 0 state142#10
+163 00000000000000000000000000000000 state163#10
+231 00000000000000000000000000000000 state231#10
+233 0000 state233#10
+234 00000000000000000000000001111111 state234#10
+235 11111111 state235#10
+236 0000000000000000 state236#10
+239 00000000000000000000000000010000 state239#10
+240 00000000000000000000000000000000 state240#10
+241 0 state241#10
+242 0 state242#10
+243 000000000000000000000000000000 state243#10
+244 00000000000000000000000000000100 state244#10
+245 00000000000000000000000000000111 state245#10
+246 00000000000000000000000000000010 state246#10
+247 00000000000000000000000000000000 state247#10
+248 0 state248#10
+249 1 state249#10
+250 0 state250#10
+251 1 state251#10
+252 00000 state252#10
+253 00000000000000000000000000010000 state253#10
+254 00000000000000000000000000000000 state254#10
+255 0 state255#10
+256 0 state256#10
+257 000000000000000000000000000000 state257#10
+258 11001011011101100000000000000100 state258#10
+259 11111111111111111111111111111111 state259#10
+260 00000000000000000000000000000000 state260#10
+261 00000000000000000000000000000000 state261#10
+262 0 state262#10
+263 0 state263#10
+264 0 state264#10
+265 0 state265#10
+266 00000 state266#10
+@10
+0 0 clk@10
+1 00000000000000000000000000000000 irq@10
+2 00001001111011111001011101110011 mem_rdata@10
+3 1 mem_ready@10
+4 1 resetn@10
+#11
+16 00000000000000000000000000000000 state16#11
+29 0 state29#11
+50 00000000000000000000000000000000 state50#11
+118 00000000000000000000000000000000 state118#11
+120 0000 state120#11
+121 00000000000000000000000000000000 state121#11
+122 00000000 state122#11
+123 0000000000000000 state123#11
+129 00000000000000000000000000000000 state129#11
+142 0 state142#11
+163 00000000000000000000000000000000 state163#11
+231 00000000000000000000000000000000 state231#11
+233 0000 state233#11
+234 00000000000000000000000000000000 state234#11
+235 00000000 state235#11
+236 0000000000000000 state236#11
+239 00000000000000000000000000000000 state239#11
+240 00000000000000000000000000000000 state240#11
+241 0 state241#11
+242 0 state242#11
+243 000000000000000000000000000000 state243#11
+244 00000000000000000000000000000000 state244#11
+245 00000000000000000000000000000000 state245#11
+246 00000000000000000000000000000000 state246#11
+247 00000000000000000000000000000000 state247#11
+248 0 state248#11
+249 0 state249#11
+250 0 state250#11
+251 0 state251#11
+252 00000 state252#11
+253 00000000000000000000000000000000 state253#11
+254 00000000000000000000000000000000 state254#11
+255 0 state255#11
+256 0 state256#11
+257 000000000000000000000000000000 state257#11
+258 00000000000000000000000000000000 state258#11
+259 00000000000000000000000000000000 state259#11
+260 00000000000000000000000000000000 state260#11
+261 00000000000000000000000000000000 state261#11
+262 0 state262#11
+263 0 state263#11
+264 0 state264#11
+265 0 state265#11
+266 00000 state266#11
+@11
+0 0 clk@11
+1 00000000000000000000000000000000 irq@11
+2 00000001001010111000011110000010 mem_rdata@11
+3 0 mem_ready@11
+4 1 resetn@11
+#12
+16 00000000000000000000000000000000 state16#12
+29 0 state29#12
+50 00000000000000000000000000000000 state50#12
+118 00000000000000000000000000000000 state118#12
+120 0000 state120#12
+121 00000000000000000000000000000000 state121#12
+122 00000000 state122#12
+123 0000000000000000 state123#12
+129 00000000000000000000000000000000 state129#12
+142 0 state142#12
+163 00000000000000000000000000000000 state163#12
+231 00000000000000000000000000000000 state231#12
+233 0000 state233#12
+234 00000000000000000000000000000000 state234#12
+235 00000000 state235#12
+236 0000000000000000 state236#12
+239 00000000000000000000000000000000 state239#12
+240 00000000000000000000000000000000 state240#12
+241 0 state241#12
+242 0 state242#12
+243 000000000000000000000000000000 state243#12
+244 00000000000000000000000000000000 state244#12
+245 00000000000000000000000000000000 state245#12
+246 00000000000000000000000000000000 state246#12
+247 00000000000000000000000000000000 state247#12
+248 0 state248#12
+249 0 state249#12
+250 0 state250#12
+251 0 state251#12
+252 00000 state252#12
+253 00000000000000000000000000000000 state253#12
+254 00000000000000000000000000000000 state254#12
+255 0 state255#12
+256 0 state256#12
+257 000000000000000000000000000000 state257#12
+258 00000000000000000000000000000000 state258#12
+259 00000000000000000000000000000000 state259#12
+260 00000000000000000000000000000000 state260#12
+261 00000000000000000000000000000000 state261#12
+262 0 state262#12
+263 0 state263#12
+264 0 state264#12
+265 0 state265#12
+266 00000 state266#12
+@12
+0 0 clk@12
+1 00000000000000000000000000000000 irq@12
+2 00000000000000000000000000000000 mem_rdata@12
+3 0 mem_ready@12
+4 1 resetn@12
+.
+[btor>mc] found 1 reachable and 0 unreachable bad state properties at bound k = 12
+[btor>mc] deleting model checker: 5 inputs, 267 states, 1 bad, 1 constraints
+btormc /home/jetafese/hwmc20-mlir/btor2/array/2019/wolf/2019A/picorv32_mutAY_mem-p8.btor 

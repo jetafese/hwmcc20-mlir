@@ -1,0 +1,3 @@
+./boolector_get_btor.sh /home/jetafese/hwmc20-mlir/btor2/bv/2019/goel/vis_arrays_buf_bug.btor2
+sat
+boolector /home/jetafese/hwmc20-mlir/btor2/bv/2019/goel/vis_arrays_buf_bug.btor2 

@@ -1,0 +1,34 @@
+Info: pointer size: 8, word size: 8
+Info: Trackable memory is not present
+Functions: 
+NONE
+Globals: 
+NONE
+(sat.stats   :conflicts  :restarts         :learned/bin    :gc          :time)
+(sat.stats          :decisions :clauses/bin       :units       :memory       )
+(sat.stats      0      0    0 35732/18467     0/0   0       0    46.34   0.00)
+(sat.stats    166   2717    0 35728/18469   158/18   7       0    46.34   0.00)
+(sat.stats    166   2717    0 35728/18469   158/18   7       0    46.34   0.00)
+(sat.stats    166   2717    0 35728/18469   158/18   7       0    46.34   0.01)
+(sat.stats    166   2717    0 22189/5219    19/7   7       0    50.69   0.08)
+(sat.stats    169   2792    1 22189/5219    22/7   7       0    50.69   0.08)
+(sat.stats :conflicts    :restarts      :learned/bin       :gc          :time)
+(sat.stats      :decisions   :clauses/bin         :units       :memory       )
+(sat.stats    264  11023    2 22189/5219   117/35   7       0    50.69   0.09)
+(sat.stats    267  11030    3 22189/5219   120/35   7       0    50.69   0.09)
+(sat.stats    272  11036    4 22189/5219   125/35   7       0    50.69   0.09)
+(sat.stats    276  11042    5 22189/5219   129/35   7       0    50.69   0.09)
+(sat.stats    280  11044    6 22189/5219   133/35   7       0    50.69   0.09)
+(sat.stats    283  11046    7 22189/5219   136/35   7       0    50.69   0.09)
+(sat.stats    287  11052    8 22189/5219   140/35   7       0    50.69   0.09)
+(sat.stats    291  11054    9 22189/5219   144/35   7       0    50.69   0.09)
+(sat.stats    300  11631   10 22189/5219   153/35   7       0    50.69   0.09)
+(sat.stats    303  11686   11 22189/5219   156/35   7       0    50.69   0.09)
+(sat.stats    308  11690   12 22189/5219   161/35   7       0    50.69   0.09)
+(sat.stats    311  11697   13 22189/5219   164/35   7       0    50.69   0.09)
+(sat.stats    316  11715   14 22189/5219   169/35   7       0    50.69   0.09)
+(sat.stats    476  16480   36 22189/5219   329/40   7       0    50.79   0.10)
+
+real	0m9.322s
+user	0m9.205s
+sys	0m0.119s
