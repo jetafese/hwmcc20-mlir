@@ -46,35 +46,50 @@ module attributes {llvm.data_layout = ""} {
     %44 = llvm.select %43, %42, %7 : i1, i256
     %45 = llvm.select %21, %19, %44 : i1, i256
     %46 = llvm.call @nd_bv8_in1() : () -> i8
-    %47 = llvm.trunc %46 : i8 to i1
-    %48 = llvm.select %47, %35, %8 : i1, i128
-    %49 = llvm.mlir.constant(0 : i128) : i128
-    %50 = llvm.select %21, %49, %48 : i1, i128
-    %51 = llvm.call @nd_bv8_in2() : () -> i8
-    %52 = llvm.trunc %51 : i8 to i1
-    %53 = llvm.select %52, %31, %9 : i1, i128
-    %54 = llvm.select %21, %49, %53 : i1, i128
-    %55 = llvm.call @nd_bv16_in5() : () -> i16
-    %56 = llvm.trunc %55 : i16 to i10
-    %57 = llvm.select %21, %56, %10 : i1, i10
-    %58 = llvm.select %21, %15, %47 : i1, i1
-    %59 = llvm.select %21, %15, %52 : i1, i1
-    %60 = llvm.select %47, %35, %13 : i1, i128
-    %61 = llvm.select %21, %49, %60 : i1, i128
-    %62 = llvm.select %52, %31, %14 : i1, i128
-    %63 = llvm.select %21, %49, %62 : i1, i128
-    %64 = llvm.icmp "eq" %6, %7 : i256
-    %65 = llvm.mlir.constant(true) : i1
-    %66 = llvm.xor %5, %65  : i1
-    %67 = llvm.or %66, %64  : i1
-    %68 = llvm.mlir.constant(true) : i1
-    %69 = llvm.xor %67, %68  : i1
-    %70 = llvm.and %15, %69  : i1
-    %71 = llvm.mlir.constant(true) : i1
-    %72 = llvm.xor %70, %71  : i1
-    llvm.cond_br %72, ^bb2, ^bb3
+    %47 = llvm.mlir.constant(true) : i1
+    %48 = llvm.zext %47 : i1 to i64
+    %49 = llvm.mlir.constant(1 : i64) : i64
+    %50 = llvm.zext %46 : i8 to i64
+    llvm.call @btor2mlir_print_input_num(%49, %50, %48) : (i64, i64, i64) -> ()
+    %51 = llvm.trunc %46 : i8 to i1
+    %52 = llvm.select %51, %35, %8 : i1, i128
+    %53 = llvm.mlir.constant(0 : i128) : i128
+    %54 = llvm.select %21, %53, %52 : i1, i128
+    %55 = llvm.call @nd_bv8_in2() : () -> i8
+    %56 = llvm.mlir.constant(true) : i1
+    %57 = llvm.zext %56 : i1 to i64
+    %58 = llvm.mlir.constant(2 : i64) : i64
+    %59 = llvm.zext %55 : i8 to i64
+    llvm.call @btor2mlir_print_input_num(%58, %59, %57) : (i64, i64, i64) -> ()
+    %60 = llvm.trunc %55 : i8 to i1
+    %61 = llvm.select %60, %31, %9 : i1, i128
+    %62 = llvm.select %21, %53, %61 : i1, i128
+    %63 = llvm.call @nd_bv16_in5() : () -> i16
+    %64 = llvm.mlir.constant(10 : i10) : i10
+    %65 = llvm.zext %64 : i10 to i64
+    %66 = llvm.mlir.constant(5 : i64) : i64
+    %67 = llvm.zext %63 : i16 to i64
+    llvm.call @btor2mlir_print_input_num(%66, %67, %65) : (i64, i64, i64) -> ()
+    %68 = llvm.trunc %63 : i16 to i10
+    %69 = llvm.select %21, %68, %10 : i1, i10
+    %70 = llvm.select %21, %15, %51 : i1, i1
+    %71 = llvm.select %21, %15, %60 : i1, i1
+    %72 = llvm.select %51, %35, %13 : i1, i128
+    %73 = llvm.select %21, %53, %72 : i1, i128
+    %74 = llvm.select %60, %31, %14 : i1, i128
+    %75 = llvm.select %21, %53, %74 : i1, i128
+    %76 = llvm.icmp "eq" %6, %7 : i256
+    %77 = llvm.mlir.constant(true) : i1
+    %78 = llvm.xor %5, %77  : i1
+    %79 = llvm.or %78, %76  : i1
+    %80 = llvm.mlir.constant(true) : i1
+    %81 = llvm.xor %79, %80  : i1
+    %82 = llvm.and %15, %81  : i1
+    %83 = llvm.mlir.constant(true) : i1
+    %84 = llvm.xor %82, %83  : i1
+    llvm.cond_br %84, ^bb2, ^bb3
   ^bb2:  // pred: ^bb1
-    llvm.br ^bb1(%15, %22, %45, %50, %54, %57, %58, %59, %61, %63 : i1, i256, i256, i128, i128, i10, i1, i1, i128, i128)
+    llvm.br ^bb1(%15, %22, %45, %54, %62, %69, %70, %71, %73, %75 : i1, i256, i256, i128, i128, i10, i1, i1, i128, i128)
   ^bb3:  // pred: ^bb1
     llvm.call @__VERIFIER_error() : () -> ()
     llvm.unreachable

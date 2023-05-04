@@ -22,17 +22,17 @@ declare i128 @nd_bv128_in4()
 define void @main() !dbg !3 {
   br label %1, !dbg !7
 
-1:                                                ; preds = %56, %0
-  %2 = phi i1 [ true, %56 ], [ false, %0 ]
-  %3 = phi i256 [ %16, %56 ], [ 0, %0 ]
-  %4 = phi i256 [ %32, %56 ], [ 0, %0 ]
-  %5 = phi i128 [ %36, %56 ], [ 0, %0 ]
-  %6 = phi i128 [ %40, %56 ], [ 0, %0 ]
-  %7 = phi i10 [ %43, %56 ], [ 0, %0 ]
-  %8 = phi i1 [ %44, %56 ], [ true, %0 ]
-  %9 = phi i1 [ %45, %56 ], [ true, %0 ]
-  %10 = phi i128 [ %47, %56 ], [ 0, %0 ]
-  %11 = phi i128 [ %49, %56 ], [ 0, %0 ]
+1:                                                ; preds = %59, %0
+  %2 = phi i1 [ true, %59 ], [ false, %0 ]
+  %3 = phi i256 [ %16, %59 ], [ 0, %0 ]
+  %4 = phi i256 [ %32, %59 ], [ 0, %0 ]
+  %5 = phi i128 [ %37, %59 ], [ 0, %0 ]
+  %6 = phi i128 [ %42, %59 ], [ 0, %0 ]
+  %7 = phi i10 [ %46, %59 ], [ 0, %0 ]
+  %8 = phi i1 [ %47, %59 ], [ true, %0 ]
+  %9 = phi i1 [ %48, %59 ], [ true, %0 ]
+  %10 = phi i128 [ %50, %59 ], [ 0, %0 ]
+  %11 = phi i128 [ %52, %59 ], [ 0, %0 ]
   %12 = zext i128 %6 to i256, !dbg !9
   %13 = zext i128 %5 to i256, !dbg !10
   %14 = mul i256 %13, %12, !dbg !11
@@ -55,36 +55,42 @@ define void @main() !dbg !3 {
   %31 = select i1 %30, i256 %29, i256 %4, !dbg !28
   %32 = select i1 %15, i256 0, i256 %31, !dbg !29
   %33 = call i8 @nd_bv8_in1(), !dbg !30
-  %34 = trunc i8 %33 to i1, !dbg !31
-  %35 = select i1 %34, i128 %23, i128 %5, !dbg !32
-  %36 = select i1 %15, i128 0, i128 %35, !dbg !33
-  %37 = call i8 @nd_bv8_in2(), !dbg !34
-  %38 = trunc i8 %37 to i1, !dbg !35
-  %39 = select i1 %38, i128 %21, i128 %6, !dbg !36
-  %40 = select i1 %15, i128 0, i128 %39, !dbg !37
-  %41 = call i16 @nd_bv16_in5(), !dbg !38
-  %42 = trunc i16 %41 to i10, !dbg !39
-  %43 = select i1 %15, i10 %42, i10 %7, !dbg !40
-  %44 = select i1 %15, i1 true, i1 %34, !dbg !41
-  %45 = select i1 %15, i1 true, i1 %38, !dbg !42
-  %46 = select i1 %34, i128 %23, i128 %10, !dbg !43
-  %47 = select i1 %15, i128 0, i128 %46, !dbg !44
-  %48 = select i1 %38, i128 %21, i128 %11, !dbg !45
-  %49 = select i1 %15, i128 0, i128 %48, !dbg !46
-  %50 = icmp eq i256 %3, %4, !dbg !47
-  %51 = xor i1 %2, true, !dbg !48
-  %52 = or i1 %51, %50, !dbg !49
-  %53 = xor i1 %52, true, !dbg !50
-  %54 = and i1 true, %53, !dbg !51
-  %55 = xor i1 %54, true, !dbg !52
-  br i1 %55, label %56, label %57, !dbg !53
+  %34 = zext i8 %33 to i64, !dbg !31
+  call void @btor2mlir_print_input_num(i64 1, i64 %34, i64 1), !dbg !32
+  %35 = trunc i8 %33 to i1, !dbg !33
+  %36 = select i1 %35, i128 %23, i128 %5, !dbg !34
+  %37 = select i1 %15, i128 0, i128 %36, !dbg !35
+  %38 = call i8 @nd_bv8_in2(), !dbg !36
+  %39 = zext i8 %38 to i64, !dbg !37
+  call void @btor2mlir_print_input_num(i64 2, i64 %39, i64 1), !dbg !38
+  %40 = trunc i8 %38 to i1, !dbg !39
+  %41 = select i1 %40, i128 %21, i128 %6, !dbg !40
+  %42 = select i1 %15, i128 0, i128 %41, !dbg !41
+  %43 = call i16 @nd_bv16_in5(), !dbg !42
+  %44 = zext i16 %43 to i64, !dbg !43
+  call void @btor2mlir_print_input_num(i64 5, i64 %44, i64 10), !dbg !44
+  %45 = trunc i16 %43 to i10, !dbg !45
+  %46 = select i1 %15, i10 %45, i10 %7, !dbg !46
+  %47 = select i1 %15, i1 true, i1 %35, !dbg !47
+  %48 = select i1 %15, i1 true, i1 %40, !dbg !48
+  %49 = select i1 %35, i128 %23, i128 %10, !dbg !49
+  %50 = select i1 %15, i128 0, i128 %49, !dbg !50
+  %51 = select i1 %40, i128 %21, i128 %11, !dbg !51
+  %52 = select i1 %15, i128 0, i128 %51, !dbg !52
+  %53 = icmp eq i256 %3, %4, !dbg !53
+  %54 = xor i1 %2, true, !dbg !54
+  %55 = or i1 %54, %53, !dbg !55
+  %56 = xor i1 %55, true, !dbg !56
+  %57 = and i1 true, %56, !dbg !57
+  %58 = xor i1 %57, true, !dbg !58
+  br i1 %58, label %59, label %60, !dbg !59
 
-56:                                               ; preds = %1
-  br label %1, !dbg !54
+59:                                               ; preds = %1
+  br label %1, !dbg !60
 
-57:                                               ; preds = %1
-  call void @__VERIFIER_error(), !dbg !55
-  unreachable, !dbg !56
+60:                                               ; preds = %1
+  call void @__VERIFIER_error(), !dbg !61
+  unreachable, !dbg !62
 }
 
 !llvm.dbg.cu = !{!0}
@@ -94,7 +100,7 @@ define void @main() !dbg !3 {
 !1 = !DIFile(filename: "LLVMDialectModule", directory: "/")
 !2 = !{i32 2, !"Debug Info Version", i32 3}
 !3 = distinct !DISubprogram(name: "main", linkageName: "main", scope: null, file: !4, line: 9, type: !5, scopeLine: 9, spFlags: DISPFlagDefinition | DISPFlagOptimized, unit: !0, retainedNodes: !6)
-!4 = !DIFile(filename: "hwmc20-mlir/btor2/bv/2019/goel/mul7.btor2.mlir.opt", directory: "/home/jetafese")
+!4 = !DIFile(filename: "btor2/bv/2019/goel/mul7.btor2.mlir.opt", directory: "/home/jetafese/hwmc20-mlir")
 !5 = !DISubroutineType(types: !6)
 !6 = !{}
 !7 = !DILocation(line: 15, column: 5, scope: !8)
@@ -121,29 +127,35 @@ define void @main() !dbg !3 {
 !28 = !DILocation(line: 46, column: 11, scope: !8)
 !29 = !DILocation(line: 47, column: 11, scope: !8)
 !30 = !DILocation(line: 48, column: 11, scope: !8)
-!31 = !DILocation(line: 49, column: 11, scope: !8)
-!32 = !DILocation(line: 50, column: 11, scope: !8)
-!33 = !DILocation(line: 52, column: 11, scope: !8)
-!34 = !DILocation(line: 53, column: 11, scope: !8)
-!35 = !DILocation(line: 54, column: 11, scope: !8)
-!36 = !DILocation(line: 55, column: 11, scope: !8)
-!37 = !DILocation(line: 56, column: 11, scope: !8)
-!38 = !DILocation(line: 57, column: 11, scope: !8)
-!39 = !DILocation(line: 58, column: 11, scope: !8)
-!40 = !DILocation(line: 59, column: 11, scope: !8)
-!41 = !DILocation(line: 60, column: 11, scope: !8)
-!42 = !DILocation(line: 61, column: 11, scope: !8)
-!43 = !DILocation(line: 62, column: 11, scope: !8)
-!44 = !DILocation(line: 63, column: 11, scope: !8)
-!45 = !DILocation(line: 64, column: 11, scope: !8)
-!46 = !DILocation(line: 65, column: 11, scope: !8)
-!47 = !DILocation(line: 66, column: 11, scope: !8)
-!48 = !DILocation(line: 68, column: 11, scope: !8)
-!49 = !DILocation(line: 69, column: 11, scope: !8)
-!50 = !DILocation(line: 71, column: 11, scope: !8)
-!51 = !DILocation(line: 72, column: 11, scope: !8)
-!52 = !DILocation(line: 74, column: 11, scope: !8)
-!53 = !DILocation(line: 75, column: 5, scope: !8)
-!54 = !DILocation(line: 77, column: 5, scope: !8)
-!55 = !DILocation(line: 79, column: 5, scope: !8)
-!56 = !DILocation(line: 80, column: 5, scope: !8)
+!31 = !DILocation(line: 52, column: 11, scope: !8)
+!32 = !DILocation(line: 53, column: 5, scope: !8)
+!33 = !DILocation(line: 54, column: 11, scope: !8)
+!34 = !DILocation(line: 55, column: 11, scope: !8)
+!35 = !DILocation(line: 57, column: 11, scope: !8)
+!36 = !DILocation(line: 58, column: 11, scope: !8)
+!37 = !DILocation(line: 62, column: 11, scope: !8)
+!38 = !DILocation(line: 63, column: 5, scope: !8)
+!39 = !DILocation(line: 64, column: 11, scope: !8)
+!40 = !DILocation(line: 65, column: 11, scope: !8)
+!41 = !DILocation(line: 66, column: 11, scope: !8)
+!42 = !DILocation(line: 67, column: 11, scope: !8)
+!43 = !DILocation(line: 71, column: 11, scope: !8)
+!44 = !DILocation(line: 72, column: 5, scope: !8)
+!45 = !DILocation(line: 73, column: 11, scope: !8)
+!46 = !DILocation(line: 74, column: 11, scope: !8)
+!47 = !DILocation(line: 75, column: 11, scope: !8)
+!48 = !DILocation(line: 76, column: 11, scope: !8)
+!49 = !DILocation(line: 77, column: 11, scope: !8)
+!50 = !DILocation(line: 78, column: 11, scope: !8)
+!51 = !DILocation(line: 79, column: 11, scope: !8)
+!52 = !DILocation(line: 80, column: 11, scope: !8)
+!53 = !DILocation(line: 81, column: 11, scope: !8)
+!54 = !DILocation(line: 83, column: 11, scope: !8)
+!55 = !DILocation(line: 84, column: 11, scope: !8)
+!56 = !DILocation(line: 86, column: 11, scope: !8)
+!57 = !DILocation(line: 87, column: 11, scope: !8)
+!58 = !DILocation(line: 89, column: 11, scope: !8)
+!59 = !DILocation(line: 90, column: 5, scope: !8)
+!60 = !DILocation(line: 92, column: 5, scope: !8)
+!61 = !DILocation(line: 94, column: 5, scope: !8)
+!62 = !DILocation(line: 95, column: 5, scope: !8)

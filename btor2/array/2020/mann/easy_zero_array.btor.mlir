@@ -1,9 +1,9 @@
 module {
   func @main() {
-    %0 = btor.constant 0 : i10
-    %1 = btor.nd_state 0 : i10
-    %2 = btor.nd_array : vector<1024xi32>
-    br ^bb1(%1, %2, %0 : i10, vector<1024xi32>, i10)
+    %0 = btor.nd_state 0 : i10
+    %1 = btor.nd_array : vector<1024xi32>
+    %2 = btor.constant 0 : i10
+    br ^bb1(%0, %1, %2 : i10, vector<1024xi32>, i10)
   ^bb1(%3: i10, %4: vector<1024xi32>, %5: i10):  // 2 preds: ^bb0, ^bb1
     %6 = btor.constant 1 : i10
     %7 = btor.add %5, %6 : i10

@@ -127,231 +127,846 @@ module attributes {llvm.data_layout = ""} {
   llvm.func @nd_bv8_st10() -> i8
   llvm.func @main() {
     %0 = llvm.call @nd_bv8_st10() : () -> i8
-    %1 = llvm.call @nd_bv8_st29() : () -> i8
-    %2 = llvm.call @nd_bv8_st30() : () -> i8
-    %3 = llvm.call @nd_bv8_st31() : () -> i8
-    %4 = llvm.call @nd_bv8_st32() : () -> i8
-    %5 = llvm.call @nd_bv8_st33() : () -> i8
-    %6 = llvm.trunc %5 : i8 to i1
-    %7 = llvm.call @nd_bv8_st34() : () -> i8
-    %8 = llvm.trunc %7 : i8 to i1
-    %9 = llvm.call @nd_bv8_st35() : () -> i8
-    %10 = llvm.call @nd_bv8_st36() : () -> i8
-    %11 = llvm.call @nd_bv8_st37() : () -> i8
-    %12 = llvm.call @nd_bv8_st38() : () -> i8
-    %13 = llvm.call @nd_bv8_st39() : () -> i8
-    %14 = llvm.call @nd_bv8_st40() : () -> i8
-    %15 = llvm.call @nd_bv8_st41() : () -> i8
-    %16 = llvm.call @nd_bv8_st42() : () -> i8
-    %17 = llvm.call @nd_bv8_st43() : () -> i8
-    %18 = llvm.call @nd_bv8_st44() : () -> i8
-    llvm.br ^bb1(%6, %8 : i1, i1)
-  ^bb1(%19: i1, %20: i1):  // 2 preds: ^bb0, ^bb2
-    %21 = llvm.call @nd_bv32_in15() : () -> i32
-    %22 = llvm.call @nd_bv8_in4() : () -> i8
-    %23 = llvm.call @nd_bv32_in16() : () -> i32
-    %24 = llvm.call @nd_bv32_in17() : () -> i32
-    %25 = llvm.call @nd_bv8_in18() : () -> i8
-    %26 = llvm.call @nd_bv32_in19() : () -> i32
-    %27 = llvm.call @nd_bv32_in20() : () -> i32
-    %28 = llvm.call @nd_bv32_in21() : () -> i32
-    %29 = llvm.call @nd_bv8_in5() : () -> i8
-    %30 = llvm.call @nd_bv32_in12() : () -> i32
-    %31 = llvm.trunc %30 : i32 to i24
-    %32 = llvm.mlir.constant(0 : i24) : i24
-    %33 = llvm.lshr %31, %32  : i24
-    %34 = llvm.trunc %33 : i24 to i23
-    %35 = llvm.call @nd_bv32_in9() : () -> i32
-    %36 = llvm.trunc %35 : i32 to i24
-    %37 = llvm.mlir.constant(23 : i24) : i24
-    %38 = llvm.lshr %36, %37  : i24
-    %39 = llvm.trunc %38 : i24 to i1
-    %40 = llvm.mlir.constant(23 : i24) : i24
-    %41 = llvm.zext %39 : i1 to i24
-    %42 = llvm.shl %41, %40  : i24
-    %43 = llvm.zext %34 : i23 to i24
-    %44 = llvm.or %42, %43  : i24
-    %45 = llvm.mlir.constant(0 : i24) : i24
-    %46 = llvm.lshr %36, %45  : i24
-    %47 = llvm.trunc %46 : i24 to i23
-    %48 = llvm.mlir.constant(23 : i24) : i24
-    %49 = llvm.lshr %31, %48  : i24
-    %50 = llvm.trunc %49 : i24 to i1
-    %51 = llvm.mlir.constant(23 : i24) : i24
-    %52 = llvm.zext %50 : i1 to i24
-    %53 = llvm.shl %52, %51  : i24
-    %54 = llvm.zext %47 : i23 to i24
-    %55 = llvm.or %53, %54  : i24
-    %56 = llvm.icmp "ult" %55, %44 : i24
-    %57 = llvm.mlir.constant(true) : i1
-    %58 = llvm.xor %56, %57  : i1
-    %59 = llvm.mlir.constant(0 : i24) : i24
-    %60 = llvm.lshr %36, %59  : i24
-    %61 = llvm.trunc %60 : i24 to i23
-    %62 = llvm.call @nd_bv32_in6() : () -> i32
-    %63 = llvm.trunc %62 : i32 to i24
-    %64 = llvm.mlir.constant(23 : i24) : i24
-    %65 = llvm.lshr %63, %64  : i24
-    %66 = llvm.trunc %65 : i24 to i1
-    %67 = llvm.mlir.constant(23 : i24) : i24
-    %68 = llvm.zext %66 : i1 to i24
-    %69 = llvm.shl %68, %67  : i24
-    %70 = llvm.zext %61 : i23 to i24
-    %71 = llvm.or %69, %70  : i24
-    %72 = llvm.mlir.constant(0 : i24) : i24
-    %73 = llvm.lshr %63, %72  : i24
-    %74 = llvm.trunc %73 : i24 to i23
-    %75 = llvm.mlir.constant(23 : i24) : i24
-    %76 = llvm.lshr %36, %75  : i24
-    %77 = llvm.trunc %76 : i24 to i1
-    %78 = llvm.mlir.constant(23 : i24) : i24
-    %79 = llvm.zext %77 : i1 to i24
-    %80 = llvm.shl %79, %78  : i24
-    %81 = llvm.zext %74 : i23 to i24
-    %82 = llvm.or %80, %81  : i24
-    %83 = llvm.icmp "ult" %82, %71 : i24
-    %84 = llvm.and %83, %58  : i1
-    %85 = llvm.mlir.constant(0 : i24) : i24
-    %86 = llvm.lshr %31, %85  : i24
-    %87 = llvm.trunc %86 : i24 to i23
-    %88 = llvm.mlir.constant(23 : i24) : i24
-    %89 = llvm.lshr %63, %88  : i24
-    %90 = llvm.trunc %89 : i24 to i1
-    %91 = llvm.mlir.constant(23 : i24) : i24
-    %92 = llvm.zext %90 : i1 to i24
-    %93 = llvm.shl %92, %91  : i24
-    %94 = llvm.zext %87 : i23 to i24
-    %95 = llvm.or %93, %94  : i24
-    %96 = llvm.mlir.constant(0 : i24) : i24
-    %97 = llvm.lshr %63, %96  : i24
-    %98 = llvm.trunc %97 : i24 to i23
-    %99 = llvm.mlir.constant(23 : i24) : i24
-    %100 = llvm.lshr %31, %99  : i24
-    %101 = llvm.trunc %100 : i24 to i1
-    %102 = llvm.mlir.constant(23 : i24) : i24
-    %103 = llvm.zext %101 : i1 to i24
-    %104 = llvm.shl %103, %102  : i24
-    %105 = llvm.zext %98 : i23 to i24
-    %106 = llvm.or %104, %105  : i24
-    %107 = llvm.icmp "ult" %106, %95 : i24
-    %108 = llvm.mlir.constant(true) : i1
-    %109 = llvm.xor %107, %108  : i1
-    %110 = llvm.mlir.constant(true) : i1
-    %111 = llvm.xor %83, %110  : i1
-    %112 = llvm.and %111, %109  : i1
-    %113 = llvm.or %112, %84  : i1
-    %114 = llvm.and %107, %56  : i1
-    %115 = llvm.call @nd_bv32_in13() : () -> i32
-    %116 = llvm.call @nd_bv32_in10() : () -> i32
-    %117 = llvm.call @nd_bv32_in7() : () -> i32
-    %118 = llvm.and %113, %114  : i1
-    %119 = llvm.and %112, %84  : i1
-    %120 = llvm.or %119, %118  : i1
-    %121 = llvm.mlir.constant(true) : i1
-    %122 = llvm.xor %120, %121  : i1
-    %123 = llvm.or %113, %114  : i1
-    %124 = llvm.and %123, %122  : i1
-    %125 = llvm.mlir.constant(true) : i1
-    %126 = llvm.xor %124, %125  : i1
-    %127 = llvm.call @nd_bv32_in22() : () -> i32
-    %128 = llvm.call @nd_bv32_in23() : () -> i32
-    %129 = llvm.call @nd_bv32_in24() : () -> i32
-    %130 = llvm.call @nd_bv32_in25() : () -> i32
-    %131 = llvm.call @nd_bv32_in26() : () -> i32
-    %132 = llvm.call @nd_bv32_in27() : () -> i32
-    %133 = llvm.call @nd_bv32_in28() : () -> i32
-    %134 = llvm.call @nd_bv32_in29() : () -> i32
-    %135 = llvm.call @nd_bv32_in30() : () -> i32
-    %136 = llvm.call @nd_bv32_in31() : () -> i32
-    %137 = llvm.call @nd_bv32_in32() : () -> i32
-    %138 = llvm.call @nd_bv32_in33() : () -> i32
-    %139 = llvm.call @nd_bv32_in34() : () -> i32
-    %140 = llvm.call @nd_bv32_in35() : () -> i32
-    %141 = llvm.call @nd_bv32_in36() : () -> i32
-    %142 = llvm.call @nd_bv32_in37() : () -> i32
-    %143 = llvm.call @nd_bv32_in38() : () -> i32
-    %144 = llvm.call @nd_bv32_in39() : () -> i32
-    %145 = llvm.call @nd_bv32_in40() : () -> i32
-    %146 = llvm.call @nd_bv32_in41() : () -> i32
-    %147 = llvm.call @nd_bv32_in42() : () -> i32
-    %148 = llvm.call @nd_bv32_in43() : () -> i32
-    %149 = llvm.call @nd_bv32_in44() : () -> i32
-    %150 = llvm.call @nd_bv32_in45() : () -> i32
-    %151 = llvm.call @nd_bv32_in46() : () -> i32
-    %152 = llvm.call @nd_bv32_in47() : () -> i32
-    %153 = llvm.call @nd_bv32_in48() : () -> i32
-    %154 = llvm.call @nd_bv32_in49() : () -> i32
-    %155 = llvm.call @nd_bv32_in50() : () -> i32
-    %156 = llvm.call @nd_bv32_in51() : () -> i32
-    %157 = llvm.call @nd_bv32_in52() : () -> i32
-    %158 = llvm.call @nd_bv32_in53() : () -> i32
-    %159 = llvm.call @nd_bv32_in54() : () -> i32
-    %160 = llvm.call @nd_bv32_in55() : () -> i32
-    %161 = llvm.call @nd_bv32_in56() : () -> i32
-    %162 = llvm.call @nd_bv32_in57() : () -> i32
-    %163 = llvm.call @nd_bv32_in58() : () -> i32
-    %164 = llvm.call @nd_bv32_in59() : () -> i32
-    %165 = llvm.call @nd_bv32_in60() : () -> i32
-    %166 = llvm.call @nd_bv32_in61() : () -> i32
-    %167 = llvm.call @nd_bv32_in62() : () -> i32
-    %168 = llvm.call @nd_bv32_in63() : () -> i32
-    %169 = llvm.call @nd_bv32_in64() : () -> i32
-    %170 = llvm.call @nd_bv32_in65() : () -> i32
-    %171 = llvm.call @nd_bv64_in66() : () -> i64
-    %172 = llvm.call @nd_bv64_in67() : () -> i64
-    %173 = llvm.call @nd_bv64_in68() : () -> i64
-    %174 = llvm.call @nd_bv64_in69() : () -> i64
-    %175 = llvm.call @nd_bv64_in70() : () -> i64
-    %176 = llvm.call @nd_bv32_in8() : () -> i32
-    %177 = llvm.call @nd_bv64_in71() : () -> i64
-    %178 = llvm.call @nd_bv64_in72() : () -> i64
-    %179 = llvm.call @nd_bv64_in73() : () -> i64
-    %180 = llvm.call @nd_bv32_in11() : () -> i32
-    %181 = llvm.call @nd_bv64_in74() : () -> i64
-    %182 = llvm.call @nd_bv64_in75() : () -> i64
-    %183 = llvm.call @nd_bv64_in76() : () -> i64
-    %184 = llvm.call @nd_bv32_in14() : () -> i32
-    %185 = llvm.call @nd_bv64_in77() : () -> i64
-    %186 = llvm.call @nd_bv64_in78() : () -> i64
-    %187 = llvm.call @nd_bv32_in79() : () -> i32
-    %188 = llvm.call @nd_bv64_in80() : () -> i64
-    %189 = llvm.call @nd_bv32_in3() : () -> i32
-    %190 = llvm.call @nd_bv32_in81() : () -> i32
-    %191 = llvm.call @nd_bv64_in82() : () -> i64
-    %192 = llvm.call @nd_bv32_in2() : () -> i32
-    %193 = llvm.call @nd_bv32_in83() : () -> i32
-    %194 = llvm.call @nd_bv64_in84() : () -> i64
-    %195 = llvm.call @nd_bv32_in1() : () -> i32
-    %196 = llvm.call @nd_bv32_in85() : () -> i32
-    %197 = llvm.call @nd_bv32_in86() : () -> i32
-    %198 = llvm.call @nd_bv32_in87() : () -> i32
-    %199 = llvm.call @nd_bv32_in88() : () -> i32
-    %200 = llvm.call @nd_bv32_in89() : () -> i32
-    %201 = llvm.call @nd_bv32_in90() : () -> i32
-    %202 = llvm.call @nd_bv32_in91() : () -> i32
-    %203 = llvm.call @nd_bv32_in92() : () -> i32
-    %204 = llvm.call @nd_bv32_in93() : () -> i32
-    %205 = llvm.call @nd_bv32_in94() : () -> i32
-    %206 = llvm.call @nd_bv32_in95() : () -> i32
-    %207 = llvm.call @nd_bv32_in96() : () -> i32
-    %208 = llvm.call @nd_bv32_in97() : () -> i32
-    %209 = llvm.call @nd_bv32_in98() : () -> i32
-    %210 = llvm.call @nd_bv32_in99() : () -> i32
-    %211 = llvm.call @nd_bv32_in100() : () -> i32
-    %212 = llvm.call @nd_bv32_in101() : () -> i32
-    %213 = llvm.call @nd_bv32_in102() : () -> i32
-    %214 = llvm.call @nd_bv32_in103() : () -> i32
-    %215 = llvm.call @nd_bv32_in104() : () -> i32
-    %216 = llvm.call @nd_bv32_in105() : () -> i32
-    %217 = llvm.call @nd_bv8_in106() : () -> i8
-    %218 = llvm.mlir.constant(true) : i1
-    %219 = llvm.xor %19, %218  : i1
-    %220 = llvm.and %20, %219  : i1
-    %221 = llvm.mlir.constant(true) : i1
-    %222 = llvm.xor %220, %221  : i1
-    llvm.cond_br %222, ^bb2, ^bb3
+    %1 = llvm.mlir.constant(-2 : i2) : i2
+    %2 = llvm.zext %1 : i2 to i64
+    %3 = llvm.mlir.constant(10 : i64) : i64
+    %4 = llvm.zext %0 : i8 to i64
+    llvm.call @btor2mlir_print_state_num(%3, %4, %2) : (i64, i64, i64) -> ()
+    %5 = llvm.call @nd_bv8_st29() : () -> i8
+    %6 = llvm.mlir.constant(true) : i1
+    %7 = llvm.zext %6 : i1 to i64
+    %8 = llvm.mlir.constant(29 : i64) : i64
+    %9 = llvm.zext %5 : i8 to i64
+    llvm.call @btor2mlir_print_state_num(%8, %9, %7) : (i64, i64, i64) -> ()
+    %10 = llvm.call @nd_bv8_st30() : () -> i8
+    %11 = llvm.mlir.constant(true) : i1
+    %12 = llvm.zext %11 : i1 to i64
+    %13 = llvm.mlir.constant(30 : i64) : i64
+    %14 = llvm.zext %10 : i8 to i64
+    llvm.call @btor2mlir_print_state_num(%13, %14, %12) : (i64, i64, i64) -> ()
+    %15 = llvm.call @nd_bv8_st31() : () -> i8
+    %16 = llvm.mlir.constant(true) : i1
+    %17 = llvm.zext %16 : i1 to i64
+    %18 = llvm.mlir.constant(31 : i64) : i64
+    %19 = llvm.zext %15 : i8 to i64
+    llvm.call @btor2mlir_print_state_num(%18, %19, %17) : (i64, i64, i64) -> ()
+    %20 = llvm.call @nd_bv8_st32() : () -> i8
+    %21 = llvm.mlir.constant(true) : i1
+    %22 = llvm.zext %21 : i1 to i64
+    %23 = llvm.mlir.constant(32 : i64) : i64
+    %24 = llvm.zext %20 : i8 to i64
+    llvm.call @btor2mlir_print_state_num(%23, %24, %22) : (i64, i64, i64) -> ()
+    %25 = llvm.call @nd_bv8_st33() : () -> i8
+    %26 = llvm.mlir.constant(true) : i1
+    %27 = llvm.zext %26 : i1 to i64
+    %28 = llvm.mlir.constant(33 : i64) : i64
+    %29 = llvm.zext %25 : i8 to i64
+    llvm.call @btor2mlir_print_state_num(%28, %29, %27) : (i64, i64, i64) -> ()
+    %30 = llvm.trunc %25 : i8 to i1
+    %31 = llvm.call @nd_bv8_st34() : () -> i8
+    %32 = llvm.mlir.constant(true) : i1
+    %33 = llvm.zext %32 : i1 to i64
+    %34 = llvm.mlir.constant(34 : i64) : i64
+    %35 = llvm.zext %31 : i8 to i64
+    llvm.call @btor2mlir_print_state_num(%34, %35, %33) : (i64, i64, i64) -> ()
+    %36 = llvm.trunc %31 : i8 to i1
+    %37 = llvm.call @nd_bv8_st35() : () -> i8
+    %38 = llvm.mlir.constant(true) : i1
+    %39 = llvm.zext %38 : i1 to i64
+    %40 = llvm.mlir.constant(35 : i64) : i64
+    %41 = llvm.zext %37 : i8 to i64
+    llvm.call @btor2mlir_print_state_num(%40, %41, %39) : (i64, i64, i64) -> ()
+    %42 = llvm.call @nd_bv8_st36() : () -> i8
+    %43 = llvm.mlir.constant(true) : i1
+    %44 = llvm.zext %43 : i1 to i64
+    %45 = llvm.mlir.constant(36 : i64) : i64
+    %46 = llvm.zext %42 : i8 to i64
+    llvm.call @btor2mlir_print_state_num(%45, %46, %44) : (i64, i64, i64) -> ()
+    %47 = llvm.call @nd_bv8_st37() : () -> i8
+    %48 = llvm.mlir.constant(true) : i1
+    %49 = llvm.zext %48 : i1 to i64
+    %50 = llvm.mlir.constant(37 : i64) : i64
+    %51 = llvm.zext %47 : i8 to i64
+    llvm.call @btor2mlir_print_state_num(%50, %51, %49) : (i64, i64, i64) -> ()
+    %52 = llvm.call @nd_bv8_st38() : () -> i8
+    %53 = llvm.mlir.constant(true) : i1
+    %54 = llvm.zext %53 : i1 to i64
+    %55 = llvm.mlir.constant(38 : i64) : i64
+    %56 = llvm.zext %52 : i8 to i64
+    llvm.call @btor2mlir_print_state_num(%55, %56, %54) : (i64, i64, i64) -> ()
+    %57 = llvm.call @nd_bv8_st39() : () -> i8
+    %58 = llvm.mlir.constant(true) : i1
+    %59 = llvm.zext %58 : i1 to i64
+    %60 = llvm.mlir.constant(39 : i64) : i64
+    %61 = llvm.zext %57 : i8 to i64
+    llvm.call @btor2mlir_print_state_num(%60, %61, %59) : (i64, i64, i64) -> ()
+    %62 = llvm.call @nd_bv8_st40() : () -> i8
+    %63 = llvm.mlir.constant(true) : i1
+    %64 = llvm.zext %63 : i1 to i64
+    %65 = llvm.mlir.constant(40 : i64) : i64
+    %66 = llvm.zext %62 : i8 to i64
+    llvm.call @btor2mlir_print_state_num(%65, %66, %64) : (i64, i64, i64) -> ()
+    %67 = llvm.call @nd_bv8_st41() : () -> i8
+    %68 = llvm.mlir.constant(true) : i1
+    %69 = llvm.zext %68 : i1 to i64
+    %70 = llvm.mlir.constant(41 : i64) : i64
+    %71 = llvm.zext %67 : i8 to i64
+    llvm.call @btor2mlir_print_state_num(%70, %71, %69) : (i64, i64, i64) -> ()
+    %72 = llvm.call @nd_bv8_st42() : () -> i8
+    %73 = llvm.mlir.constant(true) : i1
+    %74 = llvm.zext %73 : i1 to i64
+    %75 = llvm.mlir.constant(42 : i64) : i64
+    %76 = llvm.zext %72 : i8 to i64
+    llvm.call @btor2mlir_print_state_num(%75, %76, %74) : (i64, i64, i64) -> ()
+    %77 = llvm.call @nd_bv8_st43() : () -> i8
+    %78 = llvm.mlir.constant(true) : i1
+    %79 = llvm.zext %78 : i1 to i64
+    %80 = llvm.mlir.constant(43 : i64) : i64
+    %81 = llvm.zext %77 : i8 to i64
+    llvm.call @btor2mlir_print_state_num(%80, %81, %79) : (i64, i64, i64) -> ()
+    %82 = llvm.call @nd_bv8_st44() : () -> i8
+    %83 = llvm.mlir.constant(true) : i1
+    %84 = llvm.zext %83 : i1 to i64
+    %85 = llvm.mlir.constant(44 : i64) : i64
+    %86 = llvm.zext %82 : i8 to i64
+    llvm.call @btor2mlir_print_state_num(%85, %86, %84) : (i64, i64, i64) -> ()
+    llvm.br ^bb1(%30, %36 : i1, i1)
+  ^bb1(%87: i1, %88: i1):  // 2 preds: ^bb0, ^bb2
+    %89 = llvm.call @nd_bv32_in15() : () -> i32
+    %90 = llvm.mlir.constant(24 : i24) : i24
+    %91 = llvm.zext %90 : i24 to i64
+    %92 = llvm.mlir.constant(15 : i64) : i64
+    %93 = llvm.zext %89 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%92, %93, %91) : (i64, i64, i64) -> ()
+    %94 = llvm.call @nd_bv8_in4() : () -> i8
+    %95 = llvm.mlir.constant(true) : i1
+    %96 = llvm.zext %95 : i1 to i64
+    %97 = llvm.mlir.constant(4 : i64) : i64
+    %98 = llvm.zext %94 : i8 to i64
+    llvm.call @btor2mlir_print_input_num(%97, %98, %96) : (i64, i64, i64) -> ()
+    %99 = llvm.call @nd_bv32_in16() : () -> i32
+    %100 = llvm.mlir.constant(24 : i24) : i24
+    %101 = llvm.zext %100 : i24 to i64
+    %102 = llvm.mlir.constant(16 : i64) : i64
+    %103 = llvm.zext %99 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%102, %103, %101) : (i64, i64, i64) -> ()
+    %104 = llvm.call @nd_bv32_in17() : () -> i32
+    %105 = llvm.mlir.constant(24 : i24) : i24
+    %106 = llvm.zext %105 : i24 to i64
+    %107 = llvm.mlir.constant(17 : i64) : i64
+    %108 = llvm.zext %104 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%107, %108, %106) : (i64, i64, i64) -> ()
+    %109 = llvm.call @nd_bv8_in18() : () -> i8
+    %110 = llvm.mlir.constant(-2 : i2) : i2
+    %111 = llvm.zext %110 : i2 to i64
+    %112 = llvm.mlir.constant(18 : i64) : i64
+    %113 = llvm.zext %109 : i8 to i64
+    llvm.call @btor2mlir_print_input_num(%112, %113, %111) : (i64, i64, i64) -> ()
+    %114 = llvm.call @nd_bv32_in19() : () -> i32
+    %115 = llvm.mlir.constant(24 : i24) : i24
+    %116 = llvm.zext %115 : i24 to i64
+    %117 = llvm.mlir.constant(19 : i64) : i64
+    %118 = llvm.zext %114 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%117, %118, %116) : (i64, i64, i64) -> ()
+    %119 = llvm.call @nd_bv32_in20() : () -> i32
+    %120 = llvm.mlir.constant(24 : i24) : i24
+    %121 = llvm.zext %120 : i24 to i64
+    %122 = llvm.mlir.constant(20 : i64) : i64
+    %123 = llvm.zext %119 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%122, %123, %121) : (i64, i64, i64) -> ()
+    %124 = llvm.call @nd_bv32_in21() : () -> i32
+    %125 = llvm.mlir.constant(24 : i24) : i24
+    %126 = llvm.zext %125 : i24 to i64
+    %127 = llvm.mlir.constant(21 : i64) : i64
+    %128 = llvm.zext %124 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%127, %128, %126) : (i64, i64, i64) -> ()
+    %129 = llvm.call @nd_bv8_in5() : () -> i8
+    %130 = llvm.mlir.constant(-2 : i2) : i2
+    %131 = llvm.zext %130 : i2 to i64
+    %132 = llvm.mlir.constant(5 : i64) : i64
+    %133 = llvm.zext %129 : i8 to i64
+    llvm.call @btor2mlir_print_input_num(%132, %133, %131) : (i64, i64, i64) -> ()
+    %134 = llvm.call @nd_bv32_in12() : () -> i32
+    %135 = llvm.mlir.constant(24 : i24) : i24
+    %136 = llvm.zext %135 : i24 to i64
+    %137 = llvm.mlir.constant(12 : i64) : i64
+    %138 = llvm.zext %134 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%137, %138, %136) : (i64, i64, i64) -> ()
+    %139 = llvm.trunc %134 : i32 to i24
+    %140 = llvm.mlir.constant(0 : i24) : i24
+    %141 = llvm.lshr %139, %140  : i24
+    %142 = llvm.trunc %141 : i24 to i23
+    %143 = llvm.call @nd_bv32_in9() : () -> i32
+    %144 = llvm.mlir.constant(24 : i24) : i24
+    %145 = llvm.zext %144 : i24 to i64
+    %146 = llvm.mlir.constant(9 : i64) : i64
+    %147 = llvm.zext %143 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%146, %147, %145) : (i64, i64, i64) -> ()
+    %148 = llvm.trunc %143 : i32 to i24
+    %149 = llvm.mlir.constant(23 : i24) : i24
+    %150 = llvm.lshr %148, %149  : i24
+    %151 = llvm.trunc %150 : i24 to i1
+    %152 = llvm.mlir.constant(23 : i24) : i24
+    %153 = llvm.zext %151 : i1 to i24
+    %154 = llvm.shl %153, %152  : i24
+    %155 = llvm.zext %142 : i23 to i24
+    %156 = llvm.or %154, %155  : i24
+    %157 = llvm.mlir.constant(0 : i24) : i24
+    %158 = llvm.lshr %148, %157  : i24
+    %159 = llvm.trunc %158 : i24 to i23
+    %160 = llvm.mlir.constant(23 : i24) : i24
+    %161 = llvm.lshr %139, %160  : i24
+    %162 = llvm.trunc %161 : i24 to i1
+    %163 = llvm.mlir.constant(23 : i24) : i24
+    %164 = llvm.zext %162 : i1 to i24
+    %165 = llvm.shl %164, %163  : i24
+    %166 = llvm.zext %159 : i23 to i24
+    %167 = llvm.or %165, %166  : i24
+    %168 = llvm.icmp "ult" %167, %156 : i24
+    %169 = llvm.mlir.constant(true) : i1
+    %170 = llvm.xor %168, %169  : i1
+    %171 = llvm.mlir.constant(0 : i24) : i24
+    %172 = llvm.lshr %148, %171  : i24
+    %173 = llvm.trunc %172 : i24 to i23
+    %174 = llvm.call @nd_bv32_in6() : () -> i32
+    %175 = llvm.mlir.constant(24 : i24) : i24
+    %176 = llvm.zext %175 : i24 to i64
+    %177 = llvm.mlir.constant(6 : i64) : i64
+    %178 = llvm.zext %174 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%177, %178, %176) : (i64, i64, i64) -> ()
+    %179 = llvm.trunc %174 : i32 to i24
+    %180 = llvm.mlir.constant(23 : i24) : i24
+    %181 = llvm.lshr %179, %180  : i24
+    %182 = llvm.trunc %181 : i24 to i1
+    %183 = llvm.mlir.constant(23 : i24) : i24
+    %184 = llvm.zext %182 : i1 to i24
+    %185 = llvm.shl %184, %183  : i24
+    %186 = llvm.zext %173 : i23 to i24
+    %187 = llvm.or %185, %186  : i24
+    %188 = llvm.mlir.constant(0 : i24) : i24
+    %189 = llvm.lshr %179, %188  : i24
+    %190 = llvm.trunc %189 : i24 to i23
+    %191 = llvm.mlir.constant(23 : i24) : i24
+    %192 = llvm.lshr %148, %191  : i24
+    %193 = llvm.trunc %192 : i24 to i1
+    %194 = llvm.mlir.constant(23 : i24) : i24
+    %195 = llvm.zext %193 : i1 to i24
+    %196 = llvm.shl %195, %194  : i24
+    %197 = llvm.zext %190 : i23 to i24
+    %198 = llvm.or %196, %197  : i24
+    %199 = llvm.icmp "ult" %198, %187 : i24
+    %200 = llvm.and %199, %170  : i1
+    %201 = llvm.mlir.constant(0 : i24) : i24
+    %202 = llvm.lshr %139, %201  : i24
+    %203 = llvm.trunc %202 : i24 to i23
+    %204 = llvm.mlir.constant(23 : i24) : i24
+    %205 = llvm.lshr %179, %204  : i24
+    %206 = llvm.trunc %205 : i24 to i1
+    %207 = llvm.mlir.constant(23 : i24) : i24
+    %208 = llvm.zext %206 : i1 to i24
+    %209 = llvm.shl %208, %207  : i24
+    %210 = llvm.zext %203 : i23 to i24
+    %211 = llvm.or %209, %210  : i24
+    %212 = llvm.mlir.constant(0 : i24) : i24
+    %213 = llvm.lshr %179, %212  : i24
+    %214 = llvm.trunc %213 : i24 to i23
+    %215 = llvm.mlir.constant(23 : i24) : i24
+    %216 = llvm.lshr %139, %215  : i24
+    %217 = llvm.trunc %216 : i24 to i1
+    %218 = llvm.mlir.constant(23 : i24) : i24
+    %219 = llvm.zext %217 : i1 to i24
+    %220 = llvm.shl %219, %218  : i24
+    %221 = llvm.zext %214 : i23 to i24
+    %222 = llvm.or %220, %221  : i24
+    %223 = llvm.icmp "ult" %222, %211 : i24
+    %224 = llvm.mlir.constant(true) : i1
+    %225 = llvm.xor %223, %224  : i1
+    %226 = llvm.mlir.constant(true) : i1
+    %227 = llvm.xor %199, %226  : i1
+    %228 = llvm.and %227, %225  : i1
+    %229 = llvm.or %228, %200  : i1
+    %230 = llvm.and %223, %168  : i1
+    %231 = llvm.call @nd_bv32_in13() : () -> i32
+    %232 = llvm.mlir.constant(24 : i24) : i24
+    %233 = llvm.zext %232 : i24 to i64
+    %234 = llvm.mlir.constant(13 : i64) : i64
+    %235 = llvm.zext %231 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%234, %235, %233) : (i64, i64, i64) -> ()
+    %236 = llvm.call @nd_bv32_in10() : () -> i32
+    %237 = llvm.mlir.constant(24 : i24) : i24
+    %238 = llvm.zext %237 : i24 to i64
+    %239 = llvm.mlir.constant(10 : i64) : i64
+    %240 = llvm.zext %236 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%239, %240, %238) : (i64, i64, i64) -> ()
+    %241 = llvm.call @nd_bv32_in7() : () -> i32
+    %242 = llvm.mlir.constant(24 : i24) : i24
+    %243 = llvm.zext %242 : i24 to i64
+    %244 = llvm.mlir.constant(7 : i64) : i64
+    %245 = llvm.zext %241 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%244, %245, %243) : (i64, i64, i64) -> ()
+    %246 = llvm.and %229, %230  : i1
+    %247 = llvm.and %228, %200  : i1
+    %248 = llvm.or %247, %246  : i1
+    %249 = llvm.mlir.constant(true) : i1
+    %250 = llvm.xor %248, %249  : i1
+    %251 = llvm.or %229, %230  : i1
+    %252 = llvm.and %251, %250  : i1
+    %253 = llvm.mlir.constant(true) : i1
+    %254 = llvm.xor %252, %253  : i1
+    %255 = llvm.call @nd_bv32_in22() : () -> i32
+    %256 = llvm.mlir.constant(24 : i24) : i24
+    %257 = llvm.zext %256 : i24 to i64
+    %258 = llvm.mlir.constant(22 : i64) : i64
+    %259 = llvm.zext %255 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%258, %259, %257) : (i64, i64, i64) -> ()
+    %260 = llvm.call @nd_bv32_in23() : () -> i32
+    %261 = llvm.mlir.constant(24 : i24) : i24
+    %262 = llvm.zext %261 : i24 to i64
+    %263 = llvm.mlir.constant(23 : i64) : i64
+    %264 = llvm.zext %260 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%263, %264, %262) : (i64, i64, i64) -> ()
+    %265 = llvm.call @nd_bv32_in24() : () -> i32
+    %266 = llvm.mlir.constant(24 : i24) : i24
+    %267 = llvm.zext %266 : i24 to i64
+    %268 = llvm.mlir.constant(24 : i64) : i64
+    %269 = llvm.zext %265 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%268, %269, %267) : (i64, i64, i64) -> ()
+    %270 = llvm.call @nd_bv32_in25() : () -> i32
+    %271 = llvm.mlir.constant(24 : i24) : i24
+    %272 = llvm.zext %271 : i24 to i64
+    %273 = llvm.mlir.constant(25 : i64) : i64
+    %274 = llvm.zext %270 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%273, %274, %272) : (i64, i64, i64) -> ()
+    %275 = llvm.call @nd_bv32_in26() : () -> i32
+    %276 = llvm.mlir.constant(24 : i24) : i24
+    %277 = llvm.zext %276 : i24 to i64
+    %278 = llvm.mlir.constant(26 : i64) : i64
+    %279 = llvm.zext %275 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%278, %279, %277) : (i64, i64, i64) -> ()
+    %280 = llvm.call @nd_bv32_in27() : () -> i32
+    %281 = llvm.mlir.constant(24 : i24) : i24
+    %282 = llvm.zext %281 : i24 to i64
+    %283 = llvm.mlir.constant(27 : i64) : i64
+    %284 = llvm.zext %280 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%283, %284, %282) : (i64, i64, i64) -> ()
+    %285 = llvm.call @nd_bv32_in28() : () -> i32
+    %286 = llvm.mlir.constant(24 : i24) : i24
+    %287 = llvm.zext %286 : i24 to i64
+    %288 = llvm.mlir.constant(28 : i64) : i64
+    %289 = llvm.zext %285 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%288, %289, %287) : (i64, i64, i64) -> ()
+    %290 = llvm.call @nd_bv32_in29() : () -> i32
+    %291 = llvm.mlir.constant(24 : i24) : i24
+    %292 = llvm.zext %291 : i24 to i64
+    %293 = llvm.mlir.constant(29 : i64) : i64
+    %294 = llvm.zext %290 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%293, %294, %292) : (i64, i64, i64) -> ()
+    %295 = llvm.call @nd_bv32_in30() : () -> i32
+    %296 = llvm.mlir.constant(24 : i24) : i24
+    %297 = llvm.zext %296 : i24 to i64
+    %298 = llvm.mlir.constant(30 : i64) : i64
+    %299 = llvm.zext %295 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%298, %299, %297) : (i64, i64, i64) -> ()
+    %300 = llvm.call @nd_bv32_in31() : () -> i32
+    %301 = llvm.mlir.constant(24 : i24) : i24
+    %302 = llvm.zext %301 : i24 to i64
+    %303 = llvm.mlir.constant(31 : i64) : i64
+    %304 = llvm.zext %300 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%303, %304, %302) : (i64, i64, i64) -> ()
+    %305 = llvm.call @nd_bv32_in32() : () -> i32
+    %306 = llvm.mlir.constant(24 : i24) : i24
+    %307 = llvm.zext %306 : i24 to i64
+    %308 = llvm.mlir.constant(32 : i64) : i64
+    %309 = llvm.zext %305 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%308, %309, %307) : (i64, i64, i64) -> ()
+    %310 = llvm.call @nd_bv32_in33() : () -> i32
+    %311 = llvm.mlir.constant(24 : i24) : i24
+    %312 = llvm.zext %311 : i24 to i64
+    %313 = llvm.mlir.constant(33 : i64) : i64
+    %314 = llvm.zext %310 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%313, %314, %312) : (i64, i64, i64) -> ()
+    %315 = llvm.call @nd_bv32_in34() : () -> i32
+    %316 = llvm.mlir.constant(24 : i24) : i24
+    %317 = llvm.zext %316 : i24 to i64
+    %318 = llvm.mlir.constant(34 : i64) : i64
+    %319 = llvm.zext %315 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%318, %319, %317) : (i64, i64, i64) -> ()
+    %320 = llvm.call @nd_bv32_in35() : () -> i32
+    %321 = llvm.mlir.constant(24 : i24) : i24
+    %322 = llvm.zext %321 : i24 to i64
+    %323 = llvm.mlir.constant(35 : i64) : i64
+    %324 = llvm.zext %320 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%323, %324, %322) : (i64, i64, i64) -> ()
+    %325 = llvm.call @nd_bv32_in36() : () -> i32
+    %326 = llvm.mlir.constant(24 : i24) : i24
+    %327 = llvm.zext %326 : i24 to i64
+    %328 = llvm.mlir.constant(36 : i64) : i64
+    %329 = llvm.zext %325 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%328, %329, %327) : (i64, i64, i64) -> ()
+    %330 = llvm.call @nd_bv32_in37() : () -> i32
+    %331 = llvm.mlir.constant(24 : i24) : i24
+    %332 = llvm.zext %331 : i24 to i64
+    %333 = llvm.mlir.constant(37 : i64) : i64
+    %334 = llvm.zext %330 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%333, %334, %332) : (i64, i64, i64) -> ()
+    %335 = llvm.call @nd_bv32_in38() : () -> i32
+    %336 = llvm.mlir.constant(24 : i24) : i24
+    %337 = llvm.zext %336 : i24 to i64
+    %338 = llvm.mlir.constant(38 : i64) : i64
+    %339 = llvm.zext %335 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%338, %339, %337) : (i64, i64, i64) -> ()
+    %340 = llvm.call @nd_bv32_in39() : () -> i32
+    %341 = llvm.mlir.constant(24 : i24) : i24
+    %342 = llvm.zext %341 : i24 to i64
+    %343 = llvm.mlir.constant(39 : i64) : i64
+    %344 = llvm.zext %340 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%343, %344, %342) : (i64, i64, i64) -> ()
+    %345 = llvm.call @nd_bv32_in40() : () -> i32
+    %346 = llvm.mlir.constant(24 : i24) : i24
+    %347 = llvm.zext %346 : i24 to i64
+    %348 = llvm.mlir.constant(40 : i64) : i64
+    %349 = llvm.zext %345 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%348, %349, %347) : (i64, i64, i64) -> ()
+    %350 = llvm.call @nd_bv32_in41() : () -> i32
+    %351 = llvm.mlir.constant(24 : i24) : i24
+    %352 = llvm.zext %351 : i24 to i64
+    %353 = llvm.mlir.constant(41 : i64) : i64
+    %354 = llvm.zext %350 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%353, %354, %352) : (i64, i64, i64) -> ()
+    %355 = llvm.call @nd_bv32_in42() : () -> i32
+    %356 = llvm.mlir.constant(24 : i24) : i24
+    %357 = llvm.zext %356 : i24 to i64
+    %358 = llvm.mlir.constant(42 : i64) : i64
+    %359 = llvm.zext %355 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%358, %359, %357) : (i64, i64, i64) -> ()
+    %360 = llvm.call @nd_bv32_in43() : () -> i32
+    %361 = llvm.mlir.constant(24 : i24) : i24
+    %362 = llvm.zext %361 : i24 to i64
+    %363 = llvm.mlir.constant(43 : i64) : i64
+    %364 = llvm.zext %360 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%363, %364, %362) : (i64, i64, i64) -> ()
+    %365 = llvm.call @nd_bv32_in44() : () -> i32
+    %366 = llvm.mlir.constant(24 : i24) : i24
+    %367 = llvm.zext %366 : i24 to i64
+    %368 = llvm.mlir.constant(44 : i64) : i64
+    %369 = llvm.zext %365 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%368, %369, %367) : (i64, i64, i64) -> ()
+    %370 = llvm.call @nd_bv32_in45() : () -> i32
+    %371 = llvm.mlir.constant(24 : i24) : i24
+    %372 = llvm.zext %371 : i24 to i64
+    %373 = llvm.mlir.constant(45 : i64) : i64
+    %374 = llvm.zext %370 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%373, %374, %372) : (i64, i64, i64) -> ()
+    %375 = llvm.call @nd_bv32_in46() : () -> i32
+    %376 = llvm.mlir.constant(24 : i24) : i24
+    %377 = llvm.zext %376 : i24 to i64
+    %378 = llvm.mlir.constant(46 : i64) : i64
+    %379 = llvm.zext %375 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%378, %379, %377) : (i64, i64, i64) -> ()
+    %380 = llvm.call @nd_bv32_in47() : () -> i32
+    %381 = llvm.mlir.constant(24 : i24) : i24
+    %382 = llvm.zext %381 : i24 to i64
+    %383 = llvm.mlir.constant(47 : i64) : i64
+    %384 = llvm.zext %380 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%383, %384, %382) : (i64, i64, i64) -> ()
+    %385 = llvm.call @nd_bv32_in48() : () -> i32
+    %386 = llvm.mlir.constant(24 : i24) : i24
+    %387 = llvm.zext %386 : i24 to i64
+    %388 = llvm.mlir.constant(48 : i64) : i64
+    %389 = llvm.zext %385 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%388, %389, %387) : (i64, i64, i64) -> ()
+    %390 = llvm.call @nd_bv32_in49() : () -> i32
+    %391 = llvm.mlir.constant(24 : i24) : i24
+    %392 = llvm.zext %391 : i24 to i64
+    %393 = llvm.mlir.constant(49 : i64) : i64
+    %394 = llvm.zext %390 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%393, %394, %392) : (i64, i64, i64) -> ()
+    %395 = llvm.call @nd_bv32_in50() : () -> i32
+    %396 = llvm.mlir.constant(24 : i24) : i24
+    %397 = llvm.zext %396 : i24 to i64
+    %398 = llvm.mlir.constant(50 : i64) : i64
+    %399 = llvm.zext %395 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%398, %399, %397) : (i64, i64, i64) -> ()
+    %400 = llvm.call @nd_bv32_in51() : () -> i32
+    %401 = llvm.mlir.constant(24 : i24) : i24
+    %402 = llvm.zext %401 : i24 to i64
+    %403 = llvm.mlir.constant(51 : i64) : i64
+    %404 = llvm.zext %400 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%403, %404, %402) : (i64, i64, i64) -> ()
+    %405 = llvm.call @nd_bv32_in52() : () -> i32
+    %406 = llvm.mlir.constant(24 : i24) : i24
+    %407 = llvm.zext %406 : i24 to i64
+    %408 = llvm.mlir.constant(52 : i64) : i64
+    %409 = llvm.zext %405 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%408, %409, %407) : (i64, i64, i64) -> ()
+    %410 = llvm.call @nd_bv32_in53() : () -> i32
+    %411 = llvm.mlir.constant(24 : i24) : i24
+    %412 = llvm.zext %411 : i24 to i64
+    %413 = llvm.mlir.constant(53 : i64) : i64
+    %414 = llvm.zext %410 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%413, %414, %412) : (i64, i64, i64) -> ()
+    %415 = llvm.call @nd_bv32_in54() : () -> i32
+    %416 = llvm.mlir.constant(24 : i24) : i24
+    %417 = llvm.zext %416 : i24 to i64
+    %418 = llvm.mlir.constant(54 : i64) : i64
+    %419 = llvm.zext %415 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%418, %419, %417) : (i64, i64, i64) -> ()
+    %420 = llvm.call @nd_bv32_in55() : () -> i32
+    %421 = llvm.mlir.constant(24 : i24) : i24
+    %422 = llvm.zext %421 : i24 to i64
+    %423 = llvm.mlir.constant(55 : i64) : i64
+    %424 = llvm.zext %420 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%423, %424, %422) : (i64, i64, i64) -> ()
+    %425 = llvm.call @nd_bv32_in56() : () -> i32
+    %426 = llvm.mlir.constant(24 : i24) : i24
+    %427 = llvm.zext %426 : i24 to i64
+    %428 = llvm.mlir.constant(56 : i64) : i64
+    %429 = llvm.zext %425 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%428, %429, %427) : (i64, i64, i64) -> ()
+    %430 = llvm.call @nd_bv32_in57() : () -> i32
+    %431 = llvm.mlir.constant(24 : i24) : i24
+    %432 = llvm.zext %431 : i24 to i64
+    %433 = llvm.mlir.constant(57 : i64) : i64
+    %434 = llvm.zext %430 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%433, %434, %432) : (i64, i64, i64) -> ()
+    %435 = llvm.call @nd_bv32_in58() : () -> i32
+    %436 = llvm.mlir.constant(24 : i24) : i24
+    %437 = llvm.zext %436 : i24 to i64
+    %438 = llvm.mlir.constant(58 : i64) : i64
+    %439 = llvm.zext %435 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%438, %439, %437) : (i64, i64, i64) -> ()
+    %440 = llvm.call @nd_bv32_in59() : () -> i32
+    %441 = llvm.mlir.constant(24 : i24) : i24
+    %442 = llvm.zext %441 : i24 to i64
+    %443 = llvm.mlir.constant(59 : i64) : i64
+    %444 = llvm.zext %440 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%443, %444, %442) : (i64, i64, i64) -> ()
+    %445 = llvm.call @nd_bv32_in60() : () -> i32
+    %446 = llvm.mlir.constant(24 : i24) : i24
+    %447 = llvm.zext %446 : i24 to i64
+    %448 = llvm.mlir.constant(60 : i64) : i64
+    %449 = llvm.zext %445 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%448, %449, %447) : (i64, i64, i64) -> ()
+    %450 = llvm.call @nd_bv32_in61() : () -> i32
+    %451 = llvm.mlir.constant(24 : i24) : i24
+    %452 = llvm.zext %451 : i24 to i64
+    %453 = llvm.mlir.constant(61 : i64) : i64
+    %454 = llvm.zext %450 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%453, %454, %452) : (i64, i64, i64) -> ()
+    %455 = llvm.call @nd_bv32_in62() : () -> i32
+    %456 = llvm.mlir.constant(24 : i24) : i24
+    %457 = llvm.zext %456 : i24 to i64
+    %458 = llvm.mlir.constant(62 : i64) : i64
+    %459 = llvm.zext %455 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%458, %459, %457) : (i64, i64, i64) -> ()
+    %460 = llvm.call @nd_bv32_in63() : () -> i32
+    %461 = llvm.mlir.constant(24 : i24) : i24
+    %462 = llvm.zext %461 : i24 to i64
+    %463 = llvm.mlir.constant(63 : i64) : i64
+    %464 = llvm.zext %460 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%463, %464, %462) : (i64, i64, i64) -> ()
+    %465 = llvm.call @nd_bv32_in64() : () -> i32
+    %466 = llvm.mlir.constant(24 : i24) : i24
+    %467 = llvm.zext %466 : i24 to i64
+    %468 = llvm.mlir.constant(64 : i64) : i64
+    %469 = llvm.zext %465 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%468, %469, %467) : (i64, i64, i64) -> ()
+    %470 = llvm.call @nd_bv32_in65() : () -> i32
+    %471 = llvm.mlir.constant(24 : i24) : i24
+    %472 = llvm.zext %471 : i24 to i64
+    %473 = llvm.mlir.constant(65 : i64) : i64
+    %474 = llvm.zext %470 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%473, %474, %472) : (i64, i64, i64) -> ()
+    %475 = llvm.call @nd_bv64_in66() : () -> i64
+    %476 = llvm.mlir.constant(48 : i48) : i48
+    %477 = llvm.zext %476 : i48 to i64
+    %478 = llvm.mlir.constant(66 : i64) : i64
+    %479 = llvm.zext %475 : i64 to i64
+    llvm.call @btor2mlir_print_input_num(%478, %479, %477) : (i64, i64, i64) -> ()
+    %480 = llvm.call @nd_bv64_in67() : () -> i64
+    %481 = llvm.mlir.constant(48 : i48) : i48
+    %482 = llvm.zext %481 : i48 to i64
+    %483 = llvm.mlir.constant(67 : i64) : i64
+    %484 = llvm.zext %480 : i64 to i64
+    llvm.call @btor2mlir_print_input_num(%483, %484, %482) : (i64, i64, i64) -> ()
+    %485 = llvm.call @nd_bv64_in68() : () -> i64
+    %486 = llvm.mlir.constant(48 : i48) : i48
+    %487 = llvm.zext %486 : i48 to i64
+    %488 = llvm.mlir.constant(68 : i64) : i64
+    %489 = llvm.zext %485 : i64 to i64
+    llvm.call @btor2mlir_print_input_num(%488, %489, %487) : (i64, i64, i64) -> ()
+    %490 = llvm.call @nd_bv64_in69() : () -> i64
+    %491 = llvm.mlir.constant(48 : i48) : i48
+    %492 = llvm.zext %491 : i48 to i64
+    %493 = llvm.mlir.constant(69 : i64) : i64
+    %494 = llvm.zext %490 : i64 to i64
+    llvm.call @btor2mlir_print_input_num(%493, %494, %492) : (i64, i64, i64) -> ()
+    %495 = llvm.call @nd_bv64_in70() : () -> i64
+    %496 = llvm.mlir.constant(48 : i48) : i48
+    %497 = llvm.zext %496 : i48 to i64
+    %498 = llvm.mlir.constant(70 : i64) : i64
+    %499 = llvm.zext %495 : i64 to i64
+    llvm.call @btor2mlir_print_input_num(%498, %499, %497) : (i64, i64, i64) -> ()
+    %500 = llvm.call @nd_bv32_in8() : () -> i32
+    %501 = llvm.mlir.constant(24 : i24) : i24
+    %502 = llvm.zext %501 : i24 to i64
+    %503 = llvm.mlir.constant(8 : i64) : i64
+    %504 = llvm.zext %500 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%503, %504, %502) : (i64, i64, i64) -> ()
+    %505 = llvm.call @nd_bv64_in71() : () -> i64
+    %506 = llvm.mlir.constant(48 : i48) : i48
+    %507 = llvm.zext %506 : i48 to i64
+    %508 = llvm.mlir.constant(71 : i64) : i64
+    %509 = llvm.zext %505 : i64 to i64
+    llvm.call @btor2mlir_print_input_num(%508, %509, %507) : (i64, i64, i64) -> ()
+    %510 = llvm.call @nd_bv64_in72() : () -> i64
+    %511 = llvm.mlir.constant(48 : i48) : i48
+    %512 = llvm.zext %511 : i48 to i64
+    %513 = llvm.mlir.constant(72 : i64) : i64
+    %514 = llvm.zext %510 : i64 to i64
+    llvm.call @btor2mlir_print_input_num(%513, %514, %512) : (i64, i64, i64) -> ()
+    %515 = llvm.call @nd_bv64_in73() : () -> i64
+    %516 = llvm.mlir.constant(48 : i48) : i48
+    %517 = llvm.zext %516 : i48 to i64
+    %518 = llvm.mlir.constant(73 : i64) : i64
+    %519 = llvm.zext %515 : i64 to i64
+    llvm.call @btor2mlir_print_input_num(%518, %519, %517) : (i64, i64, i64) -> ()
+    %520 = llvm.call @nd_bv32_in11() : () -> i32
+    %521 = llvm.mlir.constant(24 : i24) : i24
+    %522 = llvm.zext %521 : i24 to i64
+    %523 = llvm.mlir.constant(11 : i64) : i64
+    %524 = llvm.zext %520 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%523, %524, %522) : (i64, i64, i64) -> ()
+    %525 = llvm.call @nd_bv64_in74() : () -> i64
+    %526 = llvm.mlir.constant(48 : i48) : i48
+    %527 = llvm.zext %526 : i48 to i64
+    %528 = llvm.mlir.constant(74 : i64) : i64
+    %529 = llvm.zext %525 : i64 to i64
+    llvm.call @btor2mlir_print_input_num(%528, %529, %527) : (i64, i64, i64) -> ()
+    %530 = llvm.call @nd_bv64_in75() : () -> i64
+    %531 = llvm.mlir.constant(48 : i48) : i48
+    %532 = llvm.zext %531 : i48 to i64
+    %533 = llvm.mlir.constant(75 : i64) : i64
+    %534 = llvm.zext %530 : i64 to i64
+    llvm.call @btor2mlir_print_input_num(%533, %534, %532) : (i64, i64, i64) -> ()
+    %535 = llvm.call @nd_bv64_in76() : () -> i64
+    %536 = llvm.mlir.constant(48 : i48) : i48
+    %537 = llvm.zext %536 : i48 to i64
+    %538 = llvm.mlir.constant(76 : i64) : i64
+    %539 = llvm.zext %535 : i64 to i64
+    llvm.call @btor2mlir_print_input_num(%538, %539, %537) : (i64, i64, i64) -> ()
+    %540 = llvm.call @nd_bv32_in14() : () -> i32
+    %541 = llvm.mlir.constant(24 : i24) : i24
+    %542 = llvm.zext %541 : i24 to i64
+    %543 = llvm.mlir.constant(14 : i64) : i64
+    %544 = llvm.zext %540 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%543, %544, %542) : (i64, i64, i64) -> ()
+    %545 = llvm.call @nd_bv64_in77() : () -> i64
+    %546 = llvm.mlir.constant(48 : i48) : i48
+    %547 = llvm.zext %546 : i48 to i64
+    %548 = llvm.mlir.constant(77 : i64) : i64
+    %549 = llvm.zext %545 : i64 to i64
+    llvm.call @btor2mlir_print_input_num(%548, %549, %547) : (i64, i64, i64) -> ()
+    %550 = llvm.call @nd_bv64_in78() : () -> i64
+    %551 = llvm.mlir.constant(48 : i48) : i48
+    %552 = llvm.zext %551 : i48 to i64
+    %553 = llvm.mlir.constant(78 : i64) : i64
+    %554 = llvm.zext %550 : i64 to i64
+    llvm.call @btor2mlir_print_input_num(%553, %554, %552) : (i64, i64, i64) -> ()
+    %555 = llvm.call @nd_bv32_in79() : () -> i32
+    %556 = llvm.mlir.constant(24 : i24) : i24
+    %557 = llvm.zext %556 : i24 to i64
+    %558 = llvm.mlir.constant(79 : i64) : i64
+    %559 = llvm.zext %555 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%558, %559, %557) : (i64, i64, i64) -> ()
+    %560 = llvm.call @nd_bv64_in80() : () -> i64
+    %561 = llvm.mlir.constant(48 : i48) : i48
+    %562 = llvm.zext %561 : i48 to i64
+    %563 = llvm.mlir.constant(80 : i64) : i64
+    %564 = llvm.zext %560 : i64 to i64
+    llvm.call @btor2mlir_print_input_num(%563, %564, %562) : (i64, i64, i64) -> ()
+    %565 = llvm.call @nd_bv32_in3() : () -> i32
+    %566 = llvm.mlir.constant(24 : i24) : i24
+    %567 = llvm.zext %566 : i24 to i64
+    %568 = llvm.mlir.constant(3 : i64) : i64
+    %569 = llvm.zext %565 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%568, %569, %567) : (i64, i64, i64) -> ()
+    %570 = llvm.call @nd_bv32_in81() : () -> i32
+    %571 = llvm.mlir.constant(24 : i24) : i24
+    %572 = llvm.zext %571 : i24 to i64
+    %573 = llvm.mlir.constant(81 : i64) : i64
+    %574 = llvm.zext %570 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%573, %574, %572) : (i64, i64, i64) -> ()
+    %575 = llvm.call @nd_bv64_in82() : () -> i64
+    %576 = llvm.mlir.constant(48 : i48) : i48
+    %577 = llvm.zext %576 : i48 to i64
+    %578 = llvm.mlir.constant(82 : i64) : i64
+    %579 = llvm.zext %575 : i64 to i64
+    llvm.call @btor2mlir_print_input_num(%578, %579, %577) : (i64, i64, i64) -> ()
+    %580 = llvm.call @nd_bv32_in2() : () -> i32
+    %581 = llvm.mlir.constant(24 : i24) : i24
+    %582 = llvm.zext %581 : i24 to i64
+    %583 = llvm.mlir.constant(2 : i64) : i64
+    %584 = llvm.zext %580 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%583, %584, %582) : (i64, i64, i64) -> ()
+    %585 = llvm.call @nd_bv32_in83() : () -> i32
+    %586 = llvm.mlir.constant(24 : i24) : i24
+    %587 = llvm.zext %586 : i24 to i64
+    %588 = llvm.mlir.constant(83 : i64) : i64
+    %589 = llvm.zext %585 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%588, %589, %587) : (i64, i64, i64) -> ()
+    %590 = llvm.call @nd_bv64_in84() : () -> i64
+    %591 = llvm.mlir.constant(48 : i48) : i48
+    %592 = llvm.zext %591 : i48 to i64
+    %593 = llvm.mlir.constant(84 : i64) : i64
+    %594 = llvm.zext %590 : i64 to i64
+    llvm.call @btor2mlir_print_input_num(%593, %594, %592) : (i64, i64, i64) -> ()
+    %595 = llvm.call @nd_bv32_in1() : () -> i32
+    %596 = llvm.mlir.constant(24 : i24) : i24
+    %597 = llvm.zext %596 : i24 to i64
+    %598 = llvm.mlir.constant(1 : i64) : i64
+    %599 = llvm.zext %595 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%598, %599, %597) : (i64, i64, i64) -> ()
+    %600 = llvm.call @nd_bv32_in85() : () -> i32
+    %601 = llvm.mlir.constant(24 : i24) : i24
+    %602 = llvm.zext %601 : i24 to i64
+    %603 = llvm.mlir.constant(85 : i64) : i64
+    %604 = llvm.zext %600 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%603, %604, %602) : (i64, i64, i64) -> ()
+    %605 = llvm.call @nd_bv32_in86() : () -> i32
+    %606 = llvm.mlir.constant(24 : i24) : i24
+    %607 = llvm.zext %606 : i24 to i64
+    %608 = llvm.mlir.constant(86 : i64) : i64
+    %609 = llvm.zext %605 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%608, %609, %607) : (i64, i64, i64) -> ()
+    %610 = llvm.call @nd_bv32_in87() : () -> i32
+    %611 = llvm.mlir.constant(24 : i24) : i24
+    %612 = llvm.zext %611 : i24 to i64
+    %613 = llvm.mlir.constant(87 : i64) : i64
+    %614 = llvm.zext %610 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%613, %614, %612) : (i64, i64, i64) -> ()
+    %615 = llvm.call @nd_bv32_in88() : () -> i32
+    %616 = llvm.mlir.constant(24 : i24) : i24
+    %617 = llvm.zext %616 : i24 to i64
+    %618 = llvm.mlir.constant(88 : i64) : i64
+    %619 = llvm.zext %615 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%618, %619, %617) : (i64, i64, i64) -> ()
+    %620 = llvm.call @nd_bv32_in89() : () -> i32
+    %621 = llvm.mlir.constant(24 : i24) : i24
+    %622 = llvm.zext %621 : i24 to i64
+    %623 = llvm.mlir.constant(89 : i64) : i64
+    %624 = llvm.zext %620 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%623, %624, %622) : (i64, i64, i64) -> ()
+    %625 = llvm.call @nd_bv32_in90() : () -> i32
+    %626 = llvm.mlir.constant(24 : i24) : i24
+    %627 = llvm.zext %626 : i24 to i64
+    %628 = llvm.mlir.constant(90 : i64) : i64
+    %629 = llvm.zext %625 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%628, %629, %627) : (i64, i64, i64) -> ()
+    %630 = llvm.call @nd_bv32_in91() : () -> i32
+    %631 = llvm.mlir.constant(24 : i24) : i24
+    %632 = llvm.zext %631 : i24 to i64
+    %633 = llvm.mlir.constant(91 : i64) : i64
+    %634 = llvm.zext %630 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%633, %634, %632) : (i64, i64, i64) -> ()
+    %635 = llvm.call @nd_bv32_in92() : () -> i32
+    %636 = llvm.mlir.constant(24 : i24) : i24
+    %637 = llvm.zext %636 : i24 to i64
+    %638 = llvm.mlir.constant(92 : i64) : i64
+    %639 = llvm.zext %635 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%638, %639, %637) : (i64, i64, i64) -> ()
+    %640 = llvm.call @nd_bv32_in93() : () -> i32
+    %641 = llvm.mlir.constant(24 : i24) : i24
+    %642 = llvm.zext %641 : i24 to i64
+    %643 = llvm.mlir.constant(93 : i64) : i64
+    %644 = llvm.zext %640 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%643, %644, %642) : (i64, i64, i64) -> ()
+    %645 = llvm.call @nd_bv32_in94() : () -> i32
+    %646 = llvm.mlir.constant(24 : i24) : i24
+    %647 = llvm.zext %646 : i24 to i64
+    %648 = llvm.mlir.constant(94 : i64) : i64
+    %649 = llvm.zext %645 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%648, %649, %647) : (i64, i64, i64) -> ()
+    %650 = llvm.call @nd_bv32_in95() : () -> i32
+    %651 = llvm.mlir.constant(24 : i24) : i24
+    %652 = llvm.zext %651 : i24 to i64
+    %653 = llvm.mlir.constant(95 : i64) : i64
+    %654 = llvm.zext %650 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%653, %654, %652) : (i64, i64, i64) -> ()
+    %655 = llvm.call @nd_bv32_in96() : () -> i32
+    %656 = llvm.mlir.constant(24 : i24) : i24
+    %657 = llvm.zext %656 : i24 to i64
+    %658 = llvm.mlir.constant(96 : i64) : i64
+    %659 = llvm.zext %655 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%658, %659, %657) : (i64, i64, i64) -> ()
+    %660 = llvm.call @nd_bv32_in97() : () -> i32
+    %661 = llvm.mlir.constant(24 : i24) : i24
+    %662 = llvm.zext %661 : i24 to i64
+    %663 = llvm.mlir.constant(97 : i64) : i64
+    %664 = llvm.zext %660 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%663, %664, %662) : (i64, i64, i64) -> ()
+    %665 = llvm.call @nd_bv32_in98() : () -> i32
+    %666 = llvm.mlir.constant(24 : i24) : i24
+    %667 = llvm.zext %666 : i24 to i64
+    %668 = llvm.mlir.constant(98 : i64) : i64
+    %669 = llvm.zext %665 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%668, %669, %667) : (i64, i64, i64) -> ()
+    %670 = llvm.call @nd_bv32_in99() : () -> i32
+    %671 = llvm.mlir.constant(24 : i24) : i24
+    %672 = llvm.zext %671 : i24 to i64
+    %673 = llvm.mlir.constant(99 : i64) : i64
+    %674 = llvm.zext %670 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%673, %674, %672) : (i64, i64, i64) -> ()
+    %675 = llvm.call @nd_bv32_in100() : () -> i32
+    %676 = llvm.mlir.constant(24 : i24) : i24
+    %677 = llvm.zext %676 : i24 to i64
+    %678 = llvm.mlir.constant(100 : i64) : i64
+    %679 = llvm.zext %675 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%678, %679, %677) : (i64, i64, i64) -> ()
+    %680 = llvm.call @nd_bv32_in101() : () -> i32
+    %681 = llvm.mlir.constant(24 : i24) : i24
+    %682 = llvm.zext %681 : i24 to i64
+    %683 = llvm.mlir.constant(101 : i64) : i64
+    %684 = llvm.zext %680 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%683, %684, %682) : (i64, i64, i64) -> ()
+    %685 = llvm.call @nd_bv32_in102() : () -> i32
+    %686 = llvm.mlir.constant(24 : i24) : i24
+    %687 = llvm.zext %686 : i24 to i64
+    %688 = llvm.mlir.constant(102 : i64) : i64
+    %689 = llvm.zext %685 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%688, %689, %687) : (i64, i64, i64) -> ()
+    %690 = llvm.call @nd_bv32_in103() : () -> i32
+    %691 = llvm.mlir.constant(24 : i24) : i24
+    %692 = llvm.zext %691 : i24 to i64
+    %693 = llvm.mlir.constant(103 : i64) : i64
+    %694 = llvm.zext %690 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%693, %694, %692) : (i64, i64, i64) -> ()
+    %695 = llvm.call @nd_bv32_in104() : () -> i32
+    %696 = llvm.mlir.constant(24 : i24) : i24
+    %697 = llvm.zext %696 : i24 to i64
+    %698 = llvm.mlir.constant(104 : i64) : i64
+    %699 = llvm.zext %695 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%698, %699, %697) : (i64, i64, i64) -> ()
+    %700 = llvm.call @nd_bv32_in105() : () -> i32
+    %701 = llvm.mlir.constant(24 : i24) : i24
+    %702 = llvm.zext %701 : i24 to i64
+    %703 = llvm.mlir.constant(105 : i64) : i64
+    %704 = llvm.zext %700 : i32 to i64
+    llvm.call @btor2mlir_print_input_num(%703, %704, %702) : (i64, i64, i64) -> ()
+    %705 = llvm.call @nd_bv8_in106() : () -> i8
+    %706 = llvm.mlir.constant(-2 : i2) : i2
+    %707 = llvm.zext %706 : i2 to i64
+    %708 = llvm.mlir.constant(106 : i64) : i64
+    %709 = llvm.zext %705 : i8 to i64
+    llvm.call @btor2mlir_print_input_num(%708, %709, %707) : (i64, i64, i64) -> ()
+    %710 = llvm.mlir.constant(true) : i1
+    %711 = llvm.xor %87, %710  : i1
+    %712 = llvm.and %88, %711  : i1
+    %713 = llvm.mlir.constant(true) : i1
+    %714 = llvm.xor %712, %713  : i1
+    llvm.cond_br %714, ^bb2, ^bb3
   ^bb2:  // pred: ^bb1
-    llvm.br ^bb1(%124, %126 : i1, i1)
+    llvm.br ^bb1(%252, %254 : i1, i1)
   ^bb3:  // pred: ^bb1
     llvm.call @__VERIFIER_error() : () -> ()
     llvm.unreachable

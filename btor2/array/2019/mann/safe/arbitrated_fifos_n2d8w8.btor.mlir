@@ -1,42 +1,42 @@
 module {
   func @main() {
-    %0 = btor.constant true
-    %1 = btor.nd_array : vector<8xi8>
-    %2 = btor.nd_bv : i4
-    %3 = btor.nd_bv : i4
-    %4 = btor.nd_bv : i8
-    %5 = btor.nd_bv : i1
-    %6 = btor.nd_array : vector<8xi8>
-    %7 = btor.nd_bv : i4
-    %8 = btor.nd_bv : i4
-    %9 = btor.nd_bv : i8
-    %10 = btor.nd_bv : i1
-    %11 = btor.nd_bv : i1
-    %12 = btor.nd_bv : i4
-    %13 = btor.nd_bv : i8
-    %14 = btor.nd_bv : i1
-    %15 = btor.nd_bv : i1
-    %16 = btor.nd_bv : i1
-    %17 = btor.nd_bv : i1
-    %18 = btor.nd_bv : i1
-    %19 = btor.nd_bv : i1
-    %20 = btor.nd_bv : i1
-    %21 = btor.nd_bv : i1
-    br ^bb1(%1, %2, %3, %4, %5, %6, %7, %8, %9, %10, %11, %12, %13, %0, %14, %15, %16, %17, %18, %19, %20, %21 : vector<8xi8>, i4, i4, i8, i1, vector<8xi8>, i4, i4, i8, i1, i1, i4, i8, i1, i1, i1, i1, i1, i1, i1, i1, i1)
+    %0 = btor.nd_array : vector<8xi8>
+    %1 = btor.nd_state 1 : i4
+    %2 = btor.nd_state 2 : i4
+    %3 = btor.nd_state 3 : i8
+    %4 = btor.nd_state 4 : i1
+    %5 = btor.nd_array : vector<8xi8>
+    %6 = btor.nd_state 6 : i4
+    %7 = btor.nd_state 7 : i4
+    %8 = btor.nd_state 8 : i8
+    %9 = btor.nd_state 9 : i1
+    %10 = btor.nd_state 10 : i1
+    %11 = btor.nd_state 11 : i4
+    %12 = btor.nd_state 12 : i8
+    %13 = btor.constant true
+    %14 = btor.nd_state 14 : i1
+    %15 = btor.nd_state 15 : i1
+    %16 = btor.nd_state 16 : i1
+    %17 = btor.nd_state 17 : i1
+    %18 = btor.nd_state 18 : i1
+    %19 = btor.nd_state 19 : i1
+    %20 = btor.nd_state 20 : i1
+    %21 = btor.nd_state 21 : i1
+    br ^bb1(%0, %1, %2, %3, %4, %5, %6, %7, %8, %9, %10, %11, %12, %13, %14, %15, %16, %17, %18, %19, %20, %21 : vector<8xi8>, i4, i4, i8, i1, vector<8xi8>, i4, i4, i8, i1, i1, i4, i8, i1, i1, i1, i1, i1, i1, i1, i1, i1)
   ^bb1(%22: vector<8xi8>, %23: i4, %24: i4, %25: i8, %26: i1, %27: vector<8xi8>, %28: i4, %29: i4, %30: i8, %31: i1, %32: i1, %33: i4, %34: i8, %35: i1, %36: i1, %37: i1, %38: i1, %39: i1, %40: i1, %41: i1, %42: i1, %43: i1):  // 2 preds: ^bb0, ^bb1
-    %44 = btor.nd_bv : i2
+    %44 = btor.input 2 : i2
     %45 = btor.constant 1 : i2
     %46 = btor.constant 1 : i2
     %47 = btor.slice %44, %45, %46 : i2, i1
     %48 = btor.uext %47 : i1 to i4
     %49 = btor.add %23, %48 : i4
-    %50 = btor.nd_bv : i1
+    %50 = btor.input 5 : i1
     %51 = btor.constant -8 : i4
     %52 = btor.uext %51 : i4 to i8
     %53 = btor.cmp uge, %25, %52 : i8
     %54 = btor.cmp eq, %24, %23 : i4
     %55 = btor.not %54 : i1
-    %56 = btor.nd_bv : i2
+    %56 = btor.input 4 : i2
     %57 = btor.constant 1 : i2
     %58 = btor.constant 1 : i2
     %59 = btor.slice %56, %57, %58 : i2, i1
@@ -60,7 +60,7 @@ module {
     %77 = btor.read %22[%76] : vector<8xi8>, i8
     %78 = btor.and %77, %73 : i8
     %79 = btor.read %22[%76] : vector<8xi8>, i8
-    %80 = btor.nd_bv : i16
+    %80 = btor.input 1 : i16
     %81 = btor.constant 15 : i16
     %82 = btor.constant 8 : i16
     %83 = btor.slice %80, %81, %82 : i16, i8
@@ -70,7 +70,7 @@ module {
     %87 = btor.write %86, %22[%76] : vector<8xi8>
     %88 = btor.redor %72 : i8
     %89 = btor.ite %88, %87, %22 : vector<8xi8>
-    %90 = btor.nd_bv : i16
+    %90 = btor.input 3 : i16
     %91 = btor.constant 15 : i16
     %92 = btor.constant 8 : i16
     %93 = btor.slice %90, %91, %92 : i16, i8
@@ -190,7 +190,7 @@ module {
     %207 = btor.or %206, %159 : i1
     %208 = btor.ite %207, %168, %30 : i8
     %209 = btor.ite %50, %141, %208 : i8
-    %210 = btor.nd_bv : i1
+    %210 = btor.input 6 : i1
     %211 = btor.and %210, %179 : i1
     %212 = btor.or %31, %211 : i1
     %213 = btor.ite %31, %95, %212 : i1
@@ -295,14 +295,14 @@ module {
     %307 = btor.ite %35, %97, %95 : i1
     %308 = btor.and %307, %306 : i1
     btor.assert_not(%308)
-    %309 = btor.nd_bv : i1
-    %310 = btor.nd_bv : i1
-    %311 = btor.nd_bv : i1
-    %312 = btor.nd_bv : i1
-    %313 = btor.nd_bv : i1
-    %314 = btor.nd_bv : i1
-    %315 = btor.nd_bv : i1
-    %316 = btor.nd_bv : i1
+    %309 = btor.nd_state 14 : i1
+    %310 = btor.nd_state 15 : i1
+    %311 = btor.nd_state 16 : i1
+    %312 = btor.nd_state 17 : i1
+    %313 = btor.nd_state 18 : i1
+    %314 = btor.nd_state 19 : i1
+    %315 = btor.nd_state 20 : i1
+    %316 = btor.nd_state 21 : i1
     br ^bb1(%89, %67, %71, %145, %176, %205, %185, %189, %209, %214, %230, %233, %236, %97, %309, %310, %311, %312, %313, %314, %315, %316 : vector<8xi8>, i4, i4, i8, i1, vector<8xi8>, i4, i4, i8, i1, i1, i4, i8, i1, i1, i1, i1, i1, i1, i1, i1, i1)
   }
 }

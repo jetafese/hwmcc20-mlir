@@ -1,31 +1,31 @@
 module {
   func @main() {
-    %0 = btor.constant true
-    %1 = btor.nd_state 0 : i8
-    %2 = btor.nd_state 1 : i6
-    %3 = btor.nd_state 2 : i8
-    %4 = btor.nd_state 3 : i8
-    %5 = btor.nd_state 4 : i8
-    %6 = btor.nd_state 5 : i8
-    %7 = btor.nd_state 6 : i8
-    %8 = btor.nd_state 7 : i8
-    %9 = btor.nd_state 8 : i8
-    %10 = btor.nd_state 9 : i8
-    %11 = btor.nd_state 10 : i8
-    %12 = btor.nd_state 11 : i8
-    %13 = btor.nd_state 12 : i8
-    %14 = btor.nd_state 13 : i8
-    %15 = btor.nd_state 14 : i8
-    %16 = btor.nd_state 15 : i8
-    %17 = btor.nd_state 16 : i8
-    %18 = btor.nd_state 17 : i8
-    %19 = btor.nd_state 18 : i6
-    %20 = btor.nd_state 19 : i1
-    %21 = btor.nd_state 20 : i1
-    %22 = btor.nd_state 21 : i6
-    %23 = btor.nd_state 22 : i8
+    %0 = btor.nd_state 0 : i8
+    %1 = btor.nd_state 1 : i6
+    %2 = btor.nd_state 2 : i8
+    %3 = btor.nd_state 3 : i8
+    %4 = btor.nd_state 4 : i8
+    %5 = btor.nd_state 5 : i8
+    %6 = btor.nd_state 6 : i8
+    %7 = btor.nd_state 7 : i8
+    %8 = btor.nd_state 8 : i8
+    %9 = btor.nd_state 9 : i8
+    %10 = btor.nd_state 10 : i8
+    %11 = btor.nd_state 11 : i8
+    %12 = btor.nd_state 12 : i8
+    %13 = btor.nd_state 13 : i8
+    %14 = btor.nd_state 14 : i8
+    %15 = btor.nd_state 15 : i8
+    %16 = btor.nd_state 16 : i8
+    %17 = btor.nd_state 17 : i8
+    %18 = btor.nd_state 18 : i6
+    %19 = btor.nd_state 19 : i1
+    %20 = btor.nd_state 20 : i1
+    %21 = btor.nd_state 21 : i6
+    %22 = btor.nd_state 22 : i8
+    %23 = btor.constant true
     %24 = btor.nd_state 24 : i6
-    br ^bb1(%1, %2, %3, %4, %5, %6, %7, %8, %9, %10, %11, %12, %13, %14, %15, %16, %17, %18, %19, %20, %21, %22, %23, %0, %24 : i8, i6, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i6, i1, i1, i6, i8, i1, i6)
+    br ^bb1(%0, %1, %2, %3, %4, %5, %6, %7, %8, %9, %10, %11, %12, %13, %14, %15, %16, %17, %18, %19, %20, %21, %22, %23, %24 : i8, i6, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i6, i1, i1, i6, i8, i1, i6)
   ^bb1(%25: i8, %26: i6, %27: i8, %28: i8, %29: i8, %30: i8, %31: i8, %32: i8, %33: i8, %34: i8, %35: i8, %36: i8, %37: i8, %38: i8, %39: i8, %40: i8, %41: i8, %42: i8, %43: i6, %44: i1, %45: i1, %46: i6, %47: i8, %48: i1, %49: i6):  // 2 preds: ^bb0, ^bb1
     %50 = btor.input 1 : i8
     %51 = btor.constant -16 : i5

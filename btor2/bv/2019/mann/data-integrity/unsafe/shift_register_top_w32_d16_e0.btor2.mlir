@@ -1,12 +1,12 @@
 module {
   func @main() {
-    %0 = btor.constant true
-    %1 = btor.nd_state 0 : i32
-    %2 = btor.nd_state 1 : i5
-    %3 = btor.nd_state 2 : i1
-    %4 = btor.nd_state 3 : i1
-    %5 = btor.nd_state 4 : i5
-    %6 = btor.nd_state 5 : i32
+    %0 = btor.nd_state 0 : i32
+    %1 = btor.nd_state 1 : i5
+    %2 = btor.nd_state 2 : i1
+    %3 = btor.nd_state 3 : i1
+    %4 = btor.nd_state 4 : i5
+    %5 = btor.nd_state 5 : i32
+    %6 = btor.constant true
     %7 = btor.nd_state 7 : i32
     %8 = btor.nd_state 8 : i32
     %9 = btor.nd_state 9 : i32
@@ -22,7 +22,7 @@ module {
     %19 = btor.nd_state 19 : i32
     %20 = btor.nd_state 20 : i32
     %21 = btor.nd_state 21 : i32
-    br ^bb1(%1, %2, %3, %4, %5, %6, %0, %7, %8, %9, %10, %11, %12, %13, %14, %15, %16, %17, %18, %19, %20, %21 : i32, i5, i1, i1, i5, i32, i1, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32)
+    br ^bb1(%0, %1, %2, %3, %4, %5, %6, %7, %8, %9, %10, %11, %12, %13, %14, %15, %16, %17, %18, %19, %20, %21 : i32, i5, i1, i1, i5, i32, i1, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32)
   ^bb1(%22: i32, %23: i5, %24: i1, %25: i1, %26: i5, %27: i32, %28: i1, %29: i32, %30: i32, %31: i32, %32: i32, %33: i32, %34: i32, %35: i32, %36: i32, %37: i32, %38: i32, %39: i32, %40: i32, %41: i32, %42: i32, %43: i32):  // 2 preds: ^bb0, ^bb1
     %44 = btor.constant 0 : i32
     %45 = btor.input 3 : i1

@@ -1,32 +1,32 @@
 module {
   func @main() {
-    %0 = btor.constant -1 : i32
-    %1 = btor.constant false
-    %2 = btor.constant 0 : i5
-    %3 = btor.constant 0 : i27
-    %4 = btor.constant true
-    %5 = btor.constant 0 : i8
-    %6 = btor.constant 0 : i4
-    %7 = btor.constant 0 : i3
-    %8 = btor.constant -1 : i4
-    %9 = btor.nd_state 0 : i32
-    %10 = btor.nd_state 4 : i1
-    %11 = btor.nd_state 5 : i1
-    %12 = btor.nd_state 17 : i1
-    %13 = btor.nd_state 19 : i8
-    %14 = btor.nd_state 20 : i1
-    %15 = btor.nd_state 40 : i1
-    %16 = btor.nd_state 41 : i1
-    %17 = btor.nd_state 42 : i8
-    %18 = btor.nd_state 43 : i24
-    %19 = btor.nd_state 44 : i16
-    %20 = btor.nd_state 45 : i8
+    %0 = btor.nd_state 0 : i32
+    %1 = btor.constant -1 : i32
+    %2 = btor.constant false
+    %3 = btor.nd_state 4 : i1
+    %4 = btor.nd_state 5 : i1
+    %5 = btor.constant 0 : i5
+    %6 = btor.constant 0 : i27
+    %7 = btor.constant true
+    %8 = btor.nd_state 17 : i1
+    %9 = btor.constant 0 : i8
+    %10 = btor.nd_state 19 : i8
+    %11 = btor.nd_state 20 : i1
+    %12 = btor.nd_state 40 : i1
+    %13 = btor.nd_state 41 : i1
+    %14 = btor.nd_state 42 : i8
+    %15 = btor.nd_state 43 : i24
+    %16 = btor.nd_state 44 : i16
+    %17 = btor.nd_state 45 : i8
+    %18 = btor.constant 0 : i4
+    %19 = btor.constant 0 : i3
+    %20 = btor.constant -1 : i4
     %21 = btor.nd_state 49 : i32
     %22 = btor.nd_state 50 : i1
     %23 = btor.nd_state 51 : i32
     %24 = btor.nd_state 52 : i1
     %25 = btor.nd_state 53 : i3
-    br ^bb1(%9, %0, %1, %1, %10, %11, %1, %1, %1, %2, %3, %1, %1, %1, %1, %1, %4, %12, %5, %13, %14, %0, %1, %1, %1, %1, %1, %1, %1, %1, %1, %1, %1, %1, %1, %1, %1, %1, %1, %1, %15, %16, %17, %18, %19, %20, %6, %7, %8, %21, %22, %23, %24, %25 : i32, i32, i1, i1, i1, i1, i1, i1, i1, i5, i27, i1, i1, i1, i1, i1, i1, i1, i8, i8, i1, i32, i1, i1, i1, i1, i1, i1, i1, i1, i1, i1, i1, i1, i1, i1, i1, i1, i1, i1, i1, i1, i8, i24, i16, i8, i4, i3, i4, i32, i1, i32, i1, i3)
+    br ^bb1(%0, %1, %2, %2, %3, %4, %2, %2, %2, %5, %6, %2, %2, %2, %2, %2, %7, %8, %9, %10, %11, %1, %2, %2, %2, %2, %2, %2, %2, %2, %2, %2, %2, %2, %2, %2, %2, %2, %2, %2, %12, %13, %14, %15, %16, %17, %18, %19, %20, %21, %22, %23, %24, %25 : i32, i32, i1, i1, i1, i1, i1, i1, i1, i5, i27, i1, i1, i1, i1, i1, i1, i1, i8, i8, i1, i32, i1, i1, i1, i1, i1, i1, i1, i1, i1, i1, i1, i1, i1, i1, i1, i1, i1, i1, i1, i1, i8, i24, i16, i8, i4, i3, i4, i32, i1, i32, i1, i3)
   ^bb1(%26: i32, %27: i32, %28: i1, %29: i1, %30: i1, %31: i1, %32: i1, %33: i1, %34: i1, %35: i5, %36: i27, %37: i1, %38: i1, %39: i1, %40: i1, %41: i1, %42: i1, %43: i1, %44: i8, %45: i8, %46: i1, %47: i32, %48: i1, %49: i1, %50: i1, %51: i1, %52: i1, %53: i1, %54: i1, %55: i1, %56: i1, %57: i1, %58: i1, %59: i1, %60: i1, %61: i1, %62: i1, %63: i1, %64: i1, %65: i1, %66: i1, %67: i1, %68: i8, %69: i24, %70: i16, %71: i8, %72: i4, %73: i3, %74: i4, %75: i32, %76: i1, %77: i32, %78: i1, %79: i3):  // 2 preds: ^bb0, ^bb1
     %80 = btor.input 4 : i1
     %81 = btor.input 0 : i1

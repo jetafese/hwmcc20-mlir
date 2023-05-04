@@ -1,23 +1,23 @@
 module {
   func @main() {
-    %0 = btor.constant true
-    %1 = btor.nd_state 0 : i64
-    %2 = btor.nd_state 1 : i5
-    %3 = btor.nd_state 2 : i64
-    %4 = btor.nd_state 3 : i64
-    %5 = btor.nd_state 4 : i64
-    %6 = btor.nd_state 5 : i64
-    %7 = btor.nd_state 6 : i64
-    %8 = btor.nd_state 7 : i64
-    %9 = btor.nd_state 8 : i64
-    %10 = btor.nd_state 9 : i64
-    %11 = btor.nd_state 10 : i5
-    %12 = btor.nd_state 11 : i1
-    %13 = btor.nd_state 12 : i1
-    %14 = btor.nd_state 13 : i5
-    %15 = btor.nd_state 14 : i64
+    %0 = btor.nd_state 0 : i64
+    %1 = btor.nd_state 1 : i5
+    %2 = btor.nd_state 2 : i64
+    %3 = btor.nd_state 3 : i64
+    %4 = btor.nd_state 4 : i64
+    %5 = btor.nd_state 5 : i64
+    %6 = btor.nd_state 6 : i64
+    %7 = btor.nd_state 7 : i64
+    %8 = btor.nd_state 8 : i64
+    %9 = btor.nd_state 9 : i64
+    %10 = btor.nd_state 10 : i5
+    %11 = btor.nd_state 11 : i1
+    %12 = btor.nd_state 12 : i1
+    %13 = btor.nd_state 13 : i5
+    %14 = btor.nd_state 14 : i64
+    %15 = btor.constant true
     %16 = btor.nd_state 16 : i5
-    br ^bb1(%1, %2, %3, %4, %5, %6, %7, %8, %9, %10, %11, %12, %13, %14, %15, %0, %16 : i64, i5, i64, i64, i64, i64, i64, i64, i64, i64, i5, i1, i1, i5, i64, i1, i5)
+    br ^bb1(%0, %1, %2, %3, %4, %5, %6, %7, %8, %9, %10, %11, %12, %13, %14, %15, %16 : i64, i5, i64, i64, i64, i64, i64, i64, i64, i64, i5, i1, i1, i5, i64, i1, i5)
   ^bb1(%17: i64, %18: i5, %19: i64, %20: i64, %21: i64, %22: i64, %23: i64, %24: i64, %25: i64, %26: i64, %27: i5, %28: i1, %29: i1, %30: i5, %31: i64, %32: i1, %33: i5):  // 2 preds: ^bb0, ^bb1
     %34 = btor.input 1 : i64
     %35 = btor.constant -8 : i4

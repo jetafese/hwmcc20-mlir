@@ -1,9 +1,9 @@
 module {
   func @main() {
-    %0 = btor.constant 0 : i16
-    %1 = btor.constant true
-    %2 = btor.nd_state 0 : i4
-    br ^bb1(%2, %0, %1 : i4, i16, i1)
+    %0 = btor.nd_state 0 : i4
+    %1 = btor.constant 0 : i16
+    %2 = btor.constant true
+    br ^bb1(%0, %1, %2 : i4, i16, i1)
   ^bb1(%3: i4, %4: i16, %5: i1):  // 2 preds: ^bb0, ^bb1
     %6 = btor.constant 0 : i4
     %7 = btor.ite %5, %6, %3 : i4

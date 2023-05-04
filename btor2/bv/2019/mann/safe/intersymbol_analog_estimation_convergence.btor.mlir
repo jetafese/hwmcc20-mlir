@@ -1,14 +1,14 @@
 module {
   func @main() {
-    %0 = btor.constant 0 : i16
-    %1 = btor.nd_state 0 : i1
-    %2 = btor.nd_state 1 : i1
-    %3 = btor.nd_state 2 : i16
-    %4 = btor.nd_state 3 : i1
+    %0 = btor.nd_state 0 : i1
+    %1 = btor.nd_state 1 : i1
+    %2 = btor.nd_state 2 : i16
+    %3 = btor.nd_state 3 : i1
+    %4 = btor.constant 0 : i16
     %5 = btor.nd_state 5 : i4
     %6 = btor.nd_state 6 : i4
     %7 = btor.nd_state 7 : i16
-    br ^bb1(%1, %2, %3, %4, %0, %5, %6, %7 : i1, i1, i16, i1, i16, i4, i4, i16)
+    br ^bb1(%0, %1, %2, %3, %4, %5, %6, %7 : i1, i1, i16, i1, i16, i4, i4, i16)
   ^bb1(%8: i1, %9: i1, %10: i16, %11: i1, %12: i16, %13: i4, %14: i4, %15: i16):  // 2 preds: ^bb0, ^bb1
     %16 = btor.constant true
     %17 = btor.constant -2 : i3

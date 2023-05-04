@@ -17,43 +17,58 @@ module attributes {llvm.data_layout = ""} {
     %13 = llvm.mul %12, %11  : i256
     %14 = llvm.mlir.constant(0 : i256) : i256
     %15 = llvm.call @nd_bv8_in5() : () -> i8
-    %16 = llvm.trunc %15 : i8 to i1
-    %17 = llvm.select %16, %14, %13 : i1, i256
-    %18 = llvm.zext %10 : i128 to i256
-    %19 = llvm.zext %9 : i128 to i256
-    %20 = llvm.mul %19, %18  : i256
-    %21 = llvm.or %7, %8  : i1
-    %22 = llvm.select %21, %20, %4 : i1, i256
-    %23 = llvm.select %16, %14, %22 : i1, i256
-    %24 = llvm.call @nd_bv128_in3() : () -> i128
-    %25 = llvm.trunc %24 : i128 to i128
-    %26 = llvm.call @nd_bv8_in1() : () -> i8
-    %27 = llvm.trunc %26 : i8 to i1
-    %28 = llvm.select %27, %25, %5 : i1, i128
-    %29 = llvm.mlir.constant(0 : i128) : i128
-    %30 = llvm.select %16, %29, %28 : i1, i128
-    %31 = llvm.call @nd_bv128_in4() : () -> i128
-    %32 = llvm.trunc %31 : i128 to i128
-    %33 = llvm.call @nd_bv8_in2() : () -> i8
-    %34 = llvm.trunc %33 : i8 to i1
-    %35 = llvm.select %34, %32, %6 : i1, i128
-    %36 = llvm.select %16, %29, %35 : i1, i128
-    %37 = llvm.mlir.constant(true) : i1
-    %38 = llvm.select %16, %37, %27 : i1, i1
-    %39 = llvm.select %16, %37, %34 : i1, i1
-    %40 = llvm.select %27, %25, %9 : i1, i128
-    %41 = llvm.select %16, %29, %40 : i1, i128
-    %42 = llvm.select %34, %32, %10 : i1, i128
-    %43 = llvm.select %16, %29, %42 : i1, i128
-    %44 = llvm.icmp "eq" %3, %4 : i256
-    %45 = llvm.mlir.constant(true) : i1
-    %46 = llvm.xor %44, %45  : i1
-    %47 = llvm.and %37, %46  : i1
-    %48 = llvm.mlir.constant(true) : i1
-    %49 = llvm.xor %47, %48  : i1
-    llvm.cond_br %49, ^bb2, ^bb3
+    %16 = llvm.mlir.constant(true) : i1
+    %17 = llvm.zext %16 : i1 to i64
+    %18 = llvm.mlir.constant(5 : i64) : i64
+    %19 = llvm.zext %15 : i8 to i64
+    llvm.call @btor2mlir_print_input_num(%18, %19, %17) : (i64, i64, i64) -> ()
+    %20 = llvm.trunc %15 : i8 to i1
+    %21 = llvm.select %20, %14, %13 : i1, i256
+    %22 = llvm.zext %10 : i128 to i256
+    %23 = llvm.zext %9 : i128 to i256
+    %24 = llvm.mul %23, %22  : i256
+    %25 = llvm.or %7, %8  : i1
+    %26 = llvm.select %25, %24, %4 : i1, i256
+    %27 = llvm.select %20, %14, %26 : i1, i256
+    %28 = llvm.call @nd_bv128_in3() : () -> i128
+    %29 = llvm.trunc %28 : i128 to i128
+    %30 = llvm.call @nd_bv8_in1() : () -> i8
+    %31 = llvm.mlir.constant(true) : i1
+    %32 = llvm.zext %31 : i1 to i64
+    %33 = llvm.mlir.constant(1 : i64) : i64
+    %34 = llvm.zext %30 : i8 to i64
+    llvm.call @btor2mlir_print_input_num(%33, %34, %32) : (i64, i64, i64) -> ()
+    %35 = llvm.trunc %30 : i8 to i1
+    %36 = llvm.select %35, %29, %5 : i1, i128
+    %37 = llvm.mlir.constant(0 : i128) : i128
+    %38 = llvm.select %20, %37, %36 : i1, i128
+    %39 = llvm.call @nd_bv128_in4() : () -> i128
+    %40 = llvm.trunc %39 : i128 to i128
+    %41 = llvm.call @nd_bv8_in2() : () -> i8
+    %42 = llvm.mlir.constant(true) : i1
+    %43 = llvm.zext %42 : i1 to i64
+    %44 = llvm.mlir.constant(2 : i64) : i64
+    %45 = llvm.zext %41 : i8 to i64
+    llvm.call @btor2mlir_print_input_num(%44, %45, %43) : (i64, i64, i64) -> ()
+    %46 = llvm.trunc %41 : i8 to i1
+    %47 = llvm.select %46, %40, %6 : i1, i128
+    %48 = llvm.select %20, %37, %47 : i1, i128
+    %49 = llvm.mlir.constant(true) : i1
+    %50 = llvm.select %20, %49, %35 : i1, i1
+    %51 = llvm.select %20, %49, %46 : i1, i1
+    %52 = llvm.select %35, %29, %9 : i1, i128
+    %53 = llvm.select %20, %37, %52 : i1, i128
+    %54 = llvm.select %46, %40, %10 : i1, i128
+    %55 = llvm.select %20, %37, %54 : i1, i128
+    %56 = llvm.icmp "eq" %3, %4 : i256
+    %57 = llvm.mlir.constant(true) : i1
+    %58 = llvm.xor %56, %57  : i1
+    %59 = llvm.and %49, %58  : i1
+    %60 = llvm.mlir.constant(true) : i1
+    %61 = llvm.xor %59, %60  : i1
+    llvm.cond_br %61, ^bb2, ^bb3
   ^bb2:  // pred: ^bb1
-    llvm.br ^bb1(%17, %23, %30, %36, %38, %39, %41, %43 : i256, i256, i128, i128, i1, i1, i128, i128)
+    llvm.br ^bb1(%21, %27, %38, %48, %50, %51, %53, %55 : i256, i256, i128, i128, i1, i1, i128, i128)
   ^bb3:  // pred: ^bb1
     llvm.call @__VERIFIER_error() : () -> ()
     llvm.unreachable

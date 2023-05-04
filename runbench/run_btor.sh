@@ -47,13 +47,13 @@ echo 'Results stored in '"${Output}"
 #        `for i in $(cat $SET) ; do echo $DIR/$i ; done` \
 #        -- ulimit -t ${TIMEOUT} -v ${MEM} ; ./get_btor_seahorn.sh {f}
 
-python3 ${BRUNCH} \
-       --outdir ${Output} \
-       --outfile ${Output}.csv \
-       --format ${FORMAT} \
-       --njobs ${NJOBS} \
-       $(for i in $(cat $SET) ; do echo $DIR/$i ; done) \
-       -- ./get_btor_seahorn.sh {f}
+# python3 ${BRUNCH} \
+#        --outdir ${Output} \
+#        --outfile ${Output}.csv \
+#        --format ${FORMAT} \
+#        --njobs ${NJOBS} \
+#        $(for i in $(cat $SET) ; do echo $DIR/$i ; done) \
+#        -- ./get_btor_seahorn.sh {f}
 
 # python3 ${BRUNCH} \
 #        --outdir ${Output} \
@@ -63,10 +63,18 @@ python3 ${BRUNCH} \
 #        $(for i in $(cat $SET) ; do echo $DIR/$i ; done) \
 #        -- ./boolector_get_btor.sh {f}
 
+python3 ${BRUNCH} \
+       --outdir ${Output} \
+       --outfile ${Output}.csv \
+       --format ${FORMAT} \
+       --njobs ${NJOBS} \
+       $(for i in $(cat $SET) ; do echo $DIR/$i ; done) \
+       -- ./btormc_get_btor.sh {f}
+
 # python3 ${BRUNCH} \
 #        --outdir ${Output} \
 #        --outfile ${Output}.csv \
 #        --format ${FORMAT} \
 #        --njobs ${NJOBS} \
 #        $(for i in $(cat $SET) ; do echo $DIR/$i ; done) \
-#        -- ./btormc_get_btor.sh {f}
+#        -- ./btormc-export_get_btor.sh {f}

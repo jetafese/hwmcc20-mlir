@@ -1,10 +1,10 @@
 module {
   func @main() {
-    %0 = btor.constant false
-    %1 = btor.nd_state 0 : i8
+    %0 = btor.nd_state 0 : i8
+    %1 = btor.constant false
     %2 = btor.nd_state 2 : i1
     %3 = btor.nd_state 3 : i512
-    br ^bb1(%1, %0, %2, %3, %0, %0, %0 : i8, i1, i1, i512, i1, i1, i1)
+    br ^bb1(%0, %1, %2, %3, %1, %1, %1 : i8, i1, i1, i512, i1, i1, i1)
   ^bb1(%4: i8, %5: i1, %6: i1, %7: i512, %8: i1, %9: i1, %10: i1):  // 2 preds: ^bb0, ^bb1
     %11 = btor.input 40 : i287
     %12 = btor.constant 0 : i287
