@@ -74,25 +74,35 @@ class CexWitnessGenerator(object):
             seenInputs[btorId] = self.get_value(btorValue, bvWidth)
             # print(inputs)
             # print(states)
+
+    # write to output file
+    f = open(args.out_file, 'w')
+    frame = 0
+    # print header
+    f.write(f'sat\n')
+    f.write(f'b0\n') # which property is violated? (b0, b1, j0,...)
+
     if seenStates or seenInputs:
       states.append(seenStates)
       inputs.append(seenInputs)
     # print(inputs)
     # print(states)
-    # write to output file
-    f = open(args.out_file, 'w')
-    frame = 0
-    for (s, i) in zip(states, inputs):
-      # print(s, i)
-      if s:
-        f.write(f'#{frame}\n')
-        for k, v in s.items():
-          f.write(f'{k} {v}\n')
-      if i:
-        f.write(f'@{frame}\n')
-        for k, v in i.items():
-          f.write(f'{k} {v}\n')
-      frame += 1
+      for (s, i) in zip(states, inputs):
+        # print(s, i)
+        if s:
+          f.write(f'#{frame}\n')
+          for k, v in s.items():
+            f.write(f'{k} {v}\n')
+        if i:
+          f.write(f'@{frame}\n')
+          for k, v in i.items():
+            f.write(f'{k} {v}\n')
+        frame += 1
+    else:
+      for i in range(21):
+        f.write(f'#{i}\n')
+        f.write(f'@{i}\n')
+
     f.write('.\n')
     f.close()
     return 0
