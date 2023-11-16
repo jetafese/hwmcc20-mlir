@@ -35,10 +35,16 @@ class CexWitnessGenerator(object):
     # keeps track of states and inputs per frame
     states = list()
     inputs = list()
+    # register violated assertion
+    violatedProperty = 0
     # read each line
     with open(args.in_file, errors='replace') as input:
       for line in input:
         if line.__contains__('[sea]'):
+          if not line.__contains__('__VERIFIER_assert'):
+            continue
+          splitSeaLine = line.split(':')
+          violatedProperty = int(splitSeaLine[1].split(',')[0].split()[0])
           continue
         splitLine = line.split(',')
         name = splitLine[0].split()[0]
@@ -80,7 +86,7 @@ class CexWitnessGenerator(object):
     frame = 0
     # print header
     f.write(f'sat\n')
-    f.write(f'b0\n') # which property is violated? (b0, b1, j0,...)
+    f.write(f'b{violatedProperty}\n') # which property is violated? (b0, b1, j0,...)
 
     if seenStates or seenInputs:
       states.append(seenStates)
