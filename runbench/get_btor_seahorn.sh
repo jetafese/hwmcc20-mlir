@@ -35,17 +35,17 @@ echo "$BTOR2MLIR/bin/btor2mlir-opt $BTOR.mlir \
         --convert-btor-to-llvm \
         --convert-std-to-llvm \
         --convert-vector-to-llvm > $BTOR.mlir.opt" ; \
-# $BTOR2MLIR/bin/btor2mlir-opt $BTOR.mlir \
-#         --btor-liveness \
-#         --convert-btornd-to-llvm \
-#         --convert-btor-to-vector \
-#         --convert-vector-to-llvm \
-#         --convert-btor-to-memref \
-#         --convert-memref-to-llvm \
-#         --convert-arith-to-llvm \
-#         --convert-btor-to-llvm \
-#         --convert-std-to-llvm \
-#         --convert-vector-to-llvm > $BTOR.mlir.opt ; \
+$BTOR2MLIR/bin/btor2mlir-opt $BTOR.mlir \
+        --btor-liveness \
+        --convert-btornd-to-llvm \
+        --convert-btor-to-vector \
+        --convert-vector-to-llvm \
+        --convert-btor-to-memref \
+        --convert-memref-to-llvm \
+        --convert-arith-to-llvm \
+        --convert-btor-to-llvm \
+        --convert-std-to-llvm \
+        --convert-vector-to-llvm > $BTOR.mlir.opt ; \
 echo "$BTOR2MLIR/bin/btor2mlir-translate --mlir-to-llvmir $BTOR.mlir.opt > $BTOR.mlir.opt.ll"; \
 $BTOR2MLIR/bin/btor2mlir-translate --mlir-to-llvmir $BTOR.mlir.opt > $BTOR.mlir.opt.ll ; \
 
