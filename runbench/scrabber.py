@@ -24,12 +24,13 @@ class PrefixFilter(object):
 
 class ReMatch(object):
 
-    def __init__(self, regex, filt=None, field=None, val=None, seconds=None):
+    def __init__(self, regex, filt=None, field=None, val=None, seconds=None, c_mult=None):
         self._re = re.compile(regex)
         self._filter = filt
         self._field = field
         self._val = val
         self._seconds = seconds
+        self._c_mult = c_mult
 
     def match(self, line):
         res = self._re.match(line)
@@ -48,6 +49,8 @@ class ReMatch(object):
             val = res.group('val')
             if self._seconds is True:
                 val = float(res.group('val')) * 60 + float(res.group('seconds'))
+            elif self._c_mult is not None:
+                val = float(res.group('val')) * float(self._c_mult)
             else:
                 val = res.group('val')
         else:
@@ -249,6 +252,15 @@ class LogScrabber(object):
         btor_unsat_regex = r'.*bound k = 20 (?P<val>UNSATISFIABLE)$'
         btor_unsat = ReMatch(regex=btor_unsat_regex, field='status', val='unsat')
         self.matchers.append(btor_unsat)
+
+        # assuming we have x cycles in cycle_time seconds, 
+        # we compute the multiplier to be 1/cycle_time
+        c_time = 0.1
+        c_mult = 1/c_time
+        print(c_mult)
+        num_cycles_regex = r'^CYCLES: (?P<val>[0-9][0-9]*)$'
+        num_cycles = ReMatch(regex=num_cycles_regex, field='cycles', c_mult=c_mult)
+        self.matchers.append(num_cycles)
 
     def mk_arg_parser(self, ap):
         ap.add_argument('-o',
