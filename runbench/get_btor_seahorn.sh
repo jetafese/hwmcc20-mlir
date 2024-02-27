@@ -34,7 +34,8 @@ echo "$BTOR2MLIR/bin/btor2mlir-opt $BTOR.mlir \
         --convert-arith-to-llvm \
         --convert-btor-to-llvm \
         --convert-std-to-llvm \
-        --convert-vector-to-llvm > $BTOR.mlir.opt" ; \
+        --convert-vector-to-llvm \
+        --resolve-casts > $BTOR.mlir.opt" ; \
 $BTOR2MLIR/bin/btor2mlir-opt $BTOR.mlir \
         --btor-liveness \
         --convert-btornd-to-llvm \
@@ -45,7 +46,8 @@ $BTOR2MLIR/bin/btor2mlir-opt $BTOR.mlir \
         --convert-arith-to-llvm \
         --convert-btor-to-llvm \
         --convert-std-to-llvm \
-        --convert-vector-to-llvm > $BTOR.mlir.opt ; \
+        --convert-vector-to-llvm \
+        --resolve-casts > $BTOR.mlir.opt ; \
 echo "$BTOR2MLIR/bin/btor2mlir-translate --mlir-to-llvmir $BTOR.mlir.opt > $BTOR.mlir.opt.ll"; \
 $BTOR2MLIR/bin/btor2mlir-translate --mlir-to-llvmir $BTOR.mlir.opt > $BTOR.mlir.opt.ll ; \
 
