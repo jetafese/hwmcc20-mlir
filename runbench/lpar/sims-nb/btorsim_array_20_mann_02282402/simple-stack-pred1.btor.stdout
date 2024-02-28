@@ -1,0 +1,3 @@
+./btorsim_get_btor.sh /home/jetafese/hwmc20-mlir/btor2/array/2020/mann/simple-stack-pred1.btor
+timeout 1s /home/jetafese/btor2tools/build/bin/btorsim /home/jetafese/hwmc20-mlir/btor2/array/2020/mann/simple-stack-pred1.btor -r 999999 > /home/jetafese/hwmc20-mlir/btor2/array/2020/mann/simple-stack-pred1.btor.sim.txt
+CYCLES: 1

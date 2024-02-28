@@ -40,21 +40,21 @@ echo 'Used SVCOMP benchmarks from 20'"${SVCOMP_YEAR}"
 echo 'Results stored in '"${Output}"
 
 
-# echo python ${BRUNCH} \
-#        --outdir ${Output} \
-#        --outfile ${Output}.csv \
-#        --format ${FORMAT} \
-#        --njobs ${NJOBS} \
-#        `for i in $(cat $SET) ; do echo $DIR/$i ; done` \
-#        -- ulimit -t ${TIMEOUT} -v ${MEM} ; ./get_btor_seahorn.sh {f}
-
 python3 ${BRUNCH} \
        --outdir ${Output} \
        --outfile ${Output}.csv \
        --format ${FORMAT} \
        --njobs ${NJOBS} \
        $(for i in $(cat $SET) ; do echo $DIR/$i ; done) \
-       -- ./get_btor_seahorn.sh {f} ~/btor2mlir/build ~/seahorn/build/run/bin/
+       -- ./b2ir_sim.sh {f} ~/btor2mlir/build
+
+# python3 ${BRUNCH} \
+#        --outdir ${Output} \
+#        --outfile ${Output}.csv \
+#        --format ${FORMAT} \
+#        --njobs ${NJOBS} \
+#        $(for i in $(cat $SET) ; do echo $DIR/$i ; done) \
+#        -- ./get_btor_seahorn.sh {f} ~/btor2mlir/build ~/seahorn/build/run/bin/
 
 # python3 ${BRUNCH} \
 #        --outdir ${Output} \

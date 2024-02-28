@@ -1,0 +1,8 @@
+Converting array type to mem cell
+Converting array type to mem cell
+Converting array type to llvm struct: !llvm.struct<(ptr<i9>, ptr<i9>, i64, array<1 x i64>, array<1 x i64>)>
+%1439 = unrealized_conversion_cast %1438 : !llvm.struct<(ptr<i9>, ptr<i9>, i64, array<1 x i64>, array<1 x i64>)> to !btor.array<<8>, <9>>
+%1440 = unrealized_conversion_cast %1439 : !btor.array<<8>, <9>> to memref<256xi9>
+%1441 = unrealized_conversion_cast %1440 : memref<256xi9> to !llvm.struct<(ptr<i9>, ptr<i9>, i64, array<1 x i64>, array<1 x i64>)>
+warning: overriding the module target triple with x86_64-pc-linux-gnu [-Woverride-module]
+1 warning generated.

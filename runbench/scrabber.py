@@ -255,7 +255,7 @@ class LogScrabber(object):
 
         # assuming we have x cycles in cycle_time seconds, 
         # we compute the multiplier to be 1/cycle_time
-        c_time = 0.1
+        c_time = 1
         c_mult = 1/c_time
         print(c_mult)
         num_cycles_regex = r'^CYCLES: (?P<val>[0-9][0-9]*)$'

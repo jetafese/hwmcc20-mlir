@@ -1,0 +1,4 @@
+index,cycles
+arbitrated_fifos_n2d8w8.btor,1.0
+ridecore_array_unknown.btor,1.0
+ridecore_array_unsafe.btor,1.0

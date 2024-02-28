@@ -1,0 +1,4 @@
+base,Cpu,Mem,BMC,seahorn_total,Result
+simple-stack-pred1.btor,0.01,47,,,
+array_swap.btor,1.01,47,,,
+easy_zero_array.btor,1.01,47,,,

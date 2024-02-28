@@ -1,0 +1,4 @@
+base,Cpu,Mem,BMC,seahorn_total,Result
+arbitrated_fifos_n2d8w8.btor,0.01,47,,,
+ridecore_array_unknown.btor,0.07,58,,,
+ridecore_array_unsafe.btor,0.06,58,,,
