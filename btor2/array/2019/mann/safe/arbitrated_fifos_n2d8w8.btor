@@ -120,30 +120,30 @@
 119 or 1 117 118
 120 not 1 109
 121 or 1 119 120
-; constraint
+122 constraint 121
 123 not 1 23
 124 not 1 22
 125 or 1 123 124
 126 not 1 109
 127 or 1 125 126
-; constraint
+128 constraint 127
 129 not 1 77
 130 not 1 92
 131 or 1 129 130
 132 not 1 109
 133 or 1 131 132
-; constraint
+134 constraint 133
 135 not 1 82
 136 slice 1 6 1 1
 137 not 1 136
 138 or 1 135 137
 139 not 1 109
 140 or 1 138 139
-; constraint
+141 constraint 140
 142 eq 1 111 9
 143 not 1 109
 144 or 1 142 143
-; constraint
+145 constraint 144
 146 uext 1 110 0 af.arb.blk
 147 uext 1 2 0 af.arb.clk
 148 uext 11 55 0 af.arb.def_cnt[0]

@@ -253,14 +253,14 @@
 274 or 1 272 273
 275 not 1 69
 276 or 1 274 275
-; constraint
+277 constraint 276
 278 state 1
 279 init 1 278 69
 280 next 1 278 33
 281 neq 1 11 278
 282 not 1 69
 283 or 1 281 282
-; constraint
+284 constraint 283
 285 add 3 20 51
 286 sub 3 20 51
 287 state 1 instr_sub

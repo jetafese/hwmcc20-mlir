@@ -10,7 +10,7 @@
 9 eq 1 3 6
 10 not 1 4
 11 or 1 9 10
-; constraint
+12 constraint 11
 13 state 1 $techmap\checker_inst.$formal$VexRiscv-regch0-15.sv:219$16_CHECK
 14 state 1 $techmap\checker_inst.$formal$VexRiscv-regch0-15.sv:219$16_EN
 15 init 1 14 5
@@ -27,11 +27,11 @@
 27 init 1 26 5
 28 not 1 26
 29 or 1 25 28
-; constraint
+30 constraint 29
 31 state 1 $techmap\checker_inst.$formal$VexRiscv-regch0-15.sv:216$15_CHECK
 32 not 1 26
 33 or 1 31 32
-; constraint
+34 constraint 33
 35 sort bitvec 8
 36 const 35 00000000
 37 state 35 cycle_reg

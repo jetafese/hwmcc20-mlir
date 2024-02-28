@@ -2552,22 +2552,22 @@
 2848 and 1 2845 2847
 2850 not 1 9
 2851 or 1 219 2850
-; constraint
+2852 constraint 2851
 2853 neq 1 1918 256
 2854 not 1 2853
 2855 not 1 2854
 2856 or 1 2853 2855
-; constraint
+2857 constraint 2856
 2858 slice 102 1889 14 11
 2859 neq 1 2858 256
 2860 not 1 2859
 2861 not 1 2860
 2862 or 1 2859 2861
-; constraint
+2863 constraint 2862
 2864 not 1 8
 2865 not 1 8
 2866 or 1 2864 2865
-; constraint
+2867 constraint 2866
 2868 state 1 $verific$n4512$613
 2869 and 1 2481 2868
 2870 state 1 $techmap\instruction_decoder.$verific$i1371$idecode.v:1802$11887
@@ -2576,7 +2576,7 @@
 2873 not 1 2872
 2874 not 1 2873
 2875 or 1 2872 2874
-; constraint
+2876 constraint 2875
 2877 state 1 $verific$n3676$493
 2878 and 1 2481 2877
 2879 state 1 $verific$n4503$608
@@ -2586,7 +2586,7 @@
 2883 not 1 2882
 2884 not 1 2883
 2885 or 1 2882 2884
-; constraint
+2886 constraint 2885
 2887 slice 226 608 1 0
 2888 redor 1 2887
 2889 not 1 2888
@@ -2595,7 +2595,7 @@
 2892 not 1 2891
 2893 not 1 2892
 2894 or 1 2891 2893
-; constraint
+2895 constraint 2894
 2896 state 1 $verific$i1256$zipcpu.v:3002$4189
 2897 xnor 1 8 2896
 2898 xnor 4 5 607
@@ -2677,14 +2677,14 @@
 2974 not 1 2973
 2975 not 1 2974
 2976 or 1 2973 2975
-; constraint
+2977 constraint 2976
 2978 state 1 $verific$n4439$595
 2979 and 1 2481 2978
 2980 ite 1 2979 9 52
 2981 not 1 2980
 2982 not 1 2981
 2983 or 1 2980 2982
-; constraint
+2984 constraint 2983
 2985 not 1 2
 2986 state 1 r_halted
 2987 not 1 2986
@@ -2693,46 +2693,46 @@
 2990 not 1 2989
 2991 not 1 2990
 2992 or 1 2989 2991
-; constraint
+2993 constraint 2992
 2994 not 1 2971
 2995 and 1 2970 2994
 2996 ite 1 2995 9 52
 2997 not 1 2996
 2998 not 1 2997
 2999 or 1 2996 2998
-; constraint
+3000 constraint 2999
 3001 ite 1 8 9 52
 3002 not 1 3001
 3003 not 1 3002
 3004 or 1 3001 3003
-; constraint
+3005 constraint 3004
 3006 or 1 2985 2986
 3007 not 1 3006
 3008 not 1 3007
 3009 or 1 3006 3008
-; constraint
+3010 constraint 3009
 3011 or 1 2864 2986
 3012 not 1 3011
 3013 not 1 3012
 3014 or 1 3011 3013
-; constraint
+3015 constraint 3014
 3016 not 1 14
 3017 or 1 3016 2481
 3018 not 1 3017
 3019 not 1 3018
 3020 or 1 3017 3019
-; constraint
+3021 constraint 3020
 3022 not 1 12
 3023 or 1 3022 2481
 3024 not 1 3023
 3025 not 1 3024
 3026 or 1 3023 3025
-; constraint
+3027 constraint 3026
 3028 or 1 11 2481
 3029 not 1 3028
 3030 not 1 3029
 3031 or 1 3028 3030
-; constraint
+3032 constraint 3031
 3033 state 1 $techmap\DIVIDE.thedivide.$auto$verificsva.cc:1762:import$14680
 3034 init 1 3033 16
 3035 state 1 $techmap\DIVIDE.thedivide.$auto$verificsva.cc:1763:import$14681
@@ -2769,7 +2769,7 @@
 3072 not 1 3071
 3073 not 1 3072
 3074 or 1 3071 3073
-; constraint
+3075 constraint 3074
 3076 state 1 $techmap\DIVIDE.thedivide.$verific$n133$14542
 3077 not 1 3076
 3078 and 1 2481 3077
@@ -2780,7 +2780,7 @@
 3083 not 1 3082
 3084 not 1 3083
 3085 or 1 3082 3084
-; constraint
+3086 constraint 3085
 3087 slice 1 320 1 1
 3088 slice 1 324 31 31
 3089 xor 1 3087 3088
@@ -2789,7 +2789,7 @@
 3092 not 1 3091
 3093 not 1 3092
 3094 or 1 3091 3093
-; constraint
+3095 constraint 3094
 3096 slice 1 330 2 2
 3097 xor 1 3096 326
 3098 not 1 3097
@@ -2797,19 +2797,19 @@
 3100 not 1 3099
 3101 not 1 3100
 3102 or 1 3099 3101
-; constraint
+3103 constraint 3102
 3104 state 1 $techmap\DIVIDE.thedivide.$verific$n158$14552
 3105 and 1 2481 3104
 3106 ite 1 3105 2377 52
 3107 not 1 3106
 3108 not 1 3107
 3109 or 1 3106 3108
-; constraint
+3110 constraint 3109
 3111 ite 1 191 241 52
 3112 not 1 3111
 3113 not 1 3112
 3114 or 1 3111 3113
-; constraint
+3115 constraint 3114
 3116 state 1 $techmap\DIVIDE.thedivide.$verific$n116$14534
 3117 not 1 3116
 3118 and 1 2481 3117
@@ -2819,20 +2819,20 @@
 3122 not 1 3121
 3123 not 1 3122
 3124 or 1 3121 3123
-; constraint
+3125 constraint 3124
 3126 state 170
 3127 uext 170 230 4
 3128 ult 1 3126 3127
 3129 not 1 3128
 3130 not 1 3129
 3131 or 1 3128 3130
-; constraint
+3132 constraint 3131
 3133 uext 170 52 5
 3134 ult 1 3133 3126
 3135 not 1 3134
 3136 not 1 3135
 3137 or 1 3134 3136
-; constraint
+3138 constraint 3137
 3139 state 226 MEM_DCACHE.docache.state
 3140 init 226 3139 227
 3141 neq 1 3139 230
@@ -4194,7 +4194,7 @@
 4641 not 1 4640
 4642 not 1 4641
 4643 or 1 4640 4642
-; constraint
+4644 constraint 4643
 4645 slice 1 2017 31 31
 4646 slice 1 2017 30 30
 4647 concat 226 4646 4645
@@ -4218,10 +4218,10 @@
 4665 not 1 4664
 4666 not 1 4665
 4667 or 1 4664 4666
-; constraint
+4668 constraint 4667
 4669 not 1 16
 4670 or 1 52 4669
-; constraint
+4671 constraint 4670
 4672 state 1 $techmap\PRIORITY_DATA.pformem.$auto$verificsva.cc:1762:import$21114
 4673 init 1 4672 16
 4674 state 1 $techmap\PRIORITY_DATA.pformem.$auto$verificsva.cc:1763:import$21115
@@ -4385,7 +4385,7 @@
 4857 not 1 4856
 4858 not 1 4857
 4859 or 1 4856 4858
-; constraint
+4860 constraint 4859
 4861 and 1 488 12
 4862 not 1 4861
 4863 or 1 4862 4845
@@ -4393,13 +4393,13 @@
 4865 not 1 4864
 4866 not 1 4865
 4867 or 1 4864 4866
-; constraint
+4868 constraint 4867
 4869 const 461 11111111
 4870 ult 1 4852 4869
 4871 not 1 4870
 4872 not 1 4871
 4873 or 1 4870 4872
-; constraint
+4874 constraint 4873
 4875 state 226 PRIORITY_DATA.pformem.f_wbm_a.MXWAIT.f_ackwait_count
 4876 init 226 4875 227
 4877 slice 1 4875 1 1
@@ -4415,7 +4415,7 @@
 4887 not 1 4886
 4888 not 1 4887
 4889 or 1 4886 4888
-; constraint
+4890 constraint 4889
 4891 state 226 PRIORITY_DATA.pformem.f_wbm_a.MXSTALL.f_stall_count
 4892 init 226 4891 227
 4893 slice 1 4891 1 1
@@ -4424,12 +4424,12 @@
 4896 not 1 4895
 4897 not 1 4896
 4898 or 1 4895 4897
-; constraint
+4899 constraint 4898
 4900 or 1 4862 4844
 4901 not 1 4900
 4902 not 1 4901
 4903 or 1 4900 4902
-; constraint
+4904 constraint 4903
 4905 state 1 $techmap\MEM_DCACHE.docache.$verific$n1382$15049
 4906 not 1 4905
 4907 and 1 2481 4906
@@ -4447,12 +4447,12 @@
 4919 not 1 4918
 4920 not 1 4919
 4921 or 1 4918 4920
-; constraint
+4922 constraint 4921
 4923 ite 1 4917 4862 52
 4924 not 1 4923
 4925 not 1 4924
 4926 or 1 4923 4925
-; constraint
+4927 constraint 4926
 4928 not 1 4908
 4929 and 1 2481 4928
 4930 and 1 4929 4138
@@ -4460,24 +4460,24 @@
 4932 not 1 4931
 4933 not 1 4932
 4934 or 1 4931 4933
-; constraint
+4935 constraint 4934
 4936 ite 1 4930 4862 52
 4937 not 1 4936
 4938 not 1 4937
 4939 or 1 4936 4938
-; constraint
+4940 constraint 4939
 4941 not 1 2481
 4942 or 1 4941 4905
 4943 ite 1 4942 4844 52
 4944 not 1 4943
 4945 not 1 4944
 4946 or 1 4943 4945
-; constraint
+4947 constraint 4946
 4948 ite 1 4942 4862 52
 4949 not 1 4948
 4950 not 1 4949
 4951 or 1 4948 4950
-; constraint
+4952 constraint 4951
 4953 state 1 $techmap\PRIORITY_DATA.pformem.f_wbm_b.$auto$verificsva.cc:1762:import$21685
 4954 init 1 4953 16
 4955 state 1 $techmap\PRIORITY_DATA.pformem.f_wbm_b.$auto$verificsva.cc:1763:import$21686
@@ -4565,7 +4565,7 @@
 5050 not 1 5049
 5051 not 1 5050
 5052 or 1 5049 5051
-; constraint
+5053 constraint 5052
 5054 and 1 468 12
 5055 not 1 5054
 5056 or 1 5055 5038
@@ -4573,12 +4573,12 @@
 5058 not 1 5057
 5059 not 1 5058
 5060 or 1 5057 5059
-; constraint
+5061 constraint 5060
 5062 ult 1 5045 4869
 5063 not 1 5062
 5064 not 1 5063
 5065 or 1 5062 5064
-; constraint
+5066 constraint 5065
 5067 state 226 PRIORITY_DATA.pformem.f_wbm_b.MXWAIT.f_ackwait_count
 5068 init 226 5067 227
 5069 slice 1 5067 1 1
@@ -4594,7 +4594,7 @@
 5079 not 1 5078
 5080 not 1 5079
 5081 or 1 5078 5080
-; constraint
+5082 constraint 5081
 5083 state 226 PRIORITY_DATA.pformem.f_wbm_b.MXSTALL.f_stall_count
 5084 init 226 5083 227
 5085 slice 1 5083 1 1
@@ -4603,12 +4603,12 @@
 5088 not 1 5087
 5089 not 1 5088
 5090 or 1 5087 5089
-; constraint
+5091 constraint 5090
 5092 or 1 5055 5037
 5093 not 1 5092
 5094 not 1 5093
 5095 or 1 5092 5094
-; constraint
+5096 constraint 5095
 5097 state 1 $techmap\MEM_DCACHE.docache.$verific$i1411$dcache.v:1204$17285
 5098 and 1 4907 5097
 5099 and 1 5098 4132
@@ -4623,12 +4623,12 @@
 5108 not 1 5107
 5109 not 1 5108
 5110 or 1 5107 5109
-; constraint
+5111 constraint 5110
 5112 ite 1 5106 5055 52
 5113 not 1 5112
 5114 not 1 5113
 5115 or 1 5112 5114
-; constraint
+5116 constraint 5115
 5117 not 1 5097
 5118 and 1 2481 5117
 5119 and 1 5118 4132
@@ -4636,22 +4636,22 @@
 5121 not 1 5120
 5122 not 1 5121
 5123 or 1 5120 5122
-; constraint
+5124 constraint 5123
 5125 ite 1 5119 5055 52
 5126 not 1 5125
 5127 not 1 5126
 5128 or 1 5125 5127
-; constraint
+5129 constraint 5128
 5130 ite 1 4942 5037 52
 5131 not 1 5130
 5132 not 1 5131
 5133 or 1 5130 5132
-; constraint
+5134 constraint 5133
 5135 ite 1 4942 5055 52
 5136 not 1 5135
 5137 not 1 5136
 5138 or 1 5135 5137
-; constraint
+5139 constraint 5138
 5140 state 1 $techmap\doalu.$auto$verificsva.cc:1762:import$13976
 5141 init 1 5140 16
 5142 state 1 $techmap\doalu.$auto$verificsva.cc:1763:import$13977
@@ -4766,13 +4766,13 @@
 5269 not 1 5268
 5270 not 1 5269
 5271 or 1 5268 5270
-; constraint
+5272 constraint 5271
 5273 uext 97 230 1
 5274 ult 1 5266 5273
 5275 not 1 5274
 5276 not 1 5275
 5277 or 1 5274 5276
-; constraint
+5278 constraint 5277
 5279 slice 97 2180 2 0
 5280 uext 97 352 1
 5281 eq 1 5279 5280
@@ -5807,7 +5807,7 @@
 6429 not 1 6428
 6430 not 1 6429
 6431 or 1 6428 6430
-; constraint
+6432 constraint 6431
 6433 xnor 1 6426 6423
 6434 state 1 $techmap\pf.$verific$n454$9760
 6435 not 1 6434
@@ -5824,13 +5824,13 @@
 6446 not 1 6445
 6447 not 1 6446
 6448 or 1 6445 6447
-; constraint
+6449 constraint 6448
 6450 xnor 1 2301 6440
 6451 ite 1 6444 6450 52
 6452 not 1 6451
 6453 not 1 6452
 6454 or 1 6451 6453
-; constraint
+6455 constraint 6454
 6456 state 4 $techmap\instruction_decoder.$verific$n1217$10940
 6457 xnor 4 5742 6456
 6458 slice 1 6457 31 31
@@ -5901,7 +5901,7 @@
 6523 not 1 6522
 6524 not 1 6523
 6525 or 1 6522 6524
-; constraint
+6526 constraint 6525
 6527 state 2005
 6528 next 2005 6527 6527
 6529 state 2005 pf.r_pc
@@ -5979,7 +5979,7 @@
 6601 not 1 6600
 6602 not 1 6601
 6603 or 1 6600 6602
-; constraint
+6604 constraint 6603
 6605 const 4 00000000000100000000000000000000
 6606 state 4 pf_pc
 6607 init 4 6606 6605
@@ -5991,7 +5991,7 @@
 6613 not 1 6612
 6614 not 1 6613
 6615 or 1 6612 6614
-; constraint
+6616 constraint 6615
 6617 concat 4 6530 227
 6618 neq 1 6617 6531
 6619 and 1 2481 6440
@@ -6001,14 +6001,14 @@
 6623 not 1 6622
 6624 not 1 6623
 6625 or 1 6622 6624
-; constraint
+6626 constraint 6625
 6627 uext 170 16 5
 6628 state 170
 6629 ult 1 6627 6628
 6630 not 1 6629
 6631 not 1 6630
 6632 or 1 6629 6631
-; constraint
+6633 constraint 6632
 6634 state 1 $techmap\pf.$auto$verificsva.cc:1762:import$9943
 6635 init 1 6634 16
 6636 state 1 $techmap\pf.$auto$verificsva.cc:1763:import$9944
@@ -6029,7 +6029,7 @@
 6654 not 1 6653
 6655 not 1 6654
 6656 or 1 6653 6655
-; constraint
+6657 constraint 6656
 6658 uext 1 191 0 DIVIDE.thedivide.any_err
 6659 uext 102 320 0 DIVIDE.thedivide.any_flags
 6660 uext 4 324 0 DIVIDE.thedivide.any_quotient
