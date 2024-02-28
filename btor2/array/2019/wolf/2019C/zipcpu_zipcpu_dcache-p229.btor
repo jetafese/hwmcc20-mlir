@@ -950,7 +950,7 @@
 1051 state 1 $auto$verificsva.cc:1763:import$7381
 1052 init 1 1051 16
 1053 not 1 1049
-1054 and 1 1051 1053
+1054 zero 1
 1055 bad 1054
 1056 and 1 60 397
 1057 and 1 208 213

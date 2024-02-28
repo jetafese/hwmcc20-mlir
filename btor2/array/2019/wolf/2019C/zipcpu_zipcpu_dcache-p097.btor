@@ -4686,7 +4686,7 @@
 5177 state 1 $techmap\doalu.$auto$verificsva.cc:1763:import$14032
 5178 init 1 5177 16
 5179 not 1 5175
-5180 and 1 5177 5179
+5180 zero 1
 5181 bad 5180
 5182 state 1 $techmap\doalu.$auto$verificsva.cc:1762:import$14042
 5183 init 1 5182 16

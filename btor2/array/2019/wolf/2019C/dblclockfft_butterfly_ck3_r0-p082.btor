@@ -74,7 +74,7 @@
 77 eq 1 73 76
 78 ite 1 26 77 72
 79 not 1 78
-80 and 1 26 79
+80 zero 1
 81 bad 80
 82 state 1
 83 state 42 CKPCE_THREE.f_rp2three_id

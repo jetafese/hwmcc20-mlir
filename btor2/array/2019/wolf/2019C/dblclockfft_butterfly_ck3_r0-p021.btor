@@ -207,7 +207,7 @@
 239 state 1 $formal$butterfly.v:994$487_EN
 240 init 1 239 93
 241 not 1 238
-242 and 1 239 241
+242 zero 1
 243 bad 242
 244 state 1 $formal$butterfly.v:996$488_CHECK
 245 state 1 $formal$butterfly.v:996$488_EN

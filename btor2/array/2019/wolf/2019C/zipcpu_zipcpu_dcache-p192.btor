@@ -1335,7 +1335,7 @@
 1476 state 1 $auto$verificsva.cc:1763:import$7761
 1477 init 1 1476 16
 1478 not 1 1474
-1479 and 1 1476 1478
+1479 zero 1
 1480 bad 1479
 1481 state 1 $auto$verificsva.cc:1762:import$7771
 1482 init 1 1481 16

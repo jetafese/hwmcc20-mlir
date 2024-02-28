@@ -936,7 +936,7 @@
 1035 state 1 $auto$verificsva.cc:1763:import$7334
 1036 init 1 1035 16
 1037 not 1 1033
-1038 and 1 1035 1037
+1038 zero 1
 1039 bad 1038
 1040 state 1 $auto$verificsva.cc:1762:import$7344
 1041 init 1 1040 16

@@ -534,7 +534,7 @@
 630 state 1 $techmap\CKPCE_THREE.mpy.$formal$longbimpy.v:338$1014_EN
 631 init 1 630 93
 632 not 1 629
-633 and 1 630 632
+633 zero 1
 634 bad 633
 635 state 1 $techmap\CKPCE_THREE.mpy.$formal$longbimpy.v:340$1015_CHECK
 636 not 1 635

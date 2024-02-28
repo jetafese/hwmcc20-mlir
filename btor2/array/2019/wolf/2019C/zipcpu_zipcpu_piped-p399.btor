@@ -2812,7 +2812,7 @@
 3112 or 1 3109 3111
 3113 not 1 3112
 3114 not 1 3112
-3115 and 1 3113 3114
+3115 zero 1
 3116 bad 3115
 3117 state 1 $techmap\NO_CACHE.MEM.domem.$auto$verificsva.cc:1762:import$15651
 3118 init 1 3117 16

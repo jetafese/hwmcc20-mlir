@@ -684,7 +684,7 @@
 802 redor 1 801
 803 not 1 802
 804 not 1 803
-805 and 1 92 804
+805 zero 1
 806 bad 805
 807 state 772 CKPCE_THREE.mpy.acc[4]
 808 init 772 807 773

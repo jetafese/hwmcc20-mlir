@@ -110,7 +110,7 @@
 120 state 1 $formal$butterfly.v:907$437_EN
 121 init 1 120 94
 122 not 1 119
-123 and 1 120 122
+123 zero 1
 124 bad 123
 125 state 1 $formal$butterfly.v:908$438_CHECK
 126 not 1 125

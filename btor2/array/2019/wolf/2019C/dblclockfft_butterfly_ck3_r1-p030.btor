@@ -561,7 +561,7 @@
 662 redor 1 661
 663 not 1 662
 664 not 1 663
-665 and 1 92 664
+665 zero 1
 666 bad 665
 667 state 42 CKPCE_THREE.mpy.f_past_a[3]
 668 init 42 667 641

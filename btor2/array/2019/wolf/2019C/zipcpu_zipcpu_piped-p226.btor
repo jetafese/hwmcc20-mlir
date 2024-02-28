@@ -526,7 +526,7 @@
 560 state 1 $auto$verificsva.cc:1763:import$6521
 561 init 1 560 16
 562 not 1 558
-563 and 1 560 562
+563 zero 1
 564 bad 563
 565 state 1 $auto$verificsva.cc:1762:import$6531
 566 init 1 565 16

@@ -798,7 +798,7 @@
 876 state 1 $auto$verificsva.cc:1763:import$7093
 877 init 1 876 16
 878 not 1 874
-879 and 1 876 878
+879 zero 1
 880 bad 879
 881 state 1 $auto$verificsva.cc:1762:import$7114
 882 init 1 881 16

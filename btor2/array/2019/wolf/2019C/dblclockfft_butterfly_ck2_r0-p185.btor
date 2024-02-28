@@ -438,7 +438,7 @@
 513 and 1 488 512
 515 state 1 $techmap\CKPCE_TWO.mpy0.$formal$longbimpy.v:313$987_CHECK
 516 not 1 515
-517 and 1 494 516
+517 zero 1
 518 bad 517
 519 state 1 $techmap\CKPCE_TWO.mpy0.$formal$longbimpy.v:330$935_CHECK
 520 state 1 $techmap\CKPCE_TWO.mpy0.$formal$longbimpy.v:330$935_EN

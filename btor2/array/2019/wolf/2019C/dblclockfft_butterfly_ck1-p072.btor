@@ -332,7 +332,7 @@
 380 state 1 $techmap\p1.$formal$longbimpy.v:292$898_EN
 381 init 1 380 17
 382 not 1 379
-383 and 1 380 382
+383 zero 1
 384 bad 383
 385 state 1 $techmap\p1.$formal$longbimpy.v:292$901_CHECK
 386 state 1 $techmap\p1.$formal$longbimpy.v:292$901_EN

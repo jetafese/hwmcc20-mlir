@@ -502,7 +502,7 @@
 586 state 1 $techmap\p1.$formal$longbimpy.v:312$937_EN
 587 init 1 586 17
 588 not 1 585
-589 and 1 586 588
+589 zero 1
 590 bad 589
 591 state 1 $techmap\p1.$formal$longbimpy.v:312$942_CHECK
 592 state 1 $techmap\p1.$formal$longbimpy.v:312$942_EN

@@ -2016,7 +2016,7 @@
 2231 state 1 $auto$verificsva.cc:1763:import$8495
 2232 init 1 2231 16
 2233 not 1 2229
-2234 and 1 2231 2233
+2234 zero 1
 2235 bad 2234
 2236 state 1 $auto$verificsva.cc:1762:import$8505
 2237 init 1 2236 16

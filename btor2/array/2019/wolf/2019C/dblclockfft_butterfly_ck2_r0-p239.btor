@@ -896,7 +896,7 @@
 1053 state 1 $techmap\CKPCE_TWO.mpy1.$formal$longbimpy.v:292$961_EN
 1054 init 1 1053 94
 1055 not 1 1052
-1056 and 1 1053 1055
+1056 zero 1
 1057 bad 1056
 1058 state 1 $techmap\CKPCE_TWO.mpy1.$formal$longbimpy.v:293$953_CHECK
 1059 not 1 1058

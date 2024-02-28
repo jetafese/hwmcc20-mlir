@@ -48,7 +48,7 @@
 45 read 3 6 43
 46 read 3 41 43
 47 neq 1 45 46
-48 and 1 44 47
+48 zero 1
 49 next 5 41 41
 50 bad 48
 ; end of yosys output

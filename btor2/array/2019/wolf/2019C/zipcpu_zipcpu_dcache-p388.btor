@@ -1503,7 +1503,7 @@
 1672 state 1 $auto$verificsva.cc:1763:import$8080
 1673 init 1 1672 16
 1674 not 1 1670
-1675 and 1 1672 1674
+1675 zero 1
 1676 bad 1675
 1677 state 1 $auto$verificsva.cc:1762:import$8090
 1678 init 1 1677 16

@@ -180,7 +180,7 @@
 186 and 1 176 185
 188 state 1 $formal$picorv32-check.sv:2088$24_CHECK
 189 not 1 188
-190 and 1 176 189
+190 zero 1
 191 bad 190
 192 state 1 $formal$picorv32-check.sv:2091$25_CHECK
 193 state 1 $formal$picorv32-check.sv:2091$25_EN

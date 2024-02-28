@@ -402,7 +402,7 @@
 466 state 1 $techmap\p1.$formal$longbimpy.v:304$939_EN
 467 init 1 466 17
 468 not 1 465
-469 and 1 466 468
+469 zero 1
 470 bad 469
 471 state 1 $techmap\p1.$formal$longbimpy.v:306$910_CHECK
 472 state 1 $techmap\p1.$formal$longbimpy.v:306$910_EN

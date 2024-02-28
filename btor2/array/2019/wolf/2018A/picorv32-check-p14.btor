@@ -165,7 +165,7 @@
 166 and 1 163 165
 168 state 1 $formal$picorv32-check.sv:2081$19_CHECK
 169 not 1 168
-170 and 1 163 169
+170 zero 1
 171 bad 170
 172 state 1 $formal$picorv32-check.sv:2082$20_CHECK
 173 not 1 172

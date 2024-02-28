@@ -144,7 +144,7 @@
 158 state 1 $auto$verificsva.cc:1763:import$6309
 159 init 1 158 16
 160 not 1 156
-161 and 1 158 160
+161 zero 1
 162 bad 161
 163 sort bitvec 6
 164 const 163 000000

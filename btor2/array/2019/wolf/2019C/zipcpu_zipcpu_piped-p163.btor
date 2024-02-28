@@ -666,7 +666,7 @@
 722 state 1 $auto$verificsva.cc:1763:import$6774
 723 init 1 722 16
 724 not 1 720
-725 and 1 722 724
+725 zero 1
 726 bad 725
 727 state 1 $auto$verificsva.cc:1762:import$6784
 728 init 1 727 16

@@ -1527,7 +1527,7 @@
 1700 state 1 $auto$verificsva.cc:1763:import$8124
 1701 init 1 1700 16
 1702 not 1 1698
-1703 and 1 1700 1702
+1703 zero 1
 1704 bad 1703
 1705 state 1 $auto$verificsva.cc:1762:import$8134
 1706 init 1 1705 16

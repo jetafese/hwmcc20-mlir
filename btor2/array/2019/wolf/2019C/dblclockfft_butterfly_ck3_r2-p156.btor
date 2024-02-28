@@ -352,7 +352,7 @@
 407 and 1 392 406
 409 state 1 $techmap\CKPCE_THREE.mpy.$formal$longbimpy.v:293$1041_CHECK
 410 not 1 409
-411 and 1 392 410
+411 zero 1
 412 bad 411
 413 state 1 $techmap\CKPCE_THREE.mpy.$formal$longbimpy.v:293$1044_CHECK
 414 not 1 413

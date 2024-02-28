@@ -4894,7 +4894,7 @@
 5415 state 1 $techmap\instruction_decoder.$auto$verificsva.cc:1763:import$12394
 5416 init 1 5415 16
 5417 not 1 5413
-5418 and 1 5415 5417
+5418 zero 1
 5419 bad 5418
 5420 state 1 $techmap\instruction_decoder.$auto$verificsva.cc:1762:import$12404
 5421 init 1 5420 16

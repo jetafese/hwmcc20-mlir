@@ -144,7 +144,7 @@
 162 and 1 159 161
 164 state 1 $formal$butterfly.v:931$474_CHECK
 165 not 1 164
-166 and 1 159 165
+166 zero 1
 167 bad 166
 168 state 1 $formal$butterfly.v:936$475_CHECK
 169 state 1 $formal$butterfly.v:936$475_EN

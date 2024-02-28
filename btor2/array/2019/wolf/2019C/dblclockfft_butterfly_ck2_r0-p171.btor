@@ -591,7 +591,7 @@
 694 redor 1 693
 695 not 1 694
 696 not 1 695
-697 and 1 93 696
+697 zero 1
 698 bad 697
 699 state 12 CKPCE_TWO.mpy0.f_past_b[6]
 700 init 12 699 649

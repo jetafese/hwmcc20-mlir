@@ -4219,7 +4219,7 @@
 4673 state 1 $techmap\instruction_decoder.$auto$verificsva.cc:1763:import$12656
 4674 init 1 4673 16
 4675 not 1 4671
-4676 and 1 4673 4675
+4676 zero 1
 4677 bad 4676
 4678 not 1 2327
 4679 or 1 4678 1850

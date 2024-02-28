@@ -10,7 +10,7 @@
 9 state 1 uut.trap
 10 eq 1 8 9
 11 not 1 10
-12 and 1 7 11
+12 zero 1
 13 bad 12
 14 state 1 ref.mem_valid
 15 state 1 uut.mem_valid

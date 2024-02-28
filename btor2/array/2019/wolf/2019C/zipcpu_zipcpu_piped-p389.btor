@@ -4267,7 +4267,7 @@
 4729 state 1 $techmap\instruction_decoder.$auto$verificsva.cc:1763:import$12758
 4730 init 1 4729 16
 4731 not 1 4727
-4732 and 1 4729 4731
+4732 zero 1
 4733 bad 4732
 4734 state 1 $techmap\instruction_decoder.$auto$verificsva.cc:1762:import$12768
 4735 init 1 4734 16

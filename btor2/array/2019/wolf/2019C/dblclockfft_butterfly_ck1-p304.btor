@@ -361,7 +361,7 @@
 415 and 1 404 414
 417 state 1 $techmap\p1.$formal$longbimpy.v:293$902_CHECK
 418 not 1 417
-419 and 1 404 418
+419 zero 1
 420 bad 419
 421 state 1 $techmap\p1.$formal$longbimpy.v:293$905_CHECK
 422 not 1 421

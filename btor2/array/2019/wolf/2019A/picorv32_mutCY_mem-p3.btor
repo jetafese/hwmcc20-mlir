@@ -43,7 +43,7 @@
 47 and 1 14 46
 48 and 1 7 47
 49 not 1 45
-50 and 1 48 49
+50 zero 1
 51 bad 50
 52 slice 41 40 15 8
 53 slice 41 43 15 8

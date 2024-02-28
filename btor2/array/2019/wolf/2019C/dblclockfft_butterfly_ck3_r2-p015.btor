@@ -755,7 +755,7 @@
 886 redor 1 885
 887 not 1 886
 888 not 1 887
-889 and 1 92 888
+889 zero 1
 890 bad 889
 891 state 832 CKPCE_THREE.mpy.acc[7]
 892 init 832 891 833

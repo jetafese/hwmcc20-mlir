@@ -3940,7 +3940,7 @@
 4347 ite 1 4346 1848 52
 4348 not 1 4347
 4349 not 1 4347
-4350 and 1 4348 4349
+4350 zero 1
 4351 bad 4350
 4352 state 4 instruction_decoder.f_insn_word
 4353 slice 1 4352 31 31

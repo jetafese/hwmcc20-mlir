@@ -147,7 +147,7 @@
 156 state 1 $formal$zipcpu-zipmmu.sv:777$76_EN
 157 init 1 156 25
 158 not 1 155
-159 and 1 156 158
+159 zero 1
 160 bad 159
 161 uext 99 25 5
 162 ugt 1 102 161

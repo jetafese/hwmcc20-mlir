@@ -405,7 +405,7 @@
 426 state 1 $auto$verificsva.cc:1763:import$6412
 427 init 1 426 16
 428 not 1 424
-429 and 1 426 428
+429 zero 1
 430 bad 429
 431 and 1 418 411
 432 and 1 431 372

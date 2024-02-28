@@ -21,7 +21,7 @@
 22 eq 1 20 21
 23 and 1 7 14
 24 not 1 22
-25 and 1 23 24
+25 zero 1
 26 bad 25
 27 state 3 ref_uut.mem_addr_gold
 28 state 3 ref_uut.mem_addr_gate

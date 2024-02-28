@@ -3696,7 +3696,7 @@
 4083 state 1 $techmap\PRIORITY_DATA.pformem.f_wbm_b.$auto$verificsva.cc:1763:import$18650
 4084 init 1 4083 16
 4085 not 1 4081
-4086 and 1 4083 4085
+4086 zero 1
 4087 bad 4086
 4088 not 1 2998
 4089 and 1 2999 4088

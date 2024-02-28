@@ -16,7 +16,7 @@
 15 state 1 $formal$simple-stack-pred1.v:45$6_EN
 16 init 1 15 12
 17 not 1 13
-18 and 1 15 17
+18 zero 1
 19 bad 18 simple-stack-pred1.v:45.38-46.31
 20 sort bitvec 8
 21 const 20 11001000

@@ -3456,7 +3456,7 @@
 3820 state 1 $techmap\PRIORITY_DATA.pformem.f_wbm_a.$auto$verificsva.cc:1763:import$18537
 3821 init 1 3820 16
 3822 not 1 3818
-3823 and 1 3820 3822
+3823 zero 1
 3824 bad 3823
 3825 state 1 $techmap\PRIORITY_DATA.pformem.f_wbm_a.$auto$verificsva.cc:1762:import$18547
 3826 init 1 3825 16

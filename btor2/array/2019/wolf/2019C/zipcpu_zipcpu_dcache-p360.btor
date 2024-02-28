@@ -1287,7 +1287,7 @@
 1421 state 1 $auto$verificsva.cc:1763:import$7697
 1422 init 1 1421 16
 1423 not 1 1419
-1424 and 1 1421 1423
+1424 zero 1
 1425 bad 1424
 1426 state 6 op_Bid
 1427 init 6 1426 304

@@ -472,7 +472,7 @@
 556 state 1 $techmap\CKPCE_TWO.mpy0.$formal$longbimpy.v:349$942_EN
 557 init 1 556 94
 558 not 1 555
-559 and 1 556 558
+559 zero 1
 560 bad 559
 561 state 1 $techmap\CKPCE_TWO.mpy0.$formal$longbimpy.v:351$943_CHECK
 562 not 1 561

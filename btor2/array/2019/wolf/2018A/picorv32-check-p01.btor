@@ -237,7 +237,7 @@
 257 and 1 254 256
 259 state 1 $formal$picorv32-check.sv:614$14_CHECK
 260 not 1 259
-261 and 1 254 260
+261 zero 1
 262 bad 261
 263 state 81 last_mem_nowait
 264 slice 1 263 3 3

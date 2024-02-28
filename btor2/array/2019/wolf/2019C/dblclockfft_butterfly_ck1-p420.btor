@@ -1846,7 +1846,7 @@
 2181 state 1 $techmap\p3.$formal$longbimpy.v:292$907_EN
 2182 init 1 2181 17
 2183 not 1 2180
-2184 and 1 2181 2183
+2184 zero 1
 2185 bad 2184
 2186 state 1 $techmap\p3.$formal$longbimpy.v:293$893_CHECK
 2187 not 1 2186

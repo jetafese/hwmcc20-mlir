@@ -4022,7 +4022,7 @@
 4442 state 1 $techmap\instruction_decoder.$auto$verificsva.cc:1763:import$12314
 4443 init 1 4442 16
 4444 not 1 4440
-4445 and 1 4442 4444
+4445 zero 1
 4446 bad 4445
 4447 state 1 $techmap\instruction_decoder.$auto$verificsva.cc:1762:import$12324
 4448 init 1 4447 16

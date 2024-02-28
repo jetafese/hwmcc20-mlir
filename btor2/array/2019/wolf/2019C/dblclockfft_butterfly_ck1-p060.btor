@@ -722,7 +722,7 @@
 847 redor 1 846
 848 not 1 847
 849 not 1 848
-850 and 1 125 849
+850 zero 1
 851 bad 850
 852 state 5 p1.acc[1]
 853 init 5 852 842

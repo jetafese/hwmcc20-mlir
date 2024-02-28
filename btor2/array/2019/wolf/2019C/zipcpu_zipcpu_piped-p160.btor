@@ -3634,7 +3634,7 @@
 4010 state 1 $techmap\PRIORITY_DATA.pformem.f_wbm_b.$auto$verificsva.cc:1763:import$18537
 4011 init 1 4010 16
 4012 not 1 4008
-4013 and 1 4010 4012
+4013 zero 1
 4014 bad 4013
 4015 state 1 $techmap\PRIORITY_DATA.pformem.f_wbm_b.$auto$verificsva.cc:1762:import$18547
 4016 init 1 4015 16

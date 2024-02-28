@@ -1205,7 +1205,7 @@
 1327 state 1 $auto$verificsva.cc:1763:import$7530
 1328 init 1 1327 16
 1329 not 1 1325
-1330 and 1 1327 1329
+1330 zero 1
 1331 bad 1330
 1332 state 1 $auto$verificsva.cc:1762:import$7540
 1333 init 1 1332 16

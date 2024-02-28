@@ -417,7 +417,7 @@
 484 state 1 $techmap\p1.$formal$longbimpy.v:306$920_EN
 485 init 1 484 17
 486 not 1 483
-487 and 1 484 486
+487 zero 1
 488 bad 487
 489 state 1 $techmap\p1.$formal$longbimpy.v:306$925_CHECK
 490 state 1 $techmap\p1.$formal$longbimpy.v:306$925_EN

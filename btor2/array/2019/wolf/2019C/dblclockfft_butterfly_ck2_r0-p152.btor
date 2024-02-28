@@ -512,7 +512,7 @@
 604 redor 1 603
 605 not 1 604
 606 not 1 605
-607 and 1 93 606
+607 zero 1
 608 bad 607
 609 state 43 CKPCE_TWO.mpy0.f_past_a[2]
 610 init 43 609 591

@@ -1423,7 +1423,7 @@
 1579 state 1 $auto$verificsva.cc:1763:import$7901
 1580 init 1 1579 16
 1581 not 1 1577
-1582 and 1 1579 1581
+1582 zero 1
 1583 bad 1582
 1584 state 1 $auto$verificsva.cc:1762:import$7911
 1585 init 1 1584 16

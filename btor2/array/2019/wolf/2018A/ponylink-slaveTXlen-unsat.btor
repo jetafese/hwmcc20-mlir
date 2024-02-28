@@ -12,7 +12,7 @@
 11 init 1 10 9
 12 not 1 8
 13 and 1 10 12
-14 bad 13
+14 bad 9
 15 state 1 uut.pack_8bits.packer.queue_tvalid
 16 not 1 15
 17 sort bitvec 4

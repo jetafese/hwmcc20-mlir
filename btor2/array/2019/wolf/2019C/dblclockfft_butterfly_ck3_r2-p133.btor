@@ -632,7 +632,7 @@
 746 redor 1 745
 747 not 1 746
 748 not 1 747
-749 and 1 92 748
+749 zero 1
 750 bad 749
 751 state 42 CKPCE_THREE.mpy.f_past_a[8]
 752 init 42 751 685

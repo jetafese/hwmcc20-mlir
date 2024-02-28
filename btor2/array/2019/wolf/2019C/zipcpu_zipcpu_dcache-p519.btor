@@ -2845,7 +2845,7 @@
 3149 ite 1 3147 3146 52
 3150 not 1 3149
 3151 not 1 3149
-3152 and 1 3150 3151
+3152 zero 1
 3153 bad 3152
 3154 sort array 313 1996
 3155 state 3154 MEM_DCACHE.docache.c_vtags

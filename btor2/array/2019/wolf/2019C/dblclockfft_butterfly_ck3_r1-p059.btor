@@ -498,7 +498,7 @@
 586 state 1 $techmap\CKPCE_THREE.mpy.$formal$longbimpy.v:338$1000_EN
 587 init 1 586 93
 588 not 1 585
-589 and 1 586 588
+589 zero 1
 590 bad 589
 591 state 1 $techmap\CKPCE_THREE.mpy.$formal$longbimpy.v:340$1001_CHECK
 592 not 1 591

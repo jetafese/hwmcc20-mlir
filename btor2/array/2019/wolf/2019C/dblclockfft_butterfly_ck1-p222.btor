@@ -70,7 +70,7 @@
 71 eq 1 61 70
 72 ite 1 33 71 53
 73 not 1 72
-74 and 1 33 73
+74 zero 1
 75 bad 74
 76 state 1
 77 state 54 p2.f_past_a[9]

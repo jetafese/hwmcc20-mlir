@@ -490,7 +490,7 @@
 574 state 1 $techmap\CKPCE_THREE.mpy.$formal$longbimpy.v:312$1073_EN
 575 init 1 574 93
 576 not 1 573
-577 and 1 574 576
+577 zero 1
 578 bad 577
 579 state 1 $techmap\CKPCE_THREE.mpy.$formal$longbimpy.v:312$1078_CHECK
 580 state 1 $techmap\CKPCE_THREE.mpy.$formal$longbimpy.v:312$1078_EN

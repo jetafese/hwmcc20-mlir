@@ -1967,7 +1967,7 @@
 2175 ite 1 2166 2174 52
 2176 not 1 2175
 2177 not 1 2175
-2178 and 1 2176 2177
+2178 zero 1
 2179 bad 2178
 2180 state 102 instruction_decoder.o_op
 2181 slice 1 2180 0 0

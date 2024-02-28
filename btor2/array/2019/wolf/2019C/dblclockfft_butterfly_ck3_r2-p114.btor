@@ -320,7 +320,7 @@
 368 state 1 $techmap\CKPCE_THREE.mpy.$formal$longbimpy.v:292$1034_EN
 369 init 1 368 93
 370 not 1 367
-371 and 1 368 370
+371 zero 1
 372 bad 371
 373 state 1 $techmap\CKPCE_THREE.mpy.$formal$longbimpy.v:292$1037_CHECK
 374 state 1 $techmap\CKPCE_THREE.mpy.$formal$longbimpy.v:292$1037_EN

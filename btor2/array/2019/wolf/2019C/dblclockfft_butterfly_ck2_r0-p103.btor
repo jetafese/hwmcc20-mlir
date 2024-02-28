@@ -933,7 +933,7 @@
 1099 state 1 $techmap\CKPCE_TWO.mpy1.$formal$longbimpy.v:304$983_EN
 1100 init 1 1099 94
 1101 not 1 1098
-1102 and 1 1099 1101
+1102 zero 1
 1103 bad 1102
 1104 state 1 $techmap\CKPCE_TWO.mpy1.$formal$longbimpy.v:306$964_CHECK
 1105 state 1 $techmap\CKPCE_TWO.mpy1.$formal$longbimpy.v:306$964_EN

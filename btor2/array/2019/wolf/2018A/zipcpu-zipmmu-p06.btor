@@ -462,7 +462,7 @@
 511 state 1 $techmap\busslave.$formal$zipcpu-zipmmu.sv:1128$1790_EN
 512 init 1 511 25
 513 not 1 510
-514 and 1 511 513
+514 zero 1
 515 bad 514
 516 state 1 $techmap\busslave.$formal$zipcpu-zipmmu.sv:1147$1791_CHECK
 517 state 1 $techmap\busslave.$formal$zipcpu-zipmmu.sv:1147$1791_EN

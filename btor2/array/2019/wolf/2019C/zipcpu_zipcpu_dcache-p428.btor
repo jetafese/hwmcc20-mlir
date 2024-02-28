@@ -4262,7 +4262,7 @@
 4716 state 1 $techmap\PRIORITY_DATA.pformem.$auto$verificsva.cc:1763:import$21181
 4717 init 1 4716 16
 4718 not 1 4714
-4719 and 1 4716 4718
+4719 zero 1
 4720 bad 4719
 4721 state 1 $techmap\PRIORITY_DATA.pformem.$auto$verificsva.cc:1762:import$21191
 4722 init 1 4721 16

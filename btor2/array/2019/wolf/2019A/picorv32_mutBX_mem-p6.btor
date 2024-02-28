@@ -10,7 +10,7 @@
 9 state 1 ref_uut.trap_gate
 10 eq 1 8 9
 11 not 1 10
-12 and 1 7 11
+12 zero 1
 13 bad 12
 14 state 1 ref_uut.mem_valid_gold
 15 state 1 ref_uut.mem_valid_gate

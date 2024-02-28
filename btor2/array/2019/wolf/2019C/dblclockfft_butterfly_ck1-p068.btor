@@ -2051,7 +2051,7 @@
 2433 state 1 $techmap\p3.$formal$longbimpy.v:346$880_EN
 2434 init 1 2433 17
 2435 not 1 2432
-2436 and 1 2433 2435
+2436 zero 1
 2437 bad 2436
 2438 state 1 $techmap\p3.$formal$longbimpy.v:347$881_CHECK
 2439 not 1 2438

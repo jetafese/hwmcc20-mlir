@@ -596,7 +596,7 @@
 699 redor 1 698
 700 not 1 699
 701 not 1 700
-702 and 1 92 701
+702 zero 1
 703 bad 702
 704 state 12 CKPCE_THREE.mpy.f_past_b[6]
 705 init 12 704 655

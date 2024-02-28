@@ -403,7 +403,7 @@
 470 state 1 $techmap\CKPCE_TWO.mpy0.$formal$longbimpy.v:312$966_EN
 471 init 1 470 94
 472 not 1 469
-473 and 1 470 472
+473 zero 1
 474 bad 473
 475 state 1 $techmap\CKPCE_TWO.mpy0.$formal$longbimpy.v:312$971_CHECK
 476 state 1 $techmap\CKPCE_TWO.mpy0.$formal$longbimpy.v:312$971_EN

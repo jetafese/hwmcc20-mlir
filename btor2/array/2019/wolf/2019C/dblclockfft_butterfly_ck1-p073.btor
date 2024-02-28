@@ -2038,7 +2038,7 @@
 2416 and 1 2413 2415
 2418 state 1 $techmap\p3.$formal$longbimpy.v:336$877_CHECK
 2419 not 1 2418
-2420 and 1 2413 2419
+2420 zero 1
 2421 bad 2420
 2422 state 1 $techmap\p3.$formal$longbimpy.v:338$878_CHECK
 2423 state 1 $techmap\p3.$formal$longbimpy.v:338$878_EN

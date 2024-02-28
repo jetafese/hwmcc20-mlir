@@ -1884,7 +1884,7 @@
 2229 state 1 $techmap\p3.$formal$longbimpy.v:304$924_EN
 2230 init 1 2229 17
 2231 not 1 2228
-2232 and 1 2229 2231
+2232 zero 1
 2233 bad 2232
 2234 state 1 $techmap\p3.$formal$longbimpy.v:304$929_CHECK
 2235 state 1 $techmap\p3.$formal$longbimpy.v:304$929_EN

@@ -2025,7 +2025,7 @@
 2400 and 1 2367 2399
 2402 state 1 $techmap\p3.$formal$longbimpy.v:313$943_CHECK
 2403 not 1 2402
-2404 and 1 2373 2403
+2404 zero 1
 2405 bad 2404
 2406 state 1 $techmap\p3.$formal$longbimpy.v:330$875_CHECK
 2407 state 1 $techmap\p3.$formal$longbimpy.v:330$875_EN

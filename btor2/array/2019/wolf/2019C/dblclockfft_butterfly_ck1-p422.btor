@@ -1855,7 +1855,7 @@
 2192 and 1 404 2191
 2194 state 1 $techmap\p3.$formal$longbimpy.v:293$899_CHECK
 2195 not 1 2194
-2196 and 1 404 2195
+2196 zero 1
 2197 bad 2196
 2198 state 1 $techmap\p3.$formal$longbimpy.v:293$902_CHECK
 2199 not 1 2198

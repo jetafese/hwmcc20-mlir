@@ -811,7 +811,7 @@
 950 redor 1 949
 951 not 1 950
 952 not 1 951
-953 and 1 92 952
+953 zero 1
 954 bad 953
 955 state 42 CKPCE_THREE.mpy.u_a
 956 init 42 955 685

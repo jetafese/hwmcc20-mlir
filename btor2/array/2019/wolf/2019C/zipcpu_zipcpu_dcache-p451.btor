@@ -4322,7 +4322,7 @@
 4786 state 1 $techmap\PRIORITY_DATA.pformem.f_wbm_a.$auto$verificsva.cc:1763:import$21719
 4787 init 1 4786 16
 4788 not 1 4784
-4789 and 1 4786 4788
+4789 zero 1
 4790 bad 4789
 4791 state 1 $techmap\PRIORITY_DATA.pformem.f_wbm_a.$auto$verificsva.cc:1762:import$21729
 4792 init 1 4791 16

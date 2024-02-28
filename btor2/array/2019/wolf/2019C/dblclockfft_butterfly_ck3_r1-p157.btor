@@ -514,7 +514,7 @@
 606 state 1 $techmap\CKPCE_THREE.mpy.$formal$longbimpy.v:349$1004_EN
 607 init 1 606 93
 608 not 1 605
-609 and 1 606 608
+609 zero 1
 610 bad 609
 611 state 1 $techmap\CKPCE_THREE.mpy.$formal$longbimpy.v:351$1005_CHECK
 612 not 1 611

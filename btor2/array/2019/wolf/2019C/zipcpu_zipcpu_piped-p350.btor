@@ -3898,7 +3898,7 @@
 4302 state 1 $techmap\doalu.$auto$verificsva.cc:1763:import$14106
 4303 init 1 4302 16
 4304 not 1 4300
-4305 and 1 4302 4304
+4305 zero 1
 4306 bad 4305
 4307 state 1 $techmap\doalu.$auto$verificsva.cc:1762:import$14116
 4308 init 1 4307 16

@@ -3570,7 +3570,7 @@
 3929 state 1 $techmap\MEM_DCACHE.docache.$auto$verificsva.cc:1763:import$18610
 3930 init 1 3929 16
 3931 not 1 3927
-3932 and 1 3929 3931
+3932 zero 1
 3933 bad 3932
 3934 state 1 $techmap\MEM_DCACHE.docache.$auto$verificsva.cc:1762:import$18620
 3935 init 1 3934 16

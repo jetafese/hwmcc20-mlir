@@ -181,7 +181,7 @@
 196 ite 1 195 168 52
 197 not 1 196
 198 not 1 196
-199 and 1 197 198
+199 zero 1
 200 bad 199
 201 state 1 NO_CACHE.MEM.domem.cyc
 202 init 1 201 16

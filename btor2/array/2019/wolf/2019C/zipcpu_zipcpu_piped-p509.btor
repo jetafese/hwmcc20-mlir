@@ -3428,7 +3428,7 @@
 3787 state 1 $techmap\PRIORITY_DATA.pformem.$auto$verificsva.cc:1763:import$18012
 3788 init 1 3787 16
 3789 not 1 3785
-3790 and 1 3787 3789
+3790 zero 1
 3791 bad 3790
 3792 state 1 $techmap\PRIORITY_DATA.pformem.$auto$verificsva.cc:1762:import$18022
 3793 init 1 3792 16

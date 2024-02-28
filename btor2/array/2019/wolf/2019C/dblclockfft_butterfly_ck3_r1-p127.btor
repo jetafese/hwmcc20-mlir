@@ -422,7 +422,7 @@
 492 state 1 $techmap\CKPCE_THREE.mpy.$formal$longbimpy.v:308$1045_EN
 493 init 1 492 93
 494 not 1 491
-495 and 1 492 494
+495 zero 1
 496 bad 495
 497 state 1 $techmap\CKPCE_THREE.mpy.$formal$longbimpy.v:308$1050_CHECK
 498 state 1 $techmap\CKPCE_THREE.mpy.$formal$longbimpy.v:308$1050_EN

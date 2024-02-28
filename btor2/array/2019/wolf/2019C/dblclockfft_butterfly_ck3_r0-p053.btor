@@ -120,7 +120,7 @@
 132 and 1 129 131
 134 state 1 $formal$butterfly.v:913$468_CHECK
 135 not 1 134
-136 and 1 129 135
+136 zero 1
 137 bad 136
 138 state 1 $formal$butterfly.v:918$469_CHECK
 139 state 1 $formal$butterfly.v:918$469_EN

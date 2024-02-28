@@ -144,7 +144,7 @@
 154 and 1 151 153
 156 state 1 $formal$butterfly.v:908$390_CHECK
 157 not 1 156
-158 and 1 151 157
+158 zero 1
 159 bad 158
 160 state 1 $formal$butterfly.v:912$391_CHECK
 161 state 1 $formal$butterfly.v:912$391_EN

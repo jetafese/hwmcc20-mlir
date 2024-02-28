@@ -142,7 +142,7 @@
 160 state 1 $formal$butterfly.v:930$445_EN
 161 init 1 160 94
 162 not 1 159
-163 and 1 160 162
+163 zero 1
 164 bad 163
 165 state 1 $formal$butterfly.v:931$446_CHECK
 166 not 1 165

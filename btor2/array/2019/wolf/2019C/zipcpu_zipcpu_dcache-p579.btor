@@ -692,7 +692,7 @@
 752 state 1 $auto$verificsva.cc:1763:import$6843
 753 init 1 752 16
 754 not 1 750
-755 and 1 752 754
+755 zero 1
 756 bad 755
 757 state 1 $auto$verificsva.cc:1762:import$6853
 758 init 1 757 16

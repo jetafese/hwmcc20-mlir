@@ -117,7 +117,7 @@
 129 state 1 $formal$butterfly.v:912$467_EN
 130 init 1 129 93
 131 not 1 128
-132 and 1 129 131
+132 zero 1
 133 bad 132
 134 state 1 $formal$butterfly.v:913$468_CHECK
 135 not 1 134

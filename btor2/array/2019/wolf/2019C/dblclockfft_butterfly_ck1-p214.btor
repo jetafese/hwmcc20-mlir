@@ -377,7 +377,7 @@
 436 state 1 $techmap\p1.$formal$longbimpy.v:304$914_EN
 437 init 1 436 17
 438 not 1 435
-439 and 1 436 438
+439 zero 1
 440 bad 439
 441 state 1 $techmap\p1.$formal$longbimpy.v:304$919_CHECK
 442 state 1 $techmap\p1.$formal$longbimpy.v:304$919_EN

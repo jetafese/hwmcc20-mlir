@@ -485,7 +485,7 @@
 539 and 1 536 538
 541 state 1 $techmap\busslave.$formal$zipcpu-zipmmu.sv:1206$1789_CHECK
 542 not 1 541
-543 and 1 536 542
+543 zero 1
 544 bad 543
 545 not 1 291
 546 or 1 310 545

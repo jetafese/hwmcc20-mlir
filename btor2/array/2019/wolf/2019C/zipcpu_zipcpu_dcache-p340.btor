@@ -3304,7 +3304,7 @@
 3622 state 1 $techmap\MEM_DCACHE.docache.$auto$verificsva.cc:1763:import$18180
 3623 init 1 3622 16
 3624 not 1 3620
-3625 and 1 3622 3624
+3625 zero 1
 3626 bad 3625
 3627 state 1 $techmap\MEM_DCACHE.docache.$auto$verificsva.cc:1762:import$18190
 3628 init 1 3627 16

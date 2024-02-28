@@ -750,7 +750,7 @@
 820 state 1 $auto$verificsva.cc:1763:import$6939
 821 init 1 820 16
 822 not 1 818
-823 and 1 820 822
+823 zero 1
 824 bad 823
 825 state 1 $auto$verificsva.cc:1762:import$6949
 826 init 1 825 16

@@ -67,7 +67,7 @@
 74 and 1 14 73
 75 and 1 7 74
 76 not 1 72
-77 and 1 75 76
+77 zero 1
 78 bad 77
 79 not 1 7
 80 const 1 1

@@ -3368,7 +3368,7 @@
 3694 ite 1 3692 3691 52
 3695 not 1 3694
 3696 not 1 3694
-3697 and 1 3695 3696
+3697 zero 1
 3698 bad 3697
 3699 state 1 $techmap\MEM_DCACHE.docache.$auto$verificsva.cc:1762:import$18270
 3700 init 1 3699 16

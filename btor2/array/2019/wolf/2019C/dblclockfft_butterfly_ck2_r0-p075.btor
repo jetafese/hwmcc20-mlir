@@ -973,7 +973,7 @@
 1147 state 1 $techmap\CKPCE_TWO.mpy1.$formal$longbimpy.v:308$975_EN
 1148 init 1 1147 94
 1149 not 1 1146
-1150 and 1 1147 1149
+1150 zero 1
 1151 bad 1150
 1152 state 1 $techmap\CKPCE_TWO.mpy1.$formal$longbimpy.v:308$980_CHECK
 1153 state 1 $techmap\CKPCE_TWO.mpy1.$formal$longbimpy.v:308$980_EN

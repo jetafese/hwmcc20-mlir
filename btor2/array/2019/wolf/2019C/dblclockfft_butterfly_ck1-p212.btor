@@ -2016,7 +2016,7 @@
 2388 and 1 2349 2387
 2390 state 1 $techmap\p3.$formal$longbimpy.v:313$928_CHECK
 2391 not 1 2390
-2392 and 1 2355 2391
+2392 zero 1
 2393 bad 2392
 2394 state 1 $techmap\p3.$formal$longbimpy.v:313$933_CHECK
 2395 not 1 2394

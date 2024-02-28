@@ -3910,7 +3910,7 @@
 4316 state 1 $techmap\doalu.$auto$verificsva.cc:1763:import$14128
 4317 init 1 4316 16
 4318 not 1 4314
-4319 and 1 4316 4318
+4319 zero 1
 4320 bad 4319
 4321 state 90
 4322 redor 1 4321

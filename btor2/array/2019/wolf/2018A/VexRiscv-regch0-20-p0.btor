@@ -21,7 +21,7 @@
 21 init 1 20 5
 22 not 1 19
 23 and 1 20 22
-24 bad 23
+24 bad 5
 25 state 1 $techmap\checker_inst.$formal$VexRiscv-regch0-20.sv:215$14_CHECK
 26 state 1 $techmap\checker_inst.$formal$VexRiscv-regch0-20.sv:215$14_EN
 27 init 1 26 5

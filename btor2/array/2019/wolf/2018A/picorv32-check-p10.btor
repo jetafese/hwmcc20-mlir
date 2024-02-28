@@ -217,7 +217,7 @@
 231 and 1 228 230
 233 state 1 $formal$picorv32-check.sv:580$8_CHECK
 234 not 1 233
-235 and 1 228 234
+235 zero 1
 236 bad 235
 237 not 1 162
 238 and 1 228 237

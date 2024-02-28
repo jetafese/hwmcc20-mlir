@@ -764,7 +764,7 @@
 895 redor 1 894
 896 not 1 895
 897 not 1 896
-898 and 1 125 897
+898 zero 1
 899 bad 898
 900 state 5 p1.acc[7]
 901 init 5 900 842

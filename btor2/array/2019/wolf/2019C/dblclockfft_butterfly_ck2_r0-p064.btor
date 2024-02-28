@@ -393,7 +393,7 @@
 458 state 1 $techmap\CKPCE_TWO.mpy0.$formal$longbimpy.v:308$980_EN
 459 init 1 458 94
 460 not 1 457
-461 and 1 458 460
+461 zero 1
 462 bad 461
 463 state 1 $techmap\CKPCE_TWO.mpy0.$formal$longbimpy.v:308$985_CHECK
 464 state 1 $techmap\CKPCE_TWO.mpy0.$formal$longbimpy.v:308$985_EN

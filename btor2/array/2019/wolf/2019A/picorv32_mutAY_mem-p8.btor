@@ -26,7 +26,7 @@
 28 state 3 uut.mem_addr
 29 eq 1 27 28
 30 not 1 29
-31 and 1 23 30
+31 zero 1
 32 bad 31
 33 sort bitvec 4
 34 state 33 ref.mem_wstrb

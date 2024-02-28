@@ -152,7 +152,7 @@
 162 ugt 1 102 161
 163 eq 1 41 162
 164 not 1 163
-165 and 1 87 164
+165 zero 1
 166 bad 165
 167 state 1 $formal$zipcpu-zipmmu.sv:783$78_CHECK
 168 state 1 $formal$zipcpu-zipmmu.sv:783$78_EN

@@ -36,7 +36,7 @@
 36 eq 1 32 35
 37 ite 1 26 36 31
 38 not 1 37
-39 and 1 26 38
+39 zero 1
 40 bad 39
 41 state 1
 42 sort bitvec 16

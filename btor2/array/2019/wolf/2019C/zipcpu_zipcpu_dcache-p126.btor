@@ -4125,7 +4125,7 @@
 4563 ite 1 4562 4462 52
 4564 not 1 4563
 4565 not 1 4563
-4566 and 1 4564 4565
+4566 zero 1
 4567 bad 4566
 4568 state 1 $techmap\MEM_DCACHE.docache.$auto$verificsva.cc:1762:import$19392
 4569 init 1 4568 16

@@ -4734,7 +4734,7 @@
 5233 state 1 $techmap\doalu.$auto$verificsva.cc:1763:import$14120
 5234 init 1 5233 16
 5235 not 1 5231
-5236 and 1 5233 5235
+5236 zero 1
 5237 bad 5236
 5238 state 1 $techmap\doalu.$auto$verificsva.cc:1762:import$14130
 5239 init 1 5238 16

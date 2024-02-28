@@ -290,7 +290,7 @@
 332 state 1 $techmap\CKPCE_THREE.mpy.$formal$longbimpy.v:290$1005_EN
 333 init 1 332 93
 334 not 1 331
-335 and 1 332 334
+335 zero 1
 336 bad 335
 337 state 1 $techmap\CKPCE_THREE.mpy.$formal$longbimpy.v:290$1008_CHECK
 338 state 1 $techmap\CKPCE_THREE.mpy.$formal$longbimpy.v:290$1008_EN

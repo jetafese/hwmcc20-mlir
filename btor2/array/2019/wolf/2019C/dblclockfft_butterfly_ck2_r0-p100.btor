@@ -408,7 +408,7 @@
 476 state 1 $techmap\CKPCE_TWO.mpy0.$formal$longbimpy.v:312$971_EN
 477 init 1 476 94
 478 not 1 475
-479 and 1 476 478
+479 zero 1
 480 bad 479
 481 state 1 $techmap\CKPCE_TWO.mpy0.$formal$longbimpy.v:312$976_CHECK
 482 state 1 $techmap\CKPCE_TWO.mpy0.$formal$longbimpy.v:312$976_EN

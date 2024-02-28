@@ -3183,7 +3183,7 @@
 3504 ite 1 3503 3502 52
 3505 not 1 3504
 3506 not 1 3504
-3507 and 1 3505 3506
+3507 zero 1
 3508 bad 3507
 3509 state 1 $techmap\NO_CACHE.MEM.domem.$auto$verificsva.cc:1762:import$15802
 3510 init 1 3509 16

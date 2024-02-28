@@ -116,7 +116,7 @@
 120 state 1 $formal$zipcpu-zipmmu.sv:759$70_EN
 121 init 1 120 25
 122 not 1 119
-123 and 1 120 122
+123 zero 1
 124 bad 123
 125 state 1 $formal$zipcpu-zipmmu.sv:760$71_CHECK
 126 not 1 125

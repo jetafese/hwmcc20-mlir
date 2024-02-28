@@ -3235,7 +3235,7 @@
 3564 state 1 $techmap\NO_CACHE.MEM.domem.$auto$verificsva.cc:1763:import$15883
 3565 init 1 3564 16
 3566 not 1 3562
-3567 and 1 3564 3566
+3567 zero 1
 3568 bad 3567
 3569 state 1 $techmap\NO_CACHE.MEM.domem.$auto$verificsva.cc:1762:import$15893
 3570 init 1 3569 16

@@ -326,7 +326,7 @@
 375 and 1 368 374
 377 state 1 $techmap\CKPCE_THREE.mpy.$formal$longbimpy.v:293$1007_CHECK
 378 not 1 377
-379 and 1 368 378
+379 zero 1
 380 bad 379
 381 state 1 $techmap\CKPCE_THREE.mpy.$formal$longbimpy.v:293$1010_CHECK
 382 not 1 381

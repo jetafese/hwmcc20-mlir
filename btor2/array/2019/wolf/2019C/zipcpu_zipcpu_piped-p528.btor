@@ -3874,7 +3874,7 @@
 4274 state 1 $techmap\doalu.$auto$verificsva.cc:1763:import$14062
 4275 init 1 4274 16
 4276 not 1 4272
-4277 and 1 4274 4276
+4277 zero 1
 4278 bad 4277
 4279 state 1 $techmap\doalu.$auto$verificsva.cc:1762:import$14072
 4280 init 1 4279 16

@@ -1337,7 +1337,7 @@
 1584 and 1 1581 1583
 1586 state 1 $techmap\p2.$formal$longbimpy.v:365$888_CHECK
 1587 not 1 1586
-1588 and 1 1581 1587
+1588 zero 1
 1589 bad 1588
 1590 state 54 p2.f_past_a[0]
 1591 init 54 1590 55

@@ -624,7 +624,7 @@
 673 state 1 $auto$verificsva.cc:1763:import$6697
 674 init 1 673 16
 675 not 1 671
-676 and 1 673 675
+676 zero 1
 677 bad 676
 678 state 1 $auto$verificsva.cc:1762:import$6707
 679 init 1 678 16

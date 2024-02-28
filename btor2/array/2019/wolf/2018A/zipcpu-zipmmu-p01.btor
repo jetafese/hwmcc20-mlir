@@ -482,7 +482,7 @@
 536 state 1 $techmap\busslave.$formal$zipcpu-zipmmu.sv:1203$1788_EN
 537 init 1 536 25
 538 not 1 535
-539 and 1 536 538
+539 zero 1
 540 bad 539
 541 state 1 $techmap\busslave.$formal$zipcpu-zipmmu.sv:1206$1789_CHECK
 542 not 1 541

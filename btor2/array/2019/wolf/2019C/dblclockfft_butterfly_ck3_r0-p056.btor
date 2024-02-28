@@ -676,7 +676,7 @@
 790 redor 1 789
 791 not 1 790
 792 not 1 791
-793 and 1 92 792
+793 zero 1
 794 bad 793
 795 state 12 CKPCE_THREE.mpy.r_b[4]
 796 init 12 795 655

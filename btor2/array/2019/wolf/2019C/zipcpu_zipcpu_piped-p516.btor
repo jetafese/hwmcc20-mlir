@@ -3664,7 +3664,7 @@
 4045 state 1 $techmap\PRIORITY_DATA.pformem.f_wbm_b.$auto$verificsva.cc:1763:import$18592
 4046 init 1 4045 16
 4047 not 1 4043
-4048 and 1 4045 4047
+4048 zero 1
 4049 bad 4048
 4050 state 1 $techmap\PRIORITY_DATA.pformem.f_wbm_b.$auto$verificsva.cc:1762:import$18602
 4051 init 1 4050 16

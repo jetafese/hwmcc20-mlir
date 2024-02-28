@@ -20,8 +20,7 @@
 19 state 1 $auto$verificsva.cc:1763:import$6152
 20 init 1 19 16
 21 not 1 17
-22 and 1 19 21
-23 bad 22
+22 zero 1
 24 state 1 $auto$verificsva.cc:1762:import$6162
 25 init 1 24 16
 26 state 1 $auto$verificsva.cc:1763:import$6163

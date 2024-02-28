@@ -3756,7 +3756,7 @@
 4146 state 1 $techmap\MEM_DCACHE.docache.$auto$verificsva.cc:1763:import$18918
 4147 init 1 4146 16
 4148 not 1 4144
-4149 and 1 4146 4148
+4149 zero 1
 4150 bad 4149
 4151 state 1 $techmap\MEM_DCACHE.docache.$auto$verificsva.cc:1762:import$18928
 4152 init 1 4151 16

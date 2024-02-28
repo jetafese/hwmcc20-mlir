@@ -1218,7 +1218,7 @@
 1437 state 1 $techmap\p2.$formal$longbimpy.v:308$936_EN
 1438 init 1 1437 17
 1439 not 1 1436
-1440 and 1 1437 1439
+1440 zero 1
 1441 bad 1440
 1442 state 1 $techmap\p2.$formal$longbimpy.v:308$941_CHECK
 1443 state 1 $techmap\p2.$formal$longbimpy.v:308$941_EN

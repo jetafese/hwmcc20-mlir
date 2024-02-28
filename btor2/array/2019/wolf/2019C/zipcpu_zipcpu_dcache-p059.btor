@@ -4966,7 +4966,7 @@
 5499 not 1 5498
 5500 not 1 5499
 5501 not 1 5499
-5502 and 1 5500 5501
+5502 zero 1
 5503 bad 5502
 5504 state 1 $techmap\instruction_decoder.$auto$verificsva.cc:1762:import$12528
 5505 init 1 5504 16

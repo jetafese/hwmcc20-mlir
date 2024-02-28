@@ -557,7 +557,7 @@
 655 and 1 652 654
 657 state 1 $techmap\p1.$formal$longbimpy.v:347$881_CHECK
 658 not 1 657
-659 and 1 652 658
+659 zero 1
 660 bad 659
 661 state 1 $techmap\p1.$formal$longbimpy.v:349$882_CHECK
 662 state 1 $techmap\p1.$formal$longbimpy.v:349$882_EN

@@ -5530,7 +5530,7 @@
 6107 state 1 $techmap\instruction_decoder.$auto$verificsva.cc:1763:import$12964
 6108 init 1 6107 16
 6109 not 1 6105
-6110 and 1 6107 6109
+6110 zero 1
 6111 bad 6110
 6112 state 1 $techmap\instruction_decoder.$auto$verificsva.cc:1762:import$12974
 6113 init 1 6112 16

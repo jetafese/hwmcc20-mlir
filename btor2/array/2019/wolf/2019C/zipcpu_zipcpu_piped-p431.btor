@@ -2294,7 +2294,7 @@
 2549 state 1 $auto$verificsva.cc:1763:import$8943
 2550 init 1 2549 16
 2551 not 1 2547
-2552 and 1 2549 2551
+2552 zero 1
 2553 bad 2552
 2554 state 1 $auto$verificsva.cc:1762:import$8953
 2555 init 1 2554 16

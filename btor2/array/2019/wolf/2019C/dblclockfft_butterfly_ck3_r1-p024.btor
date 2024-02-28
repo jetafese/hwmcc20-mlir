@@ -625,7 +625,7 @@
 735 redor 1 734
 736 not 1 735
 737 not 1 736
-738 and 1 92 737
+738 zero 1
 739 bad 738
 740 state 12 CKPCE_THREE.mpy.f_past_b[4]
 741 init 12 740 707

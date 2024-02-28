@@ -1102,7 +1102,7 @@
 1305 redor 1 1304
 1306 not 1 1305
 1307 not 1 1306
-1308 and 1 93 1307
+1308 zero 1
 1309 bad 1308
 1310 state 43 CKPCE_TWO.mpy1.f_past_a[3]
 1311 init 43 1310 591

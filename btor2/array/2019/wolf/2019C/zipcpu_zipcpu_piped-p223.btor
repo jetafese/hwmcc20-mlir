@@ -2306,7 +2306,7 @@
 2563 state 1 $auto$verificsva.cc:1763:import$8965
 2564 init 1 2563 16
 2565 not 1 2561
-2566 and 1 2563 2565
+2566 zero 1
 2567 bad 2566
 2568 state 1 $auto$verificsva.cc:1762:import$8975
 2569 init 1 2568 16

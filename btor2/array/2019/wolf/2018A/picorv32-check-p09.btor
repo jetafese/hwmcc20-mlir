@@ -185,7 +185,7 @@
 193 state 1 $formal$picorv32-check.sv:2091$25_EN
 194 init 1 193 33
 195 not 1 192
-196 and 1 193 195
+196 zero 1
 197 bad 196
 198 state 1 $formal$picorv32-check.sv:532$2_CHECK
 199 state 1 $formal$picorv32-check.sv:532$2_EN

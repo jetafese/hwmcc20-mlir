@@ -335,7 +335,7 @@
 386 state 1 $techmap\CKPCE_THREE.mpy.$formal$longbimpy.v:292$1043_EN
 387 init 1 386 93
 388 not 1 385
-389 and 1 386 388
+389 zero 1
 390 bad 389
 391 state 1 $techmap\CKPCE_THREE.mpy.$formal$longbimpy.v:293$1029_CHECK
 392 state 1 $techmap\CKPCE_THREE.mpy.$formal$longbimpy.v:293$1029_EN

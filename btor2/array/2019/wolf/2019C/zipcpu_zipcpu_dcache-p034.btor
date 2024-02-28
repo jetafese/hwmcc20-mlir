@@ -5097,7 +5097,7 @@
 5653 state 1 $techmap\instruction_decoder.$auto$verificsva.cc:1763:import$12761
 5654 init 1 5653 16
 5655 not 1 5651
-5656 and 1 5653 5655
+5656 zero 1
 5657 bad 5656
 5658 state 1 $techmap\instruction_decoder.$auto$verificsva.cc:1762:import$12771
 5659 init 1 5658 16

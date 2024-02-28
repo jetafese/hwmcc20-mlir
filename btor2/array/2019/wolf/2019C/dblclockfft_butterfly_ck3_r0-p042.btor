@@ -162,7 +162,7 @@
 185 state 1 $formal$butterfly.v:969$478_EN
 186 init 1 185 93
 187 not 1 184
-188 and 1 185 187
+188 zero 1
 189 bad 188
 190 state 1 $formal$butterfly.v:972$479_CHECK
 191 state 1 $formal$butterfly.v:972$479_EN

@@ -522,7 +522,7 @@
 616 state 1 $techmap\CKPCE_THREE.mpy.$formal$longbimpy.v:354$1006_EN
 617 init 1 616 93
 618 not 1 615
-619 and 1 616 618
+619 zero 1
 620 bad 619
 621 state 1 $techmap\CKPCE_THREE.mpy.$formal$longbimpy.v:358$1007_CHECK
 622 state 1 $techmap\CKPCE_THREE.mpy.$formal$longbimpy.v:358$1007_EN

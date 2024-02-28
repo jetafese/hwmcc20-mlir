@@ -105,7 +105,7 @@
 113 and 1 102 112
 115 state 1 $formal$butterfly.v:903$436_CHECK
 116 not 1 115
-117 and 1 102 116
+117 zero 1
 118 bad 117
 119 state 1 $formal$butterfly.v:907$437_CHECK
 120 state 1 $formal$butterfly.v:907$437_EN

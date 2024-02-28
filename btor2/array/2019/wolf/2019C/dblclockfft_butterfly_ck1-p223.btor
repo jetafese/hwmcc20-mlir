@@ -477,7 +477,7 @@
 556 state 1 $techmap\p1.$formal$longbimpy.v:312$912_EN
 557 init 1 556 17
 558 not 1 555
-559 and 1 556 558
+559 zero 1
 560 bad 559
 561 state 1 $techmap\p1.$formal$longbimpy.v:312$917_CHECK
 562 state 1 $techmap\p1.$formal$longbimpy.v:312$917_EN

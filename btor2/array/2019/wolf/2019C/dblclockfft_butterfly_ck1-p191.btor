@@ -189,7 +189,7 @@
 211 state 1 $formal$butterfly.v:967$401_EN
 212 init 1 211 17
 213 not 1 210
-214 and 1 211 213
+214 zero 1
 215 bad 214
 216 state 1 $formal$butterfly.v:969$402_CHECK
 217 state 1 $formal$butterfly.v:969$402_EN

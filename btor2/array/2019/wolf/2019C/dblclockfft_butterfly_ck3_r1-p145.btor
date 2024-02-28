@@ -468,7 +468,7 @@
 547 and 1 510 546
 549 state 1 $techmap\CKPCE_THREE.mpy.$formal$longbimpy.v:313$1037_CHECK
 550 not 1 549
-551 and 1 516 550
+551 zero 1
 552 bad 551
 553 state 1 $techmap\CKPCE_THREE.mpy.$formal$longbimpy.v:313$1042_CHECK
 554 not 1 553

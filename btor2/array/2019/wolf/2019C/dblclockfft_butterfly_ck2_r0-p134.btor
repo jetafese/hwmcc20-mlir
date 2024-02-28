@@ -1041,7 +1041,7 @@
 1231 state 1 $techmap\CKPCE_TWO.mpy1.$formal$longbimpy.v:338$938_EN
 1232 init 1 1231 94
 1233 not 1 1230
-1234 and 1 1231 1233
+1234 zero 1
 1235 bad 1234
 1236 state 1 $techmap\CKPCE_TWO.mpy1.$formal$longbimpy.v:340$939_CHECK
 1237 not 1 1236

@@ -1994,7 +1994,7 @@
 2361 state 1 $techmap\p3.$formal$longbimpy.v:312$932_EN
 2362 init 1 2361 17
 2363 not 1 2360
-2364 and 1 2361 2363
+2364 zero 1
 2365 bad 2364
 2366 state 1 $techmap\p3.$formal$longbimpy.v:312$937_CHECK
 2367 state 1 $techmap\p3.$formal$longbimpy.v:312$937_EN

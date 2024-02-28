@@ -608,7 +608,7 @@
 717 redor 1 716
 718 not 1 717
 719 not 1 718
-720 and 1 125 719
+720 zero 1
 721 bad 720
 722 state 54 p1.f_past_a[3]
 723 init 54 722 55

@@ -2083,7 +2083,7 @@
 2472 and 1 2469 2471
 2474 state 1 $techmap\p3.$formal$longbimpy.v:365$888_CHECK
 2475 not 1 2474
-2476 and 1 2469 2475
+2476 zero 1
 2477 bad 2476
 2478 state 54 p3.f_past_a[0]
 2479 init 54 2478 55

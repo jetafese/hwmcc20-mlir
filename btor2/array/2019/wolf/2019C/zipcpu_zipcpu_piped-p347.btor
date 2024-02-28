@@ -2390,7 +2390,7 @@
 2661 state 1 $auto$verificsva.cc:1763:import$9196
 2662 init 1 2661 16
 2663 not 1 2659
-2664 and 1 2661 2663
+2664 zero 1
 2665 bad 2664
 2666 state 1 $auto$verificsva.cc:1762:import$9206
 2667 init 1 2666 16

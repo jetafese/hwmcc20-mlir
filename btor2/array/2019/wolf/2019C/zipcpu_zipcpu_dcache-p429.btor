@@ -2030,7 +2030,7 @@
 2247 state 1 $auto$verificsva.cc:1763:import$8542
 2248 init 1 2247 16
 2249 not 1 2245
-2250 and 1 2247 2249
+2250 zero 1
 2251 bad 2250
 2252 state 1 $auto$verificsva.cc:1762:import$8552
 2253 init 1 2252 16

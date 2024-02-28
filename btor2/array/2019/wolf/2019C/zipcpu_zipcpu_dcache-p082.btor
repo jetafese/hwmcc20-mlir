@@ -4809,7 +4809,7 @@
 5316 state 1 $techmap\instruction_decoder.$auto$verificsva.cc:1763:import$12211
 5317 init 1 5316 16
 5318 not 1 5314
-5319 and 1 5316 5318
+5319 zero 1
 5320 bad 5319
 5321 state 516 instruction_decoder.r_nxt_half
 5322 slice 516 5297 14 0

@@ -507,7 +507,7 @@
 595 and 1 556 594
 597 state 1 $techmap\CKPCE_THREE.mpy.$formal$longbimpy.v:313$1064_CHECK
 598 not 1 597
-599 and 1 562 598
+599 zero 1
 600 bad 599
 601 state 1 $techmap\CKPCE_THREE.mpy.$formal$longbimpy.v:313$1069_CHECK
 602 not 1 601

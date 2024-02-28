@@ -177,7 +177,7 @@
 203 state 1 $formal$butterfly.v:977$481_EN
 204 init 1 203 93
 205 not 1 202
-206 and 1 203 205
+206 zero 1
 207 bad 206
 208 state 1 $formal$butterfly.v:979$482_CHECK
 209 state 1 $formal$butterfly.v:979$482_EN

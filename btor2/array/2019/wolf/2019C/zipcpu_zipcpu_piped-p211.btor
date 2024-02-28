@@ -108,7 +108,7 @@
 116 state 1 $auto$verificsva.cc:1763:import$6243
 117 init 1 116 16
 118 not 1 114
-119 and 1 116 118
+119 zero 1
 120 bad 119
 121 state 1 $auto$verificsva.cc:1762:import$6253
 122 init 1 121 16

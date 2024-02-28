@@ -3820,7 +3820,7 @@
 4211 state 1 $techmap\doalu.$auto$verificsva.cc:1763:import$13963
 4212 init 1 4211 16
 4213 not 1 4209
-4214 and 1 4211 4213
+4214 zero 1
 4215 bad 4214
 4216 state 1 $techmap\doalu.$auto$verificsva.cc:1762:import$13973
 4217 init 1 4216 16

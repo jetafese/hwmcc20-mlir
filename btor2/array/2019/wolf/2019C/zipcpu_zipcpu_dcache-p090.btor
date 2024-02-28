@@ -4722,7 +4722,7 @@
 5219 state 1 $techmap\doalu.$auto$verificsva.cc:1763:import$14098
 5220 init 1 5219 16
 5221 not 1 5217
-5222 and 1 5219 5221
+5222 zero 1
 5223 bad 5222
 5224 state 1 $techmap\doalu.$auto$verificsva.cc:1762:import$14108
 5225 init 1 5224 16

@@ -205,7 +205,7 @@
 217 state 1 $formal$picorv32-check.sv:541$5_EN
 218 init 1 217 33
 219 not 1 216
-220 and 1 217 219
+220 zero 1
 221 bad 220
 222 state 1 $formal$picorv32-check.sv:544$6_CHECK
 223 state 1 $formal$picorv32-check.sv:544$6_EN

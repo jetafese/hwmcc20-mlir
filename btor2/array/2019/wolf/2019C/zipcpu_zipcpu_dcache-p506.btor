@@ -3912,7 +3912,7 @@
 4330 state 1 $techmap\MEM_DCACHE.docache.$auto$verificsva.cc:1763:import$19226
 4331 init 1 4330 16
 4332 not 1 4328
-4333 and 1 4330 4332
+4333 zero 1
 4334 bad 4333
 4335 state 1 $techmap\MEM_DCACHE.docache.$auto$verificsva.cc:1762:import$19236
 4336 init 1 4335 16

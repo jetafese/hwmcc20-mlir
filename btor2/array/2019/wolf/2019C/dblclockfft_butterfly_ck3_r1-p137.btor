@@ -447,7 +447,7 @@
 522 state 1 $techmap\CKPCE_THREE.mpy.$formal$longbimpy.v:312$1041_EN
 523 init 1 522 93
 524 not 1 521
-525 and 1 522 524
+525 zero 1
 526 bad 525
 527 state 1 $techmap\CKPCE_THREE.mpy.$formal$longbimpy.v:312$1046_CHECK
 528 state 1 $techmap\CKPCE_THREE.mpy.$formal$longbimpy.v:312$1046_EN

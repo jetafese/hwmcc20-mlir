@@ -804,7 +804,7 @@
 942 redor 1 941
 943 not 1 942
 944 not 1 943
-945 and 1 92 944
+945 zero 1
 946 bad 945
 947 state 12 CKPCE_THREE.mpy.r_b[6]
 948 init 12 947 759

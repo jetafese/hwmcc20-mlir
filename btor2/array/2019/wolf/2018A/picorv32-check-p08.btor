@@ -222,7 +222,7 @@
 238 and 1 228 237
 240 state 1 $formal$picorv32-check.sv:582$10_CHECK
 241 not 1 240
-242 and 1 228 241
+242 zero 1
 243 bad 242
 244 state 1 $formal$picorv32-check.sv:605$11_CHECK
 245 state 1 $formal$picorv32-check.sv:605$11_EN

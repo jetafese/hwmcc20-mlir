@@ -61,7 +61,7 @@
 61 state 1 memlock_expect
 62 eq 1 60 61
 63 not 1 62
-64 and 1 54 63
+64 zero 1
 65 bad 64
 66 state 1 $formal$marlann_compute_fail1.sv:476$8_CHECK
 67 state 1 $formal$marlann_compute_fail1.sv:476$8_EN

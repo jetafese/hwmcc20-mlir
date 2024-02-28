@@ -3529,7 +3529,7 @@
 3881 state 1 $techmap\MEM_DCACHE.docache.$auto$verificsva.cc:1763:import$18537
 3882 init 1 3881 16
 3883 not 1 3879
-3884 and 1 3881 3883
+3884 zero 1
 3885 bad 3884
 3886 uext 461 352 6
 3887 ulte 1 3868 3886

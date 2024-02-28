@@ -4046,7 +4046,7 @@
 4470 state 1 $techmap\instruction_decoder.$auto$verificsva.cc:1763:import$12358
 4471 init 1 4470 16
 4472 not 1 4468
-4473 and 1 4470 4472
+4473 zero 1
 4474 bad 4473
 4475 state 1 $techmap\instruction_decoder.$auto$verificsva.cc:1762:import$12368
 4476 init 1 4475 16

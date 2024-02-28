@@ -4225,7 +4225,7 @@
 4680 ite 1 995 4679 52
 4681 not 1 4680
 4682 not 1 4680
-4683 and 1 4681 4682
+4683 zero 1
 4684 bad 4683
 4685 state 1 $techmap\instruction_decoder.$auto$verificsva.cc:1762:import$12691
 4686 init 1 4685 16

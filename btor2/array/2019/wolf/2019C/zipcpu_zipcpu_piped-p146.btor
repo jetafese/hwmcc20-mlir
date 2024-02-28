@@ -786,7 +786,7 @@
 862 state 1 $auto$verificsva.cc:1763:import$7060
 863 init 1 862 16
 864 not 1 860
-865 and 1 862 864
+865 zero 1
 866 bad 865
 867 state 1 $auto$verificsva.cc:1762:import$7070
 868 init 1 867 16

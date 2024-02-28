@@ -15,7 +15,7 @@
 15 state 1 uut.mem_valid
 16 eq 1 14 15
 17 not 1 16
-18 and 1 7 17
+18 zero 1
 19 bad 18
 20 state 1 ref.mem_instr
 21 state 1 uut.mem_instr

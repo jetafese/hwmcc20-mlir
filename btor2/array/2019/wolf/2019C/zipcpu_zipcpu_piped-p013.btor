@@ -4828,7 +4828,7 @@
 5330 state 1 $techmap\instruction_decoder.$auto$verificsva.cc:1763:import$13162
 5331 init 1 5330 16
 5332 not 1 5328
-5333 and 1 5330 5332
+5333 zero 1
 5334 bad 5333
 5335 state 1 $techmap\instruction_decoder.$auto$verificsva.cc:1762:import$13172
 5336 init 1 5335 16

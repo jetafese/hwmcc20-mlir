@@ -368,7 +368,7 @@
 407 state 1 $techmap\busmaster.$formal$zipcpu-zipmmu.sv:1473$1457_EN
 408 init 1 407 25
 409 not 1 389
-410 and 1 407 409
+410 zero 1
 411 bad 410
 412 state 1 $techmap\busmaster.$formal$zipcpu-zipmmu.sv:1480$1458_EN
 413 init 1 412 25

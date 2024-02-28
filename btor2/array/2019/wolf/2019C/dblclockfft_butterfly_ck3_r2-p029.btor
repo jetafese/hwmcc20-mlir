@@ -574,7 +574,7 @@
 679 and 1 676 678
 681 state 1 $techmap\CKPCE_THREE.mpy.$formal$longbimpy.v:365$1024_CHECK
 682 not 1 681
-683 and 1 676 682
+683 zero 1
 684 bad 683
 685 const 42 000000000000000000
 686 state 42 CKPCE_THREE.mpy.f_past_a[0]

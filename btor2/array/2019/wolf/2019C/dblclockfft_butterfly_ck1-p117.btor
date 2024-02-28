@@ -546,7 +546,7 @@
 642 state 1 $techmap\p1.$formal$longbimpy.v:338$878_EN
 643 init 1 642 17
 644 not 1 641
-645 and 1 642 644
+645 zero 1
 646 bad 645
 647 state 1 $techmap\p1.$formal$longbimpy.v:340$879_CHECK
 648 not 1 647
