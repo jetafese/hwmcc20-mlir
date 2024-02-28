@@ -73,7 +73,7 @@
 74 init 1 73 72
 75 not 1 73
 76 or 1 8 75
-77 constraint 76
+; constraint
 78 sort bitvec 9
 79 state 78 CBP
 80 state 24 SBP

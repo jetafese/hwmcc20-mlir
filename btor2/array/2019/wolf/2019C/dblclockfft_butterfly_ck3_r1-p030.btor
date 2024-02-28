@@ -221,7 +221,7 @@
 255 ite 1 254 251 250
 256 not 1 254
 257 or 1 255 256
-258 constraint 257
+; constraint
 259 state 1
 260 not 1 252
 261 not 1 253
@@ -232,7 +232,7 @@
 266 ite 1 265 3 259
 267 not 1 265
 268 or 1 266 267
-269 constraint 268
+; constraint
 270 state 1
 271 and 1 262 263
 272 state 1 $0$past$butterfly.v:860$452$4[0:0]$752
@@ -247,7 +247,7 @@
 281 ite 1 280 3 270
 282 not 1 280
 283 or 1 281 282
-284 constraint 283
+; constraint
 285 state 1 $techmap\CKPCE_THREE.mpy.$formal$longbimpy.v:264$990_CHECK
 286 state 1 CKPCE_THREE.mpy.GENSTAGES[1].genmpy.f_past_valid
 287 init 1 286 93
@@ -756,7 +756,7 @@
 883 not 1 882
 884 not 1 92
 885 or 1 883 884
-886 constraint 885
+; constraint
 887 state 12 CKPCE_THREE.mpy.u_b
 888 init 12 887 707
 889 slice 42 887 18 3
@@ -764,7 +764,7 @@
 891 not 1 890
 892 not 1 92
 893 or 1 891 892
-894 constraint 893
+; constraint
 895 state 1 $techmap\CKPCE_THREE.mpy.GENSTAGES[0].genmpy.$formal$bimpy.v:88$1972_CHECK
 896 state 1 $techmap\CKPCE_THREE.mpy.GENSTAGES[0].genmpy.$formal$bimpy.v:88$1972_EN
 897 init 1 896 93

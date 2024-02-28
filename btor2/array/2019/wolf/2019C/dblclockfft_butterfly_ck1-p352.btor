@@ -251,7 +251,7 @@
 285 not 1 283
 286 not 1 285
 287 or 1 284 286
-288 constraint 287
+; constraint
 289 state 1
 290 state 1 $past$butterfly.v:814$377$1
 291 not 1 290
@@ -259,7 +259,7 @@
 293 ite 1 292 3 289
 294 not 1 292
 295 or 1 293 294
-296 constraint 295
+; constraint
 297 state 1 $techmap\p1.$formal$longbimpy.v:264$868_CHECK
 298 state 1 p3.GENSTAGES[4].genmpy.f_past_valid
 299 init 1 298 17
@@ -830,7 +830,7 @@
 970 not 1 969
 971 not 1 125
 972 or 1 970 971
-973 constraint 972
+; constraint
 974 state 12 p1.u_b
 975 init 12 974 13
 976 slice 54 974 19 3
@@ -838,7 +838,7 @@
 978 not 1 977
 979 not 1 125
 980 or 1 978 979
-981 constraint 980
+; constraint
 982 state 1 $techmap\p1.GENSTAGES[0].genmpy.$formal$bimpy.v:88$1967_CHECK
 983 state 1 $techmap\p1.GENSTAGES[0].genmpy.$formal$bimpy.v:88$1967_EN
 984 init 1 983 17
@@ -1577,7 +1577,7 @@
 1858 not 1 1857
 1859 not 1 125
 1860 or 1 1858 1859
-1861 constraint 1860
+; constraint
 1862 state 12 p2.u_b
 1863 init 12 1862 13
 1864 slice 54 1862 19 3
@@ -1585,7 +1585,7 @@
 1866 not 1 1865
 1867 not 1 125
 1868 or 1 1866 1867
-1869 constraint 1868
+; constraint
 1870 state 1 $techmap\p2.GENSTAGES[0].genmpy.$formal$bimpy.v:88$1967_CHECK
 1871 state 1 $techmap\p2.GENSTAGES[0].genmpy.$formal$bimpy.v:88$1967_EN
 1872 init 1 1871 17
@@ -2323,7 +2323,7 @@
 2746 not 1 2745
 2747 not 1 125
 2748 or 1 2746 2747
-2749 constraint 2748
+; constraint
 2750 state 12 p3.u_b
 2751 init 12 2750 13
 2752 slice 54 2750 19 3
@@ -2331,7 +2331,7 @@
 2754 not 1 2753
 2755 not 1 125
 2756 or 1 2754 2755
-2757 constraint 2756
+; constraint
 2758 state 1 $techmap\p3.GENSTAGES[0].genmpy.$formal$bimpy.v:88$1967_CHECK
 2759 state 1 $techmap\p3.GENSTAGES[0].genmpy.$formal$bimpy.v:88$1967_EN
 2760 init 1 2759 17

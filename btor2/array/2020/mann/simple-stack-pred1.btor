@@ -25,13 +25,13 @@
 24 const 1 1
 25 not 1 24
 26 or 1 23 25
-27 constraint 26
+;27 constraint 26
 28 not 1 7
 29 not 1 6
 30 or 1 28 29
 31 not 1 24
 32 or 1 30 31
-33 constraint 32
+;33 constraint 32
 34 const 9 00000000000
 35 state 9 count
 36 init 9 35 34
@@ -41,14 +41,14 @@
 40 or 1 39 29
 41 not 1 24
 42 or 1 40 41
-43 constraint 42
+;43 constraint 42
 44 const 9 10000000000
 45 eq 1 35 44
 46 not 1 45
 47 or 1 46 28
 48 not 1 24
 49 or 1 47 48
-50 constraint 49
+;50 constraint 49
 51 uext 1 38 0 empty
 52 uext 1 45 0 full
 53 input 1

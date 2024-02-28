@@ -11,7 +11,7 @@
 10 init 1 9 6
 11 not 1 9
 12 or 1 7 11
-13 constraint 12
+; constraint
 14 sort bitvec 4
 15 const 14 0000
 16 state 14 $auto$zinit.cc:122:execute$154267
@@ -25,7 +25,7 @@
 24 const 1 1
 25 not 1 24
 26 or 1 23 25
-27 constraint 26
+; constraint
 28 sort bitvec 7
 29 slice 28 4 6 0
 30 const 28 1111111
@@ -33,7 +33,7 @@
 32 ite 1 5 6 24
 33 not 1 32
 34 or 1 31 33
-35 constraint 34
+; constraint
 36 state 1 $auto$zinit.cc:122:execute$154124
 37 init 1 36 6
 38 const 3 00000000000000000000000000000000

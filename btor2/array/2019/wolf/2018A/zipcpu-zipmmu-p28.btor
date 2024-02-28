@@ -268,63 +268,63 @@
 293 next 1 291 25
 294 not 1 291
 295 or 1 8 294
-296 constraint 295
+; constraint
 297 ite 1 150 25 87
 298 not 1 297
 299 or 1 8 298
-300 constraint 299
+; constraint
 301 not 1 19
 302 ite 1 8 87 25
 303 not 1 302
 304 or 1 301 303
-305 constraint 304
+; constraint
 306 state 1 $formal$zipcpu-zipmmu.sv:682$61_CHECK
 307 not 1 150
 308 or 1 306 307
-309 constraint 308
+; constraint
 310 not 1 12
 311 state 1 f_kill_input
 312 init 1 311 25
 313 ite 1 311 87 25
 314 not 1 313
 315 or 1 310 314
-316 constraint 315
+; constraint
 317 state 1 $formal$zipcpu-zipmmu.sv:742$64_CHECK
 318 state 1 $formal$zipcpu-zipmmu.sv:742$64_EN
 319 init 1 318 25
 320 not 1 318
 321 or 1 317 320
-322 constraint 321
+; constraint
 323 state 1 $formal$zipcpu-zipmmu.sv:743$65_CHECK
 324 not 1 318
 325 or 1 323 324
-326 constraint 325
+; constraint
 327 state 1 $formal$zipcpu-zipmmu.sv:770$74_EN
 328 init 1 327 25
 329 not 1 327
 330 or 1 323 329
-331 constraint 330
+; constraint
 332 or 1 301 141
 333 not 1 87
 334 or 1 332 333
-335 constraint 334
+; constraint
 336 state 1 $formal$zipcpu-zipmmu.sv:845$94_CHECK
 337 state 1 $formal$zipcpu-zipmmu.sv:845$94_EN
 338 init 1 337 25
 339 not 1 337
 340 or 1 336 339
-341 constraint 340
+; constraint
 342 state 1 $formal$zipcpu-zipmmu.sv:848$95_EN
 343 init 1 342 25
 344 not 1 342
 345 or 1 336 344
-346 constraint 345
+; constraint
 347 state 1 $formal$zipcpu-zipmmu.sv:851$96_CHECK
 348 state 1 $formal$zipcpu-zipmmu.sv:851$96_EN
 349 init 1 348 25
 350 not 1 348
 351 or 1 347 350
-352 constraint 351
+; constraint
 353 not 1 8
 354 and 1 297 353
 356 not 1 8
@@ -385,61 +385,61 @@
 427 not 1 2
 428 not 1 291
 429 or 1 427 428
-430 constraint 429
+; constraint
 431 not 1 6
 432 not 1 291
 433 or 1 431 432
-434 constraint 433
+; constraint
 435 state 1 $techmap\busmaster.$formal$zipcpu-zipmmu.sv:1417$1448_CHECK
 436 not 1 348
 437 or 1 435 436
-438 constraint 437
+; constraint
 439 state 1 $techmap\busmaster.$formal$zipcpu-zipmmu.sv:1418$1449_CHECK
 440 not 1 348
 441 or 1 439 440
-442 constraint 441
+; constraint
 443 state 1 $techmap\busmaster.$formal$zipcpu-zipmmu.sv:1499$1460_EN
 444 init 1 443 25
 445 not 1 443
 446 or 1 435 445
-447 constraint 446
+; constraint
 448 not 1 443
 449 or 1 439 448
-450 constraint 449
+; constraint
 451 or 1 427 431
 452 not 1 87
 453 or 1 451 452
-454 constraint 453
+; constraint
 455 state 1 $techmap\busmaster.$formal$zipcpu-zipmmu.sv:1526$1470_CHECK
 456 state 1 $techmap\busmaster.$formal$zipcpu-zipmmu.sv:1526$1470_EN
 457 init 1 456 25
 458 not 1 456
 459 or 1 455 458
-460 constraint 459
+; constraint
 461 state 1 $techmap\busmaster.$formal$zipcpu-zipmmu.sv:1544$1471_CHECK
 462 state 1 $techmap\busmaster.$formal$zipcpu-zipmmu.sv:1544$1471_EN
 463 init 1 462 25
 464 not 1 462
 465 or 1 461 464
-466 constraint 465
+; constraint
 467 input 1
 468 not 1 25
 469 or 1 467 468
-470 constraint 469
+; constraint
 471 state 1 $techmap\busmaster.$formal$zipcpu-zipmmu.sv:1586$1467_CHECK
 472 not 1 150
 473 or 1 471 472
-474 constraint 473
+; constraint
 475 state 1 $techmap\busmaster.$formal$zipcpu-zipmmu.sv:1600$1468_CHECK
 476 state 1 $techmap\busmaster.$formal$zipcpu-zipmmu.sv:1600$1468_EN
 477 init 1 476 25
 478 not 1 476
 479 or 1 475 478
-480 constraint 479
+; constraint
 481 state 1 $techmap\busmaster.$formal$zipcpu-zipmmu.sv:1603$1469_CHECK
 482 not 1 476
 483 or 1 481 482
-484 constraint 483
+; constraint
 485 not 1 31
 486 not 1 485
 487 and 1 291 486
@@ -489,85 +489,85 @@
 543 and 1 536 542
 545 not 1 291
 546 or 1 310 545
-547 constraint 546
+; constraint
 548 not 1 16
 549 not 1 291
 550 or 1 548 549
-551 constraint 550
+; constraint
 552 not 1 348
 553 or 1 323 552
-554 constraint 553
+; constraint
 555 state 1 $techmap\busslave.$formal$zipcpu-zipmmu.sv:1017$1767_CHECK
 556 not 1 348
 557 or 1 555 556
-558 constraint 557
+; constraint
 559 state 1 $techmap\busslave.$formal$zipcpu-zipmmu.sv:1050$1770_EN
 560 init 1 559 25
 561 not 1 559
 562 or 1 323 561
-563 constraint 562
+; constraint
 564 state 1 $past$zipcpu-zipmmu.sv:740$27$0
 565 state 1 $techmap\busslave.$formal$zipcpu-zipmmu.sv:1055$1771_EN
 566 init 1 565 25
 567 not 1 565
 568 or 1 564 567
-569 constraint 568
+; constraint
 570 state 1 $past$zipcpu-zipmmu.sv:776$30$0
 571 state 1 $techmap\busslave.$formal$zipcpu-zipmmu.sv:1063$1772_EN
 572 init 1 571 25
 573 not 1 571
 574 or 1 570 573
-575 constraint 574
+; constraint
 576 state 1 $techmap\busslave.$formal$zipcpu-zipmmu.sv:1064$1773_CHECK
 577 not 1 571
 578 or 1 576 577
-579 constraint 578
+; constraint
 580 state 1 $techmap\busslave.$formal$zipcpu-zipmmu.sv:1065$1774_CHECK
 581 not 1 571
 582 or 1 580 581
-583 constraint 582
+; constraint
 584 state 1 $techmap\busslave.$formal$zipcpu-zipmmu.sv:1066$1775_CHECK
 585 not 1 571
 586 or 1 584 585
-587 constraint 586
+; constraint
 588 state 1 $techmap\busslave.$formal$zipcpu-zipmmu.sv:1068$1776_CHECK
 589 state 1 $techmap\busslave.$formal$zipcpu-zipmmu.sv:1068$1776_EN
 590 init 1 589 25
 591 not 1 589
 592 or 1 588 591
-593 constraint 592
+; constraint
 594 state 1 $techmap\busslave.$formal$zipcpu-zipmmu.sv:1075$1777_EN
 595 init 1 594 25
 596 not 1 594
 597 or 1 576 596
-598 constraint 597
+; constraint
 599 state 1 $techmap\busslave.$formal$zipcpu-zipmmu.sv:1082$1778_EN
 600 init 1 599 25
 601 not 1 599
 602 or 1 576 601
-603 constraint 602
+; constraint
 604 state 1 $techmap\busslave.$formal$zipcpu-zipmmu.sv:1087$1779_CHECK
 605 state 1 $techmap\busslave.$formal$zipcpu-zipmmu.sv:1087$1779_EN
 606 init 1 605 25
 607 not 1 605
 608 or 1 604 607
-609 constraint 608
+; constraint
 610 or 1 485 490
 611 not 1 87
 612 or 1 610 611
-613 constraint 612
+; constraint
 614 state 1 $techmap\busslave.$formal$zipcpu-zipmmu.sv:1183$1783_CHECK
 615 state 1 $techmap\busslave.$formal$zipcpu-zipmmu.sv:1183$1783_EN
 616 init 1 615 25
 617 not 1 615
 618 or 1 614 617
-619 constraint 618
+; constraint
 620 state 1 $techmap\busslave.$formal$zipcpu-zipmmu.sv:1185$1784_CHECK
 621 state 1 $techmap\busslave.$formal$zipcpu-zipmmu.sv:1185$1784_EN
 622 init 1 621 25
 623 not 1 621
 624 or 1 620 623
-625 constraint 624
+; constraint
 626 slice 1 18 3 3
 627 not 1 626
 628 and 1 19 627
