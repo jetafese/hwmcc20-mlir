@@ -1,0 +1,3 @@
+./btorsim_get_btor.sh /home/jetafese/hwmc20-mlir/btor2/array/2019/wolf/2019C/zipcpu_zipcpu_dcache-p388.btor
+timeout 1s /home/jetafese/btor2tools/build/bin/btorsim /home/jetafese/hwmc20-mlir/btor2/array/2019/wolf/2019C/zipcpu_zipcpu_dcache-p388.btor -r 999999 > /home/jetafese/hwmc20-mlir/btor2/array/2019/wolf/2019C/zipcpu_zipcpu_dcache-p388.btor.sim.txt
+CYCLES: 1

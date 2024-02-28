@@ -16,9 +16,9 @@
 ~/hwmc20-mlir/runbench/run_btor.sh ~/hwmc20-mlir/runbench/array/btor_20.set btor2mlir_array_20_mann
 ~/hwmc20-mlir/runbench/run_btor.sh ~/hwmc20-mlir/runbench/array/btor_19_mann.set btor2mlir_array_19_mann
 
-echo "$(python scrabber.py resolve/btor2mlir_array_18A_wolf_02282401 -o resolve/btor2mlir_array_18A.csv)";\
-echo "$(python scrabber.py resolve/btor2mlir_array_19A_wolf_02282401 -o resolve/btor2mlir_array_19A.csv)";\
-echo "$(python scrabber.py resolve/btor2mlir_array_19B_wolf_02282401 -o resolve/btor2mlir_array_19B.csv)";\
-echo "$(python scrabber.py resolve/btor2mlir_array_19C_wolf_02282401 -o resolve/btor2mlir_array_19C.csv)";\
-echo "$(python scrabber.py resolve/btor2mlir_array_20_mann_02282401 -o resolve/btor2mlir_array_20_mann.csv)";\
-echo "$(python scrabber.py resolve/btor2mlir_array_19_mann_02282401 -o resolve/btor2mlir_array_19_mann.csv)";\
+# echo "$(python scrabber.py resolve/btor2mlir_array_18A_wolf_02282402 -o resolve/btor2mlir_array_18A.csv)";\
+# echo "$(python scrabber.py resolve/btor2mlir_array_19A_wolf_02282402 -o resolve/btor2mlir_array_19A.csv)";\
+# echo "$(python scrabber.py resolve/btor2mlir_array_19B_wolf_02282402 -o resolve/btor2mlir_array_19B.csv)";\
+# echo "$(python scrabber.py resolve/btor2mlir_array_19C_wolf_02282402 -o resolve/btor2mlir_array_19C.csv)";\
+# echo "$(python scrabber.py resolve/btor2mlir_array_20_mann_02282402 -o resolve/btor2mlir_array_20_mann.csv)";\
+# echo "$(python scrabber.py resolve/btor2mlir_array_19_mann_02282402 -o resolve/btor2mlir_array_19_mann.csv)";\
